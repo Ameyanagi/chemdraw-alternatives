@@ -500,8 +500,8 @@
     "embed": {
       "status": "partial",
       "evidence": "docs",
-      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/packages/chematic-web/README.md",
-      "note": "Editable Web Component supports bounded edits; lacks desktop chemistry parsing."
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/main/packages/chematic-web/README.md",
+      "note": "Unpublished source package; basic editing only; host supplies controls."
     },
     "ai-assistant": {
       "status": "no",
@@ -613,6 +613,14 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "web component"
+    ],
+    "package": "@chematic/web",
+    "limit": "Unpublished source package; basic editing only; host supplies controls.",
+    "how": "Bundle @chematic/web/editor-element; call defineSchematicMoleculeEditorElement(); use <chematic-molecule-editor interaction=\"draw\">; listen for molecule-change."
   },
   "plans": [],
   "renderer": {

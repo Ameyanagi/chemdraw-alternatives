@@ -471,8 +471,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://openreactions.com/",
+      "note": "Hosted editor found; no supported embedding route confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -575,6 +575,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Hosted editor found; no supported embedding route confirmed."
   },
   "plans": [],
   "renderer": {

@@ -423,8 +423,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md",
+      "note": "Word OLE roundtrip exists; editor running inside Word remains unverified."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -481,6 +481,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Windows; commercial use requires permission",
+    "how": "Word OLE roundtrip exists; editor running inside Word remains unverified."
   },
   "plans": [],
   "renderer": {

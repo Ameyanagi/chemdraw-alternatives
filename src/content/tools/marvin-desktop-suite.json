@@ -568,7 +568,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_marvinsketch_simple-bean.html",
-      "note": "Java Swing JavaBean embedding; integration licensing applies."
+      "note": "Instantiate MSketchPane; add it to a Swing JPanel."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -618,6 +618,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "desktop widget"
+    ],
+    "package": "com.chemaxon:chemaxon-marvin-classic",
+    "limit": "Proprietary license; Java Swing host required.",
+    "how": "Instantiate MSketchPane; add it to a Swing JPanel."
   },
   "plans": [
     {

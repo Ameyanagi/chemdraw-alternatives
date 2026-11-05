@@ -555,10 +555,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://molchart.com/llms-full.txt",
+      "note": "ChatGPT viewer; manual editing requires full app"
     },
     "ai-assistant": {
       "status": "yes",
@@ -663,6 +663,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": null,
+    "limit": "ChatGPT viewer; manual editing requires full app",
+    "how": "MCP molchart.show_document renders ChatGPT widget; manual editing opens full app."
   },
   "plans": [
     {

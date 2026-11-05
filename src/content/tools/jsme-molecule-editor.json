@@ -494,11 +494,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://jsme-editor.github.io/dist/doc.html",
-      "note": "Documented JavaScript embedding into a web-page container.",
-      "shot": {
-        "image": "evidence/jsme-molecule-editor/f-embed.webp",
-        "caption": "JSME editor embedded in a test page with controls."
-      }
+      "note": "Load jsme.nocache.js; construct JSApplet.JSME(containerId, width, height) inside jsmeOnLoad."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -613,6 +609,15 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "script tag"
+    ],
+    "package": "jsme-editor",
+    "limit": "BSD-3-Clause; retain license notices.",
+    "how": "Load jsme.nocache.js; construct JSApplet.JSME(containerId, width, height) inside jsmeOnLoad."
   },
   "plans": [],
   "renderer": {

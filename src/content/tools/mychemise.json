@@ -2,7 +2,7 @@
   "id": "p109",
   "slug": "mychemise",
   "name": "MyChemise",
-  "rank": 120,
+  "rank": 118,
   "tier": "alternative",
   "tierReason": "The documented editor produces printable 2D chemical drawings with text and shapes, although present-day operation remains unverified.",
   "summary": "A legacy Java applet for drawing 2D chemical structures and creating animated reaction presentations.",
@@ -415,10 +415,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1758-2946-3-53/MediaObjects/13321_2011_234_MOESM2_ESM.ZIP",
+      "note": "Requires obsolete Java browser plug-in; redistribution license unverified"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -450,6 +450,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "Java applet"
+    ],
+    "package": null,
+    "limit": "Requires obsolete Java browser plug-in; redistribution license unverified",
+    "how": "Embed Chemise.class from ChemJar.jar using the official <applet> example."
   },
   "plans": [],
   "renderer": {

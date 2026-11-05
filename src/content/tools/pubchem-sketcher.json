@@ -62,6 +62,7 @@
     "desktop": false,
     "web": true
   },
+  "embedding": null,
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

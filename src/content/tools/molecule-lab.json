@@ -481,8 +481,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "No embed documentation; headers alone cannot confirm iframe support."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -589,6 +589,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "No embed documentation; headers alone cannot confirm iframe support."
   },
   "plans": [],
   "renderer": {

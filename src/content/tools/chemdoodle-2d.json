@@ -569,10 +569,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/2d-structure-canvases/sketcher-canvas",
+      "note": "Separate Web Components product; GPLv3 or proprietary license"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -623,6 +623,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "script tag"
+    ],
+    "package": null,
+    "limit": "Separate Web Components product; GPLv3 or proprietary license",
+    "how": "Load ChemDoodleWeb.js and ChemDoodleWeb-uis.js; instantiate ChemDoodle.SketcherCanvas(canvasId,width,height)."
   },
   "plans": [
     {

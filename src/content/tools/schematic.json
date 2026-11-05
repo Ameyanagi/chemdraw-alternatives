@@ -425,8 +425,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/grebenyyk/schematic/blob/main/README.md",
+      "note": "Standalone application; no documented editor embedding route."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -538,6 +538,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "No declared source license.",
+    "how": "Standalone application; no documented editor embedding route."
   },
   "plans": [],
   "renderer": {

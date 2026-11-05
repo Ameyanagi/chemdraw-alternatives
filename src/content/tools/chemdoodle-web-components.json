@@ -513,8 +513,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://web.chemdoodle.com/tutorial/2d-structure-canvases/sketcher-canvas",
-      "note": "Embed SketcherCanvas using JavaScript and the uis extension."
+      "source": "https://web.chemdoodle.com/tutorial/advanced/reactjs-development",
+      "note": "Embed SketcherCanvas directly or through React wrapper; separately load core scripts."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -617,6 +617,15 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "script tag"
+    ],
+    "package": "react-chemdoodle",
+    "limit": "Core GPLv3 or proprietary license; React wrapper MIT.",
+    "how": "Embed SketcherCanvas directly or through React wrapper; separately load core scripts."
   },
   "plans": [],
   "renderer": {

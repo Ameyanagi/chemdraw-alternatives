@@ -461,8 +461,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://app.japality.com/molsketch/i/terms_of_service/",
+      "note": "Mobile app; no supported embedding route located."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -495,6 +495,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Personal, non-commercial use unless separately agreed in writing",
+    "how": "Mobile app; no supported embedding route located."
   },
   "plans": [
     {

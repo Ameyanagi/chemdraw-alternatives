@@ -6,14 +6,14 @@ import Canvas from '../components/Canvas.astro';
 import FilterBar from '../components/FilterBar.astro';
 import Thumb from '../components/Thumb.astro';
 import { href } from '../lib/paths';
-import { downloadSize, featureEngine, firstCommit, historyLabel, featureOf, features, featuresOf, freeFeaturesOf, groups, installedSize, licenseShort, memoryUse, loadTools, mainLanguage, molecules, otherLanguages, planTag, plansLabel, platformNames, proofOf, reliesOn, rendererFeatures, rendererLabel, starsCount, starsDate, thirdPartyLibraries, thirdPartySummary, toolTags, type Tool } from '../lib/tools';
+import { downloadSize, featureEngine, firstCommit, historyLabel, featureOf, features, featuresOf, freeFeaturesOf, groups, installedSize, licenseShort, measuredNote, memoryUse, loadTools, mainLanguage, molecules, otherLanguages, planTag, plansLabel, platformNames, proofOf, reliesOn, rendererFeatures, rendererLabel, starsCount, starsDate, thirdPartyLibraries, thirdPartySummary, toolTags, type Tool } from '../lib/tools';
 
 const tools = (await loadTools()).filter((tool) => tool.tier !== 'related');
 const starting = new Set(['chemdraw', 'reshiki', 'moldraw', 'octet-draw', 'chemdraft', 'ketcher', 'marvin-js']);
 const notPublished = 'Not published';
 const byName = [...tools].sort((a, b) => a.name.localeCompare(b.name));
 interface Fact { label: string; value: (tool: Tool) => string; source?: (tool: Tool) => string | null | undefined; detail?: (tool: Tool) => string | null | undefined }
-const sections: { title: string; rows: Fact[] }[] = [
+const sections: { title: string; note?: string; rows: Fact[] }[] = [
   {
     title: 'How it is built',
     rows: [
@@ -33,6 +33,7 @@ const sections: { title: string; rows: Fact[] }[] = [
   },
   {
     title: 'Price, license, size and memory',
+    note: measuredNote,
     rows: [
       { label: 'Runs on', value: (tool) => platformNames(tool).join(', ') || notPublished },
       { label: 'Price', value: (tool) => tool.price.text, source: (tool) => tool.price.source },
@@ -124,7 +125,7 @@ const sections: { title: string; rows: Fact[] }[] = [
         </tbody>
         {sections.map((section) => (
           <tbody>
-            <tr><th colspan={tools.length + 1} scope="colgroup" class="bg-paper text-lg"><span class="group-title">{section.title}</span></th></tr>
+            <tr><th colspan={tools.length + 1} scope="colgroup" class="bg-paper text-lg"><span class="group-title">{section.title}{section.note && <span class="text-muted mt-1 block max-w-[70ch] text-[0.85rem] leading-snug font-normal whitespace-normal">{section.note}</span>}</span></th></tr>
             {section.rows.map((row) => (
               <tr>
                 <th scope="row" class="bg-paper sticky left-0 z-[5] font-normal">{row.label}</th>
@@ -150,7 +151,7 @@ const sections: { title: string; rows: Fact[] }[] = [
                 <th scope="row" class="bg-paper sticky left-0 z-[5] font-normal" title={feature.test}><a href={href(`features/${feature.id}/`)}>{feature.name}</a></th>
                 {tools.map((tool) => {
                   const value = featureOf(tool, feature.id);
-                  return <td data-tool={tool.slug} data-value={value.status}><Mark feature={value} proof={proofOf(tool, feature.id)} reason thumb plan={planTag(tool, feature.id)} /></td>;
+                  return <td data-tool={tool.slug} data-value={value.status}><Mark feature={value} proof={proofOf(tool, feature.id)} reason thumb plan={planTag(tool, feature.id)} />{feature.id === 'embed' && Boolean(tool.embedding?.methods.length) && <span class="cell-note">{tool.embedding?.methods.join(', ')}{value.status === 'yes' && tool.embedding?.limit && `. ${tool.embedding.limit}`}</span>}</td>;
                 })}
               </tr>
             ))}

@@ -413,10 +413,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/writer/for-developer/extensions/utility/articles/chemstudio-extension-in-zoho-writer",
+      "note": "Zoho Writer only; reusable embedding API unconfirmed"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -449,6 +449,12 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Zoho Writer only; reusable embedding API unconfirmed",
+    "how": "Use ChemStudio's Zoho Writer extension to draw inside Writer."
   },
   "plans": [],
   "renderer": {

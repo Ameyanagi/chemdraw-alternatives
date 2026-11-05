@@ -424,9 +424,9 @@
     },
     "embed": {
       "status": "yes",
-      "evidence": "source",
-      "source": "https://github.com/stefan-hoeck/idris2-cyby-draw/blob/3b838acd30f8a055303588305db90d27d2ae8d93/src/CyBy/Draw.idr#L510-L538",
-      "note": "Exported Idris molWidget and molEdit integrate with browser applications."
+      "evidence": "docs",
+      "source": "https://github.com/stefan-hoeck/idris2-cyby-draw/blob/3b838acd30f8a055303588305db90d27d2ae8d93/app/src/Html.idr#L98-L115",
+      "note": "Use molWidget from cyby-draw; compile to JavaScript and include generated script."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -499,6 +499,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "script tag"
+    ],
+    "package": "cyby-draw",
+    "limit": "Requires Idris2 compilation; BSD-3-Clause",
+    "how": "Use molWidget from cyby-draw; compile to JavaScript and include generated script."
   },
   "plans": [],
   "renderer": {

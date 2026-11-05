@@ -437,8 +437,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://0chem.com/doc/start",
-      "note": "Documents Vue plugin registration and the draw-0chem component."
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw",
+      "note": "Register Vue plugin with app.use(chemDraw); insert <draw-0chem> component."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -540,6 +540,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package"
+    ],
+    "package": "vue-chemdraw",
+    "limit": "Repository GPL-3.0 conflicts with npm ISC metadata.",
+    "how": "Register Vue plugin with app.use(chemDraw); insert <draw-0chem> component."
   },
   "plans": [],
   "renderer": {

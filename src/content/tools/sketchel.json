@@ -489,8 +489,8 @@
     "embed": {
       "status": "partial",
       "evidence": "docs",
-      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/README.md",
-      "note": "Original editor's applet-based web plugin is obsolete."
+      "source": "https://sketchel.sourceforge.net/",
+      "note": "GPL-2.0-or-later; obsolete Java applet"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -586,6 +586,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "Java applet"
+    ],
+    "package": null,
+    "limit": "GPL-2.0-or-later; obsolete Java applet",
+    "how": "Legacy Java applet embeds editor with JavaScript molecule exchange."
   },
   "plans": [],
   "renderer": {

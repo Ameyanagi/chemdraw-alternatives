@@ -453,8 +453,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/README.md#vanilla-html-page-umd-script",
-      "note": null
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/README.md",
+      "note": "Instantiate MoleculeEditor with a div stage; npm or UMD script."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -569,6 +569,15 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "script tag"
+    ],
+    "package": "@butlerov-chemistry/core",
+    "limit": "MIT license.",
+    "how": "Instantiate MoleculeEditor with a div stage; npm or UMD script."
   },
   "plans": [],
   "renderer": {

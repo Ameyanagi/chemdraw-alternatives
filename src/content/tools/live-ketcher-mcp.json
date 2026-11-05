@@ -4,7 +4,7 @@
   "name": "live-ketcher-mcp",
   "rank": 133,
   "tier": "related",
-  "tierReason": "It automates an external Ketcher editor through MCP rather than providing its own publication drawing application, so it is not a standalone ChemDraw alternative.",
+  "tierReason": "It automates an external Ketcher editor through MCP rather than providing its own publication drawing application, so it is not a standalone drawing tool.",
   "summary": "MCP server for AI-assisted editing and automation in a live Ketcher chemical structure editor.",
   "website": "https://github.com/MALeitch/live-ketcher-mcp",
   "repo": "https://github.com/MALeitch/live-ketcher-mcp",
@@ -71,6 +71,7 @@
     "desktop": true,
     "web": false
   },
+  "embedding": null,
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

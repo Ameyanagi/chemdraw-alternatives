@@ -444,11 +444,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://depth-first.com/articles/2010/11/17/chemwriter-2-better-deployment-through-javascript/",
-      "note": "Embed using JavaScript, CSS and an HTML container.",
-      "shot": {
-        "image": "evidence/chemwriter/f-embed.webp",
-        "caption": "Chemical editor embedded in the eMolecules structure search page."
-      },
+      "note": "Load SDK JavaScript and CSS, then instantiate editor in HTML container.",
       "plan": "ChemWriter",
       "planLevel": "paid"
     },
@@ -546,6 +542,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "script tag"
+    ],
+    "package": null,
+    "limit": "Commercial license required for production deployment",
+    "how": "Load SDK JavaScript and CSS, then instantiate editor in HTML container."
   },
   "plans": [
     {

@@ -483,7 +483,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://cheminfo.github.io/openchemlib-js/classes/CanvasEditor.html#constructor",
-      "note": "Create an editor inside a DOM element; Web Component also available."
+      "note": "Instantiate CanvasEditor(element), or registerCustomElement() and add <openchemlib-editor>."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -597,6 +597,15 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "web component"
+    ],
+    "package": "openchemlib",
+    "limit": "BSD-3-Clause",
+    "how": "Instantiate CanvasEditor(element), or registerCustomElement() and add <openchemlib-editor>."
   },
   "plans": [],
   "renderer": {

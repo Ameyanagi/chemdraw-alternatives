@@ -2,7 +2,7 @@
   "id": "p133",
   "slug": "sketchscape",
   "name": "SketchScape",
-  "rank": 50,
+  "rank": 49,
   "tier": "alternative",
   "tierReason": "A standalone 2D editor with structure cleanup, reaction arrows, captions and PNG output can produce simple chemical figures.",
   "summary": "A local browser editor for drawing molecules and reactions, with basic naming and rotatable 3D models.",
@@ -490,8 +490,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/saparicioubu/sketchscape/blob/master/README.md",
+      "note": "Standalone local server; no supported editor embedding documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -566,7 +566,17 @@
       "how": "fixed",
       "note": "Paclitaxel paste unsupported; canvas remains empty."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 542.89,
+      "paclitaxelMb": null,
+      "baselineMb": 462.4,
+      "rssIdleMb": 1069.94,
+      "rssPaclitaxelMb": null,
+      "runs": 3,
+      "processes": 10,
+      "method": "Three-run median; Chromium tree, detached crashpad, local backend phys_footprint sums (MiB); browser-only baseline.",
+      "note": "SMILES paste produced zero atoms/bonds; README advertises typed SMILES; editor provides no SMILES input."
+    },
     "observations": [
       "Default drawing uses pale lines on a near-black canvas.",
       "Clear canvas left earlier computed results and 3D model visible.",
@@ -595,6 +605,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "No license stated",
+    "how": "Standalone local server; no supported editor embedding documented."
   },
   "plans": [],
   "renderer": {

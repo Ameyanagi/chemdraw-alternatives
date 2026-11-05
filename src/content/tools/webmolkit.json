@@ -473,8 +473,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/README.md#simple-embed",
-      "note": null
+      "source": "https://github.com/aclarkxyz/web_molkit#simple-embed",
+      "note": "Import Sketcher or load webmolkit.js; setup(), then render into container."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -584,6 +584,15 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "script tag"
+    ],
+    "package": "webmolkit",
+    "limit": "Apache-2.0",
+    "how": "Import Sketcher or load webmolkit.js; setup(), then render into container."
   },
   "plans": [],
   "renderer": {

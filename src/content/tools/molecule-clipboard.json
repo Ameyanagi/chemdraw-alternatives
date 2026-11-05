@@ -2,7 +2,7 @@
   "id": "p87",
   "slug": "molecule-clipboard",
   "name": "Molecule Clipboard",
-  "rank": 48,
+  "rank": 47,
   "tier": "alternative",
   "tierReason": "Its JSME structure-input editor and RDKit inspector export individual structures rather than compose publication drawing documents.",
   "summary": "Browser tool for drawing, editing, inspecting, and sharing individual molecules.",
@@ -485,8 +485,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard#usage",
+      "note": "Standalone HTML app; no documented embedding interface."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -600,6 +600,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Standalone HTML app; no documented embedding interface."
   },
   "plans": [],
   "renderer": {

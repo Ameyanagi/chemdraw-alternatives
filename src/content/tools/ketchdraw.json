@@ -507,10 +507,10 @@
       "note": null
     },
     "embed": {
-      "status": "yes",
-      "evidence": "source",
+      "status": "partial",
+      "evidence": "docs",
       "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/ketcher/iframe.html",
-      "note": "Bundled iframe example covers the Ketcher editor."
+      "note": "Bundled Ketcher only (Apache-2.0); full wrapper embedding undocumented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -630,6 +630,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": null,
+    "limit": "Bundled Ketcher only (Apache-2.0); full wrapper embedding undocumented.",
+    "how": "Self-host bundled ketcher/index.html iframe; use same-origin contentWindow.ketcher API."
   },
   "plans": [],
   "renderer": {

@@ -473,8 +473,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md#1-native-file-embeds-the-easy-way",
-      "note": "Obsidian notes and canvases; opens Ketcher for editing."
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/71d2fa4ccb9407ab9d8d5ca68727a28d78df1d82/README.md#4-draw-from-scratch",
+      "note": "Install Obsidian plugin; open its integrated Ketcher drawing modal."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -529,6 +529,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "desktop widget"
+    ],
+    "package": null,
+    "limit": "MIT; desktop Obsidian only.",
+    "how": "Install Obsidian plugin; open its integrated Ketcher drawing modal."
   },
   "plans": [],
   "renderer": {

@@ -462,7 +462,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
-      "note": "Iframe integration; embedded=true hides file loading and saving."
+      "note": "Iframe editor exposes getMolRxnfile()/setMolRxnfile(); embedded=true hides load/save controls."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -564,6 +564,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": null,
+    "limit": "CC-BY-NC-SA-3.0; commercial use requires an individual license",
+    "how": "Iframe editor exposes getMolRxnfile()/setMolRxnfile(); embedded=true hides load/save controls."
   },
   "plans": [],
   "renderer": {

@@ -469,8 +469,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/GTeninbaum/RadSketch",
+      "note": "Standalone app; no documented embedding interface found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -582,6 +582,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "No software license declared",
+    "how": "Standalone app; no documented embedding interface found."
   },
   "plans": [],
   "renderer": {

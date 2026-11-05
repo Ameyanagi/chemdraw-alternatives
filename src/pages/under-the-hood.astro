@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Mark from '../components/Mark.astro';
 import { href } from '../lib/paths';
-import { downloadSize, featureOf, installedSize, loadTools, memoryUse, mainLanguage, otherLanguages, portedLabel, proofOf, reliesOn, testedVersion, type Tool } from '../lib/tools';
+import { downloadSize, featureOf, installedSize, loadTools, measuredNote, memoryUse, mainLanguage, otherLanguages, portedLabel, proofOf, reliesOn, testedVersion, type Tool } from '../lib/tools';
 
 const tools = (await loadTools()).filter((tool) => tool.tier !== 'related');
 const notPublished = 'Not published';
@@ -11,7 +11,7 @@ const startup = (tool: Tool) => {
   return ms ? `${(ms / 1000).toFixed(1)} s` : 'Not measured';
 };
 const apis = [['python-api', 'Python'], ['ts-api', 'JS or TS'], ['cli', 'CLI'], ['mcp-agents', 'AI agents']];
-const embedding = [['embed', 'Embed in your own app'], ['plugins', 'Plugins'], ['office', 'Editable in Office']];
+const extending = [['plugins', 'Plugins'], ['office', 'Editable in Office']];
 const unknown = tools.filter((tool) => reliesOn(tool) === 'Not established').length;
 const users = new Map<string, { tool: Tool; ported: boolean }[]>();
 for (const tool of tools) {
@@ -46,6 +46,7 @@ const views = [['built', 'Built with'], ['size', 'Size and speed'], ['api', 'API
       <legend class="sr-only">Choose what the table shows</legend>
       {views.map(([id, label], index) => <label class="chip"><input type="radio" name="view" value={id} checked={index === 0} />{label}</label>)}
     </fieldset>
+    <p class="text-muted mb-4 max-w-[70ch] text-[0.95rem]" id="size-note">{measuredNote}</p>
     <div class="table-wrap max-h-[85vh] overflow-y-auto" tabindex="0" role="region" aria-label="Technical comparison table">
       <table class="data-table" id="hood" data-show="built">
         <thead>
@@ -55,7 +56,8 @@ const views = [['built', 'Built with'], ['size', 'Size and speed'], ['api', 'API
             <th scope="col" data-in="built">Relies on</th><th scope="col" data-in="built">Main language</th><th scope="col" data-in="built">Other languages</th><th scope="col" data-in="built">Draws with</th>
             <th scope="col" data-in="size">Download</th><th scope="col" data-in="size">Installed</th><th scope="col" data-in="size">Startup</th><th scope="col" data-in="size">Memory at idle</th><th scope="col" data-in="size">Memory with paclitaxel</th>
             {apis.map(([, label]) => <th scope="col" data-in="api">{label}</th>)}
-            {embedding.map(([, label]) => <th scope="col" data-in="embed">{label}</th>)}
+            <th scope="col" data-in="embed">Embed in your own app</th><th scope="col" data-in="embed">How</th><th scope="col" data-in="embed">Limit</th>
+            {extending.map(([, label]) => <th scope="col" data-in="embed">{label}</th>)}
           </tr>
         </thead>
         <tbody>
@@ -73,7 +75,10 @@ const views = [['built', 'Built with'], ['size', 'Size and speed'], ['api', 'API
               <td class="min-w-32" data-in="size">{memoryUse(tool, 'idleMb')}</td>
               <td class="min-w-32" data-in="size">{memoryUse(tool, 'paclitaxelMb')}</td>
               {apis.map(([id]) => <td data-in="api"><Mark feature={featureOf(tool, id)} proof={proofOf(tool, id)} reason thumb /></td>)}
-              {embedding.map(([id]) => <td data-in="embed"><Mark feature={featureOf(tool, id)} proof={proofOf(tool, id)} reason thumb /></td>)}
+              <td data-in="embed"><Mark feature={featureOf(tool, 'embed')} proof={proofOf(tool, 'embed')} thumb /></td>
+              <td class="min-w-52" data-in="embed">{tool.embedding?.methods.join(', ') || tool.embedding?.how || 'Not confirmed'}{tool.embedding?.package && <code class="cell-note">{tool.embedding.package}</code>}</td>
+              <td class="min-w-52" data-in="embed">{tool.embedding?.limit ?? 'None found'}</td>
+              {extending.map(([id]) => <td data-in="embed"><Mark feature={featureOf(tool, id)} proof={proofOf(tool, id)} reason thumb /></td>)}
             </tr>
           ))}
         </tbody>
@@ -82,6 +87,8 @@ const views = [['built', 'Built with'], ['size', 'Size and speed'], ['api', 'API
   </section>
 </Layout>
 <style is:global>
+  #size-note { display: none; }
+  section:has(#hood[data-show='size']) #size-note { display: block; }
   #hood[data-show='built'] [data-in]:not([data-in='built']),
   #hood[data-show='size'] [data-in]:not([data-in='size']),
   #hood[data-show='api'] [data-in]:not([data-in='api']),

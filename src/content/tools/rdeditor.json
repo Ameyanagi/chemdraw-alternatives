@@ -466,7 +466,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.cheminformania.com/rdeditor-an-open-source-molecular-editor-based-using-python-pyside2-and-rdkit/",
-      "note": "Reuse MolEditWidget as a PySide application's central widget."
+      "note": "Import rdeditor.molEditWidget.MolEditWidget; add to PySide6 layout and connect molChanged."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -569,6 +569,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "desktop widget"
+    ],
+    "package": "rdeditor",
+    "limit": "LGPL-3.0; requires PySide6 desktop GUI.",
+    "how": "Import rdeditor.molEditWidget.MolEditWidget; add to PySide6 layout and connect molChanged."
   },
   "plans": [],
   "renderer": {

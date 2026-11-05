@@ -498,8 +498,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://vibyverse.com/vibe-sketcher/docs/python_api.html",
+      "note": "SDK edits documents; editor embedding is unverified."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -571,7 +571,17 @@
       "how": "fixed",
       "note": "Fixed dark interface; drawing canvas stays white."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 410.83,
+      "paclitaxelMb": 453.1,
+      "baselineMb": null,
+      "rssIdleMb": 752.83,
+      "rssPaclitaxelMb": 808.61,
+      "runs": 3,
+      "processes": 5,
+      "method": "Three-run medians; owned Electron/Python tree phys_footprint sums; SMILES UI import; 10-second waits; MiB.",
+      "note": "Includes main, renderer, GPU, network helper, bundled Python; CDP UI automation."
+    },
     "observations": [
       "SMILES imports produced automatic layouts without cleanup.",
       "Canvas heteroatoms are colored; default SVG output is monochrome.",
@@ -604,6 +614,12 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "MPL-2.0",
+    "how": "SDK edits documents; editor embedding is unverified."
   },
   "plans": [],
   "renderer": {

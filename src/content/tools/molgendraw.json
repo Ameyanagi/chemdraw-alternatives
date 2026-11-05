@@ -451,8 +451,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md",
+      "note": "Standalone Windows executable; no embedding interface documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -496,6 +496,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Proprietary freeware; all rights reserved",
+    "how": "Standalone Windows executable; no embedding interface documented."
   },
   "plans": [],
   "renderer": {

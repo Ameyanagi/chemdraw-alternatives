@@ -514,8 +514,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/developers.md",
+      "note": "No documented embed API; hosted framing support remains unconfirmed."
     },
     "ai-assistant": {
       "status": "yes",
@@ -639,6 +639,12 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-3.0-or-later",
+    "how": "No documented embed API; hosted framing support remains unconfirmed."
   },
   "plans": [],
   "renderer": {

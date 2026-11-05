@@ -419,8 +419,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://apps.apple.com/us/app/chemworks/id1495565603?mt=12",
+      "note": "No supported editor embedding mechanism documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -453,6 +453,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "$9.99 standalone macOS application; embedding terms unconfirmed.",
+    "how": "No supported editor embedding mechanism documented."
   },
   "plans": [
     {

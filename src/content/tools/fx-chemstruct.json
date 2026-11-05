@@ -455,8 +455,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://www.efofex.com/documentation/classic_mode.htm",
+      "note": "OLE objects launch separate editor; in-place embedding unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -497,6 +497,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "OLE objects launch separate editor; in-place embedding unconfirmed."
   },
   "plans": [
     {

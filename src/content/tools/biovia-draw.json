@@ -507,10 +507,10 @@
       "note": "Documented .NET API supports custom C# and VB add-ins."
     },
     "embed": {
-      "status": "yes",
+      "status": "partial",
       "evidence": "docs",
-      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; Java/.NET integration; web integration requires desktop DrawBridge.",
+      "source": "https://manualzz.com/doc/33298567/biovia-2016-draw-developers-guide?lang=en",
+      "note": "Proprietary; embedded viewer only; editing opens separate desktop Draw.",
       "plan": "Enterprise Edition",
       "planLevel": "paid"
     },
@@ -555,6 +555,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "desktop widget"
+    ],
+    "package": null,
+    "limit": "Proprietary; embedded viewer only; editing opens separate desktop Draw.",
+    "how": "Legacy Renderer/Renditor embeds in .NET forms; Java uses JMolRendererCom."
   },
   "plans": [
     {

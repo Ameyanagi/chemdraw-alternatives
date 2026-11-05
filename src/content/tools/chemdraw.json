@@ -523,8 +523,8 @@
     "embed": {
       "status": "partial",
       "evidence": "docs",
-      "source": "https://revvitysignals.com/sites/default/files/2024-05/rs-flyer-chemdraw-javascript-sketcher.pdf",
-      "note": "Embedding uses separately licensed ChemDraw JS, outside desktop editions."
+      "source": "https://github.com/Revvity/ChemDraw-JS-Public-Examples/blob/main/vanilla-javascript-demo/index.html",
+      "note": "Separate ChemDraw JS subscription; vendor-supplied tarball required"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -629,6 +629,15 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "script tag"
+    ],
+    "package": "@revvity-signals/chemdraw-js",
+    "limit": "Separate ChemDraw JS subscription; vendor-supplied tarball required",
+    "how": "Load chemdrawweb.js, then call RevvitySignals.ChemDrawJS.attach({license, editor:{element}})."
   },
   "plans": [
     {

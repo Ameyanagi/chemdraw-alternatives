@@ -463,10 +463,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/dashboard/chemdraw",
+      "note": "CSP frame-ancestors self and X-Frame-Options SAMEORIGIN block external frames."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -499,6 +499,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "External framing blocked by CSP and X-Frame-Options.",
+    "how": "CSP frame-ancestors self and X-Frame-Options SAMEORIGIN block external frames."
   },
   "plans": [
     {

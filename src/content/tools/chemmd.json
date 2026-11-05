@@ -443,8 +443,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/README.md",
+      "note": "Standalone browser app; no supported embedding interface found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -545,6 +545,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "All rights reserved; reuse requires written permission.",
+    "how": "Standalone browser app; no supported embedding interface found."
   },
   "plans": [],
   "renderer": {

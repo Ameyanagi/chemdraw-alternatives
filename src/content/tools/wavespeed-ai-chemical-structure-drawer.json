@@ -483,8 +483,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer",
+      "note": "No documented editor embed; headers alone do not confirm framing support."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -593,6 +593,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "No documented editor embed; headers alone do not confirm framing support."
   },
   "plans": [],
   "renderer": {

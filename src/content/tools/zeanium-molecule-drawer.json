@@ -487,10 +487,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://zeanium.net/draw/",
+      "note": "Hosted editor blocks framing; no documented SDK found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -592,6 +592,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "X-Frame-Options: DENY",
+    "how": "Hosted editor blocks framing; no documented SDK found."
   },
   "plans": [],
   "renderer": {

@@ -473,8 +473,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://indrawforweb.atomdeep.com/src/app-iframe-B6rDldjV.js",
+      "note": "Internal iframe bridge exists; public embedding support remains unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -537,6 +537,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Internal iframe bridge exists; public embedding support remains unconfirmed."
   },
   "plans": [
     {

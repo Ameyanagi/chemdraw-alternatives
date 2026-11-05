@@ -2,7 +2,7 @@
   "id": "p47",
   "slug": "schrodinger-sketcher",
   "name": "Schrödinger Sketcher",
-  "rank": 39,
+  "rank": 40,
   "tier": "embeddable",
   "tierReason": "Its Qt widget and React wrapper provide chemical structure input for larger applications.",
   "summary": "An open-source editor for drawing molecules, reactions, and biomolecular sequences in desktop and web applications.",
@@ -508,9 +508,9 @@
     },
     "embed": {
       "status": "yes",
-      "evidence": "source",
-      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/wasm/package/src/Sketcher.tsx#L194",
-      "note": "React iframe component and native Qt widget."
+      "evidence": "docs",
+      "source": "https://github.com/schrodinger/sketcher/tree/main/wasm/package",
+      "note": "React iframe wrapper requires self-hosted WASM assets; native Qt SketcherWidget available."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -614,6 +614,16 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "iframe",
+      "desktop widget"
+    ],
+    "package": "@schrodinger/sketcher",
+    "limit": "BSD-3-Clause; npm package targets authenticated GitHub Packages.",
+    "how": "React iframe wrapper requires self-hosted WASM assets; native Qt SketcherWidget available."
   },
   "plans": [],
   "renderer": {

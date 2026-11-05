@@ -674,7 +674,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.moldraw.com/docs/developers/how-to-embed-moldraw-and-interactive-demos/",
-      "note": "Documented iframe embeds the editor at /embed.",
+      "note": "Embed https://www.moldraw.com/embed in an iframe; no account required.",
       "plan": "Free",
       "planLevel": "free"
     },
@@ -802,6 +802,14 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": null,
+    "limit": "Only /embed supports cross-site framing.",
+    "how": "Embed https://www.moldraw.com/embed in an iframe; no account required."
   },
   "plans": [
     {

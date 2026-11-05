@@ -421,8 +421,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/hessammehr/molsketch-cljs#local-development",
+      "note": "Standalone ClojureScript app; no documented embedding interface."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -534,6 +534,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Standalone ClojureScript app; no documented embedding interface."
   },
   "plans": [],
   "renderer": {

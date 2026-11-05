@@ -536,7 +536,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_how-to-embed.html",
-      "note": "Documented iframe embedding and helper JavaScript API.",
+      "note": "Load editor.html in an iframe; control through the JavaScript helper API.",
       "plan": "Marvin JS",
       "planLevel": "paid"
     },
@@ -584,6 +584,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": null,
+    "limit": "Commercial license required; new sales end December 2026.",
+    "how": "Load editor.html in an iframe; control through the JavaScript helper API."
   },
   "plans": [
     {

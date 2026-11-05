@@ -485,8 +485,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html",
-      "note": "JavaScript constructor embeds the editor inside an HTML DIV.",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/",
+      "note": "Load SDK scripts; JSDraw2.Editor converts an HTML DIV into an editor.",
       "plan": "Education",
       "planLevel": "free"
     },
@@ -521,6 +521,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "script tag"
+    ],
+    "package": null,
+    "limit": "Commercial license required; free for education.",
+    "how": "Load SDK scripts; JSDraw2.Editor converts an HTML DIV into an editor."
   },
   "plans": [
     {

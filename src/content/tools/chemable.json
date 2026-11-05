@@ -466,8 +466,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/package.json",
+      "note": "Standalone Electron app; no embeddable editor library confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -572,6 +572,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "PolyForm Noncommercial license.",
+    "how": "Standalone Electron app; no embeddable editor library confirmed."
   },
   "plans": [],
   "renderer": {

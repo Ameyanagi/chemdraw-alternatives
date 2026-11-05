@@ -529,8 +529,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "No documented embedding route; absent framing restrictions do not confirm support."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -636,6 +636,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "No documented embedding route; absent framing restrictions do not confirm support."
   },
   "plans": [],
   "renderer": {

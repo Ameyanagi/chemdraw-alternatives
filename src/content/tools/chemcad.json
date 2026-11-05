@@ -454,8 +454,8 @@
     "embed": {
       "status": "partial",
       "evidence": "docs",
-      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#L29-L31",
-      "note": "ImGui hosting stated; integration procedure is not documented."
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#L29-L50",
+      "note": "README says an ImGui app can host it, with no steps. C++20 source build."
     },
     "ai-assistant": {
       "status": "yes",
@@ -506,6 +506,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "desktop library"
+    ],
+    "package": null,
+    "limit": "README says an ImGui app can host it, with no steps. C++20 source build.",
+    "how": "Link chemcad_ui; call drawCanvas(AppState&) within the host's ImGui frame."
   },
   "plans": [],
   "renderer": {

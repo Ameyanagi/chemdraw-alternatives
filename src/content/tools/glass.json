@@ -423,10 +423,10 @@
       "note": null
     },
     "embed": {
-      "status": "yes",
+      "status": "partial",
       "evidence": "docs",
-      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/README.md#to-get-started",
-      "note": "Instantiate Glass inside a supplied DOM element."
+      "source": "https://github.com/joe-glass/glass/blob/9fcbb3f606f4c53c75117d3b32ae3eccc46bb83e/README.md#to-get-started",
+      "note": "Current main has syntax error; pin earlier revision."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -537,6 +537,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "script tag"
+    ],
+    "package": null,
+    "limit": "Current main has syntax error; pin earlier revision.",
+    "how": "Load scripts, then instantiate Glass in a DOM container."
   },
   "plans": [],
   "renderer": {

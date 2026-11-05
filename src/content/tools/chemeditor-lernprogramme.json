@@ -423,10 +423,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemie-lernprogramme.de/mebisvorlagen_chemie/daten/media/chemeditor_singlefile/embed.html",
+      "note": "Paste supplied data-URI iframe snippet into Moodle's HTML editor."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -534,6 +534,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": null,
+    "limit": "GPLv3 code; supplied templates also labeled CC BY-NC 4.0.",
+    "how": "Paste supplied data-URI iframe snippet into Moodle's HTML editor."
   },
   "plans": [],
   "renderer": {

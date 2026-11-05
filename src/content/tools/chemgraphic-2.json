@@ -441,8 +441,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://simpleappli.com/product_chemgraphic2",
+      "note": "No editor SDK or embedding method documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -476,6 +476,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Proprietary subscription; embedding terms undisclosed",
+    "how": "No editor SDK or embedding method documented."
   },
   "plans": [
     {

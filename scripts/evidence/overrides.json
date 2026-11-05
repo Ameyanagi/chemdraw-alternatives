@@ -82,7 +82,10 @@
         "language": "JavaScript",
         "role": "Browser bindings and Office add-in"
       }
-    ]
+    ],
+    "embed": {
+      "limit": "Browser preview. One editor per page, or use iframes. Printing, assistant and Office need the desktop app."
+    }
   },
   "p112": {
     "builtOn": {
@@ -173,5 +176,22 @@
       "Custom noncommercial license. Bundled components, including GPL-licensed code, carry their own terms.",
       "The sketcher saves molecules, not complete schemes."
     ]
+  },
+  "p10": {
+    "embed": {
+      "status": "unknown",
+      "methods": [],
+      "limit": null,
+      "note": "Office OLE objects only, listed under Editable in Office. No developer route found."
+    }
+  },
+  "p80": {
+    "embed": {
+      "status": "partial",
+      "limit": "README says an ImGui app can host it, with no steps. C++20 source build."
+    }
+  },
+  "p58": {
+    "tierReason": "It automates an external Ketcher editor through MCP rather than providing its own publication drawing application, so it is not a standalone drawing tool."
   }
 }

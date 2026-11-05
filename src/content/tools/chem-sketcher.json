@@ -411,8 +411,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Standalone HTML download; no documented embedding API or component found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -462,6 +462,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Redistribution license unspecified.",
+    "how": "Standalone HTML download; no documented embedding API or component found."
   },
   "plans": [],
   "renderer": {

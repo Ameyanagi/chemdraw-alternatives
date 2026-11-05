@@ -503,8 +503,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/jgassens/ChemDraft/blob/main/packages/editor-shell/package.json",
+      "note": "No documented embedding; editor-shell is an unpublished internal workspace package."
     },
     "ai-assistant": {
       "status": "yes",
@@ -615,6 +615,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "No documented embedding; editor-shell is an unpublished internal workspace package."
   },
   "plans": [],
   "renderer": {

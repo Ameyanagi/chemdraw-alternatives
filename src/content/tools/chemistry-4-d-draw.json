@@ -429,8 +429,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://www.ddmcorp.com/goods/struct/4ddraw.html",
+      "note": "OLE reopens desktop app; supported in-host editor embedding unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -468,6 +468,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "OLE reopens desktop app; supported in-host editor embedding unconfirmed."
   },
   "plans": [
     {

@@ -2,7 +2,7 @@
   "id": "p77",
   "slug": "chemsema",
   "name": "ChemSema",
-  "rank": 51,
+  "rank": 50,
   "tier": "alternative",
   "tierReason": "Its standalone editor creates editable 2D chemical figures and reaction schemes with vector export and Office integration.",
   "summary": "Chemical drawing editor for structures, reaction schemes, ChemDraw file exchange, and editable Office documents.",
@@ -466,8 +466,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/windows-desktop-office-architecture.md#L415-L420",
+      "note": "Office OLE opens a separate editor; no embedded editor documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -588,6 +588,12 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Office OLE opens a separate editor; no embedded editor documented."
   },
   "plans": [],
   "renderer": {

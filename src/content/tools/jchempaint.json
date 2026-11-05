@@ -2,7 +2,7 @@
   "id": "p21",
   "slug": "jchempaint",
   "name": "JChemPaint",
-  "rank": 46,
+  "rank": 45,
   "tier": "alternative",
   "tierReason": "The standalone editor creates 2D structures and reactions with vector SVG and PDF export for publication figures.",
   "summary": "A Java desktop editor for drawing and exporting two-dimensional chemical structures and reactions.",
@@ -452,9 +452,9 @@
     },
     "embed": {
       "status": "yes",
-      "evidence": "source",
-      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/JChemPaintPanel.java#L79",
-      "note": "Reusable Java Swing editor panel with documented constructors."
+      "evidence": "docs",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/master/core/src/main/java/org/openscience/jchempaint/JChemPaintMenuBar.java",
+      "note": "Add JChemPaintPanel(IChemModel) to Swing containers; getMenuForEmbedded supplies menus."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -529,7 +529,17 @@
       "how": "follows system",
       "note": "Dark chrome observed; molecule entry failed, so dark capture remains unverified."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 165.58,
+      "paclitaxelMb": 397.06,
+      "baselineMb": null,
+      "rssIdleMb": 246.5,
+      "rssPaclitaxelMb": 377.55,
+      "runs": 1,
+      "processes": 1,
+      "method": "macOS footprint phys_footprint summed over owned process tree; 10-second idle and post-render waits.",
+      "note": "One manual GUI run; Direct Entry SMILES; focus workaround opened dialogs; MiB."
+    },
     "observations": [
       "Caffeine paste auto-layout shows aromatic ring bonds as single lines.",
       "Default heteroatoms are colored; hydrogens are largely implicit.",
@@ -562,6 +572,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "desktop widget"
+    ],
+    "package": null,
+    "limit": "Java/Swing only; LGPL-2.1-or-later obligations.",
+    "how": "Add JChemPaintPanel(IChemModel) to Swing containers; getMenuForEmbedded supplies menus."
   },
   "plans": [],
   "renderer": {

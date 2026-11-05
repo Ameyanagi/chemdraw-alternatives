@@ -2,7 +2,7 @@
   "id": "p75",
   "slug": "molglidex",
   "name": "MolGLideX",
-  "rank": 49,
+  "rank": 48,
   "tier": "alternative",
   "tierReason": "It draws standalone 2D chemical figures and exports vectors, but remains an explicitly unstable prototype.",
   "summary": "An experimental desktop editor for drawing 2D chemical structures and reaction mechanisms.",
@@ -441,8 +441,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md",
+      "note": "Desktop application; no supported embedding interface documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -540,6 +540,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-2.0; experimental prototype",
+    "how": "Desktop application; no supported embedding interface documented."
   },
   "plans": [],
   "renderer": {

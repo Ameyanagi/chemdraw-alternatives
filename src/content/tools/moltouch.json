@@ -445,8 +445,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/index.html",
+      "note": "No embedding documentation; hosted framing headers do not block embedding."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -548,6 +548,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "License grant unclear",
+    "how": "No embedding documentation; hosted framing headers do not block embedding."
   },
   "plans": [],
   "renderer": {

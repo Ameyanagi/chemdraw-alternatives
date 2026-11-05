@@ -411,8 +411,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://play.google.com/store/apps/details?id=io.github.atomforgeapp.structo",
+      "note": "Android app; no editor embedding interface documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -445,6 +445,12 @@
   "appKind": {
     "desktop": false,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Android app; no editor embedding interface documented."
   },
   "plans": [],
   "renderer": {

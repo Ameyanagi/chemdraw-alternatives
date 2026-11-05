@@ -443,8 +443,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/main/docs/FERRUM_API_CONTRACT.md#python-boundary",
+      "note": "Public Python API handles documents; Qt editor bridge is private."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -541,6 +541,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "AGPL-3.0-only editor; LGPL-3.0-only engine",
+    "how": "Public Python API handles documents; Qt editor bridge is private."
   },
   "plans": [],
   "renderer": {

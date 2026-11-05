@@ -71,6 +71,7 @@
     "desktop": true,
     "web": false
   },
+  "embedding": null,
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

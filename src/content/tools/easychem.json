@@ -413,8 +413,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://sourceforge.net/p/easychem/code/HEAD/tree/",
+      "note": "Standalone GTK editor; no reusable editor API confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -453,6 +453,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-2.0-or-later",
+    "how": "Standalone GTK editor; no reusable editor API confirmed."
   },
   "plans": [],
   "renderer": {

@@ -426,7 +426,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/README",
-      "note": "HTML and JavaScript example embeds the editor."
+      "note": "Load kemia.js; instantiate kemia.controller.ReactionEditor and register editing plugins."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -539,6 +539,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "script tag"
+    ],
+    "package": null,
+    "limit": "Apache-2.0; pre-alpha",
+    "how": "Load kemia.js; instantiate kemia.controller.ReactionEditor and register editing plugins."
   },
   "plans": [],
   "renderer": {

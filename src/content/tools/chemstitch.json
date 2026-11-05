@@ -463,10 +463,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://app.chemstitch.ai/",
+      "note": "Hosted app blocks framing; no supported editor embedding package documented."
     },
     "ai-assistant": {
       "status": "yes",
@@ -523,6 +523,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "X-Frame-Options DENY",
+    "how": "Hosted app blocks framing; no supported editor embedding package documented."
   },
   "plans": [
     {

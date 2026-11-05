@@ -487,10 +487,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://molsketch.net/chemistry/structure-editor?lang=en",
+      "note": "No supported embedding route found; hosted editor blocks external iframes."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -601,6 +601,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Cross-origin framing blocked by X-Frame-Options: SAMEORIGIN.",
+    "how": "No supported embedding route found; hosted editor blocks external iframes."
   },
   "plans": [],
   "renderer": {

@@ -425,8 +425,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://github.com/chemistry/molpad/blob/90b4c5cb8bf1f75cf18560e4b228f7449ec957b3/README.md#usage",
-      "note": "React component with a documented integration example."
+      "source": "https://github.com/chemistry/molpad/blob/master/README.md#usage",
+      "note": "Render MolPad React component; ref handles import and export."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -540,6 +540,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package"
+    ],
+    "package": "@chemistry/molpad",
+    "limit": null,
+    "how": "Render MolPad React component; ref handles import and export."
   },
   "plans": [],
   "renderer": {

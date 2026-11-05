@@ -423,8 +423,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://www.chemograph.de/chemographplus.html",
+      "note": "Word OLE objects documented; embedded editor operation remains unverified."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -457,6 +457,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Word OLE objects documented; embedded editor operation remains unverified."
   },
   "plans": [
     {

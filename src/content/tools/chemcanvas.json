@@ -469,8 +469,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/ksharindam/chemcanvas/blob/main/README.md",
+      "note": "Standalone PyQt application; no editor integration API documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -573,6 +573,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-3.0-or-later copyleft",
+    "how": "Standalone PyQt application; no editor integration API documented."
   },
   "plans": [],
   "renderer": {

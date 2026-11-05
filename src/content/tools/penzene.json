@@ -521,8 +521,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/JamesOBrien2/penzene/blob/main/docs/tutorials/jupyter.md",
+      "note": "Python renders static SVG; no embeddable editor widget documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -633,6 +633,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-3.0-or-later copyleft",
+    "how": "Python renders static SVG; no embeddable editor widget documented."
   },
   "plans": [],
   "renderer": {

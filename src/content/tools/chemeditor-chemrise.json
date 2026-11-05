@@ -489,8 +489,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://chemrise.ru/chemeditor/help",
+      "note": "Hosted editor available; external embedding support unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -596,6 +596,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Hosted editor available; external embedding support unconfirmed."
   },
   "plans": [],
   "renderer": {

@@ -439,10 +439,10 @@
       "note": null
     },
     "embed": {
-      "status": "partial",
+      "status": "no",
       "evidence": "docs",
       "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
-      "note": "Applet integration opens a separate window instead of an inline editor."
+      "note": "Applet opens separate window; no inline integration supported"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -538,6 +538,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "Java applet"
+    ],
+    "package": null,
+    "limit": "GPL-2.0-or-later",
+    "how": "Applet opens separate window; no inline integration supported"
   },
   "plans": [],
   "renderer": {

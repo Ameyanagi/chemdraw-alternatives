@@ -176,6 +176,13 @@ test('Features locked behind a plan are labelled with that plan', async () => {
   assert(compare.includes('class="plan-tag plan-paid"') && compare.includes('data-free='));
 });
 
+test('Measured values say they come from one machine and are not guaranteed', async () => {
+  for (const page of ['compare', 'under-the-hood', 'how-we-test']) {
+    const html = await fs.readFile(path.join(root, page, 'index.html'), 'utf8');
+    assert(html.includes('They are not guaranteed values'), page);
+  }
+});
+
 test('Listing order is ChemDraw, then ReShiki', () => {
   assert.deepEqual(tools.slice(0, 2).map((tool) => tool.slug), ['chemdraw', 'reshiki']);
 });

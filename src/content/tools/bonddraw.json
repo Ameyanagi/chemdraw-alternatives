@@ -430,8 +430,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint",
+      "note": "Standalone HarmonyOS application; no supported editor embedding interface found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -471,6 +471,12 @@
   "appKind": {
     "desktop": false,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "License conflict: manifest LGPL-2.1-or-later, documentation Apache-2.0.",
+    "how": "Standalone HarmonyOS application; no supported editor embedding interface found."
   },
   "plans": [],
   "renderer": {

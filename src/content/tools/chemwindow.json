@@ -499,8 +499,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://sciencesolutions.wiley.com/wp-content/uploads/2026/08/95375-Wiley_KnowItAll_Software_ChemWindow_Edition_Brochure.pdf#page=5",
+      "note": "Office OLE objects only, listed under Editable in Office. No developer route found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -542,6 +542,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Office OLE objects only, listed under Editable in Office. No developer route found."
   },
   "plans": [
     {

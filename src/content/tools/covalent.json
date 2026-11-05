@@ -503,10 +503,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://chempirical.com/covalent/",
+      "note": "CSP frame-ancestors 'self' and X-Frame-Options SAMEORIGIN block external framing."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -608,6 +608,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "CSP frame-ancestors 'self' and X-Frame-Options SAMEORIGIN block external framing."
   },
   "plans": [],
   "renderer": {

@@ -517,10 +517,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/developers/how-to-embed-moldraw-and-interactive-demos/",
+      "note": "Embed https://www.moldraw.com/embed in an iframe; use height=\"640\" and width=\"100%\"."
     },
     "ai-assistant": {
       "status": "yes",
@@ -555,6 +555,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": null,
+    "limit": "Free hosted editor; only /embed permits cross-site framing.",
+    "how": "Embed https://www.moldraw.com/embed in an iframe; use height=\"640\" and width=\"100%\"."
   },
   "plans": [
     {

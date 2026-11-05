@@ -433,8 +433,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/README/",
+      "note": "GTK executable documented; no supported embeddable editor interface confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -475,6 +475,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-2.0-or-later",
+    "how": "GTK executable documented; no supported embeddable editor interface confirmed."
   },
   "plans": [],
   "renderer": {

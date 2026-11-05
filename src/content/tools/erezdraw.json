@@ -504,8 +504,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/web/server.py#L20-L26",
+      "note": "Self-hosted web editor; no supported editor embedding interface confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -605,6 +605,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-3.0-or-later; cross-origin framing blocked",
+    "how": "Self-hosted web editor; no supported editor embedding interface confirmed."
   },
   "plans": [],
   "renderer": {

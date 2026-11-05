@@ -411,8 +411,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://www.alvascience.com/alvasketcher/",
+      "note": "No documented editor embedding API, SDK, or package found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -466,6 +466,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "No documented editor embedding API, SDK, or package found."
   },
   "plans": [],
   "renderer": {

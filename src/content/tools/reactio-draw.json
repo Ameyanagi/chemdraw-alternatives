@@ -561,8 +561,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#1-put-the-editor-on-the-page",
-      "note": null
+      "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/EMBEDDING.md#1-put-the-editor-on-the-page",
+      "note": "Load web/index.html?embed in an iframe; exchange structures through postMessage."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -688,6 +688,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": null,
+    "limit": "AGPL-3.0-or-later",
+    "how": "Load web/index.html?embed in an iframe; exchange structures through postMessage."
   },
   "plans": [],
   "renderer": {

@@ -544,10 +544,10 @@
       "note": "Local modules add modes using the documented registerMode function."
     },
     "embed": {
-      "status": "yes",
-      "evidence": "source",
+      "status": "partial",
+      "evidence": "docs",
       "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/ketcher/iframe.html",
-      "note": "Bundled Ketcher iframe example; complete wrapper integration is undocumented."
+      "note": "Bundled Ketcher only (Apache-2.0); full wrapper embedding undocumented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -672,6 +672,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": null,
+    "limit": "Bundled Ketcher only (Apache-2.0); full wrapper embedding undocumented.",
+    "how": "Self-host bundled ketcher/index.html iframe; use same-origin contentWindow.ketcher API."
   },
   "plans": [],
   "renderer": {

@@ -443,10 +443,10 @@
       "note": null
     },
     "embed": {
-      "status": "yes",
+      "status": "partial",
       "evidence": "docs",
-      "source": "https://www.technologynetworks.com/informatics/news/ccdc-selects-dotmatics-to-support-2d-queries-in-its-new-cambridge-structural-database-web-289738",
-      "note": "Elemental JavaScript component; documented integration into CCDC webpages."
+      "source": "https://www.hit2lead.com/elemental/elemental_inject.js",
+      "note": "Separate commercial JavaScript edition; deployment-specific license required"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -478,6 +478,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "script tag"
+    ],
+    "package": null,
+    "limit": "Separate commercial JavaScript edition; deployment-specific license required",
+    "how": "Licensed JavaScript edition injects editor with injectElemental(width,height); current availability unconfirmed."
   },
   "plans": [
     {

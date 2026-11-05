@@ -2,7 +2,7 @@
   "id": "p66",
   "slug": "bondcraft",
   "name": "BondCraft",
-  "rank": 45,
+  "rank": 44,
   "tier": "alternative",
   "tierReason": "It creates editable 2D structures and reaction schemes with journal styles and vector exports for publication figures.",
   "summary": "Browser-based editor for drawing chemical structures, reaction mechanisms, and publication figures, with stereochemistry checks and SMILES conversion.",
@@ -481,8 +481,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://www.bondcraft.net/",
+      "note": "No embed documentation found; framing headers absent, functionality unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -587,6 +587,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Free academic/personal use; proprietary.",
+    "how": "No embed documentation found; framing headers absent, functionality unconfirmed."
   },
   "plans": [],
   "renderer": {

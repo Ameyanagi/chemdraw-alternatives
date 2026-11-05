@@ -2,7 +2,7 @@
   "id": "p20",
   "slug": "molsketch-desktop",
   "name": "Molsketch",
-  "rank": 40,
+  "rank": 39,
   "tier": "alternative",
   "tierReason": "A standalone 2D editor with reaction diagrams, captions, alignment, and vector output can produce publication figures.",
   "summary": "Desktop editor for drawing two-dimensional molecular structures, reaction schemes, and mechanism diagrams.",
@@ -455,10 +455,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/hvennekate/Molsketch/blob/main/libmolsketch/CMakeLists.txt",
+      "note": "GPL-2.0-or-later; Qt/C++ integration undocumented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -533,7 +533,17 @@
       "how": "follows system",
       "note": "Dark canvas retains black bonds, reducing contrast."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 272.56,
+      "paclitaxelMb": 275.83,
+      "baselineMb": null,
+      "rssIdleMb": 374.23,
+      "rssPaclitaxelMb": 380.42,
+      "runs": 3,
+      "processes": 1,
+      "method": "Median three fresh-process pairs; footprint phys_footprint tree sums, MiB; SMILES; 10-second waits.",
+      "note": "Idle and loaded measured in separate fresh launches; native dialog automation was unreliable."
+    },
     "observations": [
       "SMILES imports generated 2D coordinates without manual cleanup.",
       "Default canvas showed black structures on a dark background.",
@@ -561,6 +571,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "desktop library"
+    ],
+    "package": "libmolsketch",
+    "limit": "GPL-2.0-or-later; Qt/C++ integration undocumented.",
+    "how": "Link libmolsketch and add MolView(MolScene*) to a Qt layout."
   },
   "plans": [],
   "renderer": {

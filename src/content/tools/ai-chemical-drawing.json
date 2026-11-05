@@ -489,8 +489,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md",
+      "note": "Embeds Ketcher internally; no host integration route documented."
     },
     "ai-assistant": {
       "status": "yes",
@@ -569,7 +569,17 @@
       "how": "fixed",
       "note": "Fixed dark interface; embedded Ketcher canvas stays white."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 964.39,
+      "paclitaxelMb": 893.04,
+      "baselineMb": 375.02,
+      "rssIdleMb": 1489.25,
+      "rssPaclitaxelMb": 1447.23,
+      "runs": 3,
+      "processes": 7,
+      "method": "Median fresh headed Chromium process-tree phys_footprint; published SMILES route; MiB.",
+      "note": "Local source servers measured separately; excluded from browser totals."
+    },
     "observations": [
       "Source package 0.1.0 at commit d07af9c; embedded Ketcher About shows 3.18.0.",
       "Bun dependency transfer size was unavailable; downloadBytes is unknown.",
@@ -599,6 +609,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Host license unspecified; local application only",
+    "how": "Embeds Ketcher internally; no host integration route documented."
   },
   "plans": [],
   "renderer": {

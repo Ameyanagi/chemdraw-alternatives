@@ -2,7 +2,7 @@
   "id": "p32",
   "slug": "molsoft-html5-molecule-editor",
   "name": "Molsoft HTML5 Molecule Editor",
-  "rank": 47,
+  "rank": 46,
   "tier": "embeddable",
   "tierReason": "Its documented purpose is embedding a structure-input editor in web pages, with MOL and SMILES exchange.",
   "summary": "An embeddable browser editor for sketching chemical structures and exchanging MOL, SMILES and InChI data.",
@@ -498,7 +498,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://molsoft.com/moledit.html",
-      "note": "Script include and div embedding example."
+      "note": "Load moledit.js and instantiate ChemicalView inside a div."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -598,6 +598,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "script tag"
+    ],
+    "package": null,
+    "limit": "Free academic/personal use; commercial licensing by inquiry",
+    "how": "Load moledit.js and instantiate ChemicalView inside a div."
   },
   "plans": [],
   "renderer": {

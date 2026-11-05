@@ -489,8 +489,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://chempencil.app/support.html",
+      "note": "Desktop exports and clipboard documented; no supported editor embedding confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -524,6 +524,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Desktop exports and clipboard documented; no supported editor embedding confirmed."
   },
   "plans": [
     {

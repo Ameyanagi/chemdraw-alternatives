@@ -2,7 +2,7 @@
   "id": "p24",
   "slug": "cdraw",
   "name": "cDraw",
-  "rank": 44,
+  "rank": 43,
   "tier": "alternative",
   "tierReason": "It creates styled 2D structures and reaction figures with text, layout tools and vector export.",
   "summary": "A Java desktop editor for creating publication-quality 2D chemical structures and reaction schemes.",
@@ -457,8 +457,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://www.structuralchemistry.org/pcsb/cdraw.php",
+      "note": "Standalone Java editor; no project-offered embedding component confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -524,7 +524,17 @@
       "how": "follows system",
       "note": "Dark chrome, white canvas; dark molecule import blocked. Light capture reused."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 198.63,
+      "paclitaxelMb": 562.85,
+      "baselineMb": null,
+      "rssIdleMb": 228.24,
+      "rssPaclitaxelMb": 597.05,
+      "runs": 2,
+      "processes": 1,
+      "method": "Median two GUI runs; summed process-tree phys_footprint; 10-second waits; footprint bytes converted to MiB.",
+      "note": "Two complete GUI runs; three import attempts failed from intermittent keyboard focus."
+    },
     "observations": [
       "Default heteroatom labels are blue for nitrogen and red for oxygen.",
       "Generated structures appear near the upper-left canvas corner at 200% zoom.",
@@ -555,6 +565,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "AGPL-3.0-only",
+    "how": "Standalone Java editor; no project-offered embedding component confirmed."
   },
   "plans": [],
   "renderer": {

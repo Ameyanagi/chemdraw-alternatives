@@ -468,10 +468,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/master/README.md#simple-embed",
+      "note": "Separate WebMolKit: Apache-2.0; SketchEl2 application: GPL-3.0"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -569,6 +569,15 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "script tag"
+    ],
+    "package": "webmolkit",
+    "limit": "Separate WebMolKit: Apache-2.0; SketchEl2 application: GPL-3.0",
+    "how": "Embed shared editor via WebMolKit.Sketcher using npm or script bundle."
   },
   "plans": [],
   "renderer": {

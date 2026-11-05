@@ -445,8 +445,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://bkchem.zirael.org/external_import_en.html",
+      "note": "External Python API controls standalone application; editor embedding remains unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -507,6 +507,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-2.0-or-later",
+    "how": "External Python API controls standalone application; editor embedding remains unconfirmed."
   },
   "plans": [],
   "renderer": {

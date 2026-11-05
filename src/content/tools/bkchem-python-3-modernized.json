@@ -453,8 +453,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/main/doc/external_import_en.html",
+      "note": "External scripting launches its own Tk window; embedding unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -528,6 +528,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-2.0-or-later",
+    "how": "External scripting launches its own Tk window; embedding unconfirmed."
   },
   "plans": [],
   "renderer": {

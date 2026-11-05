@@ -435,10 +435,10 @@
       "note": null
     },
     "embed": {
-      "status": "yes",
-      "evidence": "source",
-      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/index.html#L6-L26",
-      "note": "HTML example embeds editor; references missing js/main.js."
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/index.html",
+      "note": "MIT; triple bonds unimplemented; example references missing main.js"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -513,7 +513,17 @@
       "how": "fixed",
       "note": "Editor stays light in both browser color schemes."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 491.81,
+      "paclitaxelMb": 347.86,
+      "baselineMb": 302.84,
+      "rssIdleMb": 1125.3,
+      "rssPaclitaxelMb": 1123.53,
+      "runs": 3,
+      "processes": 10,
+      "method": "Three fresh Chromium profiles; whole-tree phys_footprint sums; MOL import; 10-second waits; median MiB.",
+      "note": "Includes browser overhead; about:blank baseline recorded separately."
+    },
     "observations": [
       "The app reports ChemCanvas v0.9 in its MOL output.",
       "Imported structures are centered and initially small; zoom fits them.",
@@ -539,6 +549,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "script tag"
+    ],
+    "package": null,
+    "limit": "MIT; triple bonds unimplemented; example references missing main.js",
+    "how": "Load bundled scripts; instantiate ChemCanvas.Canvas with the target canvas ID."
   },
   "plans": [],
   "renderer": {

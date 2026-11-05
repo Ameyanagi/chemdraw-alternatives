@@ -468,8 +468,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/copypaste.html",
+      "note": "PDF copying exports graphics; no working editor embedding confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -502,6 +502,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "PDF copying exports graphics; no working editor embedding confirmed."
   },
   "plans": [
     {

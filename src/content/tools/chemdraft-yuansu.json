@@ -421,10 +421,10 @@
       "note": null
     },
     "embed": {
-      "status": "yes",
+      "status": "partial",
       "evidence": "docs",
       "source": "https://en.chemdraft.com/openapi",
-      "note": "Vendor claim; JS editor integration offered through contact."
+      "note": "Vendor-arranged integration; commercial use requires separate authorization."
     },
     "ai-assistant": {
       "status": "yes",
@@ -484,6 +484,12 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Vendor-arranged integration; commercial use requires separate authorization.",
+    "how": "Contact vendor for JavaScript editor integration; public setup instructions unavailable."
   },
   "plans": [],
   "renderer": {

@@ -437,8 +437,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://apps.apple.com/gb/app/molprime/id497295446",
+      "note": "Standalone iOS app; no documented editor embedding route confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -476,6 +476,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Standalone iOS app; no documented editor embedding route confirmed."
   },
   "plans": [],
   "renderer": {

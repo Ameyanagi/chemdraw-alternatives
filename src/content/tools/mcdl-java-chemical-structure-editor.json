@@ -2,7 +2,7 @@
   "id": "p110",
   "slug": "mcdl-java-chemical-structure-editor",
   "name": "MCDL Java Chemical Structure Editor",
-  "rank": 119,
+  "rank": 120,
   "tier": "embeddable",
   "tierReason": "It is a molecular structure input applet with JavaScript embedding examples, rather than a publication document editor.",
   "summary": "A Java applet for drawing and editing molecular structures encoded in Modular Chemical Descriptor Language.",
@@ -423,10 +423,10 @@
       "note": null
     },
     "embed": {
-      "status": "yes",
-      "evidence": "source",
+      "status": "partial",
+      "evidence": "docs",
       "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/mcdl.html/download",
-      "note": "Official HTML applet embedding example requires legacy Java support."
+      "note": "Requires obsolete Java browser plug-in"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -464,6 +464,14 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "Java applet"
+    ],
+    "package": null,
+    "limit": "Requires obsolete Java browser plug-in",
+    "how": "Embed mcdl.MCDLEditor.class via <applet>; exchange structures using getMCDL/setMCDL."
   },
   "plans": [],
   "renderer": {

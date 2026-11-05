@@ -506,8 +506,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md",
+      "note": "Hosted app lacks framing restrictions; supported iframe integration remains undocumented."
     },
     "ai-assistant": {
       "status": "yes",
@@ -622,6 +622,12 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Hosted app lacks framing restrictions; supported iframe integration remains undocumented."
   },
   "plans": [],
   "renderer": {

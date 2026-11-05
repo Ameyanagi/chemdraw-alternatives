@@ -454,8 +454,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/README.md",
+      "note": "Standalone React application; supported editor embedding remains unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -571,6 +571,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "MIT",
+    "how": "Standalone React application; supported editor embedding remains unconfirmed."
   },
   "plans": [],
   "renderer": {

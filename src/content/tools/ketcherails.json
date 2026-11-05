@@ -442,8 +442,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/README.md#usage",
-      "note": "Mountable Rails engine with iframe embedding example."
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/master/README.md#usage",
+      "note": "Add ketcherails gem; iframe /ketcher; use contentWindow.ketcher for molecule exchange."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -495,6 +495,14 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "iframe"
+    ],
+    "package": "ketcherails",
+    "limit": "Rails 5.2; GPLv3 wrapper and AGPLv3 editor.",
+    "how": "Add ketcherails gem; iframe /ketcher; use contentWindow.ketcher for molecule exchange."
   },
   "plans": [],
   "renderer": {

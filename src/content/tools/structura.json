@@ -2,7 +2,7 @@
   "id": "p89",
   "slug": "structura",
   "name": "Structura (chem-structura)",
-  "rank": 43,
+  "rank": 51,
   "tier": "embeddable",
   "tierReason": "Primarily a React and standalone structure-input component, with a separate app workspace for Markush workflows.",
   "summary": "An embeddable 2D chemical structure editor for drawing molecules and patent Markush formulas.",
@@ -476,9 +476,9 @@
     },
     "embed": {
       "status": "yes",
-      "evidence": "tested",
-      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/README.md#without-react",
-      "note": "Mounted bundled standalone editor in a local page."
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/master/packages/react/README.md#without-react",
+      "note": "React StructuraEditor, ChemStructura.mount(), or editable <chem-molecule> via standalone script."
     },
     "ai-assistant": {
       "status": "yes",
@@ -587,6 +587,16 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "web component",
+      "script tag"
+    ],
+    "package": "chem-structura",
+    "limit": "MIT",
+    "how": "React StructuraEditor, ChemStructura.mount(), or editable <chem-molecule> via standalone script."
   },
   "plans": [],
   "renderer": {

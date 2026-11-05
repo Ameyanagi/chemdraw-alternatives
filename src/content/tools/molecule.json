@@ -411,8 +411,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://apps.apple.com/us/app/molecule/id797331776",
+      "note": "Embedding route unconfirmed; vendor website unavailable."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -445,6 +445,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Embedding route unconfirmed; vendor website unavailable."
   },
   "plans": [],
   "renderer": {

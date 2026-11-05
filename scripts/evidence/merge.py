@@ -248,6 +248,13 @@ for path in sorted((research / "out").glob("p*.json")):
         found = json.loads(p.read_text()) if (p := research / folder / f"{tool_id}.json").exists() else None
         if found and found.get("source") and found["status"] != "unknown":
             features[key] = {"status": found["status"], "evidence": "docs", "source": found["source"], "note": found.get("note")}
+    extra = overrides.get(tool_id, {})
+    embed = json.loads(p.read_text()) | extra.get("embed", {}) if (p := research / "embed" / f"{tool_id}.json").exists() else None
+    if embed:
+        methods = embed["methods"] or (["Java applet"] if "applet" in embed["note"].lower() else [])
+        features["embed"] = {"status": embed["status"], "evidence": "none" if embed["status"] == "unknown" else "docs", "source": embed.get("source"),
+                             "note": (embed.get("limit") if embed["status"] == "partial" else None) or embed["note"]}
+        embed = {"methods": methods, "package": embed.get("package"), "limit": embed.get("limit"), "how": embed["note"]}
     plans = json.loads(p.read_text()) if (p := research / "plans" / f"{tool_id}.json").exists() else {}
     level_of = {plan["name"]: plan["level"] for plan in plans.get("plans", [])}
     for key, gate in (plans.get("features") or {}).items():
@@ -283,6 +290,7 @@ for path in sorted((research / "out").glob("p*.json")):
         "references": meta.get("sources", []),
         "builtOn": built,
         "appKind": {"desktop": desktop, "web": web_app},
+        "embedding": embed,
         "plans": plans.get("plans") or [],
         "renderer": engines.get("renderer"), "otherLanguages": engines.get("otherLanguages"), "enginesChecked": bool(engines),
         "languageNote": stack.get("languageNote"),
@@ -291,10 +299,9 @@ for path in sorted((research / "out").glob("p*.json")):
             "libraries": list({item["name"]: item for name in linked if (item := library_licenses.get(name))}.values()),
         },
     }
-    extra = overrides.get(tool_id, {})
     for key, patch in extra.get("features", {}).items():
         tool["features"][key].update(patch)
-    records.append({**tool, **{k: v for k, v in extra.items() if k != "features"}, "thirdParty": {**tool["thirdParty"], **extra.get("thirdParty", {})}})
+    records.append({**tool, **{k: v for k, v in extra.items() if k not in ("features", "embed")}, "thirdParty": {**tool["thirdParty"], **extra.get("thirdParty", {})}})
 browser.close()
 playwright.stop()
 

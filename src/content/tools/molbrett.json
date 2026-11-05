@@ -471,10 +471,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://molbrett.elsci.io/scene",
+      "note": "Hosted X-Frame-Options DENY; no alternative embed route documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -573,6 +573,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Local deployment requires license; free for academia.",
+    "how": "Hosted X-Frame-Options DENY; no alternative embed route documented."
   },
   "plans": [
     {

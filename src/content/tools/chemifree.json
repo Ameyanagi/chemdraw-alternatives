@@ -466,8 +466,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/EunhakChoi/chemifree/blob/main/README.md#run-locally",
+      "note": "Local web workspace; no supported editor embedding interface documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -563,6 +563,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Local web workspace; no supported editor embedding interface documented."
   },
   "plans": [],
   "renderer": {

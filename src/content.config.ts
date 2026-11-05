@@ -58,6 +58,7 @@ const tools = defineCollection({
     enginesChecked: z.boolean(),
     languageNote: z.string().nullable().optional(),
     drawingStyle: z.string().optional(),
+    embedding: z.object({ methods: z.array(z.string()), package: z.string().nullable(), limit: z.string().nullable(), how: z.string() }).nullable().optional(),
     otherLanguages: z.array(z.object({ language: z.string(), role: z.string() })).nullable().optional(),
     thirdParty,
     tier: z.enum(['alternative', 'embeddable', 'related']),
@@ -90,7 +91,7 @@ const tools = defineCollection({
       canvasLight: z.string().nullable(),
       canvasDark: z.string().nullable(),
       memory: z.object({
-        idleMb: z.number().nullable(), paclitaxelMb: z.number().nullable(), baselineMb: z.number().nullable().optional(),
+        idleMb: z.number().nullable(), paclitaxelMb: z.number().nullable(), baselineMb: z.number().nullable().optional(), paclitaxelPanelOpenMb: z.number().optional(),
         rssIdleMb: z.number().nullable().optional(), rssPaclitaxelMb: z.number().nullable().optional(),
         runs: z.number(), processes: z.number().nullable().optional(), method: z.string().nullable().optional(), note: z.string().nullable().optional(),
       }).nullable(),

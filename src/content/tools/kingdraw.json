@@ -2,7 +2,7 @@
   "id": "p07",
   "slug": "kingdraw",
   "name": "KingDraw",
-  "rank": 90,
+  "rank": 91,
   "tier": "alternative",
   "tierReason": "Standalone drawing tools, reaction schemes, ACS styling, vector SVG export and editable Office objects support publication figures.",
   "summary": "Desktop and mobile chemical drawing software for preparing molecular structures, reaction schemes, and scientific figures.",
@@ -489,10 +489,10 @@
       "note": null
     },
     "embed": {
-      "status": "partial",
-      "evidence": "docs",
-      "source": "https://open.kingdraw.com/index.php/article/9.html",
-      "note": "Separate legacy web editor; developer platform currently suspended."
+      "status": "unknown",
+      "evidence": "none",
+      "source": "https://open.kingdraw.com/",
+      "note": "Historical JS editor existed; current embedding support cannot be confirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -532,6 +532,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Developer platform suspended; legacy SDK documentation unavailable.",
+    "how": "Historical JS editor existed; current embedding support cannot be confirmed."
   },
   "plans": [
     {

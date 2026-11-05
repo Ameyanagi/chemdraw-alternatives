@@ -509,8 +509,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/main/README.md",
+      "note": "Hosted editor available; supported embedding integration unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -585,7 +585,17 @@
       "how": "in-app setting",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 327.93,
+      "paclitaxelMb": 363.97,
+      "baselineMb": null,
+      "rssIdleMb": 601.53,
+      "rssPaclitaxelMb": 667.58,
+      "runs": 3,
+      "processes": 10,
+      "method": "Median three runs; phys_footprint sum; ps descendants and lsappinfo coalition, including WebKit and native helpers.",
+      "note": "SMILES; isolated bundle identifier; ≥10-second settling; MiB; processes is maximum observed."
+    },
     "observations": [
       "Default app canvas is dark with coloured heteroatoms.",
       "SMILES import automatically lays out and selects each structure.",
@@ -614,6 +624,12 @@
   "appKind": {
     "desktop": true,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Permission required for modification, redistribution, or self-hosting.",
+    "how": "Hosted editor available; supported embedding integration unconfirmed."
   },
   "plans": [],
   "renderer": {

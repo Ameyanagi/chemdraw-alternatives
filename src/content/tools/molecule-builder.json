@@ -501,8 +501,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E5%8D%8F%E8%AE%AE%E8%A7%84%E8%8C%83.md",
+      "note": "Standalone React app; no supported embedding interface found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -605,6 +605,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Standalone React app; no supported embedding interface found."
   },
   "plans": [],
   "renderer": {

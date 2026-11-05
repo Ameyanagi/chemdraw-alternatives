@@ -530,8 +530,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/main/README.md",
+      "note": "Standalone desktop editor; no supported embedding integration found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -612,7 +612,17 @@
       "how": "in-app setting",
       "note": "Settings > Document > Page > Background: White or Dark."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 524.83,
+      "paclitaxelMb": 572.82,
+      "baselineMb": null,
+      "rssIdleMb": 858.72,
+      "rssPaclitaxelMb": 932.27,
+      "runs": 3,
+      "processes": 9,
+      "method": "Three fresh launches; summed phys_footprint via footprint; ps descendants plus lsappinfo coalition helpers.",
+      "note": "2400×1600 pixels; SMILES paste; 10-second settling; 8–9 processes; medians in MiB."
+    },
     "observations": [
       "Defaults: ACS Document 1996, Arial 10 pt, black on white.",
       "Caffeine aromatic rings display only single-line ring bonds.",
@@ -645,6 +655,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "Standalone desktop editor; no supported embedding integration found."
   },
   "plans": [],
   "renderer": {

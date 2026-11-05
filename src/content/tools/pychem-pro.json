@@ -480,10 +480,10 @@
       "note": "Documented Python plugin API with analysis, visualization, and I/O plugins."
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L19",
+      "note": "Custom noncommercial; services prohibited; bundled OASA GPL-2.0-or-later; undocumented widget."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -585,6 +585,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "desktop widget"
+    ],
+    "package": null,
+    "limit": "Custom noncommercial; services prohibited; bundled OASA GPL-2.0-or-later; undocumented widget.",
+    "how": "Import internal SketcherWidget into PySide6; no documented embedding API."
   },
   "plans": [],
   "renderer": {

@@ -522,8 +522,8 @@
     "embed": {
       "status": "no",
       "evidence": "docs",
-      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/architecture-kendraw-2026-04-12.md#17-considérations-futures-v2--pour-mémoire",
-      "note": "Public embedding API and ELN integration remain future work."
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docker/nginx.conf#L9",
+      "note": "No supported embedding route; Docker explicitly denies framing."
     },
     "ai-assistant": {
       "status": "no",
@@ -638,6 +638,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Docker denies framing; embedding API remains future work.",
+    "how": "No supported embedding route; Docker explicitly denies framing."
   },
   "plans": [],
   "renderer": {

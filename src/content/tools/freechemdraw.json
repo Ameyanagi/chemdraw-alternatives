@@ -557,10 +557,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://freechemdraw.com/en/",
+      "note": "Hosted editor blocks external iframes; no documented embedding SDK."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -666,6 +666,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "X-Frame-Options SAMEORIGIN",
+    "how": "Hosted editor blocks external iframes; no documented embedding SDK."
   },
   "plans": [],
   "renderer": {

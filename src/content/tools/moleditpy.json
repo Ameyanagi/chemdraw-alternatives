@@ -517,8 +517,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/HiroYokoyama/python_molecular_editor/blob/914b9c2695d4a9bbce358c4c1d2f6fae3b921d54/docs/PLUGIN_DEVELOPMENT_MANUAL_V5.md",
+      "note": "Standalone Python package; no editor embedding API confirmed."
     },
     "ai-assistant": {
       "status": "yes",
@@ -622,6 +622,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": "MoleditPy",
+    "limit": "LGPL-3.0-or-later",
+    "how": "Standalone Python package; no editor embedding API confirmed."
   },
   "plans": [],
   "renderer": {

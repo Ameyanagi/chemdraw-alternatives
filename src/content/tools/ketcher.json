@@ -511,7 +511,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://github.com/epam/ketcher/blob/48af1b20d58607f9d77b148f09fa468202239f3f/README.md#installation-and-usage",
-      "note": "React component or iframe integration."
+      "note": "Mount React Editor with a structServiceProvider; or iframe standalone release."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -629,6 +629,15 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "iframe"
+    ],
+    "package": "ketcher-react",
+    "limit": "Apache-2.0; retain license and notices.",
+    "how": "Mount React Editor with a structServiceProvider; or iframe standalone release."
   },
   "plans": [],
   "renderer": {

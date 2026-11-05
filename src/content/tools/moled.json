@@ -417,8 +417,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/README.md",
+      "note": "Legacy iframe demo exists; usable editor embedding remains unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -491,6 +491,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "AGPL-3.0",
+    "how": "Legacy iframe demo exists; usable editor embedding remains unconfirmed."
   },
   "plans": [],
   "renderer": {

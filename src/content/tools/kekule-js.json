@@ -481,8 +481,8 @@
     "embed": {
       "status": "yes",
       "evidence": "docs",
-      "source": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/composer.html#creating-composer",
-      "note": "Create the editor through JavaScript or HTML data attributes."
+      "source": "https://github.com/partridgejiang/Kekule.js#widget",
+      "note": "Load scripts/CSS; instantiate Kekule.Editor.Composer(div), or use <kekule-composer>."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -598,6 +598,16 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "npm package",
+      "web component",
+      "script tag"
+    ],
+    "package": "kekule",
+    "limit": "MIT",
+    "how": "Load scripts/CSS; instantiate Kekule.Editor.Composer(div), or use <kekule-composer>."
   },
   "plans": [],
   "renderer": {

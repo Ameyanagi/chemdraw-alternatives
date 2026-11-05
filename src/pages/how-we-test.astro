@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Legend from '../components/Legend.astro';
-import { features, loadTools, isTested } from '../lib/tools';
+import { features, loadTools, isTested, measuredNote } from '../lib/tools';
 import fixtures from '../../evidence/fixtures/index.json';
 
 const tools = (await loadTools()).filter((tool) => tool.tier !== 'related');
@@ -35,6 +35,12 @@ const rows = Object.values(fixtures);
     <h2 class="mt-12 text-3xl" id="performance">Sizes and speed</h2>
     <p class="mt-3">Download size is the installer we fetched. Installed size is the final folder on disk. For browser tools, the size is what the page transfers on a first visit.</p>
     <p class="mt-3">Startup is the median of three launches in a row on the same Mac, timed until the first window appears. Memory is the actual memory in use, the macOS physical footprint shown in Activity Monitor, added up across the app's whole process tree. It is read after 10 quiet seconds on an empty document and again with paclitaxel loaded. For browser tools we also show the share used by an empty browser, so the two kinds of tool are not confused. For browser tools, startup is the median of three uncached loads. These timings show rough differences only: hosted tools also depend on the network and on their server.</p>
+
+    <p class="mt-3 font-semibold">{measuredNote}</p>
+    <p class="mt-3">Memory depends on window size, because a window needs memory for every pixel it draws. ReShiki doubled when its window was enlarged from 1280 by 848 to 2144 by 1256 points, so we leave every app at its own default window size, on a 2× display.</p>
+
+    <h2 class="mt-12 text-3xl" id="embedding">Embedding</h2>
+    <p class="mt-3">Embedding means another app or web page can place the working editor inside itself, using something the project offers for that purpose. Yes needs documentation. Partial means there is a real limit, such as a separately sold product, an undocumented route or a Java applet that browsers no longer run. No needs a source, such as a site that refuses to load in a frame and offers no other route. We fetched those response headers ourselves. Unknown means we could not confirm it either way. Office OLE is its own feature, so it does not count here.</p>
 
     <h2 class="mt-12 text-3xl">Listing order</h2>
     <p class="mt-3">Order is not a score. ChemDraw is first because it is the baseline. ReShiki is second because the maintainer of this site wrote it, and that position is a choice, not a measurement. Everything else is sorted by tools we ran first, then by features we tested by hand, then by features confirmed from manuals. This rewards what we could check, and it is still not a measure of quality.</p>

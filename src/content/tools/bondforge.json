@@ -477,8 +477,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md",
+      "note": "Standalone Qt application; no documented editor embedding interface found."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -583,6 +583,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "GPL-3.0-or-later",
+    "how": "Standalone Qt application; no documented editor embedding interface found."
   },
   "plans": [],
   "renderer": {

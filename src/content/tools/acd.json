@@ -443,8 +443,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": "OLE objects documented; embedding the editor itself unverified."
+      "source": "https://www.acdlabs.com/products/chemsketch/",
+      "note": "OLE objects supported; in-place editor hosting unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -477,6 +477,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Discontinued; unavailable to new customers",
+    "how": "OLE objects supported; in-place editor hosting unconfirmed."
   },
   "plans": [
     {

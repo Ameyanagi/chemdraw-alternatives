@@ -621,10 +621,10 @@
       "note": null
     },
     "embed": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer",
+      "note": "X-Frame-Options DENY and CSP frame-ancestors 'none'; no editor SDK documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -725,6 +725,12 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "X-Frame-Options DENY and CSP frame-ancestors 'none'; no editor SDK documented."
   },
   "plans": [
     {

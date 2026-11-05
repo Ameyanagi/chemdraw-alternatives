@@ -465,8 +465,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/dhsohn/Chemvas/blob/main/docs/adr/0068-retire-browser-adapter.md",
+      "note": "Desktop package; browser adapter retired, editor embedding undocumented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -567,6 +567,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": "chemvas",
+    "limit": null,
+    "how": "Desktop package; browser adapter retired, editor embedding undocumented."
   },
   "plans": [],
   "renderer": {

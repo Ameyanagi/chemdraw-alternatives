@@ -532,7 +532,7 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://molview.com/api/",
-      "note": "Web-component embedding requires subscriptions or a production-domain license.",
+      "note": "Load api.js with client ID, then insert <molview-sketcher>.",
       "plan": "Student",
       "planLevel": "paid"
     },
@@ -629,6 +629,15 @@
   "appKind": {
     "desktop": false,
     "web": true
+  },
+  "embedding": {
+    "methods": [
+      "web component",
+      "script tag"
+    ],
+    "package": null,
+    "limit": "Each user needs subscription, or license your production domain.",
+    "how": "Load api.js with client ID, then insert <molview-sketcher>."
   },
   "plans": [
     {

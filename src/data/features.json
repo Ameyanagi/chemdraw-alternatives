@@ -77,7 +77,7 @@
     { "id": "cli", "group": "automation", "name": "Command-line tool", "test": "A CLI can convert or render without the GUI." },
     { "id": "mcp-agents", "group": "automation", "name": "AI agent control", "test": "An MCP server or documented agent interface." },
     { "id": "plugins", "group": "embedding", "name": "Plugins", "test": "A documented extension mechanism." },
-    { "id": "embed", "group": "embedding", "name": "Embed in your own app", "test": "A documented way to embed the editor in another application or page." },
+    { "id": "embed", "group": "embedding", "name": "Embed in your own app", "test": "A documented way to place the working editor inside another application or page. Office OLE is listed separately." },
     { "id": "ai-assistant", "group": "automation", "name": "Built-in AI assistant", "test": "An assistant inside the product can propose or edit drawings." }
   ]
 }

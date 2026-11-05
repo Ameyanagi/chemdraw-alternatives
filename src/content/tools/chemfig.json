@@ -449,8 +449,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://ctan.org/pkg/chemfig",
+      "note": "TeX typesetting macros; no embeddable editor documented."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -516,7 +516,17 @@
       "how": "fixed",
       "note": "No GUI; fixed white TeX output shown in Preview."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": null,
+      "paclitaxelMb": null,
+      "baselineMb": null,
+      "rssIdleMb": null,
+      "rssPaclitaxelMb": null,
+      "runs": 3,
+      "processes": 0,
+      "method": "Three scripted TeX runs; process trees empty at both 10-second settled checks.",
+      "note": "Paclitaxel compiled successfully; CLI exits, so persistent idle and loaded memory are unavailable."
+    },
     "observations": [
       "No GUI; window captures show an isolated Preview viewer.",
       "Chemfig does not read SMILES; mol2chemfig supplied drawing code and layout.",
@@ -544,6 +554,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": null,
+    "how": "TeX typesetting macros; no embeddable editor documented."
   },
   "plans": [],
   "renderer": {

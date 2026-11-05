@@ -445,8 +445,8 @@
     "embed": {
       "status": "unknown",
       "evidence": "none",
-      "source": null,
-      "note": null
+      "source": "https://github.com/Chem4Word/Version3-3",
+      "note": "Word add-in launches modal editor; reusable editor SDK unconfirmed."
     },
     "ai-assistant": {
       "status": "unknown",
@@ -501,6 +501,12 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [],
+    "package": null,
+    "limit": "Apache-2.0; bundled ChemDoodle Web files require GPL-3.0 compliance.",
+    "how": "Word add-in launches modal editor; reusable editor SDK unconfirmed."
   },
   "plans": [],
   "renderer": {

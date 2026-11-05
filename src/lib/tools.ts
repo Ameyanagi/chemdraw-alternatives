@@ -182,12 +182,15 @@ export const thirdPartyLibraries = (tool: Tool) =>
 export const portedLabel = (tool: Tool) =>
   tool.builtOn?.ported?.length ? `Ported into its own code: ${tool.builtOn.ported.join(', ')}` : null;
 
+export const measuredNote = "Memory and startup were measured on the maintainer's own Mac (Apple M4, 32 GB, macOS 27.0.1, 2× display). They are not guaranteed values. Yours will differ with your hardware, macOS and app versions, window size and what else is running.";
+
 export function memoryUse(tool: Tool, key: 'idleMb' | 'paclitaxelMb') {
   const memory = tool.hands?.memory;
   if (!memory) return 'Not measured';
   const value = memory[key];
   if (value === null) return memory.note ?? 'Not measured';
-  return `${Math.round(value)} MB${memory.baselineMb ? `, of which ${Math.round(memory.baselineMb)} MB is the empty browser` : ''}`;
+  const panel = key === 'paclitaxelMb' && memory.paclitaxelPanelOpenMb ? `, ${Math.round(memory.paclitaxelPanelOpenMb)} MB with the Import panel open` : '';
+  return `${Math.round(value)} MB${memory.baselineMb ? `, of which ${Math.round(memory.baselineMb)} MB is the empty browser` : ''}${panel}`;
 }
 
 export const filterGroups: { id: string; label: string; options: [string, string][] }[] = [
@@ -196,6 +199,7 @@ export const filterGroups: { id: string; label: string; options: [string, string
   { id: 'license', label: 'License', options: [['free', 'Free to use'], ['oss', 'Open source'], ['permissive', 'MIT or Apache-2.0']] },
   { id: 'files', label: 'Files', options: [['cdxml', 'Opens CDXML'], ['ole', 'Windows Office OLE']] },
   { id: 'apis', label: 'APIs', options: [['python', 'Python API'], ['ts', 'JS or TS API'], ['agents', 'AI agents']] },
+  { id: 'embed', label: 'Embedding', options: [['embed-web', 'In a web page'], ['embed-desktop', 'In a desktop app']] },
 ];
 
 const hasFeature = (tool: Tool, id: string) => ['yes', 'partial'].includes(featureOf(tool, id).status);
@@ -214,6 +218,8 @@ export const toolTags = (tool: Tool) => [
   hasFeature(tool, 'ts-api') && 'ts',
   hasFeature(tool, 'mcp-agents') && 'agents',
   hasFeature(tool, 'office-ole') && 'ole',
+  hasFeature(tool, 'embed') && tool.embedding?.methods.some((method) => !method.startsWith('desktop') && method !== 'Java applet') && 'embed-web',
+  hasFeature(tool, 'embed') && tool.embedding?.methods.some((method) => method.startsWith('desktop')) && 'embed-desktop',
 ].filter((tag): tag is string => Boolean(tag));
 
 /** A plan label only helps where a tool has several plans and this feature is not in the lowest one. */

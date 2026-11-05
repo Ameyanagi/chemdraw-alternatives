@@ -2,7 +2,7 @@
   "id": "p95",
   "slug": "gchempaint",
   "name": "GChemPaint",
-  "rank": 91,
+  "rank": 90,
   "tier": "alternative",
   "tierReason": "A standalone document editor with structures, reaction schemes, text, printing and vector export can produce publication figures.",
   "summary": "Desktop editor for drawing two-dimensional chemical structures, reaction schemes and mechanisms.",
@@ -440,10 +440,10 @@
       "note": "Documented C++ plugins can add tools and UI elements."
     },
     "embed": {
-      "status": "yes",
+      "status": "partial",
       "evidence": "docs",
-      "source": "https://gchemutils.nongnu.org/paint/manual/c92.html#gchempaint-to-start",
-      "note": "GOffice component supports embedding in applications such as AbiWord."
+      "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/master/goffice/gogcpapp.cc",
+      "note": "GPL-3.0-or-later; GOffice rendering only; editing opens separate window"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -493,6 +493,14 @@
   "appKind": {
     "desktop": true,
     "web": false
+  },
+  "embedding": {
+    "methods": [
+      "desktop widget"
+    ],
+    "package": "libgcu0v5",
+    "limit": "GPL-3.0-or-later; GOffice rendering only; editing opens separate window",
+    "how": "Load libgcu0v5's GOffice gchemutils plugin in compatible desktop applications."
   },
   "plans": [],
   "renderer": {
