@@ -250,7 +250,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.acdlabs.com/resource/acd-chemsketch-freeware-celebrates-one-million-downloads-with-a-new-version/",
-      "note": "Freeware includes logP prediction."
+      "note": "Freeware includes logP prediction.",
+      "plan": "ChemSketch Freeware",
+      "planLevel": "free"
     },
     "name-to-structure": {
       "status": "partial",
@@ -260,7 +262,9 @@
       "engine": {
         "library": "In-house (ACD/Dictionary desktop lookup; optional ACD/Name native desktop name-to-structure)",
         "source": "https://www.acdlabs.com/blog/how-to-draw-better-chemical-structures-and-reactions-with-chemsketch/"
-      }
+      },
+      "plan": "ChemSketch",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "partial",
@@ -270,7 +274,9 @@
       "engine": {
         "library": "In-house (ACD/Name Freeware proprietary desktop module; limited structure naming)",
         "source": "https://support.revvitysignals.com/hc/en-us/articles/47037475963412-ChemSketch-Access-to-Name-Freeware-vs-full-commercial-Name-version-via-the-same-button"
-      }
+      },
+      "plan": "ChemSketch Freeware",
+      "planLevel": "free"
     },
     "nmr-prediction": {
       "status": "unknown",
@@ -282,7 +288,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.acdlabs.com/blog/markush-structures-what-they-are-and-how-to-draw-them/",
-      "note": "R-groups, positional variants, and structure enumeration."
+      "note": "R-groups, positional variants, and structure enumeration.",
+      "plan": "ChemSketch Freeware",
+      "planLevel": "free"
     },
     "polymers": {
       "status": "unknown",
@@ -310,7 +318,9 @@
       "engine": {
         "library": "EPA iCSS Chemistry Dashboard (remote database through ChemSketch EPA iCSS Add-on)",
         "source": "https://www.acdlabs.com/resources/free-chemistry-software-apps/chemsketch-epa-icss-add-on/"
-      }
+      },
+      "plan": "ChemSketch Freeware",
+      "planLevel": "free"
     },
     "model-3d": {
       "status": "yes",
@@ -320,7 +330,9 @@
       "engine": {
         "library": "In-house (ACD/3D Viewer proprietary desktop application; optional OpenGL rendering)",
         "source": "https://www.acdlabs.com/technical-support/faq/"
-      }
+      },
+      "plan": "ChemSketch Freeware",
+      "planLevel": "free"
     },
     "crystals": {
       "status": "unknown",
@@ -462,6 +474,22 @@
     "source": null,
     "note": "Public vendor materials do not establish canvas provenance or chemistry libraries."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "ChemSketch Freeware",
+      "level": "free",
+      "price": "$0 historical; home/education, existing installations only (2026-11-06)"
+    },
+    {
+      "name": "ChemSketch",
+      "level": "paid",
+      "price": "Unavailable to new customers (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

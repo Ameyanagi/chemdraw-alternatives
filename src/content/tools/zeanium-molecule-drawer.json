@@ -550,7 +550,17 @@
       "how": "in-app setting",
       "note": "Canvas switches; surrounding interface stays dark."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 478.0,
+      "paclitaxelMb": 682.0,
+      "baselineMb": 271.0,
+      "rssIdleMb": 1033.28,
+      "rssPaclitaxelMb": 1072.05,
+      "runs": 3,
+      "processes": 7,
+      "method": "Playwright Edge Chromium; summed process-tree phys_footprint; median of three runs.",
+      "note": "SMILES import discards stereochemistry."
+    },
     "observations": [
       "No numbered version appeared; the served editor bundle identifies the build.",
       "Default style was Adv. Synth. Catal. with colored heteroatoms.",
@@ -573,6 +583,11 @@
     "source": null,
     "note": "Public materials do not establish canvas provenance or chemistry dependencies."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "In-house SVG renderer",

@@ -453,6 +453,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chem4Word.V3/Helpers/ChemistryHelper.cs#L85-L93",
+      "note": "Word add-in uses CML content controls, not OLE objects."
     }
   },
   "caveats": [
@@ -460,11 +466,21 @@
     "Core editing is local; searches and name/identifier resolution require internet.",
     "CDXML and MOL/SDF V3000 import are unsupported."
   ],
-  "github": null,
+  "github": {
+    "url": "https://github.com/Chem4Word/Version3-3",
+    "stars": 16,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2022-08-19",
+    "commits": 177,
+    "contributors": 2,
+    "pushedAt": "2026-11-05T09:39:56Z",
+    "archived": false
+  },
   "hands": null,
   "perf": null,
   "downloadBytes": null,
   "references": [
+    "https://github.com/Chem4Word/Version3-3",
     "https://www.chem4word.co.uk/",
     "https://github.com/Chem4Word"
   ],
@@ -476,6 +492,11 @@
     "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Controls/ChemistryCanvas.cs",
     "note": "Current ACME canvas is original; ChemDoodle license notice references an absent legacy ZIP."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Chem4Word ACME (WPF DrawingVisual) and OoXmlV4 (DrawingML)",

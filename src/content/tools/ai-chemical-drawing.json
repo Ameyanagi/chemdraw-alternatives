@@ -509,7 +509,12 @@
     "Ketcher documents colored highlighting, while the host README says bond coloring is unsupported."
   ],
   "github": {
+    "url": "https://github.com/CubicZnS/ai-chemical-drawing",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-10-15",
+    "commits": 1,
+    "contributors": 1,
     "pushedAt": "2026-10-15T07:52:01Z",
     "archived": false
   },
@@ -585,6 +590,11 @@
     "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/components/KetcherFrame.tsx#L92-L100",
     "note": "Embeds Ketcher standalone through an iframe; Indigo supplies chemistry."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher/Raphaël; Indigo SVG/PNG exports",

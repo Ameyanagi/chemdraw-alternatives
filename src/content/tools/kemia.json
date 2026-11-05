@@ -441,7 +441,12 @@
     "Several capabilities require API integration; the default toolbar omits cleanup."
   ],
   "github": {
+    "url": "https://github.com/kemia/kemia",
     "stars": 14,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2010-03-18",
+    "commits": 721,
+    "contributors": 10,
     "pushedAt": "2011-06-13T20:19:57Z",
     "archived": false
   },
@@ -490,7 +495,17 @@
       "how": "fixed",
       "note": "Paclitaxel rendering is clipped to a thin strip."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 494.24,
+      "paclitaxelMb": 342.24,
+      "baselineMb": 309.03,
+      "rssIdleMb": 1076.91,
+      "rssPaclitaxelMb": 1102.09,
+      "runs": 3,
+      "processes": 10,
+      "method": "Chromium process-tree physical footprints; median of three fresh sessions.",
+      "note": "SMILES demo rendered atom labels; drawing clipped to a thin strip."
+    },
     "observations": [
       "Hosted reaction editor loaded with a preset reaction.",
       "Drawings were clipped to a thin strip in WebKit and Chromium.",
@@ -515,6 +530,11 @@
       "MX"
     ]
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Kemia MoleculeRenderer over Closure graphics",

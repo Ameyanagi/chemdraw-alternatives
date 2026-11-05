@@ -136,7 +136,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://depth-first.com/articles/2010/12/01/javascript-now-works-keyboard-mouse-focus-and-molfile-copy-in-chemwriter/",
-      "note": "Hover over an atom and type its element shortcut."
+      "note": "Hover over an atom and type its element shortcut.",
+      "plan": "ChemWriter",
+      "planLevel": "paid"
     },
     "selection-tools": {
       "status": "partial",
@@ -354,7 +356,9 @@
       "engine": {
         "library": "In-house (JavaScript; MOL read/write)",
         "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js"
-      }
+      },
+      "plan": "ChemWriter",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "no",
@@ -414,7 +418,9 @@
       "status": "yes",
       "evidence": "source",
       "source": "https://search.emolecules.com/",
-      "note": "loadEditor, getMolfile and configurable drawing settings."
+      "note": "loadEditor, getMolfile and configurable drawing settings.",
+      "plan": "ChemWriter",
+      "planLevel": "paid"
     },
     "cli": {
       "status": "unknown",
@@ -442,7 +448,9 @@
       "shot": {
         "image": "evidence/chemwriter/f-embed.webp",
         "caption": "Chemical editor embedded in the eMolecules structure search page."
-      }
+      },
+      "plan": "ChemWriter",
+      "planLevel": "paid"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -502,7 +510,17 @@
       "how": "fixed",
       "note": "Hosted editor remains light under both browser color schemes."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 547.0,
+      "paclitaxelMb": 538.0,
+      "baselineMb": 464.0,
+      "rssIdleMb": 1059.94,
+      "rssPaclitaxelMb": 1066.81,
+      "runs": 3,
+      "processes": 7,
+      "method": "Median Chromium process-tree physical footprint; MOL import; RSS cross-check.",
+      "note": null
+    },
     "observations": [
       "Tested the ChemWriter component embedded in eMolecules, as a guest.",
       "About reports version 2.15.7, revision 2c6181.",
@@ -525,6 +543,17 @@
     "source": "https://depth-first.com/articles/2011/01/12/ten-reasons-to-use-chemwriter-in-your-next-web-application/",
     "note": "Creator documents a ground-up JavaScript rewrite and proprietary molecular renderer."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "ChemWriter",
+      "level": "paid",
+      "price": null
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "ChemWriter SVG/VML renderer",

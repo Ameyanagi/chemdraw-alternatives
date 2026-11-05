@@ -46,13 +46,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_shortcuts-and-tricks.html#bond-context-shortcuts",
-      "note": "Single, double and triple bond editing shortcuts."
+      "note": "Single, double and triple bond editing shortcuts.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_shortcuts-and-tricks.html#bond-context-shortcuts",
-      "note": "Wedge, down-wedge and wavy bond shortcuts."
+      "note": "Wedge, down-wedge and wavy bond shortcuts.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "special-bonds": {
       "status": "unknown",
@@ -70,13 +74,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_shortcuts-and-tricks.html#canvas-context-shortcuts",
-      "note": "Benzene and three- through eight-membered ring templates."
+      "note": "Benzene and three- through eight-membered ring templates.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_shortcuts-and-tricks.html#canvas-context-shortcuts",
-      "note": "Two cyclohexane chair templates."
+      "note": "Two cyclohexane chair templates.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "chains": {
       "status": "unknown",
@@ -100,7 +108,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apidocs.chemaxon.com/marvinpro/interfaces/api_marvinEditorSettings.EditorSettings.html#customAbbreviatedGroups",
-      "note": "Abbreviated groups retain molecular structures and attachment points."
+      "note": "Abbreviated groups retain molecular structures and attachment points.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "unknown",
@@ -112,13 +122,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apidocs.chemaxon.com/marvinpro/interfaces/api_marvinToolSettings.ToolSettings.html#type",
-      "note": "Explicit add-radical drawing tool."
+      "note": "Explicit add-radical drawing tool.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_shortcuts-and-tricks.html#bond-context-shortcuts",
-      "note": "Keys change focused atoms and bonds."
+      "note": "Keys change focused atoms and bonds.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "selection-tools": {
       "status": "unknown",
@@ -136,7 +150,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apidocs.chemaxon.com/marvinpro/interfaces/api_marvinToolSettings.ToolSettings.html#subType",
-      "note": "Forward, equilibrium, resonance and retrosynthesis arrows."
+      "note": "Forward, equilibrium, resonance and retrosynthesis arrows.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "unknown",
@@ -148,13 +164,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apidocs.chemaxon.com/marvinpro/types/api_marvinTypes.DocumentType.html",
-      "note": "RXN is a supported chemical document format."
+      "note": "RXN is a supported chemical document format.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "atom-mapping": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://apidocs.chemaxon.com/marvinpro/interfaces/api_marvinToolSettings.ToolSettings.html#type",
-      "note": "Dedicated reaction-map tool."
+      "note": "Dedicated reaction-map tool.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "orbitals": {
       "status": "unknown",
@@ -166,19 +186,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apidocs.chemaxon.com/marvinpro/interfaces/api_marvinToolSettings.ToolSettings.html#subType",
-      "note": "Font family, size, subscript and superscript tools."
+      "note": "Font family, size, subscript and superscript tools.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "shapes": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_sketch-js-comparison.html#additional-arrow-types-shapes-and-brackets",
-      "note": "Editable geometric shapes, arcs, lines and multiple bracket types."
+      "note": "Editable geometric shapes, arcs, lines and multiple bracket types.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "align": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_sketch-js-comparison.html#fast-drawing-analysis",
-      "note": "Alignment and distribution guidelines."
+      "note": "Alignment and distribution guidelines.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "groups": {
       "status": "unknown",
@@ -194,25 +220,33 @@
       "engine": {
         "library": "In-house Marvin Web Services structure clean (remote Java service)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "journal-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://apidocs.chemaxon.com/marvinpro/interfaces/api_marvinVisualizationSettings.VisualizationSettings.html#styleSettings",
-      "note": "ACS 1996 is the default journal style."
+      "note": "ACS 1996 is the default journal style.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "custom-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://apidocs.chemaxon.com/marvinpro/interfaces/api_marvinVisualizationSettings.VisualizationSettings.html#customJournalStyles",
-      "note": "User-defined journal styles include bond and font settings."
+      "note": "User-defined journal styles include bond and font settings.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "color": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_sketch-js-comparison.html#coloring-and-highlighting-options-for-atoms-bonds-and-shapes",
-      "note": "Atoms, bonds, properties and graphical shapes can be colored."
+      "note": "Atoms, bonds, properties and graphical shapes can be colored.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "unknown",
@@ -224,7 +258,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_sketch-js-comparison.html#importexport-and-crop-multiple-image-formats",
-      "note": "Images can be pasted, imported and cropped."
+      "note": "Images can be pasted, imported and cropped.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "tlc-tables": {
       "status": "unknown",
@@ -240,7 +276,9 @@
       "engine": {
         "library": "In-house ValenceCalculator (Java compiled by GWT to browser JavaScript)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "stereo-perception": {
       "status": "yes",
@@ -250,7 +288,9 @@
       "engine": {
         "library": "In-house Marvin Web Services CIP calculation (remote Java service)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "formula-mass": {
       "status": "unknown",
@@ -266,7 +306,9 @@
       "engine": {
         "library": "In-house Marvin Web Services calculator and JChem Microservices calculations (remote Java services)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "name-to-structure": {
       "status": "yes",
@@ -276,7 +318,9 @@
       "engine": {
         "library": "In-house Marvin Web Services name conversion (remote Java service)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "yes",
@@ -286,7 +330,9 @@
       "engine": {
         "library": "In-house Marvin Web Services IUPAC naming (remote Java service)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "nmr-prediction": {
       "status": "yes",
@@ -296,13 +342,17 @@
       "engine": {
         "library": "In-house Marvin Web Services NMR predictor (remote Java service)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "markush": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_index.html#advanced-drawing",
-      "note": "Markush structures, R-groups and query properties."
+      "note": "Markush structures, R-groups and query properties.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "polymers": {
       "status": "unknown",
@@ -314,7 +364,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.certara.com/on-demand-webinar/chemaxon-presents-too-many-tools-not-enough-chemistry/?p=87616",
-      "note": "vendor claim; peptide sequence import."
+      "note": "vendor claim; peptide sequence import.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "image-to-structure": {
       "status": "unknown",
@@ -354,7 +406,9 @@
       "engine": {
         "library": "In-house Marvin Web Services MolConvert (remote Java service)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "mol-sdf": {
       "status": "yes",
@@ -364,7 +418,9 @@
       "engine": {
         "library": "In-house Marvin Web Services MolConvert (remote Java service)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "yes",
@@ -374,7 +430,9 @@
       "engine": {
         "library": "In-house Marvin Web Services MolConvert (remote Java service)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
@@ -384,19 +442,25 @@
       "engine": {
         "library": "Marvin Web Services MolConvert (remote Java service; underlying InChI implementation undisclosed)",
         "source": "https://marvincloud.marvin.cxn.io/assets/index-DipA2Vjw.js"
-      }
+      },
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://apidocs.chemaxon.com/marvinpro/types/api_marvinTypes.DocumentType.html",
-      "note": "RXN export is documented."
+      "note": "RXN export is documented.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_sketch-js-comparison.html#importexport-and-crop-multiple-image-formats",
-      "note": "SVG vector export."
+      "note": "SVG vector export.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "unknown",
@@ -417,10 +481,10 @@
       "note": null
     },
     "office": {
-      "status": "partial",
+      "status": "no",
       "evidence": "docs",
       "source": "https://www.certara.com/blog/cheminformatics-trends-in-2026-ai-is-your-new-favorite-labmate/",
-      "note": "Requires separate JChem for Office integration; unavailable on macOS."
+      "note": "Cloud excludes integrations; Office integration requires enterprise Marvin."
     },
     "python-api": {
       "status": "no",
@@ -463,6 +527,20 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/jchem-for-office_history-of-changes.html#sept-14th-2023-jchem-for-office-2350",
+      "note": "JChem Office add-in; OLE copy-paste removed since version 23.5.0."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_sketch-js-comparison.html#coloring-and-highlighting-options-for-atoms-bonds-and-shapes",
+      "note": "Atom and bond highlighting, distinct from foreground coloring.",
+      "plan": "Marvin Cloud",
+      "planLevel": "paid"
     }
   },
   "caveats": [
@@ -486,6 +564,17 @@
     "source": null,
     "note": "Current canvas provenance and third-party chemistry dependencies unestablished."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Marvin Cloud",
+      "level": "paid",
+      "price": "2026-11-06: US$99/month; academic US$29/month; annual US$990/US$290."
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "In-house Marvin SVG renderer",

@@ -1,39 +1,24 @@
 ---
 import { href } from '../lib/paths';
-import { coverage, features, featureOf, isTested, licenseNames, platformNames, relied, reliesShort, type Tool } from '../lib/tools';
+import { coverage, features, featuresOf, freeFeaturesOf, licenseNames, platformNames, reliesShort, starsLabel, toolTags, type Tool } from '../lib/tools';
 import Thumb from './Thumb.astro';
 
 interface Props { tool: Tool }
 const { tool } = Astro.props;
-const has = (id: string) => ['yes', 'partial'].includes(featureOf(tool, id).status);
-const tags = [
-  ['open-source', 'free', 'freemium'].includes(tool.license.kind) && 'free',
-  tool.license.kind === 'open-source' && 'oss',
-  tool.platforms.macos && 'macos',
-  tool.platforms.windows && 'windows',
-  tool.platforms.linux && 'linux',
-  tool.platforms.web && 'web',
-  has('cdxml') && 'cdxml',
-  has('python-api') && 'python',
-  has('ts-api') && 'ts',
-  has('mcp-agents') && 'agents',
-  isTested(tool) && 'tested',
-  relied(tool, 'Ketcher') && 'ketcher',
-  relied(tool, 'RDKit') && 'rdkit',
-  relied(tool, 'Indigo') && 'indigo',
-].filter(Boolean).join(' ');
+const tags = toolTags(tool).join(' ');
 const count = coverage(tool);
 ---
-<li data-tags={tags} class="border-line grid grid-cols-[96px_1fr] gap-x-4 gap-y-1 border-b py-3 md:grid-cols-[140px_minmax(0,1fr)_230px_170px]">
+<li data-tags={tags} data-name={tool.name.toLowerCase()} data-has={featuresOf(tool).join(' ')} data-free={freeFeaturesOf(tool).join(' ')} class="border-line grid grid-cols-[96px_1fr] gap-x-4 gap-y-1 border-b py-3 md:grid-cols-[140px_minmax(0,1fr)_230px_170px]">
   <Thumb class="row-span-3 aspect-[4/3] md:row-span-1" tool={tool} fixture="complex" />
   <div>
     <h3 class="text-lg tracking-normal"><a class="no-underline" href={href(`tools/${tool.slug}/`)}>{tool.name}</a></h3>
     <p class="text-muted">{tool.summary}</p>
     <p class="relies mt-1">{reliesShort(tool)}</p>
+    {tool.github && <p class="relies"><a href={tool.github.url}>GitHub</a>{starsLabel(tool) && `, ${starsLabel(tool)}`}</p>}
   </div>
   <p class="text-[0.95rem]">{platformNames(tool).join(', ')}<br /><span class="text-muted">{licenseNames[tool.license.kind]}</span></p>
   <div class="text-[0.95rem]" title="Checklist features confirmed, fully or partly">
-    <div class="bg-silica h-1.5 w-full"><div class="bg-nitrogen h-full" style={`width:${(count / features.length) * 100}%`}></div></div>
+    <div class="bg-silica h-1.5 w-full"><div class="bg-accent h-full" style={`width:${(count / features.length) * 100}%`}></div></div>
     <p class="text-muted mt-1">{count} of {features.length} features confirmed</p>
   </div>
 </li>

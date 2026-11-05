@@ -493,7 +493,12 @@
     "Documentation overstates rich text, journal formatting and several file-format workflows."
   ],
   "github": {
+    "url": "https://github.com/Grimlock5310/BondForge",
     "stars": 1,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-04-07",
+    "commits": 24,
+    "contributors": 2,
     "pushedAt": "2026-04-11T22:17:59Z",
     "archived": false
   },
@@ -569,6 +574,11 @@
     "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/ui/main_window.py",
     "note": "Custom Qt drawing scene; OPSIN is optional."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "BondForge molecular renderer",

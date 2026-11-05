@@ -46,13 +46,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
-      "note": "Pro; vendor claim: single, double and triple bonds."
+      "note": "Pro; vendor claim: single, double and triple bonds.",
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
-      "note": "Pro; vendor claim: wedge/dash; wavy bonds undocumented."
+      "note": "Pro; vendor claim: wedge/dash; wavy bonds undocumented.",
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "special-bonds": {
       "status": "unknown",
@@ -70,7 +74,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
-      "note": "Pro; vendor claim: common ring templates, including benzene."
+      "note": "Pro; vendor claim: common ring templates, including benzene.",
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "unknown",
@@ -106,13 +112,17 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
-      "note": "Pro; vendor claim: charges; isotopes and arbitrary labels undocumented."
+      "note": "Pro; vendor claim: charges; isotopes and arbitrary labels undocumented.",
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
-      "note": "Pro; vendor claim: lone pairs."
+      "note": "Pro; vendor claim: lone pairs.",
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "unknown",
@@ -184,7 +194,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chemplus.com.tr/blog/building-your-first-figure",
-      "note": "Pro; vendor claim; grouping uses Chem+ Canvas."
+      "note": "Pro; vendor claim; grouping uses Chem+ Canvas.",
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "cleanup": {
       "status": "unknown",
@@ -260,13 +272,17 @@
       "engine": {
         "library": "PubChem (remote name-to-structure lookup)",
         "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus"
-      }
+      },
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chemplus.com.tr/",
-      "note": "Pro; vendor claim: structure-to-IUPAC-name conversion."
+      "note": "Pro; vendor claim: structure-to-IUPAC-name conversion.",
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "nmr-prediction": {
       "status": "unknown",
@@ -306,7 +322,9 @@
       "engine": {
         "library": "PubChem (remote database lookup)",
         "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus"
-      }
+      },
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "model-3d": {
       "status": "yes",
@@ -316,7 +334,9 @@
       "engine": {
         "library": "Miew (JavaScript/WebGL, separate browser module)",
         "source": "https://chemplus.com.tr/blog/see-molecules-in-3d-with-miew"
-      }
+      },
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "unknown",
@@ -344,7 +364,9 @@
       "engine": {
         "library": "Ketcher (TypeScript MOL V2000 serializer); Indigo (browser WebAssembly MOL V3000 conversion); SDF implementation unconfirmed",
         "source": "https://chemplus.com.tr/_next/static/immutable/chunks/37wbi0-qe8t7r.js"
-      }
+      },
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "partial",
@@ -354,7 +376,9 @@
       "engine": {
         "library": "Indigo (browser WebAssembly through Ketcher standalone)",
         "source": "https://chemplus.com.tr/_next/static/immutable/chunks/0u8kn_o1l1gtz.js"
-      }
+      },
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
@@ -364,7 +388,9 @@
       "engine": {
         "library": "Indigo (browser WebAssembly through Ketcher standalone)",
         "source": "https://chemplus.com.tr/_next/static/immutable/chunks/0u8kn_o1l1gtz.js"
-      }
+      },
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "unknown",
@@ -376,7 +402,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
-      "note": "Pro; vendor claim: scalable SVG export."
+      "note": "Pro; vendor claim: scalable SVG export.",
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "unknown",
@@ -388,7 +416,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
-      "note": "Pro; vendor claim: high-resolution PNG; 300 dpi unspecified."
+      "note": "Pro; vendor claim: high-resolution PNG; 300 dpi unspecified.",
+      "plan": "Pro",
+      "planLevel": "paid"
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -466,6 +496,27 @@
     "source": null,
     "note": "Public vendor documentation does not identify the editor or chemistry libraries."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Free",
+      "level": "account",
+      "price": "2026-11-06: ₺0; calculators only per current pricing"
+    },
+    {
+      "name": "Pro",
+      "level": "paid",
+      "price": "2026-11-06: ₺149/month promotional; ₺499/month list"
+    },
+    {
+      "name": "Team",
+      "level": "paid",
+      "price": "2026-11-06: ₺349/month promotional; ₺999/month list; up to 5 users"
+    }
+  ],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher Raphaël renderer; Indigo image exports",

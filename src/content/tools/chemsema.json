@@ -474,6 +474,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/apps/chemsema-office/src/windows_office/server.rs#L309-L388",
+      "note": "Windows OLE server supports embedded-object editing and storage write-back."
     }
   },
   "caveats": [
@@ -482,7 +488,12 @@
     "Extended template libraries require assets from a locally licensed ChemDraw installation."
   ],
   "github": {
+    "url": "https://github.com/dreamlovesu32/chemsema",
     "stars": 6,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-06-15",
+    "commits": 609,
+    "contributors": 2,
     "pushedAt": "2026-09-26T03:27:14Z",
     "archived": false
   },
@@ -531,7 +542,17 @@
       "how": "fixed",
       "note": "SDF import omits atom labels and overlaps bonds."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 583.93,
+      "paclitaxelMb": 580.85,
+      "baselineMb": 387.04,
+      "rssIdleMb": 1211.19,
+      "rssPaclitaxelMb": 1215.66,
+      "runs": 3,
+      "processes": 9,
+      "method": "Three Chromium runs; summed physical footprints including detached crash handlers.",
+      "note": "SDF imported; previously observed overlapping bonds and missing atom labels."
+    },
     "observations": [
       "Tested the hosted build in an isolated native WebKit host.",
       "SMILES and MOL files produced JSON parse errors; SDF files opened.",
@@ -558,6 +579,11 @@
       "RDKit SMILES grammar"
     ]
   },
+  "appKind": {
+    "desktop": true,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "ChemSema molecular renderer",

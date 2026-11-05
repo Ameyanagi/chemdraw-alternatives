@@ -546,6 +546,11 @@
     "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar",
     "note": "Custom Java2D canvas; MCDL supplies coordinates, with CDK-derived chemistry and identifier toolkits."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "cDraw ChemPanel/drawingobjects (Java2D)",

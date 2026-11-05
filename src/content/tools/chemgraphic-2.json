@@ -46,13 +46,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
-      "note": null
+      "note": null,
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
-      "note": null
+      "note": null,
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "special-bonds": {
       "status": "unknown",
@@ -64,19 +68,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
-      "note": "Tap a double bond to cycle through three placements."
+      "note": "Tap a double bond to cycle through three placements.",
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "rings": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
-      "note": null
+      "note": null,
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
-      "note": "Includes chair conformations."
+      "note": "Includes chair conformations.",
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "chains": {
       "status": "unknown",
@@ -100,7 +110,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#spectrum",
-      "note": "Pr, Ts and Ac are interpreted as groups during analysis."
+      "note": "Pr, Ts and Ac are interpreted as groups during analysis.",
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "unknown",
@@ -112,7 +124,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
-      "note": null
+      "note": null,
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "unknown",
@@ -196,19 +210,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#style",
-      "note": "Includes ACS and RSC presets."
+      "note": "Includes ACS and RSC presets.",
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "custom-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#style",
-      "note": null
+      "note": null,
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "color": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#editor",
-      "note": null
+      "note": null,
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "unknown",
@@ -220,7 +240,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#export",
-      "note": "PNG and JPEG images can be imported."
+      "note": "PNG and JPEG images can be imported.",
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "tlc-tables": {
       "status": "unknown",
@@ -244,7 +266,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#spectrum",
-      "note": null
+      "note": null,
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "properties": {
       "status": "unknown",
@@ -268,7 +292,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#spectrum",
-      "note": "Rule-based 1H and 13C predictions run in the cloud."
+      "note": "Rule-based 1H and 13C predictions run in the cloud.",
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "markush": {
       "status": "unknown",
@@ -328,7 +354,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#export",
-      "note": "MOL and SDF import and export."
+      "note": "MOL and SDF import and export.",
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "unknown",
@@ -340,7 +368,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://simpleappli.com/product_chemgraphic2_howto#export",
-      "note": "InChI import."
+      "note": "InChI import.",
+      "plan": "ChemGraphic 2",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "unknown",
@@ -443,6 +473,17 @@
     "source": "https://simpleappli.com/product_chemgraphic2",
     "note": "xtb performs IR prediction; drawing canvas provenance remains undisclosed."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "ChemGraphic 2",
+      "level": "paid",
+      "price": "2026-11-06: Japan ¥500/month or ¥5,500/year; first month free."
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

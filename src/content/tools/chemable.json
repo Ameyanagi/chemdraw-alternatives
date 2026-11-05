@@ -482,7 +482,12 @@
     "SMILES loses stereochemistry; PDF export and custom-template saving lack connected UI controls."
   ],
   "github": {
+    "url": "https://github.com/joreitz/chemable",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2025-11-29",
+    "commits": 81,
+    "contributors": 4,
     "pushedAt": "2026-08-18T04:05:25Z",
     "archived": false
   },
@@ -523,9 +528,14 @@
       }
     ],
     "canvas": "evidence/chemable/canvas.webp",
-    "canvasLight": null,
+    "canvasLight": "evidence/chemable/canvas-light.webp",
     "canvasDark": null,
-    "themes": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Editor stays light; native title bar remains dark under both overrides."
+    },
     "memory": null,
     "observations": [
       "Default floating toolbar covers the menu bar; moved panels to access commands.",
@@ -553,6 +563,11 @@
     "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/renderer.ts#L34-L40",
     "note": "Custom 2D canvas; RDKit chemistry, 3Dmol.js 3D views, nmr-simulation spectra."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Chemable Canvas 2D renderer",

@@ -39,6 +39,7 @@
     { "id": "journal-styles", "group": "figures", "name": "Journal drawing styles", "test": "Built-in presets such as ACS, JACS, RSC or Nature." },
     { "id": "custom-styles", "group": "figures", "name": "Reusable custom styles", "test": "Bond and font settings can be saved and reused." },
     { "id": "color", "group": "figures", "name": "Color control", "test": "Atoms, bonds or objects can be colored individually." },
+    { "id": "color-highlight", "group": "figures", "name": "Color highlighting", "test": "Colored backgrounds or halos can highlight atoms, bonds or part of a structure." },
     { "id": "pages", "group": "figures", "name": "Page layout and multipage", "test": "Page size control and more than one page in a document." },
     { "id": "pictures", "group": "figures", "name": "Imported pictures", "test": "Raster images can be placed in the drawing." },
     { "id": "tlc-tables", "group": "figures", "name": "TLC plates and tables", "test": "Dedicated TLC or gel objects, or editable tables." },
@@ -69,6 +70,7 @@
     { "id": "png-export", "group": "files", "name": "High-resolution PNG", "test": "PNG export at print resolution, 300 dpi or better." },
     { "id": "clipboard-chemdraw", "group": "files", "name": "Paste to and from ChemDraw", "test": "Structures stay editable when copied between this tool and ChemDraw." },
     { "id": "office", "group": "files", "name": "Editable in Word or PowerPoint", "test": "A structure placed in Office can be re-edited." },
+    { "id": "office-ole", "group": "files", "name": "Windows Office OLE", "test": "On Windows, a structure pasted into Word or PowerPoint can be double-clicked to edit it in the tool." },
 
     { "id": "python-api", "group": "automation", "name": "Python API", "test": "A documented Python package or binding drives the tool." },
     { "id": "ts-api", "group": "automation", "name": "JavaScript or TypeScript API", "test": "A documented JS or TS API drives the tool from code. Embedding the editor is counted separately." },

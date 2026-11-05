@@ -498,7 +498,12 @@
     "README lists the implemented sketcher as planned and denies chemistry dependencies despite vendored OASA and optional RDKit."
   ],
   "github": {
+    "url": "https://github.com/vijaymasand/PyChem-Pro",
     "stars": 401,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-03-18",
+    "commits": 292,
+    "contributors": 4,
     "pushedAt": "2026-10-18T04:22:52Z",
     "archived": false
   },
@@ -573,6 +578,11 @@
     "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/paper.py#L1-L23",
     "note": "ChemCanvas adaptation and OASA contradict README's from-scratch/no-chemistry-dependencies claims; RDKit plugin optional."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Adapted ChemCanvas sketcher; in-house QPainter views",

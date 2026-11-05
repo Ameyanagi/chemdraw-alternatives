@@ -562,8 +562,13 @@
     "Upstream Ketcher advertises OCR; this bundled standalone build explicitly rejects it."
   ],
   "github": {
+    "url": "https://github.com/GSmithBoltz/BoltzDraw",
     "stars": 0,
-    "pushedAt": "2026-11-03T10:23:10Z",
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2025-12-24",
+    "commits": 57,
+    "contributors": 4,
+    "pushedAt": "2026-11-05T17:23:52Z",
     "archived": false
   },
   "hands": {
@@ -611,7 +616,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 373.0,
+      "paclitaxelMb": 346.0,
+      "baselineMb": 50.33,
+      "rssIdleMb": 800.25,
+      "rssPaclitaxelMb": 785.41,
+      "runs": 3,
+      "processes": 4,
+      "method": "Playwright headless Chromium; summed process-tree physical footprints; median of three.",
+      "note": null
+    },
     "observations": [
       "The About dialog identifies the embedded editor as Ketcher 2.24.0; no BoltzDraw version was shown.",
       "The first SMILES import appeared on canvas while the properties panel initially showed zero molecules.",
@@ -648,6 +663,11 @@
     "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/index.html#L62",
     "note": "Ketcher iframe; RDKit/Mol* frontend; remaining libraries support optional Python services."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher; Indigo exports; RDKit previews",

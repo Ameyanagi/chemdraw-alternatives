@@ -481,7 +481,12 @@
     "Some guides retain obsolete CDXML export-menu entries and describe MOL as import-only."
   ],
   "github": {
+    "url": "https://github.com/dhsohn/Chemvas",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-01-03",
+    "commits": 683,
+    "contributors": 3,
     "pushedAt": "2026-11-05T11:35:31Z",
     "archived": false
   },
@@ -528,7 +533,7 @@
       "light": true,
       "dark": true,
       "how": "follows system",
-      "note": "Only native title bar changes; canvas and toolbars remain light."
+      "note": "Dark native title bar; canvas and toolbar backgrounds remain light."
     },
     "memory": null,
     "observations": [
@@ -553,6 +558,11 @@
     "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/ui/canvas/canvas_view_setup.py#L23-L46",
     "note": "Custom Qt canvas and molecular model; RDKit backend removed before v0.28.0."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Chemvas Qt bond/label renderer",

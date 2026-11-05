@@ -489,7 +489,12 @@
     "ChemEdit's SDF save option writes MOL data; use Ketcher's own SDF exporter."
   ],
   "github": {
+    "url": "https://github.com/ruzx/obsidian-chemedit",
     "stars": 3,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-08-05",
+    "commits": 85,
+    "contributors": 1,
     "pushedAt": "2026-10-21T12:03:58Z",
     "archived": false
   },
@@ -515,6 +520,11 @@
     "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/KetcherReact.tsx",
     "note": "Embeds packaged Ketcher; Indigo supplies chemistry, OpenChemLib properties, SmilesDrawer previews, and Miew 3D."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher/Raphaël, SmilesDrawer, and Indigo",

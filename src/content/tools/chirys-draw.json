@@ -442,6 +442,11 @@
     "source": null,
     "note": "Patented gestures do not establish underlying canvas provenance; third-party chemistry libraries remain unverified."
   },
+  "appKind": {
+    "desktop": false,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": null,
     "name": null,

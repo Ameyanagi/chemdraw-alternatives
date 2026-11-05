@@ -5,7 +5,7 @@ import Mark from '../../components/Mark.astro';
 import Canvas from '../../components/Canvas.astro';
 import Thumb from '../../components/Thumb.astro';
 import { href } from '../../lib/paths';
-import { coverage, featureOf, features, formatBytes, groups, isTested, licenseNames, loadTools, mainLanguage, molecules, otherLanguages, platformNames, portedLabel, proofOf, reliesOn, rendererLabel, shotZoom, testedVersion, thirdPartySummary, type Tool } from '../../lib/tools';
+import { coverage, featureOf, firstCommit, historyLabel, features, formatBytes, groups, isTested, licenseNames, loadTools, mainLanguage, molecules, otherLanguages, planTag, plansLabel, platformNames, portedLabel, proofOf, reliesOn, rendererLabel, shotZoom, starsLabel, testedVersion, thirdPartySummary, type Tool } from '../../lib/tools';
 
 export async function getStaticPaths() {
   const tools = await loadTools();
@@ -13,13 +13,17 @@ export async function getStaticPaths() {
 }
 
 const { tool } = Astro.props as { tool: Tool };
-const links = [['Website', tool.website], ['Manual', tool.docs], ['Source code', tool.repo]].filter(([, url]) => url);
+const links = [['Website', tool.website], ['Manual', tool.docs], [tool.github ? 'GitHub' : 'Source code', tool.github?.url ?? tool.repo]].filter(([, url]) => url);
 const facts: [string, string | null | undefined][] = [
+  ['GitHub stars', starsLabel(tool)],
+  ['First commit', firstCommit(tool)],
+  ['Repository activity', historyLabel(tool)],
   ['Latest version', tool.version.name],
   ['Version we tested', isTested(tool) ? testedVersion(tool) : null],
   ['Runs on', platformNames(tool).join(', ')],
   ['License', tool.license.text],
   ['Price', tool.price.text],
+  ['Plans', plansLabel(tool)],
   ['Relies on', [reliesOn(tool), portedLabel(tool), tool.builtOn?.note].filter(Boolean).join('. ')],
   ['Draws with', tool.engine.rendering],
   ['Chemistry from', tool.engine.chemistry],
@@ -93,8 +97,8 @@ const sourceLabel = (source: string) => (source.startsWith('help:') ? 'Built-in 
       <p class="text-muted mt-1 mb-4">Screenshots from our test of this version.</p>
       <div class="wall">
         {shots.map(({ feature, shot }) => (
-          <a class="bg-paper hover:bg-silica flex flex-col p-3 no-underline" href={href(`shots/${tool.slug}/${feature.id}/`)} {...shotZoom(tool, feature.id)}>
-            <div class="aspect-[4/3] overflow-hidden"><img class="size-full object-contain" src={href(shot.image)} loading="lazy" decoding="async" alt={shot.caption} /></div>
+          <a class="bg-paper hover:bg-silica flex flex-col p-3 no-underline" href={href(`shots/${tool.slug}/${feature.id}/`)}>
+            <div class="aspect-[4/3] overflow-hidden"><img class="size-full cursor-zoom-in object-contain" {...shotZoom(tool, feature.id)} src={href(shot.image)} loading="lazy" decoding="async" alt={shot.caption} /></div>
             <p class="mt-2 font-semibold">{feature.name}</p>
             <p class="text-muted text-[0.9rem]">{shot.caption}</p>
           </a>
@@ -118,6 +122,7 @@ const sourceLabel = (source: string) => (source.startsWith('help:') ? 'Built-in 
                   <span><Mark feature={value} proof={proofOf(tool, feature.id)} /></span>
                   <span><a href={href(`features/${feature.id}/`)}>{feature.name}</a></span>
                   <span class="text-muted col-start-2 text-[0.95rem] md:col-start-3">
+                    {planTag(tool, feature.id) && <span class="text-ink font-semibold">{planTag(tool, feature.id)}. </span>}
                     {value.note}
                     {value.source?.startsWith('help:') ? <span> ({sourceLabel(value.source)})</span> : value.source ? <a class="ml-1" href={value.source}>{sourceLabel(value.source)}</a> : null}
                   </span>

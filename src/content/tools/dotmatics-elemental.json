@@ -150,7 +150,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/elemental/id518655328",
-      "note": "iOS edition opens and exports chemical reactions as RXN."
+      "note": "iOS edition opens and exports chemical reactions as RXN.",
+      "plan": "Elemental App",
+      "planLevel": "free"
     },
     "atom-mapping": {
       "status": "unknown",
@@ -258,7 +260,9 @@
       "engine": {
         "library": "In-house (Elemental JavaScript)",
         "source": "https://www.hit2lead.com/elemental/elemental-obf.js"
-      }
+      },
+      "plan": "Elemental App",
+      "planLevel": "free"
     },
     "properties": {
       "status": "yes",
@@ -268,7 +272,9 @@
       "engine": {
         "library": "In-house (Dotmatics C Chemistry Toolkit, iOS)",
         "source": "https://www.rsccicag.org/index_htm_files/CICAG_Newsletter_Winter_2019-20_tcm18-252021.pdf"
-      }
+      },
+      "plan": "Elemental App",
+      "planLevel": "free"
     },
     "name-to-structure": {
       "status": "unknown",
@@ -304,7 +310,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.dotmatics.com/events/whats-new-in-dotmatics-eln-7.4",
-      "note": "Paid platform edition: biological sequence editing; vendor claim."
+      "note": "Paid platform edition: biological sequence editing; vendor claim.",
+      "plan": "Dotmatics ELN",
+      "planLevel": "paid"
     },
     "image-to-structure": {
       "status": "unknown",
@@ -350,7 +358,9 @@
       "engine": {
         "library": "In-house (Elemental JavaScript MOL/SDF parser and writer)",
         "source": "https://www.hit2lead.com/elemental/elemental-obf.js"
-      }
+      },
+      "plan": "Elemental App",
+      "planLevel": "free"
     },
     "smiles": {
       "status": "unknown",
@@ -368,7 +378,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/elemental/id518655328",
-      "note": "iOS opens RXN attachments and emails RXN files."
+      "note": "iOS opens RXN attachments and emails RXN files.",
+      "plan": "Elemental App",
+      "planLevel": "free"
     },
     "svg-export": {
       "status": "unknown",
@@ -463,6 +475,27 @@
     "source": "https://www.rsccicag.org/index_htm_files/CICAG_Newsletter_Winter_2019-20_tcm18-252021.pdf#page=19",
     "note": "Toolkit author identifies Elemental with Dotmatics' internal JavaScript chemistry engine."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Elemental App",
+      "level": "free",
+      "price": "2026-11-06: Free, iOS App Store."
+    },
+    {
+      "name": "Elemental Draw",
+      "level": "paid",
+      "price": null
+    },
+    {
+      "name": "Dotmatics ELN",
+      "level": "paid",
+      "price": null
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "Elemental Canvas 2D renderer",

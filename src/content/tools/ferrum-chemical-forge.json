@@ -459,7 +459,12 @@
     "Contract docs understate implemented ring choices, templates, atom properties, and paper controls."
   ],
   "github": {
+    "url": "https://github.com/vosslab/ferrum-chemical-forge",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-08-03",
+    "commits": 65,
+    "contributors": 1,
     "pushedAt": "2026-10-11T19:34:35Z",
     "archived": false
   },
@@ -527,6 +532,11 @@
     "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/PROVENANCE.md",
     "note": "BKChem-Qt lineage documented; current canvas derivation not established."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Ferrum-Chem molecular renderer",

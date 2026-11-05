@@ -433,6 +433,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://chemie-lernprogramme.de/daten/ueb/ueb_chemeditor_libreoffice_loes.pdf",
+      "note": "Copies Unicode text into Office, without embedded chemical object editing."
     }
   },
   "caveats": [
@@ -486,7 +492,17 @@
       "how": "fixed",
       "note": "Paclitaxel SMILES remains literal text; no molecular drawing."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 243,
+      "paclitaxelMb": null,
+      "baselineMb": 203,
+      "rssIdleMb": 802.2,
+      "rssPaclitaxelMb": null,
+      "runs": 3,
+      "processes": 6,
+      "method": "Median physical footprint of dedicated Playwright Chromium process tree; RSS cross-check.",
+      "note": "SMILES remains plain text; paclitaxel drawing unsupported."
+    },
     "observations": [
       "No version was shown; identifier is the served HTML SHA-256 prefix.",
       "The main editing area is a monospaced text field.",
@@ -509,6 +525,11 @@
     "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
     "note": "Own Unicode text composer and PNG renderer; FileSaver only handles downloads."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Unicode text and Canvas text renderer",

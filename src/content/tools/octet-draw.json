@@ -538,6 +538,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src-tauri/src/clipboard.rs#L9-L13",
+      "note": "Windows Office receives EMF pictures with CDXML metadata, not OLE objects."
     }
   },
   "caveats": [
@@ -546,7 +552,12 @@
     "Older notes predate implemented NMR, properties, queries, peptides, dictionaries, Windows EMF and PubChem fetching."
   ],
   "github": {
-    "stars": 76,
+    "url": "https://github.com/SamChemMan/Octet-Draw",
+    "stars": 78,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-10-14",
+    "commits": 781,
+    "contributors": 2,
     "pushedAt": "2026-11-04T14:13:50Z",
     "archived": false
   },
@@ -625,6 +636,11 @@
     "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx#L7324",
     "note": "Custom SVG canvas; Indigo chemistry, OPSIN name conversion, and bundled InChI."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Octet ACS 1996 SVG renderer",

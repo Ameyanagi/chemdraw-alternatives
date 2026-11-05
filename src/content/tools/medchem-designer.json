@@ -55,6 +55,11 @@
     "https://www.simulations-plus.com/software/medchem-designer/"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

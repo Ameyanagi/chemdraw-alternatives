@@ -497,7 +497,12 @@
     "Stereo perception reports parity rather than R/S or E/Z labels."
   ],
   "github": {
-    "stars": 279,
+    "url": "https://github.com/partridgejiang/Kekule.js",
+    "stars": 280,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2015-02-01",
+    "commits": 2753,
+    "contributors": 9,
     "pushedAt": "2026-09-21T13:00:32Z",
     "archived": false
   },
@@ -546,7 +551,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 207.38,
+      "paclitaxelMb": 191.22,
+      "baselineMb": 50.24,
+      "rssIdleMb": 460.75,
+      "rssPaclitaxelMb": 451.38,
+      "runs": 3,
+      "processes": 4,
+      "method": "Headless Chromium process tree; summed phys_footprint in MiB; medians of fresh runs.",
+      "note": null
+    },
     "observations": [
       "Version taken from research file; demo displayed no version.",
       "The editor initially showed a Friedel-Crafts example.",
@@ -574,6 +589,11 @@
     "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/kekule.js#L476-L601",
     "note": "Own Composer canvas; Open Babel, Indigo, and InChI are optional chemistry modules."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Kekule.Render.ChemCtab2DRenderer",

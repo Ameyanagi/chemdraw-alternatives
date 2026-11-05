@@ -620,7 +620,17 @@
       "how": "in-app setting",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 562.99,
+      "paclitaxelMb": 466.94,
+      "baselineMb": 49.25,
+      "rssIdleMb": 910.11,
+      "rssPaclitaxelMb": 858.88,
+      "runs": 3,
+      "processes": 5,
+      "method": "Median Chromium process-tree physical footprints; headless, SMILES import; 10-second waits.",
+      "note": null
+    },
     "observations": [
       "About identifies embedded Ketcher 3.18.0; no FreeChemDraw release version shown.",
       "Default caffeine layout uses aromatic circles and colored heteroatoms.",
@@ -647,6 +657,11 @@
     "source": "https://freechemdraw.com/en/",
     "note": "Embeds Ketcher 3.18; Indigo handles chemistry and 3Dmol.js displays 3D structures."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher SVG/Raphaël; Indigo generated images",

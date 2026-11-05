@@ -498,7 +498,12 @@
     "Chemistry calculations and SVG export require JavaScript API integration."
   ],
   "github": {
+    "url": "https://github.com/cheminfo/openchemlib-js",
     "stars": 94,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2014-08-26",
+    "commits": 840,
+    "contributors": 15,
     "pushedAt": "2026-11-03T16:57:07Z",
     "archived": false
   },
@@ -547,7 +552,17 @@
       "how": "fixed",
       "note": "Light and dark browser preferences produce identical appearance."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 92.79,
+      "paclitaxelMb": 104.18,
+      "baselineMb": 50.19,
+      "rssIdleMb": 348.25,
+      "rssPaclitaxelMb": 371.69,
+      "runs": 3,
+      "processes": 4,
+      "method": "Headless Chromium process tree; summed phys_footprint in MiB; medians of fresh runs.",
+      "note": null
+    },
     "observations": [
       "Pasted SMILES are automatically laid out in the 2D canvas.",
       "Default complex drawing displays red stereochemical annotations.",
@@ -573,6 +588,11 @@
     "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/scripts/openchemlib/classes.js#L382-L397",
     "note": "JavaScript port copies OpenChemLib's editor source and applies compatibility patches."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "OpenChemLib AbstractDepictor / GenericDepictor",

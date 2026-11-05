@@ -10,6 +10,8 @@ const feature = z.object({
   note: z.string().nullable(),
   shot: z.object({ image: z.string(), caption: z.string() }).optional(),
   engine: z.object({ library: z.string(), source: url.optional() }).optional(),
+  plan: z.string().optional(),
+  planLevel: z.enum(['free', 'account', 'paid']).optional(),
 });
 const capture = z.object({
   fixture: z.enum(['simple', 'complex', 'threed']),
@@ -50,6 +52,8 @@ const tools = defineCollection({
     name: z.string(),
     rank: z.number().int().positive(),
     builtOn: builtOn.nullable(),
+    appKind: z.object({ desktop: z.boolean(), web: z.boolean() }),
+    plans: z.array(z.object({ name: z.string(), level: z.enum(['free', 'account', 'paid']), price: z.string().nullable() })),
     renderer: renderer.nullable().optional(),
     enginesChecked: z.boolean(),
     languageNote: z.string().nullable().optional(),
@@ -79,7 +83,7 @@ const tools = defineCollection({
     languages: z.array(z.string()),
     features: z.record(z.string(), feature),
     caveats: z.array(z.string()),
-    github: z.object({ stars: z.number().nullable(), pushedAt: z.string().nullable(), archived: z.boolean().nullable() }).nullable(),
+    github: z.object({ url: z.string(), stars: z.number().nullable(), checkedOn: z.string(), firstCommit: z.string().nullable(), commits: z.number().nullable(), contributors: z.number().nullable(), pushedAt: z.string().nullable(), archived: z.boolean().nullable() }).nullable(),
     hands: z.object({
       testedVersion: z.string().nullable(),
       canvas: z.string().nullable(),

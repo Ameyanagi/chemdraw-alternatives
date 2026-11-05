@@ -467,6 +467,11 @@
     "source": "https://cheminf20.org/2013/03/19/molprime-ios-due-for-an-overhaul/",
     "note": "Reuses the vendor's MMDS sketcher; third-party chemistry dependencies remain unestablished."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "MMDS sketcher (MMDSLib)",

@@ -248,7 +248,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ddmcorp.com/goods/struct/4ddraw.html",
-      "note": "Pro/Office: molecular formula, exact mass and formula mass."
+      "note": "Pro/Office: molecular formula, exact mass and formula mass.",
+      "plan": "Chemistry 4-D Draw Pro",
+      "planLevel": "paid"
     },
     "properties": {
       "status": "unknown",
@@ -264,7 +266,9 @@
       "engine": {
         "library": "In-house (NamExpert desktop module)",
         "source": "https://www.cheminnovation.com/products/nameexpert.asp"
-      }
+      },
+      "plan": "Chemistry 4-D Draw Std",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "yes",
@@ -274,7 +278,9 @@
       "engine": {
         "library": "In-house (Nomenclator desktop module)",
         "source": "https://www.cheminnovation.com/products/nomenclature.asp"
-      }
+      },
+      "plan": "Chemistry 4-D Draw Pro",
+      "planLevel": "paid"
     },
     "nmr-prediction": {
       "status": "unknown",
@@ -431,6 +437,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ddmcorp.com/goods/struct/4ddraw.html",
+      "note": "Windows OLE-2 embeds structures in Word with double-click editing."
     }
   },
   "caveats": [
@@ -453,6 +465,32 @@
     "source": null,
     "note": "Vendor documentation does not establish canvas provenance or third-party chemistry libraries."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "Chemistry 4-D Draw Lite",
+      "level": "paid",
+      "price": "US$149; education/government $89; student $49 (2026-11-06)"
+    },
+    {
+      "name": "Chemistry 4-D Draw Std",
+      "level": "paid",
+      "price": "US$299; education/government $189; student $89 (2026-11-06)"
+    },
+    {
+      "name": "Chemistry 4-D Draw Pro",
+      "level": "paid",
+      "price": "US$499; education/government $299; student $149 (2026-11-06)"
+    },
+    {
+      "name": "Chemistry 4-D Draw Office",
+      "level": "paid",
+      "price": "US$699; education/government $399; student $199 (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

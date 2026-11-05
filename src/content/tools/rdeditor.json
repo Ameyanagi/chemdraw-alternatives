@@ -481,7 +481,12 @@
     "README says atom clicks add bonded atoms; current code replaces atoms and uses dragging to add them."
   ],
   "github": {
+    "url": "https://github.com/EBjerrum/rdeditor",
     "stars": 181,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2018-09-13",
+    "commits": 167,
+    "contributors": 8,
     "pushedAt": "2026-05-03T18:26:26Z",
     "archived": false
   },
@@ -555,6 +560,11 @@
     "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molEditWidget.py",
     "note": "Custom editor uses RDKit molecular graphs and SVG rendering."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "RDKit MolDraw2D (SVG)",

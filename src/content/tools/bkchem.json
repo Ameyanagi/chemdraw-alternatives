@@ -2,7 +2,7 @@
   "id": "p23",
   "slug": "bkchem",
   "name": "BKChem",
-  "rank": 85,
+  "rank": 86,
   "tier": "alternative",
   "tierReason": "Standalone structure and reaction-scheme drawing, typography, layout controls and vector exports support publication figures.",
   "summary": "Desktop editor for drawing two-dimensional chemical structures, reaction schemes, and publication figures.",
@@ -498,6 +498,11 @@
     "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/paper.py",
     "note": "Custom canvas uses OASA chemistry; InChI generation invokes an optional external executable."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "BKChem bond/atom/ftext renderer (Tk Canvas)",

@@ -431,6 +431,12 @@
       "evidence": "docs",
       "source": "https://en.chemdraft.com/help/13-6",
       "note": "Built-in assistant generates editable structures, mechanisms and routes on canvas."
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/11-5",
+      "note": "Word/PowerPoint objects reopen ChemDraft on double-click; edits update the document."
     }
   },
   "caveats": [
@@ -475,6 +481,11 @@
     "source": "https://en.chemdraft.com/",
     "note": "Vendor claims independent development; external chemistry dependencies remain undisclosed."
   },
+  "appKind": {
+    "desktop": true,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": null,
     "name": "ChemDraft Qt/QPainter renderer (WCanvasImpl)",

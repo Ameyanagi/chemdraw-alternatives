@@ -46,7 +46,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/chemworks/id1495565603?mt=12",
-      "note": "Vendor claim: manually draw single, double and triple bonds."
+      "note": "Vendor claim: manually draw single, double and triple bonds.",
+      "plan": "ChemWorks",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "unknown",
@@ -70,7 +72,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/61/d4/ce/61d4ce00-6453-0006-5880-f287454abe90/d0550459-a246-46fa-a979-d08d5d11a738_fff.png/1600x1000bb.jpg",
-      "note": "Official screenshot shows common ring tools, including benzene."
+      "note": "Official screenshot shows common ring tools, including benzene.",
+      "plan": "ChemWorks",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "unknown",
@@ -328,7 +332,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/chemworks/id1495565603?mt=12",
-      "note": "Vendor claim: MOL V2000 import/export; SDF support undocumented."
+      "note": "Vendor claim: MOL V2000 import/export; SDF support undocumented.",
+      "plan": "ChemWorks",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "unknown",
@@ -352,7 +358,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/chemworks/id1495565603?mt=12",
-      "note": "Vendor claim: SVG export added in version 1.6."
+      "note": "Vendor claim: SVG export added in version 1.6.",
+      "plan": "ChemWorks",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "unknown",
@@ -442,6 +450,17 @@
     "source": null,
     "note": "Public vendor documentation does not establish canvas provenance or third-party chemistry libraries."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "ChemWorks",
+      "level": "paid",
+      "price": "US$9.99 (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

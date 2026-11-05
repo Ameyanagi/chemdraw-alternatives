@@ -542,7 +542,17 @@
       "how": "fixed",
       "note": "Editor remained light under the dark appearance override."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 827.0,
+      "paclitaxelMb": 845.0,
+      "baselineMb": 435.0,
+      "rssIdleMb": 1679.61,
+      "rssPaclitaxelMb": 1431.16,
+      "runs": 3,
+      "processes": 9,
+      "method": "Median Chromium process-tree phys_footprint; PubChem SMILES import; MiB.",
+      "note": null
+    },
     "observations": [
       "The hosted editor was tested in an isolated WebKit window.",
       "SMILES imports resolve through PubChem and use its 2D structures.",
@@ -570,6 +580,11 @@
     "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95",
     "note": "Mounts Kekule.js Composer; adds RDKit validation, Open Babel conformers, and 3Dmol.js viewing."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Kekule.js canvas; in-house SVG renderer",

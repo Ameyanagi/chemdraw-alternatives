@@ -46,7 +46,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/structure-drawing",
-      "note": null
+      "note": null,
+      "plan": "Free",
+      "planLevel": "account"
     },
     "stereo-bonds": {
       "status": "unknown",
@@ -70,7 +72,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/structure-drawing",
-      "note": "Ring templates include benzene; rings can be fused."
+      "note": "Ring templates include benzene; rings can be fused.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "conformers": {
       "status": "unknown",
@@ -88,7 +92,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/structure-drawing",
-      "note": "Functional groups and common molecules, including aspirin and caffeine."
+      "note": "Functional groups and common molecules, including aspirin and caffeine.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "custom-templates": {
       "status": "unknown",
@@ -148,7 +154,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/reaction-mode",
-      "note": "RXN stores explicit reactant and product assignments."
+      "note": "RXN stores explicit reactant and product assignments.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "atom-mapping": {
       "status": "unknown",
@@ -190,13 +198,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/structure-drawing",
-      "note": "Clean command adjusts angles, spacing, and ring geometry."
+      "note": "Clean command adjusts angles, spacing, and ring geometry.",
+      "plan": "Free Tools",
+      "planLevel": "free"
     },
     "journal-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/publication-export",
-      "note": "ACS Document 1996 preset."
+      "note": "ACS Document 1996 preset.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "custom-styles": {
       "status": "unknown",
@@ -232,7 +244,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/structure-drawing",
-      "note": "Invalid atom labels and valence errors are flagged."
+      "note": "Invalid atom labels and valence errors are flagged.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "stereo-perception": {
       "status": "unknown",
@@ -254,7 +268,9 @@
       "engine": {
         "library": "RDKit (remote FastAPI chemistry server)",
         "source": "https://www.chemstitch.ai/security"
-      }
+      },
+      "plan": "Free Tools",
+      "planLevel": "free"
     },
     "name-to-structure": {
       "status": "yes",
@@ -264,13 +280,17 @@
       "engine": {
         "library": "PubChem web service (name lookup followed by Load to Canvas)",
         "source": "https://www.chemstitch.ai/docs/pubchem-integration"
-      }
+      },
+      "plan": "Student",
+      "planLevel": "account"
     },
     "structure-to-name": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/ai-chat",
-      "note": "Requires Standard or verified Student after trial."
+      "note": "Requires Standard or verified Student after trial.",
+      "plan": "Student",
+      "planLevel": "account"
     },
     "nmr-prediction": {
       "status": "no",
@@ -304,7 +324,9 @@
       "engine": {
         "library": "OpenAI vision API (remote server); RDKit backend validation of extracted SMILES",
         "source": "https://www.chemstitch.ai/subprocessors"
-      }
+      },
+      "plan": "Student",
+      "planLevel": "account"
     },
     "database-lookup": {
       "status": "yes",
@@ -314,7 +336,9 @@
       "engine": {
         "library": "PubChem web service (compound lookup and similarity search)",
         "source": "https://www.chemstitch.ai/docs/pubchem-integration"
-      }
+      },
+      "plan": "Student",
+      "planLevel": "account"
     },
     "model-3d": {
       "status": "no",
@@ -332,7 +356,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/file-formats",
-      "note": "Import only; CDXML export is explicitly unsupported."
+      "note": "Import only; CDXML export is explicitly unsupported.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "cdx": {
       "status": "no",
@@ -344,31 +370,41 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/file-formats",
-      "note": "MOL V2000/V3000 and SDF import/export documented; pricing lists fewer formats."
+      "note": "MOL V2000/V3000 and SDF import/export documented; pricing lists fewer formats.",
+      "plan": "Free Tools",
+      "planLevel": "free"
     },
     "smiles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/file-formats",
-      "note": "SMILES import and clipboard export."
+      "note": "SMILES import and clipboard export.",
+      "plan": "Free Tools",
+      "planLevel": "free"
     },
     "inchi": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/file-formats",
-      "note": "InChI import and clipboard export."
+      "note": "InChI import and clipboard export.",
+      "plan": "Free Tools",
+      "planLevel": "free"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/reaction-mode",
-      "note": "MDL RXN import and export in reaction mode."
+      "note": "MDL RXN import and export in reaction mode.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/publication-export",
-      "note": "Resolution-independent vector SVG."
+      "note": "Resolution-independent vector SVG.",
+      "plan": "Free Tools",
+      "planLevel": "free"
     },
     "pdf-export": {
       "status": "unknown",
@@ -380,7 +416,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/publication-export",
-      "note": "300, 450, or 600 DPI."
+      "note": "300, 450, or 600 DPI.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -434,7 +472,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemstitch.ai/docs/ai-chat",
-      "note": "Generates structures; Standard or verified Student after trial."
+      "note": "Generates structures; Standard or verified Student after trial.",
+      "plan": "Student",
+      "planLevel": "account"
     }
   },
   "caveats": [
@@ -480,6 +520,32 @@
     "source": "https://www.chemstitch.ai/compare",
     "note": "Ketcher canvas; vendor documents RDKit computations and an OPSIN backend."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Free Tools",
+      "level": "free",
+      "price": "$0; standalone utilities, no sign-up (2026-11-06)"
+    },
+    {
+      "name": "Free",
+      "level": "account",
+      "price": "$0; drawing and computations (2026-11-06)"
+    },
+    {
+      "name": "Student",
+      "level": "account",
+      "price": "$0; verified students (2026-11-06)"
+    },
+    {
+      "name": "Standard",
+      "level": "paid",
+      "price": "US$19/month or $190/year; academic $9/month (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher SVG/Raphaël renderer",

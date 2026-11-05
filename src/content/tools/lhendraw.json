@@ -449,7 +449,12 @@
     "README reports graphical glitches after repeated scaling and rotation of circular arrows."
   ],
   "github": {
+    "url": "https://github.com/Wasserthal/lhendraw",
     "stars": 2,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2013-05-02",
+    "commits": 581,
+    "contributors": 5,
     "pushedAt": "2025-03-30T12:46:07Z",
     "archived": false
   },
@@ -489,6 +494,11 @@
     "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/lhendraw.cxx#L285-L334",
     "note": "Custom atom/bond model and chemical analysis; build links only UI and system libraries."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Lhendraw custom software and vector renderer",

@@ -441,7 +441,12 @@
     "Blueprint plans for MOL/RXN, chemical clipboard and PWA exceed implemented functionality."
   ],
   "github": {
+    "url": "https://github.com/grebenyyk/schematic",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-08-04",
+    "commits": 57,
+    "contributors": 1,
     "pushedAt": "2026-08-08T13:21:05Z",
     "archived": false
   },
@@ -490,7 +495,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 389,
+      "paclitaxelMb": 392,
+      "baselineMb": 381,
+      "rssIdleMb": 974.2,
+      "rssPaclitaxelMb": 990.2,
+      "runs": 3,
+      "processes": 7,
+      "method": "Median of three fresh Playwright Chromium process trees; summed physical footprints.",
+      "note": "Paclitaxel renders with crossing bonds and missing stereochemistry."
+    },
     "observations": [
       "Caffeine SMILES produced a readable drawing and correct formula.",
       "Paclitaxel layout contains long crossing bonds and overlapping labels.",
@@ -514,6 +529,11 @@
     "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/editor.ts#L1-L76",
     "note": "Custom SVG editor with in-house SMILES parsing, layout, and chemistry."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Schematic SVG bond and label renderer",

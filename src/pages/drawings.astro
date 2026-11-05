@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Canvas from '../components/Canvas.astro';
 import Specimen from '../components/Specimen.astro';
 import { href } from '../lib/paths';
-import { drawingZoom, inputNote, isTested, loadTools, molecules, structureNotes, testedVersion } from '../lib/tools';
+import { inputNote, isTested, loadTools, molecules, structureNotes, testedVersion } from '../lib/tools';
 
 const tools = (await loadTools()).filter((tool) => tool.tier !== 'related' && isTested(tool));
 ---
@@ -33,8 +33,8 @@ const tools = (await loadTools()).filter((tool) => tool.tier !== 'related' && is
         {tools.map((tool, index) => {
           const capture = tool.hands?.captures.find((item) => item.fixture === molecule.id);
           return (
-            <a class="bg-paper hover:bg-silica flex flex-col p-3 no-underline" href={href(`tools/${tool.slug}/`)} {...drawingZoom(tool, molecule.id)}>
-              <div class="aspect-[4/3] overflow-hidden"><Specimen tool={tool} fixture={molecule.id} index={index} /></div>
+            <a class="bg-paper hover:bg-silica flex flex-col p-3 no-underline" href={href(`tools/${tool.slug}/`)}>
+              <div class="aspect-[4/3] overflow-hidden"><Specimen tool={tool} fixture={molecule.id} index={index} zoom /></div>
               <p class="mt-2 font-semibold">{tool.name}</p>
               <p class="text-muted text-[0.9rem] [overflow-wrap:anywhere]">
                 {testedVersion(tool)}{tool.drawingStyle ? `, ${tool.drawingStyle} style` : ''}{capture?.input ? `, ${inputNote(capture.input)}` : ''}

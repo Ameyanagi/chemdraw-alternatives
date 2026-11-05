@@ -46,7 +46,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/basicstructures.htm",
-      "note": "Bond orders generated from typed formulas; direct bond editing unverified."
+      "note": "Bond orders generated from typed formulas; direct bond editing unverified.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "unknown",
@@ -58,7 +60,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/toolsoptions.htm",
-      "note": "Coordinate bonds supported; another specialist bond type unverified."
+      "note": "Coordinate bonds supported; another specialist bond type unverified.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "double-bond-side": {
       "status": "unknown",
@@ -70,7 +74,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/ringstructures.htm",
-      "note": "Typed ring notation; automatic recognition and supported rings are limited."
+      "note": "Typed ring notation; automatic recognition and supported rings are limited.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "unknown",
@@ -82,7 +88,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/basicstructures.htm",
-      "note": "Chains generated from typed formulas; dragging chains is unverified."
+      "note": "Chains generated from typed formulas; dragging chains is unverified.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "templates": {
       "status": "unknown",
@@ -94,25 +102,33 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/howdoisavemyowngraphics.htm",
-      "note": "FX Draw saves selected drawings to reusable galleries."
+      "note": "FX Draw saves selected drawings to reusable galleries.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "abbreviations": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/benzenerings.htm",
-      "note": "Recognizes bz and optional ph as benzene-ring codes."
+      "note": "Recognizes bz and optional ph as benzene-ring codes.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/overridingcharges.htm",
-      "note": "Charges supported; isotope and arbitrary atom labels unverified."
+      "note": "Charges supported; isotope and arbitrary atom labels unverified.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/allowingforunbondedelectron.htm",
-      "note": "Displays lone pairs on atoms."
+      "note": "Displays lone pairs on atoms.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "unknown",
@@ -124,7 +140,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/selecting_figures.htm",
-      "note": "Rectangle/Ctrl selection and transforms; lasso selection unverified."
+      "note": "Rectangle/Ctrl selection and transforms; lasso selection unverified.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "perspective": {
       "status": "unknown",
@@ -136,13 +154,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/arrowsequations.htm",
-      "note": "Forward and double arrows, with labels above and below."
+      "note": "Forward and double arrows, with labels above and below.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/smooth_lines.htm",
-      "note": "FX Draw provides editable Bezier curves with arrowheads."
+      "note": "FX Draw provides editable Bezier curves with arrowheads.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "reaction-data": {
       "status": "unknown",
@@ -166,13 +188,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/text_equation_boxes.htm",
-      "note": "FX Draw text boxes combine formatted text, superscripts and subscripts."
+      "note": "FX Draw text boxes combine formatted text, superscripts and subscripts.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "shapes": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/smooth_lines.htm",
-      "note": "FX Draw provides editable shapes and Bezier/freehand curves."
+      "note": "FX Draw provides editable shapes and Bezier/freehand curves.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "align": {
       "status": "unknown",
@@ -184,7 +210,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/groupingandungrouping.htm",
-      "note": "FX Draw groups can be moved and resized together."
+      "note": "FX Draw groups can be moved and resized together.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "cleanup": {
       "status": "unknown",
@@ -202,13 +230,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/toolsoptions.htm",
-      "note": "Saves bond defaults; separate default font settings are available."
+      "note": "Saves bond defaults; separate default font settings are available.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "color": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/the_toolbars.htm",
-      "note": "FX Draw supports individual object line and fill colors."
+      "note": "FX Draw supports individual object line and fill colors.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "unknown",
@@ -220,13 +252,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/bitmaptool.htm",
-      "note": "FX Draw places imported bitmaps on the canvas."
+      "note": "FX Draw places imported bitmaps on the canvas.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "tlc-tables": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/tables.htm",
-      "note": "FX Draw offers editable tables."
+      "note": "FX Draw offers editable tables.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "valence-check": {
       "status": "unknown",
@@ -274,7 +310,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/rr.htm",
-      "note": "Supports R and R-prime groups in structures."
+      "note": "Supports R and R-prime groups in structures.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "polymers": {
       "status": "unknown",
@@ -352,7 +390,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/use_svg_output.htm",
-      "note": "Exports vector SVG graphics."
+      "note": "Exports vector SVG graphics.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "unknown",
@@ -364,7 +404,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/create_higher_resolution_graph.htm",
-      "note": "PNG output at 360 dpi; optional 600 dpi."
+      "note": "PNG output at 360 dpi; optional 600 dpi.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -376,7 +418,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.efofex.com/documentation/classic_mode.htm",
-      "note": "Word for Windows OLE; Classic Edition is deprecated."
+      "note": "Word for Windows OLE; Classic Edition is deprecated.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     },
     "python-api": {
       "status": "unknown",
@@ -419,6 +463,14 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/classic_mode.htm",
+      "note": "OLE double-click editing documented for Windows Word in Classic Edition.",
+      "plan": "FX Science Tools",
+      "planLevel": "paid"
     }
   },
   "caveats": [
@@ -442,6 +494,17 @@
     "source": null,
     "note": "Vendor documentation does not establish canvas provenance or chemistry libraries."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "FX Science Tools",
+      "level": "paid",
+      "price": "Regional subscription quote (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

@@ -459,6 +459,11 @@
     "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
     "note": "Author claims self-built editor and custom ring geometry; dependencies remain unconfirmed."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": null,
     "name": null,

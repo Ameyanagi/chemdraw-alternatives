@@ -466,7 +466,12 @@
     "Native conversion and rendering implement fewer formats and settings than Ketcher exposes."
   ],
   "github": {
+    "url": "https://github.com/spalax-dev/chemistry_draw",
     "stars": 6,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-06-12",
+    "commits": 59,
+    "contributors": 2,
     "pushedAt": "2026-11-04T02:56:20Z",
     "archived": false
   },
@@ -490,6 +495,11 @@
     "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src/App.tsx",
     "note": "Embeds Ketcher with native Indigo; Imago recognition is Linux-only."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher Raphaël/SVG; native Indigo exports",

@@ -485,8 +485,13 @@
     "SMILES export takes one molecule and cannot encode disconnected compounds."
   ],
   "github": {
+    "url": "https://github.com/ksharindam/chemcanvas",
     "stars": 59,
-    "pushedAt": "2026-11-04T14:47:25Z",
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2021-07-21",
+    "commits": 497,
+    "contributors": 1,
+    "pushedAt": "2026-11-05T15:10:17Z",
     "archived": false
   },
   "hands": {
@@ -559,6 +564,11 @@
       "OASA"
     ]
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "ChemCanvas molecular drawing over Qt",

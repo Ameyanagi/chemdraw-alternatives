@@ -453,7 +453,12 @@
     "README overstates stereochemistry: R/S output is limited to console diagnostics; CIP rule 5 is omitted."
   ],
   "github": {
+    "url": "https://github.com/yoeluk/ChemCanvasJS",
     "stars": 10,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2013-12-25",
+    "commits": 11,
+    "contributors": 2,
     "pushedAt": "2013-12-27T15:49:31Z",
     "archived": false
   },
@@ -525,6 +530,11 @@
     "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee",
     "note": "Own canvas and chemistry code; SMILES conversion backend is undisclosed."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "ChemCanvasJS molecular renderer over Paper.js",

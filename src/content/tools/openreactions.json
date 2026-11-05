@@ -532,7 +532,17 @@
       "how": "in-app setting",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 483,
+      "paclitaxelMb": 499,
+      "baselineMb": 410,
+      "rssIdleMb": 1059.66,
+      "rssPaclitaxelMb": 1105.61,
+      "runs": 3,
+      "processes": 7,
+      "method": "Playwright Chromium process-tree physical footprint; three fresh sessions, medians.",
+      "note": null
+    },
     "observations": [
       "SMILES imports generated 2D layouts without a cleanup command.",
       "Caffeine, paclitaxel, and cholesterol MOL exports retained fixture stereochemistry in RDKit.",
@@ -556,6 +566,11 @@
     "source": "https://openreactions.com/draw/assets/openchemlib-zeHud5Jx.js",
     "note": "OpenChemLib dependency confirmed by bundled license notice; editor provenance remains unestablished."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Custom Canvas/SVG renderer",

@@ -459,7 +459,12 @@
     "Cross-file imports and component expansion are not implemented."
   ],
   "github": {
+    "url": "https://github.com/shute2004/ChemMD",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-09-10",
+    "commits": 8,
+    "contributors": 1,
     "pushedAt": "2026-09-10T09:02:44Z",
     "archived": false
   },
@@ -500,9 +505,14 @@
       }
     ],
     "canvas": "evidence/chemmd/canvas.webp",
-    "canvasLight": null,
+    "canvasLight": "evidence/chemmd/canvas-light.webp",
     "canvasDark": null,
-    "themes": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Fixed light appearance; MOL-derived connectivity omits stereochemistry."
+    },
     "memory": null,
     "observations": [
       "Native text format required; pasted SMILES and MOL were rejected.",
@@ -526,6 +536,11 @@
     "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/renderer.js#L1-L31",
     "note": "Own chemistry parser, layout, valence checks, and SVG renderer."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "ChemMD SVG bond and label renderer",

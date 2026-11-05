@@ -457,7 +457,12 @@
     "Custom text and group labels are unfinished; SVG transfer into Word is reported broken."
   ],
   "github": {
+    "url": "https://github.com/JCox06/MolGLideX",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-08-11",
+    "commits": 90,
+    "contributors": 1,
     "pushedAt": "2026-10-03T17:40:39Z",
     "archived": false
   },
@@ -526,6 +531,11 @@
     "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/ui/EditorPanel.kt#L107-L130",
     "note": "Custom canvas; CDK supplies chemistry and 2D layout."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "MolGLideX Graphics2D bond/label renderer",

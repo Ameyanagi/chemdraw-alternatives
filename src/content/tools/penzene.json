@@ -529,6 +529,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/tutorials/office-latex.md#4-keep-an-editable-drawing-object-on-windows",
+      "note": "Windows installer enables OLE objects with double-click editing and document updates."
     }
   },
   "caveats": [
@@ -537,7 +543,12 @@
     "ChemDraw docs and save labels understate implemented support: orbital and Windows CDX imports, and non-molecule CDX exports."
   ],
   "github": {
+    "url": "https://github.com/JamesOBrien2/penzene",
     "stars": 4,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-09-23",
+    "commits": 584,
+    "contributors": 1,
     "pushedAt": "2026-10-29T02:40:11Z",
     "archived": false
   },
@@ -613,6 +624,11 @@
     "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/CMakeLists.txt#L32",
     "note": "Custom canvas; Ketcher inspired its interface. ChemDraw library handles files."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Penzene renderer (Qt QPainter)",

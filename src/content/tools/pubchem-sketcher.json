@@ -58,6 +58,11 @@
     "https://pubchem.ncbi.nlm.nih.gov/docs/structures"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

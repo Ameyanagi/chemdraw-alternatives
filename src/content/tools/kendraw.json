@@ -538,7 +538,12 @@
     "PDF export rasterizes drawings; SVG preserves vector output."
   ],
   "github": {
+    "url": "https://github.com/electrosenpai/kendraw",
     "stars": 8,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-04-11",
+    "commits": 256,
+    "contributors": 1,
     "pushedAt": "2026-06-29T21:59:28Z",
     "archived": false
   },
@@ -587,7 +592,17 @@
       "how": "in-app setting",
       "note": "Dark interface retains white canvas; bonds appear pale."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 828.0,
+      "paclitaxelMb": 854.0,
+      "baselineMb": 526.0,
+      "rssIdleMb": 1659.08,
+      "rssPaclitaxelMb": 1602.05,
+      "runs": 3,
+      "processes": 7,
+      "method": "Median Chromium process-tree physical footprints; blank baseline; scripted SMILES import.",
+      "note": null
+    },
     "observations": [
       "About reports Ketcher 3.12.0; no Kendraw version was displayed.",
       "Default bonds and carbon labels appear very pale against the white canvas.",
@@ -614,6 +629,11 @@
     "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/ui/src/canvas-ketcher/KetcherCanvas.tsx#L51",
     "note": "Hosted builds embed unmodified Ketcher; source builds can use the original canvas."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher 3.12.0 SVG renderer on Raphaël; Indigo generated images",

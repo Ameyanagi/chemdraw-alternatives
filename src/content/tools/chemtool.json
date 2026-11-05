@@ -466,6 +466,11 @@
     "source": "https://sources.debian.org/src/chemtool/1.6.14-6/README/#L310",
     "note": "Custom C drawing canvas; optional Babel or Open Babel commands provide chemical format conversion."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Chemtool GDK/Pango renderer",

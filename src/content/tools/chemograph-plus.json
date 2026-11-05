@@ -90,13 +90,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemograph.de/chemographversions.html#bibeditor",
-      "note": "Premium only; complex structure libraries; vendor claim."
+      "note": "Premium only; complex structure libraries; vendor claim.",
+      "plan": "Premium",
+      "planLevel": "paid"
     },
     "custom-templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemograph.de/chemographversions.html#bibeditor",
-      "note": "Premium only; user libraries accept copied structures; vendor claim."
+      "note": "Premium only; user libraries accept copied structures; vendor claim.",
+      "plan": "Premium",
+      "planLevel": "paid"
     },
     "abbreviations": {
       "status": "unknown",
@@ -306,13 +310,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemograph.de/chemographversions.html#3dteil",
-      "note": "Premium only; rotatable X-ray-derived models; vendor claim."
+      "note": "Premium only; rotatable X-ray-derived models; vendor claim.",
+      "plan": "Premium",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemograph.de/chemographversions.html#3dteil",
-      "note": "Premium only; X-ray structure viewing; CIF undocumented; vendor claim."
+      "note": "Premium only; X-ray structure viewing; CIF undocumented; vendor claim.",
+      "plan": "Premium",
+      "planLevel": "paid"
     },
     "cdxml": {
       "status": "unknown",
@@ -330,7 +338,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.chemograph.de/chemographversions.html#2dteil",
-      "note": "MOL read/write; SDF undocumented; vendor claim."
+      "note": "MOL read/write; SDF undocumented; vendor claim.",
+      "plan": "Standard",
+      "planLevel": "account"
     },
     "smiles": {
       "status": "unknown",
@@ -444,6 +454,22 @@
     "source": null,
     "note": "Public vendor documentation does not establish canvas provenance or third-party chemistry libraries."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "Standard",
+      "level": "account",
+      "price": "Free for private use; registration required (2026-11-06)"
+    },
+    {
+      "name": "Premium",
+      "level": "paid",
+      "price": null
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

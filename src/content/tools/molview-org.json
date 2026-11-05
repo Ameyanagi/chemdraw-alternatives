@@ -52,15 +52,30 @@
     "Structure images export as PNG; SVG export, reaction mechanisms and custom styles are unavailable.",
     "The newer MolView at molview.com has separate features and pricing."
   ],
-  "github": null,
+  "github": {
+    "url": "https://github.com/molview/molview",
+    "stars": 242,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2014-07-05",
+    "commits": 230,
+    "contributors": 5,
+    "pushedAt": "2026-07-06T00:19:27Z",
+    "archived": false
+  },
   "hands": null,
   "perf": null,
   "downloadBytes": null,
   "references": [
+    "https://github.com/molview/molview",
     "https://molview.org/",
     "https://molview.org/legal"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

@@ -30,9 +30,9 @@
     "offline": true
   },
   "version": {
-    "name": "2026.09.1",
-    "date": "2026-10-03",
-    "source": "https://github.com/rdkit/rdkit/releases/tag/Release_2026_09_1"
+    "name": "Release_2026_09_2",
+    "date": "2026-11-05",
+    "source": "https://github.com/rdkit/rdkit/releases/tag/Release_2026_09_2"
   },
   "engine": {
     "rendering": "C++ MolDraw2D renderer with SVG and Cairo PNG backends",
@@ -50,14 +50,29 @@
     "Current PyPI macOS wheels support Apple Silicon only.",
     "PNG output requires Cairo support when building from source."
   ],
-  "github": null,
+  "github": {
+    "url": "https://github.com/rdkit/rdkit",
+    "stars": 3670,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2006-05-06",
+    "commits": 8738,
+    "contributors": 297,
+    "pushedAt": "2026-11-05T14:04:05Z",
+    "archived": false
+  },
   "hands": null,
   "perf": null,
   "downloadBytes": null,
   "references": [
+    "https://github.com/rdkit/rdkit",
     "https://rdkit.org/docs/GettingStartedInPython.html"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

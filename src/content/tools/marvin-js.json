@@ -48,31 +48,41 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_tools-toolbar-left-toolbar.html#bond-tools",
-      "note": "Single, double and triple bonds can be drawn and changed."
+      "note": "Single, double and triple bonds can be drawn and changed.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_stereochemistry.html#stereo-bonds",
-      "note": "Solid wedge, hashed wedge and wavy stereo bonds."
+      "note": "Solid wedge, hashed wedge and wavy stereo bonds.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "special-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_tools-toolbar-left-toolbar.html#bond-tools",
-      "note": "Coordinate and position-variation bonds."
+      "note": "Coordinate and position-variation bonds.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "double-bond-side": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_bond.html#type",
-      "note": "Double bonds support left, right and middle alignment."
+      "note": "Double bonds support left, right and middle alignment.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "rings": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_template-toolbar-bottom-toolbar.html#structure-templates",
-      "note": "Includes cyclopentane, cyclohexane, pyrrole and benzene."
+      "note": "Includes cyclopentane, cyclohexane, pyrrole and benzene.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "unknown",
@@ -84,79 +94,105 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_chains.html",
-      "note": "Drag variable-length alkyl chains; Ctrl draws conjugated chains."
+      "note": "Drag variable-length alkyl chains; Ctrl draws conjugated chains.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "templates": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_template-toolbar-bottom-toolbar.html#structure-templates",
-      "note": "Default template toolbar contains five rings; other structures use abbreviations."
+      "note": "Default template toolbar contains five rings; other structures use abbreviations.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "custom-templates": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_history-of-changes.html",
-      "note": "Integrator-configured templates; no documented end-user save-template command."
+      "note": "Integrator-configured templates; no documented end-user save-template command.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "abbreviations": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_abbreviations.html",
-      "note": "Structured abbreviated groups can be expanded, contracted and ungrouped."
+      "note": "Structured abbreviated groups can be expanded, contracted and ungrouped.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_atom.html",
-      "note": "Elements, charges, isotopes, aliases and pseudo atoms."
+      "note": "Elements, charges, isotopes, aliases and pseudo atoms.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_radicals-and-lone-pairs.html",
-      "note": "Radical electrons and lone pairs can be assigned manually."
+      "note": "Radical electrons and lone pairs can be assigned manually.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_bond.html#type",
-      "note": "Hover over a bond and type its bond shortcut."
+      "note": "Hover over a bond and type its bond shortcut.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "selection-tools": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_selection-context-menu.html",
-      "note": "Freehand, rotation and flipping supported; molecule resizing unverified."
+      "note": "Freehand, rotation and flipping supported; molecule resizing unverified.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "perspective": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_general-toolbar-top-toolbar.html#rotate-3d",
-      "note": "Canvas molecules rotate in 3D; coordinate generation requires web services."
+      "note": "Canvas molecules rotate in 3D; coordinate generation requires web services.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "reaction-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_tools-toolbar-left-toolbar.html#reaction-tools",
-      "note": "Forward, equilibrium and resonance arrows."
+      "note": "Forward, equilibrium and resonance arrows.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_reaction-mechanism.html",
-      "note": "Editable single- and double-electron arrows with adjustable curvature."
+      "note": "Editable single- and double-electron arrows with adjustable curvature.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "reaction-data": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_reaction.html#reaction-export-technical-details",
-      "note": "Single-step reactions retain roles; multistep schemes export as graphics."
+      "note": "Single-step reactions retain roles; multistep schemes export as graphics.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "atom-mapping": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_atom-mapping.html",
-      "note": "Manual mapping; automatic mapping requires web services."
+      "note": "Manual mapping; automatic mapping requires web services.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "orbitals": {
       "status": "unknown",
@@ -168,13 +204,17 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_text-dialog.html",
-      "note": "Bold, italic, subscript and superscript; font selection unavailable."
+      "note": "Bold, italic, subscript and superscript; font selection unavailable.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "shapes": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_tools-toolbar-left-toolbar.html",
-      "note": "Rectangles, ellipses and chemical S-group brackets."
+      "note": "Rectangles, ellipses and chemical S-group brackets.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "align": {
       "status": "no",
@@ -196,7 +236,9 @@
       "engine": {
         "library": "In-house Chemaxon Clean2D (remote Java REST service via MJSWS, JChem Web Services or JChem Microservices; clean2dws)",
         "source": "https://docs.chemaxon.com/latest/marvin-js_web-services-dev.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "journal-styles": {
       "status": "unknown",
@@ -214,7 +256,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_set-box-color-dialog.html",
-      "note": "Individual graphical boxes have configurable outline and background colors."
+      "note": "Individual graphical boxes have configurable outline and background colors.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "unknown",
@@ -242,7 +286,9 @@
       "engine": {
         "library": "In-house Marvin JS (Java compiled to browser JavaScript by GWT; native valence-error checking)",
         "source": "https://docs.chemaxon.com/latest/marvin-js_marvin-js-and-marvin-sketch.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "stereo-perception": {
       "status": "yes",
@@ -252,7 +298,9 @@
       "engine": {
         "library": "In-house Chemaxon CIP Stereo Info (remote Java REST service via MJSWS, JChem Web Services or JChem Microservices; stereoinfows)",
         "source": "https://docs.chemaxon.com/latest/marvin-js_web-services-dev.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "formula-mass": {
       "status": "unknown",
@@ -274,7 +322,9 @@
       "engine": {
         "library": "In-house Chemaxon Name to Structure (remote Java web service through MolConvert/molconvertws; separate naming license)",
         "source": "https://docs.chemaxon.com/latest/marvin-js_import-dialog.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "yes",
@@ -284,7 +334,9 @@
       "engine": {
         "library": "In-house Chemaxon Structure to Name (remote Java web service through MolConvert/molconvertws; separate naming license)",
         "source": "https://docs.chemaxon.com/latest/marvin-js_export-dialog.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "nmr-prediction": {
       "status": "unknown",
@@ -296,19 +348,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_markush-structures.html",
-      "note": "R-groups, definitions, R-logic and atom lists."
+      "note": "R-groups, definitions, R-logic and atom lists.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "polymers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_s-group-dialog.html",
-      "note": "Repeating units, SRU polymers, link nodes and copolymers."
+      "note": "Repeating units, SRU polymers, link nodes and copolymers.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "biomolecules": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_peptides.html",
-      "note": "Typed peptide sequences, cyclic peptides and disulfide bridges."
+      "note": "Typed peptide sequences, cyclic peptides and disulfide bridges.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "image-to-structure": {
       "status": "no",
@@ -330,7 +388,9 @@
       "engine": {
         "library": "In-house Marvin JS (GWT-compiled browser JavaScript for display/rotation); remote Chemaxon Clean3D Java web service for coordinate generation",
         "source": "https://docs.chemaxon.com/latest/marvin-js_history-of-changes.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "unknown",
@@ -352,7 +412,9 @@
       "engine": {
         "library": "Chemaxon MolConvert (remote Java REST service via MJSWS, JChem Web Services or JChem Microservices; CDX import/export)",
         "source": "https://docs.chemaxon.com/latest/marvin-js_export-dialog.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "mol-sdf": {
       "status": "yes",
@@ -362,7 +424,9 @@
       "engine": {
         "library": "In-house Marvin JS (GWT-compiled browser JavaScript; native MOL V2000); Chemaxon MolConvert (remote Java web service for SDF and MOL V3000)",
         "source": "https://docs.chemaxon.com/latest/marvin-js_import-dialog.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "yes",
@@ -372,7 +436,9 @@
       "engine": {
         "library": "In-house Chemaxon MolConvert (remote Java REST service via MJSWS, JChem Web Services or JChem Microservices; molconvertws)",
         "source": "https://docs.chemaxon.com/latest/marvin-js_web-services-dev.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
@@ -382,19 +448,25 @@
       "engine": {
         "library": "InChI native library (C on remote server, called by Chemaxon MolConvert Java web service; molconvertws)",
         "source": "https://docs.chemaxon.com/latest/formats_iupac-inchi-inchikey-rinchi-and-rinchikey.html"
-      }
+      },
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_export-dialog.html#supported-export-formats-in-marvin-js",
-      "note": "RXN export requires web services."
+      "note": "RXN export requires web services.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_history-of-changes.html",
-      "note": "SVG export is available through the API."
+      "note": "SVG export is available through the API.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "unknown",
@@ -406,19 +478,25 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_export-dialog.html#image-export",
-      "note": "PNG pixel dimensions configurable; no documented 300 dpi setting."
+      "note": "PNG pixel dimensions configurable; no documented 300 dpi setting.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "clipboard-chemdraw": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_faq.html#copy-paste-fromto-marvin-js",
-      "note": "Text-format transfer; browsers block binary CDX and OLE clipboard data."
+      "note": "Text-format transfer; browsers block binary CDX and OLE clipboard data.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "office": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/jchem-for-office_history-of-changes.html",
-      "note": "Editable MOL/MRV transfer requires separate paid JChem for Office."
+      "note": "Editable MOL/MRV transfer requires separate paid JChem for Office.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "python-api": {
       "status": "unknown",
@@ -430,7 +508,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_how-to-embed.html#accessing-functions-of-the-sketcher",
-      "note": "JavaScript API controls embedded editors."
+      "note": "JavaScript API controls embedded editors.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "cli": {
       "status": "unknown",
@@ -448,19 +528,37 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_marvin-js-and-marvin-sketch.html",
-      "note": "Custom buttons invoke user-defined JavaScript functionality."
+      "note": "Custom buttons invoke user-defined JavaScript functionality.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "embed": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin-js_how-to-embed.html",
-      "note": "Documented iframe embedding and helper JavaScript API."
+      "note": "Documented iframe embedding and helper JavaScript API.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     },
     "ai-assistant": {
       "status": "unknown",
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin-js_marvin-js-and-marvin-sketch.html",
+      "note": "MOL/MRV data pasting; OLE copy/paste explicitly unsupported in Marvin JS."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin-js_history-of-changes.html",
+      "note": "Colored atom/bond patches through API.",
+      "plan": "Marvin JS",
+      "planLevel": "paid"
     }
   },
   "caveats": [
@@ -483,6 +581,17 @@
     "source": "https://docs.chemaxon.com/latest/marvin-js_index.html",
     "note": "Vendor-developed sketcher; public third-party notices do not establish the chemistry-library implementation."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Marvin JS",
+      "level": "paid",
+      "price": "Contact vendor (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "Marvin JS JsCanvas renderer",

@@ -372,7 +372,9 @@
       "engine": {
         "library": "Ketcher MolSerializer (TypeScript, MOL V2000); Indigo 1.46.0 (WebAssembly, MOL V3000/SDF)",
         "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts"
-      }
+      },
+      "plan": "Free cloud",
+      "planLevel": "free"
     },
     "smiles": {
       "status": "yes",
@@ -382,7 +384,9 @@
       "engine": {
         "library": "Indigo 1.46.0 (WebAssembly, Ketcher standalone browser worker)",
         "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts"
-      }
+      },
+      "plan": "Free cloud",
+      "planLevel": "free"
     },
     "inchi": {
       "status": "yes",
@@ -392,7 +396,9 @@
       "engine": {
         "library": "Indigo 1.46.0 (WebAssembly, Ketcher standalone browser worker)",
         "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts"
-      }
+      },
+      "plan": "Free cloud",
+      "planLevel": "free"
     },
     "rxn": {
       "status": "partial",
@@ -528,7 +534,17 @@
       "how": "in-app setting",
       "note": "Black bonds have very low contrast on the dark canvas."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 540.93,
+      "paclitaxelMb": 644.73,
+      "baselineMb": 381.79,
+      "rssIdleMb": 1068.03,
+      "rssPaclitaxelMb": 1219.64,
+      "runs": 3,
+      "processes": 7,
+      "method": "Playwright Chromium process-tree physical footprint; MiB, median of three runs.",
+      "note": null
+    },
     "observations": [
       "Molbrett main bundle identifier was 06dde1e7; embedded Ketcher About reports 3.18.0.",
       "SMILES layouts use colored heteroatoms and terminal carbon labels in the editor.",
@@ -554,6 +570,22 @@
     "source": "https://molbrett.elsci.io/static/js/main-page.bundle.06dde1e7.js",
     "note": "Embeds Ketcher with standalone Indigo chemistry; the surrounding whiteboard uses Excalidraw."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Free cloud",
+      "level": "free",
+      "price": "$0 (2026-11-06)"
+    },
+    {
+      "name": "Local installation",
+      "level": "paid",
+      "price": "Quote; free for academia (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher Raphael/SVG; whiteboard server undisclosed",

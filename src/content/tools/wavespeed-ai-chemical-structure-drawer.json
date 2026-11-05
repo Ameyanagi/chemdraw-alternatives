@@ -544,7 +544,17 @@
       "how": "in-app setting",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 477,
+      "paclitaxelMb": 506,
+      "baselineMb": 273,
+      "rssIdleMb": 1168.9,
+      "rssPaclitaxelMb": 1042.4,
+      "runs": 3,
+      "processes": 7,
+      "method": "Fresh Playwright Edge; summed browser process-tree physical footprints; median of three.",
+      "note": null
+    },
     "observations": [
       "Hosted build identifier comes from the page's Next.js payload.",
       "Default canvas uses a dark background and element colors.",
@@ -574,6 +584,11 @@
     "source": "https://wavespeed.ai/static/third-party-licenses",
     "note": "Vendor notices identify chemistry and 3D libraries; drawing canvas provenance remains unestablished."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Custom SVG editor; RDKit.js exports",

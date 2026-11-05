@@ -469,7 +469,12 @@
     "Bundled documentation has outdated export, transform, bond-tool and Java-version descriptions."
   ],
   "github": {
+    "url": "https://github.com/JChemPaint/jchempaint",
     "stars": 149,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2008-03-21",
+    "commits": 1584,
+    "contributors": 18,
     "pushedAt": "2026-10-30T09:50:54Z",
     "archived": false
   },
@@ -548,6 +553,11 @@
     "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/RenderPanel.java",
     "note": "Own canvas and controllers; CDK provides chemistry and rendering, with InChI for identifiers."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "CDK StandardGenerator",

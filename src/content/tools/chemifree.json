@@ -482,8 +482,13 @@
     "CDXML/CDX imports have explicit losses; edited drawings cannot be exported to these formats."
   ],
   "github": {
+    "url": "https://github.com/EunhakChoi/chemifree",
     "stars": 0,
-    "pushedAt": "2026-11-05T11:46:03Z",
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-10-26",
+    "commits": 557,
+    "contributors": 1,
+    "pushedAt": "2026-11-05T19:34:58Z",
     "archived": false
   },
   "hands": {
@@ -549,6 +554,11 @@
     "source": "https://github.com/EunhakChoi/chemifree/blob/c5b475281f98782b64ff1086e5816d957f2ebea4/apps/web/src/editor/structure-canvas.tsx#L124",
     "note": "Custom SVG canvas and in-house Rust chemistry."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Chemifree SVG DrawingLayer",

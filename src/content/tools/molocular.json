@@ -55,6 +55,11 @@
     "https://dr-rath.de/wolfgang-rath/tools/molocular.html"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

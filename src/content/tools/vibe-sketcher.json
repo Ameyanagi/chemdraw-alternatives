@@ -506,6 +506,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#figures-for-office-programs",
+      "note": "Office receives EMF vector pictures, without embedded chemical object editing."
     }
   },
   "caveats": [
@@ -589,6 +595,11 @@
     "source": "https://vibyverse.com/vibe-sketcher/docs/license.html",
     "note": "Ketcher canvas with Indigo; RDKit server chemistry; OPSIN naming is optional."
   },
+  "appKind": {
+    "desktop": true,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher/Raphaël canvas; RDKit/custom SVG exports",

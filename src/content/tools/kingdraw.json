@@ -46,19 +46,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-2",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-2",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "special-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-2",
-      "note": "Dative, hydrogen and ionic bonds."
+      "note": "Dative, hydrogen and ionic bonds.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "double-bond-side": {
       "status": "unknown",
@@ -70,37 +76,49 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-3",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "conformers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-3",
-      "note": "Left and right chair templates."
+      "note": "Left and right chair templates.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "chains": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-3",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://cloud.tencent.com/developer/news/939666",
-      "note": "KingDraw-authored tutorial lists amino acids, peptides and nanotube templates."
+      "note": "KingDraw-authored tutorial lists amino acids, peptides and nanotube templates.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "custom-templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/indexen?name=membership",
-      "note": "Paid PC membership."
+      "note": "Paid PC membership.",
+      "plan": "Education 4.0 (university email)",
+      "planLevel": "account"
     },
     "abbreviations": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://kingdraw.medium.com/kingdraw-pc-tutorial-group-advanced-chapter-adjust-copy-and-expand-group-7e5ab6f424e2",
-      "note": "Label expansion requires membership."
+      "note": "Label expansion requires membership.",
+      "plan": "Education 4.0 (university email)",
+      "planLevel": "account"
     },
     "atom-labels": {
       "status": "unknown",
@@ -112,19 +130,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-5",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-2",
-      "note": "Hover over bonds and press number keys."
+      "note": "Hover over bonds and press number keys.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "selection-tools": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/index?name=download",
-      "note": "Windows lasso, rotation, resizing and mirror flip."
+      "note": "Windows lasso, rotation, resizing and mirror flip.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "perspective": {
       "status": "unknown",
@@ -136,13 +160,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://kingdraw.medium.com/kingdraw-pc-unlock-the-secrets-of-professional-chemistry-equation-creation-56ad16be868e",
-      "note": "Forward and reversible arrows."
+      "note": "Forward and reversible arrows.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "mechanism-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://kingdraw.medium.com/kingdraw-pc-tutorial-drawing-reaction-mechanisms-how-to-add-a-variety-of-arrows-ed7565428fae",
-      "note": "Electron-flow arrows with editable curvature, angle and length."
+      "note": "Electron-flow arrows with editable curvature, angle and length.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "reaction-data": {
       "status": "unknown",
@@ -160,25 +188,33 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://kingdraw.medium.com/kingdraw-update-pc-official-v2-1-is-coming-8b1f2eac8fa7",
-      "note": "Adjustable orbital templates."
+      "note": "Adjustable orbital templates.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "rich-text": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-6",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "shapes": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-7",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "align": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-10",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "groups": {
       "status": "unknown",
@@ -190,13 +226,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=1-1",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "journal-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=1-1",
-      "note": "ACS Document 1996 preset."
+      "note": "ACS Document 1996 preset.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "custom-styles": {
       "status": "unknown",
@@ -208,7 +248,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-18",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "pages": {
       "status": "unknown",
@@ -220,7 +262,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://kingdraw.medium.com/kingdraw-update-pc-official-v2-1-is-coming-8b1f2eac8fa7",
-      "note": "Imports BMP, JPG, PNG, TIFF and JPEG."
+      "note": "Imports BMP, JPG, PNG, TIFF and JPEG.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "tlc-tables": {
       "status": "unknown",
@@ -232,19 +276,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=3-1",
-      "note": "Incorrect structures receive red error frames."
+      "note": "Incorrect structures receive red error frames.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "stereo-perception": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/index?name=download",
-      "note": "Paid stereochemistry; Windows Professional adds E/Z labeling."
+      "note": "Paid stereochemistry; Windows Professional adds E/Z labeling.",
+      "plan": "Education 4.0 (university email)",
+      "planLevel": "account"
     },
     "formula-mass": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-12",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "properties": {
       "status": "unknown",
@@ -256,13 +306,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookapp?name=3-10",
-      "note": "IUPAC name conversion."
+      "note": "IUPAC name conversion.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "structure-to-name": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookapp?name=3-10",
-      "note": "IUPAC naming."
+      "note": "IUPAC naming.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "nmr-prediction": {
       "status": "unknown",
@@ -292,7 +346,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/index?name=download",
-      "note": "Windows, mobile and HD image recognition."
+      "note": "Windows, mobile and HD image recognition.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "database-lookup": {
       "status": "yes",
@@ -302,7 +358,9 @@
       "engine": {
         "library": "KingDraw Compound Encyclopedia / KD Pedia (remote database service)",
         "source": "https://www.kingdraw.com/index?name=download"
-      }
+      },
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "model-3d": {
       "status": "yes",
@@ -312,7 +370,9 @@
       "engine": {
         "library": "In-house KingDraw 3D model conversion module (iOS app; vendor-confirmed module)",
         "source": "https://apps.apple.com/cn/app/kingdraw/id1336806206?platform=ipad"
-      }
+      },
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "crystals": {
       "status": "unknown",
@@ -330,19 +390,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=1-1",
-      "note": null
+      "note": null,
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "mol-sdf": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=1-1",
-      "note": "MOL import/export; SDF support unverified."
+      "note": "MOL import/export; SDF support unverified.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "smiles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=1-1",
-      "note": "Copy As exports; Paste Special imports."
+      "note": "Copy As exports; Paste Special imports.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "inchi": {
       "status": "unknown",
@@ -360,7 +426,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://kingdraw.medium.com/kingdraw-update-pc-official-v2-1-is-coming-8b1f2eac8fa7",
-      "note": "Windows vector SVG export; PC export requires membership."
+      "note": "Windows vector SVG export; PC export requires membership.",
+      "plan": "Education 4.0 (university email)",
+      "planLevel": "account"
     },
     "pdf-export": {
       "status": "unknown",
@@ -378,13 +446,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-16",
-      "note": "Editable structure exchange through SMILES or MOL."
+      "note": "Editable structure exchange through SMILES or MOL.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "office": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.kingdraw.com/bookpc?name=2-15",
-      "note": "Windows Office objects reopen in KingDraw and synchronize edits."
+      "note": "Windows Office objects reopen in KingDraw and synchronize edits.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     },
     "python-api": {
       "status": "unknown",
@@ -427,6 +499,14 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-15",
+      "note": "Word double-click opens KingDraw; edits synchronize to embedded Office object.",
+      "plan": "Personal 3.0 / Free mobile",
+      "planLevel": "free"
     }
   },
   "caveats": [
@@ -449,6 +529,27 @@
     "source": "https://www.kingagroot.com/En/html/qycx.html",
     "note": "Vendor explicitly claims independently developed chemical editor; third-party chemistry dependencies unestablished."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "Personal 3.0 / Free mobile",
+      "level": "free",
+      "price": "2026-11-06: Free basic editor."
+    },
+    {
+      "name": "Education 4.0 (university email)",
+      "level": "account",
+      "price": "2026-11-06: Free after binding a university email."
+    },
+    {
+      "name": "Membership",
+      "level": "paid",
+      "price": "2026-11-06: US iOS lists $1.99–$11.99/month; $14.99–$99.99/year."
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "KingDraw molecular drawing engine",

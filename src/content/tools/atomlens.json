@@ -46,13 +46,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
-      "note": "Single, double, triple, and aromatic bond orders."
+      "note": "Single, double, triple, and aromatic bond orders.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
-      "note": "Dedicated wedge, hash, and wavy tools."
+      "note": "Dedicated wedge, hash, and wavy tools.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "special-bonds": {
       "status": "unknown",
@@ -70,7 +74,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
-      "note": "Cyclopropane through cyclohexane, plus benzene."
+      "note": "Cyclopropane through cyclohexane, plus benzene.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "unknown",
@@ -88,13 +94,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
-      "note": "Built-in carbon-chain and common-ring templates."
+      "note": "Built-in carbon-chain and common-ring templates.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "custom-templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
-      "note": "Save Template stores a selected fragment."
+      "note": "Save Template stores a selected fragment.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "abbreviations": {
       "status": "unknown",
@@ -106,13 +116,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
-      "note": "Element labels, formal charges, and isotopes in the inspector."
+      "note": "Element labels, formal charges, and isotopes in the inspector.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
-      "note": "Atom inspector includes radical settings."
+      "note": "Atom inspector includes radical settings.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "unknown",
@@ -148,13 +162,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
-      "note": "Reaction SMILES, RXN, RDF, RInChI, and reaction CML."
+      "note": "Reaction SMILES, RXN, RDF, RInChI, and reaction CML.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "atom-mapping": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
-      "note": "Atom Map assigns numbers; selections can receive reaction roles."
+      "note": "Atom Map assigns numbers; selections can receive reaction roles.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "orbitals": {
       "status": "unknown",
@@ -194,7 +212,9 @@
       "engine": {
         "library": "CDKSwiftNativePort (CDKStructureDiagramGenerator native Swift port)",
         "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/Molecule.swift#L850-L860"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "journal-styles": {
       "status": "unknown",
@@ -236,7 +256,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
-      "note": "Valence and Validation warn about abnormal bond counts."
+      "note": "Valence and Validation warn about abnormal bond counts.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "stereo-perception": {
       "status": "unknown",
@@ -252,7 +274,9 @@
       "engine": {
         "library": "CDKSwiftNativePort (native Swift CDKMolecularFormulaDescriptor, CDKMolecularWeightDescriptor, CDKExactMassDescriptor)",
         "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/CDK/Common/MoleculePropertyService.swift#L118-L151"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "properties": {
       "status": "yes",
@@ -262,7 +286,9 @@
       "engine": {
         "library": "CDKSwiftNativePort (native Swift CDKXLogPDescriptor and CDKTPSADescriptor)",
         "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/CDK/Common/MoleculePropertyService.swift#L118-L151"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "name-to-structure": {
       "status": "yes",
@@ -272,7 +298,9 @@
       "engine": {
         "library": "OPSINSwift (native Swift port of OPSIN, on-device)",
         "source": "https://atomlens.app/atomlens/help/settings-and-system.html#privacy-and-licenses"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "partial",
@@ -282,7 +310,9 @@
       "engine": {
         "library": "In-house offline-iupac-v1-curve-2132624 Core ML model; OPSINSwift identity validation",
         "source": "https://atomlens.app/atomlens/help/licenses/IUPAC-Name-Model-NOTICE.md"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "nmr-prediction": {
       "status": "unknown",
@@ -294,13 +324,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
-      "note": "Markush scaffolds, R-group legends, and supported query annotations."
+      "note": "Markush scaffolds, R-group legends, and supported query annotations.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "polymers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
-      "note": "Depicts imported repeat-unit and link-node notation."
+      "note": "Depicts imported repeat-unit and link-node notation.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "biomolecules": {
       "status": "unknown",
@@ -316,7 +350,9 @@
       "engine": {
         "library": "DECIMER (bundled on-device models); CDKSwiftNativePort structure parsing",
         "source": "https://atomlens.app/atomlens/help/licenses/IUPAC-Name-Model-NOTICE.md"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "database-lookup": {
       "status": "yes",
@@ -326,7 +362,9 @@
       "engine": {
         "library": "PubChem (remote search, compound information and SDF retrieval)",
         "source": "https://atomlens.app/privacy.html#atomlens"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "model-3d": {
       "status": "yes",
@@ -336,7 +374,9 @@
       "engine": {
         "library": "CDKSwiftNativePort (CDKMetal3DSceneBuilder and CDKModelBuilder3D; native Swift)",
         "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/CDK/Rendering/Metal3DSceneBuilder.swift#L210-L247"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "unknown",
@@ -348,13 +388,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
-      "note": "Reads and writes supported chemistry; arbitrary source metadata is lost."
+      "note": "Reads and writes supported chemistry; arbitrary source metadata is lost.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "cdx": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
-      "note": "Reads and writes supported chemistry; arbitrary source metadata is lost."
+      "note": "Reads and writes supported chemistry; arbitrary source metadata is lost.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "mol-sdf": {
       "status": "yes",
@@ -364,7 +408,9 @@
       "engine": {
         "library": "CDKSwiftNativePort (native Swift MDL V2000/V3000 and SDF readers/writers)",
         "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Documentation/INTEGRATION.md#12-export-common-formats"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "yes",
@@ -374,7 +420,9 @@
       "engine": {
         "library": "CDKSwiftNativePort (native Swift CDK SMILES/CXSMILES parser and SMILES writer)",
         "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/README.md#smiles-and-cxsmiles"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
@@ -384,25 +432,33 @@
       "engine": {
         "library": "IUPAC InChI 1.07.5 (vendored native C library through CDKSwiftNativePort)",
         "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/CDK/InChI/InChIOfficialLibraryGenerator.swift#L1-L42"
-      }
+      },
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
-      "note": "MDL RXN input and whole-reaction export."
+      "note": "MDL RXN input and whole-reaction export.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/glossary.html",
-      "note": "Resolution-independent structure artwork."
+      "note": "Resolution-independent structure artwork.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/glossary.html",
-      "note": "Vector-preserving PDF sharing."
+      "note": "Vector-preserving PDF sharing.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "png-export": {
       "status": "unknown",
@@ -444,7 +500,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://atomlens.app/atomlens/help/settings-and-system.html",
-      "note": "macOS bundled MCP helper supports repository search, modification, and export."
+      "note": "macOS bundled MCP helper supports repository search, modification, and export.",
+      "plan": "AtomLens",
+      "planLevel": "paid"
     },
     "plugins": {
       "status": "unknown",
@@ -493,6 +551,17 @@
     "source": "https://atomlens.app/atomlens/help/settings-and-system.html#privacy-and-licenses",
     "note": "Vendor discloses chemistry components; drawing canvas provenance remains unconfirmed."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "AtomLens",
+      "level": "paid",
+      "price": "€9.99 one-time, German App Store (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "borrowed",
     "name": "CDKSwiftNativePort depiction (ported from CDK)",

@@ -32,7 +32,7 @@
   "version": {
     "name": "2.1.0",
     "date": "2026-10-23",
-    "source": "https://github.com/OpenChemistry/avogadrolibs/releases/tag/2.1.0"
+    "source": "https://github.com/OpenChemistry/avogadroapp/releases/tag/2.1.0"
   },
   "engine": {
     "rendering": "Custom OpenGL/GLSL renderer; OpenGL framebuffer capture for PNG; Qt QPainter/QSvgGenerator for SVG.",
@@ -48,14 +48,29 @@
     "SVG export projects the 3D model rather than laying out a 2D chemical document.",
     "Input generators require a configured Python environment."
   ],
-  "github": null,
+  "github": {
+    "url": "https://github.com/OpenChemistry/avogadroapp",
+    "stars": 273,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2012-02-08",
+    "commits": 2289,
+    "contributors": 171,
+    "pushedAt": "2026-11-05T19:10:11Z",
+    "archived": false
+  },
   "hands": null,
   "perf": null,
   "downloadBytes": 96021909,
   "references": [
+    "https://github.com/OpenChemistry/avogadroapp",
     "https://avogadro.cc/"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

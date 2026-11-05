@@ -526,8 +526,13 @@
     "Native ChemDraw OLE clipboard data cannot be pasted directly in the browser."
   ],
   "github": {
+    "url": "https://github.com/epam/ketcher",
     "stars": 930,
-    "pushedAt": "2026-11-05T10:40:58Z",
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2010-11-04",
+    "commits": 7732,
+    "contributors": 258,
+    "pushedAt": "2026-11-05T16:57:06Z",
     "archived": false
   },
   "hands": {
@@ -575,7 +580,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 364.84,
+      "paclitaxelMb": 339.94,
+      "baselineMb": 50.33,
+      "rssIdleMb": 669.8,
+      "rssPaclitaxelMb": 668.31,
+      "runs": 3,
+      "processes": 4,
+      "method": "Playwright headless Chromium; summed process-tree phys_footprint; medians of three runs.",
+      "note": null
+    },
     "observations": [
       "About reports Ketcher 3.18.0 and Indigo 1.46.0.0.",
       "SMILES import generated centered 2D structures without cleanup.",
@@ -605,6 +620,11 @@
     "source": "https://github.com/epam/ketcher/blob/48af1b20d58607f9d77b148f09fa468202239f3f/README.md",
     "note": "Own canvas; Miew supplies 3D; InChI via Indigo; optional Imago OCR service."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "In-house Ketcher SVG renderer on Raphaël; Indigo generated images",

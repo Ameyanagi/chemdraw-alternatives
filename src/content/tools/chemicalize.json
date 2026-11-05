@@ -56,6 +56,11 @@
     "https://marvincloud.marvin.cxn.io/"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

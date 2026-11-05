@@ -519,7 +519,12 @@
     "NMR, image recognition, structure naming and the assistant require separate plugins or engines."
   ],
   "github": {
-    "stars": 63,
+    "url": "https://github.com/jgassens/ChemDraft",
+    "stars": 64,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-05-29",
+    "commits": 1020,
+    "contributors": 6,
     "pushedAt": "2026-11-03T15:17:56Z",
     "archived": false
   },
@@ -601,6 +606,11 @@
     "source": "https://github.com/jgassens/ChemDraft/blob/c8de616521401c60404af2eed6e7659266c53425/apps/desktop/src/MainWindow.tsx",
     "note": "Own native SVG canvas. Includes an optional Ketcher sub-editor for one molecule; its click-to-open paths are off in this build."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "ChemDraft layout-engine SVG renderer",

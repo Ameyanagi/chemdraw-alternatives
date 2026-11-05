@@ -48,7 +48,9 @@
       "status": "yes",
       "evidence": "tested",
       "source": "https://molchart.com/manual.html#drawing-bonds-and-chains",
-      "note": "Drew all three and changed a single to double."
+      "note": "Drew all three and changed a single to double.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "stereo-bonds": {
       "status": "yes",
@@ -58,7 +60,9 @@
       "shot": {
         "image": "evidence/molchart/f-stereo-bonds.webp",
         "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "special-bonds": {
       "status": "unknown",
@@ -80,7 +84,9 @@
       "shot": {
         "image": "evidence/molchart/f-rings.webp",
         "caption": "Ring tools and a selected fused-ring structure."
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "conformers": {
       "status": "unknown",
@@ -92,13 +98,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://molchart.com/manual.html#drawing-bonds-and-chains",
-      "note": null
+      "note": null,
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "templates": {
       "status": "yes",
       "evidence": "tested",
       "source": "https://molchart.com/manual.html#rings",
-      "note": "Placed indole from the fused-ring library."
+      "note": "Placed indole from the fused-ring library.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "custom-templates": {
       "status": "yes",
@@ -110,7 +120,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://molchart.com/manual.html#atoms-and-elements",
-      "note": "Typed group abbreviations expand into chemical structures."
+      "note": "Typed group abbreviations expand into chemical structures.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "atom-labels": {
       "status": "partial",
@@ -120,7 +132,9 @@
       "shot": {
         "image": "evidence/molchart/f-atom-labels.webp",
         "caption": "Edit menu shows element and charge commands."
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "radicals": {
       "status": "yes",
@@ -130,19 +144,25 @@
       "shot": {
         "image": "evidence/molchart/f-radicals.webp",
         "caption": "Edit menu shows add and remove lone pair commands."
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "keyboard-drawing": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://molchart.com/manual.html#atoms-and-elements",
-      "note": "Element keys edit selected atoms; hover-key editing is unverified."
+      "note": "Element keys edit selected atoms; hover-key editing is unverified.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "selection-tools": {
       "status": "partial",
       "evidence": "source",
       "source": "https://molchart.com/assets/main-BkJHgyhY.js",
-      "note": "Lasso, rotation and flips; resizing verified only for arrows."
+      "note": "Lasso, rotation and flips; resizing verified only for arrows.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "perspective": {
       "status": "unknown",
@@ -158,7 +178,9 @@
       "shot": {
         "image": "evidence/molchart/f-reaction-arrows.webp",
         "caption": "Forward and equilibrium arrows beside an indole structure."
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "mechanism-arrows": {
       "status": "partial",
@@ -168,7 +190,9 @@
       "shot": {
         "image": "evidence/molchart/f-mechanism-arrows.webp",
         "caption": "A red curved arrow appears below reaction arrows."
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "reaction-data": {
       "status": "unknown",
@@ -204,7 +228,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://molchart.com/manual.html#selecting-and-editing",
-      "note": null
+      "note": null,
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "groups": {
       "status": "unknown",
@@ -220,7 +246,9 @@
       "engine": {
         "library": "OpenChemLib (browser JavaScript Molecule.inventCoordinates); In-house (orientation preservation and fallback geometry)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "journal-styles": {
       "status": "unknown",
@@ -242,7 +270,9 @@
       "shot": {
         "image": "evidence/molchart/f-color.webp",
         "caption": "A red curved arrow appears below black reaction arrows."
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "pages": {
       "status": "unknown",
@@ -270,7 +300,9 @@
       "engine": {
         "library": "In-house (browser JavaScript valence, charge, bond and aromaticity rules)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "stereo-perception": {
       "status": "yes",
@@ -280,7 +312,9 @@
       "engine": {
         "library": "OpenChemLib (browser JavaScript cHelperCIP, getAtomCIPParity and getBondCIPParity)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "formula-mass": {
       "status": "yes",
@@ -294,13 +328,17 @@
       "engine": {
         "library": "OpenChemLib (browser JavaScript Molecule.getMolecularFormula, formula and absoluteWeight)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "properties": {
       "status": "yes",
       "evidence": "tested",
       "source": "https://molchart.com/structure-to-iupac-name.html",
-      "note": "Calculator returned caffeine logP and TPSA."
+      "note": "Calculator returned caffeine logP and TPSA.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "name-to-structure": {
       "status": "yes",
@@ -310,7 +348,9 @@
       "engine": {
         "library": "In-house (browser IUPAC parser and common-name dictionary); PubChem PUG REST (remote fallback); OpenChemLib (browser JavaScript SMILES parsing)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "structure-to-name": {
       "status": "partial",
@@ -324,7 +364,9 @@
       "engine": {
         "library": "In-house (browser naming rules and common-name dictionary); OpenChemLib (browser JavaScript canonical-SMILES/IDCode matching)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "nmr-prediction": {
       "status": "no",
@@ -336,7 +378,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://molchart.com/manual.html#atoms-and-elements",
-      "note": "R-group and halide placeholder atom labels."
+      "note": "R-group and halide placeholder atom labels.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "polymers": {
       "status": "unknown",
@@ -364,7 +408,9 @@
       "engine": {
         "library": "PubChem PUG REST (remote compound name and structure lookup)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "model-3d": {
       "status": "yes",
@@ -378,25 +424,33 @@
       "engine": {
         "library": "3Dmol.js (browser JavaScript viewer); RDKit (Python server conformer generation through FastAPI)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "crystals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://molchart.com/manual.html#view-options",
-      "note": "Loads crystallographic structures from COD."
+      "note": "Loads crystallographic structures from COD.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "cdxml": {
       "status": "yes",
       "evidence": "tested",
       "source": "https://molchart.com/manual.html#import-and-export",
-      "note": "Exported and reimported cholesterol CDXML."
+      "note": "Exported and reimported cholesterol CDXML.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "cdx": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://molchart.com/manual.html#import-and-export",
-      "note": null
+      "note": null,
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "mol-sdf": {
       "status": "yes",
@@ -406,7 +460,9 @@
       "engine": {
         "library": "OpenChemLib (browser JavaScript MOL import/export, Molecule.fromMolfile/toMolfile/toMolfileV3)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "smiles": {
       "status": "yes",
@@ -416,7 +472,9 @@
       "engine": {
         "library": "OpenChemLib (browser JavaScript Molecule.fromSmiles/toSmiles)",
         "source": "https://molchart.com/assets/main-BkJHgyhY.js"
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "inchi": {
       "status": "unknown",
@@ -434,7 +492,9 @@
       "status": "yes",
       "evidence": "tested",
       "source": "https://molchart.com/manual.html#import-and-export",
-      "note": "Exported SVG drawings for all three fixtures."
+      "note": "Exported SVG drawings for all three fixtures.",
+      "plan": "Anonymous",
+      "planLevel": "free"
     },
     "pdf-export": {
       "status": "no",
@@ -508,7 +568,9 @@
       "shot": {
         "image": "evidence/molchart/f-ai-assistant.webp",
         "caption": "MolChart Assistant offers example drawing prompts."
-      }
+      },
+      "plan": "Anonymous",
+      "planLevel": "free"
     }
   },
   "caveats": [
@@ -562,7 +624,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 284.28,
+      "paclitaxelMb": 310.39,
+      "baselineMb": 184.32,
+      "rssIdleMb": 809.91,
+      "rssPaclitaxelMb": 850.56,
+      "runs": 3,
+      "processes": 8,
+      "method": "Playwright Chrome tree and detached crash handler; phys_footprint sums, three-run medians.",
+      "note": null
+    },
     "observations": [
       "The anonymous New command requested sign-in; subsequent fixtures used Clear Canvas.",
       "Caffeine's status bar showed 194.08; the property calculator showed 194.19.",
@@ -588,6 +660,27 @@
     "source": "https://molchart.com/assets/main-BkJHgyhY.js",
     "note": "Vendor credits OpenChemLib and RDKit; canvas provenance remains unestablished."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Anonymous",
+      "level": "free",
+      "price": "2026-11-06: Free"
+    },
+    {
+      "name": "Free account",
+      "level": "account",
+      "price": "2026-11-06: Free"
+    },
+    {
+      "name": "Member",
+      "level": "paid",
+      "price": "2026-11-06: US$10/month advertised; US$30/month structured offer."
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "Custom React SVG renderer",

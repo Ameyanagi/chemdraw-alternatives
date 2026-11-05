@@ -15,9 +15,9 @@
   const page = document.querySelector<HTMLAnchorElement>('#zoom-page');
   const manual = document.querySelector<HTMLAnchorElement>('#zoom-manual');
 
-  // Links stay real links, so a new tab or a page without scripts still reaches the proof.
+  // Triggers sit on or inside real links, so a new tab or a page without scripts still reaches the page.
   document.addEventListener('click', (event) => {
-    const trigger = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[data-zoom]') : null;
+    const trigger = event.target instanceof Element ? event.target.closest<HTMLElement>('[data-zoom]') : null;
     if (!trigger || !dialog || !image || !page || !manual || event.metaKey || event.ctrlKey || event.shiftKey) return;
     event.preventDefault();
     const { zoom, zoomTitle, zoomCaption, zoomManual } = trigger.dataset;
@@ -25,7 +25,7 @@
     image.alt = zoomTitle ?? '';
     if (title) title.textContent = zoomTitle ?? '';
     if (caption) caption.textContent = zoomCaption ?? '';
-    page.href = trigger.href;
+    page.href = trigger.closest('a')?.href ?? '';
     manual.hidden = !zoomManual;
     manual.href = zoomManual ?? '';
     dialog.showModal();

@@ -150,8 +150,6 @@ export function reliesShort(tool: Tool) {
   return names.length ? `Relies on ${names.slice(0, 3).join(', ')}` : reliesOn(tool);
 }
 
-export const relied = (tool: Tool, name: string) => reliedNames(tool).includes(name);
-
 export const rendererFeatures = ['name-to-structure', 'structure-to-name', 'cleanup', 'model-3d', 'nmr-prediction', 'properties', 'formula-mass', 'stereo-perception', 'valence-check', 'image-to-structure', 'database-lookup', 'smiles', 'inchi', 'mol-sdf', 'cdxml', 'cdx'];
 
 export function rendererLabel(tool: Tool) {
@@ -192,11 +190,71 @@ export function memoryUse(tool: Tool, key: 'idleMb' | 'paclitaxelMb') {
   return `${Math.round(value)} MB${memory.baselineMb ? `, of which ${Math.round(memory.baselineMb)} MB is the empty browser` : ''}`;
 }
 
+export const filterGroups: { id: string; label: string; options: [string, string][] }[] = [
+  { id: 'type', label: 'Type', options: [['desktop', 'Desktop app'], ['webapp', 'Web app']] },
+  { id: 'os', label: 'Runs on', options: [['macos', 'macOS'], ['windows', 'Windows'], ['linux', 'Linux']] },
+  { id: 'license', label: 'License', options: [['free', 'Free to use'], ['oss', 'Open source'], ['permissive', 'MIT or Apache-2.0']] },
+  { id: 'files', label: 'Files', options: [['cdxml', 'Opens CDXML'], ['ole', 'Windows Office OLE']] },
+  { id: 'apis', label: 'APIs', options: [['python', 'Python API'], ['ts', 'JS or TS API'], ['agents', 'AI agents']] },
+];
+
+const hasFeature = (tool: Tool, id: string) => ['yes', 'partial'].includes(featureOf(tool, id).status);
+
+export const toolTags = (tool: Tool) => [
+  ['open-source', 'free', 'freemium'].includes(tool.license.kind) && 'free',
+  tool.license.kind === 'open-source' && 'oss',
+  /^(MIT|Apache-2\.0)( (OR|AND) (MIT|Apache-2\.0))?$/.test(tool.license.spdx ?? '') && 'permissive',
+  tool.appKind.desktop && 'desktop',
+  tool.appKind.web && 'webapp',
+  tool.appKind.desktop && tool.platforms.macos && 'macos',
+  tool.appKind.desktop && tool.platforms.windows && 'windows',
+  tool.appKind.desktop && tool.platforms.linux && 'linux',
+  hasFeature(tool, 'cdxml') && 'cdxml',
+  hasFeature(tool, 'python-api') && 'python',
+  hasFeature(tool, 'ts-api') && 'ts',
+  hasFeature(tool, 'mcp-agents') && 'agents',
+  hasFeature(tool, 'office-ole') && 'ole',
+].filter((tag): tag is string => Boolean(tag));
+
+/** A plan label only helps where a tool has several plans and this feature is not in the lowest one. */
+export function planTag(tool: Tool, id: string) {
+  const { plan } = featureOf(tool, id);
+  if (!plan || tool.plans.length < 2 || plan === tool.plans[0].name) return undefined;
+  return plan.startsWith(`${tool.name} `) ? plan.slice(tool.name.length + 1) : plan;
+}
+
+export const plansLabel = (tool: Tool) =>
+  tool.plans.map(({ name, price }) => (price ? `${name}: ${price}` : name)).join('; ') || null;
+
+/** Features available without paying. Paid products count only where a free plan is confirmed to include the feature. */
+export const freeFeaturesOf = (tool: Tool) => featuresOf(tool).filter((id) => {
+  const { planLevel } = featureOf(tool, id);
+  if (planLevel) return planLevel !== 'paid';
+  return !['commercial', 'freemium'].includes(tool.license.kind);
+});
+
+export const featuresOf = (tool: Tool) => features.filter((feature) => hasFeature(tool, feature.id)).map((feature) => feature.id);
+
+export const starsCount = (tool: Tool) =>
+  tool.github?.stars === null || !tool.github ? null : `${tool.github.stars.toLocaleString('en-US')} stars`;
+
+export const starsDate = (tool: Tool) => (tool.github ? `on ${seenOn(tool.github.checkedOn)}` : null);
+
+export const starsLabel = (tool: Tool) => (starsCount(tool) ? `${starsCount(tool)} ${starsDate(tool)}` : null);
+
+export const firstCommit = (tool: Tool) => (tool.github?.firstCommit ? seenOn(tool.github.firstCommit) : null);
+
+export function historyLabel(tool: Tool) {
+  const { commits, contributors, pushedAt } = tool.github ?? {};
+  const plural = (count: number, word: string) => `${count.toLocaleString('en-US')} ${word}${count === 1 ? '' : 's'}`;
+  return [commits && plural(commits, 'commit'), contributors && plural(contributors, 'contributor'), pushedAt && `last push ${seenOn(pushedAt)}`].filter(Boolean).join(', ') || null;
+}
+
 export const licenseShort = (tool: Tool) => tool.license.spdx?.replaceAll(' OR ', ' or ').replaceAll(' AND ', ' and ') ?? tool.license.text;
 
 export const platformNames = (tool: Tool) =>
   ([['macos', 'macOS'], ['windows', 'Windows'], ['linux', 'Linux'], ['web', 'Browser'], ['ios', 'iOS'], ['android', 'Android']] as const)
-    .filter(([key]) => tool.platforms[key])
+    .filter(([key]) => tool.platforms[key] && (tool.appKind.desktop || !['macos', 'windows', 'linux'].includes(key)))
     .map(([, name]) => name);
 
 export const licenseNames: Record<Tool['license']['kind'], string> = {

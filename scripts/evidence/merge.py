@@ -40,6 +40,7 @@ library_licenses = {
     for alias in [entry["name"], *entry.get("aliases", [])]
 }
 notices = json.loads(p.read_text()) if (p := research / "notices.json").exists() else {}
+DESKTOP_ROUTES = {"dmg", "exe", "msi", "appimage", "deb", "homebrew", "jar"}
 PLATFORMS = ("macos", "windows", "linux", "web", "ios", "android", "offline")
 UNITS = {"": 1, "px": 1, "pt": 4 / 3, "in": 96, "mm": 96 / 25.4, "cm": 96 / 2.54}
 SLUGS = {
@@ -235,11 +236,28 @@ for path in sorted((research / "out").glob("p*.json")):
             "observations": manifest.get("observations", []),
         }
     installs = record.get("install", [])
+    web_app = bool((record.get("hosted") or {}).get("url")) or record["platforms"]["web"]
+    native = any(record["platforms"][key] for key in ("macos", "windows", "linux"))
+    desktop = native and (not web_app or bool(DESKTOP_ROUTES & {item["route"] for item in installs}))
     sized = [item["bytes"] for item in sorted(installs, key=lambda item: not item.get("macArm64")) if item.get("bytes")]
     engines = json.loads(p.read_text()) if (p := research / "engines" / f"{tool_id}.json").exists() else {}
     for key, engine in (engines.get("features") or {}).items():
         if key in features and features[key]["status"] in ("yes", "partial") and engine.get("library"):
             features[key]["engine"] = {"library": engine["library"], "source": engine.get("source")}
+    ole = json.loads(p.read_text()) if (p := research / "ole" / f"{tool_id}.json").exists() else None
+    if ole and ole.get("source"):
+        features["office-ole"] = {"status": ole["status"], "evidence": "docs", "source": ole["source"], "note": ole.get("note")}
+    plans = json.loads(p.read_text()) if (p := research / "plans" / f"{tool_id}.json").exists() else {}
+    level_of = {plan["name"]: plan["level"] for plan in plans.get("plans", [])}
+    for key, gate in (plans.get("features") or {}).items():
+        if not gate.get("source") or key not in feature_ids:
+            continue
+        if key not in features:
+            features[key] = {"status": gate.get("status") or "yes", "evidence": "docs", "source": gate["source"], "note": gate.get("note")}
+        elif gate.get("status") == "no":
+            features[key].update(status="no", note=gate.get("note"))
+        if gate.get("plan") in level_of:
+            features[key].update(plan=gate["plan"], planLevel=level_of[gate["plan"]])
     stack = json.loads(p.read_text()) if (p := research / "stack" / f"{tool_id}.json").exists() else {}
     built = json.loads(p.read_text()) if (p := research / "built" / f"{tool_id}.json").exists() else None
     if stack.get("languages"):
@@ -255,10 +273,16 @@ for path in sorted((research / "out").glob("p*.json")):
         "summary": record["summary"], "website": record["website"], "repo": record["repo"], "docs": record["docs"], "vendor": record["vendor"],
         "license": record["license"], "price": record["price"], "platforms": record["platforms"], "version": record["version"],
         "engine": record["engine"], "languages": record["languages"], "features": features, "caveats": record["caveats"],
-        "github": github and {"stars": github["stars"], "pushedAt": github["pushedAt"], "archived": github["archived"]},
+        "github": github and github.get("exists") and {
+            "url": f"https://github.com/{meta['repo']}", "stars": github["stars"], "checkedOn": github["checkedOn"],
+            "firstCommit": github.get("firstCommit"), "commits": github.get("commits"), "contributors": github.get("contributors"),
+            "pushedAt": github["pushedAt"], "archived": github["archived"],
+        } or None,
         "hands": hands, "perf": perf.get(tool_id), "downloadBytes": (hands or {}).get("downloadBytes") or (sized[0] if sized else None),
         "references": meta.get("sources", []),
         "builtOn": built,
+        "appKind": {"desktop": desktop, "web": web_app},
+        "plans": plans.get("plans") or [],
         "renderer": engines.get("renderer"), "otherLanguages": engines.get("otherLanguages"), "enginesChecked": bool(engines),
         "languageNote": stack.get("languageNote"),
         "thirdParty": {

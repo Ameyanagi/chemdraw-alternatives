@@ -67,6 +67,10 @@
       "python-api": {
         "status": "partial",
         "note": "Python bindings are in the nightly build, not in stable 0.13.1."
+      },
+      "database-lookup": {
+        "status": "partial",
+        "note": "Online structure lookup is in the nightly build, not in stable 0.13.1."
       }
     },
     "otherLanguages": [
@@ -142,6 +146,16 @@
       "Office editing requires reopening the exported picture in MolDraw and replacing it.",
       "Free users are asked to credit MolDraw; Pro removes this request.",
       "Result depends on how SMILES goes in. Pasting on the canvas gave a clean paclitaxel with no wedge or hash bonds shown. The Paste SMILES button kept wedges, but the layout overlapped."
-    ]
+    ],
+    "features": {
+      "svg-export": {
+        "plan": "Free account",
+        "planLevel": "account"
+      },
+      "png-export": {
+        "plan": "Free account",
+        "planLevel": "account"
+      }
+    }
   }
 }

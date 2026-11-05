@@ -558,7 +558,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 121.0,
+      "paclitaxelMb": 115.0,
+      "baselineMb": 50.31,
+      "rssIdleMb": 390.3,
+      "rssPaclitaxelMb": 389.16,
+      "runs": 3,
+      "processes": 4,
+      "method": "Fresh headless Chromium; summed process-tree phys_footprint, MiB; three-run medians.",
+      "note": null
+    },
     "observations": [
       "SMILES imports produced centered, fitted 2D depictions without cleanup.",
       "Atoms are colored by element in the default rendering.",
@@ -579,6 +589,11 @@
     "source": "https://molsoft.com/lib/moledit.js",
     "note": "Molsoft-authored canvas loads libchem; third-party chemistry dependencies could not be established."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Molsoft ChemicalView canvas renderer",

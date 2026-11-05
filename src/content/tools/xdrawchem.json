@@ -489,7 +489,12 @@
     "Older docs conflict with code on 3D, Babel export, text/projections, template refresh, CDX output, and MOL/SDF support."
   ],
   "github": {
+    "url": "https://github.com/bryanherger/xdrawchem",
     "stars": 56,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2016-11-25",
+    "commits": 300,
+    "contributors": 12,
     "pushedAt": "2026-10-31T12:04:44Z",
     "archived": false
   },
@@ -565,6 +570,11 @@
     "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application.cpp#L169",
     "note": "Own Render2D canvas and editing logic; Open Babel handles molecular conversion and chemistry."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "XDrawChem Render2D (Qt QPainter)",

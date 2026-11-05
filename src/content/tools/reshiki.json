@@ -433,10 +433,10 @@
       }
     },
     "database-lookup": {
-      "status": "no",
+      "status": "partial",
       "evidence": "docs",
       "source": "https://reshiki.com/developer/feature-status/#chemistry-reactions-and-specialist-workflows",
-      "note": "External structure lookup is missing; PubChem integration remains unreleased."
+      "note": "Online structure lookup is in the nightly build, not in stable 0.13.1."
     },
     "model-3d": {
       "status": "yes",
@@ -629,6 +629,12 @@
         "image": "evidence/reshiki/f-ai-assistant.webp",
         "caption": "Assistant panel offers a molecule prompt and example image."
       }
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/windows/#edit-a-drawing-in-office",
+      "note": "Windows OLE; double-click edits, Ctrl+S updates Word and PowerPoint."
     }
   },
   "caveats": [
@@ -637,8 +643,13 @@
     "Drawings saved by 0.13.1 cannot be opened in 0.13.0 or earlier."
   ],
   "github": {
+    "url": "https://github.com/Ameyanagi/ReShiki",
     "stars": 146,
-    "pushedAt": "2026-11-05T10:33:31Z",
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-09-16",
+    "commits": 2831,
+    "contributors": 3,
+    "pushedAt": "2026-11-05T16:23:53Z",
     "archived": false
   },
   "hands": {
@@ -717,6 +728,11 @@
       "Centres"
     ]
   },
+  "appKind": {
+    "desktop": true,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "ReShiki vector scene",

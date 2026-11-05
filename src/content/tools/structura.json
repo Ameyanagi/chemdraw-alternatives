@@ -485,6 +485,12 @@
       "evidence": "docs",
       "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/vision.tsx",
       "note": "AI builds editable structures; requires configured server and model credentials."
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/enumerate.tsx#L27-L30",
+      "note": "chem2office exports ChemDraw OLE requiring ChemDraw, not Structura."
     }
   },
   "caveats": [
@@ -493,7 +499,12 @@
     "Root README retains removed fillVariables/wordExport props; use the 0.8.0 package documentation."
   ],
   "github": {
+    "url": "https://github.com/wxyhgk/structura",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-09-25",
+    "commits": 283,
+    "contributors": 1,
     "pushedAt": "2026-10-27T04:29:02Z",
     "archived": false
   },
@@ -534,9 +545,14 @@
       }
     ],
     "canvas": "evidence/structura/canvas.webp",
-    "canvasLight": null,
-    "canvasDark": null,
-    "themes": null,
+    "canvasLight": "evidence/structura/canvas-light.webp",
+    "canvasDark": "evidence/structura/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Theme selector enabled via documented embedding API; hidden by default."
+    },
     "memory": null,
     "observations": [
       "Default drawing colors heteroatoms red and blue.",
@@ -562,6 +578,11 @@
     "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/editor/canvas/Canvas.tsx",
     "note": "Custom SVG canvas; RDKit supports SMILES, identifiers, and coordinate generation."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Structura SVG scene renderer",

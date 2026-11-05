@@ -517,7 +517,12 @@
     "Source predictions ignore entered temperature; SVG/PNG lose reaction arrow types; fallback InChI is unavailable despite manual claims."
   ],
   "github": {
+    "url": "https://github.com/OvOHongYu/molecule-builder",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-09-13",
+    "commits": 4,
+    "contributors": 1,
     "pushedAt": "2026-09-18T13:10:21Z",
     "archived": false
   },
@@ -558,9 +563,14 @@
       }
     ],
     "canvas": "evidence/molecule-builder/canvas.webp",
-    "canvasLight": null,
+    "canvasLight": "evidence/molecule-builder/canvas-light.webp",
     "canvasDark": null,
-    "themes": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Paclitaxel import unsupported; default ethane shown. Fixed light appearance."
+    },
     "memory": null,
     "observations": [
       "Version comes from the release archive; the app shows no version.",
@@ -586,6 +596,11 @@
     "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/components/Canvas.tsx#L300-L342",
     "note": "Custom SVG editor with RDKit WebAssembly chemistry."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Molecule Builder SVG renderer",

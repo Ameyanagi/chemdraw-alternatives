@@ -48,19 +48,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/BONDTYPES.html",
-      "note": "Single, double and triple bond types; keyboard bond-order editing."
+      "note": "Single, double and triple bond types; keyboard bond-order editing.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/BONDTYPES.html",
-      "note": "Wedge, hash and wiggly bond types."
+      "note": "Wedge, hash and wiggly bond types.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "special-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "http://elncloud.com/jsdrawapp/jsdraw/Form.htm",
-      "note": "Coordination, ionic and dotted bonds appear in the editor toolbar."
+      "note": "Coordination, ionic and dotted bonds appear in the editor toolbar.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "double-bond-side": {
       "status": "unknown",
@@ -72,7 +78,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "http://elncloud.com/jsdrawapp/jsdraw/Form.htm",
-      "note": "Benzene and three- through eight-membered ring tools."
+      "note": "Benzene and three- through eight-membered ring tools.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "conformers": {
       "status": "unknown",
@@ -102,25 +110,33 @@
       "status": "yes",
       "evidence": "docs",
       "source": "http://elncloud.com/jsdrawapp/jsdraw/Abbreviation.htm",
-      "note": "Ph and COOH are represented as chemical superatom groups."
+      "note": "Ph and COOH are represented as chemical superatom groups.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "atom-labels": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Atom.html",
-      "note": "Atom charge, isotope and element labels are documented."
+      "note": "Atom charge, isotope and element labels are documented.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Atom.html",
-      "note": "Atoms have a documented radical property."
+      "note": "Atoms have a documented radical property.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "http://elncloud.com/jsdrawapp/jsdraw/Abbreviation.htm",
-      "note": "Hover over atoms and type element keys or Enter."
+      "note": "Hover over atoms and type element keys or Enter.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "selection-tools": {
       "status": "unknown",
@@ -138,7 +154,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Drawer.html#___drawArrow",
-      "note": "Forward and reversible arrow styles."
+      "note": "Forward and reversible arrow styles.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "mechanism-arrows": {
       "status": "unknown",
@@ -150,13 +168,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Mol.html#___getRxnfile",
-      "note": "RXN import/export stores reactants and products as molecular structures."
+      "note": "RXN import/export stores reactants and products as molecular structures.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "atom-mapping": {
       "status": "yes",
       "evidence": "docs",
       "source": "http://elncloud.com/jsdrawapp/jsdraw/ReactionMap.htm",
-      "note": "Manual reactant-to-product atom mapping and mapping removal."
+      "note": "Manual reactant-to-product atom mapping and mapping removal.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "orbitals": {
       "status": "unknown",
@@ -174,7 +196,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "http://elncloud.com/jsdrawapp/jsdraw/Shapes.htm",
-      "note": "Editable rectangle and curve objects in the example drawing."
+      "note": "Editable rectangle and curve objects in the example drawing.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "align": {
       "status": "unknown",
@@ -210,7 +234,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Mol.html#___setColor",
-      "note": "Color changes can apply only to selected objects."
+      "note": "Color changes can apply only to selected objects.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "pages": {
       "status": "unknown",
@@ -222,13 +248,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Picture.html",
-      "note": "Picture objects accept base64 image contents or an image URL."
+      "note": "Picture objects accept base64 image contents or an image URL.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "tlc-tables": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/TLC.html",
-      "note": "Dedicated TLC object."
+      "note": "Dedicated TLC object.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "valence-check": {
       "status": "yes",
@@ -238,7 +268,9 @@
       "engine": {
         "library": "In-house (JSDraw2.Mol.setHCount, JavaScript)",
         "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
-      }
+      },
+      "plan": "Education",
+      "planLevel": "free"
     },
     "stereo-perception": {
       "status": "unknown",
@@ -254,7 +286,9 @@
       "engine": {
         "library": "In-house (JSDraw2.FormulaParser, JavaScript)",
         "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
-      }
+      },
+      "plan": "Education",
+      "planLevel": "free"
     },
     "properties": {
       "status": "unknown",
@@ -288,19 +322,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "http://elncloud.com/jsdrawapp/jsdraw/RGroup.htm",
-      "note": "Editable R-group definitions and alternative substructures."
+      "note": "Editable R-group definitions and alternative substructures.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "polymers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://scilligence.com/regmol-7-4-release-notes/",
-      "note": "JSDraw polymer repeats are rendered and exported in Molfile."
+      "note": "JSDraw polymer repeats are rendered and exported in Molfile.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "biomolecules": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/SequenceEditor.html",
-      "note": "Protein, gene, RNA and DNA sequences; FASTA input/output."
+      "note": "Protein, gene, RNA and DNA sequences; FASTA input/output.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "image-to-structure": {
       "status": "unknown",
@@ -346,7 +386,9 @@
       "engine": {
         "library": "In-house (JSDraw2.Mol and JSDraw2.Table, JavaScript)",
         "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
-      }
+      },
+      "plan": "Education",
+      "planLevel": "free"
     },
     "smiles": {
       "status": "yes",
@@ -356,7 +398,9 @@
       "engine": {
         "library": "In-house (JavaScript export); JSDraw Web Services (remote server import)",
         "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
-      }
+      },
+      "plan": "Education",
+      "planLevel": "free"
     },
     "inchi": {
       "status": "unknown",
@@ -368,13 +412,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html#___getRxnfile",
-      "note": "RXN import/export, including V3000 output."
+      "note": "RXN import/export, including V3000 output.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html#___getSvg",
-      "note": "getSvg returns vector SVG data."
+      "note": "getSvg returns vector SVG data.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "pdf-export": {
       "status": "unknown",
@@ -410,7 +458,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html",
-      "note": "Documented JavaScript API."
+      "note": "Documented JavaScript API.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "cli": {
       "status": "unknown",
@@ -428,13 +478,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html#___Editor",
-      "note": "Toolbar plugins provide an icon, tooltip and click callback."
+      "note": "Toolbar plugins provide an icon, tooltip and click callback.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "embed": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html",
-      "note": "JavaScript constructor embeds the editor inside an HTML DIV."
+      "note": "JavaScript constructor embeds the editor inside an HTML DIV.",
+      "plan": "Education",
+      "planLevel": "free"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -464,6 +518,22 @@
     "source": "https://scilligence.com/chemical-vendors/",
     "note": "Scilligence identifies JSDraw as proprietary; third-party chemistry dependencies could not be established."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Education",
+      "level": "free",
+      "price": "Free for education (2026-11-06)"
+    },
+    {
+      "name": "Commercial",
+      "level": "paid",
+      "price": "Contact vendor (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "JSDraw Atom/Bond/Drawer renderer",

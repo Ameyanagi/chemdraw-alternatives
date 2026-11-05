@@ -441,7 +441,12 @@
     "README differs from package.json on TypeScript/build tooling and from LICENSE on the copyright holder."
   ],
   "github": {
+    "url": "https://github.com/chemistry/molpad",
     "stars": 8,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2020-12-27",
+    "commits": 127,
+    "contributors": 3,
     "pushedAt": "2026-10-31T02:14:27Z",
     "archived": false
   },
@@ -490,7 +495,17 @@
       "how": "in-app setting",
       "note": "Host darkens; canvas stays white. Paclitaxel import unsupported; caffeine shown."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 163.0,
+      "paclitaxelMb": null,
+      "baselineMb": 50.28,
+      "rssIdleMb": 421.48,
+      "rssPaclitaxelMb": null,
+      "runs": 3,
+      "processes": 4,
+      "method": "Median Chromium process-tree physical footprints; MiB, headless Playwright.",
+      "note": "Published MOL paste produced no structure; no import control."
+    },
     "observations": [
       "The hosted editor initially displayed a caffeine-like structure.",
       "New cleared the preloaded drawing before fixture import attempts.",
@@ -516,6 +531,11 @@
     "source": "https://github.com/chemistry/molpad/blob/90b4c5cb8bf1f75cf18560e4b228f7449ec957b3/src/components/molpad-content/molpad-content.tsx",
     "note": "Custom SVG canvas; separate same-author chemistry toolkits."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "MolPad React/SVG renderer",

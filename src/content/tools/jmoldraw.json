@@ -519,6 +519,11 @@
     "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
     "note": "Own molecular canvas and chemistry; Apache Batik provides general SVG export."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "JMolDraw JMD molecular views",

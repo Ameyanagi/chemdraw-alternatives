@@ -447,6 +447,11 @@
     "source": "https://link.springer.com/article/10.1186/1758-2946-3-53",
     "note": "Author documents a self-developed editor; external chemistry libraries remain unconfirmed."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "MyChemise molecular drawing engine",

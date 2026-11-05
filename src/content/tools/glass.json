@@ -441,7 +441,12 @@
     "Main-branch fileIO.js has a duplicate let declaration that prevents JavaScript parsing."
   ],
   "github": {
+    "url": "https://github.com/joe-glass/glass",
     "stars": 1,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2021-11-01",
+    "commits": 13,
+    "contributors": 1,
     "pushedAt": "2022-02-18T21:39:43Z",
     "archived": false
   },
@@ -490,7 +495,17 @@
       "how": "fixed",
       "note": "MOL import fails; molecule absent from screenshot."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 72.31,
+      "paclitaxelMb": null,
+      "baselineMb": 50.3,
+      "rssIdleMb": 289.75,
+      "rssPaclitaxelMb": null,
+      "runs": 3,
+      "processes": 4,
+      "method": "Playwright headless Chromium; summed process-tree physical footprints; medians of three runs.",
+      "note": "MOL import failed: importMol is not a function; molecule absent."
+    },
     "observations": [
       "No HTML demo was bundled; the repository was embedded in a minimal local page.",
       "The fileIO.js script fails to parse because index2 is declared twice.",
@@ -513,6 +528,11 @@
     "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js#L609",
     "note": "Custom Canvas rendering and in-house chemistry; jQuery is UI only."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Glass Canvas 2D renderer",

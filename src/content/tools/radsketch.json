@@ -485,7 +485,12 @@
     "PNG is viewport-sized; SMILES import and MOL export lose chemical detail."
   ],
   "github": {
+    "url": "https://github.com/GTeninbaum/RadSketch",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-04-12",
+    "commits": 1,
+    "contributors": 1,
     "pushedAt": "2026-04-12T23:58:03Z",
     "archived": false
   },
@@ -534,7 +539,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 455.0,
+      "paclitaxelMb": 450.0,
+      "baselineMb": 410.0,
+      "rssIdleMb": 1000.23,
+      "rssPaclitaxelMb": 1004.8,
+      "runs": 3,
+      "processes": 7,
+      "method": "Median fresh Chromium process-tree physical footprints; SMILES render; MiB.",
+      "note": null
+    },
     "observations": [
       "Hosted HTML matched repository commit b7450e4; no version string found.",
       "Caffeine and paclitaxel layouts contain overlapping bonds and atoms.",
@@ -558,6 +573,11 @@
     "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html",
     "note": "Self-contained canvas, molecular graph, valence checks, and SMILES parser; no chemistry dependencies."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "RadSketch Canvas 2D molecule renderer",

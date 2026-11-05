@@ -506,7 +506,12 @@
     "Naming is limited; code lacks some claimed locant, strict-parser and stereodescriptor-refusal checks."
   ],
   "github": {
+    "url": "https://github.com/saparicioubu/sketchscape",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-08-07",
+    "commits": 1,
+    "contributors": 1,
     "pushedAt": "2026-08-07T23:35:05Z",
     "archived": false
   },
@@ -581,6 +586,11 @@
     "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L394-L475",
     "note": "Custom SVG editor; RDKit handles chemistry and 2D cleanup."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "SketchScape SVG renderer",

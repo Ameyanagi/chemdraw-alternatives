@@ -46,19 +46,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/Training/Drawing/DrawingBonds",
-      "note": "Click bond midpoints to cycle single, double, and triple bonds."
+      "note": "Click bond midpoints to cycle single, double, and triple bonds.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://sciencesolutions.wiley.com/wiley_chemwindow_hotkeys/",
-      "note": "Official hotkey diagram shows wedge, hashed wedge, and wavy bonds."
+      "note": "Official hotkey diagram shows wedge, hashed wedge, and wavy bonds.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "special-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Toolbars/ChemistryToolbar/Bonds/DativeBond",
-      "note": "Dative, hydrogen, and quadruple bond tools."
+      "note": "Dative, hydrogen, and quadruple bond tools.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "double-bond-side": {
       "status": "unknown",
@@ -70,85 +76,113 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/Training/Drawing/DrawingRings",
-      "note": "Dedicated ring tools include aromatic rings."
+      "note": "Dedicated ring tools include aromatic rings.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Toolbars/ChemistryToolbar/Rings/CyclohexaneChair",
-      "note": "Dedicated cyclohexane chair tool."
+      "note": "Dedicated cyclohexane chair tool.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "chains": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/Training/Drawing/DrawingBonds#using-the-chain-tool",
-      "note": "Drag acyclic chains; Alt adds alternating double bonds."
+      "note": "Drag acyclic chains; Alt adds alternating double bonds.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/Training/Substituents#predefined-substituents",
-      "note": "Built-in predefined substituent fragments."
+      "note": "Built-in predefined substituent fragments.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "custom-templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://sciencesolutions.wiley.com/wp-content/uploads/2025/09/09_Training-Drawing_Structures_and_Reactions.pdf#page=8",
-      "note": "Drawings save as ChemWindow Structure Template & Style files."
+      "note": "Drawings save as ChemWindow Structure Template & Style files.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "abbreviations": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/Training/HotKeys",
-      "note": "Ph, Boc, and other labels expand into structures."
+      "note": "Ph, Boc, and other labels expand into structures.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/Training/HotKeys",
-      "note": "Charges, element labels, and deuterium labels."
+      "note": "Charges, element labels, and deuterium labels.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Toolbars/ChemistryToolbar/Atoms/RadicalTools",
-      "note": "Dedicated radical tools; electron-pair tools also available."
+      "note": "Dedicated radical tools; electron-pair tools also available.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/Training/EditingAtomLabels#using-the-keyboard",
-      "note": "Hover over an atom and press its element hotkey."
+      "note": "Hover over an atom and press its element hotkey.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "selection-tools": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/Training/SelectionMethods",
-      "note": "Lasso selection with rotation, flips, scaling, and stretching."
+      "note": "Lasso selection with rotation, flips, scaling, and stretching.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "perspective": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Toolbars/ChemistryToolbar/Edit/3DRotationTool",
-      "note": "Rotate selected canvas structures in three dimensions."
+      "note": "Rotate selected canvas structures in three dimensions.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "reaction-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Toolbars/ChemistryToolbar/Reactions/EquilibriumArrow",
-      "note": "Forward, equilibrium, resonance, and retrosynthetic arrow tools."
+      "note": "Forward, equilibrium, resonance, and retrosynthetic arrow tools.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Toolbars/DrawingToolbar/Main/BezierTool",
-      "note": "Editable curved arrows with changeable heads via included ReportIt."
+      "note": "Editable curved arrows with changeable heads via included ReportIt.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "reaction-data": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/GettingStartedWithKnowItAll/KnowItAllSupportingInformation/InstrumentCompatibility/SupportedFileFormats#structures",
-      "note": "RXN and RInChI formats preserve chemical reactions."
+      "note": "RXN and RInChI formats preserve chemical reactions.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "atom-mapping": {
       "status": "unknown",
@@ -160,37 +194,49 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ReportIt/Drawing/Orbitals/OrbitalTools",
-      "note": "Orbital shapes via included ReportIt."
+      "note": "Orbital shapes via included ReportIt.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "rich-text": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/Toolbars/TextStyleToolbar",
-      "note": "Fonts, superscripts, and subscripts; free captions through included ReportIt."
+      "note": "Fonts, superscripts, and subscripts; free captions through included ReportIt.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "shapes": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ReportIt/Drawing/BoxesAndBraces",
-      "note": "Editable shapes, brackets, braces, and curves via included ReportIt."
+      "note": "Editable shapes, brackets, braces, and curves via included ReportIt.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "align": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ChemWindow/TitleAndMenuBars/ArrangeMenu",
-      "note": "Align Objects and Space Evenly commands."
+      "note": "Align Objects and Space Evenly commands.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "groups": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/ReportIt/Drawing/GroupAndUngroup",
-      "note": "Group and ungroup separate objects via included ReportIt."
+      "note": "Group and ungroup separate objects via included ReportIt.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "cleanup": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/TitleAndMenuBars/ChemistryMenu/CleanUp",
-      "note": "Tidies structure geometry and bond lengths."
+      "note": "Tidies structure geometry and bond lengths.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "journal-styles": {
       "status": "unknown",
@@ -202,49 +248,65 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/TitleAndMenuBars/FileMenu/Preferences/ChemWindow/TemplatesStyles",
-      "note": "Reusable style files and configurable default structure style."
+      "note": "Reusable style files and configurable default structure style.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "color": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Toolbars/ObjectStyleToolbar/ObjectColor",
-      "note": "Selected objects can use custom colors."
+      "note": "Selected objects can use custom colors.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/TitleAndMenuBars/FileMenu/DocumentSize",
-      "note": "Page setup and multipage documents via included ReportIt."
+      "note": "Page setup and multipage documents via included ReportIt.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "pictures": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://sciencesolutions.wiley.com/wp-content/uploads/2025/09/10_Training-Creating_Reports.pdf#page=14",
-      "note": "Paste raster pictures into included ReportIt."
+      "note": "Paste raster pictures into included ReportIt.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "tlc-tables": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/TitleAndMenuBars/EditMenu/InsertNewTable",
-      "note": "Editable tables via included ReportIt."
+      "note": "Editable tables via included ReportIt.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "valence-check": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/TitleAndMenuBars/ChemistryMenu/CheckChemistry",
-      "note": "Flags invalid labels and incorrect valences."
+      "note": "Flags invalid labels and incorrect valences.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "stereo-perception": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://sciencesolutions.wiley.com/wp-content/uploads/2026/08/95375-Wiley_KnowItAll_Software_ChemWindow_Edition_Brochure.pdf#page=5",
-      "note": "R/S and E/Z recognition; vendor claim."
+      "note": "R/S and E/Z recognition; vendor claim.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "formula-mass": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/TitleAndMenuBars/ChemistryMenu/CalculateMass",
-      "note": "Formula, molecular mass, exact mass, and composition."
+      "note": "Formula, molecular mass, exact mass, and composition.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "properties": {
       "status": "unknown",
@@ -260,7 +322,9 @@
       "engine": {
         "library": "OPSIN (integration form undisclosed)",
         "source": "https://help.knowitall.com/home/TitleAndMenuBars/ChemistryMenu/OPSINName2Structure?x=1"
-      }
+      },
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "no",
@@ -272,13 +336,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://sciencesolutions.wiley.com/wp-content/uploads/2026/08/95375-Wiley_KnowItAll_Software_ChemWindow_Edition_Brochure.pdf#page=10",
-      "note": "13C batch prediction in MineIt; vendor claim."
+      "note": "13C batch prediction in MineIt; vendor claim.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "markush": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Toolbars/ChemistryToolbar/Atoms/RGroup",
-      "note": "Numbered R-groups act as variable groups in structure searches."
+      "note": "Numbered R-groups act as variable groups in structure searches.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "polymers": {
       "status": "unknown",
@@ -306,13 +374,17 @@
       "engine": {
         "library": "PubChem web service (through KnowItAll MineIt)",
         "source": "https://sciencesolutions.wiley.com/wp-content/uploads/2026/08/95375-Wiley_KnowItAll_Software_ChemWindow_Edition_Brochure.pdf?download=1#page=10"
-      }
+      },
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "model-3d": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/Applications/3DViewIt/GettingStarted",
-      "note": "Included 3DViewIt supports rotation and 2D-to-3D conversion."
+      "note": "Included 3DViewIt supports rotation and 2D-to-3D conversion.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "unknown",
@@ -336,7 +408,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://sciencesolutions.wiley.com/wp-content/uploads/2025/09/09_Training-Drawing_Structures_and_Reactions.pdf#page=8",
-      "note": "MOL read/write; SDF import/export via MineIt databases."
+      "note": "MOL read/write; SDF import/export via MineIt databases.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "unknown",
@@ -348,13 +422,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/GettingStartedWithKnowItAll/KnowItAllSupportingInformation/InstrumentCompatibility/SupportedFileFormats#structures",
-      "note": "Supports InChI and InChIKey structure files."
+      "note": "Supports InChI and InChIKey structure files.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://help.knowitall.com/home/GettingStartedWithKnowItAll/KnowItAllSupportingInformation/InstrumentCompatibility/SupportedFileFormats#structures",
-      "note": "Supports MDL RXN and RXN V3000 files."
+      "note": "Supports MDL RXN and RXN V3000 files.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "svg-export": {
       "status": "unknown",
@@ -384,7 +462,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://sciencesolutions.wiley.com/wp-content/uploads/2025/09/09_Training-Drawing_Structures_and_Reactions.pdf#page=25",
-      "note": "Pasted Office objects reopen in ChemWindow for editing."
+      "note": "Pasted Office objects reopen in ChemWindow for editing.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     },
     "python-api": {
       "status": "unknown",
@@ -427,6 +507,14 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciencesolutions.wiley.com/wp-content/uploads/2025/09/09_Training-Drawing_Structures_and_Reactions.pdf#page=26",
+      "note": "Windows Office OLE objects reopen in ChemWindow with double-click editing.",
+      "plan": "KnowItAll ChemWindow Edition",
+      "planLevel": "paid"
     }
   },
   "caveats": [
@@ -451,6 +539,17 @@
     "source": "https://sciencesolutions.wiley.com/knowitall-version-history/",
     "note": "Vendor documents OPSIN name conversion; canvas provenance remains unconfirmed."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "KnowItAll ChemWindow Edition",
+      "level": "paid",
+      "price": "2026-11-06: Quote required."
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

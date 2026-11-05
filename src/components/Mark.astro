@@ -1,8 +1,8 @@
 ---
 import { markKey, markLabels, type Feature, type proofOf } from '../lib/tools';
 
-interface Props { feature: Feature; proof?: ReturnType<typeof proofOf>; reason?: boolean; thumb?: boolean }
-const { feature, proof, reason = false, thumb = false } = Astro.props;
+interface Props { feature: Feature; proof?: ReturnType<typeof proofOf>; reason?: boolean; thumb?: boolean; plan?: string }
+const { feature, proof, reason = false, thumb = false, plan } = Astro.props;
 
 const key = markKey(feature);
 const label = feature.note ? `${markLabels[key]}: ${feature.note}` : markLabels[key];
@@ -12,4 +12,5 @@ const action = proof?.href.startsWith('http') ? 'Opens the cited page.' : 'Opens
 {proof
   ? <a class="mark-link" href={proof.href} title={`${label}. ${action}`} {...proof.zoom}><span class={`mark mark-${key}`}></span><span class="sr-only">{label}. {action}</span>{image && <img class="mark-thumb" src={image} loading="lazy" decoding="async" alt="" />}</a>
   : <><span class={`mark mark-${key}`} title={label}></span><span class="sr-only">{label}</span></>}
+{plan && <span class:list={['plan-tag', { 'plan-paid': feature.planLevel === 'paid' }]}>{plan}</span>}
 {reason && feature.status === 'partial' && <span class="mark-reason" aria-hidden="true">{feature.note}</span>}

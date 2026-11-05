@@ -516,7 +516,12 @@
     "Publication layout needs manual review; PNG export has no DPI control."
   ],
   "github": {
+    "url": "https://github.com/kent-tokyo/chematic-draw",
     "stars": 3,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-06-06",
+    "commits": 352,
+    "contributors": 1,
     "pushedAt": "2026-10-08T12:54:51Z",
     "archived": false
   },
@@ -565,7 +570,17 @@
       "how": "in-app setting",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 297,
+      "paclitaxelMb": 308,
+      "baselineMb": 201,
+      "rssIdleMb": 861.67,
+      "rssPaclitaxelMb": 895.53,
+      "runs": 3,
+      "processes": 6,
+      "method": "Playwright Chromium process-tree physical footprints; blank baseline; pasted SMILES.",
+      "note": null
+    },
     "observations": [
       "Tested the hosted playground, not the richer desktop application.",
       "Default dark canvas used black labels with poor contrast.",
@@ -589,6 +604,11 @@
     "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/canvas/MoleculeCanvas.tsx#L198",
     "note": "Custom Canvas 2D editor; chemistry uses the author's chematic Rust/WASM toolkit."
   },
+  "appKind": {
+    "desktop": true,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Chematic CanvasRenderer and SVG renderers",

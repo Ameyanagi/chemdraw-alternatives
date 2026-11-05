@@ -48,13 +48,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
-      "note": "Manual drawing with single, double and triple bond tools."
+      "note": "Manual drawing with single, double and triple bond tools.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "source",
       "source": "https://www.labcanvas.com/moldraw/assets/drawAtomDecorations-CufdJh65.js",
-      "note": "Solid wedge, hashed wedge and wavy bond rendering."
+      "note": "Solid wedge, hashed wedge and wavy bond rendering.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "special-bonds": {
       "status": "yes",
@@ -72,7 +76,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
-      "note": "Dedicated benzene and other ring tools."
+      "note": "Dedicated benzene and other ring tools.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "conformers": {
       "status": "yes",
@@ -84,13 +90,17 @@
       "status": "yes",
       "evidence": "source",
       "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
-      "note": "Dragging generates zigzag chain coordinates at the configured bond length."
+      "note": "Dragging generates zigzag chain coordinates at the configured bond length.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
-      "note": "Common group templates accompany the ring tools."
+      "note": "Common group templates accompany the ring tools.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "custom-templates": {
       "status": "unknown",
@@ -108,13 +118,17 @@
       "status": "yes",
       "evidence": "source",
       "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
-      "note": "Element, formal charge, isotope and alias editing commands."
+      "note": "Element, formal charge, isotope and alias editing commands.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "radicals": {
       "status": "yes",
       "evidence": "source",
       "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
-      "note": "Lone-pair and radical tools update individual atoms."
+      "note": "Lone-pair and radical tools update individual atoms.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "keyboard-drawing": {
       "status": "yes",
@@ -138,7 +152,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
-      "note": "Forward, equilibrium and retrosynthesis arrows with reagent text."
+      "note": "Forward, equilibrium and retrosynthesis arrows with reagent text.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "mechanism-arrows": {
       "status": "yes",
@@ -174,19 +190,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/documentation",
-      "note": "Figure editor provides editable shapes, pen paths and freehand curves."
+      "note": "Figure editor provides editable shapes, pen paths and freehand curves.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "align": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/documentation",
-      "note": "Figure editor supports alignment and even horizontal or vertical spacing."
+      "note": "Figure editor supports alignment and even horizontal or vertical spacing.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "groups": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/documentation",
-      "note": "Figure editor has Group and Ungroup commands."
+      "note": "Figure editor has Group and Ungroup commands.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "cleanup": {
       "status": "yes",
@@ -196,7 +218,9 @@
       "engine": {
         "library": "In-house (JavaScript local cleanup); optional Indigo (WebAssembly layout/clean2d)",
         "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "account"
     },
     "journal-styles": {
       "status": "yes",
@@ -214,25 +238,33 @@
       "status": "yes",
       "evidence": "source",
       "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
-      "note": "Selection color commands target atoms, bonds and canvas objects."
+      "note": "Selection color commands target atoms, bonds and canvas objects.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "pages": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/documentation",
-      "note": "Figure artboards; multipage documents use the separate Slides app."
+      "note": "Figure artboards; multipage documents use the separate Slides app.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "pictures": {
       "status": "yes",
       "evidence": "source",
       "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
-      "note": "Image files and pasted raster images become canvas image objects."
+      "note": "Image files and pasted raster images become canvas image objects.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "tlc-tables": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/documentation",
-      "note": "Figure editor provides editable tables with scientific styles."
+      "note": "Figure editor provides editable tables with scientific styles.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "valence-check": {
       "status": "yes",
@@ -282,7 +314,9 @@
       "engine": {
         "library": "PubChem web service (PUG REST name lookup)",
         "source": "https://www.labcanvas.com/moldraw/assets/pubchemNameResolve-DMi3vDDx.js"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "account"
     },
     "structure-to-name": {
       "status": "partial",
@@ -332,7 +366,9 @@
       "engine": {
         "library": "PubChem web service (PUG REST and autocomplete)",
         "source": "https://www.labcanvas.com/moldraw/assets/pubchemNameResolve-DMi3vDDx.js"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "account"
     },
     "model-3d": {
       "status": "yes",
@@ -342,13 +378,17 @@
       "engine": {
         "library": "3Dmol.js (JavaScript/WebGL viewer); OpenChemLib (JavaScript conformer option)",
         "source": "https://www.labcanvas.com/moldraw/assets/src-DfP_H2GS.js"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "account"
     },
     "crystals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/features",
-      "note": "Separate LabCanvas 3D Studio opens CIF/POSCAR files; vendor claim."
+      "note": "Separate LabCanvas 3D Studio opens CIF/POSCAR files; vendor claim.",
+      "plan": "Free",
+      "planLevel": "account"
     },
     "cdxml": {
       "status": "yes",
@@ -388,7 +428,9 @@
       "engine": {
         "library": "In-house (JavaScript native SMILES parser/writer); optional Indigo (WebAssembly conversion/layout)",
         "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "account"
     },
     "inchi": {
       "status": "yes",
@@ -410,19 +452,25 @@
       "status": "yes",
       "evidence": "source",
       "source": "https://www.labcanvas.com/moldraw/assets/exportMoleculeBitmap-Dd_pWinV.js",
-      "note": "Custom serializer emits vector SVG; downloads require Pro."
+      "note": "Custom serializer emits vector SVG; downloads require Pro.",
+      "plan": "LabCanvas Pro",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/documentation",
-      "note": "Pro; vector PDF through Figure editor; vendor claim."
+      "note": "Pro; vector PDF through Figure editor; vendor claim.",
+      "plan": "LabCanvas Pro",
+      "planLevel": "paid"
     },
     "png-export": {
       "status": "yes",
       "evidence": "source",
       "source": "https://www.labcanvas.com/moldraw/assets/RasterExportDialog-D1bn3vcK.js",
-      "note": "Pro; physical width and 300/600 dpi export settings."
+      "note": "Pro; physical width and 300/600 dpi export settings.",
+      "plan": "LabCanvas Pro",
+      "planLevel": "paid"
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -458,7 +506,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/documentation",
-      "note": "Pro; MCP server supports figure editing; vendor claim."
+      "note": "Pro; MCP server supports figure editing; vendor claim.",
+      "plan": "LabCanvas Pro",
+      "planLevel": "paid"
     },
     "plugins": {
       "status": "unknown",
@@ -476,7 +526,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.labcanvas.com/documentation",
-      "note": "Pro; built-in assistant edits figure objects; vendor claim."
+      "note": "Pro; built-in assistant edits figure objects; vendor claim.",
+      "plan": "LabCanvas Pro",
+      "planLevel": "paid"
     }
   },
   "caveats": [
@@ -500,6 +552,22 @@
     "source": null,
     "note": "Vendor documentation reviewed does not establish canvas provenance or chemistry dependencies."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Free",
+      "level": "account",
+      "price": "2026-11-06: Free; up to 3 designs"
+    },
+    {
+      "name": "LabCanvas Pro",
+      "level": "paid",
+      "price": "2026-11-06: US$19/month or US$199/year; applicable taxes extra"
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "MolDraw Canvas/SVG bond/label renderer",

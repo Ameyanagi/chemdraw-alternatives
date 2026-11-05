@@ -444,6 +444,11 @@
     "source": "https://sourceforge.net/p/easychem/code/1/tree/drawing.c#l273",
     "note": "Custom bond model and renderer; build files link GTK without third-party chemistry libraries."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "EasyChem bond and label renderer",

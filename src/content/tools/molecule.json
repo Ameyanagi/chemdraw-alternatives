@@ -442,6 +442,11 @@
     "source": null,
     "note": "Available vendor listing does not disclose canvas provenance or chemistry libraries."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": null,
     "name": null,

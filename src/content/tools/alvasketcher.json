@@ -463,6 +463,11 @@
     "source": null,
     "note": "Canvas provenance and third-party chemistry dependencies unestablished."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": null,
     "name": null,

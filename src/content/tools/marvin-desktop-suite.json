@@ -48,31 +48,41 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_draw-bonds.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_stereochemistry-in-marvinsketch.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "special-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_draw-bonds.html",
-      "note": "Coordinate and multicenter bonds."
+      "note": "Coordinate and multicenter bonds.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "double-bond-side": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_draw-bonds.html",
-      "note": "Above, centered, and below alignments."
+      "note": "Above, centered, and below alignments.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "rings": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_templates-in-marvinsketch.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "unknown",
@@ -84,79 +94,105 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_draw-chains.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_templates-in-marvinsketch.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "custom-templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_pop-up-menus-of-marvinsketch.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "abbreviations": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_abbreviated-superatom-groups.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_pop-up-menus-of-marvinsketch.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_pop-up-menus-of-marvinsketch.html",
-      "note": "Radical types can be assigned to individual atoms."
+      "note": "Radical types can be assigned to individual atoms.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_marvinsketch_getting-started.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "selection-tools": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_geometric-transformation-of-structures-and-objects.html",
-      "note": "Lasso selection, rotation, scaling, and flipping are documented."
+      "note": "Lasso selection, rotation, scaling, and flipping are documented.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "perspective": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_moving-and-rotating.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "reaction-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_creating-reactions.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_electron-flow-arrows.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "reaction-data": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_creating-reactions.html",
-      "note": "Chemical reaction export supports single-step reactions only."
+      "note": "Chemical reaction export supports single-step reactions only.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "atom-mapping": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_mapping-reactions.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "orbitals": {
       "status": "unknown",
@@ -168,19 +204,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_adding-editing-and-formatting-text.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "shapes": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_drawing-shapes.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "align": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_marvinsketch_edit-menu.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "groups": {
       "status": "unknown",
@@ -196,31 +238,41 @@
       "engine": {
         "library": "In-house Chemaxon Cleaner (local Java core library)",
         "source": "https://apidocs.chemaxon.com/marvin/developer/beans/api/chemaxon/core/calculations/clean/Cleaner.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "journal-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_drawing-styles.html",
-      "note": "Includes ACS and Royal Society of Chemistry presets."
+      "note": "Includes ACS and Royal Society of Chemistry presets.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "custom-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_drawing-styles.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "color": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_pop-up-menus-of-marvinsketch.html",
-      "note": "Individual bond colors are configurable through Format."
+      "note": "Individual bond colors are configurable through Format.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_creating-a-multipage-document.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "pictures": {
       "status": "unknown",
@@ -238,13 +290,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_valence-check.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "stereo-perception": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_stereochemistry-in-marvinsketch.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "formula-mass": {
       "status": "yes",
@@ -254,7 +310,9 @@
       "engine": {
         "library": "In-house Chemaxon ElementalAnalysisPlugin (local Java calculator)",
         "source": "https://docs.chemaxon.com/latest/marvin_marvin-beans-examples.html#events"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "properties": {
       "status": "yes",
@@ -264,7 +322,9 @@
       "engine": {
         "library": "In-house Chemaxon Calculator Plugins (local Java LogPPlugin/TPSAPlugin)",
         "source": "https://docs.chemaxon.com/latest/marvin_marvin-beans-examples.html#events"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "name-to-structure": {
       "status": "yes",
@@ -274,7 +334,9 @@
       "engine": {
         "library": "In-house Chemaxon Name to Structure (local Java; MolImporter name module)",
         "source": "https://docs.chemaxon.com/latest/name-to-structure_developer-guide.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "yes",
@@ -284,7 +346,9 @@
       "engine": {
         "library": "In-house Chemaxon Structure to Name (local Java; MolExporter name module)",
         "source": "https://docs.chemaxon.com/latest/structure-to-name_developer-guide.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "nmr-prediction": {
       "status": "yes",
@@ -294,25 +358,33 @@
       "engine": {
         "library": "In-house Chemaxon NMR Predictor (local Java NMRCalculator)",
         "source": "https://docs.chemaxon.com/latest/marvin_marvin-beans-examples.html#events"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "markush": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_markush-structures-in-marvinsketch.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "polymers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_structural-repeating-unit-sru-polymers.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "biomolecules": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_biomolecules.html",
-      "note": "Imports peptide, DNA, and RNA sequences."
+      "note": "Imports peptide, DNA, and RNA sequences.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "image-to-structure": {
       "status": "yes",
@@ -322,7 +394,9 @@
       "engine": {
         "library": "OSRA (separately installed native C++ command-line utility)",
         "source": "https://docs.chemaxon.com/latest/formats_image-import-in-marvin.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "database-lookup": {
       "status": "yes",
@@ -332,13 +406,17 @@
       "engine": {
         "library": "In-house Chemaxon name resolver (Java client; remote NIH/Wikimedia HTTPS services)",
         "source": "https://docs.chemaxon.com/latest/general_notice-about-cas-registry-numbers-r.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "model-3d": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_moving-and-rotating.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "unknown",
@@ -354,7 +432,9 @@
       "engine": {
         "library": "In-house Chemaxon I/O CDXML module (local Java; alpha export)",
         "source": "https://docs.chemaxon.com/latest/formats_chemdraw-sketch-file-cdx-cdxml.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "cdx": {
       "status": "yes",
@@ -364,7 +444,9 @@
       "engine": {
         "library": "In-house Chemaxon I/O CDX module (local Java MolImporter/MolExporter)",
         "source": "https://docs.chemaxon.com/latest/formats_chemdraw-sketch-file-cdx-cdxml.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "mol-sdf": {
       "status": "yes",
@@ -374,7 +456,9 @@
       "engine": {
         "library": "In-house Chemaxon I/O MDL module (local Java MolImporter/MolExporter)",
         "source": "https://docs.chemaxon.com/latest/formats_mdl-mol-import-and-export-options.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "yes",
@@ -384,7 +468,9 @@
       "engine": {
         "library": "In-house Chemaxon I/O SMILES module (local Java MolImporter/MolExporter)",
         "source": "https://docs.chemaxon.com/latest/formats_smiles.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
@@ -394,25 +480,33 @@
       "engine": {
         "library": "InChI 1.06 (native C library; Windows/Linux Chemaxon integration)",
         "source": "https://docs.chemaxon.com/latest/formats_iupac-inchi-inchikey-rinchi-and-rinchikey.html"
-      }
+      },
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/formats_mdl-molfiles-rgfiles-sdfiles-rxnfiles-rdfiles-formats.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_exporting-to-image.html",
-      "note": null
+      "note": null,
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/formats_pdf.html",
-      "note": "Vector PDF export documented."
+      "note": "Vector PDF export documented.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "png-export": {
       "status": "unknown",
@@ -424,13 +518,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_copy-paste-and-draganddrop.html",
-      "note": "Editable MOL/SMILES transfer; drawing-layout preservation is not guaranteed."
+      "note": "Editable MOL/SMILES transfer; drawing-layout preservation is not guaranteed.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "office": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/marvin_ole-user-guide.html",
-      "note": "Windows OLE; editing requires installed Marvin with OLE support."
+      "note": "Windows OLE; editing requires installed Marvin with OLE support.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "python-api": {
       "status": "unknown",
@@ -448,7 +546,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/molconvert_index.html",
-      "note": "Bundled Molconvert converts structures and renders images."
+      "note": "Bundled Molconvert converts structures and renders images.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "mcp-agents": {
       "status": "unknown",
@@ -460,7 +560,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://docs.chemaxon.com/latest/calculators_custom-calculator-plugin-implementation.html",
-      "note": "Custom Java Calculator Plugins and external services."
+      "note": "Custom Java Calculator Plugins and external services.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
     },
     "embed": {
       "status": "yes",
@@ -473,6 +575,20 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_ole-user-guide.html",
+      "note": "Windows MarvinOLE requires JChem_NET_API; embedded structures edit in MarvinSketch.",
+      "plan": "Marvin Desktop Suite / MarvinSketch",
+      "planLevel": "paid"
+    },
+    "color-highlight": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_sketch-js-comparison.html#coloring-and-highlighting-options-for-atoms-bonds-and-shapes",
+      "note": "Vendor comparison explicitly excludes atom and bond highlighting."
     }
   },
   "caveats": [
@@ -499,6 +615,17 @@
     "source": "https://docs.chemaxon.com/latest/formats_iupac-inchi-inchikey-rinchi-and-rinchikey.html",
     "note": "Native InChI/RInChI libraries; original MarvinSketch canvas documented by Chemaxon."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "Marvin Desktop Suite / MarvinSketch",
+      "level": "paid",
+      "price": "2026-11-06: Contact sales."
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "In-house Marvin molecular renderer",

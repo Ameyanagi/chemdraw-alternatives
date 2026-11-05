@@ -48,145 +48,193 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Bonds",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Bonds%20Palette",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "special-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Coordinate%20Covalent",
-      "note": "Dative, hydrogen, and zero-order bonds."
+      "note": "Dative, hydrogen, and zero-order bonds.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "double-bond-side": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Double%20Bond%20Asymmetry",
-      "note": "Flip asymmetric bonds; symmetry settings center them."
+      "note": "Flip asymmetric bonds; symmetry settings center them.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "rings": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Rings",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Chair",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "chains": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Chains",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Templates",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "custom-templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Templates",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "abbreviations": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Abbreviations",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Isotopes",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Radicals",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Changing%20Atom%20Labels",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "selection-tools": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Lasso",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "perspective": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Rotate%20in%203D",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "reaction-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Arrows",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Electron%20Pushing",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "reaction-data": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Reactions",
-      "note": "RXN and reaction SMILES retain reactants and products."
+      "note": "RXN and reaction SMILES retain reactants and products.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "atom-mapping": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Atom%20Mapping",
-      "note": "Manual mapping; stored in RXN, SMILES, CDX, and CDXML."
+      "note": "Manual mapping; stored in RXN, SMILES, CDX, and CDXML.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "orbitals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Orbitals",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "rich-text": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Text%20Areas",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "shapes": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Shapes",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "align": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Distributing",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "groups": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Grouping",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "cleanup": {
       "status": "yes",
@@ -196,49 +244,65 @@
       "engine": {
         "library": "In-house (ChemDoodle 2D coordinate-layout algorithm, local Java library)",
         "source": "https://www.ichemlabs.com/news/read?post=cd2d11_10_released"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "journal-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Style%20Sheets",
-      "note": "ACS, RSC, and Nature presets."
+      "note": "ACS, RSC, and Nature presets.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "custom-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Style%20Sheets",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "color": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Colors",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Number%20of%20Pages",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "pictures": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Inserting%20Images",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "tlc-tables": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=TLC",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "valence-check": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Warnings",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "stereo-perception": {
       "status": "yes",
@@ -248,7 +312,9 @@
       "engine": {
         "library": "CENTRES by John May (bundled Java library for CIP descriptors)",
         "source": "https://www.ichemlabs.com/news/read?post=cd2d11_13_released"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "formula-mass": {
       "status": "yes",
@@ -258,7 +324,9 @@
       "engine": {
         "library": "In-house (ChemDoodle molecular-mass and elemental-analysis algorithms, local Java library)",
         "source": "https://www.ichemlabs.com/news/read?post=cd2d11_9_released"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "properties": {
       "status": "yes",
@@ -268,7 +336,9 @@
       "engine": {
         "library": "In-house (ChemDoodle Java API descriptor algorithms, local)",
         "source": "https://www.ichemlabs.com/news/read?post=1708"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "name-to-structure": {
       "status": "yes",
@@ -278,7 +348,9 @@
       "engine": {
         "library": "OPSIN (bundled Java library)",
         "source": "https://www.ichemlabs.com/support/version-history?product=ChemDoodle"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "yes",
@@ -288,13 +360,17 @@
       "engine": {
         "library": "In-house (ChemDoodle Java API IUPAC naming algorithms, local)",
         "source": "https://www.ichemlabs.com/news/read?post=1708"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "nmr-prediction": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=NMR",
-      "note": "Predicts proton and carbon-13 shifts."
+      "note": "Predicts proton and carbon-13 shifts.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "markush": {
       "status": "unknown",
@@ -306,13 +382,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Repeat%20Units",
-      "note": "Integer repeat counts expand into all-atom structures."
+      "note": "Integer repeat counts expand into all-atom structures.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "biomolecules": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Sequence%20Tool",
-      "note": "Amino-acid sequence construction."
+      "note": "Amino-acid sequence construction.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "image-to-structure": {
       "status": "yes",
@@ -322,7 +402,9 @@
       "engine": {
         "library": "In-house (ChemDoodle Chemical Image Recovery, local Java implementation)",
         "source": "https://www.ichemlabs.com/news/read?post=chemical_image_recovery"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "database-lookup": {
       "status": "yes",
@@ -332,19 +414,25 @@
       "engine": {
         "library": "PubChem, ChemSpider and ChemExper (remote databases through MolGrabber)",
         "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#page=91"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "model-3d": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=3D%20Graphics",
-      "note": "Rotatable orthographic models; advanced graphics use companion ChemDoodle 3D."
+      "note": "Rotatable orthographic models; advanced graphics use companion ChemDoodle 3D.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Crystallographic",
-      "note": "CIF import; vendor claim."
+      "note": "CIF import; vendor claim.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "cdxml": {
       "status": "yes",
@@ -354,7 +442,9 @@
       "engine": {
         "library": "In-house (ChemDoodle Java file-format interpreters, local)",
         "source": "https://www.ichemlabs.com/news/read?post=508"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "cdx": {
       "status": "yes",
@@ -364,7 +454,9 @@
       "engine": {
         "library": "In-house (ChemDoodle Java file-format interpreters, local)",
         "source": "https://www.ichemlabs.com/news/read?post=508"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "mol-sdf": {
       "status": "yes",
@@ -374,7 +466,9 @@
       "engine": {
         "library": "In-house (ChemDoodle Java file-format interpreters, local)",
         "source": "https://www.ichemlabs.com/news/read?post=508"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "yes",
@@ -384,49 +478,65 @@
       "engine": {
         "library": "In-house (ChemDoodle Java file-format interpreters, local)",
         "source": "https://www.ichemlabs.com/news/read?post=508"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=InChI",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=RXN",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Scalable%20Vector%20Graphics",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Portable%20Document%20Format",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "png-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Resolution",
-      "note": "PNG resolution is configurable; default is 300 dpi."
+      "note": "PNG resolution is configurable; default is 300 dpi.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "clipboard-chemdraw": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Clipboard",
-      "note": "Chemical clipboard formats; compatibility depends on platform."
+      "note": "Chemical clipboard formats; compatibility depends on platform.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "office": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Round%20Trip%20Editing",
-      "note": "Windows OLE; macOS copy-and-paste round-trip workflow."
+      "note": "Windows OLE; macOS copy-and-paste round-trip workflow.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "python-api": {
       "status": "unknown",
@@ -469,6 +579,22 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#page=449",
+      "note": "Windows OLE; repeated Word double-click edits require delete/undo workaround.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#page=266",
+      "note": "Filled highlights around selected atoms and bonds.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     }
   },
   "caveats": [
@@ -494,6 +620,17 @@
     "source": "https://www.ichemlabs.com/support/version-history?product=ChemDoodle",
     "note": "OPSIN confirmed in vendor changelog; canvas provenance unestablished."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "iChemLabs Suite",
+      "level": "paid",
+      "price": "2026-11-06: US$29/month, US$199/year, or US$999 lifetime; +tax."
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "ChemDoodle Java graphics library",

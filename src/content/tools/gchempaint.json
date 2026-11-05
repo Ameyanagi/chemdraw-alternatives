@@ -30,9 +30,9 @@
     "offline": true
   },
   "version": {
-    "name": "0.14.17",
-    "date": "2017-02-13",
-    "source": "https://download.savannah.gnu.org/releases/gchemutils/0.14/"
+    "name": "v0.14.17",
+    "date": "2020-10-29",
+    "source": "https://github.com/dleidert/gnome-chemistry-utils/releases/tag/v0.14.17"
   },
   "engine": {
     "rendering": "Cairo through the custom GCCV canvas",
@@ -457,11 +457,21 @@
     "The older HTML manual omits newer features and CDX/CDXML export; its SMILES description incorrectly says InChI.",
     "Printing is limited to one page; non-native formats can lose drawing features."
   ],
-  "github": null,
+  "github": {
+    "url": "https://github.com/dleidert/gnome-chemistry-utils",
+    "stars": 1,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2002-11-11",
+    "commits": 1421,
+    "contributors": 4,
+    "pushedAt": "2020-11-02T19:04:43Z",
+    "archived": false
+  },
   "hands": null,
   "perf": null,
   "downloadBytes": 5911248,
   "references": [
+    "https://github.com/dleidert/gnome-chemistry-utils",
     "https://gchemutils.nongnu.org/gchempaint.html"
   ],
   "builtOn": {
@@ -474,6 +484,11 @@
     "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/dcfb878e2f04e4b3bbbc0951ace8ccb436c0186d/libs/gcp/view.cc#L151-L173",
     "note": "Custom GCCV canvas; Open Babel provides chemical format conversion."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "GChemPaint GCCV renderer",

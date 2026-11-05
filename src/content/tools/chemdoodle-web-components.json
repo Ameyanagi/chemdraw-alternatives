@@ -574,7 +574,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 175.0,
+      "paclitaxelMb": 171.0,
+      "baselineMb": 50.3,
+      "rssIdleMb": 433.9,
+      "rssPaclitaxelMb": 438.5,
+      "runs": 3,
+      "processes": 4,
+      "method": "Headless Chromium process-tree phys_footprint; MiB; median of three fresh runs.",
+      "note": "MOL imported through sketcher; baseline is about:blank."
+    },
     "observations": [
       "The hosted sketcher reports version 11.0.0.",
       "Separate demos provide SMILES conversion, naming, and a 3D editor.",
@@ -598,6 +608,11 @@
     "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip",
     "note": "ChemDoodle's own sketcher and chemistry implementation; derived from its desktop application."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "ChemDoodle Atom/Bond canvas renderer",

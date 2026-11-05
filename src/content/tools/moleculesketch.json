@@ -49,49 +49,65 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/bond_editing.html",
-      "note": "Click bonds to cycle single, double and triple orders."
+      "note": "Click bonds to cycle single, double and triple orders.",
+      "plan": "MoleculeSketch iP",
+      "planLevel": "free"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
-      "note": "Solid wedges, hashed wedges and wavy bonds."
+      "note": "Solid wedges, hashed wedges and wavy bonds.",
+      "plan": "MoleculeSketch iP",
+      "planLevel": "free"
     },
     "special-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/drawing_atoms_bonds.html",
-      "note": "Dative and higher-hapticity bonds; dashed lines represent hydrogen bonds."
+      "note": "Dative and higher-hapticity bonds; dashed lines represent hydrogen bonds.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "double-bond-side": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/bond_editing.html",
-      "note": "Centered, above and below double-bond styles."
+      "note": "Centered, above and below double-bond styles.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "rings": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
-      "note": "Three- through nine-membered rings and aromatic systems."
+      "note": "Three- through nine-membered rings and aromatic systems.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
-      "note": "Cyclohexane and glucose chair templates."
+      "note": "Cyclohexane and glucose chair templates.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "chains": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/drawing_chains.html",
-      "note": "Drag to lengthen carbon chains."
+      "note": "Drag to lengthen carbon chains.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
-      "note": "Amino acids, glucose, porphyrin and other ring systems."
+      "note": "Amino acids, glucose, porphyrin and other ring systems.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "custom-templates": {
       "status": "unknown",
@@ -103,31 +119,41 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/atom_editing.html",
-      "note": "Ph, Boc, OMe and other abbreviations expand into structures."
+      "note": "Ph, Boc, OMe and other abbreviations expand into structures.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/moleculesketch-m/id942173210?mt=12",
-      "note": "Editable labels and charges; D/T isotope labels are supported."
+      "note": "Editable labels and charges; D/T isotope labels are supported.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/atom_editing.html",
-      "note": "Lone pairs can be positioned automatically or manually."
+      "note": "Lone pairs can be positioned automatically or manually.",
+      "plan": "MoleculeSketch iP",
+      "planLevel": "free"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/moleculesketch-m/id942173210?mt=12",
-      "note": "Hover over atoms and type to change their symbols."
+      "note": "Hover over atoms and type to change their symbols.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "selection-tools": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
-      "note": "Freehand selection plus rotation, mirroring and scaling."
+      "note": "Freehand selection plus rotation, mirroring and scaling.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "perspective": {
       "status": "unknown",
@@ -139,13 +165,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
-      "note": "Forward, equilibrium, retrosynthesis and double-headed arrows."
+      "note": "Forward, equilibrium, retrosynthesis and double-headed arrows.",
+      "plan": "MoleculeSketch iP",
+      "planLevel": "free"
     },
     "mechanism-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/reactionarrows.html",
-      "note": "Control points edit curvature, length and full/half arrowheads."
+      "note": "Control points edit curvature, length and full/half arrowheads.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "reaction-data": {
       "status": "unknown",
@@ -163,31 +193,41 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
-      "note": "Chemical symbols include charges, radical dots and electron pairs."
+      "note": "Chemical symbols include charges, radical dots and electron pairs.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "rich-text": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/text.html",
-      "note": "System fonts, superscripts and subscripts in free text."
+      "note": "System fonts, superscripts and subscripts in free text.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "shapes": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
-      "note": "Editable circles, arcs, lines, Bezier curves and brackets."
+      "note": "Editable circles, arcs, lines, Bezier curves and brackets.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "align": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/arrange.html",
-      "note": "Edge and center alignment; iPad arrangement requires paid Full version."
+      "note": "Edge and center alignment; iPad arrangement requires paid Full version.",
+      "plan": "Full version",
+      "planLevel": "paid"
     },
     "groups": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/grouping.html",
-      "note": "Nested groups; iPad grouping requires paid Full version."
+      "note": "Nested groups; iPad grouping requires paid Full version.",
+      "plan": "Full version",
+      "planLevel": "paid"
     },
     "cleanup": {
       "status": "unknown",
@@ -205,13 +245,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/preferences.html",
-      "note": "Custom default attributes for atoms, bonds, text and drawings."
+      "note": "Custom default attributes for atoms, bonds, text and drawings.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "color": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/bond_editing.html",
-      "note": "Individual bonds have editable color attributes."
+      "note": "Individual bonds have editable color attributes.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "unknown",
@@ -235,7 +279,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/drawing_atoms_bonds.html",
-      "note": "Warns when bond counts exceed atom valence."
+      "note": "Warns when bond counts exceed atom valence.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "stereo-perception": {
       "status": "unknown",
@@ -247,7 +293,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/mass_formula_calculation.html",
-      "note": "Formula and average mass; iPad requires paid Full version."
+      "note": "Formula and average mass; iPad requires paid Full version.",
+      "plan": "Full version",
+      "planLevel": "paid"
     },
     "properties": {
       "status": "unknown",
@@ -331,7 +379,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/comments/comments-2/#comment-447",
-      "note": "MOL/SDF import supported; developer reported no export in September 2023."
+      "note": "MOL/SDF import supported; developer reported no export in September 2023.",
+      "plan": "Full version",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "unknown",
@@ -355,13 +405,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/moleculesketch-m/id942173210?mt=12",
-      "note": "SVG export added in version 2.8."
+      "note": "SVG export added in version 2.8.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://moleculesketch.stefandolder.ch/comments/comments-2/#comment-391",
-      "note": "Mac PDF export preserves vector quality."
+      "note": "Mac PDF export preserves vector quality.",
+      "plan": "MoleculeSketch M",
+      "planLevel": "paid"
     },
     "png-export": {
       "status": "unknown",
@@ -445,6 +499,27 @@
     "source": "https://www.chimia.ch/chimia/article/download/2023_655/6313#page=3",
     "note": "Developer describes creating native drawing software and file format; dependencies remain undisclosed."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "MoleculeSketch iP",
+      "level": "free",
+      "price": "Free basic version (2026-11-06)"
+    },
+    {
+      "name": "Full version",
+      "level": "paid",
+      "price": "US$1.99 once, iPad unlock (2026-11-06)"
+    },
+    {
+      "name": "MoleculeSketch M",
+      "level": "paid",
+      "price": "US$2.99 once, macOS (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "MoleculeSketch drawing routines",

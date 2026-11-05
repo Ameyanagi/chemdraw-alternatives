@@ -16,3 +16,9 @@ body:
     attributes:
       label: Anything else we should know?
       description: Optional. If you work on this tool, please say so.
+      value: |
+        Please add this tool to the comparison.
+
+        What it does:
+
+        Do you work on this tool? Yes / No

@@ -30,7 +30,7 @@
     "offline": true
   },
   "version": {
-    "name": "3.2.1",
+    "name": "openbabel-3-2-1",
     "date": "2026-07-11",
     "source": "https://github.com/openbabel/openbabel/releases/tag/openbabel-3-2-1"
   },
@@ -49,14 +49,29 @@
     "PNG depiction requires a build with Cairo.",
     "The manual still calls 3.2.0 current; the latest release is 3.2.1."
   ],
-  "github": null,
+  "github": {
+    "url": "https://github.com/openbabel/openbabel",
+    "stars": 1406,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2001-11-27",
+    "commits": 6625,
+    "contributors": 186,
+    "pushedAt": "2026-09-14T13:06:15Z",
+    "archived": false
+  },
   "hands": null,
   "perf": null,
   "downloadBytes": 38665910,
   "references": [
+    "https://github.com/openbabel/openbabel",
     "https://openbabel.org/docs/FileFormats/Overview.html"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

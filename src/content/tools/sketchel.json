@@ -567,6 +567,11 @@
     "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
     "note": "Own EditorPane canvas, molecular model, stereochemistry, and depiction; no external chemistry dependencies."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "SketchEl DrawMolecule / ArrangeMolecule",

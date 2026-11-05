@@ -470,7 +470,12 @@
     "PNG captures the screen canvas; SVG uses a separate RDKit depiction."
   ],
   "github": {
+    "url": "https://github.com/CharlesEdmonds/chem-cad",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-08-05",
+    "commits": 56,
+    "contributors": 1,
     "pushedAt": "2026-08-25T17:45:51Z",
     "archived": false
   },
@@ -492,6 +497,11 @@
     "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/canvas_render.cpp#L443-L465",
     "note": "Custom ImGui canvas; RDKit chemistry, CoordGen layout, OPSIN name parsing."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "ChemCAD bond and label renderer",

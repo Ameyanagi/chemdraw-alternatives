@@ -533,7 +533,12 @@
     "Core SDF is import-only; native export writes MOL despite broader README claims."
   ],
   "github": {
+    "url": "https://github.com/HiroYokoyama/python_molecular_editor",
     "stars": 11,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2025-09-30",
+    "commits": 2162,
+    "contributors": 6,
     "pushedAt": "2026-11-05T05:12:38Z",
     "archived": false
   },
@@ -574,9 +579,14 @@
       }
     ],
     "canvas": "evidence/moleditpy/canvas.webp",
-    "canvasLight": null,
+    "canvasLight": "evidence/moleditpy/canvas-light.webp",
     "canvasDark": "evidence/moleditpy/canvas-dark.webp",
-    "themes": null,
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "follows system",
+      "note": "Dark interface retains a white drawing canvas."
+    },
     "memory": null,
     "observations": [
       "SMILES import automatically laid out and fitted all three 2D structures.",
@@ -603,6 +613,11 @@
     "source": "https://github.com/HiroYokoyama/python_molecular_editor/blob/914b9c2695d4a9bbce358c4c1d2f6fae3b921d54/moleditpy/src/moleditpy/ui/molecule_scene.py#L28-L59",
     "note": "Custom Qt scene; RDKit supplies chemistry and molecular data conversion."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "MoleditPy Qt AtomItem/BondItem renderer",

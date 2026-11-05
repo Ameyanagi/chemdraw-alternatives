@@ -30,7 +30,7 @@ test('Each mark leads to its proof, and each screenshot to the manual', async ()
   const read = async (...parts) => (await fs.readFile(path.join(root, ...parts), 'utf8')).replaceAll('&#38;', '&').replaceAll('&amp;', '&');
   const compare = await read('compare/index.html');
   assert(compare.includes('data-zoom='), 'Comparison table has nothing to enlarge');
-  for (const label of ['Runs on', 'Price', 'License', 'Relies on', 'Renderer', 'Main language', 'Other languages', 'Interface framework', 'Third-party licenses', 'Name to structure', 'Structure to name', 'Download size', 'Installed size', 'Memory at idle', 'Memory with paclitaxel']) assert(compare.includes(`>${label}</th>`), `Table lacks ${label}`);
+  for (const label of ['Runs on', 'Price', 'License', 'Relies on', 'GitHub', 'Renderer', 'Main language', 'Other languages', 'Interface framework', 'Third-party licenses', 'Name to structure', 'Structure to name', 'Download size', 'Installed size', 'Memory at idle', 'Memory with paclitaxel']) assert(compare.includes(`>${label}</th>`), `Table lacks ${label}`);
   const partial = tools.filter((tool) => tool.tier !== 'related').flatMap((tool) => Object.values(tool.features)).filter((value) => value.status === 'partial');
   assert(partial.every((value) => value.note), 'A partly mark has no reason');
   assert.equal(compare.split('class="mark-reason"').length - 1, partial.length, 'Every partly mark shows its reason');
@@ -117,6 +117,7 @@ test('ReShiki Python bindings are marked as nightly only', () => {
   const reshiki = tools.find((tool) => tool.slug === 'reshiki');
   assert.equal(reshiki.features['python-api'].status, 'partial');
   assert.match(reshiki.features['python-api'].note, /nightly/);
+  assert.match(reshiki.features['database-lookup'].note, /nightly/);
 });
 
 test('ChemDraw API marks match the edition we tested, and embedding is its own section', async () => {
@@ -125,6 +126,54 @@ test('ChemDraw API marks match the edition we tested, and embedding is its own s
   assert.equal(features.cli.status, 'no');
   const compare = await fs.readFile(path.join(root, 'compare/index.html'), 'utf8');
   assert(compare.includes('APIs and automation') && compare.includes('Embedding and extension'));
+});
+
+test('Every page offers the GitHub link and the theme toggle', async () => {
+  for (const page of ['index.html', 'compare/index.html', 'tools/reshiki/index.html']) {
+    const html = await fs.readFile(path.join(root, page), 'utf8');
+    assert(html.includes('id="theme-toggle"') && html.includes('aria-label="Source on GitHub"'), page);
+  }
+});
+
+test('Every GitHub project shows a link and a dated star count', async () => {
+  const compare = await fs.readFile(path.join(root, 'compare/index.html'), 'utf8');
+  const withRepo = tools.filter((tool) => tool.tier !== 'related' && tool.github);
+  assert(withRepo.length > 40);
+  for (const tool of withRepo) {
+    assert(compare.includes(tool.github.url), tool.name);
+    assert(/^\d{4}-\d{2}-\d{2}$/.test(tool.github.checkedOn), tool.name);
+  }
+  assert(/[\d,]+ stars<\/a> on \d+ \w+ \d{4}/.test(compare), 'The count is the bold link, and the date is plain text');
+});
+
+test('Every page shows the bias notice at the top of its content, not in the header', async () => {
+  for (const file of (await walk(root)).filter((name) => name.endsWith('.html'))) {
+    const html = await fs.readFile(file, 'utf8');
+    const notice = html.indexOf('This website is biased toward ReShiki');
+    assert(notice > html.indexOf('</header>') && notice < html.indexOf('<h1'), file);
+    assert(html.includes('href="https://reshiki.com/"'), file);
+  }
+});
+
+test('The comparison table can show everything, and filter it', async () => {
+  const compare = await fs.readFile(path.join(root, 'compare/index.html'), 'utf8');
+  for (const id of ['data-action="all"', 'id="filter-bar"', 'data-filter="name"', 'data-features', 'data-has=', 'First commit', 'MIT or Apache-2.0', 'Desktop app', 'Web app', 'Windows Office OLE']) assert(compare.includes(id), id);
+  for (const removed of ['Tested by us', 'Relies on Ketcher<']) assert(!compare.includes(removed), removed);
+});
+
+test('Every GitHub project shows its first commit date', () => {
+  for (const tool of tools.filter((item) => item.github)) assert(/^\d{4}-\d{2}-\d{2}$/.test(tool.github.firstCommit), tool.name);
+});
+
+test('Features locked behind a plan are labelled with that plan', async () => {
+  const of = (slug) => tools.find((tool) => tool.slug === slug).features;
+  assert.equal(of('chemdraw')['color-highlight'].plan, 'ChemDraw Professional');
+  assert.equal(of('chemdraw')['name-to-structure'].plan, 'ChemDraw Professional');
+  assert.equal(of('moldraw')['nmr-prediction'].planLevel, 'account');
+  assert.equal(of('moldraw')['ai-assistant'].planLevel, 'paid');
+  assert.equal(of('moldraw')['svg-export'].planLevel, 'account', 'Our hands-on test hit an account prompt');
+  const compare = await fs.readFile(path.join(root, 'compare/index.html'), 'utf8');
+  assert(compare.includes('class="plan-tag plan-paid"') && compare.includes('data-free='));
 });
 
 test('Listing order is ChemDraw, then ReShiki', () => {

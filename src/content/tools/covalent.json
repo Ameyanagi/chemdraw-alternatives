@@ -566,7 +566,17 @@
       "how": "in-app setting",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 381.96,
+      "paclitaxelMb": 353.96,
+      "baselineMb": 215.96,
+      "rssIdleMb": 833.61,
+      "rssPaclitaxelMb": 860.55,
+      "runs": 3,
+      "processes": 8,
+      "method": "Chromium tree and crashpad footprints; median of three scripted SMILES pastes.",
+      "note": null
+    },
     "observations": [
       "The hosted build identifier appears in the served asset path.",
       "Default 2D canvas used a dark background and coloured heteroatoms.",
@@ -589,6 +599,11 @@
     "source": null,
     "note": "Public vendor documentation does not establish canvas provenance or third-party chemistry libraries."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Covalent SVG molecular renderer",

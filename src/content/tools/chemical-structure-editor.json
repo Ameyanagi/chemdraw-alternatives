@@ -437,7 +437,12 @@
     "Atomic-weight data contains errors: cobalt is assigned 194 instead of 58.933194."
   ],
   "github": {
+    "url": "https://github.com/SergiiDudkin/ChemicalStructureEditor",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2022-01-10",
+    "commits": 260,
+    "contributors": 4,
     "pushedAt": "2026-05-24T14:51:10Z",
     "archived": false
   },
@@ -486,7 +491,17 @@
       "how": "fixed",
       "note": "MOL converted to native JSON; browser color schemes render identically."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 388.0,
+      "paclitaxelMb": null,
+      "baselineMb": 356.0,
+      "rssIdleMb": 989.53,
+      "rssPaclitaxelMb": null,
+      "runs": 3,
+      "processes": 7,
+      "method": "Playwright Chromium; summed process-tree physical footprints; median of three runs.",
+      "note": "Published MOL import failed; no paclitaxel drawing."
+    },
     "observations": [
       "The JSON picker reported a parse error for the caffeine MOL file.",
       "The SVG export retained the full canvas dimensions.",
@@ -509,6 +524,11 @@
     "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/index.html#L68-L141",
     "note": "Custom SVG editor with in-house molecular graph, formula parser, and bond rendering."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "CSE SVG bond and label renderer",

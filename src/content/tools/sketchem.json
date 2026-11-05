@@ -470,7 +470,12 @@
     "Source review suggests changed wedge stereochemistry may be lost on export."
   ],
   "github": {
+    "url": "https://github.com/itayYaakov/SketChem",
     "stars": 19,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2022-01-30",
+    "commits": 138,
+    "contributors": 3,
     "pushedAt": "2022-07-31T13:22:25Z",
     "archived": false
   },
@@ -519,7 +524,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 546.0,
+      "paclitaxelMb": 565.0,
+      "baselineMb": 443.0,
+      "rssIdleMb": 1135.72,
+      "rssPaclitaxelMb": 1165.05,
+      "runs": 3,
+      "processes": 7,
+      "method": "Median Chromium process-tree phys_footprint; MOL file import; MiB.",
+      "note": null
+    },
     "observations": [
       "Hosted bundle identifier is main.6ed8c631.js; no app version was displayed.",
       "MOL imports show explicit carbon labels and colored heteroatoms by default.",
@@ -547,6 +562,11 @@
     "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/features/sketchpad/SketchPad.tsx#L177-L218",
     "note": "Custom SVG sketchpad; Kekule.js provides chemistry with Open Babel and Indigo."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "In-house SVG renderer using SVG.js",

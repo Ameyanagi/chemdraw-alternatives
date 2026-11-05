@@ -517,6 +517,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/utils/fileOpener.js#L72-L90",
+      "note": "Office support only imports ChemDraw objects from PowerPoint."
     }
   },
   "caveats": [
@@ -525,7 +531,12 @@
     "Property cards use exact mass for MW and hardcode unspecified stereocenters to zero."
   ],
   "github": {
+    "url": "https://github.com/GSmithOfficial/Ketchdraw",
     "stars": 0,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2025-12-24",
+    "commits": 18,
+    "contributors": 2,
     "pushedAt": "2026-03-28T21:22:43Z",
     "archived": false
   },
@@ -574,7 +585,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 661.95,
+      "paclitaxelMb": 734.12,
+      "baselineMb": 423.26,
+      "rssIdleMb": 1376.25,
+      "rssPaclitaxelMb": 1463.33,
+      "runs": 3,
+      "processes": 7,
+      "method": "Fresh Playwright Chromium; summed process-tree physical footprints; medians in MiB.",
+      "note": null
+    },
     "observations": [
       "The hosted page identifies itself as BoltzDraw; About identifies Ketcher 2.24.0.",
       "Imported SMILES produced centered drawings with colored heteroatom labels.",
@@ -600,6 +621,11 @@
     "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/index.html#L612",
     "note": "Embedded Ketcher supplies drawing; RDKit calculates properties and Indigo handles chemistry."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher; Indigo exports; RDKit previews",

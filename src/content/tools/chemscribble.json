@@ -48,7 +48,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=53",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "unknown",
@@ -102,7 +104,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=55",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "unknown",
@@ -114,7 +118,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=56",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "unknown",
@@ -138,7 +144,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=57",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "unknown",
@@ -150,7 +158,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=75",
-      "note": "Interpreted reactions can be exported as chemical text."
+      "note": "Interpreted reactions can be exported as chemical text.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "atom-mapping": {
       "status": "unknown",
@@ -192,7 +202,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=58",
-      "note": null
+      "note": null,
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "journal-styles": {
       "status": "unknown",
@@ -244,7 +256,9 @@
       "engine": {
         "library": "ChemDoodle engine (embedded in Java desktop application)",
         "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=57"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "formula-mass": {
       "status": "unknown",
@@ -308,7 +322,9 @@
       "engine": {
         "library": "PubChem (remote website search opened in browser; no structure import)",
         "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=74"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "model-3d": {
       "status": "partial",
@@ -318,7 +334,9 @@
       "engine": {
         "library": "ChemDoodle 3D (separate local desktop application)",
         "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=69"
-      }
+      },
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "unknown",
@@ -342,19 +360,25 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=75",
-      "note": "MOL clipboard export only; no MOL/SDF file import or export."
+      "note": "MOL clipboard export only; no MOL/SDF file import or export.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=75",
-      "note": "Clipboard export only; chemical text cannot be imported."
+      "note": "Clipboard export only; chemical text cannot be imported.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=75",
-      "note": "Clipboard text export."
+      "note": "Clipboard text export.",
+      "plan": "iChemLabs Suite",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "no",
@@ -481,6 +505,17 @@
     "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=57",
     "note": "ChemDoodle powers stereochemistry; canvas provenance is not publicly established."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "iChemLabs Suite",
+      "level": "paid",
+      "price": "2026-11-06: US$29/month, US$199/year or US$999 lifetime, plus tax."
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

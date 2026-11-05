@@ -473,7 +473,12 @@
     "App metadata advertises weight and bundled templates; current code and release notes differ."
   ],
   "github": {
+    "url": "https://github.com/hvennekate/Molsketch",
     "stars": 20,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2009-07-07",
+    "commits": 1217,
+    "contributors": 9,
     "pushedAt": "2025-10-11T09:42:47Z",
     "archived": false
   },
@@ -547,6 +552,11 @@
     "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/molview.cpp#L58",
     "note": "Custom canvas; optional Open Babel handles chemical formats and 2D coordinate generation."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Molsketch libmolsketch (Qt QPainter)",

@@ -2,7 +2,7 @@
   "id": "p06",
   "slug": "biovia-draw",
   "name": "BIOVIA Draw",
-  "rank": 87,
+  "rank": 85,
   "tier": "alternative",
   "tierReason": "It produces publication-quality 2D structures and reaction schemes for scientific documents and Office presentations.",
   "summary": "Windows software for drawing chemical structures, reactions, and chemically modified biological sequences for publications and informatics workflows.",
@@ -46,7 +46,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/products/biovia/draw",
-      "note": "vendor claim; manually toggle single, double, and triple bonds."
+      "note": "vendor claim; manually toggle single, double, and triple bonds.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "stereo-bonds": {
       "status": "unknown",
@@ -70,7 +72,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/products/biovia/draw",
-      "note": "vendor claim; benzene and cyclohexane ring tools."
+      "note": "vendor claim; benzene and cyclohexane ring tools.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "conformers": {
       "status": "unknown",
@@ -82,25 +86,33 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/products/biovia/draw",
-      "note": "vendor claim; drag to create zigzag carbon chains."
+      "note": "vendor claim; drag to create zigzag carbon chains.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/documentation/resource-library/t104-2024-notification-regarding-biovia-draw-2025",
-      "note": "Includes named-reaction templates and abbreviations."
+      "note": "Includes named-reaction templates and abbreviations.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "custom-templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/documentation/t30-2025-notification-regarding-biovia-draw-2025-sp1",
-      "note": "Save structures as SCSR templates, including CHEM templates."
+      "note": "Save structures as SCSR templates, including CHEM templates.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "abbreviations": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://blog.3ds.com/brands/biovia/introducing-a-new-but-familiar-way-to-sketch/",
-      "note": "vendor claim; chemically understood abbreviations."
+      "note": "vendor claim; chemically understood abbreviations.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "atom-labels": {
       "status": "unknown",
@@ -118,7 +130,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/products/biovia/draw",
-      "note": "vendor claim; hover over atoms and type element symbols."
+      "note": "vendor claim; hover over atoms and type element symbols.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "selection-tools": {
       "status": "unknown",
@@ -130,7 +144,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/fileadmin/PRODUCTS-SERVICES/BIOVIA/PDF/biovia-draw-ds.pdf",
-      "note": "vendor claim; 3D rotation of drawn queries."
+      "note": "vendor claim; 3D rotation of drawn queries.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "reaction-arrows": {
       "status": "unknown",
@@ -148,7 +164,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; RXN stores reactants, products, and reagents."
+      "note": "vendor claim; RXN stores reactants, products, and reagents.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "atom-mapping": {
       "status": "unknown",
@@ -172,19 +190,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
-      "note": "Rectangle/square graphic tools and nonchemical brackets."
+      "note": "Rectangle/square graphic tools and nonchemical brackets.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "align": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/documentation/t30-2025-notification-regarding-biovia-draw-2025-sp1",
-      "note": "Align Reaction command aligns sequence reactions."
+      "note": "Align Reaction command aligns sequence reactions.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "groups": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
-      "note": "Preserves grouping when copying and pasting graphical objects."
+      "note": "Preserves grouping when copying and pasting graphical objects.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "cleanup": {
       "status": "yes",
@@ -194,13 +218,17 @@
       "engine": {
         "library": "BIOVIA Pipeline Pilot Chemistry SDK / PPChem SDK (local SDK; small-molecule cleanup since Draw 2021)",
         "source": "https://modularss.mood4apps.com/recordati/Server2021/BIOVIA%20Draw%202021%20PRD.pdf"
-      }
+      },
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "journal-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://discover.3ds.com/ja/biovia-draw-campaign",
-      "note": "vendor claim; ACS and Wiley publication formats."
+      "note": "vendor claim; ACS and Wiley publication formats.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "custom-styles": {
       "status": "unknown",
@@ -212,7 +240,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; colored reaction-scheme annotations."
+      "note": "vendor claim; colored reaction-scheme annotations.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "pages": {
       "status": "unknown",
@@ -224,7 +254,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; bitmap clipboard paste."
+      "note": "vendor claim; bitmap clipboard paste.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "tlc-tables": {
       "status": "partial",
@@ -236,7 +268,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
-      "note": "Flags excessive valences, overlaps, and stereochemistry rule violations."
+      "note": "Flags excessive valences, overlaps, and stereochemistry rule violations.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "stereo-perception": {
       "status": "yes",
@@ -246,19 +280,25 @@
       "engine": {
         "library": "In-house BIOVIA NEMA algorithm (built-in stereochemistry recognition)",
         "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf"
-      }
+      },
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "formula-mass": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; formula, molecular weight, and composition."
+      "note": "vendor claim; formula, molecular weight, and composition.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "properties": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; HlogP and polar surface area."
+      "note": "vendor claim; HlogP and polar surface area.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "name-to-structure": {
       "status": "yes",
@@ -268,7 +308,9 @@
       "engine": {
         "library": "NCI/CADD, PubChem and BIOVIA DiscoveryGate (remote web services via Structure Resolver)",
         "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf"
-      }
+      },
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "structure-to-name": {
       "status": "yes",
@@ -278,7 +320,9 @@
       "engine": {
         "library": "OpenEye Lexichem Toolkit (integrated library; binding undisclosed)",
         "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/"
-      }
+      },
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "nmr-prediction": {
       "status": "partial",
@@ -294,19 +338,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; R-group queries and variable attachments."
+      "note": "vendor claim; R-group queries and variable attachments.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "polymers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/documentation/t49-2025-notification-regarding-biovia-draw-2026",
-      "note": "Supports polymer Sgroups and expansion of MULT bracket structures."
+      "note": "Supports polymer Sgroups and expansion of MULT bracket structures.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "biomolecules": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/documentation/t49-2025-notification-regarding-biovia-draw-2026",
-      "note": "SCSR, HELM, and BILN support for modified biological sequences."
+      "note": "SCSR, HELM, and BILN support for modified biological sequences.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "image-to-structure": {
       "status": "yes",
@@ -316,7 +366,9 @@
       "engine": {
         "library": "OSRA (local executable via optional OSRAAction .NET add-in)",
         "source": "https://downloads.sourceforge.net/project/osra/plugins/biovia%20draw%202019/OSRAAction.zip"
-      }
+      },
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "database-lookup": {
       "status": "yes",
@@ -326,7 +378,9 @@
       "engine": {
         "library": "NCI/CADD, PubChem and BIOVIA DiscoveryGate (remote web services via Structure Resolver)",
         "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf"
-      }
+      },
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "model-3d": {
       "status": "partial",
@@ -350,37 +404,49 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "CDX import documented; export unverified."
+      "note": "CDX import documented; export unverified.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "mol-sdf": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; MOL exchange and SDF opening/creation/export."
+      "note": "vendor claim; MOL exchange and SDF opening/creation/export.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "smiles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; SMILES conversion in both directions."
+      "note": "vendor claim; SMILES conversion in both directions.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "inchi": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; InChI conversion and InChIKey generation."
+      "note": "vendor claim; InChI conversion and InChIKey generation.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; saves RXN reactions with reagent information."
+      "note": "vendor claim; saves RXN reactions with reagent information.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/documentation/t30-2025-notification-regarding-biovia-draw-2025-sp1",
-      "note": "SVG saving and clipboard export added in 2025 SP1."
+      "note": "SVG saving and clipboard export added in 2025 SP1.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "pdf-export": {
       "status": "unknown",
@@ -404,7 +470,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/support/documentation/resource-library/t49-2024-notification-regarding-biovia-draw-2024-sp1",
-      "note": "Re-editable OLE objects retain updated drawing styles."
+      "note": "Re-editable OLE objects retain updated drawing styles.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     },
     "python-api": {
       "status": "unknown",
@@ -416,7 +484,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://3dswym.3dexperience.3ds.com/post/biovia-laboratory-informatics/integrating-biovia-draw-with-web-applications-%E2%80%93-the-drawbridge_MTK8jYocSMea5uv-7QkN-Q",
-      "note": "Enterprise DrawBridge; JavaScript examples invoke installed desktop Draw."
+      "note": "Enterprise DrawBridge; JavaScript examples invoke installed desktop Draw.",
+      "plan": "Enterprise Edition",
+      "planLevel": "paid"
     },
     "cli": {
       "status": "unknown",
@@ -440,13 +510,23 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
-      "note": "vendor claim; Java/.NET integration; web integration requires desktop DrawBridge."
+      "note": "vendor claim; Java/.NET integration; web integration requires desktop DrawBridge.",
+      "plan": "Enterprise Edition",
+      "planLevel": "paid"
     },
     "ai-assistant": {
       "status": "unknown",
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/documentation/resource-library/t49-2024-notification-regarding-biovia-draw-2024-sp1",
+      "note": "Windows Draw OLE objects support structure re-editing.",
+      "plan": "Academic / non-commercial",
+      "planLevel": "account"
     }
   },
   "caveats": [
@@ -472,6 +552,27 @@
     "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
     "note": "Lexichem confirmed for Draw 2024; current canvas provenance unestablished."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "Academic / non-commercial",
+      "level": "account",
+      "price": "2026-11-06: Free for academics/non-commercial users; registration required."
+    },
+    {
+      "name": "BIOVIA Draw Standalone",
+      "level": "paid",
+      "price": null
+    },
+    {
+      "name": "Enterprise Edition",
+      "level": "paid",
+      "price": "2026-11-06: Contact vendor for quote."
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

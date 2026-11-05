@@ -46,7 +46,9 @@
       "status": "yes",
       "evidence": "tested",
       "source": "help:3-Drawing_10.htm",
-      "note": "Drew single, double and triple bonds in scratch document."
+      "note": "Drew single, double and triple bonds in scratch document.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "yes",
@@ -70,7 +72,9 @@
       "status": "yes",
       "evidence": "tested",
       "source": "help:Rings.htm",
-      "note": "Drew cyclohexane and benzene with dedicated tools."
+      "note": "Drew cyclohexane and benzene with dedicated tools.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "yes",
@@ -88,7 +92,9 @@
       "status": "yes",
       "evidence": "tested",
       "source": "help:Tutorial 7_ Templates.htm",
-      "note": "Inserted anthracene from built-in Aromatics palette."
+      "note": "Inserted anthracene from built-in Aromatics palette.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "custom-templates": {
       "status": "yes",
@@ -100,25 +106,33 @@
       "status": "yes",
       "evidence": "docs",
       "source": "help:Defining Nicknames.htm",
-      "note": "Nicknames represent expandable chemical substructures."
+      "note": "Nicknames represent expandable chemical substructures.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:A-Chemistry.htm",
-      "note": "Element labels, isotope numbers and chemically interpreted charges."
+      "note": "Element labels, isotope numbers and chemically interpreted charges.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Chemical Annotations.htm",
-      "note": "Attach radical dots and lone pairs to atoms."
+      "note": "Attach radical dots and lone pairs to atoms.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://revvitysignals.com/sites/default/files/2024-02/rs-e-book-chemdraw-tips-and-tricks-eBook-02132024.pdf",
-      "note": "Hotkeys change hovered atoms and bonds."
+      "note": "Hotkeys change hovered atoms and bonds.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "selection-tools": {
       "status": "yes",
@@ -130,13 +144,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=5",
-      "note": "Perspective in Prime; 3D cleanup requires Professional or Signals."
+      "note": "Perspective in Prime; 3D cleanup requires Professional or Signals.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "reaction-arrows": {
       "status": "yes",
       "evidence": "tested",
       "source": "help:Objects.htm",
-      "note": "Drew forward and equilibrium arrows."
+      "note": "Drew forward and equilibrium arrows.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "yes",
@@ -148,19 +166,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
-      "note": "Reads and writes chemically interpreted RXN reactions; all editions."
+      "note": "Reads and writes chemically interpreted RXN reactions; all editions.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "atom-mapping": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Atom-to-Atom Mapping.htm",
-      "note": "Automatic mapping command and manual atom-map tool."
+      "note": "Automatic mapping command and manual atom-map tool.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "orbitals": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Chemical Annotations.htm",
-      "note": "Orbital palette includes s, p, d and hybrid orbitals."
+      "note": "Orbital palette includes s, p, d and hybrid orbitals.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "rich-text": {
       "status": "yes",
@@ -172,13 +196,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "help:Objects.htm",
-      "note": "Editable shapes, brackets and freehand curves."
+      "note": "Editable shapes, brackets and freehand curves.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "align": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Objects.htm",
-      "note": "Horizontal/vertical alignment and equal-distance distribution."
+      "note": "Horizontal/vertical alignment and equal-distance distribution.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "groups": {
       "status": "yes",
@@ -194,25 +222,33 @@
       "engine": {
         "library": "In-house (ChemDraw 2D structure-generation and cleanup algorithms, local)",
         "source": "https://chemistry.beloit.edu/classes/programs/ChemDraw_25_manual.pdf#page=302"
-      }
+      },
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "journal-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Document Settings.htm",
-      "note": "Built-in ACS Document 1996 and RSC styles."
+      "note": "Built-in ACS Document 1996 and RSC styles.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "custom-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Document Settings.htm",
-      "note": "Save drawing and text settings as reusable stationery."
+      "note": "Save drawing and text settings as reusable stationery.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "color": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Working with Color.htm",
-      "note": "Basic colors in Prime; highlights/ring fills require Professional or Signals."
+      "note": "Basic colors in Prime; highlights/ring fills require Professional or Signals.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "yes",
@@ -230,25 +266,33 @@
       "status": "yes",
       "evidence": "docs",
       "source": "help:TLC.htm",
-      "note": "Dedicated editable TLC plates; all desktop editions."
+      "note": "Dedicated editable TLC plates; all desktop editions.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "valence-check": {
       "status": "yes",
       "evidence": "tested",
       "source": "help:Check Structure.htm",
-      "note": "Check Structure on caffeine returned No errors found."
+      "note": "Check Structure on caffeine returned No errors found.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "stereo-perception": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Stereochemistry indicators.htm",
-      "note": "Computed R/S and E/Z indicators update with drawing changes."
+      "note": "Computed R/S and E/Z indicators update with drawing changes.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "formula-mass": {
       "status": "yes",
       "evidence": "tested",
       "source": "help:6a-Chem.htm",
-      "note": "Caffeine: C8H10N4O2; molecular weight 194.19; exact mass 194.08."
+      "note": "Caffeine: C8H10N4O2; molecular weight 194.19; exact mass 194.08.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "properties": {
       "status": "yes",
@@ -258,7 +302,9 @@
       "engine": {
         "library": "Molecular Networks MOSES.logP (bundled calculator module); BioByte CLogP/CMR (bundled algorithms)",
         "source": "https://chemistry.beloit.edu/classes/programs/ChemDraw_25_manual.pdf"
-      }
+      },
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "name-to-structure": {
       "status": "yes",
@@ -268,7 +314,9 @@
       "engine": {
         "library": "In-house (ChemStruct=Name, bundled naming algorithms)",
         "source": "https://manualzilla.com/doc/5731433/chemdraw-user-s-manual"
-      }
+      },
+      "plan": "ChemDraw Professional",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "yes",
@@ -278,7 +326,9 @@
       "engine": {
         "library": "In-house (ChemStruct=Name, bundled naming algorithms)",
         "source": "https://manualzilla.com/doc/5731433/chemdraw-user-s-manual"
-      }
+      },
+      "plan": "ChemDraw Professional",
+      "planLevel": "paid"
     },
     "nmr-prediction": {
       "status": "yes",
@@ -288,25 +338,33 @@
       "engine": {
         "library": "ChemNMR (bundled prediction module, originally licensed from Upstream Solutions)",
         "source": "https://www.upstream.ch/partners/index.html"
-      }
+      },
+      "plan": "ChemDraw Professional",
+      "planLevel": "paid"
     },
     "markush": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:5-Query.htm",
-      "note": "R positions, variable bond orders and atom lists."
+      "note": "R positions, variable bond orders and atom lists.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "polymers": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Polymers.htm",
-      "note": "Semantic repeat units, copolymer types, counts and connectivity."
+      "note": "Semantic repeat units, copolymer types, counts and connectivity.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "biomolecules": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://shop.revvitysignals.com/product/chemdraw-professional-named-user-subscription-includes-support-and-maintenance/01tHs000009rOzeIAE",
-      "note": "HELM peptide and oligonucleotide tools; Professional and Signals only."
+      "note": "HELM peptide and oligonucleotide tools; Professional and Signals only.",
+      "plan": "ChemDraw Professional",
+      "planLevel": "paid"
     },
     "image-to-structure": {
       "status": "unknown",
@@ -322,61 +380,81 @@
       "engine": {
         "library": "ChemACX.com (remote database through ChemACX Explorer add-in)",
         "source": "https://revvitysignals.com/sites/default/files/2024-05/rs-e-book-chemdraw-signals-chemdraw-tips-and-tricks-eBook.pdf"
-      }
+      },
+      "plan": "ChemDraw Professional",
+      "planLevel": "paid"
     },
     "model-3d": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:3D Clean Up.htm",
-      "note": "Rotatable generated 3D coordinates; Professional/Signals, maximum 500 atoms."
+      "note": "Rotatable generated 3D coordinates; Professional/Signals, maximum 500 atoms.",
+      "plan": "ChemDraw Professional",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:Importing.htm",
-      "note": "Imports CIF/mmCIF; mmCIF displays designated ligand groups only."
+      "note": "Imports CIF/mmCIF; mmCIF displays designated ligand groups only.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "cdxml": {
       "status": "yes",
       "evidence": "tested",
       "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
-      "note": "Saved CDXML and reopened caffeine as editable structure."
+      "note": "Saved CDXML and reopened caffeine as editable structure.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "cdx": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
-      "note": "Reads and writes native binary CDX; all editions."
+      "note": "Reads and writes native binary CDX; all editions.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "mol-sdf": {
       "status": "yes",
       "evidence": "tested",
       "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
-      "note": "MOL roundtrip worked; V3000 output; SDF save formats listed."
+      "note": "MOL roundtrip worked; V3000 output; SDF save formats listed.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "yes",
       "evidence": "tested",
       "source": "help:9-Sharing_Info.htm",
-      "note": "Pasted fixture SMILES; copied caffeine back as SMILES."
+      "note": "Pasted fixture SMILES; copied caffeine back as SMILES.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
       "evidence": "docs",
       "source": "help:9-Sharing_Info.htm",
-      "note": "Copy and paste InChI; InChIKey export also available."
+      "note": "Copy and paste InChI; InChIKey export also available.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
-      "note": "Reads and writes RXN V2000/V3000; all editions."
+      "note": "Reads and writes RXN V2000/V3000; all editions.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "tested",
       "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
-      "note": "Saved vector SVGs for caffeine and paclitaxel."
+      "note": "Saved vector SVGs for caffeine and paclitaxel.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "yes",
@@ -394,25 +472,33 @@
       "status": "yes",
       "evidence": "tested",
       "source": "help:Transferring Objects.htm",
-      "note": "Native copy/paste between own ChemDraw documents retained caffeine chemistry."
+      "note": "Native copy/paste between own ChemDraw documents retained caffeine chemistry.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "office": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
-      "note": "Windows editable OLE objects; all desktop editions."
+      "note": "Windows editable OLE objects; all desktop editions.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
     },
     "python-api": {
       "status": "partial",
       "evidence": "docs",
       "source": "help:ChemScript1.htm",
-      "note": "Not in Prime. ChemScript SDK in Professional and Signals, Windows only."
+      "note": "Not in Prime. ChemScript SDK in Professional and Signals, Windows only.",
+      "plan": "ChemDraw Professional",
+      "planLevel": "paid"
     },
     "ts-api": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://github.com/Revvity/ChemDraw-AddIns/blob/119dcb011d6c57edf773b1733539709ef6ba99b2/Documentation/ChemDraw%20JavaScript%20API%20Reference%20Guide.pdf",
-      "note": "Not in Prime. Desktop add-in API in Signals only, not a JavaScript library."
+      "note": "Not in Prime. Desktop add-in API in Signals only, not a JavaScript library.",
+      "plan": "Signals ChemDraw",
+      "planLevel": "paid"
     },
     "cli": {
       "status": "no",
@@ -430,7 +516,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://support.revvitysignals.com/hc/en-us/articles/36096524952980-ChemDraw-Add-In-Where-can-I-find-the-Add-in-Developer-Guide-for-ChemDraw",
-      "note": "Not in Prime. Add-ins SDK in Signals only."
+      "note": "Not in Prime. Add-ins SDK in Signals only.",
+      "plan": "Signals ChemDraw",
+      "planLevel": "paid"
     },
     "embed": {
       "status": "partial",
@@ -443,6 +531,22 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemistry.beloit.edu/classes/programs/ChemDraw_25_manual.pdf#page=355",
+      "note": "Windows OLE server supports double-click editing of embedded Word structures.",
+      "plan": "ChemDraw Prime",
+      "planLevel": "paid"
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=5",
+      "note": "Atom/bond highlighting and ring fills; unavailable in Prime.",
+      "plan": "ChemDraw Professional",
+      "planLevel": "paid"
     }
   },
   "caveats": [
@@ -512,6 +616,27 @@
     "source": "https://revvitysignals.com/chemdraw-turns-40",
     "note": "Ships RDKit 2024.09.6; Revvity does not document what it does."
   },
+  "appKind": {
+    "desktop": true,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "ChemDraw Prime",
+      "level": "paid",
+      "price": "US$700/user/year (2026-11-06)"
+    },
+    {
+      "name": "ChemDraw Professional",
+      "level": "paid",
+      "price": "US$1,355/user/year (2026-11-06)"
+    },
+    {
+      "name": "Signals ChemDraw",
+      "level": "paid",
+      "price": "US$1,415/user/year (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "ChemDraw drawing engine",

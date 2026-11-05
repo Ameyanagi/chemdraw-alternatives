@@ -431,6 +431,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#what-elk_draw-rdkit-does",
+      "note": "Windows Word supports embedded objects reopened by double-click in Elk_Draw."
     }
   },
   "caveats": [
@@ -439,7 +445,12 @@
     "NMR prediction and full-edition quantum calculations are excluded."
   ],
   "github": {
+    "url": "https://github.com/AllexSpectra/Elk_Draw_RDKit",
     "stars": 1,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-10-20",
+    "commits": 7,
+    "contributors": 2,
     "pushedAt": "2026-10-24T13:59:44Z",
     "archived": false
   },
@@ -461,6 +472,11 @@
     "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/THIRD-PARTY-NOTICES.md",
     "note": "Vendor states written from scratch; RDKit and RingDecomposerLib provide chemistry calculations."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Elk_Draw molecular renderer",

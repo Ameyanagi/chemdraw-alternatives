@@ -486,7 +486,12 @@
     "Bare-bones molecule editor with native/MOL saving and SVG export."
   ],
   "github": {
+    "url": "https://github.com/aclarkxyz/web_sketchel2",
     "stars": 10,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2017-01-01",
+    "commits": 31,
+    "contributors": 1,
     "pushedAt": "2022-12-12T14:17:35Z",
     "archived": false
   },
@@ -555,6 +560,11 @@
     "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/src/main/DrawPanel.ts#L21-L42",
     "note": "Mounts WebMolKit Sketcher; adds desktop file and clipboard integration."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "WebMolKit DrawMolecule / ArrangeMolecule / MetaVector",

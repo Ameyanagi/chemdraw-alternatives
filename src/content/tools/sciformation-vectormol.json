@@ -522,7 +522,17 @@
       "how": "fixed",
       "note": "Light and dark browser preferences rendered identically."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 506.4,
+      "paclitaxelMb": 505.51,
+      "baselineMb": 416.49,
+      "rssIdleMb": 1046.64,
+      "rssPaclitaxelMb": 1057.05,
+      "runs": 3,
+      "processes": 7,
+      "method": "Fresh Playwright Chromium; summed process-tree physical footprints; medians in MiB.",
+      "note": null
+    },
     "observations": [
       "The script URL carries build identifier 2026-08-25; no semantic version was shown.",
       "The public demo footer says test use only.",
@@ -545,6 +555,11 @@
     "source": "https://sciformation.com/VecMol/info.html?embedded=&lang=en&mode=rxn",
     "note": "Vendor credits its developer; third-party notices list generic graphics and utilities."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "VectorMol molecular renderer over Raphaël",

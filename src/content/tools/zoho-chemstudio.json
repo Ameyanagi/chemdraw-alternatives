@@ -446,6 +446,11 @@
     "source": null,
     "note": "Public vendor materials do not establish editor provenance or chemistry dependencies."
   },
+  "appKind": {
+    "desktop": true,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": null,
     "name": null,

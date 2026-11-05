@@ -535,6 +535,11 @@
     "source": "https://mirrors.ctan.org/macros/generic/chemfig/chemfig.tex",
     "note": "Original TeX molecular drawing macros over TikZ; no interactive canvas."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "chemfig molecular macros over TikZ/PGF",

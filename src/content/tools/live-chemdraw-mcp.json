@@ -50,7 +50,12 @@
     "Offline systematic name resolution downloads OPSIN and a Java runtime on first use."
   ],
   "github": {
+    "url": "https://github.com/MALeitch/live-chemdraw-mcp",
     "stars": 2,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-07-13",
+    "commits": 71,
+    "contributors": 1,
     "pushedAt": "2026-08-04T16:49:20Z",
     "archived": false
   },
@@ -62,6 +67,11 @@
     "https://github.com/MALeitch/live-chemdraw-mcp/blob/a9cebc6cf61e4d9b019463019626684fdf30beb6/README.md"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

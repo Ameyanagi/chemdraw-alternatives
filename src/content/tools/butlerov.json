@@ -469,7 +469,12 @@
     "Documentation lists V3000/SDF; converter implements V2000 and reads only the first SDF record."
   ],
   "github": {
+    "url": "https://github.com/eizemazal/butlerov",
     "stars": 13,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2022-06-20",
+    "commits": 151,
+    "contributors": 7,
     "pushedAt": "2026-04-03T15:16:34Z",
     "archived": false
   },
@@ -518,7 +523,17 @@
       "how": "fixed",
       "note": "SMILES import overlaps and loses stereochemistry."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 169.28,
+      "paclitaxelMb": 171.28,
+      "baselineMb": 49.28,
+      "rssIdleMb": 397.12,
+      "rssPaclitaxelMb": 408.25,
+      "runs": 3,
+      "processes": 4,
+      "method": "Median Chromium process-tree physical footprints; headless, SMILES import; 10-second waits.",
+      "note": "Local adapter renders overlapping structure and loses stereochemistry."
+    },
     "observations": [
       "CodePen returned a Cloudflare verification page in headless Chromium.",
       "Local adapter used core package 0.1.6; buttons expose its API.",
@@ -545,6 +560,11 @@
     "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts",
     "note": "In-house molecular graph, SMILES parser, mass calculations, and chemical drawing."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Butlerov bond and label drawing (Konva)",

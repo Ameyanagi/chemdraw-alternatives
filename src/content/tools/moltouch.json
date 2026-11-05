@@ -506,7 +506,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 459,
+      "paclitaxelMb": 482,
+      "baselineMb": 435,
+      "rssIdleMb": 962.52,
+      "rssPaclitaxelMb": 996.14,
+      "runs": 3,
+      "processes": 7,
+      "method": "Playwright Chromium process tree; summed physical footprints; three-run medians.",
+      "note": null
+    },
     "observations": [
       "The editor labels nitrogen blue and oxygen red by default.",
       "The exported PNGs retain the full transparent canvas.",
@@ -529,6 +539,11 @@
     "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/Canvas_draw.js",
     "note": "Own atom/bond model and Canvas renderer; external scripts supply interface controls."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "MolTouch Canvas renderer",

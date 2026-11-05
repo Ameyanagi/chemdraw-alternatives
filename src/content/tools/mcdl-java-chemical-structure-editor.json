@@ -455,6 +455,11 @@
     "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
     "note": "Own Java drawing engine; source imports only JDK and bundled project packages."
   },
+  "appKind": {
+    "desktop": true,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "MCDL DrawMolecule",

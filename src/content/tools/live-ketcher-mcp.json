@@ -50,7 +50,12 @@
     "Early development; several planned tool families remain unimplemented."
   ],
   "github": {
+    "url": "https://github.com/MALeitch/live-ketcher-mcp",
     "stars": 3,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-08-04",
+    "commits": 8,
+    "contributors": 1,
     "pushedAt": "2026-08-06T13:08:46Z",
     "archived": false
   },
@@ -62,6 +67,11 @@
     "https://github.com/MALeitch/live-ketcher-mcp/blob/1c9484b87da61577d4da3c95e0d297e2be4f9863/README.md"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

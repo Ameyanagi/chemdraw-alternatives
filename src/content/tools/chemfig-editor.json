@@ -50,7 +50,12 @@
     "README misstates debounce and session isolation: preview polls every two seconds, and headers are shared across sessions."
   ],
   "github": {
+    "url": "https://github.com/davidil98/chemfig_editor",
     "stars": 1,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-05-22",
+    "commits": 3,
+    "contributors": 1,
     "pushedAt": "2026-05-22T00:22:27Z",
     "archived": false
   },
@@ -62,6 +67,11 @@
     "https://github.com/davidil98/chemfig_editor/blob/320b563bd3bf6acc99255d20cc176f777d7c8533/README.md"
   ],
   "builtOn": null,
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": null,
   "otherLanguages": null,
   "enginesChecked": false,

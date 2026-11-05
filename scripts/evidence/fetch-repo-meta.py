@@ -1,4 +1,5 @@
 """Fetch repository facts through `gh` so versions and sizes come from the API, not from prose."""
+from datetime import date
 import json
 import re
 import subprocess
@@ -22,6 +23,25 @@ def repo_of(sources: list[str]) -> str | None:
     return None
 
 
+def page_count(path: str) -> int | None:
+    """How many items a list holds, from the last page number GitHub reports at one item per page."""
+    done = subprocess.run(["gh", "api", "-i", path], capture_output=True, text=True)
+    if done.returncode:
+        return None
+    last = re.search(r'[?&]page=(\d+)>; rel="last"', done.stdout.split("\r\n\r\n")[0])
+    return int(last[1]) if last else 1
+
+
+def history(repo: str) -> dict:
+    commits = page_count(f"repos/{repo}/commits?per_page=1")
+    first = gh(f"repos/{repo}/commits?per_page=1&page={commits}") if commits else None
+    return {
+        "commits": commits,
+        "contributors": page_count(f"repos/{repo}/contributors?per_page=1&anon=1"),
+        "firstCommit": first[0]["commit"]["author"]["date"][:10] if first else None,
+    }
+
+
 def fetch(tool: dict) -> tuple[str, str]:
     record = dict(tool, repo=repo_of(tool["sources"]))
     if repo := record["repo"]:
@@ -30,6 +50,8 @@ def fetch(tool: dict) -> tuple[str, str]:
         tags = gh(f"repos/{repo}/tags?per_page=1") or []
         record["github"] = {
             "exists": bool(info),
+            "checkedOn": date.today().isoformat(),
+            **(history(repo) if info else {}),
             "stars": info.get("stargazers_count"),
             "pushedAt": info.get("pushed_at"),
             "archived": info.get("archived"),

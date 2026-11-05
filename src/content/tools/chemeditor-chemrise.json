@@ -550,7 +550,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 835.85,
+      "paclitaxelMb": 786.07,
+      "baselineMb": 391.21,
+      "rssIdleMb": 1467.3,
+      "rssPaclitaxelMb": 1447.41,
+      "runs": 3,
+      "processes": 9,
+      "method": "Headed Playwright Chromium; tree and crashpad phys_footprint medians, MiB.",
+      "note": null
+    },
     "observations": [
       "Ketcher reports build 2026-09-02 13:33:46; parent script is chemeditor.js?26.",
       "Paclitaxel layout includes an ABS label and wedge bonds.",
@@ -577,6 +587,11 @@
     "source": "https://chemrise.ru/chemeditor/help",
     "note": "Vendor documents embedded Ketcher; shipped standalone build includes Indigo chemistry and Miew 3D."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher/Raphaël; Indigo export renderer",

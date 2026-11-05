@@ -433,6 +433,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/stefan-hoeck/idris2-cyby-draw/blob/3b838acd30f8a055303588305db90d27d2ae8d93/word-addin/src/CyBy/Draw/Word.idr#L15-L31",
+      "note": "Word add-in edits SVG/MOL metadata, without native OLE activation."
     }
   },
   "caveats": [
@@ -441,7 +447,12 @@
     "Extension comments describe obsolete import-button tuples; current code uses hooks."
   ],
   "github": {
+    "url": "https://github.com/stefan-hoeck/idris2-cyby-draw",
     "stars": 10,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2024-08-22",
+    "commits": 178,
+    "contributors": 6,
     "pushedAt": "2026-10-07T05:12:12Z",
     "archived": false
   },
@@ -479,6 +490,11 @@
     "source": "https://github.com/stefan-hoeck/idris2-cyby-draw/blob/3b838acd30f8a055303588305db90d27d2ae8d93/src/CyBy/Draw/MoleculeCanvas.idr",
     "note": "Custom SVG canvas; chem is a separate same-author cheminformatics toolkit."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "CyBy Draw SVG renderer",

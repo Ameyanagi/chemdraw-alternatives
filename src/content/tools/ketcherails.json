@@ -458,7 +458,12 @@
     "README declares GPLv3; bundled Ketcher source declares AGPLv3."
   ],
   "github": {
+    "url": "https://github.com/ComPlat/ketcher-rails",
     "stars": 3,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2016-05-18",
+    "commits": 164,
+    "contributors": 9,
     "pushedAt": "2024-08-06T03:42:13Z",
     "archived": false
   },
@@ -481,6 +486,11 @@
     "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/editor.js",
     "note": "Modified Ketcher 1.1 canvas adds polymer tools and coordination-bond rendering."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher 1.1 Raphaël renderer",

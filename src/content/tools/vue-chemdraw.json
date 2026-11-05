@@ -498,7 +498,17 @@
       "how": "fixed",
       "note": "Paclitaxel import failed; screenshot shows built-in sample."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 492.48,
+      "paclitaxelMb": null,
+      "baselineMb": 416.67,
+      "rssIdleMb": 992.78,
+      "rssPaclitaxelMb": null,
+      "runs": 3,
+      "processes": 7,
+      "method": "Playwright Chromium process tree; summed phys_footprint, MiB; three-run medians.",
+      "note": "Idle contains built-in sample; New ineffective; MOL import failed."
+    },
     "observations": [
       "The editor opens with a complex example already on the canvas.",
       "The New and Save sidebar entries did not open a blank document or save dialog.",
@@ -521,6 +531,11 @@
     "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/main.vue",
     "note": "Release 1.4.6 uses its own SVG editor, molecule model, and MOL parser."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "0chem in-house SVG DOM molecule renderer",

@@ -2,7 +2,7 @@
   "id": "p85",
   "slug": "bkchem-python-3-modernized",
   "name": "BKChem Python 3 Modernized",
-  "rank": 86,
+  "rank": 87,
   "tier": "alternative",
   "tierReason": "A substantial standalone editor implements 2D chemical documents and vector exports, although source inspection reveals incomplete Python 3 modernization.",
   "summary": "A Python 3 fork of BKChem for drawing 2D molecular structures, reactions, and vector chemical figures.",
@@ -469,7 +469,12 @@
     "Legacy manual export lists and SMILES warnings disagree with current code; scripting examples retain Python 2 syntax."
   ],
   "github": {
+    "url": "https://github.com/vijaymasand/BKChem_python_3",
     "stars": 211,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-04-15",
+    "commits": 9,
+    "contributors": 1,
     "pushedAt": "2026-04-23T08:38:01Z",
     "archived": false
   },
@@ -514,6 +519,11 @@
     "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/main.py",
     "note": "BKChem fork; bundled OASA; optional InChI executable provides identifier generation."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "BKChem custom bond and label renderer (Tkinter Canvas)",

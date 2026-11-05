@@ -514,6 +514,12 @@
       "evidence": "docs",
       "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/docs/AGENT_GUIDE.md#L55-L79",
       "note": "Requires a user-configured model endpoint and API key."
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L24",
+      "note": "PowerPoint export inserts PNG pictures through Office COM, not OLE objects."
     }
   },
   "caveats": [
@@ -522,7 +528,12 @@
     "3D optimization and some vector exports require an optional Python sidecar."
   ],
   "github": {
+    "url": "https://github.com/thisThisYoung/ChemThisTry",
     "stars": 14,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-07-14",
+    "commits": 19,
+    "contributors": 2,
     "pushedAt": "2026-10-20T02:52:19Z",
     "archived": false
   },
@@ -602,6 +613,11 @@
     "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md#L26-L39",
     "note": "Sketcher embeds Ketcher; figure-composition canvas and 3D molecular viewer are separate modules."
   },
+  "appKind": {
+    "desktop": true,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher; Indigo exports",

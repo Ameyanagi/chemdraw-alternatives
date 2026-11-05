@@ -30,9 +30,9 @@
     "offline": true
   },
   "version": {
-    "name": "2024-04-29",
-    "date": "2024-04-29",
-    "source": "https://jsme-editor.github.io/dist/release_notes.txt"
+    "name": "v2021.07.13",
+    "date": "2021-07-13",
+    "source": "https://github.com/jsme-editor/jsme-editor.github.io/releases/tag/v2021.07.13"
   },
   "engine": {
     "rendering": "Browser SVG through JSApplet; optional OpenChemLib SVG export",
@@ -512,7 +512,16 @@
     "Name conversion uses an external NCI web service in the supplied demonstration.",
     "The distribution provides optimized JavaScript, without the underlying Java sources."
   ],
-  "github": null,
+  "github": {
+    "url": "https://github.com/jsme-editor/jsme-editor.github.io",
+    "stars": 110,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2020-12-06",
+    "commits": 63,
+    "contributors": 5,
+    "pushedAt": "2025-03-09T10:34:50Z",
+    "archived": false
+  },
   "hands": {
     "testedVersion": "v2024-04-29",
     "testedOn": "2026-11-05",
@@ -558,7 +567,17 @@
       "how": "fixed",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 90.39,
+      "paclitaxelMb": 98.46,
+      "baselineMb": 50.18,
+      "rssIdleMb": 337.69,
+      "rssPaclitaxelMb": 354.11,
+      "runs": 3,
+      "processes": 4,
+      "method": "Headless Chromium process tree; summed phys_footprint, MiB; median of fresh runs.",
+      "note": null
+    },
     "observations": [
       "Caffeine appears small and centered in the default editor area.",
       "Paclitaxel fits the canvas with colored heteroatoms and stereo bonds.",
@@ -570,6 +589,7 @@
   "perf": null,
   "downloadBytes": 1013352,
   "references": [
+    "https://github.com/jsme-editor/jsme-editor.github.io",
     "https://jsme-editor.github.io/dist/index.html",
     "https://jsme-editor.github.io/dist/doc.html"
   ],
@@ -584,6 +604,11 @@
     "source": "https://link.springer.com/article/10.1186/1758-2946-5-24",
     "note": "Modified JME code compiled to JavaScript; optional OpenChemLib and InChI integrations."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "borrowed",
     "name": "JME/JSApplet; optional OpenChemLib SVG",

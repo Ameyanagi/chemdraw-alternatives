@@ -94,7 +94,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.atomdeep.com/en/site/indraw-office?slug=indraw",
-      "note": "Professional only; vendor claim."
+      "note": "Professional only; vendor claim.",
+      "plan": "InDraw Professional",
+      "planLevel": "paid"
     },
     "abbreviations": {
       "status": "unknown",
@@ -266,7 +268,9 @@
       "engine": {
         "library": "RDKit.js (browser WebAssembly get_descriptors, CrippenClogP and TPSA); RDKit (desktop rdkitAPI IPC)",
         "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
-      }
+      },
+      "plan": "InDraw Free",
+      "planLevel": "account"
     },
     "name-to-structure": {
       "status": "yes",
@@ -278,7 +282,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.atomdeep.com/en/site/indraw-office?slug=indraw",
-      "note": "Vendor claim; Chinese and English IUPAC names."
+      "note": "Vendor claim; Chinese and English IUPAC names.",
+      "plan": "InDraw Free",
+      "planLevel": "account"
     },
     "nmr-prediction": {
       "status": "yes",
@@ -288,7 +294,9 @@
       "engine": {
         "library": "NMRNet++ (remote prediction service, /predict for proton and carbon shifts)",
         "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
-      }
+      },
+      "plan": "InDraw Free",
+      "planLevel": "account"
     },
     "markush": {
       "status": "yes",
@@ -306,13 +314,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.integle.com/static/indraw-guide",
-      "note": null
+      "note": null,
+      "plan": "InDraw Free",
+      "planLevel": "account"
     },
     "image-to-structure": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.integle.com/static/indraw-guide",
-      "note": "Free: 10/day; Professional: unlimited."
+      "note": "Free: 10/day; Professional: unlimited.",
+      "plan": "InDraw Free",
+      "planLevel": "account"
     },
     "database-lookup": {
       "status": "yes",
@@ -328,7 +340,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://www.integle.com/static/indraw-guide",
-      "note": null
+      "note": null,
+      "plan": "InDraw Free",
+      "planLevel": "account"
     },
     "crystals": {
       "status": "yes",
@@ -374,7 +388,9 @@
       "engine": {
         "library": "RDKit.js (browser WebAssembly SMILES import); Ported from Ketcher (bundled JavaScript SmilesGenerator export)",
         "source": "https://indrawforweb.atomdeep.com/src/js/lib-cac61bbd.js"
-      }
+      },
+      "plan": "InDraw Free",
+      "planLevel": "account"
     },
     "inchi": {
       "status": "yes",
@@ -384,7 +400,9 @@
       "engine": {
         "library": "RDKit.js (browser WebAssembly get_inchi and get_inchikey_for_inchi)",
         "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
-      }
+      },
+      "plan": "InDraw Free",
+      "planLevel": "account"
     },
     "rxn": {
       "status": "unknown",
@@ -463,6 +481,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/news/news/detail?title_id=11658",
+      "note": "Windows Word objects open in InDraw by double-click for editing."
     }
   },
   "caveats": [
@@ -510,6 +534,22 @@
     "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js",
     "note": "Modified MolPad canvas; RDKit chemistry and desktop Indigo cleanup are visible in shipped code."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "InDraw Free",
+      "level": "account",
+      "price": "Free (2026-11-06)"
+    },
+    {
+      "name": "InDraw Professional",
+      "level": "paid",
+      "price": "$96/user/month or $960/user/year (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "borrowed",
     "name": "Modified MolPad Canvas renderer",

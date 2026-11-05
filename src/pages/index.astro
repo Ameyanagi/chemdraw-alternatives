@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FilterBar from '../components/FilterBar.astro';
 import Specimen from '../components/Specimen.astro';
 import ToolRow from '../components/ToolRow.astro';
 import { href } from '../lib/paths';
@@ -12,12 +13,6 @@ const embeddable = tools.filter((tool) => tool.tier === 'embeddable');
 const related = tools.filter((tool) => tool.tier === 'related');
 const tested = tools.filter(isTested);
 const wall = [...drawingTools, ...embeddable].filter((tool, index) => index < 2 || isTested(tool)).slice(0, 16);
-const filters = [
-  ['ketcher', 'Relies on Ketcher'], ['rdkit', 'Relies on RDKit'], ['indigo', 'Relies on Indigo'],
-  ['free', 'Free'], ['oss', 'Open source'], ['macos', 'macOS'], ['windows', 'Windows'], ['linux', 'Linux'],
-  ['web', 'Browser'], ['cdxml', 'Opens CDXML'], ['python', 'Python API'], ['ts', 'JS or TS API'],
-  ['agents', 'AI agents'], ['tested', 'Tested by us'],
-];
 ---
 <Layout>
   <section class="page pt-10 pb-6 md:pt-14">
@@ -38,7 +33,7 @@ const filters = [
         <a class="bg-paper hover:bg-silica flex flex-col p-3 no-underline" href={href(`tools/${tool.slug}/`)}>
           {molecules.map((molecule) => (
             <div class="aspect-[4/3]" data-fixture={molecule.id} hidden={molecule.id !== 'complex'}>
-              <Specimen tool={tool} fixture={molecule.id} index={index} />
+              <Specimen tool={tool} fixture={molecule.id} index={index} zoom />
             </div>
           ))}
           <p class="mt-2 flex items-baseline justify-between gap-3">
@@ -54,11 +49,11 @@ const filters = [
   <section class="page mt-20" id="find">
     <h2 class="text-4xl">Find the tool for your work</h2>
     <p class="lede mt-3">Pick what you need. ChemDraw is listed first as the baseline, and ReShiki second because this site's maintainer wrote it. The rest follow by features confirmed.</p>
-    <fieldset class="mt-6 flex flex-wrap gap-2" id="tool-filters">
-      <legend class="sr-only">Filter tools</legend>
-      {filters.map(([value, label]) => <label class="chip"><input type="checkbox" value={value} />{label}</label>)}
-    </fieldset>
-    <p class="text-muted mt-3" id="filter-count" aria-live="polite">{drawingTools.length + embeddable.length} tools</p>
+    <div class="mt-6">
+      <FilterBar total={drawingTools.length + embeddable.length}>
+        <p slot="status" class="font-semibold" id="filter-count">{drawingTools.length + embeddable.length} tools</p>
+      </FilterBar>
+    </div>
 
     <h3 class="mt-8 text-2xl" data-list-heading>Drawing applications</h3>
     <p class="text-muted">Make a publication figure from start to finish.</p>
@@ -69,7 +64,6 @@ const filters = [
     <p class="text-muted">Structure editors built to live inside another web page or app.</p>
     <ul class="mt-2" data-tool-list>{embeddable.map((tool) => <ToolRow tool={tool} />)}</ul>
     <button class="button mt-4" type="button" data-show-all hidden>Show all {embeddable.length} embeddable editors</button>
-    <p class="text-muted mt-4" id="filter-empty" hidden>No tool has all of these. Remove a filter to see more.</p>
   </section>
 
   <section class="page mt-20 grid gap-10 md:grid-cols-2" id="not-listed">
@@ -98,6 +92,8 @@ const filters = [
 </Layout>
 
 <script>
+  import { isFiltering, matches, wireFilterBar, type FilterState } from '../lib/filters';
+
   import { molecules } from '../lib/molecules';
 
   const wall = document.querySelector<HTMLElement>('#wall');
@@ -110,30 +106,30 @@ const filters = [
 
   const COLLAPSED_ROWS = 10;
   const lists = [...document.querySelectorAll<HTMLElement>('[data-tool-list]')];
-  const filters = document.querySelector<HTMLElement>('#tool-filters');
   const count = document.querySelector<HTMLElement>('#filter-count');
   const empty = document.querySelector<HTMLElement>('#filter-empty');
   const expanded = new Set<HTMLElement>();
+  let current: FilterState = { groups: [], name: '', features: [], freeOnly: false };
 
   function applyFilters() {
-    const wanted = [...(filters?.querySelectorAll<HTMLInputElement>('input:checked') ?? [])].map((input) => input.value);
-    let matches = 0;
+    let total = 0;
     for (const list of lists) {
       const button = list.nextElementSibling as HTMLElement;
       const rows = [...list.querySelectorAll<HTMLElement>('[data-tags]')];
-      const matching = rows.filter((row) => wanted.every((tag) => row.dataset.tags?.split(' ').includes(tag)));
-      const showEverything = wanted.length > 0 || expanded.has(list);
+      const matching = rows.filter((row) => matches(current, row));
+      const showEverything = isFiltering(current) || expanded.has(list);
       for (const row of rows) {
         row.hidden = !matching.includes(row) || (!showEverything && matching.indexOf(row) >= COLLAPSED_ROWS);
       }
       button.hidden = showEverything || matching.length <= COLLAPSED_ROWS;
-      matches += matching.length;
+      total += matching.length;
     }
-    if (count) count.textContent = `${matches} ${matches === 1 ? 'tool' : 'tools'}`;
-    if (empty) empty.hidden = matches > 0;
+    if (count) count.textContent = `${total} ${total === 1 ? 'tool' : 'tools'}`;
+    if (empty) empty.hidden = total > 0;
   }
 
-  filters?.addEventListener('change', applyFilters);
+  const bar = document.querySelector<HTMLElement>('#filter-bar');
+  if (bar) wireFilterBar(bar, (state) => { current = state; applyFilters(); });
   for (const list of lists) {
     list.nextElementSibling?.addEventListener('click', () => { expanded.add(list); applyFilters(); });
   }

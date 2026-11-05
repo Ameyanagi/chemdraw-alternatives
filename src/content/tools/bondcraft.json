@@ -542,7 +542,17 @@
       "how": "in-app setting",
       "note": "Dark mode changes the interface; the canvas remains white."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 751.57,
+      "paclitaxelMb": 773.07,
+      "baselineMb": 410.4,
+      "rssIdleMb": 1305.39,
+      "rssPaclitaxelMb": 1328.44,
+      "runs": 3,
+      "processes": 7,
+      "method": "Fresh headed Playwright Chromium; summed process-tree phys_footprint; medians in MiB.",
+      "note": null
+    },
     "observations": [
       "Default caffeine formula and mass displayed as C8H10N4O2 and 194.19.",
       "Paclitaxel appeared with wedge bonds and stereochemical labels.",
@@ -568,6 +578,11 @@
     "source": "https://zenodo.org/records/21078713/files/BondCraft_Manual_v0.2.0.pdf#page=31",
     "note": "Custom canvas; RDKit and CoordGen provide SMILES parsing and imported coordinates."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "BondCraft Canvas, SVG and EPS renderer",

@@ -50,7 +50,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-bonds-core.webp",
         "caption": "Single, double, and triple bonds drawn on the canvas."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "stereo-bonds": {
       "status": "yes",
@@ -60,7 +62,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-stereo-bonds.webp",
         "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "special-bonds": {
       "status": "yes",
@@ -82,7 +86,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-rings.webp",
         "caption": "Benzene drawing with ring tools below the canvas."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "conformers": {
       "status": "unknown",
@@ -94,7 +100,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://proteiniq.io/guides/draw-chemical-structures-online#bonds-chains-and-charges",
-      "note": null
+      "note": null,
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "templates": {
       "status": "partial",
@@ -104,7 +112,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-templates.webp",
         "caption": "Template library displaying rings and fused-ring scaffolds."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "custom-templates": {
       "status": "unknown",
@@ -116,7 +126,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://proteiniq.io/app/molecule-drawer#typing-atom-labels-and-formulas",
-      "note": null
+      "note": null,
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "atom-labels": {
       "status": "yes",
@@ -126,19 +138,25 @@
       "shot": {
         "image": "evidence/sketchiq/f-atom-labels.webp",
         "caption": "Element palette and charge buttons beside a caffeine drawing."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "radicals": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://proteiniq.io/app/molecule-drawer#drawing-mechanisms-and-projections",
-      "note": null
+      "note": null,
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "keyboard-drawing": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://proteiniq.io/guides/draw-chemical-structures-online#keyboard-shortcuts-for-drawing-faster",
-      "note": null
+      "note": null,
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "selection-tools": {
       "status": "partial",
@@ -160,7 +178,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-reaction-arrows.webp",
         "caption": "An equilibrium arrow on the drawing canvas."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "mechanism-arrows": {
       "status": "partial",
@@ -170,7 +190,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-mechanism-arrows.webp",
         "caption": "Arrow palette includes curved arrow icons."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "reaction-data": {
       "status": "yes",
@@ -180,7 +202,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-reaction-data.webp",
         "caption": "Reaction panel displays an empty reaction SMILES field."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "atom-mapping": {
       "status": "yes",
@@ -226,19 +250,25 @@
       "engine": {
         "library": "Indigo 1.40.0 (WebAssembly, through Ketcher standalone)",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/0k74rwlu56yiu.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "journal-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://proteiniq.io/app/molecule-drawer#typing-atom-labels-and-formulas",
-      "note": "ChemDraw ACS 1996 preset."
+      "note": "ChemDraw ACS 1996 preset.",
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "custom-styles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://proteiniq.io/guides/publication-quality-chemical-structures#how-to-make-acs-style-structure-images-in-sketchiq",
-      "note": "Bond and font settings persist in the browser."
+      "note": "Bond and font settings persist in the browser.",
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "color": {
       "status": "unknown",
@@ -262,7 +292,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://proteiniq.io/app/molecule-drawer#stoichiometry-table",
-      "note": "Editable stoichiometry panel; copies as text."
+      "note": "Editable stoichiometry panel; copies as text.",
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "valence-check": {
       "status": "yes",
@@ -272,7 +304,9 @@
       "engine": {
         "library": "Indigo (WebAssembly, valence and radical checks)",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/333cktyh0dvz-.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "stereo-perception": {
       "status": "yes",
@@ -286,7 +320,9 @@
       "engine": {
         "library": "RDKit.js (WebAssembly)",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "formula-mass": {
       "status": "yes",
@@ -300,7 +336,9 @@
       "engine": {
         "library": "Indigo (WebAssembly); RDKit.js (WebAssembly, fragment masses) with In-house formula assembly",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/333cktyh0dvz-.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "properties": {
       "status": "yes",
@@ -314,7 +352,9 @@
       "engine": {
         "library": "RDKit.js (WebAssembly, Crippen logP and TPSA); PubChem web service for XLogP3",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "name-to-structure": {
       "status": "yes",
@@ -324,7 +364,9 @@
       "engine": {
         "library": "OPSIN (remote server); PubChem PUG REST web service",
         "source": "https://proteiniq.io/app/molecule-drawer#names-pubchem-does-not-have"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "structure-to-name": {
       "status": "yes",
@@ -338,7 +380,9 @@
       "engine": {
         "library": "Orthonym (remote server), validated with OPSIN; PubChem web service for known compounds",
         "source": "https://proteiniq.io/app/molecule-drawer#systematic-names-from-orthonym"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "nmr-prediction": {
       "status": "yes",
@@ -352,13 +396,17 @@
       "engine": {
         "library": "MagNET with AIMNet2 geometry optimisation (remote server)",
         "source": "https://proteiniq.io/app/molecule-drawer#predicted-nmr-shifts"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "account"
     },
     "markush": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://proteiniq.io/guides/chemsketch-alternatives#sketchiq-for-former-chemsketch-users",
-      "note": "R-groups are available from the toolbars."
+      "note": "R-groups are available from the toolbars.",
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "polymers": {
       "status": "partial",
@@ -386,7 +434,9 @@
       "engine": {
         "library": "PubChem PUG REST and autocomplete web services",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/333cktyh0dvz-.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "model-3d": {
       "status": "partial",
@@ -412,7 +462,9 @@
       "engine": {
         "library": "Indigo (WebAssembly, through Ketcher); In-house mechanism-arrow preservation",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "cdx": {
       "status": "yes",
@@ -426,7 +478,9 @@
       "engine": {
         "library": "Indigo (WebAssembly, through Ketcher); In-house mechanism-arrow preservation",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "mol-sdf": {
       "status": "yes",
@@ -440,7 +494,9 @@
       "engine": {
         "library": "Ketcher (TypeScript/JavaScript MOL V2000 parser/writer); Indigo (WebAssembly, V3000/SDF conversion)",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/06hojo2rvu69i.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "smiles": {
       "status": "yes",
@@ -454,7 +510,9 @@
       "engine": {
         "library": "RDKit.js (WebAssembly, canonicalisation); Indigo (WebAssembly, through Ketcher import/export)",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "inchi": {
       "status": "yes",
@@ -468,7 +526,9 @@
       "engine": {
         "library": "Indigo/InChI (WebAssembly, through Ketcher standalone)",
         "source": "https://proteiniq.io/_next/static/immutable/chunks/2x2xk_4jutjni.js"
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "rxn": {
       "status": "yes",
@@ -478,7 +538,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-rxn.webp",
         "caption": "Reaction panel lists RXN among the export formats."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "svg-export": {
       "status": "yes",
@@ -488,7 +550,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-svg-export.webp",
         "caption": "Export menu includes an SVG image download."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "pdf-export": {
       "status": "yes",
@@ -498,7 +562,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-pdf-export.webp",
         "caption": "Export menu includes a PDF image download."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "png-export": {
       "status": "partial",
@@ -508,7 +574,9 @@
       "shot": {
         "image": "evidence/sketchiq/f-png-export.webp",
         "caption": "PNG export menu shows image size choices up to 4×."
-      }
+      },
+      "plan": "SketchIQ (no account)",
+      "planLevel": "free"
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -616,7 +684,17 @@
       "how": "fixed",
       "note": "Dark browser preference did not change the appearance."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 384.0,
+      "paclitaxelMb": 362.0,
+      "baselineMb": 50.28,
+      "rssIdleMb": 686.64,
+      "rssPaclitaxelMb": 708.02,
+      "runs": 3,
+      "processes": 4,
+      "method": "Headless Playwright Chromium; summed process-tree physical footprints; medians of three runs.",
+      "note": null
+    },
     "observations": [
       "Caffeine aromatic rings appear as circles in the default SMILES layout.",
       "Paclitaxel's automatically generated layout has overlapping methyl labels.",
@@ -644,6 +722,37 @@
     "source": "https://proteiniq.io/app/molecule-drawer",
     "note": "Vendor confirms Ketcher canvas; identifier guide additionally confirms Indigo."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "SketchIQ (no account)",
+      "level": "free",
+      "price": "Free for noncommercial use (2026-11-06)"
+    },
+    {
+      "name": "Free",
+      "level": "account",
+      "price": "Free; 200 sign-up credits, monthly refill to 100 (2026-11-06)"
+    },
+    {
+      "name": "Plus",
+      "level": "paid",
+      "price": "US$23/user/month billed annually; academic use (2026-11-06)"
+    },
+    {
+      "name": "Pro",
+      "level": "paid",
+      "price": "US$79/user/month billed annually; commercial use (2026-11-06)"
+    },
+    {
+      "name": "Enterprise",
+      "level": "paid",
+      "price": "Custom quote; commercial use (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "borrowed",
     "name": "Ketcher/Raphael canvas; Indigo export renderer",

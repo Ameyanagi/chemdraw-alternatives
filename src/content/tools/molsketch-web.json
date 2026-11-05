@@ -497,6 +497,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "office-ole": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://molsketch.net/blog/power-point?lang=en",
+      "note": "PPTX export creates editable PowerPoint text and shapes, not OLE objects."
     }
   },
   "caveats": [
@@ -550,7 +556,17 @@
       "how": "fixed",
       "note": "SMILES import changes stereochemistry; default layout has overlaps."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 226.36,
+      "paclitaxelMb": 215.02,
+      "baselineMb": 50.3,
+      "rssIdleMb": 530.31,
+      "rssPaclitaxelMb": 546.27,
+      "runs": 3,
+      "processes": 4,
+      "method": "Fresh headless Chromium; summed process-tree phys_footprint, MiB; medians of three runs.",
+      "note": "Drawing loaded; published capture reported altered or lost stereocenters."
+    },
     "observations": [
       "Caffeine imported as a black drawing with bold atom labels.",
       "Paclitaxel's default layout has overlapping bonds and labels.",
@@ -576,6 +592,11 @@
     "source": "https://molsketch.net/third-party-notices?lang=en",
     "note": "Canvas provenance unconfirmed; vendor credits RDKit for chemistry and DECIMER for image recognition."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "In-house Canvas 2D atom/bond renderer",

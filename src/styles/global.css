@@ -1,26 +1,44 @@
 @import '@fontsource-variable/atkinson-hyperlegible-next/wght.css';
 @import 'tailwindcss';
 
-/* Colors follow the CPK element palette chemists already read: nitrogen, oxygen, sulfur. */
+/* Colors match reshiki.com: warm page, white surfaces, terracotta accent. */
 @theme {
   --font-sans: 'Atkinson Hyperlegible Next Variable', ui-sans-serif, system-ui, sans-serif;
+  --color-page: #f7f7f2;
   --color-paper: #ffffff;
-  --color-ink: #16203a;
-  --color-muted: #55607a;
-  --color-silica: #eef1f6;
-  --color-line: #d5dbe6;
-  --color-nitrogen: #2743d6;
-  --color-oxygen: #c8102e;
-  --color-sulfur: #f2c500;
+  --color-ink: #17181c;
+  --color-muted: #555962;
+  --color-silica: #efefe9;
+  --color-line: #dfe1d9;
+  --color-accent: #b5472b;
+  --color-oxygen: #a51c30;
 }
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-page: #191f1c;
+  --color-paper: #202623;
+  --color-ink: #eeefe9;
+  --color-muted: #a8ada6;
+  --color-silica: #2a312d;
+  --color-line: #38413a;
+  --color-accent: #e98c68;
+  --color-oxygen: #ff9d9d;
+}
+
+/* Exports often have transparent backgrounds and black lines, so they stay on white in dark mode. */
+main img, #zoom-image { background: #fff; }
+.theme-sun { display: none; }
+:root[data-theme='dark'] .theme-sun { display: block; }
+:root[data-theme='dark'] .theme-moon { display: none; }
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { @apply bg-paper text-ink font-sans antialiased; font-size: 1.0625rem; line-height: 1.55; }
+  body { @apply bg-page text-ink font-sans antialiased; font-size: 1.0625rem; line-height: 1.55; }
   h1, h2, h3 { @apply font-bold; letter-spacing: -0.02em; line-height: 1.1; text-wrap: balance; }
   a { @apply underline decoration-line underline-offset-3; }
-  a:hover { @apply text-nitrogen decoration-nitrogen; }
-  :focus-visible { outline: 3px solid var(--color-nitrogen); outline-offset: 2px; border-radius: 2px; }
+  a:hover { @apply text-accent decoration-accent; }
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; border-radius: 2px; }
   table { font-variant-numeric: tabular-nums; }
 }
 
@@ -28,8 +46,8 @@
   .page { @apply mx-auto w-full max-w-[1240px] px-4 md:px-8; }
   .prose-col { @apply max-w-[66ch]; }
   .lede { @apply text-muted max-w-[60ch] text-xl; }
-  .button { @apply bg-nitrogen inline-block rounded-md px-4 py-2 font-semibold text-white no-underline hover:text-white; }
-  .chip { @apply border-line text-ink has-checked:bg-ink cursor-pointer rounded-full border px-3.5 py-1.5 text-[0.95rem] select-none has-checked:border-ink has-checked:text-white has-focus-visible:outline-3 has-focus-visible:outline-nitrogen; }
+  .button { @apply bg-accent inline-block rounded-md px-4 py-2 font-semibold text-paper no-underline hover:text-white; }
+  .chip { @apply border-line text-ink has-checked:bg-ink cursor-pointer rounded-full border px-3.5 py-1.5 text-[0.95rem] select-none has-checked:border-ink has-checked:text-paper has-focus-visible:outline-3 has-focus-visible:outline-accent; }
   .chip input { @apply sr-only; }
 
   /* One mark per feature cell. Shape carries the meaning, so it survives grayscale printing. */
@@ -42,11 +60,11 @@
   .mark-link { @apply hover:bg-silica -m-1.5 block w-fit rounded-full p-1.5 no-underline; }
   .mark-link .mark { display: block; }
   .mark-link:has(.mark-thumb) { @apply rounded-none; }
-  .mark-thumb { @apply border-line hover:border-nitrogen mt-1 block h-20 w-28 border object-contain; }
-  .mark-tested { @apply bg-nitrogen; }
-  .mark-seen { background: color-mix(in srgb, var(--color-nitrogen) 45%, white); }
-  .mark-docs { box-shadow: inset 0 0 0 2px var(--color-nitrogen); }
-  .mark-partial { background: linear-gradient(90deg, var(--color-nitrogen) 50%, transparent 50%); box-shadow: inset 0 0 0 2px var(--color-nitrogen); }
+  .mark-thumb { @apply border-line hover:border-accent mt-1 block h-20 w-28 border object-contain; }
+  .mark-tested { @apply bg-accent; }
+  .mark-seen { background: color-mix(in srgb, var(--color-accent) 45%, var(--color-paper)); }
+  .mark-docs { box-shadow: inset 0 0 0 2px var(--color-accent); }
+  .mark-partial { background: linear-gradient(90deg, var(--color-accent) 50%, transparent 50%); box-shadow: inset 0 0 0 2px var(--color-accent); }
   .mark-no { @apply bg-oxygen h-0.5 w-3.5 rounded-none align-middle; }
   .mark-unknown { @apply bg-line mx-1 size-1.5 align-middle; }
 
@@ -54,7 +72,27 @@
   .wall > * { outline: 1px solid var(--color-line); }
   .wall img { animation: settle 240ms ease-out both; animation-delay: calc(var(--i, 0) * 18ms); }
   @keyframes settle { from { opacity: 0; transform: scale(0.985); } }
-  .table-wrap { @apply border-line relative overflow-x-auto border; }
+  .notice { @apply border-accent text-ink rounded-md border-l-4 px-4 py-2.5 font-semibold; background: color-mix(in srgb, var(--color-accent) 12%, var(--color-paper)); }
+  .notice a { @apply text-accent decoration-accent; }
+  .field { @apply bg-paper border-line text-ink rounded-md border px-2.5 py-1.5 text-[0.95rem]; }
+  .filter-bar { @apply bg-paper border-line relative flex flex-wrap items-center gap-2 rounded-lg border p-2.5; }
+  .filter-menu { @apply md:relative; }
+  .filter-menu > summary { @apply border-line hover:bg-silica flex cursor-pointer list-none items-center gap-1.5 rounded-md border px-3 py-1.5 text-[0.95rem] select-none; }
+  .filter-menu > summary::-webkit-details-marker { display: none; }
+  .filter-menu > summary::after { content: ''; width: 0.4rem; height: 0.4rem; margin: -0.15rem 0.1rem 0 0.25rem; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); }
+  .filter-menu.active > summary, .filter-menu[open] > summary { @apply border-accent; }
+  .filter-menu.active > summary { @apply text-accent font-semibold; }
+  .filter-count { @apply bg-accent text-paper min-w-5 rounded-full px-1 text-center text-[0.75rem] leading-5 font-semibold; }
+  .filter-pop { @apply bg-paper border-line absolute inset-x-2.5 z-30 mt-1 rounded-lg border p-1.5 shadow-lg md:right-auto md:left-0 md:w-60; accent-color: var(--color-accent); }
+  .plan-tag { @apply bg-silica text-muted mt-1 block w-fit rounded-sm px-1.5 py-0.5 text-[0.75rem] leading-tight font-semibold; }
+  .plan-paid { @apply text-accent; background: color-mix(in srgb, var(--color-accent) 12%, var(--color-paper)); }
+  .filter-heading { @apply text-muted px-2 pt-2 pb-0.5 text-[0.85rem] font-semibold; }
+  .filter-pop label { @apply hover:bg-silica flex cursor-pointer items-center gap-2 rounded-md px-2 py-1.5 text-[0.95rem]; }
+  .token { @apply text-accent cursor-pointer rounded-full px-2.5 py-0.5 text-[0.9rem] font-semibold; background: color-mix(in srgb, var(--color-accent) 12%, var(--color-paper)); }
+  .token::after { content: ' \00d7'; }
+  .text-button { @apply hover:text-accent cursor-pointer text-[0.95rem] underline underline-offset-3; }
+  .icon-button { @apply text-muted hover:text-ink hover:bg-silica inline-flex size-9 cursor-pointer items-center justify-center rounded-md no-underline; }
+  .table-wrap { @apply bg-paper border-line relative overflow-x-auto border; }
   .data-table { @apply w-full border-collapse text-left text-[0.95rem]; }
   .data-table th, .data-table td { @apply border-line border-b px-3 py-2 align-top; }
   .data-table thead th { @apply bg-silica sticky top-0 z-10 font-semibold whitespace-nowrap; }

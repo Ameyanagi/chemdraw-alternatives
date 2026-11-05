@@ -50,7 +50,9 @@
       "shot": {
         "image": "evidence/molview-com/f-bonds-core.webp",
         "caption": "Single, double, and triple bonds in the sketcher."
-      }
+      },
+      "plan": "Free",
+      "planLevel": "free"
     },
     "stereo-bonds": {
       "status": "partial",
@@ -156,13 +158,17 @@
       "status": "partial",
       "evidence": "tested",
       "source": "https://molview.com/doc/api/types/sketcher.Arrow_Type.html",
-      "note": "Forward arrow tool prompts for subscription."
+      "note": "Forward arrow tool prompts for subscription.",
+      "plan": "Student",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "partial",
       "evidence": "tested",
       "source": "https://molview.com/doc/api/interfaces/sketcher.Arrow.html",
-      "note": "Electron arrow tool prompts for subscription."
+      "note": "Electron arrow tool prompts for subscription.",
+      "plan": "Student",
+      "planLevel": "paid"
     },
     "reaction-data": {
       "status": "unknown",
@@ -232,7 +238,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://molview.com/doc/api/interfaces/sketcher.Style.html#mark_colors",
-      "note": "API supports per-object color marks; custom styling requires higher paid plans."
+      "note": "API supports per-object color marks; custom styling requires higher paid plans.",
+      "plan": "Academic",
+      "planLevel": "paid"
     },
     "pages": {
       "status": "unknown",
@@ -296,7 +304,9 @@
       "engine": {
         "library": "PubChem web service; OPSIN (remote server)",
         "source": "https://app.molview.com/asset/global-C8t_KQe2.js"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "free"
     },
     "structure-to-name": {
       "status": "yes",
@@ -354,7 +364,9 @@
       "engine": {
         "library": "PubChem web service",
         "source": "https://app.molview.com/asset/global-C8t_KQe2.js"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "free"
     },
     "model-3d": {
       "status": "yes",
@@ -368,7 +380,9 @@
       "engine": {
         "library": "Mol* (JavaScript)",
         "source": "https://app.molview.com/asset/viewer-DPGOQ4fZ.js"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "free"
     },
     "crystals": {
       "status": "no",
@@ -400,7 +414,9 @@
       "engine": {
         "library": "In-house",
         "source": "https://app.molview.com/asset/molpad-KGu363v3.js"
-      }
+      },
+      "plan": "Student",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "yes",
@@ -414,7 +430,9 @@
       "engine": {
         "library": "OpenChemLib (JavaScript, browser worker)",
         "source": "https://app.molview.com/asset/worker-BxejRJJn.js"
-      }
+      },
+      "plan": "Student",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
@@ -428,7 +446,9 @@
       "engine": {
         "library": "PubChem web service (identifier lookup and retrieval)",
         "source": "https://app.molview.com/asset/global-C8t_KQe2.js"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "free"
     },
     "rxn": {
       "status": "unknown",
@@ -444,7 +464,9 @@
       "shot": {
         "image": "evidence/molview-com/f-svg-export.webp",
         "caption": "SVG export selection shows a subscription required dialog."
-      }
+      },
+      "plan": "Academic",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "no",
@@ -484,7 +506,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://molview.com/api/",
-      "note": "Documented JavaScript web-component API; subscription and client ID required."
+      "note": "Documented JavaScript web-component API; subscription and client ID required.",
+      "plan": "Student",
+      "planLevel": "paid"
     },
     "cli": {
       "status": "unknown",
@@ -508,7 +532,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://molview.com/api/",
-      "note": "Web-component embedding requires subscriptions or a production-domain license."
+      "note": "Web-component embedding requires subscriptions or a production-domain license.",
+      "plan": "Student",
+      "planLevel": "paid"
     },
     "ai-assistant": {
       "status": "unknown",
@@ -568,7 +594,17 @@
       "how": "fixed",
       "note": "White sketcher and black 3D viewer are the defaults."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 357.0,
+      "paclitaxelMb": 632.0,
+      "baselineMb": 50.31,
+      "rssIdleMb": 673.41,
+      "rssPaclitaxelMb": 980.12,
+      "runs": 3,
+      "processes": 4,
+      "method": "Fresh headless Chromium; summed process-tree physical footprints; three-run medians.",
+      "note": "Paclitaxel footprints varied across runs: 374, 632, and 1,259 MiB."
+    },
     "observations": [
       "Default sketcher shows colored heteroatoms beside a black-background 3D viewer.",
       "Paclitaxel initially exceeded the sketcher viewport at 200% zoom.",
@@ -590,6 +626,47 @@
     "source": "https://molview.com/mission/",
     "note": "Vendor describes sketcher algorithms developed from scratch; third-party chemistry libraries are undisclosed."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [
+    {
+      "name": "Free",
+      "level": "free",
+      "price": "$0; no sign-up (2026-11-06)"
+    },
+    {
+      "name": "Student",
+      "level": "paid",
+      "price": "US$9/year; students only, tax included (2026-11-06)"
+    },
+    {
+      "name": "Academic",
+      "level": "paid",
+      "price": "US$49/year or $19/quarter; tax included (2026-11-06)"
+    },
+    {
+      "name": "Standard",
+      "level": "paid",
+      "price": "US$99/user/year or $19/user/month; excluding tax (2026-11-06)"
+    },
+    {
+      "name": "Publisher",
+      "level": "paid",
+      "price": "US$250/user/year; excluding tax (2026-11-06)"
+    },
+    {
+      "name": "Institution",
+      "level": "paid",
+      "price": "Contact vendor (2026-11-06)"
+    },
+    {
+      "name": "Enterprise",
+      "level": "paid",
+      "price": "Contact vendor (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": "original",
     "name": "MolView vector-outline renderer",

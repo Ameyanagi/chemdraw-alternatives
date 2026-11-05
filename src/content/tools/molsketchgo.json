@@ -46,13 +46,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://play.google.com/store/apps/details?id=com.japality.molsketch&hl=en",
-      "note": "Single, double and triple bonds; vendor claim."
+      "note": "Single, double and triple bonds; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "stereo-bonds": {
       "status": "partial",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/molsketchgo/id6756492472",
-      "note": "Wedge and dash documented; wavy unverified; vendor claim."
+      "note": "Wedge and dash documented; wavy unverified; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "special-bonds": {
       "status": "unknown",
@@ -70,7 +74,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://play.google.com/store/apps/details?id=com.japality.molsketch&hl=en",
-      "note": "Benzene, cyclohexane and cyclopentane; vendor claim."
+      "note": "Benzene, cyclohexane and cyclopentane; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "conformers": {
       "status": "unknown",
@@ -106,7 +112,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://play.google.com/store/apps/details?id=com.japality.molsketch&hl=en",
-      "note": "Charges/isotopes and palette elements; arbitrary labels unverified; vendor claim."
+      "note": "Charges/isotopes and palette elements; arbitrary labels unverified; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "radicals": {
       "status": "unknown",
@@ -190,7 +198,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://play.google.com/store/apps/details?id=com.japality.molsketch&hl=en",
-      "note": "Android listing describes force-directed layout; vendor claim."
+      "note": "Android listing describes force-directed layout; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "journal-styles": {
       "status": "unknown",
@@ -208,7 +218,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://app.japality.com/molsketch/i/marketing/",
-      "note": "Element colours adjustable; individual atom/bond control unverified; vendor claim."
+      "note": "Element colours adjustable; individual atom/bond control unverified; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "pages": {
       "status": "unknown",
@@ -232,7 +244,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/molsketchgo/id6756492472",
-      "note": "Warns when bonds exceed typical valence; vendor claim."
+      "note": "Warns when bonds exceed typical valence; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "stereo-perception": {
       "status": "unknown",
@@ -244,7 +258,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://play.google.com/store/apps/details?id=com.japality.molsketch&hl=en",
-      "note": "Formula, molecular weight and exact mass; vendor claim."
+      "note": "Formula, molecular weight and exact mass; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "properties": {
       "status": "unknown",
@@ -260,7 +276,9 @@
       "engine": {
         "library": "PubChem web service",
         "source": "https://app.japality.com/molsketch/i/support/"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "free"
     },
     "structure-to-name": {
       "status": "yes",
@@ -270,7 +288,9 @@
       "engine": {
         "library": "PubChem web service",
         "source": "https://app.japality.com/molsketch/i/privacy_policy/"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "free"
     },
     "nmr-prediction": {
       "status": "unknown",
@@ -310,13 +330,17 @@
       "engine": {
         "library": "PubChem web service",
         "source": "https://app.japality.com/molsketch/i/privacy_policy/"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "free"
     },
     "model-3d": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://app.japality.com/molsketch/i/marketing/",
-      "note": "Rotatable, zoomable 3D representations; vendor claim."
+      "note": "Rotatable, zoomable 3D representations; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "crystals": {
       "status": "unknown",
@@ -340,13 +364,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://play.google.com/store/apps/details?id=com.japality.molsketch&hl=en",
-      "note": "MOL and SDF import/export; vendor claim."
+      "note": "MOL and SDF import/export; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "smiles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://play.google.com/store/apps/details?id=com.japality.molsketch&hl=en",
-      "note": "SMILES import/export; vendor claim."
+      "note": "SMILES import/export; vendor claim.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "inchi": {
       "status": "yes",
@@ -356,7 +384,9 @@
       "engine": {
         "library": "PubChem web service",
         "source": "https://app.japality.com/molsketch/i/privacy_policy/"
-      }
+      },
+      "plan": "Free",
+      "planLevel": "free"
     },
     "rxn": {
       "status": "unknown",
@@ -368,7 +398,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://app.japality.com/molsketch/i/support/",
-      "note": null
+      "note": null,
+      "plan": "Free",
+      "planLevel": "free"
     },
     "pdf-export": {
       "status": "unknown",
@@ -380,7 +412,9 @@
       "status": "partial",
       "evidence": "docs",
       "source": "https://app.japality.com/molsketch/i/support/",
-      "note": "PNG export documented; resolution of 300 dpi unverified."
+      "note": "PNG export documented; resolution of 300 dpi unverified.",
+      "plan": "Free",
+      "planLevel": "free"
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -458,6 +492,22 @@
     "source": null,
     "note": "Vendor documentation identifies external data services but does not establish editor provenance or libraries."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "Free",
+      "level": "free",
+      "price": "Free with banner ads (2026-11-06)"
+    },
+    {
+      "name": "MolSketchGo Pro",
+      "level": "paid",
+      "price": "US$1.99/month or US$11.99/year (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,

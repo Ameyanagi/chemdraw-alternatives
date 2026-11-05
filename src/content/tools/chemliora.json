@@ -590,7 +590,17 @@
       "how": "in-app setting",
       "note": "Hosted version now reports 15.20.0."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 689,
+      "paclitaxelMb": 711,
+      "baselineMb": 430,
+      "rssIdleMb": 1181.97,
+      "rssPaclitaxelMb": 1216.67,
+      "runs": 3,
+      "processes": 7,
+      "method": "Playwright Chromium process tree; summed phys_footprint; three-run medians.",
+      "note": null
+    },
     "observations": [
       "The default canvas used a dark background and coloured heteroatom labels.",
       "SMILES imports generated layouts automatically without cleanup.",
@@ -617,6 +627,11 @@
     "source": "https://chem-analyses.com/tools/structure-editor/licenses.html",
     "note": "License confirms chemistry libraries and optional orbital tools; canvas provenance remains unestablished."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "Custom SVG bond and atom renderer",

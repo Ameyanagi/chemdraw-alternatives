@@ -520,7 +520,12 @@
     "Organometallic checks and NMR predictions have explicit coverage limits."
   ],
   "github": {
+    "url": "https://github.com/nathantallen/ErezDraw",
     "stars": 5,
+    "checkedOn": "2026-11-06",
+    "firstCommit": "2026-10-12",
+    "commits": 25,
+    "contributors": 1,
     "pushedAt": "2026-10-29T12:48:31Z",
     "archived": false
   },
@@ -591,6 +596,11 @@
     "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L258",
     "note": "Custom SVG editor; geometry partly adapted from ChemCanvas; RDKit and OpenChemLib support chemistry."
   },
+  "appKind": {
+    "desktop": false,
+    "web": true
+  },
+  "plans": [],
   "renderer": {
     "origin": "original",
     "name": "ErezDraw SVG; ported ChemCanvas geometry",

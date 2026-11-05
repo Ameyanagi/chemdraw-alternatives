@@ -46,13 +46,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/chempencil/id687559805?mt=12",
-      "note": "Single, double and triple drawing tools; vendor claim."
+      "note": "Single, double and triple drawing tools; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "stereo-bonds": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/wedge-hash-stereochemistry.html",
-      "note": null
+      "note": null,
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "special-bonds": {
       "status": "unknown",
@@ -64,19 +68,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/chempencil/id687559805?mt=12",
-      "note": "Left, right and center alignment; vendor claim."
+      "note": "Left, right and center alignment; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "rings": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/",
-      "note": "Three- to eight-membered rings and benzene; vendor claim."
+      "note": "Three- to eight-membered rings and benzene; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "conformers": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/",
-      "note": "Cyclohexane chair tools; vendor claim."
+      "note": "Cyclohexane chair tools; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "chains": {
       "status": "unknown",
@@ -88,25 +98,33 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/reaction-scheme.html",
-      "note": "Templates panel inserts common molecules."
+      "note": "Templates panel inserts common molecules.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "custom-templates": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/chempencil/id687559805?mt=12",
-      "note": "Mac personal structure templates; vendor claim."
+      "note": "Mac personal structure templates; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "abbreviations": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/",
-      "note": "Set and expand named groups; vendor claim."
+      "note": "Set and expand named groups; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "atom-labels": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/chempencil/id687559805?mt=12",
-      "note": "Element editing, formal charges and isotopes; vendor claim."
+      "note": "Element editing, formal charges and isotopes; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "radicals": {
       "status": "unknown",
@@ -118,7 +136,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/wedge-hash-stereochemistry.html",
-      "note": "Hover over bonds and press editing hotkeys on Mac."
+      "note": "Hover over bonds and press editing hotkeys on Mac.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "selection-tools": {
       "status": "unknown",
@@ -136,25 +156,33 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/reaction-scheme.html",
-      "note": null
+      "note": null,
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "mechanism-arrows": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/reaction-scheme.html",
-      "note": "Draw curved double-barbed and fishhook arrows."
+      "note": "Draw curved double-barbed and fishhook arrows.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "reaction-data": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/",
-      "note": "RXN and RDF read/write; vendor claim."
+      "note": "RXN and RDF read/write; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "atom-mapping": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/reaction-scheme.html",
-      "note": "Map Reaction numbers corresponding atoms."
+      "note": "Map Reaction numbers corresponding atoms.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "orbitals": {
       "status": "unknown",
@@ -178,19 +206,25 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/reaction-scheme.html",
-      "note": null
+      "note": null,
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "groups": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://displaycatalog.mp.microsoft.com/v7.0/products/9WZDNCRDMDBP?market=US&languages=en-US",
-      "note": "Windows Structure menu includes grouping; vendor claim."
+      "note": "Windows Structure menu includes grouping; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "cleanup": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/smiles-to-structure.html",
-      "note": "Clean Up Structure and Auto-Orient commands."
+      "note": "Clean Up Structure and Auto-Orient commands.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "journal-styles": {
       "status": "unknown",
@@ -202,7 +236,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/structures-in-word-powerpoint.html",
-      "note": "Global bond and label preferences apply across documents."
+      "note": "Global bond and label preferences apply across documents.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "color": {
       "status": "unknown",
@@ -232,49 +268,65 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/chempencil/id687559805?mt=12",
-      "note": "Live valence warnings and Structure Check; vendor claim."
+      "note": "Live valence warnings and Structure Check; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "stereo-perception": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/wedge-hash-stereochemistry.html",
-      "note": "Computed R/S and E/Z appear in generated names."
+      "note": "Computed R/S and E/Z appear in generated names.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "formula-mass": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/molecular-weight-properties.html",
-      "note": null
+      "note": null,
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "properties": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/molecular-weight-properties.html",
-      "note": "TPSA and Mannhold/Crippen logP."
+      "note": "TPSA and Mannhold/Crippen logP.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "name-to-structure": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/iupac-name-to-structure.html",
-      "note": "Common functional groups and ring families."
+      "note": "Common functional groups and ring families.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "structure-to-name": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/iupac-name-to-structure.html",
-      "note": "Complex fused polycycles may not be named."
+      "note": "Complex fused polycycles may not be named.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "nmr-prediction": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://displaycatalog.mp.microsoft.com/v7.0/products/9WZDNCRDMDBP?market=US&languages=en-US",
-      "note": "Windows 1H/13C shift summaries; vendor claim."
+      "note": "Windows 1H/13C shift summaries; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "markush": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/",
-      "note": "Query atoms, atom lists and SMARTS; vendor claim."
+      "note": "Query atoms, atom lists and SMARTS; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "polymers": {
       "status": "unknown",
@@ -308,7 +360,9 @@
       "engine": {
         "library": "SceneKit (macOS native framework)",
         "source": "https://apps.apple.com/us/app/chempencil/id687559805?mt=12"
-      }
+      },
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "crystals": {
       "status": "unknown",
@@ -320,7 +374,9 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://apps.apple.com/us/app/chempencil/id687559805?mt=12",
-      "note": "Mac read/write; Windows export documentation conflicts; vendor claim."
+      "note": "Mac read/write; Windows export documentation conflicts; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "cdx": {
       "status": "unknown",
@@ -332,13 +388,17 @@
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/",
-      "note": "MOL and SDF read/write; vendor claim."
+      "note": "MOL and SDF read/write; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "smiles": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/smiles-to-structure.html",
-      "note": null
+      "note": null,
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "inchi": {
       "status": "yes",
@@ -348,31 +408,41 @@
       "engine": {
         "library": "InChI (official native desktop library)",
         "source": "https://chempencil.app/tutorials/inchi-inchikey.html"
-      }
+      },
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "rxn": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/",
-      "note": "RXN read/write; vendor claim."
+      "note": "RXN read/write; vendor claim.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "svg-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/structures-in-word-powerpoint.html",
-      "note": null
+      "note": null,
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "pdf-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/structures-in-word-powerpoint.html",
-      "note": null
+      "note": null,
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "png-export": {
       "status": "yes",
       "evidence": "docs",
       "source": "https://chempencil.app/tutorials/structures-in-word-powerpoint.html",
-      "note": "Mac up to 600 dpi; Windows 300 dpi."
+      "note": "Mac up to 600 dpi; Windows 300 dpi.",
+      "plan": "ChemPencil",
+      "planLevel": "paid"
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -451,6 +521,17 @@
     "source": "https://chempencil.app/tutorials/inchi-inchikey.html",
     "note": "Official InChI library confirmed; other components and canvas provenance remain undisclosed."
   },
+  "appKind": {
+    "desktop": true,
+    "web": false
+  },
+  "plans": [
+    {
+      "name": "ChemPencil",
+      "level": "paid",
+      "price": "US$9.99 one-time, Mac App Store (2026-11-06)"
+    }
+  ],
   "renderer": {
     "origin": null,
     "name": null,
