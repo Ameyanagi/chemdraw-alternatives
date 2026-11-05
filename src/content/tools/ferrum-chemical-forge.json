@@ -451,6 +451,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/render/src/document/depiction_profile_resolution.rs#L93-L103",
+      "note": "Per-atom colored label backgrounds through native CDML attributes."
     }
   },
   "caveats": [

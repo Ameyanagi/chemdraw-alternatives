@@ -48,7 +48,7 @@ const wall = [...drawingTools, ...embeddable].filter((tool, index) => index < 2 
 
   <section class="page mt-20" id="find">
     <h2 class="text-4xl">Find the tool for your work</h2>
-    <p class="lede mt-3">Pick what you need. ChemDraw is listed first as the baseline, and ReShiki second because this site's maintainer wrote it. The rest follow by features confirmed.</p>
+    <p class="lede mt-3">Pick what you need. ChemDraw is listed first as the baseline, and ReShiki second because this site's maintainer wrote it. The rest follow by what we tested by hand.</p>
     <div class="mt-6">
       <FilterBar total={drawingTools.length + embeddable.length}>
         <p slot="status" class="font-semibold" id="filter-count">{drawingTools.length + embeddable.length} tools</p>

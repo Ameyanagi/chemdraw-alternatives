@@ -2,7 +2,7 @@
   "id": "p113",
   "slug": "ai-chemical-drawing",
   "name": "AI Chemical Drawing (CubicZnS)",
-  "rank": 17,
+  "rank": 32,
   "tier": "alternative",
   "tierReason": "The end-user app combines a full manual Ketcher editor, reaction drawing, styled text and SVG export for publication figures.",
   "summary": "A local web app for drafting molecules and reactions with AI, editing them in Ketcher, and exporting structures.",
@@ -501,6 +501,12 @@
         "image": "evidence/ai-chemical-drawing/f-ai-assistant.webp",
         "caption": "Structure request panel with example prompts and generation button."
       }
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Embedded Ketcher highlights selected atoms and bonds in eight colors."
     }
   },
   "caveats": [

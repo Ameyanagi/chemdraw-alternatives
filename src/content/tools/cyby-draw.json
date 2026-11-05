@@ -2,7 +2,7 @@
   "id": "p64",
   "slug": "cyby-draw",
   "name": "CyBy-Draw",
-  "rank": 112,
+  "rank": 110,
   "tier": "embeddable",
   "tierReason": "Its Idris widget API and example browser sketcher focus on molecular structure input rather than publication document layout.",
   "summary": "A browser molecular structure editor with an Idris API and SVG export.",
@@ -439,6 +439,12 @@
       "evidence": "docs",
       "source": "https://github.com/stefan-hoeck/idris2-cyby-draw/blob/3b838acd30f8a055303588305db90d27d2ae8d93/word-addin/src/CyBy/Draw/Word.idr#L15-L31",
       "note": "Word add-in edits SVG/MOL metadata, without native OLE activation."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/stefan-hoeck/idris2-cyby-draw/blob/3b838acd30f8a055303588305db90d27d2ae8d93/src/CyBy/Draw.idr#L493-L507",
+      "note": "API renders chosen atoms and connecting bonds with configurable colored backgrounds."
     }
   },
   "caveats": [

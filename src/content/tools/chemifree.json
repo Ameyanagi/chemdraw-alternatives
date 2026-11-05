@@ -2,7 +2,7 @@
   "id": "p68",
   "slug": "chemifree",
   "name": "Chemifree",
-  "rank": 54,
+  "rank": 59,
   "tier": "alternative",
   "tierReason": "This working drawing prototype lacks captions and scene export, so it cannot yet produce publication-grade chemical drawing documents.",
   "summary": "An early-stage chemical drawing workspace for local structure editing, inspection and limited chemical file conversion.",
@@ -474,6 +474,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/apps/web/src/editor/structure-canvas.tsx#L500-L518",
+      "note": "Selection and hover backgrounds only; scene export is unimplemented."
     }
   },
   "caveats": [

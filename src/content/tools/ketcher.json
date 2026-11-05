@@ -2,7 +2,7 @@
   "id": "p13",
   "slug": "ketcher",
   "name": "Ketcher",
-  "rank": 14,
+  "rank": 31,
   "tier": "embeddable",
   "tierReason": "Ketcher is primarily an embeddable structure editor distributed as React components and an iframe-ready browser application.",
   "summary": "A web editor for drawing molecules, reactions, and biomolecules and embedding chemical structure input in applications.",
@@ -518,6 +518,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/48af1b20d58607f9d77b148f09fa468202239f3f/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Eight highlight colors add backgrounds behind atoms and bonds."
     }
   },
   "caveats": [

@@ -503,6 +503,12 @@
       "evidence": "docs",
       "source": "https://molsketch.net/blog/power-point?lang=en",
       "note": "PPTX export creates editable PowerPoint text and shapes, not OLE objects."
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Selection/hover halos exist; SVG and PNG exports omit them."
     }
   },
   "caveats": [

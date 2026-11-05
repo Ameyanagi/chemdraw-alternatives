@@ -2,7 +2,7 @@
   "id": "p29",
   "slug": "chemdoodle-web-components",
   "name": "ChemDoodle Web Components",
-  "rank": 11,
+  "rank": 26,
   "tier": "embeddable",
   "tierReason": "Primarily a JavaScript component library for embedding chemical sketchers and molecular graphics in applications.",
   "summary": "JavaScript components for embedding chemical structure drawing, molecular visualization, and chemistry interfaces in websites.",
@@ -521,6 +521,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/libs/cwc/ChemDoodleWeb.js",
+      "note": "Atom halos are tied to temporary selection and hover states."
     }
   },
   "caveats": [

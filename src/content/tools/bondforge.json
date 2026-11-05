@@ -2,7 +2,7 @@
   "id": "p51",
   "slug": "bondforge",
   "name": "BondForge",
-  "rank": 44,
+  "rank": 25,
   "tier": "alternative",
   "tierReason": "It creates standalone 2D drawing documents with structures, reaction arrows, captions and vector exports.",
   "summary": "BondForge is a desktop application for drawing chemical structures, reaction schemes, and annotated figures.",
@@ -485,6 +485,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/items/atom_item.py#L86-L89",
+      "note": "Fixed blue atom-selection rings; no persistent highlighting controls."
     }
   },
   "caveats": [

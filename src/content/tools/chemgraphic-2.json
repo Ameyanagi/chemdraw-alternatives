@@ -2,7 +2,7 @@
   "id": "p91",
   "slug": "chemgraphic-2",
   "name": "ChemGraphic 2",
-  "rank": 111,
+  "rank": 114,
   "tier": "alternative",
   "tierReason": "Its standalone document canvas, chemical drawing tools, journal styles, and image export support preparing scientific figures.",
   "summary": "A chemical structure editor for preparing scientific figures and predicting IR and NMR spectra.",

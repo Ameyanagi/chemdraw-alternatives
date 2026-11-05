@@ -2,7 +2,7 @@
   "id": "p11",
   "slug": "reactio-draw",
   "name": "Reactio Draw",
-  "rank": 5,
+  "rank": 8,
   "tier": "alternative",
   "tierReason": "It creates standalone chemical drawing documents with reaction schemes, styled captions, vector figures and editable Office output.",
   "summary": "An editor for drawing chemical structures, reaction schemes and publication figures.",
@@ -575,6 +575,12 @@
       "evidence": "docs",
       "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/windows-app/server.go#L3",
       "note": "Windows OLE objects support double-click editing in Word and PowerPoint."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt#L281",
+      "note": "Atom halos and bond bands support adjustable colors and width."
     }
   },
   "caveats": [
@@ -637,7 +643,17 @@
       "how": "in-app setting",
       "note": "Dark interface; canvas remains white."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 216.28,
+      "paclitaxelMb": 288.54,
+      "baselineMb": null,
+      "rssIdleMb": 402.47,
+      "rssPaclitaxelMb": 770.19,
+      "runs": 3,
+      "processes": 5,
+      "method": "Median phys_footprint sums; ps tree plus lsappinfo WebKit/AppKit helpers; SMILES paste; 10-second waits.",
+      "note": "Native app; open -n failed (-10825), direct executable launch. Values in MiB."
+    },
     "observations": [
       "Default ACS style used colored heteroatoms and a visible grid.",
       "SMILES import required clicking the sheet to place each structure.",

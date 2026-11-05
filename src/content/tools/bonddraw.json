@@ -2,7 +2,7 @@
   "id": "p138",
   "slug": "bonddraw",
   "name": "BondDraw",
-  "rank": 109,
+  "rank": 108,
   "tier": "alternative",
   "tierReason": "A standalone native editor draws editable 2D molecular structures and reaction figures, with limited export and layout.",
   "summary": "A native HarmonyOS editor for drawing two-dimensional molecular structures and reaction diagrams.",
@@ -438,6 +438,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/model/Renderer.ets#L85",
+      "note": "Selection and hover halos only; no dedicated highlight annotations."
     }
   },
   "caveats": [

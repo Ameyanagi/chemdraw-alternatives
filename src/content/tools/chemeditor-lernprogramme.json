@@ -2,7 +2,7 @@
   "id": "p118",
   "slug": "chemeditor-lernprogramme",
   "name": "Chemeditor (Chemie-Lernprogramme)",
-  "rank": 73,
+  "rank": 71,
   "tier": "alternative",
   "tierReason": "It composes Unicode text formulas and relies on a word processor for document layout and assembled reaction figures.",
   "summary": "A browser editor for composing Unicode chemical formulas, simple structural formulas, and reaction equations for word processors.",
@@ -439,6 +439,12 @@
       "evidence": "docs",
       "source": "https://chemie-lernprogramme.de/daten/ueb/ueb_chemeditor_libreoffice_loes.pdf",
       "note": "Copies Unicode text into Office, without embedded chemical object editing."
+    },
+    "color-highlight": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/daten/js/funktionen.js",
+      "note": "Plaintext formulas and monochrome rendering lack atom or bond backgrounds."
     }
   },
   "caveats": [

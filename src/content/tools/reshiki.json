@@ -635,6 +635,12 @@
       "evidence": "docs",
       "source": "https://reshiki.com/developer/windows/#edit-a-drawing-in-office",
       "note": "Windows OLE; double-click edits, Ctrl+S updates Word and PowerPoint."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/color-palettes/#how-the-palette-works",
+      "note": "Selected atoms and bonds receive tint highlights beneath visible ink."
     }
   },
   "caveats": [
@@ -697,7 +703,17 @@
       "how": "in-app setting",
       "note": "Original light appearance restored before quitting."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 356.07,
+      "paclitaxelMb": 359.88,
+      "baselineMb": null,
+      "rssIdleMb": 229.66,
+      "rssPaclitaxelMb": 238.12,
+      "runs": 3,
+      "processes": 5,
+      "method": "footprint phys_footprint sums; three fresh launches; SMILES import; 10-second waits; ps descendants, lsappinfo helpers.",
+      "note": "MiB; import panel open; four macOS helpers included; three-run medians."
+    },
     "observations": [
       "Default JACS/ACS style: Arial 10 pt, 14.4 pt bonds, 0.6 pt lines.",
       "Caffeine and paclitaxel received automatic SMILES layouts without cleanup.",

@@ -2,7 +2,7 @@
   "id": "p72",
   "slug": "erezdraw",
   "name": "ErezDraw",
-  "rank": 21,
+  "rank": 16,
   "tier": "alternative",
   "tierReason": "Implemented structure, reaction, text and layout tools export vector drawings, although the application remains an incomplete prototype.",
   "summary": "A prototype desktop and self-hosted web editor for drawing chemical structures, reactions, and figures.",
@@ -512,6 +512,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L338-L358",
+      "note": "Hover backgrounds and halos are temporary and excluded from SVG/PNG exports."
     }
   },
   "caveats": [

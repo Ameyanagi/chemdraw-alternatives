@@ -2,7 +2,7 @@
   "id": "p136",
   "slug": "wavespeed-ai-chemical-structure-drawer",
   "name": "WaveSpeed AI Chemical Structure Drawer",
-  "rank": 59,
+  "rank": 42,
   "tier": "alternative",
   "tierReason": "A standalone molecular drawing editor with documented vector SVG export for publication figures.",
   "summary": "Browser editor for drawing molecules, calculating properties, exporting images and structure files, and viewing 3D models.",
@@ -491,6 +491,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/_next/static/chunks/77134.7ba20c5fb809f820.js",
+      "note": "Selection halos only; exported images omit them."
     }
   },
   "caveats": [

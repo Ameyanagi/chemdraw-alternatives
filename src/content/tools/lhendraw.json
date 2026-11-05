@@ -2,7 +2,7 @@
   "id": "p65",
   "slug": "lhendraw",
   "name": "Lhendraw",
-  "rank": 100,
+  "rank": 101,
   "tier": "alternative",
   "tierReason": "It creates editable chemical drawing documents with structures, reaction arrows, text, shapes and vector export.",
   "summary": "Desktop editor for drawing chemical structures, reaction schemes, and figures with ChemDraw CDX/CDXML file exchange.",
@@ -441,6 +441,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/draw.hxx#L577-L692",
+      "note": "Renderer supports object recoloring and selection handles, without background highlighting."
     }
   },
   "caveats": [

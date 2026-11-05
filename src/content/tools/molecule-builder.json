@@ -2,7 +2,7 @@
   "id": "p78",
   "slug": "molecule-builder",
   "name": "Molecule Builder (OvOHongYu)",
-  "rank": 56,
+  "rank": 36,
   "tier": "alternative",
   "tierReason": "A standalone 2D molecule editor with cleanup and vector figure export, despite its limited chemistry scope.",
   "summary": "A browser-based workbench for drawing small organic molecules and assembling reaction schemes.",
@@ -509,6 +509,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/render/hitareas.tsx#L27-L72",
+      "note": "Fixed blue selection halos only; no persistent highlight styling."
     }
   },
   "caveats": [

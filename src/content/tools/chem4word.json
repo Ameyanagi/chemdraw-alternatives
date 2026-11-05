@@ -2,7 +2,7 @@
   "id": "p25",
   "slug": "chem4word",
   "name": "Chem4Word",
-  "rank": 101,
+  "rank": 99,
   "tier": "alternative",
   "tierReason": "Creates editable vector chemical structures and reaction schemes within printable Word documents.",
   "summary": "A Microsoft Word add-in for drawing and editing chemical structures and reactions in documents.",
@@ -459,6 +459,12 @@
       "evidence": "docs",
       "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chem4Word.V3/Helpers/ChemistryHelper.cs#L85-L93",
       "note": "Word add-in uses CML content controls, not OLE objects."
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Adorners/Selectors/MultiAtomBondAdorner.cs#L95-L149",
+      "note": "Orange selection halos only; absent from Word output."
     }
   },
   "caveats": [

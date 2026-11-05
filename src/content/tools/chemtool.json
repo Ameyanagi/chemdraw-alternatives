@@ -2,7 +2,7 @@
   "id": "p94",
   "slug": "chemtool",
   "name": "Chemtool",
-  "rank": 99,
+  "rank": 100,
   "tier": "alternative",
   "tierReason": "It is a standalone 2D editor with structures, text, templates and vector export for publication figures.",
   "summary": "A standalone editor for drawing organic molecular structures and exporting chemical figures.",
@@ -441,6 +441,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/graph.c/#L580",
+      "note": "Only foreground coloring; selection replaces strokes without adding backgrounds or halos."
     }
   },
   "caveats": [

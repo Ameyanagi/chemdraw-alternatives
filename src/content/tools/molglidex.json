@@ -2,7 +2,7 @@
   "id": "p75",
   "slug": "molglidex",
   "name": "MolGLideX",
-  "rank": 62,
+  "rank": 49,
   "tier": "alternative",
   "tierReason": "It draws standalone 2D chemical figures and exports vectors, but remains an explicitly unstable prototype.",
   "summary": "An experimental desktop editor for drawing 2D chemical structures and reaction mechanisms.",
@@ -449,6 +449,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/ui/EditorPanel.kt#L107-L123",
+      "note": "Selection backgrounds exist; SVG export suppresses them."
     }
   },
   "caveats": [

@@ -2,7 +2,7 @@
   "id": "p27",
   "slug": "openchemlib-js-editor",
   "name": "OpenChemLib JS editor",
-  "rank": 48,
+  "rank": 52,
   "tier": "embeddable",
   "tierReason": "It is primarily an embeddable browser structure and reaction editor with a documented JavaScript API.",
   "summary": "Embeddable browser editor for drawing molecular structures and reactions using the OpenChemLib chemistry library.",
@@ -490,6 +490,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/Molecule.html#setbondbackgroundhiliting",
+      "note": "API supports colored bond backgrounds in structure depictions."
     }
   },
   "caveats": [

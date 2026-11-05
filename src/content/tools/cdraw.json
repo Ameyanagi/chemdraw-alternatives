@@ -2,7 +2,7 @@
   "id": "p24",
   "slug": "cdraw",
   "name": "cDraw",
-  "rank": 36,
+  "rank": 44,
   "tier": "alternative",
   "tierReason": "It creates styled 2D structures and reaction figures with text, layout tools and vector export.",
   "summary": "A Java desktop editor for creating publication-quality 2D chemical structures and reaction schemes.",
@@ -465,6 +465,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=5",
+      "note": "Only temporary blue hover halos around individual atoms."
     }
   },
   "caveats": [

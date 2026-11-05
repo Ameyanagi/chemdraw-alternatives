@@ -461,6 +461,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/drawables/Edge.ts#L161-L194",
+      "note": "Configurable colored underlays highlight selected atoms and bonds in widget."
     }
   },
   "caveats": [

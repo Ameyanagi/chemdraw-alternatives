@@ -2,7 +2,7 @@
   "id": "p104",
   "slug": "sketchem",
   "name": "SketChem",
-  "rank": 66,
+  "rank": 72,
   "tier": "alternative",
   "tierReason": "Its implemented interface focuses on molecular structure input, and publication-grade document output is unverified.",
   "summary": "A browser-based editor for creating and editing 2D chemical structures.",
@@ -462,6 +462,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/entities/Entity.ts#L70",
+      "note": "Cyan atom/bond selection backgrounds; chemical exports omit them."
     }
   },
   "caveats": [

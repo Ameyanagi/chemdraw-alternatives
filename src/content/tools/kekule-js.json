@@ -2,7 +2,7 @@
   "id": "p28",
   "slug": "kekule-js",
   "name": "Kekule.js",
-  "rank": 26,
+  "rank": 55,
   "tier": "embeddable",
   "tierReason": "Its primary product is a JavaScript toolkit whose Composer editor is embedded into web applications.",
   "summary": "JavaScript toolkit for embedding chemical structure editors, molecule viewers, and cheminformatics functions in web applications.",
@@ -489,6 +489,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.baseEditors.js#L3187-L3285",
+      "note": "Colored selection overlays; excluded from image export."
     }
   },
   "caveats": [

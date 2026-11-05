@@ -1,8 +1,14 @@
 # Chemical Drawing Atlas
 
-A comparison of chemical drawing software built on hands-on testing. Each tool draws the same three molecules with default settings, and every feature mark says how we know it: tested, seen in the app, or cited from the manual. Versions, engines, sizes, startup times and APIs are recorded per tool.
+A hands-on comparison of chemical drawing software, at [atlas.reshiki.com](https://atlas.reshiki.com). Each tool draws the same three molecules, and every feature claim links to a screenshot, a manual or the source code. It also shows what each tool relies on, its license, price, size and memory use, with exact versions and dates.
 
-Maintained by the developer of ReShiki, which is included. The site says so, and the [method page](src/pages/how-we-test.astro) explains the listing order.
+**This site is biased toward ReShiki, because its maintainer also maintains [ReShiki](https://reshiki.com). Please be careful.** The [method page](https://atlas.reshiki.com/how-we-test/) explains how tools are tested and listed.
+
+## Thank you, ChemDraw
+
+ChemDraw has shaped how chemists draw for [40 years](https://revvitysignals.com/chemdraw-turns-40). It began in 1985 with Sally Evans, David A. Evans and Stewart Rubenstein, who set out to end the slow work of redrawing structures by hand. Much of what a chemical drawing is today, on a screen and in a journal, comes from that work. Every tool here is measured against the standard it set, which is why ChemDraw comes first.
+
+This site is independent of Revvity Signals Software, and ChemDraw is its trademark.
 
 ## Develop
 
@@ -12,8 +18,6 @@ Use Node 24 (see `.nvmrc`) and Bun.
 bun install
 bun run dev
 ```
-
-The site lives at the root of https://chemdraw-alternatives.reshiki.com. To deploy a fork elsewhere, set `SITE_URL` and `BASE_PATH`.
 
 ```sh
 bun run check   # types and content rules
@@ -30,7 +34,8 @@ bun run test    # generated pages and internal links
 | `evidence/CAPTURE.md` | The brief for each hands-on run |
 | `scripts/evidence/tiers.json` | Which tools are compared and which are only listed |
 | `scripts/evidence/overrides.json` | Hand-written corrections applied last |
-| `evidence/perf.json` | Measured startup, memory and page size |
+| `evidence/*.md` | The brief for each research and capture pass |
+| `evidence/perf.json` | Measured startup and page size |
 | `src/content/tools/*.json` | Generated records the site reads |
 | `public/evidence/<tool>/` | Published drawings |
 
@@ -40,12 +45,12 @@ Research and capture run through Codex: `scripts/evidence/run-research.py` makes
 
 ChemDraw is published as exported drawings only, because its license restricts republishing its interface and bundled images. `scripts/check-content.mjs` enforces this and the first and second listing positions.
 
-## Publish to GitHub Pages
+## Publish
 
-In **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**. A push to `main` builds and deploys the site. Pull requests are built but not deployed.
+The site is served by GitHub Pages at `atlas.reshiki.com`. In **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**, and set the custom domain there. A DNS `CNAME` record points `atlas` at `ameyanagi.github.io`. A push to `main` checks, builds and deploys the site, and pull requests are checked without deploying.
 
-The workflow derives `site` and `base` from `GITHUB_REPOSITORY`. `SITE_URL` and `BASE_PATH` override this for a custom domain.
+To deploy a fork, set `SITE_URL` and `BASE_PATH`.
 
 ## License
 
-Original source code: [MIT](LICENSE). Original editorial content and research data: [CC BY 4.0](CONTENT-LICENSE.md). Third-party software, product names, trademarks and screenshots keep their own rights. This project does not relicense linked material or imply vendor endorsement.
+Original code, documentation and research notes are available under [MIT](LICENSE-MIT) or [Apache-2.0](LICENSE-APACHE), at your option. Third-party screenshots, drawings, quoted text and product names are excluded and remain with their owners. See [LICENSE](LICENSE) for the scope.

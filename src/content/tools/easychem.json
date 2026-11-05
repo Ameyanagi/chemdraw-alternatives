@@ -2,7 +2,7 @@
   "id": "p125",
   "slug": "easychem",
   "name": "EasyChem",
-  "rank": 114,
+  "rank": 111,
   "tier": "alternative",
   "tierReason": "A standalone 2D chemical drawing editor with text, layout tools and vector export for publication figures.",
   "summary": "A desktop editor for creating 2D chemical structure drawings and publication figures.",
@@ -421,6 +421,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/bonds.c#l2630",
+      "note": "Raw Pango markup enables atom-label backgrounds; EPS export loses highlighting."
     }
   },
   "caveats": [

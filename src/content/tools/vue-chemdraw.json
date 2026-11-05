@@ -2,7 +2,7 @@
   "id": "p90",
   "slug": "vue-chemdraw",
   "name": "vue-chemdraw (0chem)",
-  "rank": 69,
+  "rank": 73,
   "tier": "embeddable",
   "tierReason": "It is distributed as a Vue 3 structure-editor component for embedding in other applications.",
   "summary": "A Vue 3 component for embedding a browser-based chemical structure editor.",
@@ -445,6 +445,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeEdit/Edit/DrawSelect.js#L48",
+      "note": "Selection backgrounds are temporary and reset when the structure redraws."
     }
   },
   "caveats": [

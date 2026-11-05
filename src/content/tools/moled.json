@@ -425,6 +425,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/moled.css#L21-L37",
+      "note": "Red selection halos surround displayed labels; hidden carbons remain unhighlighted."
     }
   },
   "caveats": [

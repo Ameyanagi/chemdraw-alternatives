@@ -2,7 +2,7 @@
   "id": "p43",
   "slug": "octet-draw",
   "name": "Octet Draw",
-  "rank": 6,
+  "rank": 9,
   "tier": "alternative",
   "tierReason": "It creates styled 2D chemical documents with reactions, page layout, editable ChemDraw files and vector exports.",
   "summary": "Free desktop software for drawing chemical structures, reaction schemes and publication figures.",
@@ -544,6 +544,12 @@
       "evidence": "docs",
       "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src-tauri/src/clipboard.rs#L9-L13",
       "note": "Windows Office receives EMF pictures with CDXML metadata, not OLE objects."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/f11487e97ee3970c1dc5678a5adbcd610144c04e/src/Actions.tsx#L1038-L1047",
+      "note": "Persistent colored atom/bond halos and ring fills, with custom colors."
     }
   },
   "caveats": [

@@ -2,7 +2,7 @@
   "id": "p86",
   "slug": "radsketch",
   "name": "RadSketch",
-  "rank": 68,
+  "rank": 60,
   "tier": "alternative",
   "tierReason": "It is a standalone 2D structure and reaction drawing editor with figure export, although implementation defects limit publication use.",
   "summary": "An experimental browser-based chemical structure sketcher with templates, valence checks, and PNG and MOL export.",
@@ -477,6 +477,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L786",
+      "note": "Atom selection/hover halos only; PNG and clipboard exports omit halos."
     }
   },
   "caveats": [

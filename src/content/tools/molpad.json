@@ -433,6 +433,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/chemistry/molpad/blob/90b4c5cb8bf1f75cf18560e4b228f7449ec957b3/src/components/molpad-content/molpad-content.tsx#L126-L214",
+      "note": "Green atom and bond halos appear only during hover."
     }
   },
   "caveats": [

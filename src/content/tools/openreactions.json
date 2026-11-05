@@ -2,7 +2,7 @@
   "id": "p98",
   "slug": "openreactions",
   "name": "OpenReactions",
-  "rank": 32,
+  "rank": 33,
   "tier": "alternative",
   "tierReason": "Standalone drawing and figure workspaces implement editable chemistry, page composition, and vector SVG/PDF export.",
   "summary": "Browser editor for chemical structures, reaction mechanisms, animations, and composed scientific figures.",
@@ -479,6 +479,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://openreactions.com/draw/assets/FigureEditor-10qncLgg.js",
+      "note": "Figure highlighter draws exportable translucent colored strokes across structure regions."
     }
   },
   "caveats": [

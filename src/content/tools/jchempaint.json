@@ -2,7 +2,7 @@
   "id": "p21",
   "slug": "jchempaint",
   "name": "JChemPaint",
-  "rank": 40,
+  "rank": 46,
   "tier": "alternative",
   "tierReason": "The standalone editor creates 2D structures and reactions with vector SVG and PDF export for publication figures.",
   "summary": "A Java desktop editor for drawing and exporting two-dimensional chemical structures and reactions.",
@@ -461,6 +461,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/render/src/main/java/org/openscience/jchempaint/renderer/generators/HighlightAtomGenerator.java",
+      "note": "Hover halos are temporary and omitted from SVG/PDF exports."
     }
   },
   "caveats": [

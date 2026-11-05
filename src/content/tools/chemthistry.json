@@ -2,7 +2,7 @@
   "id": "p49",
   "slug": "chemthistry",
   "name": "ChemThisTry",
-  "rank": 9,
+  "rank": 11,
   "tier": "alternative",
   "tierReason": "Its chemical structure editor and editable vector canvas can compose publication-grade chemical figures.",
   "summary": "A desktop and browser workspace for drawing chemical structures, viewing molecules, plotting data, and composing scientific figures.",
@@ -520,6 +520,12 @@
       "evidence": "docs",
       "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L24",
       "note": "PowerPoint export inserts PNG pictures through Office COM, not OLE objects."
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Context-menu atom/bond highlights display; SVG and PNG exports omit them."
     }
   },
   "caveats": [

@@ -2,7 +2,7 @@
   "id": "p19",
   "slug": "molview-com",
   "name": "MolView.com",
-  "rank": 45,
+  "rank": 30,
   "tier": "alternative",
   "tierReason": "Its standalone web app draws molecular and reaction diagrams and exports publication-quality SVG figures on paid plans.",
   "summary": "Web application for drawing small molecules and reaction mechanisms, viewing 3D models, and exporting chemical figures.",

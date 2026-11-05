@@ -453,6 +453,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/xml_writer.py#L327",
+      "note": "Colored backgrounds behind visible atom labels persist in SVG export."
     }
   },
   "caveats": [

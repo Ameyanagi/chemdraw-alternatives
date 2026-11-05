@@ -2,7 +2,7 @@
   "id": "p20",
   "slug": "molsketch-desktop",
   "name": "Molsketch",
-  "rank": 41,
+  "rank": 40,
   "tier": "alternative",
   "tierReason": "A standalone 2D editor with reaction diagrams, captions, alignment, and vector output can produce publication figures.",
   "summary": "Desktop editor for drawing two-dimensional molecular structures, reaction schemes, and mechanism diagrams.",
@@ -465,6 +465,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/hvennekate/Molsketch/blob/main/libmolsketch/bond.cpp#L574-L580",
+      "note": "Blue selection outlines highlight atoms and bonds; exports clear selection."
     }
   },
   "caveats": [

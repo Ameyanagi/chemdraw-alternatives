@@ -2,7 +2,7 @@
   "id": "p101",
   "slug": "dotmatics-elemental",
   "name": "Dotmatics Elemental / Elemental Draw",
-  "rank": 113,
+  "rank": 115,
   "tier": "embeddable",
   "tierReason": "The vendor's standalone Elemental Draw release documents saving and printing structures and reactions for publications.",
   "summary": "Chemical structure and reaction drawing suite with desktop, web, and iOS editions.",

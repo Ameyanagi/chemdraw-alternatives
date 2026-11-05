@@ -2,7 +2,7 @@
   "id": "p100",
   "slug": "chemwriter",
   "name": "ChemWriter",
-  "rank": 71,
+  "rank": 74,
   "tier": "embeddable",
   "tierReason": "Its documented purpose is embedding molecular structure editing and input into web applications.",
   "summary": "JavaScript component for drawing and editing molecular structures inside web applications.",

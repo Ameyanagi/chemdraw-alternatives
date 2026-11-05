@@ -2,7 +2,7 @@
   "id": "p53",
   "slug": "ketchdraw",
   "name": "KetchDraw",
-  "rank": 22,
+  "rank": 37,
   "tier": "embeddable",
   "tierReason": "Its main interface combines an embedded Ketcher structure-input editor with RDKit property cards.",
   "summary": "Browser-based molecular drawing editor combining Ketcher structure editing with RDKit property calculations.",
@@ -523,6 +523,12 @@
       "evidence": "docs",
       "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/utils/fileOpener.js#L72-L90",
       "note": "Office support only imports ChemDraw objects from PowerPoint."
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/ketcher/static/js/main.67cb654b.js",
+      "note": "API highlights display colored halos; exports omit them."
     }
   },
   "caveats": [

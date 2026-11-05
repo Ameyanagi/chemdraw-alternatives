@@ -2,7 +2,7 @@
   "id": "p81",
   "slug": "schematic",
   "name": "schematic",
-  "rank": 72,
+  "rank": 62,
   "tier": "alternative",
   "tierReason": "A standalone editor produces 2D structure and reaction drawings with ACS styling, vector SVG and print-resolution PNG export.",
   "summary": "Browser-based editor for drawing 2D chemical structures and simple reaction schemes with SVG and PNG export.",
@@ -433,6 +433,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/render/export.ts#L11-L26",
+      "note": "Selection halos only; SVG and PNG exports omit them."
     }
   },
   "caveats": [

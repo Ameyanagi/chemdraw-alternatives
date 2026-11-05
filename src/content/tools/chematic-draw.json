@@ -2,7 +2,7 @@
   "id": "p71",
   "slug": "chematic-draw",
   "name": "Chematic Draw",
-  "rank": 24,
+  "rank": 12,
   "tier": "alternative",
   "tierReason": "A substantive desktop editor draws molecules, annotations and reaction documents with vector exports, although publication layout and ChemDraw interchange have limits.",
   "summary": "Desktop chemical structure editor for drawing molecules and reaction schemes and exporting chemical files and figures.",
@@ -508,6 +508,12 @@
       "evidence": "source",
       "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/sidebar/ChatPanel.tsx#L9",
       "note": "Chat only answers keyword queries; cannot propose or edit drawings."
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/canvas/CanvasRenderer.ts#L367-L402",
+      "note": "Orange atom selection backgrounds only; exports omit them."
     }
   },
   "caveats": [

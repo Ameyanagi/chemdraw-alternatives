@@ -2,7 +2,7 @@
   "id": "p12",
   "slug": "kendraw",
   "name": "Kendraw",
-  "rank": 10,
+  "rank": 19,
   "tier": "alternative",
   "tierReason": "It provides a standalone drawing workspace with reaction tools, text, shapes, journal settings, and publication-ready SVG export.",
   "summary": "An open-source browser application for drawing chemical structures and reactions, calculating molecular properties, and predicting NMR spectra.",
@@ -530,6 +530,12 @@
       "evidence": "docs",
       "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/architecture-kendraw-2026-04-12.md#17-considérations-futures-v2--pour-mémoire",
       "note": "LLM assistant is explicitly outside current scope."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Ketcher mode provides eight-color backgrounds on individual atoms and bonds."
     }
   },
   "caveats": [

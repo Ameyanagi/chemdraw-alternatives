@@ -2,7 +2,7 @@
   "id": "p139",
   "slug": "ketcherails",
   "name": "Ketcherails (ketcher-rails)",
-  "rank": 97,
+  "rank": 96,
   "tier": "embeddable",
   "tierReason": "It is a Rails engine for embedding a structure editor in applications, with host-managed templates and server chemistry services.",
   "summary": "A Rails component for embedding a 2D chemical structure editor with templates and server chemistry services.",
@@ -450,6 +450,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/render.js#L558-L570",
+      "note": "Highlighting is limited to fixed green selection backgrounds and hover halos."
     }
   },
   "caveats": [

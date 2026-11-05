@@ -2,7 +2,7 @@
   "id": "p102",
   "slug": "sciformation-vectormol",
   "name": "Sciformation VectorMol",
-  "rank": 42,
+  "rank": 24,
   "tier": "embeddable",
   "tierReason": "Its documented iframe and JavaScript interfaces primarily provide molecular and reaction input for other applications.",
   "summary": "A browser editor for drawing molecular structures and single-step reactions, with iframe embedding and SVG export.",
@@ -469,6 +469,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25",
+      "note": "API highlights atoms with blue surrounding boxes; SVG retains them."
     }
   },
   "caveats": [

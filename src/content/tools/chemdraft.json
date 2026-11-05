@@ -2,7 +2,7 @@
   "id": "p42",
   "slug": "chemdraft",
   "name": "ChemDraft",
-  "rank": 8,
+  "rank": 5,
   "tier": "alternative",
   "tierReason": "Its desktop page editor combines editable structures, reaction schemes, text and tables with vector SVG and PDF export.",
   "summary": "Desktop editor for chemical structures, reaction schemes, mechanisms, and publication figures.",
@@ -511,6 +511,12 @@
       "evidence": "docs",
       "source": "https://github.com/jgassens/ChemDraft/blob/c8de616521401c60404af2eed6e7659266c53425/docs/plugin-architecture/AUTHORING.md#L7",
       "note": "Optional Assistant plugin; free, separately licensed proprietary code."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/jgassens/ChemDraft/blob/c8de616521401c60404af2eed6e7659266c53425/apps/desktop/src/ToolPalette.tsx#L1706",
+      "note": "Selected atom labels support custom colored background halos in exports."
     }
   },
   "caveats": [

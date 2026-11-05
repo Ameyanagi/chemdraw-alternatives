@@ -2,7 +2,7 @@
   "id": "p69",
   "slug": "chemvas",
   "name": "Chemvas",
-  "rank": 29,
+  "rank": 38,
   "tier": "alternative",
   "tierReason": "Its implemented desktop canvas, scheme layout, annotations and vector exports support publication-grade 2D chemical drawing documents.",
   "summary": "Desktop editor for drawing molecular structures and reaction schemes and exporting publication figures.",
@@ -473,6 +473,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/app/chemvas/ui/tools/hover_rendering.py#L35-L75",
+      "note": "Colored hover halos are transient and excluded from figure exports."
     }
   },
   "caveats": [

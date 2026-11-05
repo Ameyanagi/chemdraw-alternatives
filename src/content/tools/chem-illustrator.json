@@ -2,7 +2,7 @@
   "id": "p67",
   "slug": "chem-illustrator",
   "name": "Chem Illustrator",
-  "rank": 4,
+  "rank": 10,
   "tier": "alternative",
   "tierReason": "It creates multipage chemical drawings with journal styles, captions and vector export, including editable chemistry in documents and presentations.",
   "summary": "Chemical drawing software for structures, reaction schemes, publication figures, and documents with editable chemistry.",
@@ -528,6 +528,12 @@
       "evidence": "docs",
       "source": "https://github.com/nathanohare/Chem-Illustrator/blob/5f875b5c78203ec7d6cbce1ff5de43b7a466ac64/docs/guide/files-and-sharing.md#editing-drawings-inside-word-powerpoint-and-excel-windows",
       "note": "Windows Office objects reopen in Chem Illustrator; Save updates the document."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#frames-highlights-and-fills",
+      "note": "Editable colored bands and halos highlight selected atoms and bonds."
     }
   },
   "caveats": [

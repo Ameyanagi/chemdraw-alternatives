@@ -2,7 +2,7 @@
   "id": "p109",
   "slug": "mychemise",
   "name": "MyChemise",
-  "rank": 119,
+  "rank": 120,
   "tier": "alternative",
   "tierReason": "The documented editor produces printable 2D chemical drawings with text and shapes, although present-day operation remains unverified.",
   "summary": "A legacy Java applet for drawing 2D chemical structures and creating animated reaction presentations.",

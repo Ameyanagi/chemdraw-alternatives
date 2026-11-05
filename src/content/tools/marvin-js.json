@@ -2,7 +2,7 @@
   "id": "p30",
   "slug": "marvin-js",
   "name": "Marvin JS",
-  "rank": 84,
+  "rank": 85,
   "tier": "embeddable",
   "tierReason": "Primarily a licensed web component for chemical structure input inside other applications.",
   "summary": "A commercial web editor for drawing chemical structures and reactions inside other applications.",

@@ -2,7 +2,7 @@
   "id": "p62",
   "slug": "pychem-pro",
   "name": "PyChem-Pro",
-  "rank": 49,
+  "rank": 34,
   "tier": "alternative",
   "tierReason": "Its implemented 2D sketcher combines editable structures, reaction arrows, captions, and print-resolution raster export to create chemical figures.",
   "summary": "A desktop chemistry application and Python library for molecular visualization, structure sketching, geometry optimization, and cheminformatics.",
@@ -490,12 +490,17 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/visualization_2d/ui/mol_viewer_2d.py#L268-L355",
+      "note": "Yellow atom selection halos remain visible in exported images."
     }
   },
   "caveats": [
-    "Custom terms restrict commercial and service use; manual says MIT and README misidentifies OASA's GPL license.",
-    "Sketcher saves molecules, not complete schemes; inspected exporters use raster formats despite manual SVG/PDF claims.",
-    "README lists the implemented sketcher as planned and denies chemistry dependencies despite vendored OASA and optional RDKit."
+    "Custom noncommercial license. Bundled components, including GPL-licensed code, carry their own terms.",
+    "The sketcher saves molecules, not complete schemes."
   ],
   "github": {
     "url": "https://github.com/vijaymasand/PyChem-Pro",
@@ -568,15 +573,14 @@
     "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/README.md"
   ],
   "builtOn": {
-    "id": "p62",
     "relation": "fork",
     "editor": "ChemCanvas",
     "libraries": [
-      "OASA",
-      "RDKit"
+      "ChemCanvas",
+      "OASA"
     ],
-    "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/paper.py#L1-L23",
-    "note": "ChemCanvas adaptation and OASA contradict README's from-scratch/no-chemistry-dependencies claims; RDKit plugin optional."
+    "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/molecule.py#L2",
+    "note": "2D sketcher files are marked \"Adapted from ChemCanvas (GPLv3)\". OASA is vendored and credited in the README."
   },
   "appKind": {
     "desktop": true,

@@ -2,7 +2,7 @@
   "id": "p84",
   "slug": "chemical-structure-editor",
   "name": "Chemical Structure Editor (CSE)",
-  "rank": 70,
+  "rank": 67,
   "tier": "alternative",
   "tierReason": "Implements standalone 2D structure and reaction drawing with geometric editing and vector SVG export.",
   "summary": "Browser editor for drawing chemical structures, reaction schemes and geometric figures for publication.",
@@ -429,6 +429,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/scripts/Canvas.js#L85-L97",
+      "note": "Blue selection halos only; SVG export omits them."
     }
   },
   "caveats": [

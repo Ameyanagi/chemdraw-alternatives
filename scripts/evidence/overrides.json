@@ -157,5 +157,21 @@
         "planLevel": "account"
       }
     }
+  },
+  "p62": {
+    "builtOn": {
+      "relation": "fork",
+      "editor": "ChemCanvas",
+      "libraries": [
+        "ChemCanvas",
+        "OASA"
+      ],
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/molecule.py#L2",
+      "note": "2D sketcher files are marked \"Adapted from ChemCanvas (GPLv3)\". OASA is vendored and credited in the README."
+    },
+    "caveats": [
+      "Custom noncommercial license. Bundled components, including GPL-licensed code, carry their own terms.",
+      "The sketcher saves molecules, not complete schemes."
+    ]
   }
 }

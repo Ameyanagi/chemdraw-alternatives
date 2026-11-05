@@ -429,6 +429,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/hessammehr/molsketch-cljs/blob/eed9c3d828ea33515ada891e8a18994e86e8351d/resources/public/css/style.css#L22",
+      "note": "Selection/hover halos only; clipboard SVG omits their external CSS."
     }
   },
   "caveats": [

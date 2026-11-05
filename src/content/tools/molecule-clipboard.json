@@ -2,7 +2,7 @@
   "id": "p87",
   "slug": "molecule-clipboard",
   "name": "Molecule Clipboard",
-  "rank": 60,
+  "rank": 48,
   "tier": "alternative",
   "tierReason": "Its JSME structure-input editor and RDKit inspector export individual structures rather than compose publication drawing documents.",
   "summary": "Browser tool for drawing, editing, inspecting, and sharing individual molecules.",
@@ -493,6 +493,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L1160",
+      "note": "JSME atom backgrounds work in editor; app image exports omit them."
     }
   },
   "caveats": [

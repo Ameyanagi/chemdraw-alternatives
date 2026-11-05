@@ -2,7 +2,7 @@
   "id": "p103",
   "slug": "sketchel-2",
   "name": "SketchEl 2",
-  "rank": 58,
+  "rank": 54,
   "tier": "alternative",
   "tierReason": "It is a standalone 2D molecule editor with vector SVG export, although its desktop workflow remains minimal and source-only.",
   "summary": "A standalone desktop application for drawing molecular structures and exporting vector diagrams.",
@@ -478,6 +478,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L19270",
+      "note": "Gray selection halos only; absent from SVG export."
     }
   },
   "caveats": [

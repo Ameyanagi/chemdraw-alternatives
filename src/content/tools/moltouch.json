@@ -2,7 +2,7 @@
   "id": "p132",
   "slug": "moltouch",
   "name": "MolTouch",
-  "rank": 74,
+  "rank": 70,
   "tier": "alternative",
   "tierReason": "Its documented workflow is browser-based molecular structure input and ChemSpider search, with MOL and canvas PNG output.",
   "summary": "A touch-friendly browser editor for drawing chemical structures and saving MOL files or PNG images.",
@@ -453,6 +453,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/Canvas_draw.js",
+      "note": "Renderer lacks user-controlled atom or bond background highlighting."
     }
   },
   "caveats": [

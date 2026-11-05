@@ -244,9 +244,10 @@ for path in sorted((research / "out").glob("p*.json")):
     for key, engine in (engines.get("features") or {}).items():
         if key in features and features[key]["status"] in ("yes", "partial") and engine.get("library"):
             features[key]["engine"] = {"library": engine["library"], "source": engine.get("source")}
-    ole = json.loads(p.read_text()) if (p := research / "ole" / f"{tool_id}.json").exists() else None
-    if ole and ole.get("source"):
-        features["office-ole"] = {"status": ole["status"], "evidence": "docs", "source": ole["source"], "note": ole.get("note")}
+    for folder, key in (("ole", "office-ole"), ("color", "color-highlight")):
+        found = json.loads(p.read_text()) if (p := research / folder / f"{tool_id}.json").exists() else None
+        if found and found.get("source") and found["status"] != "unknown":
+            features[key] = {"status": found["status"], "evidence": "docs", "source": found["source"], "note": found.get("note")}
     plans = json.loads(p.read_text()) if (p := research / "plans" / f"{tool_id}.json").exists() else {}
     level_of = {plan["name"]: plan["level"] for plan in plans.get("plans", [])}
     for key, gate in (plans.get("features") or {}).items():
@@ -299,9 +300,10 @@ playwright.stop()
 
 
 def order(tool: dict) -> tuple:
-    confirmed = sum(value["status"] in ("yes", "partial") for value in tool["features"].values())
+    has = [value for value in tool["features"].values() if value["status"] in ("yes", "partial")]
+    tested = sum(value["evidence"] == "tested" for value in has)
     pinned = {"p01": 0, "p02": 1}.get(tool["id"], 2)
-    return pinned, not (tool["hands"] and tool["hands"]["ran"]), -confirmed, tool["name"].lower()
+    return pinned, not (tool["hands"] and tool["hands"]["ran"]), -tested, -len(has), tool["name"].lower()
 
 
 content.mkdir(parents=True, exist_ok=True)

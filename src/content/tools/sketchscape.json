@@ -2,7 +2,7 @@
   "id": "p133",
   "slug": "sketchscape",
   "name": "SketchScape",
-  "rank": 64,
+  "rank": 50,
   "tier": "alternative",
   "tierReason": "A standalone 2D editor with structure cleanup, reaction arrows, captions and PNG output can produce simple chemical figures.",
   "summary": "A local browser editor for drawing molecules and reactions, with basic naming and rotatable 3D models.",
@@ -498,6 +498,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L394-L548",
+      "note": "Colors change atom glyphs and bond strokes; backgrounds match canvas."
     }
   },
   "caveats": [

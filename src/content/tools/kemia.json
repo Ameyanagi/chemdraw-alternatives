@@ -2,7 +2,7 @@
   "id": "p112",
   "slug": "kemia",
   "name": "Kemia",
-  "rank": 55,
+  "rank": 68,
   "tier": "embeddable",
   "tierReason": "Kemia provides a reusable browser structure and reaction editor, with incomplete document-authoring and export functionality.",
   "summary": "A JavaScript editor and chemistry toolkit for embedding 2D molecular structures and reactions in web pages.",
@@ -433,6 +433,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/view/atom_renderer.js#L135-L166",
+      "note": "Renderer API draws customizable colored halos around atoms and bonds."
     }
   },
   "caveats": [

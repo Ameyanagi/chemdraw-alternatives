@@ -2,7 +2,7 @@
   "id": "p127",
   "slug": "molbrett",
   "name": "Molbrett",
-  "rank": 23,
+  "rank": 21,
   "tier": "alternative",
   "tierReason": "Combines editable 2D chemical structures, annotations, diagram layout, and vector export for complete chemical figures.",
   "summary": "A browser whiteboard for drawing chemical structures, synthetic routes, and annotated chemistry diagrams.",

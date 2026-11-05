@@ -2,7 +2,7 @@
   "id": "p82",
   "slug": "chem-molecular-structure-editor",
   "name": "Chem+ Molecular Structure Editor",
-  "rank": 110,
+  "rank": 113,
   "tier": "alternative",
   "tierReason": "Official tutorials describe composing 2D structures into publication figures and exporting SVG, although live functionality remains unverified.",
   "summary": "A browser-based molecular drawing editor within Chem+ for creating structures and exporting publication figures.",

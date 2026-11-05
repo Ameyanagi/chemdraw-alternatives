@@ -2,7 +2,7 @@
   "id": "p06",
   "slug": "biovia-draw",
   "name": "BIOVIA Draw",
-  "rank": 85,
+  "rank": 87,
   "tier": "alternative",
   "tierReason": "It produces publication-quality 2D structures and reaction schemes for scientific documents and Office presentations.",
   "summary": "Windows software for drawing chemical structures, reactions, and chemically modified biological sequences for publications and informatics workflows.",

@@ -2,7 +2,7 @@
   "id": "p50",
   "slug": "elk-draw-rdkit",
   "name": "Elk_Draw RDKit",
-  "rank": 115,
+  "rank": 112,
   "tier": "alternative",
   "tierReason": "A standalone editor creates chemical drawing documents with structures, reactions, text and shapes, and supports editable Word objects.",
   "summary": "A Windows editor for chemical structures and reactions with RDKit descriptors, QSAR modeling, and editable Word integration.",
@@ -437,6 +437,12 @@
       "evidence": "docs",
       "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#what-elk_draw-rdkit-does",
       "note": "Windows Word supports embedded objects reopened by double-click in Elk_Draw."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/releases/tag/v0.9.5",
+      "note": "Shading and Colour supports adjustable halos extending beyond bonds."
     }
   },
   "caveats": [

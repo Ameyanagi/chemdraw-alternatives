@@ -2,7 +2,7 @@
   "id": "p111",
   "slug": "chemcanvasjs",
   "name": "ChemCanvasJS",
-  "rank": 65,
+  "rank": 66,
   "tier": "embeddable",
   "tierReason": "It provides real browser drawing and editable-SVG code, but remains an incomplete component prototype without a publication-document workflow.",
   "summary": "An unfinished browser editor for drawing molecules and experimenting with editable SVG structure exchange.",
@@ -445,6 +445,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L2844-L2934",
+      "note": "Temporary blue atom and bond hover highlights only."
     }
   },
   "caveats": [

@@ -2,7 +2,7 @@
   "id": "p105",
   "slug": "molprime",
   "name": "MolPrime+",
-  "rank": 117,
+  "rank": 116,
   "tier": "alternative",
   "tierReason": "A standalone mobile editor produces 2D chemical structure drawings and exports vector graphics in Word documents.",
   "summary": "Mobile editor for drawing chemical structures, calculating molecular properties, and exporting structure graphics.",
@@ -445,6 +445,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://cheminf20.org/2015/01/03/pains-filters-now-on-mobile-with-molprime/",
+      "note": "Atom backdrops available in PAINS and valence analysis views."
     }
   },
   "caveats": [

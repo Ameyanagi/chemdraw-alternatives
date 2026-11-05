@@ -2,7 +2,7 @@
   "id": "p129",
   "slug": "molecule-lab",
   "name": "Molecule Lab (The Freshman Mole)",
-  "rank": 30,
+  "rank": 13,
   "tier": "alternative",
   "tierReason": "It supports 2D reaction figures with captions, layout tools, editable projects and vector SVG export.",
   "summary": "A free browser editor for 2D chemical structures, reaction schemes and interactive 3D molecular models.",
@@ -489,6 +489,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/3151bf05159076067c610f5a61e38c458d6f78a7/src/widgets/chem/editor/kekule.chemEditor.baseEditors.js#L3187",
+      "note": "Selection halos only; SVG and PNG exports omit them."
     }
   },
   "caveats": [

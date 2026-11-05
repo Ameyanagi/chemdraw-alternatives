@@ -2,7 +2,7 @@
   "id": "p41",
   "slug": "molcanvas",
   "name": "MolCanvas",
-  "rank": 35,
+  "rank": 18,
   "tier": "alternative",
   "tierReason": "Its standalone editor combines molecular drawings, reaction arrows, text and polymer units with SVG export for publication figures.",
   "summary": "A chemical structure editor for drawing organic molecules, reaction schemes, and polymer repeat units.",
@@ -517,6 +517,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/75bbd6d74905d0b314948eb7ace334313fa16965/src/render.ts#L438-L499",
+      "note": "Blue selection halos only; exports explicitly remove selection and hover."
     }
   },
   "caveats": [

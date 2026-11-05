@@ -2,7 +2,7 @@
   "id": "p120",
   "slug": "chemliora",
   "name": "Chemliora",
-  "rank": 25,
+  "rank": 22,
   "tier": "alternative",
   "tierReason": "It creates styled 2D structures and reaction figures with vector SVG export for publication.",
   "summary": "A browser editor for drawing chemical structures, reaction schemes and polymers, with image export and approximate spectral predictions.",
@@ -537,6 +537,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb2ec58f1f8b.js",
+      "note": "Selection halos are removed from SVG and PNG exports."
     }
   },
   "caveats": [

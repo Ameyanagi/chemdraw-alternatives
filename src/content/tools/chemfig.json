@@ -2,7 +2,7 @@
   "id": "p39",
   "slug": "chemfig",
   "name": "chemfig",
-  "rank": 51,
+  "rank": 35,
   "tier": "alternative",
   "tierReason": "Its TeX workflow produces publication-grade 2D structures and reaction documents.",
   "summary": "A TeX package for typesetting 2D chemical structures, reaction schemes, and mechanisms in publication documents.",
@@ -457,6 +457,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://tex.stackexchange.com/questions/123967/fill-the-background-of-functional-groups-in-chemfig",
+      "note": "TikZ overlays add translucent backgrounds behind chosen atoms and bonds."
     }
   },
   "caveats": [

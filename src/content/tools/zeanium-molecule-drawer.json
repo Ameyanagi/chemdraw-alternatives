@@ -2,7 +2,7 @@
   "id": "p137",
   "slug": "zeanium-molecule-drawer",
   "name": "Zeanium Molecule Drawer",
-  "rank": 38,
+  "rank": 23,
   "tier": "alternative",
   "tierReason": "Editable drawing documents, reaction schemes, journal presets, and SVG export support standalone publication-oriented 2D figures.",
   "summary": "A free browser editor for drawing molecular structures, reaction schemes, and chemical figures with vector export.",
@@ -497,6 +497,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Selection backgrounds only; stripped from SVG and PNG exports."
     }
   },
   "caveats": [

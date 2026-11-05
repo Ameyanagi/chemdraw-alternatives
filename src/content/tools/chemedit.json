@@ -2,7 +2,7 @@
   "id": "p117",
   "slug": "chemedit",
   "name": "ChemEdit",
-  "rank": 82,
+  "rank": 83,
   "tier": "alternative",
   "tierReason": "End users can draw and save 2D chemical figures with SVG export and ACS styling inside Obsidian.",
   "summary": "Obsidian plugin for drawing chemical structures, editing chemistry files, and maintaining electronic lab notebooks.",
@@ -481,6 +481,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Ketcher provides eight-color background highlights for individual atoms and bonds."
     }
   },
   "caveats": [

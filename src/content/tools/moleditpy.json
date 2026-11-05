@@ -2,7 +2,7 @@
   "id": "p70",
   "slug": "moleditpy",
   "name": "MoleditPy",
-  "rank": 19,
+  "rank": 28,
   "tier": "alternative",
   "tierReason": "It provides implemented 2D structure drawing and vector SVG export, with publication-figure layout tools available through Reaction Sketcher.",
   "summary": "A desktop editor for drawing chemical structures, editing 3D molecules, and preparing computational chemistry inputs.",
@@ -525,6 +525,12 @@
       "evidence": "source",
       "source": "https://github.com/HiroYokoyama/moleditpy-plugins/blob/2ee63884f4cc5a67198074bc06b2a20dd4e09eed/plugins/Chat_with_Molecule_Neo_ChatGPT/chat_with_molecule_neo_chatGPT.py#L2166-L2193",
       "note": "Requires Chat with Molecule Neo plugin and configured model access."
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/HiroYokoyama/moleditpy_reaction_sketcher_plugin/blob/0f39338474011e01b294bf94d23365416963016a/reaction_sketcher/patcher.py#L1214-L1226",
+      "note": "Reaction Sketcher plugin adds selection halos; PNG/SVG exports remove them."
     }
   },
   "caveats": [

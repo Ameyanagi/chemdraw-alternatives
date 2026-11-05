@@ -512,6 +512,12 @@
       "evidence": "docs",
       "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#figures-for-office-programs",
       "note": "Office receives EMF vector pictures, without embedded chemical object editing."
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#highlights",
+      "note": "Colored tints beneath atoms and connecting bonds export consistently."
     }
   },
   "caveats": [

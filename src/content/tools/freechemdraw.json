@@ -2,7 +2,7 @@
   "id": "p16",
   "slug": "freechemdraw",
   "name": "FreeChemDraw",
-  "rank": 13,
+  "rank": 14,
   "tier": "alternative",
   "tierReason": "Users can compose 2D structures and reaction schemes with text and export vector SVG figures.",
   "summary": "A free browser workspace for drawing chemical structures and reactions, converting names, calculating properties, and exporting figures.",
@@ -567,6 +567,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Embedded Ketcher provides eight-color backgrounds behind atoms and bonds."
     }
   },
   "caveats": [

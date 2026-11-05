@@ -2,7 +2,7 @@
   "id": "p119",
   "slug": "chemeditor-chemrise",
   "name": "Chemeditor (Chemrise)",
-  "rank": 18,
+  "rank": 27,
   "tier": "alternative",
   "tierReason": "It creates complete 2D chemistry documents with editable Ketcher structures, rich text, HTML saving, and PDF printing.",
   "summary": "Browser-based editor for chemistry articles, reaction equations, and embedded molecular structure drawings.",
@@ -497,6 +497,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Embedded Ketcher provides eight-color background highlights for atoms and bonds."
     }
   },
   "caveats": [

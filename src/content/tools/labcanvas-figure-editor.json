@@ -2,7 +2,7 @@
   "id": "p73",
   "slug": "labcanvas-figure-editor",
   "name": "LabCanvas Figure Editor / MolDraw",
-  "rank": 81,
+  "rank": 82,
   "tier": "alternative",
   "tierReason": "Implemented molecular drawing and editable figure integration support publication-oriented 2D documents, with paid exports and documented vector output.",
   "summary": "Browser-based molecule and reaction drawing integrated with editable scientific figures.",

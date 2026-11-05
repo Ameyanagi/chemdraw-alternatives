@@ -2,7 +2,7 @@
   "id": "p48",
   "slug": "chemcanvas",
   "name": "ChemCanvas",
-  "rank": 34,
+  "rank": 29,
   "tier": "alternative",
   "tierReason": "Standalone drawing tools, multipage documents, rich text and vector export support publication-grade 2D chemical figures.",
   "summary": "A desktop editor for drawing 2D chemical structures, reaction schemes and mechanisms.",
@@ -477,6 +477,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/atom.py#L356-L366",
+      "note": "Atom and bond selection backgrounds are excluded from image exports."
     }
   },
   "caveats": [

@@ -2,7 +2,7 @@
   "id": "p22",
   "slug": "xdrawchem",
   "name": "XDrawChem",
-  "rank": 28,
+  "rank": 56,
   "tier": "alternative",
   "tierReason": "A standalone desktop editor provides chemical drawing documents with reaction schemes, annotations, templates, and layout controls.",
   "summary": "Desktop editor for drawing two-dimensional chemical structures, reaction schemes, and annotated chemistry figures.",
@@ -481,6 +481,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/text.cpp#L576",
+      "note": "Atom labels support colored background shapes."
     }
   },
   "caveats": [

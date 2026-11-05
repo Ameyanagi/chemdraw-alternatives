@@ -2,7 +2,7 @@
   "id": "p46",
   "slug": "penzene",
   "name": "Penzene",
-  "rank": 7,
+  "rank": 4,
   "tier": "alternative",
   "tierReason": "Its desktop editor produces publication figures with reaction schemes, journal styles, page layout and vector exports.",
   "summary": "A native desktop editor for chemical structures, reaction schemes and publication figures.",
@@ -535,6 +535,12 @@
       "evidence": "docs",
       "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/tutorials/office-latex.md#4-keep-an-editable-drawing-object-on-windows",
       "note": "Windows installer enables OLE objects with double-click editing and document updates."
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Canvas.cpp#L726",
+      "note": "Selection halos highlight atoms and bonds only in the editor."
     }
   },
   "caveats": [

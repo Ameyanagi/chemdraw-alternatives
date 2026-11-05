@@ -2,7 +2,7 @@
   "id": "p33",
   "slug": "webmolkit",
   "name": "WebMolKit",
-  "rank": 50,
+  "rank": 64,
   "tier": "embeddable",
   "tierReason": "It primarily provides a reusable molecular sketcher and chemistry library for embedding in web or Electron applications.",
   "summary": "A TypeScript toolkit for embedding molecular sketching, chemical rendering, file conversion, and cheminformatics in web applications.",
@@ -481,6 +481,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/gfx/DrawMolecule.ts#L324-L330",
+      "note": "Rendering API provides translucent colored atom circles, preserved in SVG."
     }
   },
   "caveats": [

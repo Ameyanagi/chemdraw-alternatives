@@ -450,6 +450,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/libs/gcp/atom.cc#L1393",
+      "note": "Selection squares mark unlabeled carbons only; image export hides them."
     }
   },
   "caveats": [

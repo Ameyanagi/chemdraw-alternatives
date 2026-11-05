@@ -2,7 +2,7 @@
   "id": "p80",
   "slug": "chemcad",
   "name": "ChemCAD",
-  "rank": 104,
+  "rank": 103,
   "tier": "alternative",
   "tierReason": "Its standalone 2D editor saves editable molecular projects and exports vector SVG drawings, although figure composition is limited.",
   "summary": "A desktop application for sketching chemical structures, translating names, planning reactions and exploring solvent workflows.",
@@ -462,6 +462,12 @@
       "evidence": "source",
       "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/reaction_planner.cpp",
       "note": "Optional API-key route planner; proposed products can enter editable canvas."
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/canvas_render.cpp#L329-L380",
+      "note": "Selection rings only; PNG captures them, SVG omits them."
     }
   },
   "caveats": [

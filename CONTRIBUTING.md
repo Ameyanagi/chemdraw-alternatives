@@ -2,7 +2,7 @@
 
 ## Suggest a tool
 
-Use the [Add a tool](https://github.com/Ameyanagi/chemdraw-alternatives/issues/new?template=add-tool.yml) form. A website or GitHub link is all we need. If you work on the tool, please say so.
+Use the [Add a tool](https://github.com/Ameyanagi/chemical-drawing-atlas/issues/new?template=add-tool.yml) form. A website or GitHub link is all we need. If you work on the tool, please say so.
 
 ## Correct a result
 

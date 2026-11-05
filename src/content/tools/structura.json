@@ -2,7 +2,7 @@
   "id": "p89",
   "slug": "structura",
   "name": "Structura (chem-structura)",
-  "rank": 33,
+  "rank": 43,
   "tier": "embeddable",
   "tierReason": "Primarily a React and standalone structure-input component, with a separate app workspace for Markush workflows.",
   "summary": "An embeddable 2D chemical structure editor for drawing molecules and patent Markush formulas.",
@@ -491,6 +491,12 @@
       "evidence": "docs",
       "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/enumerate.tsx#L27-L30",
       "note": "chem2office exports ChemDraw OLE requiring ChemDraw, not Structura."
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/editor/canvas/SelectionMarks.tsx#L39",
+      "note": "Blue selection halos only; omitted from SVG/PNG exports."
     }
   },
   "caveats": [

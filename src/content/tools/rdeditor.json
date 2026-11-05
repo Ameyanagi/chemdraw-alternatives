@@ -2,7 +2,7 @@
   "id": "p55",
   "slug": "rdeditor",
   "name": "rdEditor",
-  "rank": 63,
+  "rank": 65,
   "tier": "alternative",
   "tierReason": "Its reusable PySide molecule-editing widgets and automatic RDKit layout target structure input rather than publication drawing documents.",
   "summary": "A desktop molecule editor and reusable Python widget for editing RDKit structures.",
@@ -473,6 +473,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L365-L380",
+      "note": "Configurable atom selection halos persist in SVG returned by Python API."
     }
   },
   "caveats": [

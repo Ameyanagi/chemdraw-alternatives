@@ -2,7 +2,7 @@
   "id": "p97",
   "slug": "molchart",
   "name": "MolChart",
-  "rank": 27,
+  "rank": 17,
   "tier": "alternative",
   "tierReason": "Manual structure editing, reaction-scheme layout and vector SVG export support standalone publication-grade 2D chemical drawings.",
   "summary": "Browser editor for manually drawing 2D chemical structures and reaction schemes with an integrated AI assistant.",

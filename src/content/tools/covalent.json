@@ -2,7 +2,7 @@
   "id": "p124",
   "slug": "covalent",
   "name": "Covalent",
-  "rank": 31,
+  "rank": 7,
   "tier": "alternative",
   "tierReason": "Multipage layouts, ACS styling, formatted text and vector exports support finished 2D chemical drawing documents.",
   "summary": "A free browser editor for chemical structures, reaction schemes, and multipage drawing documents.",
@@ -513,6 +513,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chempirical.com/_/3iwgr3zje0/covalent/app.js",
+      "note": "Atom and bond selection halos are excluded from exports."
     }
   },
   "caveats": [

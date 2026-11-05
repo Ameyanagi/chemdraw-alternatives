@@ -2,7 +2,7 @@
   "id": "p47",
   "slug": "schrodinger-sketcher",
   "name": "Schrödinger Sketcher",
-  "rank": 37,
+  "rank": 39,
   "tier": "embeddable",
   "tierReason": "Its Qt widget and React wrapper provide chemical structure input for larger applications.",
   "summary": "An open-source editor for drawing molecules, reactions, and biomolecular sequences in desktop and web applications.",
@@ -517,6 +517,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/include/schrodinger/sketcher/image_generation.h#L76-L85",
+      "note": "Per-atom and per-bond colored halos through rendering APIs."
     }
   },
   "caveats": [

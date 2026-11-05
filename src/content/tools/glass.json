@@ -2,7 +2,7 @@
   "id": "p61",
   "slug": "glass",
   "name": "Glass",
-  "rank": 67,
+  "rank": 75,
   "tier": "embeddable",
   "tierReason": "Glass is primarily a JavaScript sketcher and viewer library intended for embedding in web pages.",
   "summary": "A JavaScript library for embedding chemical structure and reaction drawing in web pages.",
@@ -433,6 +433,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js#L515-L564",
+      "note": "Temporary selection outlines inherit bond color; no saved highlight styling."
     }
   },
   "caveats": [

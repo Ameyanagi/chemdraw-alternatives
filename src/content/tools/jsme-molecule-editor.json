@@ -2,7 +2,7 @@
   "id": "p26",
   "slug": "jsme-molecule-editor",
   "name": "JSME Molecule Editor",
-  "rank": 47,
+  "rank": 58,
   "tier": "embeddable",
   "tierReason": "JSME is primarily a browser component for entering molecules, reactions and search queries in other web applications.",
   "summary": "A browser-based editor for drawing molecules and reactions and entering chemical search queries in web applications.",
@@ -505,6 +505,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/JSME_atom_highlight_demo.html",
+      "note": "API sets colored backgrounds on individual atoms and bonds."
     }
   },
   "caveats": [

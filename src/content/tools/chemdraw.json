@@ -594,7 +594,17 @@
     "canvasLight": null,
     "canvasDark": null,
     "themes": null,
-    "memory": null,
+    "memory": {
+      "idleMb": 254.14,
+      "paclitaxelMb": 291.46,
+      "baselineMb": null,
+      "rssIdleMb": 477.38,
+      "rssPaclitaxelMb": 581.69,
+      "runs": 3,
+      "processes": 10,
+      "method": "Median physical footprint MiB; process descendants plus lsappinfo coalition helpers; 10-second waits.",
+      "note": "Idle 181.96–285.99 MiB; paclitaxel 222.35–294.21 MiB; protected user instance excluded."
+    },
     "observations": [
       "Paclitaxel received wedge and hashed stereobonds automatically.",
       "SVG exports were tightly cropped with transparent backgrounds.",

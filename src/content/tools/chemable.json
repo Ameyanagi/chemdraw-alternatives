@@ -2,7 +2,7 @@
   "id": "p79",
   "slug": "chemable",
   "name": "Chemable",
-  "rank": 46,
+  "rank": 41,
   "tier": "alternative",
   "tierReason": "Implemented desktop drawing, captions, reaction graphics and PNG export support standalone chemical figures, with incomplete vector export and UI connections.",
   "summary": "A desktop application for drawing chemical structures, reaction graphics and annotated molecular figures.",
@@ -474,6 +474,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/draw.ts#L402-L415",
+      "note": "Selection rings only; PNG and SVG omit them."
     }
   },
   "caveats": [

@@ -2,7 +2,7 @@
   "id": "p107",
   "slug": "sketchel",
   "name": "SketchEl",
-  "rank": 43,
+  "rank": 57,
   "tier": "alternative",
   "tierReason": "The complete standalone editor produces 2D molecular drawings and vector SVG/ODG exports suitable for publication workflows.",
   "summary": "A standalone Java editor for drawing 2D molecular structures and editing molecular datasheets.",
@@ -497,6 +497,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Blue atom selection halos appear during editing but disappear from exports."
     }
   },
   "caveats": [
@@ -545,7 +551,17 @@
     "canvasLight": null,
     "canvasDark": null,
     "themes": null,
-    "memory": null,
+    "memory": {
+      "idleMb": 113.45,
+      "paclitaxelMb": 117.6,
+      "baselineMb": null,
+      "rssIdleMb": 198.56,
+      "rssPaclitaxelMb": 202.36,
+      "runs": 3,
+      "processes": 1,
+      "method": "Three paired fresh launches; MOL startup argument; 10-second settles; summed process-tree phys_footprint medians (MiB).",
+      "note": "Separate empty/loaded launches preserve published MOL-argument route."
+    },
     "observations": [
       "Default drawings use black strokes and atom labels on a gray canvas.",
       "MOL coordinates were preserved; only viewport zoom was adjusted.",

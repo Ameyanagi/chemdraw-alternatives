@@ -2,7 +2,7 @@
   "id": "p76",
   "slug": "chemmd",
   "name": "ChemMD",
-  "rank": 75,
+  "rank": 63,
   "tier": "alternative",
   "tierReason": "Manual geometry, skeletal preview and vector SVG export support simple publication figures, although this remains an unreleased prototype.",
   "summary": "Text-first browser editor for creating 2D chemical structures and exporting SVG or PNG drawings.",
@@ -451,6 +451,12 @@
       "evidence": "none",
       "source": null,
       "note": null
+    },
+    "color-highlight": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/renderer.js",
+      "note": "Fixed backgrounds and automatic warnings only; no user highlights."
     }
   },
   "caveats": [
