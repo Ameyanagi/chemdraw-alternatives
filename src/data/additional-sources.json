@@ -1,0 +1,47 @@
+[
+  {
+    "id": "S01",
+    "label": "ReShiki 保存・共有 / Office・厳格な交換",
+    "url": "https://reshiki.com/guide/sharing/"
+  },
+  {
+    "id": "S02",
+    "label": "ReShiki Agent API / 制限",
+    "url": "https://reshiki.com/guide/agents/"
+  },
+  {
+    "id": "S03",
+    "label": "ReShiki Agent reference / 形式別API",
+    "url": "https://reshiki.com/developer/agent-reference/"
+  },
+  {
+    "id": "S04",
+    "label": "ChemDoodle 立体化学・命名",
+    "url": "https://www.chemdoodle.com/?group=web"
+  },
+  {
+    "id": "S05",
+    "label": "Marvin 学術無料制度の終了 / Chemicalize",
+    "url": "https://www.certara.com/announcement/modernizing-the-academic-program-and-retiring-chemicalize/"
+  },
+  {
+    "id": "ARCHIVE6",
+    "label": "Earlier research reference — https://github.com/Paivel/reactio-draw",
+    "url": "https://github.com/Paivel/reactio-draw"
+  },
+  {
+    "id": "ARCHIVE7",
+    "label": "Earlier research reference — https://github.com/epam/ketcher",
+    "url": "https://github.com/epam/ketcher"
+  },
+  {
+    "id": "ARCHIVE8",
+    "label": "Earlier research reference — https://lifescience.opensource.epam.com/ketcher/",
+    "url": "https://lifescience.opensource.epam.com/ketcher/"
+  },
+  {
+    "id": "USER01",
+    "label": "indigo-ketcher package — user-supplied reference; engine package, not an independent editor",
+    "url": "https://classic.yarnpkg.com/en/package/indigo-ketcher"
+  }
+]

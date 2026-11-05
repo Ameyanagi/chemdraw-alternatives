@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { href } from '../lib/paths';
+import additional from '../data/additional-sources.json';
+const products=(await getCollection('products')).sort((a,b)=>a.data.productId.localeCompare(b.data.productId));
+const count=new Set([...products.flatMap(p=>p.data.sources),...additional.map(s=>s.url)]).size;
+---
+<Layout title="References & attribution"><section class="wrap page-heading"><span class="eyebrow">THE SOURCE TRAIL</span><h1>Follow the references.</h1><p>{count} distinct source URLs. Each entry keeps its own review date and supporting references. A repository being public does not establish an open-source license.</p></section>
+ <section class="wrap references"><div class="notice">This index records sources used in the research. It is not a live link-health or current-release certification. Commit-pinned links preserve reviewed versions where available.</div>
+ {products.map(({id,data:p})=><section class="reference-entry" id={p.productId.toLowerCase()}><div><span class="eyebrow">{p.productId} · {p.checked}</span><h2><a href={href(`products/${id}/`)}>{p.name}</a></h2></div><ul>{p.sources.map(url=><li><a href={url}>{url}</a></li>)}</ul></section>)}
+ <section class="reference-entry"><h2>Supplemental documentation</h2><ul>{additional.map(s=><li><a href={s.url}>{s.label}</a></li>)}</ul></section>
+ <section class="reference-entry"><h2>Site implementation references</h2><ul><li><a href="https://docs.astro.build/en/guides/deploy/github/">Astro: GitHub Pages deployment</a></li><li><a href="https://docs.astro.build/en/guides/content-collections/">Astro: Content collections</a></li><li><a href="https://docs.astro.build/en/guides/integrations-guide/mdx/">Astro: MDX integration</a></li></ul></section></section>
+</Layout>

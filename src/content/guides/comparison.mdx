@@ -1,0 +1,42 @@
+---
+title: "Compare the workflow."
+description: "A first comparison of chemical drawing tools, from chemical meaning to editable documents and automation."
+---
+
+import ComparisonTable from '../../components/ComparisonTable.astro';
+
+This is a **demo comparison**, based on the research collected for this project. It does not assign scores or declare a winner. Published features, source-code observations, and hands-on results are different kinds of evidence.
+
+## A working comparison
+
+<ComparisonTable />
+
+## Four questions worth testing
+
+### 1. Does the chemistry survive the exchange?
+
+A successful import is only the beginning. Check connectivity, charges, radicals, stereochemistry, coordination and multicenter bonds, atom mapping, and reaction roles after a round trip. A visually similar figure can represent a different chemical graph.
+
+### 2. Can the figure be edited where it is used?
+
+SVG export, embedded native drawing data, and Office OLE editing are distinct capabilities. Test the exact application, operating system, paste format, and reopen workflow. Preserve the original file and compare both appearance and chemical meaning.
+
+### 3. What happens without a connection?
+
+Separate drawing and local calculations from first-launch downloads, authentication, naming services, PubChem retrieval, AI requests, and license checks. “Runs in a browser” does not establish a network requirement or an offline guarantee.
+
+### 4. What can an agent actually change?
+
+An API or MCP label says little about editing granularity. Test whether an agent can modify one atom in an existing GUI document, preserve unrelated positions and annotations, validate the result, undo the change, and recover from a failed operation.
+
+## Where the new candidates matter
+
+**Penzene** adds CLI/Python automation to a desktop drawing workflow. **ChemThisTry** brings structures, plots, and 3D views into figure composition. **BondCraft** is an important browser comparison for CDXML, stereochemistry, and biomolecule templates. Their source references and review dates are linked from the table above.
+
+These observations suggest that ReShiki's differentiation should be tested on **document fidelity, everyday editing, and reliable agent operations**, rather than feature presence alone. This is an editorial inference, not a benchmark result.
+
+## Read the evidence carefully
+
+The directory includes application families, wrappers, components, legacy tools, and automation servers. Its entry count is not a count of independent chemical engines. Features documented for one release, mode, or edition must not automatically be assigned to another.
+
+No screenshots are included yet. Future images should identify the product version, operating system, tested task, and capture date, and be accompanied by the editable test files and observed result.

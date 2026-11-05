@@ -1,0 +1,16 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { href } from '../../lib/paths';
+export async function getStaticPaths(){return (await getCollection('products')).map(entry=>({params:{id:entry.id},props:{entry}}));}
+const {entry}=Astro.props; const p=entry.data; const {Content}=await render(entry);
+const facts=[['Platform',p.platform],['License / terms',p.license],['Pricing snapshot',p.pricing],['Intended use',p.summary],['Limits & open questions',p.caveats]];
+---
+<Layout title={p.name} description={`${p.name}: source-reviewed research notes, license information, and primary references.`}>
+ <article class="wrap product-page"><a class="text-link" href={href('directory/')}>← All tools</a><div class="product-title"><span class="eyebrow">{p.productId} / {p.category}</span><h1>{p.name}</h1><div class="product-badges"><span class="badge">Source review</span><span>Sources checked {p.checked}</span><span>Hands-on pending</span></div></div>
+ <div class="notice">These are research notes, not a verified compatibility result. Original Japanese notes are retained to preserve the meaning of the research. Check the linked sources for current conditions.</div>
+ <dl class="facts">{facts.map(([label,value])=><div><dt>{label}</dt><dd lang="ja">{value}</dd></div>)}</dl>
+ <div class="prose"><Content /></div>
+ <section class="product-sources" aria-labelledby="sources-title"><h2 id="sources-title">Primary references</h2><p>Source claims can differ by edition, operating system, release, or commit.</p><ol>{p.sources.map((url,i)=><li><a href={url}>{i===0?'Primary product / repository source':`Supporting source ${i+1}`} ↗</a><span class="source-url">{url}</span></li>)}</ol></section>
+ </article>
+</Layout>

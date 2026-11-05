@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+import { href } from '../lib/paths';
+interface Props { title?: string; description?: string; }
+const {title='A field guide to chemical drawing',description='A source-backed research demo comparing ChemDraw alternatives: chemistry, document exchange, publishing, and automation.'}=Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const current=Astro.url.pathname;
+const nav=[['Compare','guides/comparison/'],['Directory','directory/'],['Methodology','guides/methodology/'],['References','references/']];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · Chemical Drawing Atlas</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#122c31" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href={href('favicon.svg')} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`${title} · Chemical Drawing Atlas`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="color-scheme" content="light" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <a class="brand" href={href()} aria-label="Chemical Drawing Atlas home"><span class="brand-icon" aria-hidden="true">⬡</span><span>Chemical Drawing <strong>Atlas</strong></span></a>
+      <nav aria-label="Main navigation">{nav.map(([label,url])=><a href={href(url)} aria-current={current===href(url)?'page':undefined}>{label}</a>)}</nav>
+      <a class="repo-link" href="https://github.com/Ameyanagi/chemdraw-alternatives">GitHub ↗</a>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="footer">
+      <div><a class="footer-brand" href={href()}>Chemical Drawing Atlas</a><p>An open notebook for choosing better chemistry tools.</p></div>
+      <div><p>Research demo · Prepared 05 Nov 2026</p><p>Maintained by the ReShiki developer. No vendor endorsement.</p><a href={href('guides/methodology/#editorial-disclosure')}>Editorial disclosure</a><span aria-hidden="true"> · </span><a href={href('references/')}>Sources & attribution</a></div>
+    </footer>
+  </body>
+</html>

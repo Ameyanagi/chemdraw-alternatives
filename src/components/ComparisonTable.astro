@@ -1,0 +1,17 @@
+---
+import { href } from '../lib/paths';
+const rows=[
+ ['P01','ChemDraw / Signals','Baseline; edition-specific features','Native format ecosystem; distinguish editions','Desktop and cloud contracts differ'],
+ ['P02','ReShiki','Desktop + browser; publishing and agents','CDXML; CDX clipboard paths need separate testing','Windows OLE; experimental agent API has GUI-document limits'],
+ ['P13','Ketcher','Web editor / embeddable component','Indigo-backed formats; mode-specific limits','Standalone WASM or service; wrappers are not independent engines'],
+ ['P42','ChemDraft','Native drawing + plugins / MCP / CLI','CDXML; reviewed code explicitly rejects binary CDX input','v1.0.0 distribution and reviewed main must be distinguished'],
+ ['P43','Octet Draw','Desktop; local naming / NMR advertised','CDX / CDXML advertised; round-trip testing pending','Office behavior depends on OS and exchange path'],
+ ['P46','Penzene','Qt / RDKit desktop; CLI + Python','CDX / CDXML import; editable-data SVG / PNG / PDF','GPL; vector insertion does not establish Office OLE editing'],
+ ['P47','Schrödinger Sketcher','RDKit drawing engine + web component','Exchange format details not established in reviewed README','BSD; native and WASM release artifacts'],
+ ['P48','ChemCanvas','Multi-page desktop drawing','CDXML / MRV / MOL / SMILES; editable SVG','GPL; Windows / Linux; PubChem retrieval uses network'],
+ ['P49','ChemThisTry','Ketcher + data plots + 3D + figure canvas','MOL / RXN / SDF / KET etc.; vector figure outputs','Apache; some functions use an optional Python sidecar'],
+ ['P66','BondCraft','Browser editor; stereo / biomolecule templates','CDXML import / export and EPS / SVG advertised','Academic / personal use free per author; commercial and OSS terms unconfirmed'],
+];
+---
+<p class="comparison-caption" id="matrix-description">Ten selected profiles, not a ranking. Every row is source-reviewed; hands-on verification is pending. Follow the product name for the dated primary references. Scroll horizontally on smaller screens.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Product comparison, horizontally scrollable" aria-describedby="matrix-description"><table class="comparison-table"><caption class="sr-only">Selected chemical drawing tools: workflow, exchange, and limits.</caption><thead><tr><th scope="col">Tool / sources</th><th scope="col">Workflow</th><th scope="col">Document exchange</th><th scope="col">Important boundary</th></tr></thead><tbody>{rows.map(([id,name,workflow,exchange,boundary])=><tr><th scope="row"><a href={href(`products/${id.toLowerCase()}/`)}>{name}</a></th><td>{workflow}</td><td>{exchange}</td><td>{boundary}</td></tr>)}</tbody></table></div>

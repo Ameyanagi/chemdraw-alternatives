@@ -1,0 +1,4 @@
+---
+import tasks from '../data/benchmark-plan.json';
+---
+<div class="table-scroll" tabindex="0" role="region" aria-label="Planned benchmark tasks"><table style="min-width:850px"><caption>Original benchmark protocol · all tasks pending</caption><thead><tr><th scope="col">ID / area</th><th scope="col">Task</th><th scope="col">Evidence to record</th></tr></thead><tbody>{tasks.map(t=><tr><th scope="row">{t.id}<br /><span lang="ja">{t.area}</span></th><td lang="ja">{t.task}<br /><small>{t.method}</small></td><td lang="ja">{t.record}<br /><strong>Hands-on pending</strong></td></tr>)}</tbody></table></div>

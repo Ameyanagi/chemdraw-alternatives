@@ -1,0 +1,9 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+export async function getStaticPaths(){return(await getCollection('guides')).map(entry=>({params:{id:entry.id},props:{entry}}));}
+const {entry}=Astro.props; const {Content}=await render(entry);
+---
+<Layout title={entry.data.title} description={entry.data.description}>
+ <article class="wrap guide"><header class="page-heading"><span class="eyebrow">THE RESEARCH NOTEBOOK</span><h1>{entry.data.title}</h1><p>{entry.data.description}</p></header><div class="prose"><Content /></div></article>
+</Layout>

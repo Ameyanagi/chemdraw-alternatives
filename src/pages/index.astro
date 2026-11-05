@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { href } from '../lib/paths';
+const products=await getCollection('products');
+const featured=[['01','Penzene','Desktop drawing meets scripting.','CDX / CDXML import · CLI + Python','p46'],['02','BondCraft','A browser editor worth watching.','CDXML exchange · stereochemistry','p66'],['03','ChemThisTry','From structures to complete figures.','Ketcher · plots · 3D · vector canvas','p49']];
+---
+<Layout>
+  <section class="hero wrap">
+    <div class="eyebrow"><span class="live-dot"></span> OPEN RESEARCH / DEMO EDITION</div>
+    <h1>Beyond the<br /><em>chemical sketch.</em></h1>
+    <div class="hero-bottom"><p>A field guide to ChemDraw alternatives.<br />Explore the tools, follow the evidence, and find what fits your chemistry.</p><a class="button" href={href('guides/comparison/')}>Explore the comparison <span aria-hidden="true">↗</span></a></div>
+    <div class="stats"><div><strong>{products.length}</strong><span>directory entries</span></div><div><strong>10</strong><span>demo comparison profiles</span></div><div><strong>20</strong><span>planned benchmark tasks</span></div><div class="stat-note">Source review, with references.<br /><strong>No hands-on rankings yet.</strong></div></div>
+  </section>
+  <section class="paper-band"><div class="wrap editorial-grid"><div><span class="eyebrow">THE QUESTION</span><h2>What makes a<br />useful alternative?</h2></div><div><p class="large-copy">A structure editor is only part of the workflow.</p><p>File exchange, chemical meaning, editable figures, and automation matter just as much. This notebook compares those boundaries and makes the gaps in the evidence visible.</p><a class="text-link" href={href('guides/methodology/')}>How we compare →</a></div></div></section>
+  <section class="wrap section"><div class="section-heading"><div><span class="eyebrow">START EXPLORING</span><h2>Three different directions.</h2></div><a class="text-link" href={href('directory/')}>Browse all {products.length} entries →</a></div><div class="cards">{featured.map(([n,title,desc,tags,id])=><a class="card" href={href(`products/${id}/`)}><span class="card-number">{n} / FIELD NOTES</span><h3>{title}</h3><p>{desc}</p><div class="card-bottom"><span>{tags}</span><span aria-hidden="true">↗</span></div></a>)}</div></section>
+  <section class="wrap section evidence-section"><div><span class="eyebrow">READ THE LABELS</span><h2>Evidence before a verdict.</h2><p>Published support is a useful starting point. It does not establish compatibility, chemical correctness, or day-to-day reliability.</p></div><dl class="evidence-list"><div><dt><span class="badge">Source review</span></dt><dd>A feature described in an official page, repository, or author statement.</dd></div><div><dt><span class="badge neutral">Not established</span></dt><dd>Missing evidence is a research question, not a claim that a feature is absent.</dd></div><div><dt><span class="badge amber">Hands-on pending</span></dt><dd>Round-trip files, timings, and screenshot evidence will be added after testing.</dd></div></dl></section>
+  <aside class="wrap disclosure"><strong>An open notebook, with an explicit perspective.</strong><p>This project is maintained by the developer of ReShiki, one of the products included. ReShiki receives the same source and testing requirements as every other entry. Product facts were reviewed on the individual dates shown, mostly 31 Oct–04 Nov 2026.</p></aside>
+</Layout>

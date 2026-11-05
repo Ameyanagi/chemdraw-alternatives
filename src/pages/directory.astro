@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { href } from '../lib/paths';
+const products=(await getCollection('products')).sort((a,b)=>a.data.productId.localeCompare(b.data.productId));
+const categories=[...new Set(products.map(p=>p.data.category))];
+---
+<Layout title="Tool directory">
+ <section class="wrap page-heading"><span class="eyebrow">THE DIRECTORY</span><h1>Map the landscape.</h1><p>{products.length} entries across applications, components, wrappers, and utilities. This is not a count of independent drawing engines or direct competitors.</p></section>
+ <section class="wrap section directory-section">
+  <div class="filters"><div><label for="search">Search tools & research notes</label><input id="search" type="search" placeholder="Try Ketcher, CDXML, Python…" /></div><div><label for="category">Type of tool</label><select id="category"><option value="">All categories</option>{categories.map(c=><option value={c}>{c}</option>)}</select></div><button id="reset" class="button secondary" type="button">Reset</button></div>
+  <p id="result-count" class="result-count" role="status" aria-live="polite">{products.length} entries</p>
+  <div class="directory-grid" id="directory">{products.map(({id,data:p})=><article class="directory-card" data-category={p.category} data-search={[p.name,p.productId,p.platform,p.license,p.summary,p.caveats,p.category].join(' ').toLowerCase()}><div class="tool-meta"><span>{p.productId}</span><span>{p.category}</span></div><h2><a href={href(`products/${id}/`)}>{p.name}</a></h2><p lang="ja">{p.summary}</p><div class="tool-footer"><span class="badge">Source review</span><span>Checked {p.checked}</span></div></article>)}</div>
+  <p id="no-results" hidden>No entries match these filters. Try a broader search or reset the filters.</p>
+ </section>
+</Layout>
+<script>
+ const search=document.querySelector<HTMLInputElement>('#search')!;
+ const category=document.querySelector<HTMLSelectElement>('#category')!;
+ const cards=[...document.querySelectorAll<HTMLElement>('.directory-card')];
+ const update=()=>{
+  const query=search.value.trim().toLowerCase(); let count=0;
+  for(const card of cards){const show=(!query||card.dataset.search?.includes(query))&&(!category.value||category.value===card.dataset.category);card.hidden=!show;if(show)count++;}
+  document.querySelector('#result-count')!.textContent=`${count} of ${cards.length} entries`;
+  (document.querySelector('#no-results') as HTMLElement).hidden=count!==0;
+ };
+ search.addEventListener('input',update);category.addEventListener('change',update);
+ document.querySelector('#reset')!.addEventListener('click',()=>{search.value='';category.value='';update();search.focus();});
+</script>
