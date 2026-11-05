@@ -1,0 +1,548 @@
+{
+  "id": "p85",
+  "slug": "bkchem-python-3-modernized",
+  "name": "BKChem Python 3 Modernized",
+  "rank": 86,
+  "tier": "alternative",
+  "tierReason": "A substantial standalone editor implements 2D chemical documents and vector exports, although source inspection reveals incomplete Python 3 modernization.",
+  "summary": "A Python 3 fork of BKChem for drawing 2D molecular structures, reactions, and vector chemical figures.",
+  "website": "https://github.com/vijaymasand/BKChem_python_3",
+  "repo": "https://github.com/vijaymasand/BKChem_python_3",
+  "docs": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/html/index.html",
+  "vendor": "Vijay Masand, Gaurav Masand and Krish Masand; original BKChem by Beda Kosata",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0-or-later",
+    "text": "GPL version 2 or later; package metadata abbreviates this as GPLv2.",
+    "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/README.md"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/vijaymasand/BKChem_python_3/releases"
+  },
+  "engine": {
+    "rendering": "Tkinter Canvas; custom SVG writer; Cairo and Piddle export backends",
+    "chemistry": "Bundled OASA",
+    "ui": "Tkinter with Pmw (Python MegaWidgets)",
+    "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/paper.py"
+  },
+  "languages": [
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/html/x56.html",
+      "note": "Bond buttons visible; automated canvas clicks produced no drawing."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/bond.py#L697",
+      "note": "Wedge, hatch and wavy adder bonds are implemented."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/html/x56.html",
+      "note": "Shift-click cycles double-bond centering and side."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/templates/templates.cdml#L12",
+      "note": "Built-in benzene and three- through eight-membered ring templates."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/templates/templates.cdml#L396",
+      "note": "Includes a cyclohexane chair template."
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/modes.py#L731",
+      "note": "Keyboard adds fixed-length chains; no drag-to-length chain tool."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/templates/templates.cdml#L352",
+      "note": "Includes purine and other heterocyclic structure templates."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/custom_templates_en.html",
+      "note": "Save As Template stores named reusable structures."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/group.py#L177",
+      "note": "Known groups including Ph and OMe can be expanded."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/atom.py#L241",
+      "note": "Charges and element labels supported; isotope editing is unverified."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/modes.py#L1710",
+      "note": "Radical, biradical and electron-pair marks."
+    },
+    "keyboard-drawing": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/modes.py#L666",
+      "note": "Keyboard label editing requires selecting atoms first."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/modes.py#L369",
+      "note": "Rectangle selection; rotation, mirroring and scaling use separate commands."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/modes.py#L1281",
+      "note": "Dedicated 3D rotation mode tilts molecular drawings."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/arrow.py#L53",
+      "note": "Forward, equilibrium, retrosynthetic and resonance arrow types."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/arrow.py#L429",
+      "note": "Editable curved electron and fishhook arrows."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/reaction.py#L31",
+      "note": "Native CDML stores reactant and product references to molecular objects."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/modes.py#L1710",
+      "note": "Includes a drawable pz orbital mark."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/html/x56.html",
+      "note": "Canvas text supports fonts, bold, italic, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/modes.py#L1615",
+      "note": "Rectangles, ellipses, polygons, polylines and bracket drawing modes."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/html/x83.html",
+      "note": "Aligns object edges or centers."
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/paper.py#L2139",
+      "note": "Regenerates unselected geometry around a selected connected bond fragment.",
+      "engine": {
+        "library": "OASA (bundled Python coordinate generator)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/paper.py#L2139-L2179"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/paper.py#L1991",
+      "note": "Document standards persist; personal-style saving uses removed Python 2 file()."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/context_menu.py#L275",
+      "note": "Individual objects expose line and area colors."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/paper.py#L1881",
+      "note": "Page dimensions and orientation; tabs represent separate documents."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/validator.py#L59",
+      "note": "Validator exists; lazy map() prevents molecule checks under Python 3.",
+      "engine": {
+        "library": "Ported from BKChem (Python validator using bundled OASA valence model)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/validator.py#L54-L71"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/paper.py#L1629",
+      "note": "Computes formula, molecular weight and monoisotopic mass.",
+      "engine": {
+        "library": "OASA (bundled Python periodic_table.formula_dict); Ported from BKChem (Python formula assembly)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/paper.py#L1638-L1652"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/plugins/fetch_from_webbook.py#L1",
+      "note": "Legacy NIST name lookup retains incompatible Python 2 imports.",
+      "engine": {
+        "library": "NIST Chemistry WebBook (remote HTTP lookup through legacy Python plugin)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/plugins/fetch_from_webbook.py#L13-L36"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/plugins/fetch_name_from_webbook.py#L1",
+      "note": "Legacy NIST name lookup, not systematic naming; Python 2 imports remain.",
+      "engine": {
+        "library": "NIST Chemistry WebBook (remote HTTP name lookup by InChI through legacy Python plugin)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/plugins/fetch_name_from_webbook.py#L66-L120"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/oasa/oasa/query_atom.py#L52",
+      "note": "Query atoms support R, A, Q, X and element lists."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/plugins/fetch_from_webbook.py#L1",
+      "note": "NIST structure-fetch plugin retains incompatible Python 2 imports.",
+      "engine": {
+        "library": "NIST Chemistry WebBook (remote HTTP lookup through legacy Python plugin)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/plugins/fetch_from_webbook.py#L13-L36"
+      }
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/plugins/CDXML.py#L42",
+      "note": "Read/write implemented; importer retains Python 3 type errors.",
+      "engine": {
+        "library": "Ported from BKChem (Python CDXML importer and exporter)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/plugins/CDXML.py"
+      }
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/plugins/molfile.py#L39",
+      "note": "MOL read/write; editor exposes .mol rather than an SDF route.",
+      "engine": {
+        "library": "OASA (bundled Python MOL reader and writer)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/oasa_bridge.py#L64-L75"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/oasa_bridge.py#L38",
+      "note": "Read/write implemented; legacy UI warnings conflict with bundled parser capabilities.",
+      "engine": {
+        "library": "OASA (bundled Python SMILES parser and writer)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/oasa_bridge.py#L38-L48"
+      }
+    },
+    "inchi": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/main.py#L1266",
+      "note": "Limited import; external-binary generation retains Python 3 string/bytes errors.",
+      "engine": {
+        "library": "OASA (bundled Python InChI parser); InChI (optional external local command-line executable for generation)",
+        "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/oasa/oasa/inchi.py#L774-L870"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/html/c112.html",
+      "note": "Exports plain SVG and editable CDML embedded in SVG."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/plugins/pdf_cairo.py#L29",
+      "note": "Vector PDF through Cairo; also includes a Piddle backend."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/plugins/image_export.py#L231",
+      "note": "PNG exporter offers 300 and 600 dpi presets."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/external_import_en.html",
+      "note": "Legacy API documentation; Python 2 examples require adaptation."
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/batch_mode_en.html",
+      "note": "Batch scripts hide the window but still require Tk/X."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/doc/custom_plugins_en.html",
+      "note": "XML descriptors register Python script and drawing-mode extensions."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Source distribution only; no tagged releases or binary installers. Runtime was not tested.",
+    "The full Python 3 port claim conflicts with incompatible validation, style, CDXML, batch and legacy-plugin code.",
+    "Legacy manual export lists and SMILES warnings disagree with current code; scripting examples retain Python 2 syntax."
+  ],
+  "github": {
+    "stars": 211,
+    "pushedAt": "2026-04-23T08:38:01Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "BKChem_python_3-main.zip",
+    "ran": false,
+    "failure": "GUI launched, but computer-use mouse actions did not open Tk menus or draw bonds. Stopped after about ten minutes; fixture imports and export checks could not be completed. This does not establish that those features are unsupported. --version also failed with TypeError: decoding str is not supported.",
+    "downloadBytes": 3142789,
+    "installedBytes": 28999680,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Default startup shows a blank white canvas with two toolbar rows.",
+      "No fixture structure was imported; startup-window.png records the test blocker.",
+      "Mouse actions did not open Tk menus under either attempted runtime.",
+      "The version command failed before printing a version.",
+      "Source metadata says 1.0.5; its About-version constant says 0.14.0-pre2."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 3142789,
+  "references": [
+    "https://github.com/vijaymasand/BKChem_python_3",
+    "https://github.com/vijaymasand/BKChem_python_3/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p85",
+    "relation": "fork",
+    "editor": "BKChem",
+    "libraries": [
+      "OASA",
+      "InChI"
+    ],
+    "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/main.py",
+    "note": "BKChem fork; bundled OASA; optional InChI executable provides identifier generation."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "BKChem custom bond and label renderer (Tkinter Canvas)",
+    "language": "Python",
+    "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/bond.py#L294-L414"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "HTML and XML are documentation and templates.",
+  "thirdParty": {
+    "summary": "Bundled OASA: GPL-2.0-or-later; PIDDLE: LGPL v2-or-later; PDFgen: permissive notice-retention and no-endorsement terms.",
+    "source": "https://github.com/vijaymasand/BKChem_python_3/blob/f30798c8c3c33e198bfdc1ad4a8ec7bf73714876/bkchem/oasa/oasa/__init__.py",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "BKChem",
+        "license": "GPL-2.0-or-later",
+        "source": "https://bkchem.zirael.org/download/bkchem-0.13.0.tar.gz"
+      },
+      {
+        "name": "OASA",
+        "license": "GPL-2.0-or-later",
+        "source": "https://bkchem.zirael.org/download/oasa-0.13.1.tar.gz"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

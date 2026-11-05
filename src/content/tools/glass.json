@@ -1,0 +1,531 @@
+{
+  "id": "p61",
+  "slug": "glass",
+  "name": "Glass",
+  "rank": 67,
+  "tier": "embeddable",
+  "tierReason": "Glass is primarily a JavaScript sketcher and viewer library intended for embedding in web pages.",
+  "summary": "A JavaScript library for embedding chemical structure and reaction drawing in web pages.",
+  "website": "https://github.com/joe-glass/glass",
+  "repo": "https://github.com/joe-glass/glass",
+  "docs": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/README.md",
+  "vendor": "Joseph Mason",
+  "license": {
+    "kind": "open-source",
+    "spdx": "Apache-2.0",
+    "text": "Apache License 2.0.",
+    "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/LICENSE"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/joe-glass/glass/releases"
+  },
+  "engine": {
+    "rendering": "HTML5 Canvas 2D",
+    "chemistry": "In-house JavaScript",
+    "ui": "jQuery with HTML/CSS",
+    "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/README.md"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js",
+      "note": "Single, double, triple drawn; history raises errors.",
+      "shot": {
+        "image": "evidence/glass/f-bonds-core.webp",
+        "caption": "Triple bond and benzene ring on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js",
+      "note": "Wedge and hash applied; no wavy tool visible.",
+      "shot": {
+        "image": "evidence/glass/f-stereo-bonds.webp",
+        "caption": "Solid wedge on the canvas with the wedge tool selected."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js",
+      "note": "Switches left/right; centered rendering is automatic."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js",
+      "note": "Six-membered and benzene rings drawn.",
+      "shot": {
+        "image": "evidence/glass/f-rings.webp",
+        "caption": "Benzene ring on the canvas beside ring tools."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No templates beyond ring tools visible."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/README.md#functions-currently-included",
+      "note": "Periodic-table elements and charges; isotope entry is not established."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/init.js",
+      "note": "Hovered atoms and bonds respond to element, charge, and stereo keys."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js",
+      "note": "Rectangle selection and movement; no rotation, flip, or selection-resize controls."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js",
+      "note": "Forward arrow drag failed with JavaScript error."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow tool visible."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/fileIO.js",
+      "note": "Exports reaction SMILES using the first arrow and molecule positions."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js",
+      "note": "Editable straight arrows only; brackets and curves are not implemented."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/fileIO.js",
+      "note": "Native drawings preserve font size and bond length; no separate presets."
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/init.js",
+      "note": "Global color schemes only; individual object colors are not stored."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass command visible."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name input command visible."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command visible."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view control visible."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML option in import or export dialog."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/README.md#functions-currently-included",
+      "note": "MOL import and export failed; SDF not tested."
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/README.md#functions-currently-included",
+      "note": "SMILES import and export failed."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No SVG option in export dialog."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF option in export dialog."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG option in export dialog."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/README.md#to-get-started",
+      "note": "Documented JavaScript constructor and configuration options."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/README.md#to-get-started",
+      "note": "Instantiate Glass inside a supplied DOM element."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Requires webpage integration and jQuery; no tagged releases or packaged application.",
+    "The expected GitHub Pages demo could not be reached on 2026-11-05.",
+    "Main-branch fileIO.js has a duplicate let declaration that prevents JavaScript parsing."
+  ],
+  "github": {
+    "stars": 1,
+    "pushedAt": "2022-02-18T21:39:43Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://github.com/joe-glass/glass",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "SMILES and MOL imports failed; file I/O script did not load.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "SMILES and MOL imports failed; file I/O script did not load.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "No 3D view found in the editor.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/glass/canvas.webp",
+    "canvasLight": "evidence/glass/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "MOL import fails; molecule absent from screenshot."
+    },
+    "memory": null,
+    "observations": [
+      "No HTML demo was bundled; the repository was embedded in a minimal local page.",
+      "The fileIO.js script fails to parse because index2 is declared twice.",
+      "MOL import reports that importMol is not a function.",
+      "Drawing changes appear, but each canvas mousedown raises an exportGlass error.",
+      "The export dialog offers Glass, Mol2000 and SMILES; all failed."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/joe-glass/glass",
+    "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/README.md"
+  ],
+  "builtOn": {
+    "id": "p61",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js#L609",
+    "note": "Custom Canvas rendering and in-house chemistry; jQuery is UI only."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Glass Canvas 2D renderer",
+    "language": "JavaScript",
+    "source": "https://github.com/joe-glass/glass/blob/e210ea7a1b88c87ff98ea1793ad29417e43061bc/canvasfn.js#L609"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "CSS styles the editor.",
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

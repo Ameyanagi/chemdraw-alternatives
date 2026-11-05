@@ -1,16 +1,30 @@
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const files=(await fs.readdir('src/content/products')).filter(f=>f.endsWith('.md'));
-assert.equal(files.length,66,'The demo migration should preserve all 66 entries. Update this baseline intentionally when adding a product.');
-const ids=new Set();
-for(const file of files){
- const content=await fs.readFile(`src/content/products/${file}`,'utf8');
- const id=JSON.parse(content.match(/^productId: (.+)$/m)?.[1]??'null');
- assert(id&&!ids.has(id),`Missing or duplicate product ID in ${file}`);ids.add(id);
- assert(content.includes('evidence: "Source review"'),`Evidence level missing: ${file}`);
- assert(content.includes('checked: '),`Review date missing: ${file}`);
- const sources=JSON.parse(content.match(/^sources: (.+)$/m)?.[1]??'[]');
- assert(sources.length>0,`References missing: ${file}`);
- for(const url of sources)assert.equal(new URL(url).protocol,'https:',`Use HTTPS references: ${file}`);
+
+const { features } = JSON.parse(await fs.readFile('src/data/features.json', 'utf8'));
+const ids = new Set(features.map((feature) => feature.id));
+const files = (await fs.readdir('src/content/tools')).filter((file) => file.endsWith('.json'));
+const tools = await Promise.all(files.map(async (file) => JSON.parse(await fs.readFile(`src/content/tools/${file}`, 'utf8'))));
+
+assert(files.length >= 66, 'A tool record was lost; removing a tool must be intentional.');
+assert.equal(new Set(tools.map((tool) => tool.id)).size, tools.length, 'Duplicate tool ids');
+const byRank = [...tools].sort((a, b) => a.rank - b.rank);
+assert.equal(byRank[0].slug, 'chemdraw', 'ChemDraw is listed first');
+assert.equal(byRank[1].slug, 'reshiki', 'ReShiki is listed second');
+
+for (const tool of tools) {
+  assert(tool.license.source, `License source missing: ${tool.name}`);
+  for (const [id, value] of Object.entries(tool.features)) {
+    assert(ids.has(id), `Unknown feature ${id}: ${tool.name}`);
+    if (value.status !== 'unknown' && ['docs', 'source'].includes(value.evidence)) {
+      assert(value.source, `A documented claim needs a source: ${tool.name} ${id}`);
+    }
+    if (value.evidence === 'none') assert.equal(value.status, 'unknown', `Claim without evidence: ${tool.name} ${id}`);
+  }
+  if (tool.id === 'p01') {
+    for (const capture of tool.hands?.captures ?? []) {
+      assert(!capture.image || !/window/.test(capture.image), 'ChemDraw UI screenshots must not be published');
+    }
+  }
 }
-console.log(`Content checks passed: ${files.length} entries with unique IDs, evidence labels, dates and HTTPS references.`);
+console.log(`Content checks passed: ${tools.length} tools, ${features.length} features.`);

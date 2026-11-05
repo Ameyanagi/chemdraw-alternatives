@@ -1,0 +1,482 @@
+{
+  "id": "p31",
+  "slug": "jsdraw",
+  "name": "JSDraw",
+  "rank": 102,
+  "tier": "embeddable",
+  "tierReason": "JSDraw is primarily a JavaScript framework for embedding chemical and biological structure editing in other applications.",
+  "summary": "A commercial JavaScript SDK for embedding chemical and biological structure editors in web applications.",
+  "website": "http://elncloud.com/jsdrawapp/jsdraw/",
+  "repo": null,
+  "docs": "https://www.scilligence.com/sdk/jsdraw/index.html",
+  "vendor": "Scilligence Corporation",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Proprietary commercial license; educational use is advertised as free.",
+    "source": "http://elncloud.com/jsdrawapp/jsdraw/"
+  },
+  "price": {
+    "text": "Commercial pricing by quotation; free for education (checked 2026-11-05).",
+    "source": "http://elncloud.com/jsdrawapp/jsdraw/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": true,
+    "offline": true
+  },
+  "version": {
+    "name": "7.4.0.52930",
+    "date": null,
+    "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
+  },
+  "engine": {
+    "rendering": "SVG; legacy VML fallback documented",
+    "chemistry": null,
+    "ui": null,
+    "source": "http://elncloud.com/jsdrawapp/jsdraw/"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/BONDTYPES.html",
+      "note": "Single, double and triple bond types; keyboard bond-order editing."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/BONDTYPES.html",
+      "note": "Wedge, hash and wiggly bond types."
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/Form.htm",
+      "note": "Coordination, ionic and dotted bonds appear in the editor toolbar."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/Form.htm",
+      "note": "Benzene and three- through eight-membered ring tools."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/Abbreviation.htm",
+      "note": "Ph and COOH are represented as chemical superatom groups."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Atom.html",
+      "note": "Atom charge, isotope and element labels are documented."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Atom.html",
+      "note": "Atoms have a documented radical property."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/Abbreviation.htm",
+      "note": "Hover over atoms and type element keys or Enter."
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Drawer.html#___drawArrow",
+      "note": "Forward and reversible arrow styles."
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Mol.html#___getRxnfile",
+      "note": "RXN import/export stores reactants and products as molecular structures."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/ReactionMap.htm",
+      "note": "Manual reactant-to-product atom mapping and mapping removal."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/Shapes.htm",
+      "note": "Editable rectangle and curve objects in the example drawing."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Mol.html#___setColor",
+      "note": "Color changes can apply only to selected objects."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Picture.html",
+      "note": "Picture objects accept base64 image contents or an image URL."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/TLC.html",
+      "note": "Dedicated TLC object."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html#___Editor",
+      "note": "Structure errors can be highlighted in red boxes.",
+      "engine": {
+        "library": "In-house (JSDraw2.Mol.setHCount, JavaScript)",
+        "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Mol.html#___getFormula",
+      "note": "Molecular formula, molecular weight and exact mass.",
+      "engine": {
+        "library": "In-house (JSDraw2.FormulaParser, JavaScript)",
+        "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/N2s.htm",
+      "note": "Requires JSDraw Web Services; accepts chemical and trade names.",
+      "engine": {
+        "library": "JSDraw Web Services (remote server; backend library undisclosed)",
+        "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
+      }
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/RGroup.htm",
+      "note": "Editable R-group definitions and alternative substructures."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://scilligence.com/regmol-7-4-release-notes/",
+      "note": "JSDraw polymer repeats are rendered and exported in Molfile."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/SequenceEditor.html",
+      "note": "Protein, gene, RNA and DNA sequences; FASTA input/output."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/",
+      "note": "MOL import/export; SDF read/write through JSDraw.Table.",
+      "engine": {
+        "library": "In-house (JSDraw2.Mol and JSDraw2.Table, JavaScript)",
+        "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "http://elncloud.com/jsdrawapp/jsdraw/N2s.htm",
+      "note": "Import requires Web Services; SMILES export is documented in SDK.",
+      "engine": {
+        "library": "In-house (JavaScript export); JSDraw Web Services (remote server import)",
+        "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html#___getRxnfile",
+      "note": "RXN import/export, including V3000 output."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html#___getSvg",
+      "note": "getSvg returns vector SVG data."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html",
+      "note": "Documented JavaScript API."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html#___Editor",
+      "note": "Toolbar plugins provide an icon, tooltip and click callback."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.scilligence.com/sdk/jsdraw/logical/scilligence/JSDraw2/Editor.html",
+      "note": "JavaScript constructor embeds the editor inside an HTML DIV."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Commercial deployment requires a Scilligence license; educational use is advertised as free.",
+    "Name and SMILES import require JSDraw Web Services.",
+    "Public SDK docs show 7.0.0; the official demo serves 7.4.0.52930."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.scilligence.com/sdk/jsdraw/index.html",
+    "https://scilligence.com/chemical-vendors/"
+  ],
+  "builtOn": {
+    "id": "p31",
+    "relation": "original",
+    "editor": null,
+    "libraries": null,
+    "source": "https://scilligence.com/chemical-vendors/",
+    "note": "Scilligence identifies JSDraw as proprietary; third-party chemistry dependencies could not be established."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "JSDraw Atom/Bond/Drawer renderer",
+    "language": "JavaScript",
+    "source": "http://elncloud.com/jsdrawapp/jsdraw/Scilligence.JSDraw2.Pro.js"
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

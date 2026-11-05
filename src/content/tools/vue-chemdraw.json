@@ -1,0 +1,539 @@
+{
+  "id": "p90",
+  "slug": "vue-chemdraw",
+  "name": "vue-chemdraw (0chem)",
+  "rank": 69,
+  "tier": "embeddable",
+  "tierReason": "It is distributed as a Vue 3 structure-editor component for embedding in other applications.",
+  "summary": "A Vue 3 component for embedding a browser-based chemical structure editor.",
+  "website": "https://0chem.com",
+  "repo": "https://gitee.com/linghuaxue/vue-chemdraw",
+  "docs": "https://0chem.com/doc/start",
+  "vendor": "0chem.com (Shi Yan)",
+  "license": {
+    "kind": "open-source",
+    "spdx": null,
+    "text": "npm declares ISC; repository LICENSE contains GPL-3.0.",
+    "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://www.npmjs.com/package/vue-chemdraw"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "1.4.6",
+    "date": "2024-09-12",
+    "source": "https://registry.npmjs.org/vue-chemdraw"
+  },
+  "engine": {
+    "rendering": "Custom SVG DOM renderer (npm 1.4.6)",
+    "chemistry": "In-house atom/bond model, ring algorithms and MOL parser",
+    "ui": "Vue 3",
+    "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/main.vue"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeWeb/views/toolbar.vue",
+      "note": "Single, double and triple drawn; changing order unconfirmed.",
+      "shot": {
+        "image": "evidence/vue-chemdraw/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds drawn on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeDraw/Draw/DrawBond.js",
+      "note": "Solid and hashed wedges drawn; wavy placement unconfirmed.",
+      "shot": {
+        "image": "evidence/vue-chemdraw/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds drawn on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeEdit/Edit/DrawChange.js",
+      "note": "Repeated clicks cycle centered and both side placements."
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeEdit/Edit/DrawRing.js",
+      "note": "Benzene drawn; five-membered tool also visible.",
+      "shot": {
+        "image": "evidence/vue-chemdraw/f-rings.webp",
+        "caption": "Ring tools and a benzene ring on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeEdit/Edit/DrawFast.js",
+      "note": "Dragging progressively adds carbon atoms with snapped bond angles."
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Only ring tools found; no broader library visible."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeDraw/Draw/DrawAtom.js",
+      "note": "Charges and element replacement; isotope rendering unfinished, arbitrary-label authoring undocumented.",
+      "shot": {
+        "image": "evidence/vue-chemdraw/f-atom-labels.webp",
+        "caption": "Element and charge controls above a structure with oxygen labels."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeEdit/Edit/DrawTransform.js",
+      "note": "Rectangular selection, move, rotate and resize; no lasso implementation."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Forward and equilibrium arrows drawn.",
+      "shot": {
+        "image": "evidence/vue-chemdraw/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows drawn on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved electron-pushing arrow control found."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Color palette and swatches visible; application untested.",
+      "shot": {
+        "image": "evidence/vue-chemdraw/f-color.webp",
+        "caption": "Color swatches and palette control above the drawing."
+      }
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Statistics entry did nothing when clicked."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No chemical-name input found."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeStream/ctfile.js",
+      "note": "Numbered R-label import only; atom-list handling unfinished."
+    },
+    "polymers": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Group control shown; chemical repeat representation unverified."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D model view found in inspected tabs."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML import or export option found."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeStream/ctfile.js",
+      "note": "MOL text did not render; Save did nothing."
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SMILES in MOL input did not produce a structure."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://0chem.com/doc/introduction",
+      "note": "Save did nothing; no SVG option appeared."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Save did nothing; no PDF option appeared."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://0chem.com/doc/introduction",
+      "note": "Save did nothing; no PNG option appeared."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://0chem.com/doc/start",
+      "note": "Vue registration documented; structure-control API documentation unavailable."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://0chem.com/doc/start",
+      "note": "Documents Vue plugin registration and the draw-0chem component."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "2024 beta with Chinese UI and placeholder controls; runtime usability untested.",
+    "npm declares ISC, while the repository LICENSE contains GPL-3.0.",
+    "README's CSS-only rendering claim conflicts with SVG code; advertised image exports lack released handlers."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "L1XkLMu0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://0chem.com/draw",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "MOL text entered; create left the built-in sample unchanged.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "SMILES and MOL attempts left the built-in sample unchanged.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No 3D view found; cholesterol test skipped.",
+        "structure": null
+      }
+    ],
+    "canvas": null,
+    "canvasLight": "evidence/vue-chemdraw/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Paclitaxel import failed; screenshot shows built-in sample."
+    },
+    "memory": null,
+    "observations": [
+      "The editor opens with a complex example already on the canvas.",
+      "The New and Save sidebar entries did not open a blank document or save dialog.",
+      "MOL input is a text area; attempted fixture imports left the example unchanged.",
+      "The About version button produced no visible response; L1XkLMu0 identifies the served editor bundle.",
+      "Supplemental screenshots show the failed import and manually drawn test tools."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.npmjs.com/package/vue-chemdraw",
+    "https://registry.npmjs.org/vue-chemdraw"
+  ],
+  "builtOn": {
+    "id": "p90",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/main.vue",
+    "note": "Release 1.4.6 uses its own SVG editor, molecule model, and MOL parser."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "0chem in-house SVG DOM molecule renderer",
+    "language": "JavaScript",
+    "source": "https://gitee.com/linghuaxue/vue-chemdraw/blob/d89eabd571f7c4a796d840739b2ec8311266a607/v1.4/plugin/draw-0chem-js/MoleculeDraw/Draw/DrawBond.js"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "Vue templates and CSS provide presentation.",
+  "thirdParty": {
+    "summary": "Includes OFL-1.1 font derivatives (Source Han; font-only share-alike).",
+    "source": "https://github.com/adobe-fonts/source-han-sans/blob/a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2/LICENSE.txt",
+    "notice": null,
+    "libraries": []
+  }
+}

@@ -1,0 +1,661 @@
+{
+  "id": "p12",
+  "slug": "kendraw",
+  "name": "Kendraw",
+  "rank": 10,
+  "tier": "alternative",
+  "tierReason": "It provides a standalone drawing workspace with reaction tools, text, shapes, journal settings, and publication-ready SVG export.",
+  "summary": "An open-source browser application for drawing chemical structures and reactions, calculating molecular properties, and predicting NMR spectra.",
+  "website": "https://kendraw.fdp.expert/",
+  "repo": "https://github.com/electrosenpai/kendraw",
+  "docs": "https://github.com/electrosenpai/kendraw#readme",
+  "vendor": "Jean-Baptiste Donnette",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT-licensed application; embedded Ketcher and Indigo use Apache-2.0.",
+    "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/README.md#why-kendraw"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/electrosenpai/kendraw/releases"
+  },
+  "engine": {
+    "rendering": "SVG through Ketcher/Raphael; Indigo generates PNG and SVG exports.",
+    "chemistry": "Indigo WebAssembly in Ketcher; RDKit and Indigo in the Python backend",
+    "ui": "React",
+    "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/THIRD-PARTY-NOTICES.md#relationship"
+  },
+  "languages": [
+    "TypeScript",
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#drawing-bonds",
+      "note": "Drew single, double and triple bonds; MOL confirms orders.",
+      "shot": {
+        "image": "evidence/kendraw/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L27",
+      "note": "Drew wedge, hashed and wavy bonds; MOL confirms types.",
+      "shot": {
+        "image": "evidence/kendraw/f-stereo-bonds.webp",
+        "caption": "Wedge, hashed and wavy bonds on the drawing canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L40",
+      "note": "Dative and hydrogen bond tools."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#templates-toolbar",
+      "note": "Placed benzene and cyclohexane from ring toolbar.",
+      "shot": {
+        "image": "evidence/kendraw/f-rings.webp",
+        "caption": "Benzene and cyclohexane rings on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/templates/library.sdf#L8258",
+      "note": "Built-in cyclohexane chair templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/editor/tool/chain.ts#L151",
+      "note": "Drag distance determines carbon chain length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#templates-toolbar",
+      "note": "Inserted bicyclo[1.1.1]pentane from structure library.",
+      "shot": {
+        "image": "evidence/kendraw/f-templates.webp",
+        "caption": "Structure Library showing bicyclic templates."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#templates-toolbar",
+      "note": "Save drawings into the reusable User Templates library.",
+      "shot": {
+        "image": "evidence/kendraw/f-custom-templates.webp",
+        "caption": "Save Structure dialog with Save to Templates button."
+      }
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#functional-groups",
+      "note": "Functional groups retain chemistry and support expansion."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/data/schema/struct-schema.js#L21",
+      "note": "Atom properties include labels, charges and isotope masses."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/data/schema/struct-schema.js#L80",
+      "note": "Monoradical and singlet/triplet diradical atom properties."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/state/handleHotkeysOverItem.ts#L204",
+      "note": "Keyboard atom tools modify hovered atoms."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#changing-structure-display",
+      "note": "Lasso, rotation and flipping; structure resizing unverified."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-core/src/domain/entities/rxnArrow.ts#L24",
+      "note": "Drew equilibrium arrow; forward and retrosynthetic tools are visible.",
+      "shot": {
+        "image": "evidence/kendraw/f-reaction-arrows.webp",
+        "caption": "Equilibrium arrow on the drawing canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-core/src/domain/entities/rxnArrow.ts#L24",
+      "note": "Drew an elliptical arc with a half arrowhead.",
+      "shot": {
+        "image": "evidence/kendraw/f-mechanism-arrows.webp",
+        "caption": "Curved arrow on the drawing canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/README.md#ketcher-api",
+      "note": "Ketcher represents reactions and exports RXN."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#drawing-reactions",
+      "note": "Manual and automatic reaction mapping in Ketcher."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/views/modal/components/Text/SpecialSymbolsList/SpecialSymbolsList.tsx#L22",
+      "note": "Symbol palette includes reaction arrows, Greek letters, temperatures and Ångström."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/views/modal/components/Text/Text.tsx#L52",
+      "note": "Free text supports font settings, superscript and subscript."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#drawing-graphical-objects",
+      "note": "Ellipses, rectangles, lines and chemical S-group brackets."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#inability-to-change-s-group",
+      "note": "Chemical S-groups move together; Remove Abbreviation separates their atoms."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/README.md#editor-builtin-tools",
+      "note": "Clean Up regularizes bond lengths and angles.",
+      "engine": {
+        "library": "Indigo (indigo-ketcher 1.40.0 WebAssembly through Ketcher 3.12.0); RDKit native Python bindings for alternate-canvas backend cleanup",
+        "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/backend/kendraw_chem/structure.py#L70"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#acs-american-chemical-society-style",
+      "note": "Built-in ACS style settings.",
+      "shot": {
+        "image": "evidence/kendraw/f-journal-styles.webp",
+        "caption": "Settings dialog with Set ACS Settings button."
+      }
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/views/modal/components/meta/Settings/Settings.tsx#L84",
+      "note": "Bond and font settings can be saved and reloaded."
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Individual atom/bond highlights; direct recoloring unverified."
+    },
+    "pages": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/public-beta-release-notes.md#three-limitations-to-mention-honestly",
+      "note": "Multipage documents are explicitly deferred."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#adding-images-on-the-canvas",
+      "note": "Add Image places PNG and SVG pictures."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#drawing-atoms",
+      "note": "Invalid valence is underlined; structure checking is available.",
+      "shot": {
+        "image": "evidence/kendraw/f-valence-check.webp",
+        "caption": "Settings dialog with valence warnings enabled."
+      },
+      "engine": {
+        "library": "Ketcher TypeScript valence rules; Indigo WebAssembly structure checker; In-house TypeScript side-panel validation",
+        "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-core/src/domain/entities/atom.ts#L446"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#stereochemistry",
+      "note": "Ketcher computes R/S, r/s and E/Z descriptors.",
+      "engine": {
+        "library": "Indigo (indigo-ketcher 1.40.0 WebAssembly through Ketcher 3.12.0)",
+        "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L158"
+      }
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/ui/src/PropertyPanel.tsx#L190",
+      "note": "Ketcher calculates caffeine correctly; surrounding panel reports incorrect values.",
+      "shot": {
+        "image": "evidence/kendraw/f-formula-mass.webp",
+        "caption": "Calculated Values dialog showing molecular weight and exact mass."
+      },
+      "engine": {
+        "library": "RDKit native Python bindings (Descriptors and rdMolDescriptors); In-house TypeScript formula/MW display; Indigo WebAssembly in Ketcher's calculation dialog",
+        "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/backend/kendraw_chem/compute.py#L63"
+      }
+    },
+    "properties": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/ui/src/PropertyPanel.tsx#L212",
+      "note": "Panel computes logP and tPSA, but caffeine identifiers are incorrect.",
+      "shot": {
+        "image": "evidence/kendraw/f-properties.webp",
+        "caption": "Structure beside the properties panel with logP and tPSA."
+      },
+      "engine": {
+        "library": "RDKit native Python bindings (Descriptors, Lipinski and rdMolDescriptors)",
+        "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/backend/kendraw_chem/compute.py#L63"
+      }
+    },
+    "name-to-structure": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/ui/src/MoleculeSearch.tsx#L117",
+      "note": "PubChem name lookup; Ketcher insertion is not wired.",
+      "engine": {
+        "library": "PubChem PUG REST HTTP API through an In-house TypeScript client",
+        "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/io/src/pubchem/pubchem-client.ts#L17"
+      }
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/backend/kendraw_chem/naming.py#L1",
+      "note": "Naming service is an unimplemented placeholder."
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/nmr/src/NmrPanel.tsx#L442",
+      "note": "Built-in additive ¹H/¹³C predictions; backend required.",
+      "engine": {
+        "library": "In-house Python additive 1H/13C predictor; RDKit native Python bindings for molecular analysis",
+        "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/backend/kendraw_chem/nmr/nmr_service.py#L67"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#drawing-r-groups",
+      "note": "R-groups, attachment points and query atoms."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#marking-s-groups",
+      "note": "Structural repeating units include polymer connectivity semantics."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#ketcher-macromolecules-mode",
+      "note": "Peptide, RNA/DNA, sequence and HELM tools."
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts#L732",
+      "note": "Image recognition explicitly unsupported in bundled standalone mode."
+    },
+    "database-lookup": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/ui/src/MoleculeSearch.tsx#L117",
+      "note": "PubChem fetching works; Ketcher insertion is not wired.",
+      "engine": {
+        "library": "PubChem PUG REST and autocomplete HTTP APIs through an In-house TypeScript client",
+        "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/io/src/pubchem/pubchem-client.ts#L1"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#3d-viewer",
+      "note": "SDF coordinates displayed and rotated in Miew viewer.",
+      "shot": {
+        "image": "evidence/kendraw/f-model-3d.webp",
+        "caption": "Molecular model in the Miew viewer."
+      },
+      "engine": {
+        "library": "Miew JavaScript/WebGL viewer through Ketcher's miew-react component",
+        "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/views/modal/components/process/Miew/Miew.tsx#L36"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#working-with-files",
+      "note": "Exported and reopened CDXML; chemical round-trip fidelity remains unverified.",
+      "engine": {
+        "library": "Indigo WebAssembly through Ketcher's CDXML formatter; In-house TypeScript CDXML import/export for the alternate canvas",
+        "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L108"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#working-with-files",
+      "note": "Binary and base64 CDX via Ketcher's Open/Save.",
+      "engine": {
+        "library": "Indigo (indigo-ketcher 1.40.0 WebAssembly through Ketcher 3.12.0)",
+        "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L109"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#working-with-files",
+      "note": "Opened MOL and SDF; exported MOL.",
+      "shot": {
+        "image": "evidence/kendraw/f-mol-sdf.webp",
+        "caption": "Save Structure format menu listing MDL Molfile and SDF."
+      },
+      "engine": {
+        "library": "Ketcher TypeScript MOL V2000 serializer and Indigo WebAssembly conversion; In-house TypeScript MOL/SDF import parser; RDKit native Python bindings for backend MOL conversion",
+        "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/ui/src/ImportDialog.tsx#L284"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#working-with-files",
+      "note": "Imported SMILES and exported Daylight SMILES through Ketcher.",
+      "engine": {
+        "library": "Indigo WebAssembly through Ketcher; RDKit native Python bindings for backend conversion; In-house TypeScript import parser",
+        "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/backend/kendraw_chem/convert.py#L84"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#working-with-files",
+      "note": "InChI import and export.",
+      "engine": {
+        "library": "InChI through RDKit native Python bindings (rdkit.Chem.inchi) and Indigo WebAssembly in Ketcher",
+        "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/backend/kendraw_chem/convert.py#L84"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/views/modal/components/document/Save/Save.tsx#L248",
+      "note": "Ketcher reads and writes RXN V2000/V3000."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/documentation/help.md#working-with-files",
+      "note": "Ketcher saved vector SVG for both 2D fixtures."
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/ui/src/PropertyPanel.tsx#L118",
+      "note": "PDF export embeds a raster image, not vector drawing."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/8eced2ca1c68e3f45b092b2ba461e26880061b90/packages/ketcher-react/src/script/ui/data/schema/options-schema.ts#L38",
+      "note": "PNG saved; default Ketcher export measured 223 by 162 pixels."
+    },
+    "clipboard-chemdraw": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/issues/3689#issuecomment-1903688361",
+      "note": "MOL text exchange; native ChemDraw clipboard pasting unsupported."
+    },
+    "office": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/chemdraw-exhaustive-comparison.md#L187",
+      "note": "Editable Office embedding is explicitly absent."
+    },
+    "python-api": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/chemdraw-exhaustive-comparison.md#section-19--scripting-et-automatisation",
+      "note": "REST backend exists; native scripting SDK is explicitly absent."
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/api-endpoints-map.md#endpoint-catalogue",
+      "note": "TypeScript client drives conversion, properties and NMR services."
+    },
+    "cli": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/kendraw-vs-chemdraw-feature-gap.md#L726",
+      "note": "Headless conversion and batch CLI are listed as missing."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/kendraw-vs-chemdraw-feature-gap.md#L722",
+      "note": "Plugin system is explicitly listed as missing."
+    },
+    "embed": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/architecture-kendraw-2026-04-12.md#17-considérations-futures-v2--pour-mémoire",
+      "note": "Public embedding API and ELN integration remain future work."
+    },
+    "ai-assistant": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/docs/architecture-kendraw-2026-04-12.md#17-considérations-futures-v2--pour-mémoire",
+      "note": "LLM assistant is explicitly outside current scope."
+    }
+  },
+  "caveats": [
+    "Docker enables Ketcher despite README opt-in wording; older feature audits describe the legacy editor.",
+    "Ketcher mode lacks autosave and bidirectional NMR highlighting available in the legacy editor.",
+    "PDF export rasterizes drawings; SVG preserves vector output."
+  ],
+  "github": {
+    "stars": 8,
+    "pushedAt": "2026-06-29T21:59:28Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.1.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://kendraw.fdp.expert/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/kendraw/simple.svg",
+        "note": "Default layout; exported MOL matches caffeine.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/kendraw/complex.svg",
+        "note": "Default layout; exported MOL matches paclitaxel including stereochemistry.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/kendraw/threed.png",
+        "note": "Rotatable Miew viewer uses supplied three-dimensional SDF coordinates.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/kendraw/canvas.webp",
+    "canvasLight": "evidence/kendraw/canvas-light.webp",
+    "canvasDark": "evidence/kendraw/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Dark interface retains white canvas; bonds appear pale."
+    },
+    "memory": null,
+    "observations": [
+      "About reports Ketcher 3.12.0; no Kendraw version was displayed.",
+      "Default bonds and carbon labels appear very pale against the white canvas.",
+      "For caffeine, Ketcher calculates C8H10N4O2 and 194.194; the panel reports C8N4O2 and 184.114.",
+      "The panel's caffeine SMILES and InChI differ from Ketcher's aromatic structure.",
+      "The SMILES 3D view was flat; the supplied SDF displayed three-dimensional coordinates.",
+      "Kendraw version 0.1.0 appears in its SVG metadata and hosted About component source."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/electrosenpai/kendraw"
+  ],
+  "builtOn": {
+    "id": "p12",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "Ketcher",
+      "Indigo",
+      "RDKit"
+    ],
+    "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/ui/src/canvas-ketcher/KetcherCanvas.tsx#L51",
+    "note": "Hosted builds embed unmodified Ketcher; source builds can use the original canvas."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher 3.12.0 SVG renderer on Raphaël; Indigo generated images",
+    "language": "TypeScript",
+    "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/packages/ui/src/canvas-ketcher/KetcherCanvas.tsx#L10"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "RDKit backend and additive NMR prediction"
+    },
+    {
+      "language": "C++",
+      "role": "Native and WebAssembly chemistry engines"
+    },
+    {
+      "language": "JavaScript",
+      "role": "Raphaël graphics and Miew 3D viewer"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML/CSS provide markup/styles; other languages support configuration, builds and deployment.",
+  "thirdParty": {
+    "summary": "Ketcher is Apache-2.0; its upstream NOTICE also lists LGPL-2.1/MPL-1.0/AFL-3.0 dependencies. NMR tables cite NMRShiftDB2 (database share-alike and OSI-license condition) and SDBS (commercial use requires permission); the project's CC-BY/free-access descriptions need clarification.",
+    "source": "https://github.com/electrosenpai/kendraw/blob/fabeccf810b79c6cf56e678ebbfd12bbc482fc29/backend/kendraw_chem/nmr/shift_tables.py",
+    "notice": "https://github.com/electrosenpai/kendraw/blob/main/docs/THIRD-PARTY-NOTICES.md",
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      }
+    ]
+  }
+}

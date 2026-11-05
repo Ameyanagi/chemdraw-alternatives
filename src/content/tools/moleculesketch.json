@@ -1,0 +1,472 @@
+{
+  "id": "p130",
+  "slug": "moleculesketch",
+  "name": "MoleculeSketch",
+  "rank": 103,
+  "tier": "alternative",
+  "tierReason": "Standalone chemical drawing documents support structures, reactions, annotations and vector PDF/SVG export for publication figures.",
+  "summary": "A macOS and iPad app for drawing chemical structures, reaction schemes, and figures.",
+  "website": "https://moleculesketch.stefandolder.ch/",
+  "repo": null,
+  "docs": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/MoleculeSketchHelp.html",
+  "vendor": "Stefan Dolder",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Paid Mac app; free basic iPad edition with a paid Full version unlock.",
+    "source": "https://apps.apple.com/us/app/moleculesketch-ip/id1281284737"
+  },
+  "price": {
+    "text": "US$2.99 for macOS (2026-11-05).",
+    "source": "https://apps.apple.com/us/app/moleculesketch-m/id942173210?mt=12"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": false,
+    "linux": false,
+    "web": false,
+    "ios": true,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": "2.9.6",
+    "date": "2026-11-03",
+    "source": "https://itunes.apple.com/lookup?id=942173210&country=us"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [
+    "Objective-C",
+    "Swift"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/bond_editing.html",
+      "note": "Click bonds to cycle single, double and triple orders."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
+      "note": "Solid wedges, hashed wedges and wavy bonds."
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/drawing_atoms_bonds.html",
+      "note": "Dative and higher-hapticity bonds; dashed lines represent hydrogen bonds."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/bond_editing.html",
+      "note": "Centered, above and below double-bond styles."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
+      "note": "Three- through nine-membered rings and aromatic systems."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
+      "note": "Cyclohexane and glucose chair templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/drawing_chains.html",
+      "note": "Drag to lengthen carbon chains."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
+      "note": "Amino acids, glucose, porphyrin and other ring systems."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/atom_editing.html",
+      "note": "Ph, Boc, OMe and other abbreviations expand into structures."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/moleculesketch-m/id942173210?mt=12",
+      "note": "Editable labels and charges; D/T isotope labels are supported."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/atom_editing.html",
+      "note": "Lone pairs can be positioned automatically or manually."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/moleculesketch-m/id942173210?mt=12",
+      "note": "Hover over atoms and type to change their symbols."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
+      "note": "Freehand selection plus rotation, mirroring and scaling."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
+      "note": "Forward, equilibrium, retrosynthesis and double-headed arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/reactionarrows.html",
+      "note": "Control points edit curvature, length and full/half arrowheads."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
+      "note": "Chemical symbols include charges, radical dots and electron pairs."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/text.html",
+      "note": "System fonts, superscripts and subscripts in free text."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/toolbar.html",
+      "note": "Editable circles, arcs, lines, Bezier curves and brackets."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/arrange.html",
+      "note": "Edge and center alignment; iPad arrangement requires paid Full version."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/grouping.html",
+      "note": "Nested groups; iPad grouping requires paid Full version."
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/preferences.html",
+      "note": "Custom default attributes for atoms, bonds, text and drawings."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/bond_editing.html",
+      "note": "Individual bonds have editable color attributes."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/drawing_atoms_bonds.html",
+      "note": "Warns when bond counts exceed atom valence."
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/manual/version_2_4/en/pgs/mass_formula_calculation.html",
+      "note": "Formula and average mass; iPad requires paid Full version."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/comments/comments-2/#comment-447",
+      "note": "MOL/SDF import supported; developer reported no export in September 2023."
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/moleculesketch-m/id942173210?mt=12",
+      "note": "SVG export added in version 2.8."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://moleculesketch.stefandolder.ch/comments/comments-2/#comment-391",
+      "note": "Mac PDF export preserves vector quality."
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Requires macOS 12.0+ or iPadOS 17.0+.",
+    "Developer reported no MOL, SDF or CDX export in September 2023.",
+    "iPad formula/mass, grouping, arrangement and MOL/SDF import require the paid Full version."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 24486651,
+  "references": [
+    "https://moleculesketch.stefandolder.ch/",
+    "https://apps.apple.com/us/app/moleculesketch-m/id942173210?mt=12"
+  ],
+  "builtOn": {
+    "id": "p130",
+    "relation": "original",
+    "editor": null,
+    "libraries": null,
+    "source": "https://www.chimia.ch/chimia/article/download/2023_655/6313#page=3",
+    "note": "Developer describes creating native drawing software and file format; dependencies remain undisclosed."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "MoleculeSketch drawing routines",
+    "language": null,
+    "source": "https://moleculesketch.stefandolder.ch/comments/comments-2/#comment-327"
+  },
+  "otherLanguages": [
+    {
+      "language": "Objective-C",
+      "role": "Native application code"
+    },
+    {
+      "language": "Swift",
+      "role": "Application code and SwiftUI interface"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

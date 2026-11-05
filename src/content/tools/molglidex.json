@@ -1,0 +1,559 @@
+{
+  "id": "p75",
+  "slug": "molglidex",
+  "name": "MolGLideX",
+  "rank": 62,
+  "tier": "alternative",
+  "tierReason": "It draws standalone 2D chemical figures and exports vectors, but remains an explicitly unstable prototype.",
+  "summary": "An experimental desktop editor for drawing 2D chemical structures and reaction mechanisms.",
+  "website": "https://molglide.com/",
+  "repo": "https://github.com/JCox06/MolGLideX",
+  "docs": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md",
+  "vendor": "Jacob Cox",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0",
+    "text": "GNU General Public License version 2.",
+    "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/JCox06/MolGLideX/releases/tag/0.0.3"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "0.0.3",
+    "date": "2026-09-16",
+    "source": "https://github.com/JCox06/MolGLideX/releases/tag/0.0.3"
+  },
+  "engine": {
+    "rendering": "Java Graphics2D; Apache Batik SVGGraphics2D for SVG output",
+    "chemistry": "Chemistry Development Kit (CDK)",
+    "ui": "Java Swing with FlatLaf and Modern Docking",
+    "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md"
+  },
+  "languages": [
+    "Kotlin"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/SwingActions.kt#L143-L267",
+      "note": "Bond change attempted; pointer targeting prevented a verified edit."
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/chemengine/MgxBond.kt#L61-L65",
+      "note": "Wedge action attempted; targeting unavailable; hash command also visible."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/UIDataBuilder.kt#L296-L362",
+      "note": "Side flipping works for rings; centering is automatic."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/EditMode.kt#L26-L29",
+      "note": "Benzene inserted from toolbar at default style.",
+      "shot": {
+        "image": "evidence/molglidex/f-rings.webp",
+        "caption": "Benzene ring and ring tools, with an overlapping CH₄ label."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Only four simple ring tools found; no broader library."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md#features-and-todo-list",
+      "note": "Chemically understood custom group labels remain unfinished."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/chemengine/MgxAtom.kt",
+      "note": "Element buttons present; carbon inserted; isotopes unverified.",
+      "shot": {
+        "image": "evidence/molglidex/f-atom-labels.webp",
+        "caption": "CH₄ label overlapping a benzene ring on the canvas."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/SwingActions.kt#L84-L255",
+      "note": "Displayed shortcuts did not respond through computer-use key input."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/control/tool/SelectTool.kt#L39-L110",
+      "note": "Select tool clicked; drag failed in computer-use tooling."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md#features-and-todo-list",
+      "note": "Arrow tool clicked; placement required dragging unavailable through computer-use."
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md#features-and-todo-list",
+      "note": "Arrowhead action attempted; curve dragging blocked by computer-use input."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md#features-and-todo-list",
+      "note": "Custom text boxes remain unfinished."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/chemengine/CDKContainerWrapper.kt#L201-L213",
+      "note": "CDK regenerates coordinates and normalizes bond lengths.",
+      "engine": {
+        "library": "CDK (Java StructureDiagramGenerator and GeometryUtil)",
+        "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/chemengine/CDKContainerWrapper.kt#L201-L213"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/AppConfig.kt",
+      "note": "Editor font persists; bond dimensions are fixed."
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md#features-and-todo-list",
+      "note": null,
+      "engine": {
+        "library": "CDK (Java CDKAtomTypeMatcher and CDKHydrogenAdder); In-house (Kotlin error markers)",
+        "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/chemengine/CDKContainerWrapper.kt#L165-L187"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md#features-and-todo-list",
+      "note": "Scratch selection attempted; no computed formula or mass obtained.",
+      "engine": {
+        "library": "CDK (Java MolecularFormulaManipulator and AtomContainerManipulator)",
+        "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/chemengine/CDKContainerWrapper.kt#L301-L309"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name input command found in inspected menus."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in inspected menus."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/EditMode.kt#L23",
+      "note": "R-label insertion only; no R-group definitions or atom lists."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D command in inspected menus or toolbar."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML entry in inspected Open or Save formats."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Opening MOL fixtures left both new documents empty."
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/MainController.kt#L112-L156",
+      "note": "SMILES inputs remained empty; canonical output command produced no verified text.",
+      "engine": {
+        "library": "CDK (Java SmilesGenerator, canonical output only)",
+        "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/chemengine/CDKContainerWrapper.kt#L97-L100"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/MainController.kt#L121-L135",
+      "note": "Copies generated InChI to the clipboard.",
+      "engine": {
+        "library": "CDK (Java InChIGeneratorFactory) with native InChI through JNA-InChI",
+        "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/chemengine/CDKContainerWrapper.kt#L102-L114"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/readme.md#features-and-todo-list",
+      "note": "Export attempt inconclusive: computer-use could not establish a selection."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF command in File menu or Save formats."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG command in File menu or Save formats."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Unstable prototype, explicitly not intended for daily use; some exposed commands remain stubs.",
+    "Release is 0.0.3, while README calls it forthcoming and the app displays ALPHA-0.0.2.",
+    "Custom text and group labels are unfinished; SVG transfer into Word is reported broken."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-10-03T17:40:39Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "ALPHA-0.0.2",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "zip",
+    "artifact": "https://github.com/JCox06/MolGLideX/releases/download/0.0.3/MolGLide-0.0.3.zip",
+    "ran": true,
+    "failure": "Benchmark incomplete: SMILES and MOL file-opening attempts left empty documents. Computer-use coordinate and drag input failed, preventing reliable active-canvas selection, most edits, and exports. This is not a native-library launch failure.",
+    "downloadBytes": 51933317,
+    "installedBytes": 274132992,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "SMILES and MOL open attempts left the new document empty.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "SMILES and MOL open attempts left the new document empty.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "No 3D view found in inspected menus or toolbar; skipped.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/molglidex/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Scratch benzene has black bonds on a light gray canvas.",
+      "Default carbon insertion displays CH4.",
+      "Fixture opening attempts left empty documents.",
+      "App reports ALPHA-0.0.2; downloaded prerelease is 0.0.3.",
+      "Drawing fonts, widths, colors, and theme were unchanged."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 51933317,
+  "references": [
+    "https://github.com/JCox06/MolGLideX",
+    "https://github.com/JCox06/MolGLideX/blob/master/readme.md"
+  ],
+  "builtOn": {
+    "id": "p75",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "CDK"
+    ],
+    "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/ui/EditorPanel.kt#L107-L130",
+    "note": "Custom canvas; CDK supplies chemistry and 2D layout."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "MolGLideX Graphics2D bond/label renderer",
+    "language": "Kotlin",
+    "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/src/main/kotlin/uk/co/jcox/molglide/editor/model/UIDataBuilder.kt#L99"
+  },
+  "otherLanguages": [
+    {
+      "language": "Java",
+      "role": "CDK chemistry and Swing UI"
+    },
+    {
+      "language": "C",
+      "role": "Native InChI through JNA-InChI"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Includes LGPL-2.1-or-later (CDK); other direct libraries use MIT or Apache-2.0.",
+    "source": "https://github.com/JCox06/MolGLideX/blob/a8de273e9c5d5405b7f865f185b8fb4f48906222/pom.xml",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Chemistry Development Kit",
+        "license": "LGPL-2.1-or-later",
+        "source": "https://github.com/cdk/cdk/blob/main/pom.xml"
+      }
+    ]
+  }
+}

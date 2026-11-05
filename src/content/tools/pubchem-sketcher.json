@@ -1,0 +1,71 @@
+{
+  "id": "p40",
+  "slug": "pubchem-sketcher",
+  "name": "PubChem Sketcher",
+  "rank": 138,
+  "tier": "related",
+  "tierReason": "Its documented workflow creates PubChem query structures and exports them for further publication cleanup in ChemDraw, rather than authoring complete drawing documents.",
+  "summary": "A browser editor for drawing chemical structures as PubChem search queries and exporting structure files or images.",
+  "website": "https://pubchem.ncbi.nlm.nih.gov/edit/",
+  "repo": null,
+  "docs": "https://pubchem.ncbi.nlm.nih.gov/sketch/sketchhelp.html",
+  "vendor": "National Center for Biotechnology Information, U.S. National Library of Medicine (NIH)",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free hosted service; public-domain interface and server scripts depend on the proprietary CACTVS interpreter.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2820498/"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2820498/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": "V2.4",
+    "date": null,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/edit3/index.html"
+  },
+  "engine": {
+    "rendering": "Server-side CACTVS depiction and export; GD renders PNG/GIF images displayed in the browser.",
+    "chemistry": "CACTVS",
+    "ui": "Custom HTML and JavaScript",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2820498/"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {},
+  "caveats": [
+    "Editing and rendering require a connection to PubChem servers.",
+    "The manual documents only one undoable operation.",
+    "Self-hosting requires a proprietary CACTVS interpreter in addition to the public-domain scripts."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://pubchem.ncbi.nlm.nih.gov/docs/imaging-services",
+    "https://pubchem.ncbi.nlm.nih.gov/docs/structures"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

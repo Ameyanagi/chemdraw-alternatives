@@ -1,0 +1,595 @@
+{
+  "id": "p89",
+  "slug": "structura",
+  "name": "Structura (chem-structura)",
+  "rank": 33,
+  "tier": "embeddable",
+  "tierReason": "Primarily a React and standalone structure-input component, with a separate app workspace for Markush workflows.",
+  "summary": "An embeddable 2D chemical structure editor for drawing molecules and patent Markush formulas.",
+  "website": "https://github.com/wxyhgk/structura",
+  "repo": "https://github.com/wxyhgk/structura",
+  "docs": "https://github.com/wxyhgk/structura/blob/master/packages/react/README.md",
+  "vendor": "wxyhgk",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT-licensed editor and source code.",
+    "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/LICENSE"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "chem-structura@0.8.0",
+    "date": null,
+    "source": "https://github.com/wxyhgk/structura/tree/chem-structura%400.8.0"
+  },
+  "engine": {
+    "rendering": "Custom SVG scene renderer; React SVG on screen, HTML canvas for PNG output",
+    "chemistry": "In-house Structura core and RDKit WebAssembly",
+    "ui": "React 19, Radix UI, Tailwind CSS",
+    "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/README.md"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/draw.tsx",
+      "note": "Drew single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/structura/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/draw.tsx",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/structura/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/core/src/molfile/read.ts",
+      "note": "Coordination and hydrogen bonds are downgraded to single bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/draw.tsx",
+      "note": "Placed benzene; ring palette offers other sizes.",
+      "shot": {
+        "image": "evidence/structura/f-rings.webp",
+        "caption": "Benzene and quinoline structures on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/engine/src/hotkeys/bond-keys.ts",
+      "note": "Hover keys 9 and 0 create mirrored chair conformations."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/draw.tsx",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/scaffolds.tsx",
+      "note": "Placed quinoline from template library.",
+      "shot": {
+        "image": "evidence/structura/f-templates.webp",
+        "caption": "Quinoline template and benzene on the canvas."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/templates.tsx",
+      "note": "Saving fragment templates requires a backend or host-provided template store."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/labels.tsx",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/labels.tsx",
+      "note": "Element labels and isotopes; charge tools documented on drawing page.",
+      "shot": {
+        "image": "evidence/structura/f-atom-labels.webp",
+        "caption": "Element palette and nitrogen label on a ring structure."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/start.tsx",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/select.tsx",
+      "note": null
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/core/src/molecule/transform.ts",
+      "note": "Tumble operations rotate selected atoms out of plane, then project."
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/core/src/draw/svg.ts",
+      "note": "No arrow command found in menus or toolbar."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "No curved-arrow tool found in menus or toolbar."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/attachment.tsx",
+      "note": "Structure brackets and Markush attachment curves only."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/labels.tsx",
+      "note": "Abbreviation groups move together; general object grouping is unverified."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/select.tsx",
+      "note": null,
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/core/src/molecule/relax.ts"
+      }
+    },
+    "journal-styles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/files.tsx",
+      "note": "CDXML export applies ACS 1996 bond sizing only."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/core/src/draw/scene.ts",
+      "note": "Automatic element colors only."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/editor/shell/StatusBar.tsx",
+      "note": "Flags atoms with abnormal valence.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/core/src/formula.ts"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/select.tsx",
+      "note": "Caffeine displayed C8H10N4O2 and 194.19.",
+      "shot": {
+        "image": "evidence/structura/f-formula-mass.webp",
+        "caption": "Caffeine structure with formula and mass in the status bar."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/core/src/formula.ts"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SMILES import rejected caffeine; no name command found."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "No naming command found for imported caffeine."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/markush.tsx",
+      "note": "Variable definitions and enumeration UI live in the separate app workspace."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/brackets.tsx",
+      "note": "Semantic SRU brackets retain repeat ranges and support bounded expansion."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/vision.tsx",
+      "note": "Requires a configured AI server and model API credentials.",
+      "engine": {
+        "library": "In-house Node.js agent server; @anthropic-ai/sdk (remote Anthropic Messages API) or openai (remote OpenAI-compatible Responses/Chat Completions API), selected by AI_PROVIDER/API keys",
+        "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/ai/src/provider.ts"
+      }
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SDF projected to plane; no 3D view found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/files.tsx",
+      "note": "Own export reopens; removing embedded record causes rejection.",
+      "shot": {
+        "image": "evidence/structura/f-cdxml.webp",
+        "caption": "CDXML import warning describes supported Structura-exported files."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/editor/cdxml.ts"
+      }
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/README.md#chemistry-without-the-editor",
+      "note": "Imported MOL and SDF; exported MOL.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/core/src/molfile.ts"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/README.md#handle-ref",
+      "note": "Imported through dialog; standalone API returned SMILES.",
+      "shot": {
+        "image": "evidence/structura/f-smiles.webp",
+        "caption": "SMILES import dialog with example strings."
+      },
+      "engine": {
+        "library": "RDKit.js (@rdkit/rdkit 2026.3.6, WebAssembly)",
+        "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/editor/identifiers.ts"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/README.md#handle-ref",
+      "note": "RDKit-backed InChI and InChIKey export; variables are rejected.",
+      "engine": {
+        "library": "RDKit.js (@rdkit/rdkit 2026.3.6, WebAssembly)",
+        "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/editor/identifiers.ts"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/files.tsx",
+      "note": "Exported SVG from both SMILES fixtures."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "No PDF command found in file menu."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/README.md#handle-ref",
+      "note": "Standalone API generated PNG; no DPI setting found."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/enumerate.tsx",
+      "note": "App compound tables require chem2office for editable ChemDraw objects in Word."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/README.md#handle-ref",
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/README.md",
+      "note": "Documented JSON editing operations shared with agents."
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/README.md#without-react",
+      "note": "Mounted bundled standalone editor in a local page."
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/guide/pages/vision.tsx",
+      "note": "AI builds editable structures; requires configured server and model credentials."
+    }
+  },
+  "caveats": [
+    "Chinese interface; distributed as a component or source app.",
+    "CDXML import accepts only unchanged Structura exports with embedded document data.",
+    "Root README retains removed fillVariables/wordExport props; use the 0.8.0 package documentation."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-10-27T04:29:02Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.8.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "npm",
+    "artifact": "chem-structura-0.8.0.tgz",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 1318920,
+    "installedBytes": 81371136,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/structura/simple.svg",
+        "note": null,
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/structura/complex.svg",
+        "note": null,
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/structura/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Default drawing colors heteroatoms red and blue.",
+      "SMILES import generated 2D layouts without cleanup.",
+      "Imported 3D coordinates triggered a projection warning.",
+      "The interface is in Chinese.",
+      "Installed size includes package dependencies but excludes the browser test harness."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 1318920,
+  "references": [
+    "https://github.com/wxyhgk/structura",
+    "https://www.npmjs.com/package/chem-structura"
+  ],
+  "builtOn": {
+    "id": "p89",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit"
+    ],
+    "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/react/src/editor/canvas/Canvas.tsx",
+    "note": "Custom SVG canvas; RDKit supports SMILES, identifiers, and coordinate generation."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Structura SVG scene renderer",
+    "language": "TypeScript",
+    "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/packages/core/src/draw/scene.ts"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "RDKit chemistry compiled to WebAssembly"
+    },
+    {
+      "language": "Rust",
+      "role": "Server SVG rasterization via resvg-js"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Python generates data/fixtures; JavaScript/Shell handle tooling; HTML/CSS provide presentation.",
+  "thirdParty": {
+    "summary": "Includes OFL-1.1 (Geist fonts) and MPL-2.0 (AI service's resvg); UI/RDKit dependencies MIT/BSD/ISC.",
+    "source": "https://github.com/wxyhgk/structura/blob/17285b9401c79f31073bb18f0607c9c15f4721fa/package-lock.json",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      }
+    ]
+  }
+}

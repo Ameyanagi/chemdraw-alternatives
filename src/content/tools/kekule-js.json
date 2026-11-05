@@ -1,0 +1,621 @@
+{
+  "id": "p28",
+  "slug": "kekule-js",
+  "name": "Kekule.js",
+  "rank": 26,
+  "tier": "embeddable",
+  "tierReason": "Its primary product is a JavaScript toolkit whose Composer editor is embedded into web applications.",
+  "summary": "JavaScript toolkit for embedding chemical structure editors, molecule viewers, and cheminformatics functions in web applications.",
+  "website": "https://partridgejiang.github.io/Kekule.js/index.html",
+  "repo": "https://github.com/partridgejiang/Kekule.js",
+  "docs": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/index.html",
+  "vendor": "Chen Jiang",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT license; free use, modification and redistribution.",
+    "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": true,
+    "offline": true
+  },
+  "version": {
+    "name": "v1.0.4",
+    "date": "2026-05-22",
+    "source": "https://github.com/partridgejiang/Kekule.js/releases/tag/v1.0.4"
+  },
+  "engine": {
+    "rendering": "HTML Canvas 2D; optional SVG/VML via Raphaël; Three.js for 3D",
+    "chemistry": "In-house Kekule.js; optional Open Babel, Indigo and InChI adapters",
+    "ui": "Kekule.Widget (HTML, CSS and JavaScript)",
+    "source": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/installation.html"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L1963-L2003",
+      "note": "Drew single, double and triple bonds.",
+      "shot": {
+        "image": "evidence/kekule-js/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the editor canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.chemSpaceEditors.js#L1673-L1702",
+      "note": "Drew solid and hashed wedges; no wavy tool visible.",
+      "shot": {
+        "image": "evidence/kekule-js/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds on the editor canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.chemSpaceEditors.js#L1723-L1739",
+      "note": "Coordinate and hydrogen bonds; coordinate tool requires configuration."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L2470-L2572",
+      "note": "Drew benzene and cyclopentane; other sizes shown.",
+      "shot": {
+        "image": "evidence/kekule-js/f-rings.webp",
+        "caption": "Benzene and five-membered rings on the editor canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L2586-L2656",
+      "note": "Placed cyclohexane chair; Haworth tools also shown.",
+      "shot": {
+        "image": "evidence/kekule-js/f-conformers.webp",
+        "caption": "A cyclohexane chair alongside ring drawings."
+      }
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.chemSpaceEditors.js#L5742-L5767",
+      "note": "Dragging controls zigzag chain length and displays atom count."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L2076-L2147",
+      "note": "Placed Fischer projection; sawhorse templates also shown."
+    },
+    "custom-templates": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.repositories.js#L246-L270",
+      "note": "Reusable serialized template API; user-save interface unverified."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.repositoryData.js#L47-L61",
+      "note": "Ph and OMe abbreviations contain underlying molecular structures."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.utilWidgets.js#L961-L1051",
+      "note": "Atom input supports isotopes, charges and arbitrary pseudoatom labels."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L2363-L2422",
+      "note": "Radical states and lone-pair electron markers."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L1249-L1256",
+      "note": "Keyboard operations preferentially target hovered atoms and bonds."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.baseEditors.js#L7310-L7337",
+      "note": "Lasso, rotate and resize; negative scaling implements flipping.",
+      "shot": {
+        "image": "evidence/kekule-js/f-selection-tools.webp",
+        "caption": "A selected molecule and selection controls in the editor."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L2963-L3045",
+      "note": "Drew normal and reversible arrows.",
+      "shot": {
+        "image": "evidence/kekule-js/f-reaction-arrows.webp",
+        "caption": "Reaction arrows above a chemical scheme."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L3048-L3086",
+      "note": "Drew single- and double-electron arcs; editing unverified.",
+      "shot": {
+        "image": "evidence/kekule-js/f-mechanism-arrows.webp",
+        "caption": "Curved arrows beside a chemical reaction scheme."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/reaction/kekule.reactionUtils.js#L1407-L1467",
+      "note": "API extracts chemical reactants and products from drawn reaction documents."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L2867-L2941",
+      "note": "Chemical symbol tools include plus signs, heat and light.",
+      "shot": {
+        "image": "evidence/kekule-js/f-orbitals.webp",
+        "caption": "Plus and heat symbols in a Friedel–Crafts reaction scheme."
+      }
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/chemdoc/kekule.contentBlocks.js#L172-L199",
+      "note": "Font styling exists; canvas text blocks store plain text."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.actions.js#L2827-L2961",
+      "note": "Editable line segments and arc curves.",
+      "shot": {
+        "image": "evidence/kekule-js/f-shapes.webp",
+        "caption": "Curved arrows beside a chemical reaction scheme."
+      }
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/kekule.chemWidget.chemObjDisplayers.js#L1435-L1469",
+      "note": "2D coordinate regeneration requires an optional chemistry adapter.",
+      "engine": {
+        "library": "Open Babel (optional C++ compiled to WebAssembly with Emscripten; Gen2D); Indigo (optional C++ WebAssembly alternative; layout)",
+        "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/kekule.js#L571-L589"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/modifiers/kekule.chemEditor.styleModifiers.js#L94-L139",
+      "note": "Individual selected objects accept custom colors."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/composer.html#composer-ui",
+      "note": "Image blocks can be inserted into chemical drawings."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/chemdoc/issueCheckers/kekule.issueCheckers.js#L526-L536",
+      "note": "Reports abnormal atom valences as errors.",
+      "engine": {
+        "library": "In-house (JavaScript; Kekule.IssueCheck.AtomValenceChecker)",
+        "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/chemdoc/issueCheckers/kekule.issueCheckers.js#L500-L550"
+      }
+    },
+    "stereo-perception": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/getMolInfo.html#stereo-perception",
+      "note": "Computes parity instead of R/S or E/Z descriptors."
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/getMolInfo.html#molecule-formula",
+      "note": "Molecular formula confirmed; molecular mass calculation unverified.",
+      "engine": {
+        "library": "In-house (JavaScript; molecular formula only)",
+        "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/core/kekule.structures.js#L6652-L6660"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name conversion control found in hosted editor."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in hosted editor."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/widgets/chem/editor/kekule.chemEditor.chemSpaceEditors.js#L1577-L1611",
+      "note": "R-group nodes and allowed or disallowed atom lists."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/chemViewer.html#changing-zoom-level-and-rotation-of-object",
+      "note": "Rotatable wire, stick, ball-and-stick and space-filling models.",
+      "engine": {
+        "library": "Three.js (JavaScript; Kekule.Render.ThreeRendererBridge)",
+        "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/render/3d/kekule.render.threeRenderer.js#L329-L369"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "CDXML absent from load and save format lists."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/io/mdl/kekule.io.mdlIO.js#L1478-L1502",
+      "note": "Imported and saved MOL and SDF.",
+      "shot": {
+        "image": "evidence/kekule-js/f-mol-sdf.webp",
+        "caption": "MOL format and data preview beside a caffeine structure."
+      },
+      "engine": {
+        "library": "In-house (JavaScript; MDL V2000/V3000 and SDF readers/writers)",
+        "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/io/mdl/kekule.io.mdlIO.js#L1478-L1502"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/_extras/Indigo/kekule.indigo.io.js#L34-L68",
+      "note": "SMILES export worked; load dialog lacks SMILES format.",
+      "engine": {
+        "library": "In-house (JavaScript SMILES writer); Indigo or Open Babel (optional C++ compiled to WebAssembly readers)",
+        "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/kekule.js#L375-L601"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/_extras/InChI/kekule.inchi.js#L233-L271",
+      "note": "Optional InChI library supplies output and InChIKey generation.",
+      "engine": {
+        "library": "InChI (optional C compiled to WebAssembly with Emscripten; InChI and InChIKey output)",
+        "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/_extras/InChI/kekule.inchi.js#L132-L179"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/io/mdl/kekule.io.mdlIO.js#L1490-L1500",
+      "note": "Reads and writes RXN2000 and RXN3000."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/render/2d/kekule.render.raphaelRenderer.js#L469-L479",
+      "note": "SVG export through the optional Raphaël rendering bridge."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF option in save dialog."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/render/2d/kekule.render.canvasRenderer.js#L756-L762",
+      "note": "PNG output exists; 300 dpi export is unverified."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/composer.html#creating-composer",
+      "note": "JavaScript API creates, loads and controls the Composer editor."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://partridgejiang.github.io/Kekule.js/documents/api/chemWidget/Kekule.Editor.IaControllerManager.html#register",
+      "note": "Register custom editor interaction controllers through the documented API."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/composer.html#creating-composer",
+      "note": "Create the editor through JavaScript or HTML data attributes."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Primarily a developer toolkit; the hosted Composer is a demonstration editor.",
+    "Native SMILES support is output only; input requires an optional adapter.",
+    "Stereo perception reports parity rather than R/S or E/Z labels."
+  ],
+  "github": {
+    "stars": 279,
+    "pushedAt": "2026-09-21T13:00:32Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.9.9.22022400",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://partridgejiang.github.io/Kekule.js/demos/items/chemEditor/chemEditor.html",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/kekule-js/simple.png",
+        "note": "SMILES failed; MOL loaded and saved. Image is a canvas capture.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/kekule-js/complex.png",
+        "note": "SMILES failed; MOL loaded and saved. Image is a canvas capture.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/kekule-js/canvas.webp",
+    "canvasLight": "evidence/kekule-js/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Version taken from research file; demo displayed no version.",
+      "The editor initially showed a Friedel-Crafts example.",
+      "SMILES pasted into the default CML loader produced a load error.",
+      "MOL round trips retained fixture atom and bond counts.",
+      "The save dialog offered chemical formats but no image export.",
+      "The hosted demo exposes Kekule.VERSION as 0.9.9.22022400 in its loaded code."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://partridgejiang.github.io/Kekule.js/index.html",
+    "https://github.com/partridgejiang/Kekule.js/"
+  ],
+  "builtOn": {
+    "id": "p28",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "Open Babel",
+      "Indigo",
+      "InChI"
+    ],
+    "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/kekule.js#L476-L601",
+    "note": "Own Composer canvas; Open Babel, Indigo, and InChI are optional chemistry modules."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Kekule.Render.ChemCtab2DRenderer",
+    "language": "JavaScript",
+    "source": "https://github.com/partridgejiang/Kekule.js/blob/7ad08b842d296ce78ba8edb187b0088b0191c43a/src/render/2d/kekule.render.renderer2D.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "Optional Open Babel/Indigo WebAssembly chemistry"
+    },
+    {
+      "language": "C",
+      "role": "Optional InChI WebAssembly engine"
+    },
+    {
+      "language": "PHP",
+      "role": "Optional Moodle integration plugins"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Other languages provide styles, demos, integrations and build tooling.",
+  "thirdParty": {
+    "summary": "Includes GPL-2.0-only (bundled Open Babel).",
+    "source": "https://github.com/openbabel/openbabel/blob/openbabel-3-1-1/README.md",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Open Babel",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/openbabel/openbabel/blob/master/COPYING"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

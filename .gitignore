@@ -6,3 +6,8 @@ dist/
 !.env.example
 .DS_Store
 *.log
+
+# Raw capture runs; only reviewed images are published from public/evidence.
+evidence/raw/
+evidence/bin/
+evidence/downloads/

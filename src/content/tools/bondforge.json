@@ -1,0 +1,603 @@
+{
+  "id": "p51",
+  "slug": "bondforge",
+  "name": "BondForge",
+  "rank": 44,
+  "tier": "alternative",
+  "tierReason": "It creates standalone 2D drawing documents with structures, reaction arrows, captions and vector exports.",
+  "summary": "BondForge is a desktop application for drawing chemical structures, reaction schemes, and annotated figures.",
+  "website": "https://github.com/Grimlock5310/BondForge",
+  "repo": "https://github.com/Grimlock5310/BondForge",
+  "docs": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md",
+  "vendor": "BondForge Contributors",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-3.0-or-later",
+    "text": "GNU GPL version 3 or later.",
+    "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/pyproject.toml"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/Grimlock5310/BondForge/releases"
+  },
+  "engine": {
+    "rendering": "Qt QGraphicsView/QGraphicsScene with QPainter; QSvgGenerator and QPdfWriter for vector exports",
+    "chemistry": "RDKit; optional OPSIN for name-to-structure",
+    "ui": "PySide6 (Qt for Python)",
+    "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/export.py"
+  },
+  "languages": [
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": "Single, double, triple tools produced ethane, ethene, and ethyne."
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/items/bond_item.py",
+      "note": "Solid and hashed wedges export correctly; no wavy tool visible.",
+      "shot": {
+        "image": "evidence/bondforge/f-stereo-bonds.webp",
+        "caption": "Exported solid and hashed wedge bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/items/bond_item.py",
+      "note": "Dative data renders as ordinary lines; specialist bond rendering is absent."
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/items/bond_item.py",
+      "note": "Double bonds are always centered; left/right positioning is unavailable."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/ui/main_window.py",
+      "note": "Aromatic six-membered ring inserted; sizes three through eight visible.",
+      "shot": {
+        "image": "evidence/bondforge/f-rings.webp",
+        "caption": "Exported six-membered aromatic ring."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/tools/bond_tool.py",
+      "note": "Repeated clicks extend zigzags; dragging creates only one bond."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/core/model/templates.py",
+      "note": "Inserted built-in IgG antibody template and exported SVG."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/items/atom_item.py",
+      "note": "Elements and charges display; stored isotopes are not drawn."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/ui/main_window.py",
+      "note": "Documented Select event forwarding uses no-op placeholder handlers."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": "Forward and equilibrium arrows drawn and exported distinctly.",
+      "shot": {
+        "image": "evidence/bondforge/f-reaction-arrows.webp",
+        "caption": "Exported forward and equilibrium arrows."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/tools/arrow_tool.py",
+      "note": "Pair/radical curves export; no curvature editing controls found.",
+      "shot": {
+        "image": "evidence/bondforge/f-mechanism-arrows.webp",
+        "caption": "Exported curved pair and radical arrows."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/core/io/rxn.py",
+      "note": "RXN export infers reactants/products from the first forward arrow."
+    },
+    "atom-mapping": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/hotkeys.py",
+      "note": "Sequential numbering only; UI cannot pair corresponding reactant/product atoms."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/items/text_item.py",
+      "note": "Captions support model fonts; documented HTML formatting becomes plain text."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": "RDKit regenerates 2D coordinates with uniform bond lengths.",
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/engine/cleanup.py#L58"
+      }
+    },
+    "journal-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/styles.py",
+      "note": "Presets rescale geometry; documented font, linewidth and new-bond defaults remain unapplied."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/items/bond_item.py",
+      "note": "Drawing colors are hard-coded; selection changes are automatic."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/export.py",
+      "note": "Fixed single Letter page; no page-size or multipage controls."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/ui/main_window.py",
+      "note": "MOL/SMILES file operations display sanitization errors.",
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/core/io/mol.py#L34"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": "Fixture imports update molecular formula, molecular weight, and exact mass.",
+      "shot": {
+        "image": "evidence/bondforge/f-formula-mass.webp",
+        "caption": "Properties panel showing molecular formula, molecular weight, and exact mass."
+      },
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/engine/properties.py#L55"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": "Imported structures show logP, TPSA, hydrogen bonding, and ring counts.",
+      "shot": {
+        "image": "evidence/bondforge/f-properties.webp",
+        "caption": "Properties panel showing logP, TPSA, and other molecular values."
+      },
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/engine/properties.py#L58"
+      }
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/engine/naming/opsin_client.py",
+      "note": "Ethanol fails: OPSIN unavailable; optional dependency version cannot resolve."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#known-parity-gaps",
+      "note": "Planned for a later release."
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": "Heuristic 1H and 13C predictions intended for teaching.",
+      "engine": {
+        "library": "In-house (Python heuristic predictor)",
+        "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/engine/prediction/nmr.py#L148"
+      }
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": "IgG inserted; Sequence Editor and HELM export commands visible."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#roadmap",
+      "note": "PubChem search is listed for future v1.0."
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/ui/viewers/viewer_3d.py",
+      "note": "Cholesterol generated from SMILES; zoom and drag rotation work.",
+      "shot": {
+        "image": "evidence/bondforge/f-model-3d.webp",
+        "caption": "BondForge 3D viewer displaying a molecular model."
+      },
+      "engine": {
+        "library": "In-house (Python viewer); RDKit (Python conformer generation)",
+        "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/ui/main_window.py#L527"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#known-parity-gaps",
+      "note": "CDXML import reports: Failed to parse MOL block."
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#known-parity-gaps",
+      "note": "Legacy CDX support is described as future best-effort work."
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/core/io/mol.py",
+      "note": "MOL read/write; SDF opens via All files; stereochemistry lost.",
+      "engine": {
+        "library": "RDKit (Python MOL reader/writer; no SDF workflow)",
+        "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/core/io/mol.py#L18"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": "Import/export works; cholesterol loses all eight assigned stereocenters.",
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/core/io/smiles.py#L16"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Adapter docstring mentions InChI without implementing an InChI workflow."
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/core/io/rxn.py",
+      "note": "Export only; README's read/write claim exceeds implemented support."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#status",
+      "note": "SVG files written; fixture depictions overlap at default scale.",
+      "shot": {
+        "image": "evidence/bondforge/f-svg-export.webp",
+        "caption": "SVG exports showing solid and hashed wedge bonds."
+      }
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/export.py",
+      "note": "Default PDF written as one US Letter page."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/export.py",
+      "note": "PNG writes at 72 dpi; no resolution control shown."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/__main__.py",
+      "note": "Console entry point only launches the desktop GUI."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md#roadmap",
+      "note": "Plugin API is listed for future v1.0."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Pre-alpha source code; supplied metadata has no tagged release or packaged downloads.",
+    "Name-to-structure needs the optional naming dependency and a Java runtime.",
+    "Documentation overstates rich text, journal formatting and several file-format workflows."
+  ],
+  "github": {
+    "stars": 1,
+    "pushedAt": "2026-04-11T22:17:59Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "commit b68de22",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://github.com/Grimlock5310/BondForge.git",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 144265,
+    "installedBytes": 1444904960,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": "evidence/bondforge/simple.svg",
+        "note": "SMILES and MOL produce collapsed, overlapping labels; default drawing is unreadable.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "mol",
+        "image": "evidence/bondforge/complex.svg",
+        "note": "SMILES and MOL produce collapsed, overlapping labels; default drawing is unreadable.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/bondforge/threed.png",
+        "note": "Rotatable 3D model from SMILES; default style; zoomed to fit; stereochemistry not preserved.",
+        "structure": "stereo"
+      }
+    ],
+    "canvas": "evidence/bondforge/canvas.webp",
+    "canvasLight": "evidence/bondforge/canvas-light.webp",
+    "canvasDark": "evidence/bondforge/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "follows system",
+      "note": "Default MOL import collapses into overlapping labels in both appearances."
+    },
+    "memory": null,
+    "observations": [
+      "Default SMILES imports collapse to overlapping labels in canvas and SVG.",
+      "Default dark canvas has very low contrast black bonds.",
+      "Paclitaxel and cholesterol outputs retain connectivity but lose assigned tetrahedral stereochemistry.",
+      "Cholesterol 3D model rotates; initial view requires zooming out.",
+      "Cholesterol PNG defaults to 158 by 142 pixels at 72 dpi.",
+      "MOL fallback also produces collapsed, overlapping labels for caffeine and paclitaxel."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 144265,
+  "references": [
+    "https://github.com/Grimlock5310/BondForge",
+    "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/README.md"
+  ],
+  "builtOn": {
+    "id": "p51",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "OPSIN"
+    ],
+    "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/ui/main_window.py",
+    "note": "Custom Qt drawing scene; OPSIN is optional."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "BondForge molecular renderer",
+    "language": "Python",
+    "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/bondforge/canvas/items/bond_item.py#L72"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "RDKit chemistry backend"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Includes LGPL-3.0 PySide6/Qt and BSD-3-Clause RDKit/NumPy; optional naming uses MIT-licensed py2opsin/OPSIN.",
+    "source": "https://github.com/Grimlock5310/BondForge/blob/b68de221eba1d9870f3d86e95c6970f9fc48f0f7/pyproject.toml",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,614 @@
+{
+  "id": "p129",
+  "slug": "molecule-lab",
+  "name": "Molecule Lab (The Freshman Mole)",
+  "rank": 30,
+  "tier": "alternative",
+  "tierReason": "It supports 2D reaction figures with captions, layout tools, editable projects and vector SVG export.",
+  "summary": "A free browser editor for 2D chemical structures, reaction schemes and interactive 3D molecular models.",
+  "website": "https://total-synthesis.com/molecule-drawing-tool/",
+  "repo": null,
+  "docs": "https://total-synthesis.com/molecule-drawing-tool/",
+  "vendor": "The Freshman Mole / Total Synthesis",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free hosted tool; redistribution terms unspecified.",
+    "source": "https://total-synthesis.com/molecule-drawing-tool/"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://total-synthesis.com/molecule-drawing-tool/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://total-synthesis.com/molecule-drawing-tool/"
+  },
+  "engine": {
+    "rendering": "Kekule.js 2D canvas renderer; custom SVG exporter with HTML canvas PNG rasterization; Three.js and 3Dmol.js for 3D.",
+    "chemistry": "Kekule.js; RDKit.js for validation and stereochemistry; Open Babel for 3D conformer generation.",
+    "ui": "Kekule.js widgets and custom JavaScript/HTML controls.",
+    "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "Drew single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/molecule-lab/f-bonds-core.webp",
+        "caption": "Single, double, and triple bond tools below the drawing."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "Drew solid and hashed wedges; wavy untested.",
+      "shot": {
+        "image": "evidence/molecule-lab/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedges in the drawing and bond toolbar."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "Placed cyclohexane; aromatic ring tool also visible.",
+      "shot": {
+        "image": "evidence/molecule-lab/f-rings.webp",
+        "caption": "Aromatic rings on the canvas beside the ring tool."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95",
+      "note": "Native chair and Haworth ring tools are retained."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/3151bf05159076067c610f5a61e38c458d6f78a7/src/widgets/chem/editor/kekule.chemEditor.chemSpaceEditors.js#L5502",
+      "note": "Native flexible-chain tool adjusts atom count while dragging."
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "Boc placement added atoms but displayed an error and no drawing."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/atom-label-edit-1.88.64.js?ver=1.88.95",
+      "note": "Elements, charges and isotopes use native Atom controls."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95",
+      "note": "Radical and electron-pair tools are enabled."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95",
+      "note": "Lasso selection, rotation, flip and scale tools are enabled."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "Drew forward and equilibrium arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/3151bf05159076067c610f5a61e38c458d6f78a7/src/widgets/chem/editor/kekule.chemEditor.actions.js#L3046",
+      "note": "Drew full-head and single-electron curved arrows."
+    },
+    "reaction-data": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/chem-io.js?ver=1.88.95",
+      "note": "CDXML reaction steps require one horizontal arrow and one row."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/3151bf05159076067c610f5a61e38c458d6f78a7/src/widgets/chem/editor/kekule.chemEditor.actions.js#L3108",
+      "note": "Enabled glyph palette includes plus, heat and light symbols."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/partridgejiang/Kekule.js/blob/3151bf05159076067c610f5a61e38c458d6f78a7/src/widgets/chem/editor/kekule.chemEditor.actions.js#L3108",
+      "note": "Enabled glyph tools provide editable line segments and curves."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": null,
+      "engine": {
+        "library": "In-house (JavaScript); RDKit.js (WebAssembly, complex-ring coordinates)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/structure-cleanup-1.88.17.js?ver=1.88.95"
+      }
+    },
+    "journal-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/acs-drawing-style.js?ver=1.88.95",
+      "note": "ACS-inspired publication defaults only."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": null,
+      "engine": {
+        "library": "RDKit.js (WebAssembly sanitization); In-house (JavaScript advisories)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/chemical-validation-core-1.88.17.js?ver=1.88.95"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/stereo-annotations-1.88.73.js?ver=1.88.95",
+      "note": "RDKit computes R/S and E/Z overlays.",
+      "engine": {
+        "library": "RDKit.js (WebAssembly); In-house (JavaScript geometry-based E/Z preview)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/stereo-annotations-1.88.73.js?ver=1.88.95"
+      }
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95",
+      "note": "PubChem lookup returned caffeine formula and molecular weight.",
+      "engine": {
+        "library": "PubChem web service (formula/mass record lookup via site server proxy)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95"
+      }
+    },
+    "properties": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95",
+      "note": "PubChem lookup returned XLogP and TPSA.",
+      "engine": {
+        "library": "PubChem web service (XLogP/TPSA record lookup via site server proxy)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95"
+      }
+    },
+    "name-to-structure": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "Aspirin imported through PubChem name lookup.",
+      "engine": {
+        "library": "PubChem web service (via site server proxy); Kekule.js (JavaScript SDF reader)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/search-import.js?ver=1.88.95"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "Caffeine drawing returned PubChem IUPAC name.",
+      "engine": {
+        "library": "PubChem web service (IUPAC-name record lookup via site server proxy)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "PubChem returned caffeine, paclitaxel, cholesterol, and aspirin.",
+      "engine": {
+        "library": "PubChem web service (via site server proxy)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/search-import.js?ver=1.88.95"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "PubChem conformer loaded; fresh cubane model rotated by dragging.",
+      "shot": {
+        "image": "evidence/molecule-lab/f-model-3d.webp",
+        "caption": "Ball-and-stick molecular model in the 3D preview."
+      },
+      "engine": {
+        "library": "Kekule.js Viewer3D with Three.js (JavaScript); 3Dmol.js (JavaScript); Open Babel (WebAssembly conformers); PubChem web service (optional conformers)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/cdxml-import.js?ver=1.88.95",
+      "note": "Exported caffeine CDXML and reimported its atom and bond text.",
+      "engine": {
+        "library": "In-house (JavaScript CDXML subset importer/writer); Kekule.js (JavaScript MOL conversion)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/chem-io.js?ver=1.88.95"
+      }
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/cdxml-import.js?ver=1.88.95",
+      "note": "Binary CDX import is explicitly rejected."
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95",
+      "note": "Exported 3D SDF; no MOL import or export found.",
+      "engine": {
+        "library": "Kekule.js (JavaScript MOL reader/writer); In-house (JavaScript SDF export)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "PubChem-backed SMILES import and lookup output worked.",
+      "engine": {
+        "library": "PubChem web service (server-proxied import and record lookup); Kekule.js (JavaScript writer fallback)",
+        "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/molecule-drawing-tool/",
+      "note": "Exported all three drawings as SVG."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export command in File menu."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/copy-2d-image.js?ver=1.88.95",
+      "note": "2D PNG exported; no print DPI control observed.",
+      "shot": {
+        "image": "evidence/molecule-lab/f-png-export.webp",
+        "caption": "PNG output showing a caffeine structure."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95",
+      "note": "CDXML-text paste in; copy-out uses PNG."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Naming, property and SMILES lookups depend on matching PubChem compounds.",
+    "CDXML import omits annotations and rejects contracted groups.",
+    "SVG export rejects query, coordination and non-Kekulé aromatic bonds."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "1.88.95",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://total-synthesis.com/molecule-drawing-tool/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molecule-lab/simple.svg",
+        "note": "PubChem match CID 2519 supplied the drawing.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molecule-lab/complex.svg",
+        "note": "PubChem match CID 36314; zoomed out to fit.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molecule-lab/threed.png",
+        "note": "PubChem conformer; viewport saved as threed-view.png; local generation timed out.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/molecule-lab/canvas.webp",
+    "canvasLight": "evidence/molecule-lab/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Editor remained light under the dark appearance override."
+    },
+    "memory": null,
+    "observations": [
+      "The hosted editor was tested in an isolated WebKit window.",
+      "SMILES imports resolve through PubChem and use its 2D structures.",
+      "Paclitaxel's default drawing includes crowded overlapping labels.",
+      "Local cholesterol 3D generation timed out; PubChem supplied a conformer.",
+      "3D PNG export failed with a renderer-size mismatch in WebKit."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://total-synthesis.com/molecule-drawing-tool/",
+    "https://total-synthesis.com/molecule-drawing-tool/"
+  ],
+  "builtOn": {
+    "id": "p129",
+    "relation": "wrapper",
+    "editor": "Kekule.js Composer",
+    "libraries": [
+      "Kekule.js",
+      "RDKit",
+      "Open Babel",
+      "3Dmol.js"
+    ],
+    "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95",
+    "note": "Mounts Kekule.js Composer; adds RDKit validation, Open Babel conformers, and 3Dmol.js viewing."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Kekule.js canvas; in-house SVG renderer",
+    "language": "JavaScript",
+    "source": "https://total-synthesis.com/wp-content/plugins/total-synthesis-molecule-lab/assets/molecule-lab-1.88.17.js?ver=1.88.95"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "RDKit and Open Babel WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML and CSS provide interface markup and styling.",
+  "thirdParty": {
+    "summary": "Includes GPL-2.0 (Open Babel) and GPL-noticed chemistry data; MIT/BSD components include GLmol with an LGPL-3.0 alternative.",
+    "source": "https://github.com/openbabel/openbabel/blob/openbabel-3-1-1/COPYING",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Kekule.js",
+        "license": "MIT",
+        "source": "https://github.com/partridgejiang/Kekule.js/blob/master/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "Open Babel",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/openbabel/openbabel/blob/master/COPYING"
+      },
+      {
+        "name": "3Dmol.js",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/3dmol/3Dmol.js/blob/master/LICENSE"
+      }
+    ]
+  }
+}

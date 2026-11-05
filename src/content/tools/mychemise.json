@@ -1,0 +1,470 @@
+{
+  "id": "p109",
+  "slug": "mychemise",
+  "name": "MyChemise",
+  "rank": 119,
+  "tier": "alternative",
+  "tierReason": "The documented editor produces printable 2D chemical drawings with text and shapes, although present-day operation remains unverified.",
+  "summary": "A legacy Java applet for drawing 2D chemical structures and creating animated reaction presentations.",
+  "website": "https://knalltundstinkt.de/englische%20Version/knalltundstinktE.html",
+  "repo": null,
+  "docs": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+  "vendor": "Jörg-Hubertus Wilhelm",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free application; specific software licensing terms unverified.",
+    "source": "https://pubs.sciepub.com/wjce/4/1/1/"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://pubs.sciepub.com/wjce/4/1/1/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://pubs.sciepub.com/wjce/4/1/1/"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": "Java applet",
+    "source": "https://link.springer.com/article/10.1186/1758-2946-3-53"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Bond selectors and manual placement include single, double and triple bonds."
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-3-53",
+      "note": "Pull-down tools provide cyclic hydrocarbons and aromatic rings."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Saved CSE or MOL structures can be inserted into other drawings."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Atom text supports charges, isotope numbers and arbitrary labels."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-3-53/figures/3",
+      "note": "Drawing controls offer forward and opposed-arrow line ends."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-3-53/figures/3",
+      "note": "Arc shapes and full or half arrowheads are selectable."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-3-53/figures/3",
+      "note": "Club and banana shapes represent orbitals."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Multiline text editor; fonts and superscript/subscript text controls."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Editable shapes, brackets and freehand drawing."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Atom text and bond colors can be set separately."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Clipboard images and background pictures can be placed on the canvas."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-3-53",
+      "note": "MOL V2000 import and export; SDF support unverified.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1758-2946-3-53/MediaObjects/13321_2011_234_MOESM2_ESM.ZIP"
+      }
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Requires a Java browser plug-in; current Chrome and Firefox cannot run Java applets.",
+    "Current hosted-editor access and operation were not verified on 2026-11-05.",
+    "Latest release details and software licensing terms remain unverified."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf"
+  ],
+  "builtOn": {
+    "id": "p109",
+    "relation": "original",
+    "editor": null,
+    "libraries": null,
+    "source": "https://link.springer.com/article/10.1186/1758-2946-3-53",
+    "note": "Author documents a self-developed editor; external chemistry libraries remain unconfirmed."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "MyChemise molecular drawing engine",
+    "language": "Java",
+    "source": "https://link.springer.com/article/10.1186/1758-2946-3-53"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Applet launch and resizing"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML and JavaScript launch the Java applet.",
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

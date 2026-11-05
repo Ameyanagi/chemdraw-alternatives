@@ -1,0 +1,532 @@
+{
+  "id": "p81",
+  "slug": "schematic",
+  "name": "schematic",
+  "rank": 72,
+  "tier": "alternative",
+  "tierReason": "A standalone editor produces 2D structure and reaction drawings with ACS styling, vector SVG and print-resolution PNG export.",
+  "summary": "Browser-based editor for drawing 2D chemical structures and simple reaction schemes with SVG and PNG export.",
+  "website": "https://grebenyyk.github.io/schematic/",
+  "repo": "https://github.com/grebenyyk/schematic",
+  "docs": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/README.md",
+  "vendor": "Dimitry Grebenyuk",
+  "license": {
+    "kind": "unclear",
+    "spdx": null,
+    "text": "Public source code with no declared license.",
+    "source": "https://github.com/grebenyyk/schematic/tree/ede2ccfe71c0a02d351bae9924ca38b5fbd92056"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://grebenyyk.github.io/schematic/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/grebenyyk/schematic/releases"
+  },
+  "engine": {
+    "rendering": "SVG DOM renderer and SVG export; HTML Canvas 2D rasterization for PNG.",
+    "chemistry": "In-house TypeScript SMILES parser, 2D layout, valence and formula calculations.",
+    "ui": "Vanilla DOM with TypeScript, HTML and CSS.",
+    "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/editor.ts#L1-L76"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/README.md#controls",
+      "note": "Drew a bond and cycled single, double, triple."
+    },
+    "stereo-bonds": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Chiral SMILES rendered only plain bonds; no stereo tools visible."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/README.md#controls",
+      "note": "Placed benzene; tool indicates sizes 3–8."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/interaction/tools/chain.ts#L16-L60",
+      "note": "Chain tool visible; attempted drags produced no chain."
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No template library visible."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/editor.ts#L504-L530",
+      "note": "Charge and element controls; isotope editing/display is incomplete."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/README.md#controls",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/interaction/tools/select.ts#L16-L147",
+      "note": "Lasso and rotation; no exposed flip or resize controls."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/core/model/reaction.ts#L3-L12",
+      "note": "Drew a forward arrow; no alternate arrow controls visible."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow tool visible."
+    },
+    "reaction-data": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/core/model/reaction.ts#L3-L12",
+      "note": "Arrows are scene elements, without reactant/product relationships."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/core/style/presets.ts#L3-L18",
+      "note": "ACS Document 1996 default."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/core/chem/formula.ts#L4-L32",
+      "note": "Caffeine displayed C₈H₁₀N₄O₂ and 194.19 g/mol.",
+      "shot": {
+        "image": "evidence/schematic/f-formula-mass.webp",
+        "caption": "Caffeine structure with its molecular formula and mass."
+      },
+      "engine": {
+        "library": "In-house (TypeScript formula, implicit hydrogens and atomic-weight table)",
+        "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/core/chem/formula.ts#L4-L32"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Pasting caffeine produced CH₃N, not caffeine."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command visible."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D viewer or control visible."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Pasting CDXML produced no structure; no file controls visible."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Pasting MOL produced no structure; no file controls visible."
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/core/chem/smiles.ts",
+      "note": "SMILES paste works; no output command; chirality not depicted.",
+      "engine": {
+        "library": "In-house (TypeScript SMILES subset parser; import only)",
+        "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/core/chem/smiles.ts#L22-L36"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/README.md#what-it-does",
+      "note": "Downloaded SVG for both 2D fixtures."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Export menu offers SVG and PNG only."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/render/export.ts#L7-L62",
+      "note": "PNG downloaded at 4200 × 4294; no DPI metadata."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "No license is declared; no tagged release is available.",
+    "SMILES import discards stereochemistry; some aromatic systems become single bonds.",
+    "Blueprint plans for MOL/RXN, chemical clipboard and PWA exceed implemented functionality."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-08-08T13:21:05Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.1.0 (ede2ccf)",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://grebenyyk.github.io/schematic/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/schematic/simple.svg",
+        "note": "Caffeine displayed with the expected formula and mass.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "Severe bond crossings and stretched bonds; stereochemistry is not depicted.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No 3D view available in the interface.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/schematic/canvas.webp",
+    "canvasLight": "evidence/schematic/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Caffeine SMILES produced a readable drawing and correct formula.",
+      "Paclitaxel layout contains long crossing bonds and overlapping labels.",
+      "Pasted chiral SMILES displayed no wedge or hash bonds.",
+      "Export menu offers SVG and PNG downloads.",
+      "The hosted page shows no application version; deployed commit identifies the build."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/grebenyyk/schematic",
+    "https://grebenyyk.github.io/schematic/",
+    "https://github.com/grebenyyk/schematic/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p81",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/editor.ts#L1-L76",
+    "note": "Custom SVG editor with in-house SMILES parsing, layout, and chemistry."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Schematic SVG bond and label renderer",
+    "language": "TypeScript",
+    "source": "https://github.com/grebenyyk/schematic/blob/ede2ccfe71c0a02d351bae9924ca38b5fbd92056/src/render/renderer.ts#L136-L181"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "HTML/CSS provide interface presentation.",
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

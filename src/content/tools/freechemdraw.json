@@ -1,0 +1,694 @@
+{
+  "id": "p16",
+  "slug": "freechemdraw",
+  "name": "FreeChemDraw",
+  "rank": 13,
+  "tier": "alternative",
+  "tierReason": "Users can compose 2D structures and reaction schemes with text and export vector SVG figures.",
+  "summary": "A free browser workspace for drawing chemical structures and reactions, converting names, calculating properties, and exporting figures.",
+  "website": "https://freechemdraw.com/en/",
+  "repo": null,
+  "docs": "https://freechemdraw.com/en/",
+  "vendor": "FreeChemDraw",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free hosted service under proprietary site terms; generated drawings may be used commercially.",
+    "source": "https://freechemdraw.com/en/terms/"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://freechemdraw.com/en/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://freechemdraw.com/en/"
+  },
+  "engine": {
+    "rendering": "Ketcher SVG/Raphael editor; Indigo image rendering",
+    "chemistry": "Indigo (embedded Ketcher editor)",
+    "ui": "React (embedded Ketcher 3.18.0)",
+    "source": "https://freechemdraw.com/ketcher-3.18.0/static/js/main.e47c48ad.js"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-bonds",
+      "note": "Drew separate single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts",
+      "note": "Dative and hydrogen bond tools."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Placed benzene and cyclohexane with ring tools.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-rings.webp",
+        "caption": "Benzene and cyclohexane rings on the drawing canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/templates/library.sdf#L8231",
+      "note": "Built-in chair and boat templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/editor/tool/chain.ts",
+      "note": "Dragging determines chain length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Selected and placed D-alanine from structure library.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-templates.webp",
+        "caption": "Structure library showing template categories and amino acid structures."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Save to Templates creates reusable user templates.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-custom-templates.webp",
+        "caption": "Save Structure dialog with a Save to Templates button."
+      }
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#expandingcontracting-s-group",
+      "note": "Functional groups expand, contract and retain underlying chemistry."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/data/schema/struct-schema.ts",
+      "note": "Editable charge, isotope, element, pseudoatom and alias fields."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/data/schema/struct-schema.ts",
+      "note": "Monoradical and singlet/triplet diradical atom properties."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/state/handleHotkeysOverItem.ts",
+      "note": "Hotkeys alter hovered atoms, charges and atom properties."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/editor/tool/select/select.ts",
+      "note": "Lasso, rotate and flip; resizing limited to graphical objects."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/leftToolbarOptions.ts",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the drawing canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/leftToolbarOptions.ts",
+      "note": "Drew curved full-head arrow; editing was not verified.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-mechanism-arrows.webp",
+        "caption": "Curved arrow on the drawing canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#reaction-specific-format-support",
+      "note": "Embedded Ketcher preserves reactants, products and reagents in reaction formats.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-reaction-data.webp",
+        "caption": "Save Structure dialog with MDL Rxnfile V2000 selected."
+      }
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-reactions",
+      "note": "Embedded Ketcher offers manual mapping, automatic mapping and unmapping."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#adding-text-objects-on-the-canvas",
+      "note": "Editable text supports styling, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-graphical-objects",
+      "note": "Ellipse, rectangle and line tools; chemical S-group brackets.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-shapes.webp",
+        "caption": "Shape tool menu with ellipse, rectangle and line icons."
+      }
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-molecules-mode",
+      "note": "Clean Up assigns uniform bond lengths and angles.",
+      "engine": {
+        "library": "Indigo (WebAssembly through embedded Ketcher 3.18.0)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L228"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://freechemdraw.com/en/acs-chemical-drawing-style/",
+      "note": "ACS preset applies coordinated bond, font and spacing settings.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-journal-styles.webp",
+        "caption": "Benzoic acid drawing with Default and ACS style options."
+      }
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/modal/components/meta/Settings/Settings.tsx",
+      "note": "Bond and font settings can be saved and reloaded as files."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Individual atoms and bonds support eight highlighting colors."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#adding-images-on-the-canvas",
+      "note": "PNG and SVG images can be placed on the canvas."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-atoms",
+      "note": "Embedded Ketcher underlines atoms with incorrect valence in red.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-valence-check.webp",
+        "caption": "Settings dialog with Show valence warnings enabled."
+      },
+      "engine": {
+        "library": "Ketcher TypeScript valence rules; Indigo WebAssembly full structure checker",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/domain/entities/atom.ts#L447"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#stereochemistry",
+      "note": "Embedded Ketcher computes R/S, r/s and E/Z descriptors.",
+      "engine": {
+        "library": "Indigo (WebAssembly CIP calculation through Ketcher)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L175"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://freechemdraw.com/en/molecular-properties-calculator/",
+      "note": "Ethanol showed C2H6O, 46.069 molecular weight, 46.042 exact mass.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-formula-mass.webp",
+        "caption": "Calculated molecular formula, molecular weight and exact mass."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly in Ketcher Calculate dialog; separate live-property-strip server engine undisclosed)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L190"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://freechemdraw.com/en/molecular-properties-calculator/",
+      "note": "Ethanol showed TPSA 20.23 and LogP -0.001.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-properties.webp",
+        "caption": "Calculated TPSA and LogP in the molecular properties results."
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://freechemdraw.com/en/name-to-structure/",
+      "note": "Ethanol and systematic aspirin name worked; aspirin alone failed.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-name-to-structure.webp",
+        "caption": "Ethanol name and resulting structure in the editor."
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://freechemdraw.com/en/structure-to-iupac-name/",
+      "note": "Ethanol and systematic aspirin structures returned names.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-structure-to-name.webp",
+        "caption": "Ethanol structure and generated IUPAC name."
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-r-groups",
+      "note": "Embedded Ketcher supports R-groups, attachment points and R-group logic."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#marking-s-groups",
+      "note": "Embedded Ketcher supports SRU polymers, connectivity and copolymer subtypes."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-macromolecules-mode",
+      "note": "Embedded Ketcher supports peptides, nucleic acids, sequences and monomers."
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://freechemdraw.com/en/chemical-structure-image-recognition/",
+      "note": "Recognition produces an editable structure; server processing required.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-image-to-structure.webp",
+        "caption": "Image Recognition panel with upload and Recognize controls."
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://freechemdraw.com/en/chemical-structure-knowledge-base/freechemdraw-workspace-update-name-3d-search/",
+      "note": "Searches CAS numbers, formulas and English names through ChemTradeHub.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-database-lookup.webp",
+        "caption": "Structure Lookup search field beside the editor."
+      },
+      "engine": {
+        "library": "ChemTradeHub chemical structure lookup (remote web service through /api/query-chem)",
+        "source": "https://freechemdraw.com/"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://freechemdraw.com/en/chemical-structure-knowledge-base/freechemdraw-workspace-update-name-3d-search/",
+      "note": "Generated cholesterol model from SMILES and rotated it by dragging.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-model-3d.webp",
+        "caption": "Cholesterol ball-and-stick model with 3D view controls."
+      },
+      "engine": {
+        "library": "3Dmol.js (browser JavaScript/WebGL viewer); 3D coordinates supplied by an undisclosed remote engine",
+        "source": "https://freechemdraw.com/"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Exported caffeine CDXML and reopened it in editor.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-cdxml.webp",
+        "caption": "Open structure dialog containing CDXML text."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly conversion through Ketcher)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L106"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Binary and Base64 CDX through embedded Ketcher in molecule mode.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-cdx.webp",
+        "caption": "Local file upload lists CDX among supported formats."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly conversion through Ketcher)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L107"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Imported and exported MOL; SDF save option visible.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-mol-sdf.webp",
+        "caption": "Save Structure dialog showing an MDL Molfile preview."
+      },
+      "engine": {
+        "library": "Ketcher TypeScript MolSerializer for ordinary MOL V2000; Indigo WebAssembly for SDF, V3000 and query MOL",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L82"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://freechemdraw.com/en/",
+      "note": "Imported caffeine SMILES and copied generated SMILES.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-smiles.webp",
+        "caption": "Benzoic acid structure and its displayed SMILES."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly conversion/layout through Ketcher)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L102"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Embedded Ketcher supports InChI, AuxInfo and InChIKey.",
+      "engine": {
+        "library": "InChI through Indigo (WebAssembly conversion through Ketcher)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L98"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/README.md",
+      "note": "Embedded Ketcher reads and writes MDL RXN reactions.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-rxn.webp",
+        "caption": "Save Structure dialog with MDL Rxnfile V2000 selected."
+      }
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://freechemdraw.com/en/chemical-structure-editor/",
+      "note": "Downloaded SVG drawings for all three structures.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-svg-export.webp",
+        "caption": "Benzoic acid drawing with an Export as SVG button."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF option in editor save or workspace export controls."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/data/schema/options-schema.ts",
+      "note": "PNG downloaded at 526×194; high-resolution option untested.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-png-export.webp",
+        "caption": "Benzoic acid drawing with an Export as PNG button."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://freechemdraw.com/en/mcp/",
+      "note": "Separate MCP service; editor transfer requires manual SMILES/MOL import.",
+      "shot": {
+        "image": "evidence/freechemdraw/f-mcp-agents.webp",
+        "caption": "FreeChemDraw MCP card and Explore MCP Tools link."
+      }
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Properties, recognition, naming and 3D generation require server processing.",
+    "Browser autosave is retained for only 10 minutes.",
+    "The ACS preset does not guarantee compliance with journal requirements."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "3.18.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://freechemdraw.com/en/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/freechemdraw/simple.svg",
+        "note": "Current caffeine SMILES imported; MOL also saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/freechemdraw/complex.svg",
+        "note": "Current paclitaxel SMILES imported; MOL also saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/freechemdraw/threed.png",
+        "note": "Generated rotatable cholesterol 3D model; 2D MOL also saved.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/freechemdraw/canvas.webp",
+    "canvasLight": "evidence/freechemdraw/canvas-light.webp",
+    "canvasDark": "evidence/freechemdraw/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "About identifies embedded Ketcher 3.18.0; no FreeChemDraw release version shown.",
+      "Default caffeine layout uses aromatic circles and colored heteroatoms.",
+      "Default cholesterol 3D view shows a ball-and-stick model.",
+      "Default PNG carried 72 dpi metadata; editor offers high and low resolution.",
+      "Name conversion rejected aspirin but accepted its systematic name.",
+      "Current Kekulé caffeine SMILES produced alternating double bonds in the default layout."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://freechemdraw.com/en/"
+  ],
+  "builtOn": {
+    "id": "p16",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "Ketcher",
+      "Indigo",
+      "3Dmol.js"
+    ],
+    "source": "https://freechemdraw.com/en/",
+    "note": "Embeds Ketcher 3.18; Indigo handles chemistry and 3Dmol.js displays 3D structures."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher SVG/Raphaël; Indigo generated images",
+    "language": "TypeScript",
+    "source": "https://freechemdraw.com/ketcher-3.18.0/static/js/main.e47c48ad.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Workspace and 3Dmol.js viewer"
+    },
+    {
+      "language": "C++",
+      "role": "Indigo WebAssembly chemistry and image rendering"
+    },
+    {
+      "language": "C",
+      "role": "InChI via Indigo WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Server-side OSRA has GPL-2.0-or-later components; Font Awesome icons/fonts use CC-BY-4.0/OFL-1.1. Ketcher upstream NOTICE also lists LGPL-2.1, MPL-1.0 and AFL-3.0 dependencies without component mapping.",
+    "source": "https://sourceforge.net/p/osra/wiki/License/",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "3Dmol.js",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/3dmol/3Dmol.js/blob/master/LICENSE"
+      }
+    ]
+  }
+}

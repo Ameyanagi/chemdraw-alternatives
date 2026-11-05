@@ -1,0 +1,70 @@
+{
+  "id": "p37",
+  "slug": "open-babel",
+  "name": "Open Babel",
+  "rank": 137,
+  "tier": "related",
+  "tierReason": "Open Babel converts chemical data and generates depictions, but its conversion GUI does not provide ChemDraw-style drawing document authoring.",
+  "summary": "A chemical data conversion toolkit for translating file formats, analyzing molecules, and generating molecular depictions.",
+  "website": "https://openbabel.org/",
+  "repo": "https://github.com/openbabel/openbabel",
+  "docs": "https://openbabel.org/docs/",
+  "vendor": "The Open Babel Team",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0-only",
+    "text": "GNU General Public License version 2.",
+    "source": "https://github.com/openbabel/openbabel/blob/0e94434fa75c9f61095023e3c12e0d5f2ac035ff/README.md"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://openbabel.org/docs/Introduction/faq.html#general"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "3.2.1",
+    "date": "2026-07-11",
+    "source": "https://github.com/openbabel/openbabel/releases/tag/openbabel-3-2-1"
+  },
+  "engine": {
+    "rendering": "Open Babel OBDepict with SVGPainter for SVG and CairoPainter/Cairo for PNG; SVG displayed in an external browser.",
+    "chemistry": "Open Babel (in-house C++ chemistry toolkit)",
+    "ui": "wxWidgets (optional desktop GUI)",
+    "source": "https://github.com/openbabel/openbabel/tree/9be528bcdb31a219637ae3d1699170a8aaa5be6d"
+  },
+  "languages": [
+    "C++"
+  ],
+  "features": {},
+  "caveats": [
+    "The GUI converts chemical data and displays structures in an external browser.",
+    "PNG depiction requires a build with Cairo.",
+    "The manual still calls 3.2.0 current; the latest release is 3.2.1."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 38665910,
+  "references": [
+    "https://openbabel.org/docs/FileFormats/Overview.html"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "id": "p121",
+  "slug": "chemograph-plus",
+  "name": "Chemograph Plus",
+  "rank": 125,
+  "tier": "alternative",
+  "tierReason": "Its standalone 2D editor produces chemical structure and reaction documents with MOL exchange and Word object insertion.",
+  "summary": "Windows software for drawing chemical structures and reaction schemes, with spectra editing and optional 3D structure viewing.",
+  "website": "https://www.chemograph.de/",
+  "repo": null,
+  "docs": "https://www.chemograph.de/chemographversions.html",
+  "vendor": "DigiLab Software GmbH",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary; Standard is free for private end users; Premium is paid.",
+    "source": "https://www.chemograph.de/chemographversions.html"
+  },
+  "price": {
+    "text": "2026-11-05: Standard free for private use; Premium price undisclosed.",
+    "source": "https://www.chemograph.de/chemographversions.html"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://www.chemograph.de/download.html"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [
+    "C++"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemograph.de/chemographversions.html#bibeditor",
+      "note": "Premium only; complex structure libraries; vendor claim."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemograph.de/chemographversions.html#bibeditor",
+      "note": "Premium only; user libraries accept copied structures; vendor claim."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.openagrar.de/servlets/MCRFileNodeServlet/openagrar_derivate_00033053/2003_0463.pdf",
+      "note": "Vendor-coauthored 2002 publication; current edition unspecified."
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.openagrar.de/servlets/MCRFileNodeServlet/openagrar_derivate_00033053/2003_0463.pdf",
+      "note": "Vendor-coauthored 2002 publication; current edition unspecified."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemograph.de/chemographversions.html#3dteil",
+      "note": "Premium only; rotatable X-ray-derived models; vendor claim."
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemograph.de/chemographversions.html#3dteil",
+      "note": "Premium only; X-ray structure viewing; CIF undocumented; vendor claim."
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemograph.de/chemographversions.html#2dteil",
+      "note": "MOL read/write; SDF undocumented; vendor claim."
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "The interface is German.",
+    "Downloads require registration; public pages omit installer details and current release numbers.",
+    "Formula, valence-checking, and C++ evidence comes from a vendor-coauthored 2002 publication."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.chemograph.de/",
+    "https://www.chemograph.de/chemographversions.html"
+  ],
+  "builtOn": {
+    "id": "p121",
+    "relation": null,
+    "editor": null,
+    "libraries": null,
+    "source": null,
+    "note": "Public vendor documentation does not establish canvas provenance or third-party chemistry libraries."
+  },
+  "renderer": {
+    "origin": null,
+    "name": null,
+    "language": null,
+    "source": null
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

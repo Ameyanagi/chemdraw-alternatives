@@ -1,0 +1,521 @@
+{
+  "id": "p74",
+  "slug": "molgendraw",
+  "name": "MolGenDraw",
+  "rank": 116,
+  "tier": "alternative",
+  "tierReason": "A standalone 2D molecular drawing application with structure templates and PNG/PDF exports for molecular figures.",
+  "summary": "A Windows application for drawing molecular structures and editing multi-record SDF and SMILES databases.",
+  "website": "https://github.com/usman-vb/MolGenDraw",
+  "repo": "https://github.com/usman-vb/MolGenDraw",
+  "docs": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md",
+  "vendor": "Muhammad Usman Afzal",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Proprietary freeware; all rights reserved.",
+    "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L213-L216"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L213-L216"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v1.176",
+    "date": "2026-10-29",
+    "source": "https://github.com/usman-vb/MolGenDraw/releases/tag/v1.176"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "RDKit",
+    "ui": "PySide6",
+    "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/Screenshots/MolGenDraw_About.png"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L14-L16",
+      "note": "vendor claim; manually cycle single, double and triple bonds."
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L14-L16",
+      "note": "vendor claim; benzene, cyclohexane and cyclopentane ring tools."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/Screenshots/MolGenDraw_Template.png",
+      "note": "Phenolphthalein template shown in the structure library."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L65-L68",
+      "note": "Save the current molecule as a reusable template."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Element and charge controls shown; isotope editing undocumented."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Selection, rotation and flips documented; resizing unverified."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Advanced reaction drawing and arrow tools are listed as planned."
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Bond-width controls documented; reusable styles unverified."
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Only single-page A4 report export documented."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L74-L79",
+      "note": "vendor claim; real-time RDKit sanitization errors flag invalid structures.",
+      "engine": {
+        "library": "RDKit (Python Chem.SanitizeMol)",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/Screenshots/MolGenDraw_2D_View.png",
+      "note": "Formula, molecular weight and exact mass displayed.",
+      "engine": {
+        "library": "In-house (Python atom counts and ATOMIC_WEIGHTS/EXACT_MASSES tables); RDKit (Python CalcMolFormula, MolWt and ExactMolWt in 3D view)",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L38-L63",
+      "note": "PubChem name lookup and IUPAC-to-SMILES batch generation.",
+      "engine": {
+        "library": "OPSIN (local Java CLI JAR); PubChem web service (PubChemPy/Python), with RDKit (Python) SMILES parsing",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L74-L78",
+      "note": "IUPAC name generation requires an internet connection.",
+      "engine": {
+        "library": "PubChem PUG REST (remote IUPACName property lookup through Python urllib)",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L54-L57",
+      "note": "Batch PNG/JPG recognition exports editable MOL files.",
+      "engine": {
+        "library": "Imago OCR (local Windows imago.exe invoked through Python subprocess)",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L38-L41",
+      "note": "PubChem retrieval loads structures onto the canvas.",
+      "engine": {
+        "library": "PubChem PUG REST (remote API through PubChemPy Python get_compounds)",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L43-L47",
+      "note": "Mouse rotation; wireframe, sticks and ball-and-stick display modes.",
+      "engine": {
+        "library": "In-house (Python/Pillow drawing and NumPy projection); RDKit (Python EmbedMolecule and MMFFOptimizeMolecule geometry)",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L70-L79",
+      "note": "Reads/writes MOL and SDF; includes multi-record database editing.",
+      "engine": {
+        "library": "RDKit (Python MOL parsing, SDMolSupplier and MolToMolBlock); In-house (Python SDF record/tag framing and molblock-header normalization)",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L70-L78",
+      "note": "Reads/writes SMILES, including multi-record SMI collections.",
+      "engine": {
+        "library": "RDKit (Python Chem.MolFromSmiles and MolToSmiles)",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L74-L78",
+      "note": "Generates InChI and InChIKey offline.",
+      "engine": {
+        "library": "RDKit (Python Chem.MolToInchi and InchiToInchiKey, bundled native InChI backend)",
+        "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "PDF reports documented; vector output unverified."
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Transparent PNG export documented; 300 dpi output unverified."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Windows 10/11 64-bit only; executable is unsigned.",
+    "Advanced reaction drawing and arrow tools are planned.",
+    "Vector PDF output and PNG print resolution are undocumented."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-10-30T03:59:29Z",
+    "archived": false
+  },
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 150492360,
+  "references": [
+    "https://github.com/usman-vb/MolGenDraw",
+    "https://github.com/usman-vb/MolGenDraw/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p74",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "RDKit"
+    ],
+    "source": "https://github.com/usman-vb/MolGenDraw/blob/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md#L74-L79",
+    "note": "Vendor documents RDKit; canvas provenance is not publicly established."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "RDKit MolDraw2D Cairo",
+    "language": "C++",
+    "source": "https://github.com/usman-vb/MolGenDraw/releases/download/v1.176/MolGenDraw-1.176.zip"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Application and custom Pillow 3D renderer"
+    },
+    {
+      "language": "Java",
+      "role": "Local OPSIN name parsing"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      }
+    ]
+  }
+}

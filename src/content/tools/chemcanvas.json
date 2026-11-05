@@ -1,0 +1,588 @@
+{
+  "id": "p48",
+  "slug": "chemcanvas",
+  "name": "ChemCanvas",
+  "rank": 34,
+  "tier": "alternative",
+  "tierReason": "Standalone drawing tools, multipage documents, rich text and vector export support publication-grade 2D chemical figures.",
+  "summary": "A desktop editor for drawing 2D chemical structures, reaction schemes and mechanisms.",
+  "website": "https://ksharindam.github.io/chemcanvas/",
+  "repo": "https://github.com/ksharindam/chemcanvas",
+  "docs": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/README.md",
+  "vendor": "Arindam Chaudhuri",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-3.0-or-later",
+    "text": "GNU General Public License version 3 or later.",
+    "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/pyproject.toml#L14"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://flathub.org/en/apps/io.github.ksharindam.chemcanvas"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.14.8",
+    "date": "2026-08-13",
+    "source": "https://github.com/ksharindam/chemcanvas/releases/tag/v0.14.8"
+  },
+  "engine": {
+    "rendering": "Qt QGraphicsScene and QPainter; custom SVG serialization",
+    "chemistry": "Custom Python molecular graph, SMILES and aromaticity code",
+    "ui": "PyQt5 (v0.14.8)",
+    "source": "https://github.com/ksharindam/chemcanvas/tree/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas"
+  },
+  "languages": [
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L1157-L1166",
+      "note": "Tools selected; computer-use drag failed with noWindowsAvailable.",
+      "shot": {
+        "image": "evidence/chemcanvas/f-bonds-core.webp",
+        "caption": "Single, double, and triple bond tools above a caffeine drawing."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L2626-L2628",
+      "note": "Imported wedges; manual drawing blocked by computer-use drag error.",
+      "shot": {
+        "image": "evidence/chemcanvas/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedges in a structure and the bond toolbar."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L2623-L2624",
+      "note": "Coordinate and hydrogen bonds."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/bond.py#L544-L569",
+      "note": "Left, right, centered and automatic placement."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/templates/basic_templates.cctf#L3-L60",
+      "note": "Placed a benzene ring from the palette.",
+      "shot": {
+        "image": "evidence/chemcanvas/f-rings.webp",
+        "caption": "Ring templates, including benzene, beside the canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/templates/basic_templates.cctf#L31-L44",
+      "note": "Built-in cyclohexane chair template.",
+      "shot": {
+        "image": "evidence/chemcanvas/f-conformers.webp",
+        "caption": "The template palette includes a cyclohexane chair."
+      }
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L1324-L1376",
+      "note": "Drag draws zigzag carbon chains with an atom count."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/template_manager.py#L37-L39",
+      "note": "Selected Alanine from the library and inserted it."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/template_manager.py#L156-L181",
+      "note": "Save named molecular templates with attachment atom and bond."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L149-L164",
+      "note": "Groups including Ph, OAc and OCH3 expand into structures.",
+      "shot": {
+        "image": "evidence/chemcanvas/f-abbreviations.webp",
+        "caption": "Functional group palette with Ph, COOH, OEt, and other labels."
+      }
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/atom.py",
+      "note": "Editable symbols, charges and isotope numbers.",
+      "shot": {
+        "image": "evidence/chemcanvas/f-atom-labels.webp",
+        "caption": "Element palette and charge controls beside the drawing canvas."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L1823-L1897",
+      "note": "Dedicated radical and lone-pair tools."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L2642-L2669",
+      "note": "Lasso selection, resizing, molecule rotation, mirror and inversion."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L590-L607",
+      "note": "Rotate drawing atom coordinates in three dimensions."
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L2696-L2703",
+      "note": "Arrow tools selected; computer-use drag failed with noWindowsAvailable."
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L1685-L1737",
+      "note": "Electron Pair Shift selected; computer-use drag failed with noWindowsAvailable."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/fileformat_mrv.py#L266-L282",
+      "note": "Single-step reactions store reactant and product molecules in MRV."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L2446-L2455",
+      "note": "Dedicated s, p, dxy and dz2 orbital tools."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L1903-L1992",
+      "note": "Free-text fonts, size, subscripts, superscripts, bold, italic and underline."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L2042-L2103",
+      "note": "Editable lines, rectangles, ellipses and brackets."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/settings_ui.py#L94-L161",
+      "note": "Bond settings and atom font size persist across sessions."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://ksharindam.github.io/chemcanvas/#features",
+      "note": "Atoms, bonds and other objects can be colored individually."
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/settings_ui.py#L344-L404",
+      "note": "One to 200 pages, standard/custom sizes, orientation and margins."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass command found in inspected UI."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/template_manager.py#L697-L723",
+      "note": "PubChem caffeine lookup returned and inserted a structure.",
+      "engine": {
+        "library": "PubChem PUG REST web service",
+        "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/template_manager.py#L697-L723"
+      }
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure-to-name command found in inspected UI."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/tools.py#L2552-L2554",
+      "note": "R-group labels in the functional-group palette.",
+      "shot": {
+        "image": "evidence/chemcanvas/f-markush.webp",
+        "caption": "The functional group palette includes an R label."
+      }
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/releases/tag/v0.8.2",
+      "note": "Fetched caffeine from PubChem and inserted the returned structure.",
+      "engine": {
+        "library": "PubChem PUG REST web service",
+        "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/template_manager.py#L697-L723"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "3D SDF opened as flat drawing; no model viewport."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/fileformat_cdxml.py",
+      "note": "Caffeine exported and imported successfully.",
+      "engine": {
+        "library": "In-house (Python CDXML reader/writer)",
+        "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/fileformat_cdxml.py"
+      }
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "CDX absent from inspected file-format lists."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/fileformat_molfile.py#L20-L22",
+      "note": "MOL exported/reopened; cholesterol SDF imported as a flat drawing.",
+      "shot": {
+        "image": "evidence/chemcanvas/f-mol-sdf.webp",
+        "caption": "An SDF file displayed as a flat molecular drawing."
+      },
+      "engine": {
+        "library": "In-house (Python V2000 MOL reader/writer; SDF reader)",
+        "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/fileformat_molfile.py"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/fileformat_smiles.py",
+      "note": "SMILES files imported; Generate SMILES produced caffeine output.",
+      "shot": {
+        "image": "evidence/chemcanvas/f-smiles.webp",
+        "caption": "A SMILES file displayed as a caffeine drawing."
+      },
+      "engine": {
+        "library": "Ported from OASA (adapted Python SMILES reader/writer)",
+        "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/fileformat_smiles.py"
+      }
+    },
+    "inchi": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "InChI absent from inspected file-format lists."
+    },
+    "rxn": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "RXN absent from inspected file-format lists."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://ksharindam.github.io/chemcanvas/#features",
+      "note": "Saved default cropped vector SVG for both fixtures."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/main.py#L851-L875",
+      "note": "Saved caffeine PDF with default settings."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/settings_ui.py#L280-L291",
+      "note": "Default PNG exported at 100 DPI; resolution control present."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Official packages target Windows and Linux.",
+    "CDXML exchange omits free text, shapes and brackets.",
+    "SMILES export takes one molecule and cannot encode disconnected compounds."
+  ],
+  "github": {
+    "stars": 59,
+    "pushedAt": "2026-11-04T14:47:25Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.14.8",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://github.com/ksharindam/chemcanvas/archive/refs/tags/v0.14.8.zip",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 363881,
+    "installedBytes": 156061696,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemcanvas/simple.svg",
+        "note": "Automatic layout retained; window zoomed to 200%.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemcanvas/complex.svg",
+        "note": "Automatic layout retained, including overlapping bonds and labels.",
+        "structure": "mismatch"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemcanvas/canvas.webp",
+    "canvasLight": "evidence/chemcanvas/canvas-light.webp",
+    "canvasDark": "evidence/chemcanvas/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "follows system",
+      "note": "Dark interface; drawing canvas remains white."
+    },
+    "memory": null,
+    "observations": [
+      "Caffeine SMILES import generated a complete 2D drawing.",
+      "Paclitaxel automatic layout contains overlapping bonds and labels.",
+      "Terminal carbons display CH3 labels by default.",
+      "SVG exports crop to drawing bounds.",
+      "Cholesterol SDF appears as a flat, hydrogen-labelled drawing."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 363881,
+  "references": [
+    "https://github.com/ksharindam/chemcanvas",
+    "https://github.com/ksharindam/chemcanvas/blob/7393a5bf2118889529de17eafec930ee62c53304/README.md"
+  ],
+  "builtOn": {
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/canvas.py",
+    "note": "Custom Qt canvas; chemistry includes adapted OASA source.",
+    "ported": [
+      "OASA"
+    ]
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ChemCanvas molecular drawing over Qt",
+    "language": "Python",
+    "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/bond.py"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "Qt widgets and graphics via PyQt5"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Excludes NSIS installers and shell build scripts.",
+  "thirdParty": {
+    "summary": "PyQt5 uses GPL-3.0 and Qt LGPL-3.0. Adapted OASA code is GPL-covered (upstream GPL-2.0-or-later; repository notices GPL-3.0).",
+    "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/coords_generator.py",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "OASA",
+        "license": "GPL-2.0-or-later",
+        "source": "https://bkchem.zirael.org/download/oasa-0.13.1.tar.gz"
+      }
+    ]
+  }
+}

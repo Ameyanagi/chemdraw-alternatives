@@ -1,0 +1,71 @@
+{
+  "id": "p36",
+  "slug": "rdkit",
+  "name": "RDKit / MolDraw2D",
+  "rank": 139,
+  "tier": "related",
+  "tierReason": "RDKit/MolDraw2D is a cheminformatics and depiction library without an interactive chemical drawing document editor.",
+  "summary": "A cheminformatics library for generating 2D molecular depictions from code.",
+  "website": "https://www.rdkit.org/",
+  "repo": "https://github.com/rdkit/rdkit",
+  "docs": "https://rdkit.org/docs/source/rdkit.Chem.Draw.rdMolDraw2D.html",
+  "vendor": "RDKit contributors",
+  "license": {
+    "kind": "open-source",
+    "spdx": "BSD-3-Clause",
+    "text": "Permissive BSD 3-Clause license, including commercial use.",
+    "source": "https://github.com/rdkit/rdkit/blob/fece8caa860bdf6c9c82bdb9253f22a0cf87150c/license.txt"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://rdkit.org/docs/Overview.html#open-source-toolkit-for-cheminformatics"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "2026.09.1",
+    "date": "2026-10-03",
+    "source": "https://github.com/rdkit/rdkit/releases/tag/Release_2026_09_1"
+  },
+  "engine": {
+    "rendering": "C++ MolDraw2D renderer with SVG and Cairo PNG backends",
+    "chemistry": "RDKit",
+    "ui": null,
+    "source": "https://rdkit.org/docs/source/rdkit.Chem.Draw.rdMolDraw2D.html"
+  },
+  "languages": [
+    "C++",
+    "Python"
+  ],
+  "features": {},
+  "caveats": [
+    "Requires programming; no standalone chemical drawing document editor.",
+    "Current PyPI macOS wheels support Apple Silicon only.",
+    "PNG output requires Cairo support when building from source."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://rdkit.org/docs/GettingStartedInPython.html"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

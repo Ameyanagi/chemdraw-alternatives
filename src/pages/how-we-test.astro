@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Legend from '../components/Legend.astro';
+import { features, loadTools, isTested } from '../lib/tools';
+import fixtures from '../../evidence/fixtures/index.json';
+
+const tools = (await loadTools()).filter((tool) => tool.tier !== 'related');
+const notRun = tools.filter((tool) => !isTested(tool));
+const rows = Object.values(fixtures);
+---
+<Layout title="How we test" description="How the drawings, feature marks, sizes and timings on this site were produced.">
+  <article class="page prose-col py-10">
+    <h1 class="text-5xl">How we test</h1>
+    <p class="lede mt-4">Every result on this site says how we know it. If we have not confirmed something, we say that instead of guessing.</p>
+
+    <h2 class="mt-12 text-3xl">Which tools are compared</h2>
+    <p class="mt-3">A tool belongs here if you can use it to produce a publication-grade 2D chemical drawing, which is what ChemDraw is for. Web editors built to be embedded in other software are compared separately. Viewers, converters and libraries such as Avogadro and Open Babel are listed with a reason, but not compared.</p>
+
+    <h2 class="mt-12 text-3xl">The drawings</h2>
+    <p class="mt-3">Free tools are installed and run on a Mac (macOS 27, Apple M4). Browser tools are opened in Chromium. ChemDraw Prime 26.0 is included as the baseline, and because of its license we show only exported drawings of our test molecules, not its interface. Other paid tools are checked from their manuals.</p>
+    <p class="mt-3">Each tool gets the same three molecules, taken from PubChem. We use default settings and do not tidy the result. The one exception is ChemDraw, shown in its ACS Document 1996 style rather than its out-of-box style. SMILES is the first choice of input, because then the layout is the tool's own work. We paste the Kekulé SMILES that PubChem publishes, so ring drawing is also left to the tool. MOL is the fallback, used only when SMILES gives no drawing at all. A MOL file carries our own coordinates, so those drawings show the tool's style but not its layout, and the page says so. A SMILES drawing stays even if it overlaps, because that is what you would get.</p>
+    <div class="table-wrap mt-4">
+      <table class="data-table">
+        <thead><tr><th scope="col">Molecule</th><th scope="col">Formula</th><th scope="col">Heavy atoms</th><th scope="col">Stereocenters</th><th scope="col">PubChem CID</th></tr></thead>
+        <tbody>{rows.map((row) => <tr><th scope="row" class="capitalize">{row.name}</th><td>{row.formula}</td><td>{row.heavyAtoms}</td><td>{row.stereocenters}</td><td><a href={`https://pubchem.ncbi.nlm.nih.gov/compound/${row.pubchemCid}`}>{row.pubchemCid}</a></td></tr>)}</tbody>
+      </table>
+    </div>
+    <p class="mt-3">When a tool can write the structure back out, we compare its InChIKey with PubChem's. A match shows as "structure verified", which includes stereochemistry. "Stereochemistry changed" means the atoms and bonds survived but at least one stereocenter did not. Drawings with a problem stay on the page, so you can judge them yourself.</p>
+
+    <h2 class="mt-12 text-3xl">The feature checklist</h2>
+    <p class="mt-3">The {features.length} features come from ReShiki's feature list, plus things only other tools do, such as TLC plates and peptide tools, so the list does not favor ReShiki. Each feature has a one-sentence test. Hands-on results take priority over manuals.</p>
+    <div class="mt-4"><Legend /></div>
+    <p class="mt-3">"Not established" means we found nothing either way. A small project with a short README will show many of these, and that does not mean the feature is missing.</p>
+
+    <h2 class="mt-12 text-3xl" id="performance">Sizes and speed</h2>
+    <p class="mt-3">Download size is the installer we fetched. Installed size is the final folder on disk. For browser tools, the size is what the page transfers on a first visit.</p>
+    <p class="mt-3">Startup is the median of three launches in a row on the same Mac, timed until the first window appears. Memory is the actual memory in use, the macOS physical footprint shown in Activity Monitor, added up across the app's whole process tree. It is read after 10 quiet seconds on an empty document and again with paclitaxel loaded. For browser tools we also show the share used by an empty browser, so the two kinds of tool are not confused. For browser tools, startup is the median of three uncached loads. These timings show rough differences only: hosted tools also depend on the network and on their server.</p>
+
+    <h2 class="mt-12 text-3xl">Listing order</h2>
+    <p class="mt-3">Order is not a score. ChemDraw is first because it is the baseline. ReShiki is second because the maintainer of this site wrote it, and that position is a choice, not a measurement. Everything else is sorted by tools we ran first, then by features confirmed. A longer documented feature list is not proof of a better tool.</p>
+
+    <h2 class="mt-12 text-3xl">What we have not tested</h2>
+    <p class="mt-3">{notRun.length} of the {tools.length} compared tools were not run: paid tools, tools for Windows or Linux only, and tools that would not start on our Mac. Their pages say which applies. Results apply to the exact version shown and may change with the next release.</p>
+  </article>
+</Layout>

@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Canvas from '../components/Canvas.astro';
+import Specimen from '../components/Specimen.astro';
+import { href } from '../lib/paths';
+import { drawingZoom, inputNote, isTested, loadTools, molecules, structureNotes, testedVersion } from '../lib/tools';
+
+const tools = (await loadTools()).filter((tool) => tool.tier !== 'related' && isTested(tool));
+---
+<Layout title="Drawings" description="Caffeine, paclitaxel and cholesterol drawn by each tool with default settings, and by ChemDraw in its ACS style.">
+  <section class="page py-10">
+    <h1 class="text-5xl">Every drawing, side by side</h1>
+    <p class="lede mt-4">Each tool's default settings, no tidying. ChemDraw is the one exception: it is shown in its ACS Document 1996 style. Where the tool lays out a pasted SMILES itself, you see its own layout. <a href={href('how-we-test/')}>How we made these</a>.</p>
+    <p class="text-muted mt-3 max-w-[66ch]">Many tools built on Ketcher look alike here because Ketcher's normal export hands the image to Indigo, so those tiles are largely one renderer's output. They can differ from the screen: in our test, Ketcher's on-screen ABS label became Chiral in the export, and methyl labels moved. Not every tool does this: FreeChemDraw's SVG comes from the canvas, while its PNG comes from Indigo.</p>
+  </section>
+  <section class="page mb-14" id="canvas">
+    <h2 class="text-3xl">Main canvas</h2>
+    <p class="text-muted mt-1 mb-4">The app as you see it while drawing. Select one to enlarge it.</p>
+    <div class="wall">
+      {tools.map((tool) => (
+        <div class="bg-paper flex flex-col p-3">
+          <Canvas class="aspect-[4/3]" tool={tool} />
+          <a class="mt-2 font-semibold no-underline" href={href(`tools/${tool.slug}/`)}>{tool.name}</a>
+        </div>
+      ))}
+    </div>
+  </section>
+  {molecules.map((molecule) => (
+    <section class="page mb-14" id={molecule.id}>
+      <h2 class="text-3xl">{molecule.label}</h2>
+      <p class="text-muted mt-1 mb-4">{molecule.detail}</p>
+      <div class="wall">
+        {tools.map((tool, index) => {
+          const capture = tool.hands?.captures.find((item) => item.fixture === molecule.id);
+          return (
+            <a class="bg-paper hover:bg-silica flex flex-col p-3 no-underline" href={href(`tools/${tool.slug}/`)} {...drawingZoom(tool, molecule.id)}>
+              <div class="aspect-[4/3] overflow-hidden"><Specimen tool={tool} fixture={molecule.id} index={index} /></div>
+              <p class="mt-2 font-semibold">{tool.name}</p>
+              <p class="text-muted text-[0.9rem] [overflow-wrap:anywhere]">
+                {testedVersion(tool)}{tool.drawingStyle ? `, ${tool.drawingStyle} style` : ''}{capture?.input ? `, ${inputNote(capture.input)}` : ''}
+              </p>
+              {capture?.structure && <p class:list={['text-[0.9rem]', capture.structure === 'match' ? 'text-muted' : 'text-oxygen']}>{structureNotes[capture.structure]}</p>}
+              {capture?.image && capture.result === 'failed' && <p class="text-oxygen text-[0.9rem]">{capture.note}</p>}
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  ))}
+</Layout>

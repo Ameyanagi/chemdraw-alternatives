@@ -1,0 +1,594 @@
+{
+  "id": "p104",
+  "slug": "sketchem",
+  "name": "SketChem",
+  "rank": 66,
+  "tier": "alternative",
+  "tierReason": "Its implemented interface focuses on molecular structure input, and publication-grade document output is unverified.",
+  "summary": "A browser-based editor for creating and editing 2D chemical structures.",
+  "website": "https://itayyaakov.github.io/SketChem/",
+  "repo": "https://github.com/itayYaakov/SketChem",
+  "docs": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/README.md",
+  "vendor": "Itay Yaakov",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT license; free to use, modify and redistribute.",
+    "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/License.md"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/README.md#what-is-sketchem"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/itayYaakov/SketChem/releases"
+  },
+  "engine": {
+    "rendering": "Custom SVG drawing",
+    "chemistry": "Kekule.js with Open Babel and Indigo (WebAssembly)",
+    "ui": "React and Redux",
+    "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/README.md#what-is-unique-about-sketchem"
+  },
+  "languages": [
+    "TypeScript",
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/README.md#features",
+      "note": "Bond tools selected; attempted canvas edits did not change drawing.",
+      "shot": {
+        "image": "evidence/sketchem/f-bonds-core.webp",
+        "caption": "Bond buttons and single and double bonds on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/entities/Bond.ts#L270",
+      "note": "Imported wedges render; attempted wedge edit did not change drawing.",
+      "shot": {
+        "image": "evidence/sketchem/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds in an imported structure."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/entities/Bond.ts#L270",
+      "note": "Single-or-double query bonds only; no dative rendering."
+    },
+    "double-bond-side": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/constants/bond.constants.ts#L54",
+      "note": "Double-bond geometry is fixed symmetrically around the bond axis."
+    },
+    "rings": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No dedicated ring tools found."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/features/toolbar-item/tools/Chain.ts#L65",
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No template library found."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/entities/Atom.ts#L286",
+      "note": "Charges and element labels; no dedicated isotope-setting control.",
+      "shot": {
+        "image": "evidence/sketchem/f-atom-labels.webp",
+        "caption": "Element palette beside a caffeine structure with labeled atoms."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/features/toolbar-item/ToolbarItems.tsx#L72",
+      "note": "Shortcuts change tools or selections; hovering alone does not edit."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/features/toolbar-item/tools/SelectTemplate.ts#L261",
+      "note": "Lasso and box selection with movement; no rotate, flip or resize.",
+      "shot": {
+        "image": "evidence/sketchem/f-selection-tools.webp",
+        "caption": "Box and lasso selection buttons above the canvas."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No reaction arrow tool found."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow tool found."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/utils/KekuleUtils.js#L69",
+      "note": "Automatic 2D layout on text import only.",
+      "engine": {
+        "library": "Open Babel (WebAssembly via Kekule.js; import layout only)",
+        "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/public/kekule-js-dist/kekule.min.js#L1"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/README.md#features",
+      "note": null,
+      "engine": {
+        "library": "Ported from Open Babel (MDL valence model rewritten in TypeScript)",
+        "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/utils/mdlValance.ts#L1-L23"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass command found."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name input command found."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure naming command found."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SDF opened as flat projection; no 3D view found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "CDXML absent from import and export format lists."
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "CDX listed for import, not export.",
+      "engine": {
+        "library": "Open Babel (WebAssembly via Kekule.js; import only)",
+        "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/public/kekule-js-dist/kekule.min.js#L1"
+      }
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/public/kekule-js-dist/kekule.min.js#L1",
+      "note": "MOL and SDF import; MOL export lost coordinates.",
+      "engine": {
+        "library": "Kekule.js (JavaScript MDL MOL/SDF readers and writers)",
+        "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/public/kekule-js-dist/kekule.min.js#L1"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/public/kekule-js-dist/kekule.min.js#L1",
+      "note": "Caffeine SMILES exported; pasted SMILES displayed blank.",
+      "engine": {
+        "library": "Kekule.js (JavaScript writer); Indigo (WebAssembly reader)",
+        "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/public/kekule-js-dist/kekule.min.js#L1"
+      }
+    },
+    "inchi": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "InChI listed in import and export menus.",
+      "engine": {
+        "library": "Open Babel with bundled InChI library (WebAssembly via Kekule.js)",
+        "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/public/kekule-js-dist/kekule.min.js#L1"
+      }
+    },
+    "rxn": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "RXN listed in import and export menus."
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No SVG export option found."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export option found."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG export option found."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Development-stage editor with no tagged releases; runtime usability was not tested.",
+    "README calls copy/paste clipboard operations; the toolbar buttons use an internal buffer.",
+    "Source review suggests changed wedge stereochemistry may be lost on export."
+  ],
+  "github": {
+    "stars": 19,
+    "pushedAt": "2022-07-31T13:22:25Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "6ed8c631",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://itayyaakov.github.io/SketChem/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/sketchem/simple.png",
+        "note": "SMILES produced a blank canvas; MOL rendered. Exported MOL coordinates are zero.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/sketchem/complex.png",
+        "note": "SMILES produced a blank canvas; MOL rendered. Exported MOL coordinates are zero.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": "mismatch"
+      }
+    ],
+    "canvas": "evidence/sketchem/canvas.webp",
+    "canvasLight": "evidence/sketchem/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Hosted bundle identifier is main.6ed8c631.js; no app version was displayed.",
+      "MOL imports show explicit carbon labels and colored heteroatoms by default.",
+      "Paclitaxel shows solid and hashed stereobonds from the MOL fixture.",
+      "Image captures are crops of the isolated native web host window.",
+      "The cholesterol MOL output contained zero atoms after SDF import."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/itayYaakov/SketChem",
+    "https://itayyaakov.github.io/SketChem/",
+    "https://github.com/itayYaakov/SketChem/blob/development/README.md"
+  ],
+  "builtOn": {
+    "id": "p104",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "Kekule.js",
+      "Open Babel",
+      "Indigo"
+    ],
+    "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/features/sketchpad/SketchPad.tsx#L177-L218",
+    "note": "Custom SVG sketchpad; Kekule.js provides chemistry with Open Babel and Indigo."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "In-house SVG renderer using SVG.js",
+    "language": "TypeScript",
+    "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/entities/Bond.ts#L270-L342"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Kekule.js chemistry and format integration"
+    },
+    {
+      "language": "C++",
+      "role": "Open Babel and Indigo WebAssembly chemistry"
+    },
+    {
+      "language": "C",
+      "role": "InChI compiled into Open Babel WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "SCSS/CSS style the interface; HTML hosts it.",
+  "thirdParty": {
+    "summary": "Includes GPL-2.0-only Open Babel code/data and copied valence routines alongside MIT Kekule.js and Apache-2.0 Indigo.",
+    "source": "https://github.com/itayYaakov/SketChem/blob/34c45c041fc14788e76938f7d865e708ad367fa5/sketchem-react/src/utils/mdlValance.ts",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Kekule.js",
+        "license": "MIT",
+        "source": "https://github.com/partridgejiang/Kekule.js/blob/master/LICENSE"
+      },
+      {
+        "name": "Open Babel",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/openbabel/openbabel/blob/master/COPYING"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      }
+    ]
+  }
+}

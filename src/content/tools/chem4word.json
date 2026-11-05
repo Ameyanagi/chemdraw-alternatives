@@ -1,0 +1,499 @@
+{
+  "id": "p25",
+  "slug": "chem4word",
+  "name": "Chem4Word",
+  "rank": 101,
+  "tier": "alternative",
+  "tierReason": "Creates editable vector chemical structures and reaction schemes within printable Word documents.",
+  "summary": "A Microsoft Word add-in for drawing and editing chemical structures and reactions in documents.",
+  "website": "https://www.chem4word.co.uk/",
+  "repo": "https://github.com/Chem4Word/Version3-3",
+  "docs": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/docs/Chem4Word-Version3-3-User-Manual.docx",
+  "vendor": "Chem4Word project",
+  "license": {
+    "kind": "open-source",
+    "spdx": "Apache-2.0",
+    "text": "Apache 2.0; bundled ChemDoodle Web files use GPLv3.",
+    "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/LICENCE.md"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://www.chem4word.co.uk/2023/07/05/why-should-i-use-chem4word/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "V3.3.17",
+    "date": "2026-09-09",
+    "source": "https://github.com/Chem4Word/Version3-3/releases/tag/V3.3.17"
+  },
+  "engine": {
+    "rendering": "WPF DrawingVisual/DrawingContext in the editor; OOXML DrawingML in Word documents",
+    "chemistry": "In-house Chem4Word.Model2; online services for names and identifiers",
+    "ui": "WPF/XAML and Windows Forms; Microsoft Word VSTO add-in",
+    "source": "https://github.com/Chem4Word/Version3-3/tree/25211e33f6d5f3c5b9c550379211ccb778cda924/src"
+  },
+  "languages": [
+    "C#"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Behaviors/DrawBehavior.cs",
+      "note": "Clicking cycles single, double, and triple bond orders."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Controls/BondPropertyEditor.xaml",
+      "note": "Wedge, hatch, and indeterminate wavy bonds."
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Resources/BondOptions.xaml",
+      "note": "Hydrogen and fractional bonds; no dative option in the bond palette."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Controls/BondPropertyEditor.xaml",
+      "note": "Clockwise, anticlockwise, and centered double-bond placement."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Editor.xaml",
+      "note": "Benzene, common saturated rings, and variable ring sizes."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Behaviors/ChainBehavior.cs",
+      "note": "Dragging places successive bonds at alternating 60-degree angles."
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chem4Word.V3/Ribbon/Chem4WordRibbon.cs",
+      "note": "Save drawn structures to the reusable chemistry library."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.Model2/Resources/FunctionalGroups.xml",
+      "note": "Functional groups include chemical compositions and expandable OMe structures."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Controls/AtomPropertyEditor.xaml",
+      "note": "Periodic-table element selection, formal charges, and isotope selection."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Chem4Word/Version3-3/releases/tag/V3.3.16",
+      "note": "Electrons and lone pairs can be added to atoms."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Editor.xaml",
+      "note": "Lasso selection; molecules support rotation, flips, and resizing."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Resources/ReactionOptions.xaml",
+      "note": "Forward, equilibrium, resonance, and retrosynthetic arrow types."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Editor.xaml",
+      "note": "Editable double-headed electron pushers and radical fishhook arrows."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.Model2/Converters/CML/CMLConverter.cs",
+      "note": "CML stores reactant and product references to molecule structures."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Editor.xaml",
+      "note": "Subscripts and superscripts; annotation editor specifies Arial."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/EditController/EditController.AlignmentOperations.cs",
+      "note": "Align selected molecules, annotations, and reaction arrows."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Editor.xaml",
+      "note": "Group and ungroup molecular fragments."
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Drawing/Visuals/AtomVisual.cs",
+      "note": "Overbonded atoms receive warning circles.",
+      "engine": {
+        "library": "In-house Chem4Word.Model2 PeriodicTable.SpareValencies/Atom.Overbonded (C#)",
+        "source": "https://github.com/Chem4Word/Version3-3/blob/2723a9ea50033152485c7df374b90f481c0d3011/src/Chemistry/Chem4Word.Model2/PeriodicTable.cs#L190"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.Model2/Molecule.cs",
+      "note": "Computes molecular formula and molecular weight locally.",
+      "engine": {
+        "library": "In-house Chem4Word.Model2 Molecule/FormulaHelper (C#)",
+        "source": "https://github.com/Chem4Word/Version3-3/blob/2723a9ea50033152485c7df374b90f481c0d3011/src/Chemistry/Chem4Word.Model2/Molecule.cs#L425"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/PlugIns/Searchers/Chem4Word.Searcher.OpsinPlugIn/SearchOpsin.cs",
+      "note": "Chemical names are submitted to the online OPSIN service.",
+      "engine": {
+        "library": "OPSIN (remote EBI web service; in-house C# client importing CML)",
+        "source": "https://github.com/Chem4Word/Version3-3/blob/2723a9ea50033152485c7df374b90f481c0d3011/src/PlugIns/Searchers/Chem4Word.Searcher.OpsinPlugIn/SearchOpsin.cs#L50"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.WebServices/PropertyCalculator.cs",
+      "note": "Online resolver returns an IUPAC name for drawn structures.",
+      "engine": {
+        "library": "Chem4Word ChemicalServices Resolve API (remote server; underlying naming engine undisclosed)",
+        "source": "https://github.com/Chem4Word/Version3-3/blob/2723a9ea50033152485c7df374b90f481c0d3011/src/Chemistry/Chem4Word.WebServices/PropertyCalculator.cs#L154"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.Model2/Resources/FunctionalGroups.xml",
+      "note": "R-group residue labels include R1, R2, and numbered variants."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/PlugIns/Searchers/Chem4Word.Searcher.PubChemPlugIn/Searcher.cs",
+      "note": "PubChem search imports retrieved structures as CML.",
+      "engine": {
+        "library": "PubChem E-utilities/PUG REST and ChEBI REST (remote services; in-house C# search plugins)",
+        "source": "https://github.com/Chem4Word/Version3-3/blob/2723a9ea50033152485c7df374b90f481c0d3011/src/PlugIns/Searchers/Chem4Word.Searcher.PubChemPlugIn/SearchPubChem.cs#L175"
+      }
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.Model2/Converters/CML/CMLConverter.cs",
+      "note": "Explicitly rejects CDXML import."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chem4Word.V3/Ribbon/Chem4WordRibbon.cs",
+      "note": "Reads and writes MOL/SDF V2000; V3000 import is unsupported.",
+      "engine": {
+        "library": "In-house Chem4Word.Model2 SdFileConverter/CtabProcessor (C#; V2000)",
+        "source": "https://github.com/Chem4Word/Version3-3/blob/2723a9ea50033152485c7df374b90f481c0d3011/src/Chemistry/Chem4Word.Model2/Converters/MDL/SdFileConverter.cs#L39"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.WebServices/PropertyCalculator.cs",
+      "note": "SMILES output via online service; native import accepts CML/MOL/SDF/SketchEl.",
+      "engine": {
+        "library": "Chem4Word ChemicalServices Resolve API (remote server; SMILES output; underlying engine undisclosed)",
+        "source": "https://github.com/Chem4Word/Version3-3/blob/2723a9ea50033152485c7df374b90f481c0d3011/src/Chemistry/Chem4Word.WebServices/PropertyCalculator.cs#L160"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.WebServices/PropertyCalculator.cs",
+      "note": "Online service generates InChI and InChIKey textual properties.",
+      "engine": {
+        "library": "Chem4Word ChemicalServices Resolve API (remote server; InChI/InChIKey output; underlying engine undisclosed)",
+        "source": "https://github.com/Chem4Word/Version3-3/blob/2723a9ea50033152485c7df374b90f481c0d3011/src/Chemistry/Chem4Word.WebServices/PropertyCalculator.cs#L148"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chem4Word.V3/Ribbon/Chem4WordRibbon.cs",
+      "note": "Word structures retain CML and reopen in the editor."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/PlugIns/Searchers/Chem4Word.Searcher.ExamplePlugIn/Searcher.cs",
+      "note": "C# plugin contracts and a commented example searcher implementation."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Requires Windows desktop Word; Mac and Word Online are unsupported.",
+    "Core editing is local; searches and name/identifier resolution require internet.",
+    "CDXML and MOL/SDF V3000 import are unsupported."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.chem4word.co.uk/",
+    "https://github.com/Chem4Word"
+  ],
+  "builtOn": {
+    "id": "p25",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/src/Chemistry/Chem4Word.ACME/Controls/ChemistryCanvas.cs",
+    "note": "Current ACME canvas is original; ChemDoodle license notice references an absent legacy ZIP."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Chem4Word ACME (WPF DrawingVisual) and OoXmlV4 (DrawingML)",
+    "language": "C#",
+    "source": "https://github.com/Chem4Word/Version3-3/blob/2723a9ea50033152485c7df374b90f481c0d3011/src/Chemistry/Chem4Word.ACME/Drawing/Visuals/BondVisual.cs#L361"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Native SQLite structure library storage"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "PHP supplies web utilities; PowerShell and batch scripts handle builds.",
+  "thirdParty": {
+    "summary": "MIT/Apache-2.0/BSD-3-Clause/MS-PL dependencies, public-domain SQLite and CC0 oils data; proprietary Microsoft VSTO terms; Arial glyph-data license unspecified.",
+    "source": "https://github.com/Chem4Word/Version3-3/blob/25211e33f6d5f3c5b9c550379211ccb778cda924/README.md",
+    "notice": null,
+    "libraries": []
+  }
+}

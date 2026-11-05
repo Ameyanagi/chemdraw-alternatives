@@ -1,0 +1,75 @@
+{
+  "id": "p58",
+  "slug": "live-ketcher-mcp",
+  "name": "live-ketcher-mcp",
+  "rank": 133,
+  "tier": "related",
+  "tierReason": "It automates an external Ketcher editor through MCP rather than providing its own publication drawing application, so it is not a standalone ChemDraw alternative.",
+  "summary": "MCP server for AI-assisted editing and automation in a live Ketcher chemical structure editor.",
+  "website": "https://github.com/MALeitch/live-ketcher-mcp",
+  "repo": "https://github.com/MALeitch/live-ketcher-mcp",
+  "docs": "https://github.com/MALeitch/live-ketcher-mcp/blob/1c9484b87da61577d4da3c95e0d297e2be4f9863/README.md",
+  "vendor": "Michael Leitch",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT license; external Ketcher is separately licensed under Apache-2.0.",
+    "source": "https://github.com/MALeitch/live-ketcher-mcp/blob/1c9484b87da61577d4da3c95e0d297e2be4f9863/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/MALeitch/live-ketcher-mcp/blob/1c9484b87da61577d4da3c95e0d297e2be4f9863/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/MALeitch/live-ketcher-mcp/releases"
+  },
+  "engine": {
+    "rendering": "SVG through external Ketcher; no renderer bundled.",
+    "chemistry": "RDKit Python dependency; Indigo WebAssembly through external Ketcher standalone.",
+    "ui": "External Ketcher React UI controlled through Playwright.",
+    "source": "https://github.com/epam/ketcher/blob/v3.12.0/README.md"
+  },
+  "languages": [
+    "Python"
+  ],
+  "features": {},
+  "caveats": [
+    "Requires local Python 3.11+, Playwright Chromium, and an MCP client.",
+    "Ketcher is not bundled; the default configuration loads EPAM's hosted demo.",
+    "Early development; several planned tool families remain unimplemented."
+  ],
+  "github": {
+    "stars": 3,
+    "pushedAt": "2026-08-06T13:08:46Z",
+    "archived": false
+  },
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/MALeitch/live-ketcher-mcp",
+    "https://github.com/MALeitch/live-ketcher-mcp/blob/1c9484b87da61577d4da3c95e0d297e2be4f9863/README.md"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

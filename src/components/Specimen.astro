@@ -1,0 +1,16 @@
+---
+import { href } from '../lib/paths';
+import { captureOf, notRunReason, type Fixture, type Tool } from '../lib/tools';
+
+interface Props { tool: Tool; fixture: Fixture; index?: number; compact?: boolean }
+const { tool, fixture, index = 0, compact = false } = Astro.props;
+const capture = captureOf(tool, fixture);
+const moleculeName = { simple: 'caffeine', complex: 'paclitaxel', threed: 'cholesterol' }[fixture];
+const reason =
+  tool.hands?.ran && capture?.result === 'unsupported' ? (fixture === 'threed' ? 'No 3D view' : 'Could not load this input')
+  : tool.hands?.ran ? capture?.note ?? `Could not show ${moleculeName}`
+  : notRunReason(tool);
+---
+{capture?.image
+  ? <img class="size-full object-contain" style={`--i:${index}`} src={href(capture.image)} loading="lazy" decoding="async" alt={`${moleculeName} as drawn by ${tool.name} with default settings`} />
+  : <p class:list={['text-muted flex size-full items-center justify-center text-center', compact ? 'bg-silica px-2 text-[0.8rem] leading-tight' : 'text-[0.95rem]']} title={reason}><span class:list={{ 'line-clamp-4': compact }}>{reason}</span></p>}

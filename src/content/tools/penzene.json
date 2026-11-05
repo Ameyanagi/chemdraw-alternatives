@@ -1,0 +1,656 @@
+{
+  "id": "p46",
+  "slug": "penzene",
+  "name": "Penzene",
+  "rank": 7,
+  "tier": "alternative",
+  "tierReason": "Its desktop editor produces publication figures with reaction schemes, journal styles, page layout and vector exports.",
+  "summary": "A native desktop editor for chemical structures, reaction schemes and publication figures.",
+  "website": "https://github.com/JamesOBrien2/penzene",
+  "repo": "https://github.com/JamesOBrien2/penzene",
+  "docs": "https://penzene.readthedocs.io/",
+  "vendor": "James O'Brien",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-3.0-or-later",
+    "text": "GNU General Public License version 3 or later.",
+    "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/README.md#license"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/install.md"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v2.0.0",
+    "date": "2026-10-22",
+    "source": "https://github.com/JamesOBrien2/penzene/releases/tag/v2.0.0"
+  },
+  "engine": {
+    "rendering": "Custom Qt QPainter renderer; QSvgGenerator for SVG and QPdfWriter for PDF.",
+    "chemistry": "RDKit",
+    "ui": "Qt 6 Widgets",
+    "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Render.cpp#L1355"
+  },
+  "languages": [
+    "C++"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/keys.md#bond",
+      "note": "Drew single bond; changed existing bond through double and triple.",
+      "shot": {
+        "image": "evidence/penzene/f-bonds-core.webp",
+        "caption": "Bond palette with single, double and triple bond tools."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/keys.md#bond",
+      "note": "Wedge and hashed bonds drawn; no wavy tool found.",
+      "shot": {
+        "image": "evidence/penzene/f-stereo-bonds.webp",
+        "caption": "Solid wedge and hashed bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/keys.md#L60",
+      "note": "Dative arrows and dotted hydrogen bonds."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#bonds",
+      "note": "Keyboard controls place second lines left, centred or right."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#rings-and-templates",
+      "note": "Drew benzene and five-membered ring using dedicated tools.",
+      "shot": {
+        "image": "evidence/penzene/f-rings.webp",
+        "caption": "Five-membered and aromatic rings on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#rings-and-templates",
+      "note": "Chair cyclohexane tools and Haworth projection templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Canvas.cpp#L953",
+      "note": "Drag distance sets zig-zag chain length."
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#rings-and-templates",
+      "note": "Library opens; placement blocked by accessibility automation errors.",
+      "shot": {
+        "image": "evidence/penzene/f-templates.webp",
+        "caption": "Amino acid templates in the library panel."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#rings-and-templates",
+      "note": "Save Selection as Template adds reusable user structures."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#atoms-and-labels",
+      "note": "Recognizes Boc, OMe and others; expands abbreviations into structures."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#atoms-and-labels",
+      "note": "Element labels, charges and isotope mass numbers."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#atoms-and-labels",
+      "note": "Atom Properties sets radical electrons and drawn lone pairs."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#tools-and-the-hotspot",
+      "note": "Hovering establishes hotspots; keys change atoms and bonds."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#selecting-and-arranging",
+      "note": "Lasso selection, rotation, flip and scaling handles."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#selecting-and-arranging",
+      "note": "Rotate in 3D changed cholesterol's canvas projection.",
+      "shot": {
+        "image": "evidence/penzene/f-perspective.webp",
+        "caption": "A drawing rotated in 3D on the canvas."
+      }
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#arrows-text-shapes-and-colour",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/penzene/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#arrows-text-shapes-and-colour",
+      "note": "Drew curved electron-pair and single-electron fishhook arrows.",
+      "shot": {
+        "image": "evidence/penzene/f-mechanism-arrows.webp",
+        "caption": "Curved arrows with full and fishhook arrowheads."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/figures.md#reaction-schemes",
+      "note": "Reaction SMILES and RXN preserve reactants, agents and products."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Manually assigned atom-map numbers export in SMILES and MOL."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#arrows-text-shapes-and-colour",
+      "note": "Editable s, p, lobe and hybrid orbital shapes."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#arrows-text-shapes-and-colour",
+      "note": "Fonts, bold, italic, formula subscripts and charge superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#arrows-text-shapes-and-colour",
+      "note": "Lines, boxes, ellipses and editable structure brackets."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#selecting-and-arranging",
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#selecting-and-arranging",
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Clean regenerates 2D layout while preserving stereochemistry and bond styles.",
+      "engine": {
+        "library": "RDKit RDDepictor (C++), with In-house (C++) coordination layout",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp#L825-L867"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/journal-styles.md",
+      "note": "ACS, RSC, Nature, Angewandte and SYNLETT/SYNTHESIS presets.",
+      "shot": {
+        "image": "evidence/penzene/f-journal-styles.webp",
+        "caption": "Drawing Styles lists ACS, RSC, Nature and other presets."
+      }
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/journal-styles.md#customization-and-exchange",
+      "note": "Save custom bond and font settings; exchange JSON styles.",
+      "shot": {
+        "image": "evidence/penzene/f-custom-styles.webp",
+        "caption": "Drawing Styles dialog with duplicate, import, export and save controls."
+      }
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#arrows-text-shapes-and-colour",
+      "note": "Colors individual atoms, bonds, arrows and text."
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/figures.md#page-mode",
+      "note": "Multiple pages in .penz; paper and journal page sizes."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#rings-and-templates",
+      "note": "TLC template has movable spots, streaks, lanes and calculated Rf."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Flags excess valence and lists structural or stereo problems.",
+      "engine": {
+        "library": "RDKit (C++) valence and stereo perception; In-house (C++) structure checks",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp#L2899-L2979"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Computes CIP R/S and E/Z labels from drawings.",
+      "engine": {
+        "library": "RDKit CIPLabeler (C++)",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp#L2876-L2897"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Caffeine C8H10N4O2; MW 194.19; exact mass 194.0804.",
+      "shot": {
+        "image": "evidence/penzene/f-formula-mass.webp",
+        "caption": "Properties panel showing molecular formula, molecular weight and exact mass."
+      },
+      "engine": {
+        "library": "RDKit Descriptors (C++)",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp#L2441-L2448"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Cholesterol panel showed cLogP 7.39 and TPSA 20.2.",
+      "shot": {
+        "image": "evidence/penzene/f-properties.webp",
+        "caption": "Properties panel showing cLogP, TPSA and other estimates."
+      },
+      "engine": {
+        "library": "RDKit Descriptors (C++)",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp#L2450-L2462"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Import Name caffeine returned a structure through PubChem.",
+      "engine": {
+        "library": "PubChem PUG REST web service",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Online.cpp#L54-L89"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Caffeine returned 1,3,7-trimethylpurine-2,6-dione via Copy As IUPAC Name.",
+      "shot": {
+        "image": "evidence/penzene/f-structure-to-name.webp",
+        "caption": "Copied name: 1,3,7-trimethylpurine-2,6-dione."
+      },
+      "engine": {
+        "library": "PubChem PUG REST web service",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Online.cpp#L54-L89"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md#nmr-prediction",
+      "note": "NMR panel displayed a predicted cholesterol carbon-13 stick spectrum.",
+      "shot": {
+        "image": "evidence/penzene/f-nmr-prediction.webp",
+        "caption": "Predicted carbon-13 NMR stick spectrum."
+      },
+      "engine": {
+        "library": "In-house (C++) HOSE-code matching over bundled nmrshiftdb2 data; RDKit (C++) molecular preprocessing",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp#L3111-L3400"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/drawing.md#atoms-and-labels",
+      "note": "MDL R-groups, generic atoms and chemical query atom lists."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/cli.md#L26",
+      "note": "Peptide sequences produce structures; supports D-residues and terminal caps."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Caffeine name lookup fetched its structure from PubChem.",
+      "engine": {
+        "library": "PubChem PUG REST web service",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Online.cpp#L54-L89"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp#L3027",
+      "note": "Canvas projection rotates; no molecular 3D model view found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/files.md#L10",
+      "note": "Saved caffeine CDXML and reopened it successfully.",
+      "engine": {
+        "library": "RDKit CDXMLParser (C++) molecule import; In-house (C++/Qt XML) graphics import and document export",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/files.md#L11",
+      "note": "Binary CDX import and export on every desktop platform.",
+      "engine": {
+        "library": "Revvity ChemDraw file library (Glysade/chemdraw, vendored C++ private static library)",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/ChemDrawIO.cpp"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/files.md#L6",
+      "note": "MOL and SDF saved and reopened; 3D SDF also opened.",
+      "engine": {
+        "library": "RDKit FileParsers and FileWriters (C++); In-house (C++) SDF framing",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/python-api.md#L193",
+      "note": "Imported fixtures; copied caffeine SMILES and verified pasted text.",
+      "engine": {
+        "library": "RDKit SmilesParse and SmilesWrite (C++)",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/chemistry.md",
+      "note": "Imports InChI; Copy As exports InChI and InChIKey.",
+      "engine": {
+        "library": "InChI (native library via RDKit RDInchiLib C++ API)",
+        "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Chem.cpp#L2733-L2744"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/files.md#L8",
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/tutorials/office-latex.md#L23",
+      "note": "Default SVG exports written for all three fixtures."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/tutorials/office-latex.md#L23",
+      "note": "Caffeine PDF exported; vector content and attached structures verified."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/python-api.md#L189",
+      "note": "Default caffeine PNG exported; pHYs metadata records 300 dpi."
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/MainWindow.cpp#L1841",
+      "note": "Editable CDX clipboard transfer both ways on macOS."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/tutorials/office-latex.md#4-keep-an-editable-drawing-object-on-windows",
+      "note": "Windows installer enables editable Word and PowerPoint OLE drawing objects."
+    },
+    "python-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/python.md",
+      "note": "Documented package edits, analyzes and renders drawings."
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/docs/cli.md",
+      "note": "Headless rendering and batch descriptor exports."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Unsigned macOS and Windows installers can trigger operating-system security prompts.",
+    "PubChem naming requires internet despite the manual's broader claim that Penzene never goes online.",
+    "ChemDraw docs and save labels understate implemented support: orbital and Windows CDX imports, and non-molecule CDX exports."
+  ],
+  "github": {
+    "stars": 4,
+    "pushedAt": "2026-10-29T02:40:11Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "2.0.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "penzene-macos-arm64.dmg",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 46165981,
+    "installedBytes": 102776832,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/penzene/simple.svg",
+        "note": "Current Kekule SMILES; automatic layout preserved without cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/penzene/complex.svg",
+        "note": "Current Kekule SMILES; automatic layout preserved without cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/penzene/canvas.webp",
+    "canvasLight": "evidence/penzene/canvas-light.webp",
+    "canvasDark": "evidence/penzene/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Default style was ACS 1996 with Arial 10 pt atom labels.",
+      "The default canvas was dark with grid lines and light bonds.",
+      "SMILES imports generated layouts without manual cleanup.",
+      "Paclitaxel displayed wedge and hashed bonds.",
+      "The 3D SDF fallback saved as MOL with explicit hydrogens and zero z coordinates."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 46165981,
+  "references": [
+    "https://github.com/JamesOBrien2/penzene",
+    "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/README.md"
+  ],
+  "builtOn": {
+    "id": "p46",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "ChemDraw file library",
+      "InChI"
+    ],
+    "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/CMakeLists.txt#L32",
+    "note": "Custom canvas; Ketcher inspired its interface. ChemDraw library handles files."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Penzene renderer (Qt QPainter)",
+    "language": "C++",
+    "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/src/Render.cpp#L870-L1009"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Public package wrapping native engine"
+    },
+    {
+      "language": "C",
+      "role": "InChI identifier library"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Excludes Python bindings, tests, documentation and packaging/build scripts.",
+  "thirdParty": {
+    "summary": "Includes LGPL-3.0-only Qt, MPL-2.0 Eigen, GPL-3.0 GCC runtimes with GCC-exception-3.1 (Linux wheels), and ODbL-derived NMR data (share-alike; dependent software must be OSI-licensed).",
+    "source": "https://github.com/JamesOBrien2/penzene/blob/083d83a603e12cefb1d328d01dd9f05f10754bf9/THIRD_PARTY_LICENSES.md",
+    "notice": "https://github.com/JamesOBrien2/penzene/blob/main/THIRD_PARTY_LICENSES.md",
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "ChemDraw file library",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Glysade/chemdraw/blob/main/chemdraw/license.txt"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

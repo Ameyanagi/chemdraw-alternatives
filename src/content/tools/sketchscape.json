@@ -1,0 +1,610 @@
+{
+  "id": "p133",
+  "slug": "sketchscape",
+  "name": "SketchScape",
+  "rank": 64,
+  "tier": "alternative",
+  "tierReason": "A standalone 2D editor with structure cleanup, reaction arrows, captions and PNG output can produce simple chemical figures.",
+  "summary": "A local browser editor for drawing molecules and reactions, with basic naming and rotatable 3D models.",
+  "website": "https://github.com/saparicioubu/sketchscape",
+  "repo": "https://github.com/saparicioubu/sketchscape",
+  "docs": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md",
+  "vendor": "Santiago Aparicio, University of Burgos",
+  "license": {
+    "kind": "unclear",
+    "spdx": null,
+    "text": "Public source; no license stated.",
+    "source": "https://github.com/saparicioubu/sketchscape/tree/34b18f59f5b398abe654fb6da40cac7022e6c961"
+  },
+  "price": {
+    "text": "Not stated as of 2026-11-05",
+    "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/saparicioubu/sketchscape/releases"
+  },
+  "engine": {
+    "rendering": "SVG for 2D drawing; HTML Canvas 2D for PNG export and 3D viewing",
+    "chemistry": "RDKit; in-house rule-based naming",
+    "ui": "Vanilla JavaScript, HTML and CSS; FastAPI backend",
+    "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does"
+  },
+  "languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does",
+      "note": "Drew a bond and cycled single, double, triple.",
+      "shot": {
+        "image": "evidence/sketchscape/f-bonds-core.webp",
+        "caption": "Bond order controls beside a benzene drawing."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L441-L469",
+      "note": "Wedge and dashed bonds work; no wavy tool visible."
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/mol_builder.py#L21-L27",
+      "note": "Only single, double and triple bond orders are supported."
+    },
+    "double-bond-side": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L463-L474",
+      "note": "Double bonds always use fixed centered parallel strokes."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does",
+      "note": "Benzene stamp worked; other ring buttons visible.",
+      "shot": {
+        "image": "evidence/sketchscape/f-rings.webp",
+        "caption": "Ring template buttons beside a benzene drawing."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does",
+      "note": "Click-based editor; chains cannot be drawn by dragging."
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Only four simple ring templates visible."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/app.py#L31-L47",
+      "note": "Element labels editable; charges backend-only; no isotope field.",
+      "shot": {
+        "image": "evidence/sketchscape/f-atom-labels.webp",
+        "caption": "Element buttons and an Other element field."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L79-L88",
+      "note": "Keyboard handler is a no-op; editing uses mouse clicks."
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L530-L538",
+      "note": "Drew forward arrow; other arrow types not visible."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow control visible."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/app.py#L145-L160",
+      "note": "Atom-economy requests store reactant and product SMILES with coefficients."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L540-L548",
+      "note": "Plain fixed-font labels; no formatting, subscripts or superscripts."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does",
+      "note": null,
+      "shot": {
+        "image": "evidence/sketchscape/f-cleanup.webp",
+        "caption": "Edit panel with a Clean up 2D structure button."
+      },
+      "engine": {
+        "library": "RDKit (Python, local server)",
+        "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/mol_builder.py#L142-L168"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does",
+      "note": null,
+      "shot": {
+        "image": "evidence/sketchscape/f-color.webp",
+        "caption": "Color picker with instructions for coloring atoms and bonds."
+      }
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/mol_builder.py#L122-L139",
+      "note": "Structure computation reports valence and aromaticity errors.",
+      "engine": {
+        "library": "RDKit (Python sanitization); In-house (error reporting)",
+        "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/mol_builder.py#L84-L89"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does",
+      "note": "Benzene returned C6H6 and 78.11 g/mol.",
+      "shot": {
+        "image": "evidence/sketchscape/f-formula-mass.webp",
+        "caption": "Computed benzene formula and molecular weight."
+      },
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/mol_builder.py#L92-L119"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L639-L650",
+      "note": "Ethanol produced SMILES, but did not populate canvas.",
+      "engine": {
+        "library": "In-house (Python naming rules); RDKit (Python SMILES validation)",
+        "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/naming.py#L403-L421"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does",
+      "note": "Benzene named correctly; interface states limited scope.",
+      "shot": {
+        "image": "evidence/sketchscape/f-structure-to-name.webp",
+        "caption": "Naming panel displays benzene as the drawn structure’s name."
+      },
+      "engine": {
+        "library": "In-house (Python naming rules); RDKit (Python molecular graph)",
+        "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/naming.py#L52-L64"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does",
+      "note": "Generated and rotated benzene ball-and-stick model.",
+      "shot": {
+        "image": "evidence/sketchscape/f-model-3d.webp",
+        "caption": "3D structure panel showing part of a ball-and-stick model."
+      },
+      "engine": {
+        "library": "RDKit (Python conformers and MMFF); In-house (JavaScript Canvas viewer)",
+        "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/coords3d.py#L35-L79"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No file import or export controls visible."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure-file import or export controls visible."
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/mol_builder.py#L171-L192",
+      "note": "Computed SMILES displayed; pasted SMILES did not import.",
+      "shot": {
+        "image": "evidence/sketchscape/f-smiles.webp",
+        "caption": "Computed SMILES and identifiers for benzene."
+      },
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/mol_builder.py#L171-L193"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/README.md#what-it-does",
+      "note": "Computed InChI and InChIKey for benzene.",
+      "shot": {
+        "image": "evidence/sketchscape/f-inchi.webp",
+        "caption": "Computed InChI and InChIKey for benzene."
+      },
+      "engine": {
+        "library": "RDKit (Python; InChI and InChIKey export)",
+        "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/backend/mol_builder.py#L103-L109"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Image export offers PNG only."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Image export offers PNG only."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L780-L811",
+      "note": "Saved viewport-sized 843 by 897 PNG; no resolution controls.",
+      "shot": {
+        "image": "evidence/sketchscape/f-png-export.webp",
+        "caption": "PNG export controls and saved-file confirmation."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L815-L831",
+      "note": "Clipboard export is raster PNG, without editable chemical data."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Public source has no stated license or packaged release.",
+    "PNG uses viewport resolution; chemistry calculations discard drawn wedge/hash stereochemistry.",
+    "Naming is limited; code lacks some claimed locant, strict-parser and stereodescriptor-refusal checks."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-08-07T23:35:05Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "1.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://github.com/saparicioubu/sketchscape.git",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": 134914048,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "Paste did not populate canvas; no MOL import control.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "Paste did not populate canvas; no MOL import control.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "No SMILES or SDF import control for cholesterol.",
+        "structure": null
+      }
+    ],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": "evidence/sketchscape/canvas-dark.webp",
+    "themes": {
+      "light": false,
+      "dark": true,
+      "how": "fixed",
+      "note": "Paclitaxel paste unsupported; canvas remains empty."
+    },
+    "memory": null,
+    "observations": [
+      "Default drawing uses pale lines on a near-black canvas.",
+      "Clear canvas left earlier computed results and 3D model visible.",
+      "README mentions typed SMILES; the editor exposes no SMILES input.",
+      "Git clone transfer size was unavailable; installed size includes source and Python environment.",
+      "Supplementary benzene screenshots document the hand-drawn feature test."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/saparicioubu/sketchscape",
+    "https://github.com/saparicioubu/sketchscape",
+    "https://github.com/saparicioubu/sketchscape/blob/master/README.md"
+  ],
+  "builtOn": {
+    "id": "p133",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit"
+    ],
+    "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L394-L475",
+    "note": "Custom SVG editor; RDKit handles chemistry and 2D cleanup."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "SketchScape SVG renderer",
+    "language": "JavaScript",
+    "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/static/app.js#L394-L528"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Chemistry backend and HTTP API"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML/CSS provide interface markup and styling.",
+  "thirdParty": {
+    "summary": "Declared dependencies: BSD-3-Clause (RDKit, NumPy, Uvicorn), MIT (FastAPI), Apache-2.0 (python-multipart); transitive terms unconfirmed.",
+    "source": "https://github.com/saparicioubu/sketchscape/blob/34b18f59f5b398abe654fb6da40cac7022e6c961/environment.yml",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      }
+    ]
+  }
+}

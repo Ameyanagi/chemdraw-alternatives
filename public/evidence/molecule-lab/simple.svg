@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2D reaction scheme" viewBox="43.25 49.35 180.89 176.50">
+<title>2D chemical reaction scheme</title>
+<g class="tsml-svg-bonds">
+<line x1="127.38" y1="79" x2="127.38" y2="101.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/><line x1="120.18" y1="79" x2="120.18" y2="101.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="63.92" y1="171.96" x2="87.34" y2="158.44" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/><line x1="67.52" y1="178.2" x2="90.94" y2="164.68" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="135.01" y1="175.08" x2="158.42" y2="161.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="112.55" y1="175.08" x2="89.14" y2="161.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="123.78" y1="199" x2="123.78" y2="221.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="184.87" y1="113.04" x2="158.42" y2="121.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="206.94" y1="124.09" x2="219.62" y2="141.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="202.31" y1="90.91" x2="208.7" y2="71.35" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="100.36" y1="115.08" x2="123.78" y2="101.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="89.14" y1="139" x2="89.14" y2="161.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="77.91" y1="115.08" x2="54.5" y2="101.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="184.87" y1="170.08" x2="158.42" y2="161.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="206.94" y1="159.04" x2="219.62" y2="141.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/><line x1="194.45" y1="164.08" x2="209.85" y2="142.83" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="158.42" y1="121.56" x2="158.42" y2="161.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/><line x1="165.62" y1="128.36" x2="165.62" y2="154.76" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+<line x1="158.42" y1="121.56" x2="123.78" y2="101.56" stroke="#000000" stroke-width="1.66" stroke-linecap="round"/>
+</g>
+<g class="tsml-svg-labels">
+<g><text x="123.78" y="69.4" font-family="Arial,Helvetica,sans-serif" font-size="22.4" font-weight="400" fill="#000000" text-anchor="middle">O</text></g>
+<g><text x="54.5" y="189.4" font-family="Arial,Helvetica,sans-serif" font-size="22.4" font-weight="400" fill="#000000" text-anchor="middle">O</text></g>
+<g><text x="123.78" y="189.4" font-family="Arial,Helvetica,sans-serif" font-size="22.4" font-weight="400" fill="#000000" text-anchor="middle">N</text></g>
+<g><text x="196.27" y="117.21" font-family="Arial,Helvetica,sans-serif" font-size="22.4" font-weight="400" fill="#000000" text-anchor="middle">N</text></g>
+<g><text x="89.14" y="129.4" font-family="Arial,Helvetica,sans-serif" font-size="22.4" font-weight="400" fill="#000000" text-anchor="middle">N</text></g>
+<g><text x="196.27" y="181.59" font-family="Arial,Helvetica,sans-serif" font-size="22.4" font-weight="400" fill="#000000" text-anchor="middle">N</text></g>
+
+</g>
+<g class="tsml-svg-reaction-annotations" stroke-linejoin="round">
+
+</g>
+</svg>

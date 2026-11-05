@@ -1,0 +1,627 @@
+{
+  "id": "p26",
+  "slug": "jsme-molecule-editor",
+  "name": "JSME Molecule Editor",
+  "rank": 47,
+  "tier": "embeddable",
+  "tierReason": "JSME is primarily a browser component for entering molecules, reactions and search queries in other web applications.",
+  "summary": "A browser-based editor for drawing molecules and reactions and entering chemical search queries in web applications.",
+  "website": "https://jsme-editor.github.io/",
+  "repo": "https://github.com/jsme-editor/jsme-editor.github.io",
+  "docs": "https://jsme-editor.github.io/help.html",
+  "vendor": "Peter Ertl and Bruno Bienfait",
+  "license": {
+    "kind": "open-source",
+    "spdx": "BSD-3-Clause",
+    "text": "BSD 3-Clause license; permits commercial use and redistribution.",
+    "source": "https://jsme-editor.github.io/dist/license.txt"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://jsme-editor.github.io/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": true,
+    "offline": true
+  },
+  "version": {
+    "name": "2024-04-29",
+    "date": "2024-04-29",
+    "source": "https://jsme-editor.github.io/dist/release_notes.txt"
+  },
+  "engine": {
+    "rendering": "Browser SVG through JSApplet; optional OpenChemLib SVG export",
+    "chemistry": "In-house JME chemistry; optional OpenChemLib and InChI",
+    "ui": "GWT, JSApplet AWT emulation and GWT Mosaic",
+    "source": "https://jcheminf.biomedcentral.com/counter/pdf/10.1186/1758-2946-5-24"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "Drew single and changed bond to double and triple.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-bonds-core.webp",
+        "caption": "Double and triple bonds on the editor canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "Wedge drawing and imported hashes visible; wavy not verified.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-stereo-bonds.webp",
+        "caption": "Molecule with solid and hashed wedge bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Menu includes coordination bond; another specialist type not found.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-special-bonds.webp",
+        "caption": "Editor menu lists a disabled coordination bond command."
+      }
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/help.html",
+      "note": "Aromatic ring produced benzene; other ring sizes shown.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-rings.webp",
+        "caption": "Benzene on the canvas with ring tools above."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/help.html",
+      "note": "Chain tool creates carbon chains and saturated rings."
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/help.html",
+      "note": "Functional-group menu visible; attempted placement produced ethane.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-templates.webp",
+        "caption": "Functional-group menu beside a benzene ring."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/JSME_template.html",
+      "note": "Save JME drawings and reuse named templates through the supplied demo."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "Isotopic atoms and atomic-charge editing are implemented.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-atom-labels.webp",
+        "caption": "Element toolbar and change atom charge command."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "Atom changes and ring shortcuts work under the pointer."
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "Forward reaction arrow shown; other arrow types not found.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-reaction-arrows.webp",
+        "caption": "Reactants and product connected by a forward arrow."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved electron-pushing arrow control found."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/",
+      "note": "Sample reaction exported as reaction SMILES.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-reaction-data.webp",
+        "caption": "Reaction menu offers SMIRKS and RXN copy options."
+      }
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/help.html",
+      "note": "Manual reaction mapping through atom numbering."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "Selected-molecule popup recomputes 2D coordinates.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-cleanup.webp",
+        "caption": "Editor menu offers a compute 2D coordinates command."
+      },
+      "engine": {
+        "library": "OpenChemLib (GWT-compiled JavaScript)",
+        "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/jsme/deferredjs/0ADE505A5718D4BE2E0EE1B7C54CC163/7.cache.js"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/JSME_atom_highlight_demo.html",
+      "note": "Individual atom and bond background colors through the API."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass calculation control found."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/JSME_chemical_resolver_demo.html",
+      "note": "Generic input of caffeine as a name returned empty."
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/JSME_chemical_resolver_demo.html",
+      "note": "Official demo requests IUPAC names from the external NCI service.",
+      "engine": {
+        "library": "NCI Chemical Identifier Resolver (remote server, official demo)",
+        "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/JSME_chemical_resolver_demo.html#L89-L111"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/help.html",
+      "note": "SMARTS atom and bond queries; R-group support.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-markush.webp",
+        "caption": "Atom and bond query dialog with element and bond options."
+      }
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/JSME_template_aminoacids.html",
+      "note": "Official peptide-builder demo supplies amino-acid building blocks for manual assembly."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/JSME_chemical_resolver_demo.html",
+      "note": "Official demo fetches structures through the NCI Chemical Identifier Resolver.",
+      "engine": {
+        "library": "NCI Chemical Identifier Resolver (remote server, official demo)",
+        "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/JSME_chemical_resolver_demo.html#L43-L68"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No rotatable 3D model view found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML import or export command found."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/api_javadoc/export/client/JSME.html",
+      "note": "MOL import/export and single-record SDF import worked.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-mol-sdf.webp",
+        "caption": "Test page with MOL import and MOL and SDF export controls."
+      },
+      "engine": {
+        "library": "Ported from JME (GWT-compiled JavaScript, MOL/SDF import and MOL export); OpenChemLib (GWT-compiled JavaScript, V3000 import)",
+        "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/jsme/0ADE505A5718D4BE2E0EE1B7C54CC163.cache.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/dist/doc.html",
+      "note": "Imported and exported both 2D fixture SMILES.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-smiles.webp",
+        "caption": "SMILES dialog above a glutathione structure."
+      },
+      "engine": {
+        "library": "OpenChemLib (GWT-compiled JavaScript, import); Ported from JME (GWT-compiled JavaScript, export)",
+        "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/jsme/deferredjs/0ADE505A5718D4BE2E0EE1B7C54CC163/1.cache.js"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/JSME_inchi_direct_interactive.html",
+      "note": "InChI is calculated in JavaScript within the browser.",
+      "engine": {
+        "library": "InChI (Emscripten asm.js, browser)",
+        "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/jsme/96E40B969193BD74B8A621486920E79C.cache.js"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/api_javadoc/export/client/JSME.html",
+      "note": "Reads RXN; molFile exports RXN for reaction drawings.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-rxn.webp",
+        "caption": "Reaction menu offers RXN copy and paste commands."
+      }
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/dist/doc.html",
+      "note": "Raw SVG copy dialog works after enabling exportSVG option.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-svg-export.webp",
+        "caption": "Copy dialog containing SVG markup over the molecule editor."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export command found."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG export command found."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/doc.html",
+      "note": "Documented JavaScript constructors, methods and callbacks."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/doc.html",
+      "note": "JavaScript callbacks extend paste handling and structure-change behavior."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/doc.html",
+      "note": "Documented JavaScript embedding into a web-page container.",
+      "shot": {
+        "image": "evidence/jsme-molecule-editor/f-embed.webp",
+        "caption": "JSME editor embedded in a test page with controls."
+      }
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "SVG export requires enabling the optional OpenChemLib integration.",
+    "Name conversion uses an external NCI web service in the supplied demonstration.",
+    "The distribution provides optimized JavaScript, without the underlying Java sources."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "v2024-04-29",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://jsme-editor.github.io/dist/JSME_test.html",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/jsme-molecule-editor/simple.svg",
+        "note": "SVG copy enabled; drawing area scaled for visibility.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/jsme-molecule-editor/complex.svg",
+        "note": "SVG copy enabled; default drawing retained.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No rotatable 3D model view found in editor controls.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/jsme-molecule-editor/canvas.webp",
+    "canvasLight": "evidence/jsme-molecule-editor/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Caffeine appears small and centered in the default editor area.",
+      "Paclitaxel fits the canvas with colored heteroatoms and stereo bonds.",
+      "Both MOL outputs matched fixture structures, including stereochemistry, using RDKit.",
+      "The test page starts with a glutathione example; Clear Editor removes it.",
+      "Raw SVG is exposed through a copy dialog after enabling exportSVG."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 1013352,
+  "references": [
+    "https://jsme-editor.github.io/dist/index.html",
+    "https://jsme-editor.github.io/dist/doc.html"
+  ],
+  "builtOn": {
+    "id": "p26",
+    "relation": "fork",
+    "editor": "JME",
+    "libraries": [
+      "OpenChemLib",
+      "InChI"
+    ],
+    "source": "https://link.springer.com/article/10.1186/1758-2946-5-24",
+    "note": "Modified JME code compiled to JavaScript; optional OpenChemLib and InChI integrations."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "JME/JSApplet; optional OpenChemLib SVG",
+    "language": "Java (GWT-compiled to JavaScript)",
+    "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/jsme/0ADE505A5718D4BE2E0EE1B7C54CC163.cache.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "GWT output and browser integrations"
+    },
+    {
+      "language": "C",
+      "role": "InChI compiled to browser asm.js"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Java compiled to JavaScript with GWT; underlying sources are not distributed.",
+  "thirdParty": {
+    "summary": "Apache-2.0 Harmony/GWT/Mosaic/Exporter, BSD-3-Clause OpenChemLib and MIT or NCSA Emscripten; InChI 1.05 uses custom IUPAC/InChI-Trust Licence 1.0 with library copyleft, source-distribution obligations and modified-output naming restrictions.",
+    "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/74de5c7b3a594bd9cef753c6391819a656a3335a/dist/license.txt",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "JME",
+        "license": null,
+        "source": null
+      },
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

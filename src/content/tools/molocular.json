@@ -1,0 +1,68 @@
+{
+  "id": "p45",
+  "slug": "molocular",
+  "name": "MolOcular",
+  "rank": 135,
+  "tier": "related",
+  "tierReason": "Publication-grade drawing document output is unverified for this experimental 2D structure editor, so it remains a related tool.",
+  "summary": "A desktop 2D molecule editor for drawing structures and calculating molecular formulas and masses.",
+  "website": "https://dr-rath.de/wolfgang-rath/tools/molocular.html",
+  "repo": null,
+  "docs": "https://dr-rath.de/wolfgang-rath/tools/molocular.html",
+  "vendor": "Dr. Wolfgang Rath",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free download; reuse terms are not stated on the project page.",
+    "source": "https://dr-rath.de/wolfgang-rath/tools/molocular.html"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://dr-rath.de/wolfgang-rath/tools/molocular.html"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "1.1.0",
+    "date": null,
+    "source": "https://dr-rath.de/wolfgang-rath/tools/molocular.html"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [],
+  "features": {},
+  "caveats": [
+    "The author presents this release for testing the interface and drawing functionality.",
+    "Binary ChemDraw .cdx files are unsupported; use CDXML.",
+    "MOL/SDF export uses V3000, which V2000-only software cannot read."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 22077032,
+  "references": [
+    "https://dr-rath.de/wolfgang-rath/tools/molocular.html"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

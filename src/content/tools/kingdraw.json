@@ -1,0 +1,467 @@
+{
+  "id": "p07",
+  "slug": "kingdraw",
+  "name": "KingDraw",
+  "rank": 90,
+  "tier": "alternative",
+  "tierReason": "Standalone drawing tools, reaction schemes, ACS styling, vector SVG export and editable Office objects support publication figures.",
+  "summary": "Desktop and mobile chemical drawing software for preparing molecular structures, reaction schemes, and scientific figures.",
+  "website": "https://www.kingdraw.com/indexen",
+  "repo": null,
+  "docs": "https://www.kingdraw.com/bookpc?name=1-1",
+  "vendor": "Qingdao KingAgroot Precision Agriculture Technology Co., Ltd.",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary software with free drawing and paid membership features.",
+    "source": "https://www.kingdraw.com/service?name=Sa"
+  },
+  "price": {
+    "text": "Free tier; US iOS lists $9.99/month and $99.99/year memberships (2026-11-05).",
+    "source": "https://apps.apple.com/us/app/kingdraw/id1336806206"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": true,
+    "android": true,
+    "offline": true
+  },
+  "version": {
+    "name": "5.0",
+    "date": null,
+    "source": "https://www.kingdraw.com/index?name=download"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-2",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-2",
+      "note": null
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-2",
+      "note": "Dative, hydrogen and ionic bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-3",
+      "note": null
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-3",
+      "note": "Left and right chair templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-3",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cloud.tencent.com/developer/news/939666",
+      "note": "KingDraw-authored tutorial lists amino acids, peptides and nanotube templates."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/indexen?name=membership",
+      "note": "Paid PC membership."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://kingdraw.medium.com/kingdraw-pc-tutorial-group-advanced-chapter-adjust-copy-and-expand-group-7e5ab6f424e2",
+      "note": "Label expansion requires membership."
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-5",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-2",
+      "note": "Hover over bonds and press number keys."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/index?name=download",
+      "note": "Windows lasso, rotation, resizing and mirror flip."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://kingdraw.medium.com/kingdraw-pc-unlock-the-secrets-of-professional-chemistry-equation-creation-56ad16be868e",
+      "note": "Forward and reversible arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://kingdraw.medium.com/kingdraw-pc-tutorial-drawing-reaction-mechanisms-how-to-add-a-variety-of-arrows-ed7565428fae",
+      "note": "Electron-flow arrows with editable curvature, angle and length."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://kingdraw.medium.com/kingdraw-update-pc-official-v2-1-is-coming-8b1f2eac8fa7",
+      "note": "Adjustable orbital templates."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-6",
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-7",
+      "note": null
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-10",
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=1-1",
+      "note": null
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=1-1",
+      "note": "ACS Document 1996 preset."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-18",
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://kingdraw.medium.com/kingdraw-update-pc-official-v2-1-is-coming-8b1f2eac8fa7",
+      "note": "Imports BMP, JPG, PNG, TIFF and JPEG."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=3-1",
+      "note": "Incorrect structures receive red error frames."
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/index?name=download",
+      "note": "Paid stereochemistry; Windows Professional adds E/Z labeling."
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-12",
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookapp?name=3-10",
+      "note": "IUPAC name conversion."
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookapp?name=3-10",
+      "note": "IUPAC naming."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/index?name=download",
+      "note": "Windows, mobile and HD image recognition."
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/index?name=download",
+      "note": "Integrated KDpedia lookup and structure downloads.",
+      "engine": {
+        "library": "KingDraw Compound Encyclopedia / KD Pedia (remote database service)",
+        "source": "https://www.kingdraw.com/index?name=download"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-13",
+      "note": null,
+      "engine": {
+        "library": "In-house KingDraw 3D model conversion module (iOS app; vendor-confirmed module)",
+        "source": "https://apps.apple.com/cn/app/kingdraw/id1336806206?platform=ipad"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=1-1",
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=1-1",
+      "note": "MOL import/export; SDF support unverified."
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=1-1",
+      "note": "Copy As exports; Paste Special imports."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://kingdraw.medium.com/kingdraw-update-pc-official-v2-1-is-coming-8b1f2eac8fa7",
+      "note": "Windows vector SVG export; PC export requires membership."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-16",
+      "note": "Editable structure exchange through SMILES or MOL."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.kingdraw.com/bookpc?name=2-15",
+      "note": "Windows Office objects reopen in KingDraw and synchronize edits."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://open.kingdraw.com/index.php/article/9.html",
+      "note": "Separate legacy web SDK; developer platform currently suspended."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://open.kingdraw.com/index.php/article/9.html",
+      "note": "Separate legacy web editor; developer platform currently suspended."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Membership gates PC image export, custom templates, label expansion and stereochemistry.",
+    "Mac availability is the mobile app on Apple silicon, unverified for macOS.",
+    "The legacy web SDK platform homepage is suspended."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.kingdraw.com/indexen?name=download"
+  ],
+  "builtOn": {
+    "id": "p07",
+    "relation": "original",
+    "editor": null,
+    "libraries": null,
+    "source": "https://www.kingagroot.com/En/html/qycx.html",
+    "note": "Vendor explicitly claims independently developed chemical editor; third-party chemistry dependencies unestablished."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "KingDraw molecular drawing engine",
+    "language": null,
+    "source": "https://www.kingagroot.com/En/html/qycx.html"
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

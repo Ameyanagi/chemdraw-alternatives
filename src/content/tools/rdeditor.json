@@ -1,0 +1,584 @@
+{
+  "id": "p55",
+  "slug": "rdeditor",
+  "name": "rdEditor",
+  "rank": 63,
+  "tier": "alternative",
+  "tierReason": "Its reusable PySide molecule-editing widgets and automatic RDKit layout target structure input rather than publication drawing documents.",
+  "summary": "A desktop molecule editor and reusable Python widget for editing RDKit structures.",
+  "website": "https://github.com/EBjerrum/rdeditor",
+  "repo": "https://github.com/EBjerrum/rdeditor",
+  "docs": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/README.md",
+  "vendor": "Esben Jannik Bjerrum",
+  "license": {
+    "kind": "open-source",
+    "spdx": "LGPL-3.0",
+    "text": "GNU Lesser General Public License version 3.",
+    "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://pypi.org/project/rdeditor/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "0.5.1",
+    "date": "2025-01-10",
+    "source": "https://github.com/EBjerrum/rdeditor/releases/tag/0.5.1"
+  },
+  "engine": {
+    "rendering": "RDKit MolDraw2DSVG generates SVG, displayed by Qt QSvgWidget.",
+    "chemistry": "RDKit",
+    "ui": "PySide6 / Qt Widgets",
+    "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L23"
+  },
+  "languages": [
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/README.md#usage",
+      "note": "Drew single bonds and changed them to double and triple.",
+      "shot": {
+        "image": "evidence/rdeditor/f-bonds-core.webp",
+        "caption": "Triple bond on the canvas, with bond tools at left."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L37",
+      "note": "R/S toggle creates wedge/hash; no wavy drawing tool found.",
+      "shot": {
+        "image": "evidence/rdeditor/f-stereo-bonds.webp",
+        "caption": "Molecule with solid and hashed wedge bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L811",
+      "note": "Special Bonds menu exposes RDKit types, including dative and quadruple."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/templatehandler.py#L9",
+      "note": "Placed benzene and cyclohexane from toolbar.",
+      "shot": {
+        "image": "evidence/rdeditor/f-rings.webp",
+        "caption": "Benzene and cyclohexane rings on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/templatehandler.py#L45",
+      "note": "Placed built-in carboxylic acid template.",
+      "shot": {
+        "image": "evidence/rdeditor/f-templates.webp",
+        "caption": "Carboxylic acid structure with its template selected."
+      }
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molEditWidget.py#L741",
+      "note": "Charges and elements editable; no exposed isotope setter.",
+      "shot": {
+        "image": "evidence/rdeditor/f-atom-labels.webp",
+        "caption": "Caffeine with nitrogen and oxygen labels and element tools."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molEditWidget.py#L552",
+      "note": "Individual atom selection only; bond selection explicitly unimplemented; transforms unverified."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No reaction-arrow command in menus or toolbars."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved-arrow command in menus or toolbars."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molEditWidget.py#L751",
+      "note": "Molecular atom-map numbers only; no reactant/product reaction model."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/README.md#top-menu",
+      "note": "Recalculates 2D coordinates, disregarding existing coordinates.",
+      "engine": {
+        "library": "RDKit (Python; CoordGen preferred)",
+        "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L254-L284"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L204",
+      "note": "Configurable selection highlights through Python; persistent object colors unverified."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L313",
+      "note": "Sanitization failures appear in the status bar.",
+      "shot": {
+        "image": "evidence/rdeditor/f-valence-check.webp",
+        "caption": "Caffeine structure with Sanitizable status shown."
+      },
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L313-L325"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L300",
+      "note": "R/S labels changed when stereocenter was toggled.",
+      "shot": {
+        "image": "evidence/rdeditor/f-stereo-perception.webp",
+        "caption": "Molecule with R and S stereochemical labels."
+      },
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L300-L310"
+      }
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No molecular formula or mass command found."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Pasting caffeine produced no structure; no naming command found."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure-naming command found in menus."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/README.md#side-bar",
+      "note": "Simple numbered R-group dummy atoms; full Markush authoring unverified."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view command in menus or toolbars."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L355",
+      "note": "CDXML import left blank canvas despite opened status."
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L355",
+      "note": "File handlers support MOL and SMILES only."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L332",
+      "note": "MOL read/write; supplied single-record SDF opened. No SDF export option.",
+      "shot": {
+        "image": "evidence/rdeditor/f-mol-sdf.webp",
+        "caption": "Caffeine structure opened from a MOL file."
+      },
+      "engine": {
+        "library": "RDKit (Python; MOL only)",
+        "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L345-L390"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L332",
+      "note": "Pasted fixtures and saved caffeine SMILES successfully.",
+      "engine": {
+        "library": "RDKit (Python)",
+        "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L332-L409"
+      }
+    },
+    "inchi": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L355",
+      "note": "File handlers support MOL and SMILES only; clipboard parses SMILES."
+    },
+    "rxn": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L355",
+      "note": "File handlers support MOL and SMILES only."
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L345",
+      "note": "Save As Any File returned Invalid file format."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L376",
+      "note": "Save As Any File returned Invalid file format."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L376",
+      "note": "Save As Any File returned Invalid file format."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.cheminformania.com/rdeditor-an-open-source-molecular-editor-based-using-python-pyside2-and-rdkit/",
+      "note": "Widget properties and signals drive molecule editing and display."
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/rdEditor.py#L989",
+      "note": "rdEditor always launches QApplication; no headless conversion or rendering."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.cheminformania.com/rdeditor-an-open-source-molecular-editor-based-using-python-pyside2-and-rdkit/",
+      "note": "Reuse MolEditWidget as a PySide application's central widget."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "RDKit controls molecular layout, limiting precise placement for publication figures.",
+    "Latest pyqtdarktheme dependency requires Python below 3.12; rdeditor itself requires 3.10 or newer.",
+    "README says atom clicks add bonded atoms; current code replaces atoms and uses dragging to add them."
+  ],
+  "github": {
+    "stars": 181,
+    "pushedAt": "2026-05-03T18:26:26Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.5.1",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "pypi",
+    "artifact": "https://files.pythonhosted.org/packages/34/86/165363fa09a32f2c5c38b15c7d4f9b070cb477247e3b581f048f2cb4e9b3/rdeditor-0.5.1-py3-none-any.whl",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 361781,
+    "installedBytes": 1444937728,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/rdeditor/simple.png",
+        "note": "Current Kekule SMILES; default layout preserved. Drawing-area PNG crop and native MOL saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/rdeditor/complex.png",
+        "note": "Current Kekule SMILES; crossings and crowded labels preserved. Drawing-area crop and native MOL saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/rdeditor/canvas.webp",
+    "canvasLight": "evidence/rdeditor/canvas-light.webp",
+    "canvasDark": "evidence/rdeditor/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Settings > Theme: Qdt light and Qdt dark change canvas colors."
+    },
+    "memory": null,
+    "observations": [
+      "Default dark canvas uses light bonds, red oxygen, and blue nitrogen.",
+      "SMILES paste generates and fits 2D coordinates automatically.",
+      "Paclitaxel shows wedges, hashes, and R/S labels by default.",
+      "Paclitaxel automatic layout contains crossing bonds and crowded labels.",
+      "No GUI image export or rotatable 3D view was found."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 361781,
+  "references": [
+    "https://github.com/EBjerrum/rdeditor",
+    "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/README.md"
+  ],
+  "builtOn": {
+    "id": "p55",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit"
+    ],
+    "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molEditWidget.py",
+    "note": "Custom editor uses RDKit molecular graphs and SVG rendering."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "RDKit MolDraw2D (SVG)",
+    "language": "C++",
+    "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/rdeditor/molViewWidget.py#L345-L380"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Editor and RDKit bindings"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Python application; Shell only converts icon assets.",
+  "thirdParty": {
+    "summary": "PySide6/Qt: LGPLv3/GPLv3 or commercial terms. RDKit/NumPy: BSD-3-Clause; PyQtDarkTheme: MIT with Apache-2.0 icons. Bundled Icons8 graphics carry separate attribution terms.",
+    "source": "https://github.com/EBjerrum/rdeditor/blob/02f28391f773ba891e349e97c9d320adaad624e8/pyproject.toml",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,674 @@
+{
+  "id": "p67",
+  "slug": "chem-illustrator",
+  "name": "Chem Illustrator",
+  "rank": 4,
+  "tier": "alternative",
+  "tierReason": "It creates multipage chemical drawings with journal styles, captions and vector export, including editable chemistry in documents and presentations.",
+  "summary": "Chemical drawing software for structures, reaction schemes, publication figures, and documents with editable chemistry.",
+  "website": "https://nathanohare.github.io/Chem-Illustrator/",
+  "repo": "https://github.com/nathanohare/Chem-Illustrator",
+  "docs": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/README.md",
+  "vendor": "Nathan O'Hare",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-3.0-or-later",
+    "text": "GPL version 3 or later, with an Apple App Store distribution exception.",
+    "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/README.md#licence"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/README.md"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.1.192",
+    "date": "2026-11-05",
+    "source": "https://github.com/nathanohare/Chem-Illustrator/releases/tag/v0.1.192"
+  },
+  "engine": {
+    "rendering": "HTML Canvas 2D with custom SVG, EMF and PDF vector exporters",
+    "chemistry": "RDKit (WebAssembly), OPSIN, OpenClatura and OpenChemLib",
+    "ui": "Custom TypeScript DOM/CSS interface; Tauri desktop WebView",
+    "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/developers.md"
+  },
+  "languages": [
+    "TypeScript",
+    "Rust"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#bonds-and-chains",
+      "note": "Drew all three orders and cycled single to triple.",
+      "shot": {
+        "image": "evidence/chem-illustrator/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#bonds-and-chains",
+      "note": "Drew solid wedge, hashed wedge and wavy bonds.",
+      "shot": {
+        "image": "evidence/chem-illustrator/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#bonds-and-chains",
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/keyboard-and-mouse.md#pointing-at-a-bond",
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#rings",
+      "note": "Placed benzene and cyclohexane rings.",
+      "shot": {
+        "image": "evidence/chem-illustrator/f-rings.webp",
+        "caption": "Benzene and cyclohexane rings beside the ring tools."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#flat-chair-flipped-chair-and-boat",
+      "note": null,
+      "shot": {
+        "image": "evidence/chem-illustrator/f-conformers.webp",
+        "caption": "Haworth projection and chair ring tools in the toolbar."
+      }
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#bonds-and-chains",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#templates",
+      "note": "Placed the glycine template.",
+      "shot": {
+        "image": "evidence/chem-illustrator/f-templates.webp",
+        "caption": "Glycine template tool and glycine structure on the canvas."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#metal-complexes",
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#labels-and-groups",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/keyboard-and-mouse.md#pointing-at-an-atom",
+      "note": "D/T isotope labels supported."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#arrows-mechanism-symbols-shapes-and-brackets",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/keyboard-and-mouse.md#how-hotkeys-work-in-a-drawing",
+      "note": null,
+      "shot": {
+        "image": "evidence/chem-illustrator/f-keyboard-drawing.webp",
+        "caption": "Canvas and hotkey hint for the atom or bond pointed at."
+      }
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#select-and-eraser",
+      "note": null
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#rotating-a-structure-in-perspective",
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#arrows-mechanism-symbols-shapes-and-brackets",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/chem-illustrator/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#arrows-mechanism-symbols-shapes-and-brackets",
+      "note": "Drew a curved electron-pair arrow with editable handles.",
+      "shot": {
+        "image": "evidence/chem-illustrator/f-mechanism-arrows.webp",
+        "caption": "Selected curved arrow with editing handles."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#other-formats",
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#reactions-and-schemes",
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#reactions-and-schemes",
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#text-and-captions",
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#arrows-mechanism-symbols-shapes-and-brackets",
+      "note": null
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#moving-rotating-and-the-format-menu",
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#moving-rotating-and-the-format-menu",
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#tidying-and-checking",
+      "note": null,
+      "engine": {
+        "library": "In-house (TypeScript geometry cleanup); RDKit MinimalLib 2026.9.1 (WebAssembly RDDepictor and CoordGen layout seeds for tangled structures)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/main.ts#L2950"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#drawing-styles",
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#drawing-styles",
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#colors-and-palettes",
+      "note": null
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#the-page",
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#pictures-and-tables",
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#pictures-and-tables",
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#warnings",
+      "note": null,
+      "engine": {
+        "library": "In-house (TypeScript incremental atom, valence, isotope and label checks)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/chem/warnings.ts#L69"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#stereochemistry",
+      "note": null,
+      "engine": {
+        "library": "RDKit MinimalLib 2026.9.1 (WebAssembly CIP R/S and E/Z perception); In-house (TypeScript drawing interpretation and generic-group handling)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/chem/stereo.ts#L91"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#the-analysis-panel",
+      "note": "Caffeine showed C8H10N4O2 and molecular weight 194.19.",
+      "shot": {
+        "image": "evidence/chem-illustrator/f-formula-mass.webp",
+        "caption": "Molecular formula and molecular weight displayed in the toolbar."
+      },
+      "engine": {
+        "library": "RDKit MinimalLib 2026.9.1 (WebAssembly atomic masses and molecular descriptors); In-house (TypeScript Hill formula from RDKit JSON)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/worker/chem-worker.ts#L75"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#the-analysis-panel",
+      "note": "Ethanol analysis displayed cLogP and tPSA.",
+      "engine": {
+        "library": "RDKit MinimalLib 2026.9.1 (WebAssembly Crippen logP, TPSA and other descriptors); In-house (TypeScript additional property estimates)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/chem/props.ts#L163"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#labels-and-groups",
+      "note": "Ethanol produced a C2H6O structure.",
+      "engine": {
+        "library": "OPSIN 2.9.0 (Java compiled to JavaScript with TeaVM, local worker); RDKit MinimalLib 2026.9.1 (WebAssembly layout); PubChem PUG REST (optional remote fallback)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/main.ts#L2463"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#structure-to-name",
+      "note": "Ethanol structure produced an ethanol caption.",
+      "engine": {
+        "library": "OpenClatura 0.4.3 (Python wheel in Pyodide 314.0.7 WebAssembly, local worker); OPSIN (TeaVM JavaScript) and RDKit MinimalLib (WebAssembly) round-trip validation",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/worker/namer-worker.ts#L23"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#predicted-nmr",
+      "note": "Predicts proton/carbon shifts; exchangeable OH, NH and SH protons omitted.",
+      "engine": {
+        "library": "In-house (TypeScript environment-code lookup and graph-network shift prediction, bundled NMRShiftDB2/NMRBank data)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/ui/nmr-panel.ts#L438"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#polymers-and-r-groups",
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#polymers-and-r-groups",
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#metal-complexes",
+      "note": "Peptide sequence input and biomolecule templates."
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#structures-from-pictures-and-hand-drawings",
+      "note": "Local reader on desktop; browser requires configured AI.",
+      "engine": {
+        "library": "MolScribe (ONNX model pack, local ONNX Runtime Web 1.22.0 WebAssembly worker, desktop only); optional Anthropic Claude, OpenAI or Google Gemini remote APIs, or user-configured OpenAI-compatible local/remote API",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/recognise/reader.ts#L1"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#labels-and-groups",
+      "note": "Name lookup retrieves structures from PubChem.",
+      "engine": {
+        "library": "PubChem PUG REST/PUG View (remote database); NCI CACTUS Chemical Identifier Resolver (remote CAS-to-structure fallback)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/chem/cas.ts#L182"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#3-d-model",
+      "note": "Generated cholesterol conformers and rotated the model.",
+      "shot": {
+        "image": "evidence/chem-illustrator/f-model-3d.webp",
+        "caption": "3-D model window showing a ball-and-stick structure and conformers."
+      },
+      "engine": {
+        "library": "OpenChemLib 9.25.1 (JavaScript/GWT build, local conformer generation and MMFF94s+); In-house (TypeScript Canvas 3D viewer)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/chem/model3d-build.ts#L193"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/drawing.md#reactions-and-schemes",
+      "note": "CIF import with rotatable ellipsoid or ball-and-stick drawings."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#chemdraw-files",
+      "note": "Saved and reopened ethanol CDXML with three atoms.",
+      "engine": {
+        "library": "In-house (TypeScript CDXML reader and writer)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/io/cdxml-write.ts#L129"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#chemdraw-files",
+      "note": null,
+      "engine": {
+        "library": "In-house (TypeScript binary CDX codec converting to/from CDXML)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/io/cdx.ts#L586"
+      }
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#chemdraw-files",
+      "note": "MOL opened and exported; direct SDF Open showed no result.",
+      "engine": {
+        "library": "In-house (TypeScript MOL V2000/V3000 and SDF readers/writers)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/io/chem-formats.ts#L924"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#other-formats",
+      "note": "Pasted SMILES and copied ethanol as CCO.",
+      "engine": {
+        "library": "RDKit MinimalLib 2026.9.1 (WebAssembly SMILES parser and writer, local worker)",
+        "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/worker/chem-worker.ts#L165"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#other-formats",
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#other-formats",
+      "note": "Exported an SVG file."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#other-formats",
+      "note": "Exported PDF with vector content and embedded font."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#other-formats",
+      "note": "Default export is transparent PNG at 300 dpi."
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#copy-and-paste",
+      "note": "Windows desktop app."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/files-and-sharing.md#editing-drawings-inside-word-powerpoint-and-excel-windows",
+      "note": "Windows desktop OLE objects support double-click editing."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/docs/guide/getting-started.md#the-assistant-every-mode-ctrl",
+      "note": "Requires own API key or local model."
+    }
+  },
+  "caveats": [
+    "Beta software; the author warns that some features may malfunction.",
+    "Editable ChemDraw clipboard exchange and Office OLE editing require Windows desktop.",
+    "iPad availability is limited to TestFlight testing."
+  ],
+  "github": {
+    "stars": 3,
+    "pushedAt": "2026-11-05T12:13:24Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://nathanohare.github.io/Chem-Illustrator/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chem-illustrator/simple.png",
+        "note": "Pasted SMILES; default PNG and MOL exported.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chem-illustrator/complex.png",
+        "note": "Default paste crossed a fixed page edge; added pages without changing layout.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chem-illustrator/threed.png",
+        "note": "Rotatable model generated; viewport saved as threed-view.png.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/chem-illustrator/canvas.webp",
+    "canvasLight": "evidence/chem-illustrator/canvas-light.webp",
+    "canvasDark": "evidence/chem-illustrator/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Dark theme changes interface; canvas remains white."
+    },
+    "memory": null,
+    "observations": [
+      "Hosted build 4c297bb was deployed on 2026-11-05.",
+      "The hosted app ran in an isolated WebKit browser shell.",
+      "Paclitaxel has overlapping oxygen labels in the generated layout.",
+      "All three MOL outputs matched input stereochemistry in RDKit checks.",
+      "Direct SDF Open showed no result; batch input selection was uncertain."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 93004813,
+  "references": [
+    "https://github.com/nathanohare/Chem-Illustrator",
+    "https://nathanohare.github.io/Chem-Illustrator/",
+    "https://github.com/nathanohare/Chem-Illustrator/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p67",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "OPSIN",
+      "OpenClatura",
+      "OpenChemLib",
+      "cdxmorph"
+    ],
+    "source": "https://github.com/nathanohare/Chem-Illustrator/blob/4ebd676997123e6829f5f4a0c1e75e644f821089/src/main.ts#L344",
+    "note": "Custom Canvas editor; cdxmorph port provides reaction animation."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Chem Illustrator Canvas 2D renderer",
+    "language": "TypeScript",
+    "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/src/render/renderer.ts#L912"
+  },
+  "otherLanguages": [
+    {
+      "language": "Rust",
+      "role": "Tauri shell and native integrations"
+    },
+    {
+      "language": "C++",
+      "role": "RDKit MinimalLib compiled to WebAssembly"
+    },
+    {
+      "language": "Java",
+      "role": "OPSIN/OpenChemLib compiled to JavaScript"
+    },
+    {
+      "language": "Python",
+      "role": "OpenClatura naming through Pyodide"
+    },
+    {
+      "language": "JavaScript",
+      "role": "Bundled chemistry loaders and engines"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Python/Java provide bindings; JavaScript supports tooling; HTML/CSS provide presentation.",
+  "thirdParty": {
+    "summary": "MIT/BSD/Apache software; MPL-2.0 components; OFL-1.1 fonts; CC BY data; NMRShiftDB2 ODbL-based data requires share-alike and OSI-licensed dependent functionality.",
+    "source": "https://github.com/nathanohare/Chem-Illustrator/blob/fb2cc2afba4e815be4cbf0bd6324488113fccc76/public/nmr/NOTICE.md",
+    "notice": "https://github.com/nathanohare/Chem-Illustrator/blob/main/THIRD-PARTY-NOTICES.md",
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      },
+      {
+        "name": "OpenClatura",
+        "license": "MIT",
+        "source": "https://github.com/lamalab-org/openclatura/blob/main/LICENSE"
+      },
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      },
+      {
+        "name": "cdxmorph",
+        "license": "MIT",
+        "source": "https://github.com/rshenvi/cdxmorph/blob/main/LICENSE"
+      }
+    ]
+  }
+}

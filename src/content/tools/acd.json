@@ -1,0 +1,489 @@
+{
+  "id": "p34",
+  "slug": "acd",
+  "name": "ACD/ChemSketch",
+  "rank": 93,
+  "tier": "alternative",
+  "tierReason": "ChemSketch creates publication-grade 2D chemical structures, reaction schemes, and reports, although it is discontinued and unavailable to new customers.",
+  "summary": "A discontinued Windows application for drawing chemical structures, reaction schemes, and publication figures.",
+  "website": "https://www.acdlabs.com/resources/free-chemistry-software-apps/chemsketch-freeware/",
+  "repo": null,
+  "docs": "https://www.acdlabs.com/wp-content/uploads/download/quickstart/draw/qsg_chemsketch_trial.pdf",
+  "vendor": "Advanced Chemistry Development, Inc. (ACD/Labs), now part of Revvity Signals",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Formerly free for home and educational use, with a separate commercial edition; freeware discontinued.",
+    "source": "https://www.acdlabs.com/resource/acd-chemsketch-freeware-celebrates-one-million-downloads-with-a-new-version/"
+  },
+  "price": {
+    "text": "Unavailable to new customers (2026-11-05).",
+    "source": "https://www.acdlabs.com/products/buy-chemsketch-online/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "2025",
+    "date": null,
+    "source": "https://www.acdlabs.com/technical-support/current-software-versions/chemsketch/"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/drawing-tools/",
+      "note": "Click bonds to cycle single, double, and triple orders."
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Wedges and hashes documented; wavy bond support unverified."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/drawing-tools/",
+      "note": "Drag chains with the atom count displayed beside the pointer."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/wp-content/uploads/download/quickstart/draw/qsg_chemsketch_trial.pdf",
+      "note": "Molecule, laboratory equipment, and orbital templates."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/blog/how-to-draw-better-chemical-structures-and-reactions-with-chemsketch/",
+      "note": "Save persistent user templates with configurable attachment points."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/blog/how-to-draw-better-chemical-structures-and-reactions-with-chemsketch/",
+      "note": "Expand shorthand formulas into explicit structural fragments."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/wp-content/uploads/download/quickstart/draw/qsg_chemsketch_trial.pdf",
+      "note": "Set elements, charges, valence, and isotopes."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/draw-and-edit-reaction-mechanisms-with-chemsketch/",
+      "note": "Attach horizontal or vertical lone pairs to atoms."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Shortcuts documented; atom-hover editing unverified."
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Lasso and rotation documented; complete transform set unverified."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/wp-content/uploads/download/quickstart/draw/qsg_chemsketch_trial.pdf",
+      "note": "Rotate structures in two or three dimensions on the canvas."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/draw-and-edit-reaction-mechanisms-with-chemsketch/",
+      "note": "Forward and equilibrium arrows with adjustable length."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/draw-and-edit-reaction-mechanisms-with-chemsketch/",
+      "note": "Editable arcs with arrowheads provide curved mechanism arrows."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/data-format-support-integrations",
+      "note": "Vendor claim: RXN reaction exchange."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/products/chemsketch/",
+      "note": "Historical vendor claim: associate reactant atoms with product atoms."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/wp-content/uploads/download/quickstart/draw/qsg_chemsketch_trial.pdf",
+      "note": "Insert and edit orbital templates."
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Text fields documented; required formatting controls unverified."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/blog/how-to-draw-better-chemical-structures-and-reactions-with-chemsketch/",
+      "note": "Draw mode provides squares, lines, arrows, and curved lines."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/draw-and-edit-reaction-mechanisms-with-chemsketch/",
+      "note": "Align selected objects horizontally, vertically, or to the left."
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/wp-content/uploads/download/quickstart/draw/qsg_chemsketch_trial.pdf",
+      "note": "Clean Structure standardizes bond lengths and angles."
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/draw-and-edit-reaction-mechanisms-with-chemsketch/",
+      "note": "ACS and RSC drawing presets demonstrated."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/draw-and-edit-reaction-mechanisms-with-chemsketch/",
+      "note": "Save modified drawing styles and set defaults."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/draw-and-edit-reaction-mechanisms-with-chemsketch/",
+      "note": "Change individual atom and bond colors."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Page size documented; multipage documents unverified."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/data-format-support-integrations",
+      "note": "Vendor claim: import JPG, PNG, GIF, and bitmap images."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Valence editing documented; error flagging unverified."
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "R/S designation documented; computed R/S and E/Z unverified."
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/wp-content/uploads/download/quickstart/draw/qsg_chemsketch_trial.pdf",
+      "note": "Calculates molecular formula and formula weight."
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/acd-chemsketch-freeware-celebrates-one-million-downloads-with-a-new-version/",
+      "note": "Freeware includes logP prediction."
+    },
+    "name-to-structure": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/blog/how-to-draw-better-chemical-structures-and-reactions-with-chemsketch/",
+      "note": "Commercial dictionary lookup; general conversion requires separately purchased ACD/Name.",
+      "engine": {
+        "library": "In-house (ACD/Dictionary desktop lookup; optional ACD/Name native desktop name-to-structure)",
+        "source": "https://www.acdlabs.com/blog/how-to-draw-better-chemical-structures-and-reactions-with-chemsketch/"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/products/chemsketch/",
+      "note": "Limited elements, 50 atoms, three rings, and 100-character names.",
+      "engine": {
+        "library": "In-house (ACD/Name Freeware proprietary desktop module; limited structure naming)",
+        "source": "https://support.revvitysignals.com/hc/en-us/articles/47037475963412-ChemSketch-Access-to-Name-Freeware-vs-full-commercial-Name-version-via-the-same-button"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Separate NMR prediction products exist; ChemSketch inclusion unverified."
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/blog/markush-structures-what-they-are-and-how-to-draw-them/",
+      "note": "R-groups, positional variants, and structure enumeration."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Bracket drawing documented; chemical repeat-unit semantics unverified."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/data-format-support-integrations",
+      "note": "Vendor claim: peptide sequences through FASTA and HELM."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/resource/acd-chemsketch-freeware-celebrates-one-million-downloads-with-a-new-version/",
+      "note": "Vendor claim: access PubChem, eMolecules, and ChemSpider databases.",
+      "engine": {
+        "library": "EPA iCSS Chemistry Dashboard (remote database through ChemSketch EPA iCSS Add-on)",
+        "source": "https://www.acdlabs.com/resources/free-chemistry-software-apps/chemsketch-epa-icss-add-on/"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/technical-support/faq/",
+      "note": "Included 3D Viewer supports rotating molecules.",
+      "engine": {
+        "library": "In-house (ACD/3D Viewer proprietary desktop application; optional OpenGL rendering)",
+        "source": "https://www.acdlabs.com/technical-support/faq/"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/data-format-support-integrations",
+      "note": "Vendor format table specifies CDXML import only."
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/data-format-support-integrations",
+      "note": "Vendor claim: CDX import and export."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/data-format-support-integrations",
+      "note": "Vendor claim: MOL import/export; SDF support unverified."
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/data-format-support-integrations",
+      "note": "Vendor claim: SMILES input and output."
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/wp-content/uploads/download/quickstart/draw/qsg_chemsketch_trial.pdf",
+      "note": "Generate InChI identifiers from drawn structures.",
+      "engine": {
+        "library": "InChI/libinchi (native C library; integration binding undisclosed)",
+        "source": "https://www.inchi-trust.org/technical-faq/"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/data-format-support-integrations",
+      "note": "Vendor claim: RXN import and export."
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "PDF output documented; vector preservation unverified."
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "PNG output documented; 300 dpi capability unverified."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "ChemDraw paste-in documented; editable roundtrip unverified."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "OLE embedding documented; re-editing not explicitly verified."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.acdlabs.com/blog/markush-structures-what-they-are-and-how-to-draw-them/",
+      "note": "Add-On Organizer installs ChemSketch extensions."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "OLE objects documented; embedding the editor itself unverified."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Freeware is discontinued; existing installations may continue under their applicable license terms.",
+    "No longer sold to new customers; no current public installation download is offered.",
+    "Some historical feature evidence comes from indexed official product pages that now redirect to ChemDraw."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.acdlabs.com/products/chemsketch/",
+    "https://www.acdlabs.com/resources/free-chemistry-software-apps/chemsketch-freeware/"
+  ],
+  "builtOn": {
+    "id": "p34",
+    "relation": null,
+    "editor": null,
+    "libraries": null,
+    "source": null,
+    "note": "Public vendor materials do not establish canvas provenance or chemistry libraries."
+  },
+  "renderer": {
+    "origin": null,
+    "name": null,
+    "language": null,
+    "source": null
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Native InChI chemistry library"
+    },
+    {
+      "language": "ChemBasic",
+      "role": "Optional bundled automation scripts"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

@@ -1,0 +1,607 @@
+{
+  "id": "p62",
+  "slug": "pychem-pro",
+  "name": "PyChem-Pro",
+  "rank": 49,
+  "tier": "alternative",
+  "tierReason": "Its implemented 2D sketcher combines editable structures, reaction arrows, captions, and print-resolution raster export to create chemical figures.",
+  "summary": "A desktop chemistry application and Python library for molecular visualization, structure sketching, geometry optimization, and cheminformatics.",
+  "website": "https://sites.google.com/view/pydescriptorcstar/pychem-pro",
+  "repo": "https://github.com/vijaymasand/PyChem-Pro",
+  "docs": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/PyChem_Manual.md",
+  "vendor": "Vijay Masand and Gaurav Masand",
+  "license": {
+    "kind": "source-available",
+    "spdx": null,
+    "text": "Custom noncommercial terms labeled PolyForm; service use restricted; bundled OASA has separate GPL notices.",
+    "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/LICENSE"
+  },
+  "price": {
+    "text": "Free for personal and educational use (2026-11-05); commercial use prohibited.",
+    "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/README.md#license"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v1.0.0",
+    "date": "2026-07-05",
+    "source": "https://github.com/vijaymasand/PyChem-Pro/releases/tag/v1.0.0"
+  },
+  "engine": {
+    "rendering": "Qt QPainter for molecular views and raster exports; Qt QGraphicsScene sketcher; offline ray-tracing export.",
+    "chemistry": "In-house Python/NumPy chemistry with vendored OASA for SMILES and 2D layout; optional RDKit plugin.",
+    "ui": "PySide6 (Qt 6).",
+    "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/README.md"
+  },
+  "languages": [
+    "Python",
+    "GLSL"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/tools.py#L258-L290",
+      "note": "Tool selectable; drawing gestures produced no visible bond.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-bonds-core.webp",
+        "caption": "Bond tool and single and double bonds in a caffeine drawing."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L474-L481",
+      "note": "Bond selector visible; stereo drawing could not be verified."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/tools.py#L74-L90",
+      "note": "Ring tools selectable; placement attempts produced no visible ring.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-rings.webp",
+        "caption": "Benzene, hexane and pentane ring tools beside the canvas."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/tools.py#L598-L610",
+      "note": "Naphthalene template constructs a fused second ring."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/tools.py#L242-L255",
+      "note": "Recognized group labels expand into chemically connected atoms and bonds."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L458-L523",
+      "note": "Charges and arbitrary labels editable; atom isotope editing unverified."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/tools.py#L1234-L1280",
+      "note": "Atom tools add lone pairs and charged radical dots."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/tools.py#L20-L71",
+      "note": "Typing changes the focused atom; element shortcuts are defined."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/tools.py#L894-L962",
+      "note": "Select All works; rotate and flip controls visible.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-selection-tools.webp",
+        "caption": "Selected structure with rotate and flip controls in the sketcher."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/arrow.py#L16-L31",
+      "note": "Forward/equilibrium tools selected; drags produced no visible arrows.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-reaction-arrows.webp",
+        "caption": "Reaction, equilibrium and reverse arrow controls beside the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/arrow.py#L54-L85",
+      "note": "Curly tool selected; drags produced no visible arrows.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-mechanism-arrows.webp",
+        "caption": "Curly and fish arrow controls beside the canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L591-L633",
+      "note": "Free-text subscripts/superscripts supported; user font selection unverified."
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/shapes.py#L89-L119",
+      "note": "Editable rectangles/ellipses supported; brackets and unrestricted free curves unverified."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L543-L566",
+      "note": "Command regenerates coordinates with normalized bond lengths and angles.",
+      "engine": {
+        "library": "OASA (vendored Python, coords_generator)",
+        "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L543-L566"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L1130-L1176",
+      "note": "Selected atoms, bonds and other drawable objects receive individual colors."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L1039-L1128",
+      "note": "Page dimensions, presets and orientation supported; multipage documents unverified."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/core/domain/models/molecule.py#L539-L572",
+      "note": "Correct formula; descriptor mass omits implicit hydrogen contribution.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-formula-mass.webp",
+        "caption": "Molecular formula C27H46O above a two-dimensional structure."
+      },
+      "engine": {
+        "library": "In-house (Python molecular formula and mass calculations)",
+        "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/core/domain/models/molecule.py#L539-L572"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/cheminformatics/services/lipophilicity_service.py#L72-L83",
+      "note": "Descriptor CSV reports cholesterol LogP 6.814388959638463.",
+      "engine": {
+        "library": "Ported from MLP_Tools (Python/NumPy fragment-based logP)",
+        "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/cheminformatics/services/lipophilicity_service.py#L1-L83"
+      }
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Entering caffeine produced an invalid-atom SMILES parsing error."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in inspected menus."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/visualization_3d/ui/mouse_controller.py#L78-L87",
+      "note": "Built cholesterol from SMILES and rotated the model.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-model-3d.webp",
+        "caption": "Ball-and-stick molecular model in the 3D viewer."
+      },
+      "engine": {
+        "library": "In-house (Python QPainter molecular viewer and rotation controller)",
+        "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/visualization_3d/ui/mol_viewer_3d.py#L145-L217"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/services/loading/loader_service.py#L98-L100",
+      "note": "Opens PDBx/mmCIF files; general crystallographic CIF support unverified."
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Import explicitly failed: Unsupported file format: .cdxml."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L873-L967",
+      "note": "MOL import and SDF export worked; no MOL save command.",
+      "engine": {
+        "library": "In-house (Python V2000 MOL reader/writer and SDF record handling)",
+        "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py#L873-L967"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/ui/sketcher_widget.py",
+      "note": "Imports work; generated SMILES lose all specified stereocenters.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-smiles.webp",
+        "caption": "Molecular viewer with a SMILES input and 3D structure."
+      },
+      "engine": {
+        "library": "OASA (vendored Python SMILES parser and writer); In-house (Python fallback SMILES writer)",
+        "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/app/chemistry_actions.py#L185-L255"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": ".svg request saved .svg.png; no vector output."
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "System Print saves PDF containing rasterized molecular views.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-pdf-export.webp",
+        "caption": "Page showing two-dimensional and three-dimensional molecular views."
+      }
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/visualization_2d/ui/mol_viewer_2d.py#L544-L587",
+      "note": "300-DPI export works; sketcher metadata says 72 DPI.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-png-export.webp",
+        "caption": "Ball-and-stick molecular model on a white background."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/README.md#quick-start--python-api",
+      "note": "Public pychem package supports scripting without Qt.",
+      "shot": {
+        "image": "evidence/pychem-pro/f-python-api.webp",
+        "caption": "Embedded Python console above the molecular viewer."
+      }
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/README.md#plugins",
+      "note": "Documented Python plugin API with analysis, visualization, and I/O plugins."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Custom terms restrict commercial and service use; manual says MIT and README misidentifies OASA's GPL license.",
+    "Sketcher saves molecules, not complete schemes; inspected exporters use raster formats despite manual SVG/PDF claims.",
+    "README lists the implemented sketcher as planned and denies chemistry dependencies despite vendored OASA and optional RDKit."
+  ],
+  "github": {
+    "stars": 401,
+    "pushedAt": "2026-10-18T04:22:52Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "1.0.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "PyChem-Pro-v1.0.0.tar.gz",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 1553102,
+    "installedBytes": 1571659776,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/pychem-pro/simple.png",
+        "note": "Default SMILES layout; zoomed for capture without cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/pychem-pro/complex.png",
+        "note": "Default SMILES layout has overlapping labels and bonds; no cleanup.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/pychem-pro/threed.png",
+        "note": "Built from SMILES; rotated and zoomed, retaining default Ball & Stick.",
+        "structure": "stereo"
+      }
+    ],
+    "canvas": "evidence/pychem-pro/canvas.webp",
+    "canvasLight": "evidence/pychem-pro/canvas-light.webp",
+    "canvasDark": "evidence/pychem-pro/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Canvas stays white; Light leaves dark toolbars with low contrast."
+    },
+    "memory": null,
+    "observations": [
+      "Caffeine is readable; paclitaxel's default layout has overlapping bonds and labels.",
+      "Generated paclitaxel and cholesterol SMILES lose all specified stereocenters.",
+      "Default 3D rendering uses green Ball & Stick and red oxygen.",
+      "Cholesterol formula is C27H46O; descriptor molecular weight is 340.296.",
+      "Manual drawing gestures produced no visible objects; automation limitations remain possible."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 1553102,
+  "references": [
+    "https://github.com/vijaymasand/PyChem-Pro",
+    "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/README.md"
+  ],
+  "builtOn": {
+    "id": "p62",
+    "relation": "fork",
+    "editor": "ChemCanvas",
+    "libraries": [
+      "OASA",
+      "RDKit"
+    ],
+    "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/paper.py#L1-L23",
+    "note": "ChemCanvas adaptation and OASA contradict README's from-scratch/no-chemistry-dependencies claims; RDKit plugin optional."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Adapted ChemCanvas sketcher; in-house QPainter views",
+    "language": "Python",
+    "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/features/sketcher_2d/bond.py#L1-L229"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "Shell and batch files handle setup and launching.",
+  "thirdParty": {
+    "summary": "Includes GPL-3.0-or-later (ChemCanvas), GPL-2.0-or-later (OASA), LGPL-2.1 (Jmol data), and LGPL-3.0/GPL-3.0 or commercial terms (PySide6/Qt).",
+    "source": "https://github.com/vijaymasand/PyChem-Pro/blob/f0119603495fedff79afd3b5ccf3cb2c7cf6e7cd/src/vendors/oasa/__init__.py",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "ChemCanvas",
+        "license": "GPL-3.0-or-later",
+        "source": "https://github.com/ksharindam/chemcanvas/blob/main/pyproject.toml"
+      },
+      {
+        "name": "OASA",
+        "license": "GPL-2.0-or-later",
+        "source": "https://bkchem.zirael.org/download/oasa-0.13.1.tar.gz"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      }
+    ]
+  }
+}

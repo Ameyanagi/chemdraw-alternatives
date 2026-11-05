@@ -1,0 +1,553 @@
+{
+  "id": "p39",
+  "slug": "chemfig",
+  "name": "chemfig",
+  "rank": 51,
+  "tier": "alternative",
+  "tierReason": "Its TeX workflow produces publication-grade 2D structures and reaction documents.",
+  "summary": "A TeX package for typesetting 2D chemical structures, reaction schemes, and mechanisms in publication documents.",
+  "website": "https://www.ctan.org/pkg/chemfig",
+  "repo": null,
+  "docs": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf",
+  "vendor": "Christian Tellechea",
+  "license": {
+    "kind": "open-source",
+    "spdx": "LPPL-1.3c",
+    "text": "LaTeX Project Public License version 1.3c or later.",
+    "source": "https://www.ctan.org/tex-archive/macros/generic/chemfig"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://www.ctan.org/pkg/chemfig"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "1.82",
+    "date": "2026-09-19",
+    "source": "https://www.ctan.org/pkg/chemfig"
+  },
+  "engine": {
+    "rendering": "TikZ/PGF vector graphics through TeX",
+    "chemistry": null,
+    "ui": null,
+    "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=5"
+  },
+  "languages": [
+    "TeX"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=8",
+      "note": "Single, double and triple bonds rendered from drawing code.",
+      "shot": {
+        "image": "evidence/chemfig/f-bonds-core.webp",
+        "caption": "Single, double and triple carbon bonds."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=12",
+      "note": "Wedge, hash and TikZ-decorated wavy bonds rendered.",
+      "shot": {
+        "image": "evidence/chemfig/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=26",
+      "note": "Explicit upper, lower and centered double-bond strokes rendered."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=16",
+      "note": "Three-, five-, six-membered and aromatic circle rings rendered.",
+      "shot": {
+        "image": "evidence/chemfig/f-rings.webp",
+        "caption": "Three-, five-, six-membered and aromatic rings."
+      }
+    },
+    "conformers": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=38",
+      "note": "Chair/Haworth examples require explicit bond angles."
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Undefined built-in Ph alias produced an empty page."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=27",
+      "note": "Saved ester submolecule code expanded twice in different structures."
+    },
+    "abbreviations": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=27",
+      "note": "Custom submolecule expansion worked; built-in Ph was absent."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=31",
+      "note": "Carbon isotope and positive nitrogen charge rendered.",
+      "shot": {
+        "image": "evidence/chemfig/f-atom-labels.webp",
+        "caption": "Carbon isotope and positively charged nitrogen labels."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=33",
+      "note": "Oxygen radical dot and lone pair rendered.",
+      "shot": {
+        "image": "evidence/chemfig/f-radicals.webp",
+        "caption": "Oxygen with a radical dot and lone pair."
+      }
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=44",
+      "note": "Rotation, flipping and scaling are specified through TeX code."
+    },
+    "perspective": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=38",
+      "note": "Perspective constructed manually with bond angles and lengths."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=47",
+      "note": "Forward and equilibrium reaction arrows rendered.",
+      "shot": {
+        "image": "evidence/chemfig/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium reaction arrows."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=20",
+      "note": "Curved full-head arrow rendered through chemmove and TikZ.",
+      "shot": {
+        "image": "evidence/chemfig/f-mechanism-arrows.webp",
+        "caption": "Curved arrow above a carbon–oxygen double bond."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=45",
+      "note": "TeX captions and positioned TikZ text."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=34",
+      "note": "TikZ shapes and curves; expandable chemfig brackets."
+    },
+    "align": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=29",
+      "note": "Code-based alignment and spacing, without selecting canvas objects."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=52",
+      "note": "Subschemes are positioned as single entities."
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=25",
+      "note": "Reusable TeX settings for bonds and atom fonts."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=41",
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Six-bond carbon rendered without a chemical validation warning."
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Direct caffeine input printed its name as a label."
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=72",
+      "note": "Graphical R-group label only; query semantics were not tested.",
+      "shot": {
+        "image": "evidence/chemfig/f-markush.webp",
+        "caption": "Structure with a graphical R-group label."
+      }
+    },
+    "polymers": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=43",
+      "note": "Node-anchored delimiters and indices; graphical repeat representation only."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Direct CDXML through TeX input failed; no native importer."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Direct MOL input failed; conversion required external mol2chemfig."
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Direct SMILES produced overlapping labels; external conversion required."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Native output-format request rejected SVG."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=6",
+      "note": "Vector PDFs compiled with Tectonic using default drawing settings.",
+      "shot": {
+        "image": "evidence/chemfig/f-pdf-export.webp",
+        "caption": "A rendered structure in a PDF viewer."
+      }
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Native request rejected PNG; pdftoppm rasterization was external."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=6",
+      "note": "Rendered through a TeX compiler without an editor GUI."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig-en.pdf#page=56",
+      "note": "Custom arrow definitions and atom-rendering macros."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Requires TeX source editing and a compatible TeX/TikZ installation.",
+    "Complex drawings require manually specified geometry.",
+    "Some mechanism overlays require two compilation passes."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "1.82",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "tex",
+    "artifact": "chemfig.zip",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 1733375,
+    "installedBytes": 2199552,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemfig/simple.png",
+        "note": "SMILES converted by mol2chemfig; chemfig rendered default layout.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemfig/complex.png",
+        "note": "SMILES converted by mol2chemfig; default layout retained, including overlapping core bonds.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "No interactive 3D view; cholesterol not loaded.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemfig/canvas.webp",
+    "canvasLight": "evidence/chemfig/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "No GUI; fixed white TeX output shown in Preview."
+    },
+    "memory": null,
+    "observations": [
+      "No GUI; window captures show an isolated Preview viewer.",
+      "Chemfig does not read SMILES; mol2chemfig supplied drawing code and layout.",
+      "Caffeine required MOL fallback after the original SMILES conversion failed.",
+      "Paclitaxel phenyl rings became wavy through an external converter defect.",
+      "No interactive 3D view; PNGs were converted externally from TeX PDFs.",
+      "Redraw: current Kekule SMILES converted successfully for caffeine and paclitaxel; previous converter failures no longer occur.",
+      "Redraw: mol2chemfig supplied layout without manual geometry or style changes; paclitaxel central bonds overlap.",
+      "Redraw: both standalone PDFs were rasterized with pdftoppm at 300 dpi; PNGs contain only the drawings."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 1733375,
+  "references": [
+    "https://www.ctan.org/pkg/chemfig"
+  ],
+  "builtOn": {
+    "id": "p39",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://mirrors.ctan.org/macros/generic/chemfig/chemfig.tex",
+    "note": "Original TeX molecular drawing macros over TikZ; no interactive canvas."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "chemfig molecular macros over TikZ/PGF",
+    "language": "TeX",
+    "source": "https://tug.ctan.org/macros/generic/chemfig/chemfig.tex"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

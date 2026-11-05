@@ -1,0 +1,267 @@
+[
+ {
+  "name": "Alchemist",
+  "url": "https://github.com/Typsium/alchemist",
+  "summary": "Typst/CeTZ package for authoring skeletal structures, stereobonds, charges, polymers, Lewis formulas, and reaction annotations."
+ },
+ {
+  "name": "CDXML Page Editor",
+  "url": "https://github.com/M1natori/cdxml-page-editor",
+  "summary": "Tkinter tool for previewing, inserting, deleting, reordering, and renumbering pages in ChemDraw XML documents."
+ },
+ {
+  "name": "cdxml-toolkit",
+  "url": "https://github.com/leehiufung911/cdxml-toolkit",
+  "summary": "Python and MCP toolkit for reaction-scheme composition, CDXML layout, format conversion, and editable Office output."
+ },
+ {
+  "name": "cdxmorph",
+  "url": "https://github.com/rshenvi/cdxmorph",
+  "summary": "Animates ChemDraw CDXML line art as reactions and rotations, exporting GIF, MP4, or numbered frames."
+ },
+ {
+  "name": "chem2office",
+  "url": "https://github.com/wxyhgk/chem2office",
+  "summary": "Python library inserting editable ChemDraw CDX OLE objects and previews into Excel, PowerPoint, and Word documents."
+ },
+ {
+  "name": "chematic",
+  "url": "https://github.com/kent-tokyo/chematic",
+  "summary": "Rust cheminformatics toolkit offering SVG depictions, highlighted molecular grids, and molecular or single-step reaction CDXML writing."
+ },
+ {
+  "name": "chemdiagrams",
+  "url": "https://github.com/Tonner-Zech-Group/chem-diagrams",
+  "summary": "Python publication-figure tool for reaction energy diagrams with automatic labels, multiple paths, molecular image placement and PDF export."
+ },
+ {
+  "name": "ChemDraw MCP for macOS (glebo309)",
+  "url": "https://github.com/glebo309/chemdraw-mcp-macos",
+  "summary": "Native ChemDraw automation builds editable molecules, reaction schemes, aligned compound tables, and consistently scaled PDF/SVG/PNG figures."
+ },
+ {
+  "name": "chemdraw-mcp",
+  "url": "https://github.com/jurimaxam-dotcom/chemdraw-mcp",
+  "summary": "Independent MCP chemistry renderer producing structures, reaction schemes, limited mechanisms, and optional CDXML without requiring ChemDraw."
+ },
+ {
+  "name": "ChemEditor (QuangTran2605)",
+  "url": "https://github.com/QuangTran2605/ChemEditor",
+  "summary": "Ketcher-based browser toolkit linking structure drawing to formula analysis, NMR/IR estimates, 3D viewing, and chemical-format export."
+ },
+ {
+  "name": "ChemfigJS",
+  "url": "https://github.com/herbigm/ChemfigJS",
+  "summary": "Small JavaScript renderer creates SVG chemical structures from chemfig-like code, including bonds, rings, charges, and lone pairs."
+ },
+ {
+  "name": "Chemistry Dude",
+  "url": "https://www.lilwoozy.com/chemistry-dude/",
+  "summary": "Mac classroom chemistry toolkit with a guided Lewis-structure builder, periodic trends, orbital visualization and flash cards."
+ },
+ {
+  "name": "ChemKit",
+  "url": "https://github.com/Oli-CodeHub/ChemKit",
+  "summary": "RDKit drawing toolkit generating styled SVG/PNG reaction schemes with scaffold alignment, conditions, labels, and semantic highlights."
+ },
+ {
+  "name": "Chemobabel",
+  "url": "https://ctan.org/pkg/chemobabel",
+  "summary": "LaTeX integration converts ChemDraw, MOL and SMILES structures into publication graphics through Open Babel."
+ },
+ {
+  "name": "ChemPaper2Draw",
+  "url": "https://github.com/GuruprakashMP/ChemPaper2Draw",
+  "summary": "Extracts structures from research PDFs, validates them, enables Ketcher editing, and exports editable CDXML and common chemical formats."
+ },
+ {
+  "name": "ChemSketcher (yjzhng)",
+  "url": "https://github.com/yjzhng/ChemSketcher",
+  "summary": "Desktop Ketcher sketchpad with live per-molecule RDKit property tables and chemical-file import/export."
+ },
+ {
+  "name": "ChemUI Sketch Mobile",
+  "url": "https://www.chemui.com/",
+  "summary": "Medicinal chemistry drawing app with editable compound libraries, design tracking and chemical-file import/export."
+ },
+ {
+  "name": "chitin-chemdraw",
+  "url": "https://github.com/chitin-dev/chitin",
+  "summary": "Frontend-independent Rust library for 2D molecular layout, renderer-neutral drawing scenes, depiction, and SVG export."
+ },
+ {
+  "name": "CHM-Editor for MS-Office",
+  "url": "https://edu-mat.sakuraweb.com/chemeditor/office/support/install_en.html",
+  "summary": "ChemDoodle-based Word, Excel and PowerPoint add-in inserts PNG structures and supports document re-editing."
+ },
+ {
+  "name": "Clean RXN+",
+  "url": "https://github.com/MALeitch/CleanRXNPlus",
+  "summary": "ChemDraw add-in arranging multistep schemes through drag-and-drop cards, automatic layout, collision avoidance, and SVG previews."
+ },
+ {
+  "name": "curlyarrows",
+  "url": "https://pypi.org/project/curlyarrows/",
+  "summary": "Python, JSON, CLI, and MCP authoring of molecular diagrams and reaction mechanisms with automatically routed electron-flow arrows."
+ },
+ {
+  "name": "Device Studio",
+  "url": "https://www.hzw.ai/device-studio/index",
+  "summary": "Materials simulation platform containing a 2D molecule/reaction editor with annotation tools and PNG, SVG, BMP, JPEG export."
+ },
+ {
+  "name": "eLabFTW Chemical Structure Editor",
+  "url": "https://www.elabftw.net/",
+  "summary": "Open-source ELN embeds reaction drawing with RXN and PNG export plus compound-database search."
+ },
+ {
+  "name": "Illustrious",
+  "url": "https://github.com/specialmedic/Illustrious",
+  "summary": "Early Electron/React molecular drawing app with click-to-grow atoms, bond-angle snapping, element selection, and valence enforcement."
+ },
+ {
+  "name": "inkscape-chemdraw",
+  "url": "https://github.com/FlorianBoser/inkscape-chemdraw",
+  "summary": "Inkscape extension pastes editable ChemDraw vectors and supports round-trip structure editing while preserving figure placement."
+ },
+ {
+  "name": "ipyketcher",
+  "url": "https://pypi.org/project/ipyketcher/",
+  "summary": "Anywidget Ketcher editor for JupyterLab and VS Code notebooks, synchronizing chemical formats with Python."
+ },
+ {
+  "name": "Ketcher Draw (QuantaBricks)",
+  "url": "https://github.com/QuantaBricks/ketcher-draw",
+  "summary": "Customized Ketcher bundle with modal and container APIs for embedding drawing and retrieving SMILES or molfiles."
+ },
+ {
+  "name": "LabArchives Chemical Sketcher Widget",
+  "url": "https://help.labarchives.com/hc/en-us/articles/11732251043348-Chemical-Sketcher-Widget",
+  "summary": "ELN sketcher draws structures and mechanisms, adds calculating stoichiometry tables, and exports MOL files."
+ },
+ {
+  "name": "MarkChem",
+  "url": "https://github.com/karidasd/MarkChem",
+  "summary": "Tauri chemistry Markdown editor combining JSME molecular drawing, mhchem equations, live preview, and Word/PDF export."
+ },
+ {
+  "name": "MATH Keys",
+  "url": "https://www.mathkeyboards.com/extension/",
+  "summary": "Chrome STEM editor with a chemistry drawing board, reaction structures, image copying, and chemfig output."
+ },
+ {
+  "name": "michem",
+  "url": "https://github.com/chitin-dev/michem",
+  "summary": "Typst package draws molecular structures, automatically lays out reaction routes, and annotates electron flow through Chitin WASM."
+ },
+ {
+  "name": "microscope",
+  "url": "https://github.com/lucienwb/microscope",
+  "summary": "Quantum-chemistry viewer producing editable geometries, ChemDraw-style Lewis structures, spectra, and publication figures."
+ },
+ {
+  "name": "Mobile Molecular DataSheet",
+  "url": "https://apps.apple.com/us/app/mobile-molecular-datasheet/id383661863",
+  "summary": "Legacy iOS structure sketcher organizing molecules into editable datasheets, with customizable templates and MOL/SDfile sharing."
+ },
+ {
+  "name": "Mol2chemfig Web",
+  "url": "https://github.com/py-chemist/mol2chemfig-web",
+  "summary": "Web interface combining database search, ChemDoodle sketching, chemfig conversion, adjustable rendering options, and live PDF previews."
+ },
+ {
+  "name": "mol2chemfigPy3",
+  "url": "https://github.com/Augus1999/mol2chemfigPy3",
+  "summary": "Python 3 converter turning SMILES, InChI, molecular files, or PubChem records into editable LaTeX chemfig code."
+ },
+ {
+  "name": "molchemist",
+  "url": "https://github.com/rice8y/molchemist",
+  "summary": "Typst chemical renderer imports Molfile/SDF or SMILES, generates 2D layouts, and supports annotations and editable Alchemist output."
+ },
+ {
+  "name": "Obsidian Ketcher",
+  "url": "https://github.com/yulei-chen/obsidian-ketcher",
+  "summary": "Obsidian plugin editing KET structures and reactions, with linked previews and editable molecular embeds in notes."
+ },
+ {
+  "name": "OrgoDraw",
+  "url": "https://orgodraw.com/",
+  "summary": "Multilingual organic structure practice tool combining Ketcher drawing with RDKit grading, hints, naming, and classroom worksheets."
+ },
+ {
+  "name": "ORZ Ketcher Chemical Editor / Ketcher for VS Code",
+  "url": "https://marketplace.visualstudio.com/items?itemName=YuWang26.orz-chemical-editor",
+  "summary": "Offline VS Code Ketcher integration saves SVGs with embedded KetJSON and exports PNG."
+ },
+ {
+  "name": "PIKAChU",
+  "url": "https://github.com/BTheDragonMaster/pikachu",
+  "summary": "Python cheminformatics toolkit with independent 2D structure layout and SVG/PNG drawing suitable for scripted figures."
+ },
+ {
+  "name": "PyCDXML",
+  "url": "https://github.com/kienerj/pycdxml",
+  "summary": "Python tools converting RDKit molecules and CDX/CDXML documents, applying styles, and generating aligned editable structure grids."
+ },
+ {
+  "name": "Radical Pie",
+  "url": "https://www.radicalpie.com/",
+  "summary": "Equation editor with 2026 bond palettes and customizable bond sites for chemical structure diagrams and document figures."
+ },
+ {
+  "name": "rdkit-structure for Typst",
+  "url": "https://github.com/nats9284/typst-rdkit-structure",
+  "summary": "Typst WebAssembly plugin rendering structures and reactions from SMILES, MOL, or SDF using RDKit."
+ },
+ {
+  "name": "reaction_to_cdxml",
+  "url": "https://github.com/Definde14/reaction_to_cdxml",
+  "summary": "Reaction-SMILES converter generating editable multistep CDXML schemes with conditions, multiple components, layout, and pagination."
+ },
+ {
+  "name": "rxnplot",
+  "url": "https://github.com/josemvas/rxnplot",
+  "summary": "Python package producing chemical reaction energy-level diagrams interactively in Jupyter, with PNG and PDF output."
+ },
+ {
+  "name": "Sciicons Molecules",
+  "url": "https://www.sciicons.com/molecules",
+  "summary": "PubChem-backed tool for exporting styled 2D and 3D molecular illustrations as SVG or PNG."
+ },
+ {
+  "name": "Scilligence TouchMol4Office",
+  "url": "https://scilligence.com/touchmol4office-chemical-structures-word-excel/",
+  "summary": "Office chemical editor with HELM biologics, structure interchange, assay curves, Excel templates and SAR analysis."
+ },
+ {
+  "name": "SLICE Designer",
+  "url": "https://github.com/tarasovan/SLICE-public",
+  "summary": "Reaction-transform authoring GUI combining chemical drawing, detailed SMARTS atom/bond editing and visual chemical logic construction."
+ },
+ {
+  "name": "SmilesDrawer",
+  "url": "https://github.com/reymond-group/smilesDrawer",
+  "summary": "JavaScript SMILES depiction library rendering configurable molecular diagrams to SVG or canvas."
+ },
+ {
+  "name": "STEM Notes",
+  "url": "https://stemnotes.app/",
+  "summary": "Scientific notes workspace with embedded molecular drawing, 3D viewing, NMR analysis, equations and collaborative whiteboards."
+ },
+ {
+  "name": "Streamlit Ketcher",
+  "url": "https://github.com/streamlit/streamlit-ketcher",
+  "summary": "Ketcher component lets Streamlit applications draw molecular structures and return SMILES."
+ },
+ {
+  "name": "Trident Chemwidgets",
+  "url": "https://github.com/tridentbio/trident-chemwidgets",
+  "summary": "Jupyter widgets combine JSME molecule input with chemical-data plots and atom-level inspection."
+ },
+ {
+  "name": "XyMTeX",
+  "url": "https://ctan.org/pkg/xymtex",
+  "summary": "LaTeX package suite for authoring chemical structural formulas with explicit substituents, heterocycles, bond patterns, and PDF/PostScript output."
+ }
+]

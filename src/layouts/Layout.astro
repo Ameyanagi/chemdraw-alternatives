@@ -1,39 +1,60 @@
 ---
+import Zoom from '../components/Zoom.astro';
 import '../styles/global.css';
 import { href } from '../lib/paths';
-interface Props { title?: string; description?: string; }
-const {title='A field guide to chemical drawing',description='A source-backed research demo comparing ChemDraw alternatives: chemistry, document exchange, publishing, and automation.'}=Astro.props;
+
+interface Props { title?: string; description?: string }
+const {
+  title,
+  description = 'A hands-on comparison of ChemDraw alternatives: the same molecules drawn by every tool, plus features, engines, sizes and APIs with exact versions.',
+} = Astro.props;
+const siteName = 'Chemical Drawing Atlas';
+const fullTitle = title ? `${title}: ${siteName}` : siteName;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const current=Astro.url.pathname;
-const nav=[['Compare','guides/comparison/'],['Directory','directory/'],['Methodology','guides/methodology/'],['References','references/']];
+const nav = [
+  ['Drawings', 'drawings/'],
+  ['Compare features', 'compare/'],
+  ['Under the hood', 'under-the-hood/'],
+  ['How we test', 'how-we-test/'],
+];
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title} · Chemical Drawing Atlas</title>
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#122c31" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light" />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href={href('favicon.svg')} />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content={`${title} · Chemical Drawing Atlas`} />
+    <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta name="color-scheme" content="light" />
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="header">
-      <a class="brand" href={href()} aria-label="Chemical Drawing Atlas home"><span class="brand-icon" aria-hidden="true">⬡</span><span>Chemical Drawing <strong>Atlas</strong></span></a>
-      <nav aria-label="Main navigation">{nav.map(([label,url])=><a href={href(url)} aria-current={current===href(url)?'page':undefined}>{label}</a>)}</nav>
-      <a class="repo-link" href="https://github.com/Ameyanagi/chemdraw-alternatives">GitHub ↗</a>
+  <body class="flex min-h-dvh flex-col">
+    <a class="bg-ink sr-only rounded px-3 py-2 text-white focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50" href="#main">Skip to content</a>
+    <header class="border-line border-b">
+      <div class="page flex flex-wrap items-center gap-x-8 gap-y-2 py-3">
+        <a class="font-bold no-underline" href={href()}>{siteName}</a>
+        <nav aria-label="Main" class="flex flex-wrap gap-x-5 gap-y-1">
+          {nav.map(([label, path]) => {
+            const target = href(path);
+            return <a class="no-underline" href={target} aria-current={Astro.url.pathname === target ? 'page' : undefined}>{label}</a>;
+          })}
+        </nav>
+        <a class="button ml-auto py-1.5 text-[0.95rem]" href={href('add/')}>Add a tool</a>
+      </div>
     </header>
-    <main id="main"><slot /></main>
-    <footer class="footer">
-      <div><a class="footer-brand" href={href()}>Chemical Drawing Atlas</a><p>An open notebook for choosing better chemistry tools.</p></div>
-      <div><p>Research demo · Prepared 05 Nov 2026</p><p>Maintained by the ReShiki developer. No vendor endorsement.</p><a href={href('guides/methodology/#editorial-disclosure')}>Editorial disclosure</a><span aria-hidden="true"> · </span><a href={href('references/')}>Sources & attribution</a></div>
+    <main id="main" class="flex-1 overflow-x-clip"><slot /></main>
+    <footer class="border-line text-muted mt-20 border-t py-8 text-[0.95rem]">
+      <div class="page flex flex-wrap justify-between gap-x-10 gap-y-2">
+        <p class="max-w-[60ch]">Maintained by the author of ReShiki, one of the tools listed. ChemDraw is a trademark of Revvity Signals Software. This site has no vendor endorsement.</p>
+        <p><a href="https://github.com/Ameyanagi/chemdraw-alternatives">Source on GitHub</a>, <a href={href('data/tools.json')}>all data as JSON</a></p>
+      </div>
     </footer>
+    <Zoom />
   </body>
 </html>

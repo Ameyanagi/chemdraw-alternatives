@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny" viewBox="11.13 6.17 180.48 122.91">
+<metadata id="penzene">ewogICAgImF0b21zIjogWwogICAgICAgIHsKICAgICAgICAgICAgIngiOiAxNy43OTc4NjAzMDUzOTY4NiwKICAgICAgICAgICAgInkiOiAtNTAuNDQ0MjI1NjIwNjcyNjU0LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAxOS4wMzczOTYzNzI2ODYzNzQsCiAgICAgICAgICAgICJ5IjogLTM2LjA0MTI3MTQzODAyMjMxNCwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogMzIuODM5NTQ5NjcyMjgxMTk0LAogICAgICAgICAgICAieSI6IC0zMS40MjgyNDI5NTgyNjg0LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiA0Ny4yODEwNzY1MDgyNTUwNTUsCiAgICAgICAgICAgICJ5IjogLTMwLjc3NzIxMTg1NjQ4ODg3NiwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogNTcuMDMyNDI5NTU3ODI4MDIsCiAgICAgICAgICAgICJ5IjogLTIwLjEwNTE2MTc5MzI1MjYyLAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiA3MC42MjM3OTk0MzY0MDIxNywKICAgICAgICAgICAgInkiOiAtMjUuMDMwMjIwNTQxNDczMjcsCiAgICAgICAgICAgICJ6IjogOAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDU2LjM4MTM5ODQ1NjA0ODQ5LAogICAgICAgICAgICAieSI6IC01LjY2MzYzNDk1NzI3ODc2NjUsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDcwLjE2MjM0Mjk0OTg2NzY2LAogICAgICAgICAgICAieSI6IC0xLjI5NzA0NTAxNjg0MzI5OCwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogNzMuMjcxMjM3MzgwNDUwNTYsCiAgICAgICAgICAgICJ5IjogMTIuODIwODk3OTczMTY1MTA0LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiA2Mi41OTkxODczMTcyMTQyOCwKICAgICAgICAgICAgInkiOiAyMi41NzIyNTEwMjI3MzgwNTgsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDQ4LjgxODI0MjgyMzM5NTEyLAogICAgICAgICAgICAieSI6IDE4LjIwNTY2MTA4MjMwMjU5LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiA0NS43MDkzNDgzOTI4MTIyMjQsCiAgICAgICAgICAgICJ5IjogNC4wODc3MTgwOTIyOTQxODgsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDMxLjI2NzgyMTU1NjgzODM3OCwKICAgICAgICAgICAgInkiOiAzLjQzNjY4Njk5MDUxNDY2NzUsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDIxLjUxNjQ2ODUwNzI2NTQwOCwKICAgICAgICAgICAgInkiOiAtNy4yMzUzNjMwNzI3MjE1OTcsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDIyLjE2NzQ5OTYwOTA0NDk0LAogICAgICAgICAgICAieSI6IC0yMS42NzY4ODk5MDg2OTU0MzYsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDEyLjYwMzMwMDM0Njg3NjYyNiwKICAgICAgICAgICAgInkiOiAtMzIuNTE2OTgzNjA0MDA4OTYsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDExLjYzMjk2Mjc0MDc4Njg5LAogICAgICAgICAgICAieSI6IC0yMS45NjgyNTA0Mzk4Mjc2NzgsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDguNDIzMzc2MjYxOTAyMTAzLAogICAgICAgICAgICAieSI6IC0xMy4zNjMzNzA0NDA4NjY5OTYsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDcuMTgzODQwMTk0NjEyNTg3LAogICAgICAgICAgICAieSI6IC0yNy43NjYzMjQ2MjM1MTczNSwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTUuOTA5MjUyMDUwNzUwNzIxLAogICAgICAgICAgICAieSI6IC0zMy44OTQzMzE5OTE2NjI3NzQsCiAgICAgICAgICAgICJ6IjogOAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IC0xNy43NjI4MDgyMjg4MjQ1MSwKICAgICAgICAgICAgInkiOiAtMjUuNjE5Mzg1MTc3MTU3ODEsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IC0xNi41MjMyNzIxNjE1MzQ5OTcsCiAgICAgICAgICAgICJ5IjogLTExLjIxNjQzMDk5NDUwNzQ2NiwKICAgICAgICAgICAgInoiOiA4CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTMwLjg1NTkwMDQ3NDE4NzgwNiwKICAgICAgICAgICAgInkiOiAtMzEuNzQ3MzkyNTQ1MzAzMjA3LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAtNDIuNzA5NDU2NjUyMjYxNTksCiAgICAgICAgICAgICJ5IjogLTIzLjQ3MjQ0NTczMDc5ODI1LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAtNTUuODAyNTQ4ODk3NjI0OSwKICAgICAgICAgICAgInkiOiAtMjkuNjAwNDUzMDk4OTQzNjQ2LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAtNTcuMDQyMDg0OTY0OTE0NDE2LAogICAgICAgICAgICAieSI6IC00NC4wMDM0MDcyODE1OTQwMiwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTcwLjEzNTE3NzIxMDI3NzczLAogICAgICAgICAgICAieSI6IC01MC4xMzE0MTQ2NDk3Mzk0MjYsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IC04MS45ODg3MzMzODgzNTE1MiwKICAgICAgICAgICAgInkiOiAtNDEuODU2NDY3ODM1MjM0NDYsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IC04MC43NDkxOTczMjEwNjIsCiAgICAgICAgICAgICJ5IjogLTI3LjQ1MzUxMzY1MjU4NDA5MywKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTY3LjY1NjEwNTA3NTY5ODcsCiAgICAgICAgICAgICJ5IjogLTIxLjMyNTUwNjI4NDQzODY5NiwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTQxLjQ2OTkyMDU4NDk3MjA5LAogICAgICAgICAgICAieSI6IC05LjA2OTQ5MTU0ODE0Nzg5NCwKICAgICAgICAgICAgInoiOiA3CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTUzLjMyMzQ3Njc2MzA0NTg4LAogICAgICAgICAgICAieSI6IC0wLjc5NDU0NDczMzY0MjkzNTQsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IC02Ni40MTY1NjkwMDg0MDkxOCwKICAgICAgICAgICAgInkiOiAtNi45MjI1NTIxMDE3ODgzNDMsCiAgICAgICAgICAgICJ6IjogOAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IC01Mi4wODM5NDA2OTU3NTYzNiwKICAgICAgICAgICAgInkiOiAxMy42MDg0MDk0NDkwMDc0MjMsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IC02My45Mzc0OTY4NzM4MzAxNTYsCiAgICAgICAgICAgICJ5IjogMjEuODgzMzU2MjYzNTEyMzk3LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAtNjIuNjk3OTYwODA2NTQwNjM1LAogICAgICAgICAgICAieSI6IDM2LjI4NjMxMDQ0NjE2Mjc0NCwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTQ5LjYwNDg2ODU2MTE3NzMzNCwKICAgICAgICAgICAgInkiOiA0Mi40MTQzMTc4MTQzMDgxNTYsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IC0zNy43NTEzMTIzODMxMDM1NCwKICAgICAgICAgICAgInkiOiAzNC4xMzkzNzA5OTk4MDMxOSwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTM4Ljk5MDg0ODQ1MDM5MzA1LAogICAgICAgICAgICAieSI6IDE5LjczNjQxNjgxNzE1MjgzNiwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTMyLjA5NTQzNjU0MTQ3NzMwNSwKICAgICAgICAgICAgInkiOiAtNDYuMTUwMzQ2NzI3OTUzNTgsCiAgICAgICAgICAgICJ6IjogOAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDcuOTI1MDk4NjI4NjkxMjc3LAogICAgICAgICAgICAieSI6IC0yLjMxMDMwNDMyNDUwMDk1ODUsCiAgICAgICAgICAgICJ6IjogOAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDI1LjEzOTgxNDE4ODY5Mjk3NCwKICAgICAgICAgICAgInkiOiAxNi41Mjk3NzkyMzU4Nzc5NzQsCiAgICAgICAgICAgICJ6IjogOAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDEwLjczNjg2MDAwNjA0MjYxMiwKICAgICAgICAgICAgInkiOiAxNy43NjkzMTUzMDMxNjc0ODgsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDIuNDYxOTEzMTkxNTM3NjUzMywKICAgICAgICAgICAgInkiOiA1LjkxNTc1OTEyNTA5MzcwMiwKICAgICAgICAgICAgInoiOiA4CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogNC42MDg4NTI2Mzc4OTcyMTUsCiAgICAgICAgICAgICJ5IjogMzAuODYyNDA3NTQ4NTMwNzk3LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAtOS43OTQxMDE1NDQ3NTMxNTQsCiAgICAgICAgICAgICJ5IjogMzIuMTAxOTQzNjE1ODIwMzI1LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAtMTUuOTIyMTA4OTEyODk4NTQyLAogICAgICAgICAgICAieSI6IDQ1LjE5NTAzNTg2MTE4MzYzNCwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogLTcuNjQ3MTYyMDk4MzkzNTksCiAgICAgICAgICAgICJ5IjogNTcuMDQ4NTkyMDM5MjU3NDE0LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiA2Ljc1NTc5MjA4NDI1Njc4LAogICAgICAgICAgICAieSI6IDU1LjgwOTA1NTk3MTk2Nzg5LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAxMi44ODM3OTk0NTI0MDIxNjksCiAgICAgICAgICAgICJ5IjogNDIuNzE1OTYzNzI2NjA0NTg1LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiA0NC40NTE2NTI4ODI5NTk2NiwKICAgICAgICAgICAgInkiOiAzMS45ODY2MDU1NzYxMjE3NiwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogNTguMjMyNTk3Mzc2Nzc4ODMsCiAgICAgICAgICAgICJ5IjogMzYuMzUzMTk1NTE2NTU3MjM2LAogICAgICAgICAgICAieiI6IDgKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAzNC4zNzY3MTU5ODc0MjEyNywKICAgICAgICAgICAgInkiOiAxNy41NTQ2Mjk5ODA1MjMwNTMsCiAgICAgICAgICAgICJ6IjogOAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDI2LjU5MjE0MzA5NjYzOTQ5NiwKICAgICAgICAgICAgInkiOiAyOS43MzU4NDM1MzkwMjEzNDYsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDMzLjI0OTA5NzA0MTgzMTU2LAogICAgICAgICAgICAieSI6IDQyLjU2ODA4ODE5OTI5OTE3LAogICAgICAgICAgICAieiI6IDgKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiAxMi4xNTA2MTYyNjA2NjU2NTQsCiAgICAgICAgICAgICJ5IjogMjkuMDg0ODEyNDM3MjQxOCwKICAgICAgICAgICAgInoiOiA2CiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ4IjogODAuODM0MzkzMDEzMTAzOTUsCiAgICAgICAgICAgICJ5IjogLTExLjA0ODM5ODA2NjQxNjI1LAogICAgICAgICAgICAieiI6IDgKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiA2OC4yMzQ5NTQ2MzQxMjIyOSwKICAgICAgICAgICAgInkiOiAtMTMuOTM4NTgxNzcxNzgzNzE1LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiA1My40MDkwODM4NzY0MDA0NiwKICAgICAgICAgICAgInkiOiAtNDMuODcwMzA0MTAxODUyMTcsCiAgICAgICAgICAgICJ6IjogOAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDY3LjgxMjAzODA1OTA1MDgsCiAgICAgICAgICAgICJ5IjogLTQ1LjEwOTg0MDE2OTE0MTY5LAogICAgICAgICAgICAieiI6IDYKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIngiOiA3Ni4wODY5ODQ4NzM1NTU3NiwKICAgICAgICAgICAgInkiOiAtMzMuMjU2MjgzOTkxMDY3ODgsCiAgICAgICAgICAgICJ6IjogOAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAieCI6IDczLjk0MDA0NTQyNzE5NjIxLAogICAgICAgICAgICAieSI6IC01OC4yMDI5MzI0MTQ1MDQ5ODYsCiAgICAgICAgICAgICJ6IjogNgogICAgICAgIH0KICAgIF0sCiAgICAiYm9uZHMiOiBbCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDAsCiAgICAgICAgICAgICJiIjogMSwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDEsCiAgICAgICAgICAgICJiIjogMiwKICAgICAgICAgICAgIm9yZGVyIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDIsCiAgICAgICAgICAgICJiIjogMywKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDMsCiAgICAgICAgICAgICJiIjogNCwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDQsCiAgICAgICAgICAgICJiIjogNSwKICAgICAgICAgICAgIm9yZGVyIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDQsCiAgICAgICAgICAgICJiIjogNiwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDYsCiAgICAgICAgICAgICJiIjogNywKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDcsCiAgICAgICAgICAgICJiIjogOCwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDksCiAgICAgICAgICAgICJiIjogOCwKICAgICAgICAgICAgIm9yZGVyIjogMSwKICAgICAgICAgICAgInN0ZXJlbyI6ICJ3ZWRnZSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiA5LAogICAgICAgICAgICAiYiI6IDEwLAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMTAsCiAgICAgICAgICAgICJiIjogMTEsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAxMSwKICAgICAgICAgICAgImIiOiAxMiwKICAgICAgICAgICAgIm9yZGVyIjogMSwKICAgICAgICAgICAgInN0ZXJlbyI6ICJ3ZWRnZSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAxMiwKICAgICAgICAgICAgImIiOiAxMywKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDEzLAogICAgICAgICAgICAiYiI6IDE0LAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMTQsCiAgICAgICAgICAgICJiIjogMTUsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAxNCwKICAgICAgICAgICAgImIiOiAxNiwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDEzLAogICAgICAgICAgICAiYiI6IDE3LAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMTcsCiAgICAgICAgICAgICJiIjogMTgsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAxOCwKICAgICAgICAgICAgImIiOiAxOSwKICAgICAgICAgICAgIm9yZGVyIjogMSwKICAgICAgICAgICAgInN0ZXJlbyI6ICJoYXNoIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDE5LAogICAgICAgICAgICAiYiI6IDIwLAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMjAsCiAgICAgICAgICAgICJiIjogMjEsCiAgICAgICAgICAgICJvcmRlciI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAyMCwKICAgICAgICAgICAgImIiOiAyMiwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDIyLAogICAgICAgICAgICAiYiI6IDIzLAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMjMsCiAgICAgICAgICAgICJiIjogMjQsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAyNCwKICAgICAgICAgICAgImIiOiAyNSwKICAgICAgICAgICAgIm9yZGVyIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDI1LAogICAgICAgICAgICAiYiI6IDI2LAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMjYsCiAgICAgICAgICAgICJiIjogMjcsCiAgICAgICAgICAgICJvcmRlciI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAyNywKICAgICAgICAgICAgImIiOiAyOCwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDI4LAogICAgICAgICAgICAiYiI6IDI5LAogICAgICAgICAgICAib3JkZXIiOiAyCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMjMsCiAgICAgICAgICAgICJiIjogMzAsCiAgICAgICAgICAgICJvcmRlciI6IDEsCiAgICAgICAgICAgICJzdGVyZW8iOiAid2VkZ2UiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMzAsCiAgICAgICAgICAgICJiIjogMzEsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAzMSwKICAgICAgICAgICAgImIiOiAzMiwKICAgICAgICAgICAgIm9yZGVyIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDMxLAogICAgICAgICAgICAiYiI6IDMzLAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMzMsCiAgICAgICAgICAgICJiIjogMzQsCiAgICAgICAgICAgICJvcmRlciI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAzNCwKICAgICAgICAgICAgImIiOiAzNSwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDM1LAogICAgICAgICAgICAiYiI6IDM2LAogICAgICAgICAgICAib3JkZXIiOiAyCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMzYsCiAgICAgICAgICAgICJiIjogMzcsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAzNywKICAgICAgICAgICAgImIiOiAzOCwKICAgICAgICAgICAgIm9yZGVyIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDIyLAogICAgICAgICAgICAiYiI6IDM5LAogICAgICAgICAgICAib3JkZXIiOiAxLAogICAgICAgICAgICAic3RlcmVvIjogIndlZGdlIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDEzLAogICAgICAgICAgICAiYiI6IDQwLAogICAgICAgICAgICAib3JkZXIiOiAxLAogICAgICAgICAgICAic3RlcmVvIjogIndlZGdlIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDEyLAogICAgICAgICAgICAiYiI6IDQxLAogICAgICAgICAgICAib3JkZXIiOiAxLAogICAgICAgICAgICAic3RlcmVvIjogImhhc2giCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogNDEsCiAgICAgICAgICAgICJiIjogNDIsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiA0MiwKICAgICAgICAgICAgImIiOiA0MywKICAgICAgICAgICAgIm9yZGVyIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDQyLAogICAgICAgICAgICAiYiI6IDQ0LAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogNDQsCiAgICAgICAgICAgICJiIjogNDUsCiAgICAgICAgICAgICJvcmRlciI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiA0NSwKICAgICAgICAgICAgImIiOiA0NiwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDQ2LAogICAgICAgICAgICAiYiI6IDQ3LAogICAgICAgICAgICAib3JkZXIiOiAyCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogNDcsCiAgICAgICAgICAgICJiIjogNDgsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiA0OCwKICAgICAgICAgICAgImIiOiA0OSwKICAgICAgICAgICAgIm9yZGVyIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDEwLAogICAgICAgICAgICAiYiI6IDUwLAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogNTAsCiAgICAgICAgICAgICJiIjogNTEsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAxMCwKICAgICAgICAgICAgImIiOiA1MiwKICAgICAgICAgICAgIm9yZGVyIjogMSwKICAgICAgICAgICAgInN0ZXJlbyI6ICJoYXNoIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDUyLAogICAgICAgICAgICAiYiI6IDUzLAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogNTMsCiAgICAgICAgICAgICJiIjogNTQsCiAgICAgICAgICAgICJvcmRlciI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiA1MywKICAgICAgICAgICAgImIiOiA1NSwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDcsCiAgICAgICAgICAgICJiIjogNTYsCiAgICAgICAgICAgICJvcmRlciI6IDEsCiAgICAgICAgICAgICJzdGVyZW8iOiAid2VkZ2UiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogNiwKICAgICAgICAgICAgImIiOiA1NywKICAgICAgICAgICAgIm9yZGVyIjogMSwKICAgICAgICAgICAgInN0ZXJlbyI6ICJ3ZWRnZSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAzLAogICAgICAgICAgICAiYiI6IDU4LAogICAgICAgICAgICAib3JkZXIiOiAxLAogICAgICAgICAgICAic3RlcmVvIjogIndlZGdlIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDU4LAogICAgICAgICAgICAiYiI6IDU5LAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogNTksCiAgICAgICAgICAgICJiIjogNjAsCiAgICAgICAgICAgICJvcmRlciI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiA1OSwKICAgICAgICAgICAgImIiOiA2MSwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDE4LAogICAgICAgICAgICAiYiI6IDEsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAxNCwKICAgICAgICAgICAgImIiOiAyLAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogMTEsCiAgICAgICAgICAgICJiIjogNiwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDUxLAogICAgICAgICAgICAiYiI6IDksCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgImEiOiAyOSwKICAgICAgICAgICAgImIiOiAyNCwKICAgICAgICAgICAgIm9yZGVyIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiYSI6IDM4LAogICAgICAgICAgICAiYiI6IDMzLAogICAgICAgICAgICAib3JkZXIiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJhIjogNDksCiAgICAgICAgICAgICJiIjogNDQsCiAgICAgICAgICAgICJvcmRlciI6IDEKICAgICAgICB9CiAgICBdLAogICAgImZvcm1hdCI6ICJwZW56ZW5lIiwKICAgICJ2ZXJzaW9uIjogMQp9Cg==</metadata>
+<title>Penzene</title>
+<desc>Generated with Qt</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="17.7979,-50.4442 19.0374,-36.0413 " />
+<polyline fill="none" vector-effect="none" points="19.0374,-36.0413 32.8395,-31.4282 " />
+<polyline fill="none" vector-effect="none" points="20.2557,-32.8722 29.9606,-29.6286 " />
+<polyline fill="none" vector-effect="none" points="32.8395,-31.4282 47.2811,-30.7772 " />
+<polyline fill="none" vector-effect="none" points="47.2811,-30.7772 57.0324,-20.1052 " />
+<polyline fill="none" vector-effect="none" points="57.4757,-18.8819 66.1712,-22.0329 " />
+<polyline fill="none" vector-effect="none" points="56.5892,-21.3284 65.2847,-24.4793 " />
+<polyline fill="none" vector-effect="none" points="57.0324,-20.1052 56.3814,-5.66363 " />
+<polyline fill="none" vector-effect="none" points="56.3814,-5.66363 70.1623,-1.29705 " />
+<polyline fill="none" vector-effect="none" points="70.1623,-1.29705 73.2712,12.8209 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polygon fill-rule="evenodd" vector-effect="none" points="62.5992,22.5723 73.6227,14.4168 73.2712,12.8209 72.875,11.0216 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="62.5992,22.5723 48.8182,18.2057 " />
+<polyline fill="none" vector-effect="none" points="48.8182,18.2057 45.7093,4.08772 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polygon fill-rule="evenodd" vector-effect="none" points="45.7093,4.08772 29.6712,1.68935 31.2678,3.43669 30.5487,4.97322 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="31.2678,3.43669 21.5165,-7.23536 " />
+<polyline fill="none" vector-effect="none" points="21.5165,-7.23536 22.1675,-21.6769 " />
+<polyline fill="none" vector-effect="none" points="22.1675,-21.6769 14.587,-30.2687 " />
+<polyline fill="none" vector-effect="none" points="22.1675,-21.6769 11.633,-21.9683 " />
+<polyline fill="none" vector-effect="none" points="21.5165,-7.23536 8.42338,-13.3634 " />
+<polyline fill="none" vector-effect="none" points="8.42338,-13.3634 7.18384,-27.7663 " />
+<polyline fill="none" vector-effect="none" points="6.53955,-28.2091 6.43108,-27.9774 " />
+<polyline fill="none" vector-effect="none" points="4.45108,-29.6445 3.99102,-28.6615 " />
+<polyline fill="none" vector-effect="none" points="2.3626,-31.0798 1.55095,-29.3457 " />
+<polyline fill="none" vector-effect="none" points="0.274126,-32.5152 -0.889114,-30.0298 " />
+<polyline fill="none" vector-effect="none" points="-10.6128,-30.6108 -17.7628,-25.6194 " />
+<polyline fill="none" vector-effect="none" points="-19.0591,-25.5078 -18.2758,-16.406 " />
+<polyline fill="none" vector-effect="none" points="-16.4665,-25.7309 -15.6832,-16.6291 " />
+<polyline fill="none" vector-effect="none" points="-17.7628,-25.6194 -30.8559,-31.7474 " />
+<polyline fill="none" vector-effect="none" points="-30.8559,-31.7474 -42.7095,-23.4724 " />
+<polyline fill="none" vector-effect="none" points="-42.7095,-23.4724 -55.8025,-29.6005 " />
+<polyline fill="none" vector-effect="none" points="-55.8025,-29.6005 -57.0421,-44.0034 " />
+<polyline fill="none" vector-effect="none" points="-58.5803,-31.5294 -59.4494,-41.6282 " />
+<polyline fill="none" vector-effect="none" points="-57.0421,-44.0034 -70.1352,-50.1314 " />
+<polyline fill="none" vector-effect="none" points="-70.1352,-50.1314 -81.9887,-41.8565 " />
+<polyline fill="none" vector-effect="none" points="-70.4168,-46.7614 -78.7281,-40.9592 " />
+<polyline fill="none" vector-effect="none" points="-81.9887,-41.8565 -80.7492,-27.4535 " />
+<polyline fill="none" vector-effect="none" points="-80.7492,-27.4535 -67.6561,-21.3255 " />
+<polyline fill="none" vector-effect="none" points="-77.6898,-28.8946 -68.5094,-24.5979 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polygon fill-rule="evenodd" vector-effect="none" points="-42.7095,-23.4724 -43.4097,-14.1151 -41.9152,-14.2437 -40.4207,-14.3723 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-45.6295,-6.16568 -53.3235,-0.794545 " />
+<polyline fill="none" vector-effect="none" points="-52.772,-1.97292 -60.9618,-5.80605 " />
+<polyline fill="none" vector-effect="none" points="-53.875,0.383834 -62.0649,-3.4493 " />
+<polyline fill="none" vector-effect="none" points="-53.3235,-0.794545 -52.0839,13.6084 " />
+<polyline fill="none" vector-effect="none" points="-52.0839,13.6084 -63.9375,21.8834 " />
+<polyline fill="none" vector-effect="none" points="-52.3656,16.9785 -60.6769,22.7806 " />
+<polyline fill="none" vector-effect="none" points="-63.9375,21.8834 -62.698,36.2863 " />
+<polyline fill="none" vector-effect="none" points="-62.698,36.2863 -49.6049,42.4143 " />
+<polyline fill="none" vector-effect="none" points="-59.6386,34.8452 -50.4582,39.1419 " />
+<polyline fill="none" vector-effect="none" points="-49.6049,42.4143 -37.7513,34.1394 " />
+<polyline fill="none" vector-effect="none" points="-37.7513,34.1394 -38.9908,19.7364 " />
+<polyline fill="none" vector-effect="none" points="-40.5291,32.2104 -41.3982,22.1116 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polygon fill-rule="evenodd" vector-effect="none" points="-30.8559,-31.7474 -30.1453,-40.9847 -31.6398,-40.856 -33.1343,-40.7274 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polygon fill-rule="evenodd" vector-effect="none" points="21.5165,-7.23536 12.3724,-5.51732 12.8835,-4.10706 13.3945,-2.69679 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="30.9022,3.96292 31.098,4.05457 " />
+<polyline fill="none" vector-effect="none" points="29.4548,6.04579 30.4258,6.50024 " />
+<polyline fill="none" vector-effect="none" points="28.0075,8.12866 29.7536,8.94591 " />
+<polyline fill="none" vector-effect="none" points="26.5602,10.2115 29.0815,11.3916 " />
+<polyline fill="none" vector-effect="none" points="20.1541,16.9589 10.7369,17.7693 " />
+<polyline fill="none" vector-effect="none" points="11.8037,17.0246 7.0277,10.1832 " />
+<polyline fill="none" vector-effect="none" points="9.67004,18.5141 4.89406,11.6726 " />
+<polyline fill="none" vector-effect="none" points="10.7369,17.7693 4.60885,30.8624 " />
+<polyline fill="none" vector-effect="none" points="4.60885,30.8624 -9.7941,32.1019 " />
+<polyline fill="none" vector-effect="none" points="2.67992,33.6401 -7.41894,34.5093 " />
+<polyline fill="none" vector-effect="none" points="-9.7941,32.1019 -15.9221,45.195 " />
+<polyline fill="none" vector-effect="none" points="-15.9221,45.195 -7.64716,57.0486 " />
+<polyline fill="none" vector-effect="none" points="-12.5521,45.4767 -6.74994,53.788 " />
+<polyline fill="none" vector-effect="none" points="-7.64716,57.0486 6.75579,55.8091 " />
+<polyline fill="none" vector-effect="none" points="6.75579,55.8091 12.8838,42.716 " />
+<polyline fill="none" vector-effect="none" points="5.31466,52.7497 9.61141,43.5693 " />
+<polyline fill="none" vector-effect="none" points="48.8182,18.2057 44.4517,31.9866 " />
+<polyline fill="none" vector-effect="none" points="44.4517,31.9866 53.3157,34.7953 " />
+<polyline fill="none" vector-effect="none" points="47.8767,18.0116 47.8631,18.3143 " />
+<polyline fill="none" vector-effect="none" points="45.3972,17.5004 45.3477,18.6003 " />
+<polyline fill="none" vector-effect="none" points="42.9177,16.9892 42.8322,18.8863 " />
+<polyline fill="none" vector-effect="none" points="40.4383,16.478 40.3168,19.1723 " />
+<polyline fill="none" vector-effect="none" points="31.1505,22.603 26.5921,29.7358 " />
+<polyline fill="none" vector-effect="none" points="25.4372,30.335 29.4343,38.0399 " />
+<polyline fill="none" vector-effect="none" points="27.747,29.1367 31.7441,36.8417 " />
+<polyline fill="none" vector-effect="none" points="26.5921,29.7358 12.1506,29.0848 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polygon fill-rule="evenodd" vector-effect="none" points="70.1623,-1.29705 77.2734,-5.76277 76.2616,-6.87012 75.2498,-7.97747 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polygon fill-rule="evenodd" vector-effect="none" points="56.3814,-5.66363 69.0936,-12.7086 68.235,-13.9386 67.3763,-15.1685 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polygon fill-rule="evenodd" vector-effect="none" points="47.2811,-30.7772 52.3576,-38.0851 50.999,-38.721 49.6405,-39.3568 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="58.4573,-44.3048 67.812,-45.1098 " />
+<polyline fill="none" vector-effect="none" points="66.7452,-44.3651 71.5164,-37.5305 " />
+<polyline fill="none" vector-effect="none" points="68.8789,-45.8546 73.6501,-39.02 " />
+<polyline fill="none" vector-effect="none" points="67.812,-45.1098 73.94,-58.2029 " />
+<polyline fill="none" vector-effect="none" points="7.18384,-27.7663 19.0374,-36.0413 " />
+<polyline fill="none" vector-effect="none" points="22.1675,-21.6769 32.8395,-31.4282 " />
+<polyline fill="none" vector-effect="none" points="45.7093,4.08772 56.3814,-5.66363 " />
+<polyline fill="none" vector-effect="none" points="59.8905,31.1209 62.5992,22.5723 " />
+<polyline fill="none" vector-effect="none" points="-67.6561,-21.3255 -55.8025,-29.6005 " />
+<polyline fill="none" vector-effect="none" points="-38.9908,19.7364 -52.0839,13.6084 " />
+<polyline fill="none" vector-effect="none" points="12.8838,42.716 4.60885,30.8624 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M67.2178,-24.9238 C67.2178,-26.112 67.5368,-27.0422 68.1748,-27.7144 C68.8128,-28.3866 69.6364,-28.7227 70.6455,-28.7227 C71.3063,-28.7227 71.902,-28.5648 72.4326,-28.249 C72.9632,-27.9333 73.3677,-27.493 73.646,-26.9282 C73.9243,-26.3634 74.0635,-25.723 74.0635,-25.0068 C74.0635,-24.2809 73.917,-23.6315 73.624,-23.0586 C73.3311,-22.4857 72.916,-22.0519 72.3789,-21.7573 C71.8418,-21.4627 71.2624,-21.3154 70.6406,-21.3154 C69.9668,-21.3154 69.3646,-21.4782 68.834,-21.8037 C68.3034,-22.1292 67.9014,-22.5736 67.6279,-23.1367 C67.3545,-23.6999 67.2178,-24.2956 67.2178,-24.9238 Z M68.1943,-24.9092 C68.1943,-24.0465 68.4263,-23.367 68.8901,-22.8706 C69.354,-22.3742 69.9359,-22.126 70.6357,-22.126 C71.3486,-22.126 71.9354,-22.3766 72.396,-22.8779 C72.8566,-23.3792 73.0869,-24.0905 73.0869,-25.0117 C73.0869,-25.5944 72.9884,-26.103 72.7915,-26.5376 C72.5946,-26.9722 72.3065,-27.3091 71.9272,-27.5483 C71.548,-27.7876 71.1224,-27.9072 70.6504,-27.9072 C69.9798,-27.9072 69.4028,-27.6769 68.9194,-27.2163 C68.436,-26.7557 68.1943,-25.9867 68.1943,-24.9092 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-9.29785,-33.7988 C-9.29785,-34.987 -8.97884,-35.9172 -8.34082,-36.5894 C-7.7028,-37.2616 -6.87923,-37.5977 -5.87012,-37.5977 C-5.20931,-37.5977 -4.61361,-37.4398 -4.08301,-37.124 C-3.55241,-36.8083 -3.14795,-36.368 -2.86963,-35.8032 C-2.59131,-35.2384 -2.45215,-34.598 -2.45215,-33.8818 C-2.45215,-33.1559 -2.59863,-32.5065 -2.8916,-31.9336 C-3.18457,-31.3607 -3.59961,-30.9269 -4.13672,-30.6323 C-4.67383,-30.3377 -5.25326,-30.1904 -5.875,-30.1904 C-6.54883,-30.1904 -7.15104,-30.3532 -7.68164,-30.6787 C-8.21224,-31.0042 -8.61426,-31.4486 -8.8877,-32.0117 C-9.16113,-32.5749 -9.29785,-33.1706 -9.29785,-33.7988 Z M-8.32129,-33.7842 C-8.32129,-32.9215 -8.08936,-32.242 -7.62549,-31.7456 C-7.16162,-31.2492 -6.57975,-31.001 -5.87988,-31.001 C-5.16699,-31.001 -4.58024,-31.2516 -4.11963,-31.7529 C-3.65902,-32.2542 -3.42871,-32.9655 -3.42871,-33.8867 C-3.42871,-34.4694 -3.52718,-34.978 -3.72412,-35.4126 C-3.92106,-35.8472 -4.20915,-36.1841 -4.58838,-36.4233 C-4.96761,-36.6626 -5.39323,-36.7822 -5.86523,-36.7822 C-6.53581,-36.7822 -7.11279,-36.5519 -7.59619,-36.0913 C-8.07959,-35.6307 -8.32129,-34.8617 -8.32129,-33.7842 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-19.9072,-11.1113 C-19.9072,-12.2995 -19.5882,-13.2297 -18.9502,-13.9019 C-18.3122,-14.5741 -17.4886,-14.9102 -16.4795,-14.9102 C-15.8187,-14.9102 -15.223,-14.7523 -14.6924,-14.4365 C-14.1618,-14.1208 -13.7573,-13.6805 -13.479,-13.1157 C-13.2007,-12.5509 -13.0615,-11.9105 -13.0615,-11.1943 C-13.0615,-10.4684 -13.208,-9.81901 -13.501,-9.24609 C-13.7939,-8.67318 -14.209,-8.23942 -14.7461,-7.94482 C-15.2832,-7.65023 -15.8626,-7.50293 -16.4844,-7.50293 C-17.1582,-7.50293 -17.7604,-7.66569 -18.291,-7.99121 C-18.8216,-8.31673 -19.2236,-8.76107 -19.4971,-9.32422 C-19.7705,-9.88737 -19.9072,-10.4831 -19.9072,-11.1113 Z M-18.9307,-11.0967 C-18.9307,-10.234 -18.6987,-9.55452 -18.2349,-9.05811 C-17.771,-8.56169 -17.1891,-8.31348 -16.4893,-8.31348 C-15.7764,-8.31348 -15.1896,-8.56413 -14.729,-9.06543 C-14.2684,-9.56673 -14.0381,-10.278 -14.0381,-11.1992 C-14.0381,-11.7819 -14.1366,-12.2905 -14.3335,-12.7251 C-14.5304,-13.1597 -14.8185,-13.4966 -15.1978,-13.7358 C-15.577,-13.9751 -16.0026,-14.0947 -16.4746,-14.0947 C-17.1452,-14.0947 -17.7222,-13.8644 -18.2056,-13.4038 C-18.689,-12.9432 -18.9307,-12.1742 -18.9307,-11.0967 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-44.3164,-5.48438 L-44.3164,-12.6426 L-43.3447,-12.6426 L-39.585,-7.02246 L-39.585,-12.6426 L-38.6768,-12.6426 L-38.6768,-5.48438 L-39.6484,-5.48438 L-43.4082,-11.1094 L-43.4082,-5.48438 L-44.3164,-5.48438 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-37.0586,-5.48438 L-37.0586,-12.6426 L-36.1113,-12.6426 L-36.1113,-9.70313 L-32.3906,-9.70313 L-32.3906,-12.6426 L-31.4434,-12.6426 L-31.4434,-5.48438 L-32.3906,-5.48438 L-32.3906,-8.8584 L-36.1113,-8.8584 L-36.1113,-5.48438 L-37.0586,-5.48438 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-69.8135,-6.83008 C-69.8135,-8.01823 -69.4945,-8.9484 -68.8564,-9.62061 C-68.2184,-10.2928 -67.3949,-10.6289 -66.3857,-10.6289 C-65.7249,-10.6289 -65.1292,-10.471 -64.5986,-10.1553 C-64.068,-9.83952 -63.6636,-9.39925 -63.3853,-8.83447 C-63.1069,-8.26969 -62.9678,-7.62923 -62.9678,-6.91309 C-62.9678,-6.18717 -63.1143,-5.53776 -63.4072,-4.96484 C-63.7002,-4.39193 -64.1152,-3.95817 -64.6523,-3.66357 C-65.1895,-3.36898 -65.7689,-3.22168 -66.3906,-3.22168 C-67.0645,-3.22168 -67.6667,-3.38444 -68.1973,-3.70996 C-68.7279,-4.03548 -69.1299,-4.47982 -69.4033,-5.04297 C-69.6768,-5.60612 -69.8135,-6.20182 -69.8135,-6.83008 Z M-68.8369,-6.81543 C-68.8369,-5.9528 -68.605,-5.27327 -68.1411,-4.77686 C-67.6772,-4.28044 -67.0954,-4.03223 -66.3955,-4.03223 C-65.6826,-4.03223 -65.0959,-4.28288 -64.6353,-4.78418 C-64.1746,-5.28548 -63.9443,-5.99674 -63.9443,-6.91797 C-63.9443,-7.50065 -64.0428,-8.00928 -64.2397,-8.44385 C-64.4367,-8.87842 -64.7248,-9.21533 -65.104,-9.45459 C-65.4832,-9.69385 -65.9089,-9.81348 -66.3809,-9.81348 C-67.0514,-9.81348 -67.6284,-9.58317 -68.1118,-9.12256 C-68.5952,-8.66195 -68.8369,-7.8929 -68.8369,-6.81543 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-35.4854,-46.0488 C-35.4854,-47.237 -35.1663,-48.1672 -34.5283,-48.8394 C-33.8903,-49.5116 -33.0667,-49.8477 -32.0576,-49.8477 C-31.3968,-49.8477 -30.8011,-49.6898 -30.2705,-49.374 C-29.7399,-49.0583 -29.3354,-48.618 -29.0571,-48.0532 C-28.7788,-47.4884 -28.6396,-46.848 -28.6396,-46.1318 C-28.6396,-45.4059 -28.7861,-44.7565 -29.0791,-44.1836 C-29.3721,-43.6107 -29.7871,-43.1769 -30.3242,-42.8823 C-30.8613,-42.5877 -31.4408,-42.4404 -32.0625,-42.4404 C-32.7363,-42.4404 -33.3385,-42.6032 -33.8691,-42.9287 C-34.3997,-43.2542 -34.8018,-43.6986 -35.0752,-44.2617 C-35.3486,-44.8249 -35.4854,-45.4206 -35.4854,-46.0488 Z M-34.5088,-46.0342 C-34.5088,-45.1715 -34.2769,-44.492 -33.813,-43.9956 C-33.3491,-43.4992 -32.7673,-43.251 -32.0674,-43.251 C-31.3545,-43.251 -30.7677,-43.5016 -30.3071,-44.0029 C-29.8465,-44.5042 -29.6162,-45.2155 -29.6162,-46.1367 C-29.6162,-46.7194 -29.7147,-47.228 -29.9116,-47.6626 C-30.1086,-48.0972 -30.3966,-48.4341 -30.7759,-48.6733 C-31.1551,-48.9126 -31.5807,-49.0322 -32.0527,-49.0322 C-32.7233,-49.0322 -33.3003,-48.8019 -33.7837,-48.3413 C-34.2671,-47.8807 -34.5088,-47.1117 -34.5088,-46.0342 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-42.3867,-42.5625 L-42.3867,-49.7207 L-41.4395,-49.7207 L-41.4395,-46.7813 L-37.7188,-46.7813 L-37.7188,-49.7207 L-36.7715,-49.7207 L-36.7715,-42.5625 L-37.7188,-42.5625 L-37.7188,-45.9365 L-41.4395,-45.9365 L-41.4395,-42.5625 L-42.3867,-42.5625 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M4.51465,-2.2207 C4.51465,-3.40885 4.83366,-4.33903 5.47168,-5.01123 C6.1097,-5.68343 6.93327,-6.01953 7.94238,-6.01953 C8.60319,-6.01953 9.19889,-5.86165 9.72949,-5.5459 C10.2601,-5.23014 10.6646,-4.78988 10.9429,-4.2251 C11.2212,-3.66032 11.3604,-3.01986 11.3604,-2.30371 C11.3604,-1.5778 11.2139,-0.928385 10.9209,-0.355469 C10.6279,0.217448 10.2129,0.651204 9.67578,0.945801 C9.13867,1.2404 8.55924,1.3877 7.9375,1.3877 C7.26367,1.3877 6.66146,1.22493 6.13086,0.899414 C5.60026,0.573893 5.19824,0.129557 4.9248,-0.433594 C4.65137,-0.996745 4.51465,-1.59245 4.51465,-2.2207 Z M5.49121,-2.20605 C5.49121,-1.34342 5.72314,-0.6639 6.18701,-0.16748 C6.65088,0.328939 7.23275,0.577148 7.93262,0.577148 C8.64551,0.577148 9.23226,0.326497 9.69287,-0.174805 C10.1535,-0.676107 10.3838,-1.38737 10.3838,-2.30859 C10.3838,-2.89128 10.2853,-3.3999 10.0884,-3.83447 C9.89144,-4.26904 9.60335,-4.60596 9.22412,-4.84521 C8.84489,-5.08447 8.41927,-5.2041 7.94727,-5.2041 C7.27669,-5.2041 6.69971,-4.9738 6.21631,-4.51318 C5.73291,-4.05257 5.49121,-3.28353 5.49121,-2.20605 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-2.37109,1.26563 L-2.37109,-5.89258 L-1.42383,-5.89258 L-1.42383,-2.95313 L2.29688,-2.95313 L2.29688,-5.89258 L3.24414,-5.89258 L3.24414,1.26563 L2.29688,1.26563 L2.29688,-2.1084 L-1.42383,-2.1084 L-1.42383,1.26563 L-2.37109,1.26563 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M21.7334,16.6074 C21.7334,15.4193 22.0524,14.4891 22.6904,13.8169 C23.3285,13.1447 24.152,12.8086 25.1611,12.8086 C25.8219,12.8086 26.4176,12.9665 26.9482,13.2822 C27.4788,13.598 27.8833,14.0382 28.1616,14.603 C28.4399,15.1678 28.5791,15.8083 28.5791,16.5244 C28.5791,17.2503 28.4326,17.8997 28.1396,18.4727 C27.8467,19.0456 27.4316,19.4793 26.8945,19.7739 C26.3574,20.0685 25.778,20.2158 25.1563,20.2158 C24.4824,20.2158 23.8802,20.0531 23.3496,19.7275 C22.819,19.402 22.417,18.9577 22.1436,18.3945 C21.8701,17.8314 21.7334,17.2357 21.7334,16.6074 Z M22.71,16.6221 C22.71,17.4847 22.9419,18.1642 23.4058,18.6606 C23.8696,19.1571 24.4515,19.4053 25.1514,19.4053 C25.8643,19.4053 26.451,19.1546 26.9116,18.6533 C27.3722,18.152 27.6025,17.4408 27.6025,16.5195 C27.6025,15.9368 27.5041,15.4282 27.3071,14.9937 C27.1102,14.5591 26.8221,14.2222 26.4429,13.9829 C26.0636,13.7437 25.638,13.624 25.166,13.624 C24.4954,13.624 23.9185,13.8543 23.4351,14.3149 C22.9517,14.7756 22.71,15.5446 22.71,16.6221 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-0.922852,5.99805 C-0.922852,4.8099 -0.603841,3.87972 0.0341797,3.20752 C0.672201,2.53532 1.49577,2.19922 2.50488,2.19922 C3.16569,2.19922 3.76139,2.3571 4.29199,2.67285 C4.82259,2.98861 5.22705,3.42887 5.50537,3.99365 C5.78369,4.55843 5.92285,5.19889 5.92285,5.91504 C5.92285,6.64095 5.77637,7.29036 5.4834,7.86328 C5.19043,8.4362 4.77539,8.86995 4.23828,9.16455 C3.70117,9.45915 3.12174,9.60645 2.5,9.60645 C1.82617,9.60645 1.22396,9.44368 0.693359,9.11816 C0.16276,8.79264 -0.239258,8.34831 -0.512695,7.78516 C-0.786133,7.22201 -0.922852,6.6263 -0.922852,5.99805 Z M0.0537109,6.0127 C0.0537109,6.87533 0.285645,7.55485 0.749512,8.05127 C1.21338,8.54769 1.79525,8.7959 2.49512,8.7959 C3.20801,8.7959 3.79476,8.54525 4.25537,8.04395 C4.71598,7.54264 4.94629,6.83138 4.94629,5.91016 C4.94629,5.32747 4.84782,4.81885 4.65088,4.38428 C4.45394,3.94971 4.16585,3.61279 3.78662,3.37354 C3.40739,3.13428 2.98177,3.01465 2.50977,3.01465 C1.83919,3.01465 1.26221,3.24495 0.778809,3.70557 C0.29541,4.16618 0.0537109,4.93522 0.0537109,6.0127 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M54.8271,36.4355 C54.8271,35.2474 55.1462,34.3172 55.7842,33.645 C56.4222,32.9728 57.2458,32.6367 58.2549,32.6367 C58.9157,32.6367 59.5114,32.7946 60.042,33.1104 C60.5726,33.4261 60.9771,33.8664 61.2554,34.4312 C61.5337,34.9959 61.6729,35.6364 61.6729,36.3525 C61.6729,37.0785 61.5264,37.7279 61.2334,38.3008 C60.9404,38.8737 60.5254,39.3075 59.9883,39.6021 C59.4512,39.8966 58.8717,40.0439 58.25,40.0439 C57.5762,40.0439 56.974,39.8812 56.4434,39.5557 C55.9128,39.2301 55.5107,38.7858 55.2373,38.2227 C54.9639,37.6595 54.8271,37.0638 54.8271,36.4355 Z M55.8037,36.4502 C55.8037,37.3128 56.0356,37.9924 56.4995,38.4888 C56.9634,38.9852 57.5452,39.2334 58.2451,39.2334 C58.958,39.2334 59.5448,38.9827 60.0054,38.4814 C60.466,37.9801 60.6963,37.2689 60.6963,36.3477 C60.6963,35.765 60.5978,35.2563 60.4009,34.8218 C60.2039,34.3872 59.9159,34.0503 59.5366,33.811 C59.1574,33.5718 58.7318,33.4521 58.2598,33.4521 C57.5892,33.4521 57.0122,33.6825 56.5288,34.1431 C56.0454,34.6037 55.8037,35.3727 55.8037,36.4502 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M30.9678,17.6387 C30.9678,16.4505 31.2868,15.5203 31.9248,14.8481 C32.5628,14.1759 33.3864,13.8398 34.3955,13.8398 C35.0563,13.8398 35.652,13.9977 36.1826,14.3135 C36.7132,14.6292 37.1177,15.0695 37.396,15.6343 C37.6743,16.1991 37.8135,16.8395 37.8135,17.5557 C37.8135,18.2816 37.667,18.931 37.374,19.5039 C37.0811,20.0768 36.666,20.5106 36.1289,20.8052 C35.5918,21.0998 35.0124,21.2471 34.3906,21.2471 C33.7168,21.2471 33.1146,21.0843 32.584,20.7588 C32.0534,20.4333 31.6514,19.9889 31.3779,19.4258 C31.1045,18.8626 30.9678,18.2669 30.9678,17.6387 Z M31.9443,17.6533 C31.9443,18.516 32.1763,19.1955 32.6401,19.6919 C33.104,20.1883 33.6859,20.4365 34.3857,20.4365 C35.0986,20.4365 35.6854,20.1859 36.146,19.6846 C36.6066,19.1833 36.8369,18.472 36.8369,17.5508 C36.8369,16.9681 36.7384,16.4595 36.5415,16.0249 C36.3446,15.5903 36.0565,15.2534 35.6772,15.0142 C35.298,14.7749 34.8724,14.6553 34.4004,14.6553 C33.7298,14.6553 33.1528,14.8856 32.6694,15.3462 C32.186,15.8068 31.9443,16.5758 31.9443,17.6533 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M29.8428,42.6543 C29.8428,41.4661 30.1618,40.536 30.7998,39.8638 C31.4378,39.1916 32.2614,38.8555 33.2705,38.8555 C33.9313,38.8555 34.527,39.0133 35.0576,39.3291 C35.5882,39.6449 35.9927,40.0851 36.271,40.6499 C36.5493,41.2147 36.6885,41.8551 36.6885,42.5713 C36.6885,43.2972 36.542,43.9466 36.249,44.5195 C35.9561,45.0924 35.541,45.5262 35.0039,45.8208 C34.4668,46.1154 33.8874,46.2627 33.2656,46.2627 C32.5918,46.2627 31.9896,46.0999 31.459,45.7744 C30.9284,45.4489 30.5264,45.0046 30.2529,44.4414 C29.9795,43.8783 29.8428,43.2826 29.8428,42.6543 Z M30.8193,42.6689 C30.8193,43.5316 31.0513,44.2111 31.5151,44.7075 C31.979,45.2039 32.5609,45.4521 33.2607,45.4521 C33.9736,45.4521 34.5604,45.2015 35.021,44.7002 C35.4816,44.1989 35.7119,43.4876 35.7119,42.5664 C35.7119,41.9837 35.6134,41.4751 35.4165,41.0405 C35.2196,40.606 34.9315,40.269 34.5522,40.0298 C34.173,39.7905 33.7474,39.6709 33.2754,39.6709 C32.6048,39.6709 32.0278,39.9012 31.5444,40.3618 C31.061,40.8224 30.8193,41.5915 30.8193,42.6689 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M77.4209,-10.9551 C77.4209,-12.1432 77.7399,-13.0734 78.3779,-13.7456 C79.016,-14.4178 79.8395,-14.7539 80.8486,-14.7539 C81.5094,-14.7539 82.1051,-14.596 82.6357,-14.2803 C83.1663,-13.9645 83.5708,-13.5243 83.8491,-12.9595 C84.1274,-12.3947 84.2666,-11.7542 84.2666,-11.0381 C84.2666,-10.3122 84.1201,-9.66276 83.8271,-9.08984 C83.5342,-8.51693 83.1191,-8.08317 82.582,-7.78857 C82.0449,-7.49398 81.4655,-7.34668 80.8438,-7.34668 C80.1699,-7.34668 79.5677,-7.50944 79.0371,-7.83496 C78.5065,-8.16048 78.1045,-8.60482 77.8311,-9.16797 C77.5576,-9.73112 77.4209,-10.3268 77.4209,-10.9551 Z M78.3975,-10.9404 C78.3975,-10.0778 78.6294,-9.39827 79.0933,-8.90186 C79.5571,-8.40544 80.139,-8.15723 80.8389,-8.15723 C81.5518,-8.15723 82.1385,-8.40788 82.5991,-8.90918 C83.0597,-9.41048 83.29,-10.1217 83.29,-11.043 C83.29,-11.6257 83.1916,-12.1343 82.9946,-12.5688 C82.7977,-13.0034 82.5096,-13.3403 82.1304,-13.5796 C81.7511,-13.8188 81.3255,-13.9385 80.8535,-13.9385 C80.1829,-13.9385 79.606,-13.7082 79.1226,-13.2476 C78.6392,-12.7869 78.3975,-12.0179 78.3975,-10.9404 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M85.5039,-7.46875 L85.5039,-14.627 L86.4512,-14.627 L86.4512,-11.6875 L90.1719,-11.6875 L90.1719,-14.627 L91.1191,-14.627 L91.1191,-7.46875 L90.1719,-7.46875 L90.1719,-10.8428 L86.4512,-10.8428 L86.4512,-7.46875 L85.5039,-7.46875 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M49.999,-43.7676 C49.999,-44.9557 50.318,-45.8859 50.9561,-46.5581 C51.5941,-47.2303 52.4176,-47.5664 53.4268,-47.5664 C54.0876,-47.5664 54.6833,-47.4085 55.2139,-47.0928 C55.7445,-46.777 56.1489,-46.3368 56.4272,-45.772 C56.7056,-45.2072 56.8447,-44.5667 56.8447,-43.8506 C56.8447,-43.1247 56.6982,-42.4753 56.4053,-41.9023 C56.1123,-41.3294 55.6973,-40.8957 55.1602,-40.6011 C54.623,-40.3065 54.0436,-40.1592 53.4219,-40.1592 C52.748,-40.1592 52.1458,-40.3219 51.6152,-40.6475 C51.0846,-40.973 50.6826,-41.4173 50.4092,-41.9805 C50.1357,-42.5436 49.999,-43.1393 49.999,-43.7676 Z M50.9756,-43.7529 C50.9756,-42.8903 51.2075,-42.2108 51.6714,-41.7144 C52.1353,-41.2179 52.7171,-40.9697 53.417,-40.9697 C54.1299,-40.9697 54.7166,-41.2204 55.1772,-41.7217 C55.6379,-42.223 55.8682,-42.9342 55.8682,-43.8555 C55.8682,-44.4382 55.7697,-44.9468 55.5728,-45.3813 C55.3758,-45.8159 55.0877,-46.1528 54.7085,-46.3921 C54.3293,-46.6313 53.9036,-46.751 53.4316,-46.751 C52.7611,-46.751 52.1841,-46.5207 51.7007,-46.0601 C51.2173,-45.5994 50.9756,-44.8304 50.9756,-43.7529 Z "/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M72.6865,-33.1582 C72.6865,-34.3464 73.0055,-35.2765 73.6436,-35.9487 C74.2816,-36.6209 75.1051,-36.957 76.1143,-36.957 C76.7751,-36.957 77.3708,-36.7992 77.9014,-36.4834 C78.432,-36.1676 78.8364,-35.7274 79.1147,-35.1626 C79.3931,-34.5978 79.5322,-33.9574 79.5322,-33.2412 C79.5322,-32.5153 79.3857,-31.8659 79.0928,-31.293 C78.7998,-30.7201 78.3848,-30.2863 77.8477,-29.9917 C77.3105,-29.6971 76.7311,-29.5498 76.1094,-29.5498 C75.4355,-29.5498 74.8333,-29.7126 74.3027,-30.0381 C73.7721,-30.3636 73.3701,-30.8079 73.0967,-31.3711 C72.8232,-31.9342 72.6865,-32.5299 72.6865,-33.1582 Z M73.6631,-33.1436 C73.6631,-32.2809 73.895,-31.6014 74.3589,-31.105 C74.8228,-30.6086 75.4046,-30.3604 76.1045,-30.3604 C76.8174,-30.3604 77.4041,-30.611 77.8647,-31.1123 C78.3254,-31.6136 78.5557,-32.3249 78.5557,-33.2461 C78.5557,-33.8288 78.4572,-34.3374 78.2603,-34.772 C78.0633,-35.2065 77.7752,-35.5435 77.396,-35.7827 C77.0168,-36.022 76.5911,-36.1416 76.1191,-36.1416 C75.4486,-36.1416 74.8716,-35.9113 74.3882,-35.4507 C73.9048,-34.9901 73.6631,-34.221 73.6631,-33.1436 Z "/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,96.9887,68.2029)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+</g>
+</svg>

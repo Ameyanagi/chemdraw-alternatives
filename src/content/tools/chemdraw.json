@@ -1,0 +1,531 @@
+{
+  "id": "p01",
+  "slug": "chemdraw",
+  "name": "ChemDraw",
+  "rank": 1,
+  "tier": "alternative",
+  "tierReason": "Its desktop editions create publication-ready 2D chemical drawing documents with reactions, text, page layout and drawing styles.",
+  "summary": "Chemical drawing software for publication-ready molecular structures, reactions, mechanisms and scientific figures.",
+  "website": "https://revvitysignals.com/products/research/chemdraw",
+  "repo": null,
+  "docs": "https://support.revvitysignals.com/hc/en-us/sections/360010804431-ChemDraw-ChemOffice-Products",
+  "vendor": "Revvity Signals Software, Inc.",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Proprietary paid software with separately licensed editions.",
+    "source": "https://support.revvitysignals.com/hc/en-us/article_attachments/35629914245652"
+  },
+  "price": {
+    "text": "Prime: US$700 per user annually (2026-11-05).",
+    "source": "https://shop.revvitysignals.com/product/chemdraw-prime-named-user-subscription-includes-support-and-maintenance/01tHs000009rOuFIAU"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "26.1",
+    "date": null,
+    "source": "https://revvitysignals.com/whats-new/Signals%20ChemDraw"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:3-Drawing_10.htm",
+      "note": "Drew single, double and triple bonds in scratch document."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:3-Drawing_10.htm",
+      "note": "Drew wedge, hashed wedge and wavy bonds."
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:3-Drawing_10.htm",
+      "note": "Dative, hydrogen and quadruple bond tools."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:3-Drawing_10.htm",
+      "note": "Above, below or centered double bonds."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:Rings.htm",
+      "note": "Drew cyclohexane and benzene with dedicated tools."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Rings.htm",
+      "note": "Two cyclohexane chair tools."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Chains.htm",
+      "note": "Drag acyclic chains; atom count appears while drawing."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:Tutorial 7_ Templates.htm",
+      "note": "Inserted anthracene from built-in Aromatics palette."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Templates.htm",
+      "note": "Create and save custom template palettes."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Defining Nicknames.htm",
+      "note": "Nicknames represent expandable chemical substructures."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:A-Chemistry.htm",
+      "note": "Element labels, isotope numbers and chemically interpreted charges."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Chemical Annotations.htm",
+      "note": "Attach radical dots and lone pairs to atoms."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/sites/default/files/2024-02/rs-e-book-chemdraw-tips-and-tricks-eBook-02132024.pdf",
+      "note": "Hotkeys change hovered atoms and bonds."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Objects.htm",
+      "note": "Freehand lasso, rotation, flips and resizing."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=5",
+      "note": "Perspective in Prime; 3D cleanup requires Professional or Signals."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:Objects.htm",
+      "note": "Drew forward and equilibrium arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:Drawing Reactions.htm",
+      "note": "Drew curved full-head and fishhook arrows."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
+      "note": "Reads and writes chemically interpreted RXN reactions; all editions."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Atom-to-Atom Mapping.htm",
+      "note": "Automatic mapping command and manual atom-map tool."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Chemical Annotations.htm",
+      "note": "Orbital palette includes s, p, d and hybrid orbitals."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Analysis and Properties.htm",
+      "note": "Caption fonts, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Objects.htm",
+      "note": "Editable shapes, brackets and freehand curves."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Objects.htm",
+      "note": "Horizontal/vertical alignment and equal-distance distribution."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Objects.htm",
+      "note": "Group and ungroup; grouped objects move together."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Clean Up Structure.htm",
+      "note": "Standardizes molecular bond lengths and angles.",
+      "engine": {
+        "library": "In-house (ChemDraw 2D structure-generation and cleanup algorithms, local)",
+        "source": "https://chemistry.beloit.edu/classes/programs/ChemDraw_25_manual.pdf#page=302"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Document Settings.htm",
+      "note": "Built-in ACS Document 1996 and RSC styles."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Document Settings.htm",
+      "note": "Save drawing and text settings as reusable stationery."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Working with Color.htm",
+      "note": "Basic colors in Prime; highlights/ring fills require Professional or Signals."
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:8-Presentation.htm",
+      "note": "Set page size and multiple document pages."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Importing.htm",
+      "note": "Embeds imported raster images, including PNG and TIFF."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:TLC.htm",
+      "note": "Dedicated editable TLC plates; all desktop editions."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:Check Structure.htm",
+      "note": "Check Structure on caffeine returned No errors found."
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Stereochemistry indicators.htm",
+      "note": "Computed R/S and E/Z indicators update with drawing changes."
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:6a-Chem.htm",
+      "note": "Caffeine: C8H10N4O2; molecular weight 194.19; exact mass 194.08."
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:Property predictions in ChemDraw.htm",
+      "note": "Caffeine Chemical Properties displayed Log P -1.03 and tPSA 61.82.",
+      "engine": {
+        "library": "Molecular Networks MOSES.logP (bundled calculator module); BioByte CLogP/CMR (bundled algorithms)",
+        "source": "https://chemistry.beloit.edu/classes/programs/ChemDraw_25_manual.pdf"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://shop.revvitysignals.com/product/chemdraw-professional-named-user-subscription-includes-support-and-maintenance/01tHs000009rOzeIAE",
+      "note": "Professional and Signals; unavailable in Prime.",
+      "engine": {
+        "library": "In-house (ChemStruct=Name, bundled naming algorithms)",
+        "source": "https://manualzilla.com/doc/5731433/chemdraw-user-s-manual"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://shop.revvitysignals.com/product/chemdraw-professional-named-user-subscription-includes-support-and-maintenance/01tHs000009rOzeIAE",
+      "note": "Professional and Signals; unavailable in Prime.",
+      "engine": {
+        "library": "In-house (ChemStruct=Name, bundled naming algorithms)",
+        "source": "https://manualzilla.com/doc/5731433/chemdraw-user-s-manual"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:ChemNMR.htm",
+      "note": "Proton and carbon-13 predictions; Professional and Signals only.",
+      "engine": {
+        "library": "ChemNMR (bundled prediction module, originally licensed from Upstream Solutions)",
+        "source": "https://www.upstream.ch/partners/index.html"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:5-Query.htm",
+      "note": "R positions, variable bond orders and atom lists."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Polymers.htm",
+      "note": "Semantic repeat units, copolymer types, counts and connectivity."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://shop.revvitysignals.com/product/chemdraw-professional-named-user-subscription-includes-support-and-maintenance/01tHs000009rOzeIAE",
+      "note": "HELM peptide and oligonucleotide tools; Professional and Signals only."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Current availability of historical pic2mol add-in unverified."
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:ChemACX.com Structure from CAS RN.htm",
+      "note": "Fetch structures by CAS number; Professional and Signals.",
+      "engine": {
+        "library": "ChemACX.com (remote database through ChemACX Explorer add-in)",
+        "source": "https://revvitysignals.com/sites/default/files/2024-05/rs-e-book-chemdraw-signals-chemdraw-tips-and-tricks-eBook.pdf"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:3D Clean Up.htm",
+      "note": "Rotatable generated 3D coordinates; Professional/Signals, maximum 500 atoms."
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:Importing.htm",
+      "note": "Imports CIF/mmCIF; mmCIF displays designated ligand groups only."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
+      "note": "Saved CDXML and reopened caffeine as editable structure."
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
+      "note": "Reads and writes native binary CDX; all editions."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
+      "note": "MOL roundtrip worked; V3000 output; SDF save formats listed."
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:9-Sharing_Info.htm",
+      "note": "Pasted fixture SMILES; copied caffeine back as SMILES."
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "help:9-Sharing_Info.htm",
+      "note": "Copy and paste InChI; InChIKey export also available."
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
+      "note": "Reads and writes RXN V2000/V3000; all editions."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
+      "note": "Saved vector SVGs for caffeine and paclitaxel."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Saved vector PDF; one Letter page, no raster images."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:9-Sharing_Info.htm",
+      "note": "Default PNG: 552 by 532 pixels, approximately 301 dpi."
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "help:Transferring Objects.htm",
+      "note": "Native copy/paste between own ChemDraw documents retained caffeine chemistry."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://assets.revvitysignals.com/asset/0b9656e8-339d-47ab-9834-6c08beb6abee/Full-Dot-Chart-ChemDraw-Suite-of-Products.pdf#page=10",
+      "note": "Windows editable OLE objects; all desktop editions."
+    },
+    "python-api": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "help:ChemScript1.htm",
+      "note": "Not in Prime. ChemScript SDK in Professional and Signals, Windows only."
+    },
+    "ts-api": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/Revvity/ChemDraw-AddIns/blob/119dcb011d6c57edf773b1733539709ef6ba99b2/Documentation/ChemDraw%20JavaScript%20API%20Reference%20Guide.pdf",
+      "note": "Not in Prime. Desktop add-in API in Signals only, not a JavaScript library."
+    },
+    "cli": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "help:How_ChemScript_works.htm",
+      "note": "No command-line tool. ChemScript scripts can automate work in Professional and Signals."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://support.revvitysignals.com/hc/en-us/articles/36096524952980-ChemDraw-Add-In-Where-can-I-find-the-Add-in-Developer-Guide-for-ChemDraw",
+      "note": "Not in Prime. Add-ins SDK in Signals only."
+    },
+    "embed": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://revvitysignals.com/sites/default/files/2024-05/rs-flyer-chemdraw-javascript-sketcher.pdf",
+      "note": "Embedding uses separately licensed ChemDraw JS, outside desktop editions."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Features differ between ChemDraw Prime, Professional and Signals ChemDraw. We tested Prime.",
+    "Ships RDKit 2024.09.6 as a bundled library in the macOS 26.0 and Windows 26.1 installs. Revvity does not document what it does, so this does not mean ChemDraw draws with RDKit."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "26.0.0.6599",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "/Applications/ChemDraw.app",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": 334413824,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemdraw/simple.svg",
+        "note": "ACS Document 1996; automatic SMILES layout; formula verified; SVG and Molfile saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemdraw/complex.svg",
+        "note": "ACS Document 1996; automatic SMILES layout; crowded labels retained; formula verified.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": null,
+        "image": null,
+        "note": "ACS Document 1996 run; Prime has no 3D view; skipped.",
+        "structure": null
+      }
+    ],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Paclitaxel received wedge and hashed stereobonds automatically.",
+      "SVG exports were tightly cropped with transparent backgrounds.",
+      "Default PDF export used a full Letter page.",
+      "Prime exposed no naming, NMR prediction or 3D view commands.",
+      "Drawn in the ACS Document 1996 style."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://revvitysignals.com/products/research/signals-chemdraw",
+    "https://shop.revvitysignals.com/product/signals-chemdraw-named-user-includes-chemdraw-desktop-chemdraw-chemdraw-collections-helm-curation-chemdraw-applications-signals-std-tenant-subscription-includes-support-maintenance/01tQk000003YPzxIAG"
+  ],
+  "builtOn": {
+    "relation": "original",
+    "editor": null,
+    "libraries": null,
+    "source": "https://revvitysignals.com/chemdraw-turns-40",
+    "note": "Ships RDKit 2024.09.6; Revvity does not document what it does."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ChemDraw drawing engine",
+    "language": null,
+    "source": "https://revvitysignals.com/chemdraw-turns-40"
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  },
+  "drawingStyle": "ACS Document 1996"
+}

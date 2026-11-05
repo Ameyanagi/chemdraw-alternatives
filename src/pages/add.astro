@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const issueUrl = 'https://github.com/Ameyanagi/chemdraw-alternatives/issues/new';
+---
+<Layout title="Add a tool" description="Suggest chemical drawing software for this comparison. A website or GitHub link is all we need.">
+  <section class="page py-10">
+    <h1 class="text-5xl">Add a tool</h1>
+    <p class="lede mt-4">Paste a website or GitHub link. That is all we need: we find the version, read the manual and run the same tests as everything else.</p>
+    <form class="mt-6 flex max-w-xl flex-wrap gap-2" action={issueUrl} method="get">
+      <input type="hidden" name="template" value="add-tool.yml" />
+      <input type="hidden" name="title" value="Add tool" />
+      <label class="sr-only" for="url">Website or GitHub link</label>
+      <input class="border-line min-w-64 flex-1 rounded-md border px-3 py-2" id="url" name="url" type="url" required placeholder="https://github.com/you/your-tool" />
+      <button class="button" type="submit">Continue on GitHub</button>
+    </form>
+    <p class="text-muted mt-3">This opens a short GitHub issue with your link filled in. You will need a free GitHub account. If you work on the tool, please say so in the notes.</p>
+  </section>
+</Layout>

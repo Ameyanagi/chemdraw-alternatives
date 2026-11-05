@@ -1,0 +1,503 @@
+{
+  "id": "p95",
+  "slug": "gchempaint",
+  "name": "GChemPaint",
+  "rank": 91,
+  "tier": "alternative",
+  "tierReason": "A standalone document editor with structures, reaction schemes, text, printing and vector export can produce publication figures.",
+  "summary": "Desktop editor for drawing two-dimensional chemical structures, reaction schemes and mechanisms.",
+  "website": "https://gchemutils.nongnu.org/gchempaint.html",
+  "repo": "https://github.com/dleidert/gnome-chemistry-utils",
+  "docs": "https://gchemutils.nongnu.org/paint/gchempaint.pdf",
+  "vendor": "Jean Bréfort / GNOME Chemistry Utils",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-3.0-or-later",
+    "text": "GNU GPL version 3 or later; Open Babel helper uses GPL-2.0-or-later.",
+    "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/README"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=74"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": false,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "0.14.17",
+    "date": "2017-02-13",
+    "source": "https://download.savannah.gnu.org/releases/gchemutils/0.14/"
+  },
+  "engine": {
+    "rendering": "Cairo through the custom GCCV canvas",
+    "chemistry": "GNOME Chemistry Utils classes; Open Babel for conversion and identifiers",
+    "ui": "GTK 3",
+    "source": "https://gchemutils.nongnu.org/reference/classgcp_1_1View.html"
+  },
+  "languages": [
+    "C++",
+    "C"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x1125.html#gchempaint-normal-bond",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x1125.html#gchempaint-stereobonds",
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x1273.html",
+      "note": "Cycle tools and aromatic ring templates."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/templates/paint/haworth.xml.in",
+      "note": "Built-in Haworth saccharide templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x1210.html",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x842.html",
+      "note": null
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x842.html#gchempaint-new-template",
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x890.html",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x937.html",
+      "note": "Charges and element labels; isotope editing unverified."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x1052.html",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x937.html#gchempaint-atom",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=28",
+      "note": "Lasso, rotate and flip; resizing unverified."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/c1464.html#gchempaint-arrow",
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x1558.html",
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/libs/gcp/reactant.cc#L96",
+      "note": "Native XML stores reactants and products as chemical objects."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x1066.html",
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x1806.html",
+      "note": null
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=71",
+      "note": "Brackets and mechanism curves; general shape tools unverified."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x698.html",
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x698.html",
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=16",
+      "note": "Only the default theme is shipped."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x394.html#gchempaint-themes",
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/plugins/paint/text/texttool.cc#L1233",
+      "note": "Text foreground color can be changed individually."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=19",
+      "note": "Paper size and margins; multipage printing explicitly unsupported."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=59",
+      "note": "Opens GChemCalc for formula and mass; fragments unsupported.",
+      "engine": {
+        "library": "In-house (GChemCalc external C++ executable)",
+        "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/libs/gcp/molecule.cc#L672-L685"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x890.html",
+      "note": "Generic R, Ar, X and M residues."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=54",
+      "note": "Polymer units carry stoichiometric coefficients."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=57",
+      "note": "Opens installed GChem3D, Ghemical or Avogadro; requires Open Babel.",
+      "engine": {
+        "library": "Open Babel (C++ library in local babelserver helper); GChem3D, Ghemical or Avogadro (external viewers)",
+        "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/libs/gcp/molecule.cc#L82-L138"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/plugins/loaders/cdxml/plugin.xml.in#L13",
+      "note": null,
+      "engine": {
+        "library": "In-house (C++ CDXML loader plugin using libxml2)",
+        "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/plugins/loaders/cdxml/cdxml.cc"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/plugins/loaders/cdx/plugin.xml.in#L13",
+      "note": null,
+      "engine": {
+        "library": "In-house (C++ CDX loader plugin using Open Babel constants header)",
+        "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/plugins/loaders/cdx/cdx.cc"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x240.html",
+      "note": "MOL read/write through Open Babel; SDF unverified.",
+      "engine": {
+        "library": "Open Babel (C++ library in local babelserver helper; MOL read/write, SDF unconfirmed)",
+        "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/libs/gcp/application.cc#L450-L457"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=59",
+      "note": "Canonical SMILES generation documented; direct import unverified.",
+      "engine": {
+        "library": "Open Babel (C++ library in local babelserver helper; canonical SMILES export)",
+        "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/libs/gcu/molecule.cc#L477-L493"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/gchempaint.pdf#page=59",
+      "note": null,
+      "engine": {
+        "library": "Open Babel (C++ library in local babelserver helper)",
+        "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/libs/gcu/molecule.cc#L439-L455"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x369.html",
+      "note": null
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/x369.html",
+      "note": null
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/reference/classgcp_1_1View.html#ac4f2f471f4ccd2dda42e0c111f9fb47d",
+      "note": "Bitmap resolution is configurable for print-quality PNG export."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/reference/classgcp_1_1Plugin.html",
+      "note": "Documented C++ plugins can add tools and UI elements."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gchemutils.nongnu.org/paint/manual/c92.html#gchempaint-to-start",
+      "note": "GOffice component supports embedding in applications such as AbiWord."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Latest stable release is from 2017; the website still advertises 0.14.16.",
+    "The older HTML manual omits newer features and CDX/CDXML export; its SMILES description incorrectly says InChI.",
+    "Printing is limited to one page; non-native formats can lose drawing features."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 5911248,
+  "references": [
+    "https://gchemutils.nongnu.org/gchempaint.html"
+  ],
+  "builtOn": {
+    "id": "p95",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "Open Babel"
+    ],
+    "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/dcfb878e2f04e4b3bbbc0951ace8ccb436c0186d/libs/gcp/view.cc#L151-L173",
+    "note": "Custom GCCV canvas; Open Babel provides chemical format conversion."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "GChemPaint GCCV renderer",
+    "language": "C++",
+    "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/libs/gcp/bond.cc#L646"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Periodic table and template widgets"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Shell and M4 are build scripts.",
+  "thirdParty": {
+    "summary": "Uses GPL-2.0 (Open Babel), GPL (GOffice), and LGPL (GTK) dependencies.",
+    "source": "https://github.com/dleidert/gnome-chemistry-utils/blob/1962f11a2be5296a05afc6a7a59b8ad3a1be47b9/README",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Open Babel",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/openbabel/openbabel/blob/master/COPYING"
+      }
+    ]
+  }
+}

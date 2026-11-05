@@ -1,0 +1,576 @@
+{
+  "id": "p117",
+  "slug": "chemedit",
+  "name": "ChemEdit",
+  "rank": 82,
+  "tier": "alternative",
+  "tierReason": "End users can draw and save 2D chemical figures with SVG export and ACS styling inside Obsidian.",
+  "summary": "Obsidian plugin for drawing chemical structures, editing chemistry files, and maintaining electronic lab notebooks.",
+  "website": "https://github.com/ruzx/obsidian-chemedit",
+  "repo": "https://github.com/ruzx/obsidian-chemedit",
+  "docs": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md",
+  "vendor": "Ruzal Sitdikov",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT-licensed Obsidian plugin.",
+    "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "1.4.3",
+    "date": "2026-10-21",
+    "source": "https://github.com/ruzx/obsidian-chemedit/releases/tag/1.4.3"
+  },
+  "engine": {
+    "rendering": "SVG through Ketcher/Raphael, Indigo exports, and SmilesDrawer; optional HTML canvas previews.",
+    "chemistry": "Indigo via Ketcher standalone, and OpenChemLib.",
+    "ui": "React within Obsidian.",
+    "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/package-lock.json"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L21",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L26",
+      "note": null
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L39",
+      "note": "Dative and hydrogen bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/data/templates.js#L21",
+      "note": null
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/templates/library.sdf#L8258",
+      "note": "Includes chair conformations."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/editor/tool/chain.ts#L168",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#templates-toolbar",
+      "note": "Ketcher's structure and functional-group libraries."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#templates-toolbar",
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#functional-groups",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/data/schema/struct-schema.ts#L74",
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-core/src/application/render/restruct/reatom.ts#L1720",
+      "note": "Monoradical and diradical dots."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/state/handleHotkeysOverItem.ts#L251",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/editor/tool/select/select.ts#L285",
+      "note": "Lasso, rotation and flips; resizing limited to images and graphical objects."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/action/tools.ts#L135",
+      "note": "Forward, equilibrium, and retrosynthetic arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/action/tools.ts#L260",
+      "note": "Editable curved full-head and half-head arrows."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/main.ts#L1088",
+      "note": "RXN export and chemically encoded ELN reactants/products."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#drawing-reactions",
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/views/modal/components/Text/Text.tsx#L54",
+      "note": "Font size, bold, italic, subscripts, and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#drawing-graphical-objects",
+      "note": "Geometric shapes and S-group brackets."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#ketcher-molecules-mode",
+      "note": null,
+      "engine": {
+        "library": "Indigo 1.45.1 (C++ compiled to WebAssembly, indigo-ketcher through ketcher-standalone 3.17.2)",
+        "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L228"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/Settings.ts#L174",
+      "note": "ACS Document 1996 preset."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/views/modal/components/meta/Settings/Settings.tsx#L84",
+      "note": "Bond and font settings save/reload as JSON."
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Individual colored highlights; atom-label and bond-stroke colors remain unchanged."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#adding-images-on-the-canvas",
+      "note": "PNG and SVG images."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md#L43",
+      "note": "Editable ELN tables and separate TLC photo annotations."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#drawing-atoms",
+      "note": "Invalid valence is underlined in red.",
+      "engine": {
+        "library": "Ketcher 3.17.2 (TypeScript calcValence/badConn live warnings); Indigo 1.45.1 (WebAssembly explicit structure check)",
+        "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-core/src/domain/entities/struct.ts#L1120"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#stereochemistry",
+      "note": null,
+      "engine": {
+        "library": "Indigo 1.45.1 (C++ compiled to WebAssembly, calculateCip through ketcher-standalone 3.17.2)",
+        "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L170"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemDataEngine.ts#L36",
+      "note": null,
+      "engine": {
+        "library": "Indigo 1.45.1 (WebAssembly via Ketcher calculate); OpenChemLib JS 9.25.0 fallback; CACTUS and PubChem remote HTTP fallbacks; In-house rough estimate as final fallback",
+        "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/SharedEln.ts#L9"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemDataEngine.ts#L54",
+      "note": "OpenChemLib computes logP and TPSA.",
+      "engine": {
+        "library": "OpenChemLib JS 9.25.0 (bundled Java-to-JavaScript library, MoleculeProperties.logP and polarSurfaceArea)",
+        "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemDataEngine.ts#L35"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemNavigator.ts#L875",
+      "note": "Online OPSIN, CACTUS, and PubChem resolution.",
+      "engine": {
+        "library": "OPSIN, NCI/CADD Chemical Identifier Resolver (CACTUS), and PubChem PUG REST (remote HTTP services, sequential fallbacks)",
+        "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemNavigator.ts#L890"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/SharedContextMenu.ts#L55",
+      "note": "Retrieves IUPAC names online from PubChem.",
+      "engine": {
+        "library": "PubChem PUG REST (remote web service, IUPACName lookup by SMILES)",
+        "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/SharedContextMenu.ts#L58"
+      }
+    },
+    "nmr-prediction": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/main.ts#L257",
+      "note": "Opens external nmrdb 1H prediction; no built-in predictor.",
+      "engine": {
+        "library": "NMRdb (external browser simulator opened with SMILES; no predictor in ChemEdit)",
+        "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/main.ts#L257"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#drawing-r-groups",
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#marking-s-groups",
+      "note": "SRU and copolymer S-groups."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md#L114",
+      "note": "Ketcher sequence/macromolecule mode; complex sequences can fall back."
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts#L720",
+      "note": "OCR explicitly unsupported in bundled standalone mode."
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemNavigator.ts#L890",
+      "note": "Fetches structures by name from PubChem and CACTUS.",
+      "engine": {
+        "library": "PubChem PUG REST and NCI/CADD Chemical Identifier Resolver (CACTUS) (remote HTTP services)",
+        "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemNavigator.ts#L892"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#3d-viewer",
+      "note": "Rotatable Miew view in Ketcher.",
+      "engine": {
+        "library": "Miew 0.11.1 through miew-react 0.11.0 (bundled JavaScript/Three.js WebGL viewer in Ketcher)",
+        "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/views/modal/components/process/Miew/Miew.tsx#L44"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md#1-native-file-embeds-the-easy-way",
+      "note": "Complex ChemDraw objects and formatting may not round-trip.",
+      "engine": {
+        "library": "Indigo 1.45.1 (C++ compiled to WebAssembly, CDXML import/export through Ketcher 3.17.2)",
+        "source": "https://github.com/epam/Indigo/blob/029211b384de1627d0bc17cb750ed7427d45db91/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L193"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#working-with-files",
+      "note": "Use Ketcher's own file dialogs.",
+      "engine": {
+        "library": "Indigo 1.45.1 (C++ compiled to WebAssembly, CDX import/export through Ketcher 3.17.2)",
+        "source": "https://github.com/epam/Indigo/blob/029211b384de1627d0bc17cb750ed7427d45db91/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L197"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#working-with-files",
+      "note": "Use Ketcher's exporter; wrapper SDF save writes MOL.",
+      "engine": {
+        "library": "Ketcher 3.17.2 (TypeScript MolSerializer for ordinary MOL V2000); Indigo 1.45.1 (WebAssembly for query MOL, V3000 and SDF); OpenChemLib JS 9.25.0 (MOL parsing helpers)",
+        "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L82"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md#2-smiles-blocks",
+      "note": null,
+      "engine": {
+        "library": "Indigo 1.45.1 (C++ compiled to WebAssembly, SMILES import/export via Ketcher); OpenChemLib JS 9.25.0 (SMILES parsing and MOL-to-SMILES helper)",
+        "source": "https://github.com/epam/Indigo/blob/029211b384de1627d0bc17cb750ed7427d45db91/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L137"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/main.ts#L1078",
+      "note": null,
+      "engine": {
+        "library": "Indigo 1.45.1 with indigo-inchi/InChI (C/C++ compiled into indigo-ketcher WebAssembly)",
+        "source": "https://github.com/epam/Indigo/blob/029211b384de1627d0bc17cb750ed7427d45db91/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L201"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/main.ts#L1088",
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/main.ts#L1049",
+      "note": "SVG can retain editable Ketcher chemical data."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/data/schema/options-schema.ts#L38",
+      "note": "Ketcher offers 600 dpi PNG rendering."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md#1-native-file-embeds-the-easy-way",
+      "note": "Obsidian notes and canvases; opens Ketcher for editing."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Requires desktop Obsidian; the manifest excludes iOS and Android.",
+    "Complex ChemDraw formatting and proprietary CDXML objects may not round-trip.",
+    "ChemEdit's SDF save option writes MOL data; use Ketcher's own SDF exporter."
+  ],
+  "github": {
+    "stars": 3,
+    "pushedAt": "2026-10-21T12:03:58Z",
+    "archived": false
+  },
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 43203663,
+  "references": [
+    "https://github.com/ruzx/obsidian-chemedit",
+    "https://github.com/ruzx/obsidian-chemedit",
+    "https://github.com/ruzx/obsidian-chemedit/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p117",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "Ketcher",
+      "Indigo",
+      "OpenChemLib",
+      "SmilesDrawer",
+      "Miew"
+    ],
+    "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/KetcherReact.tsx",
+    "note": "Embeds packaged Ketcher; Indigo supplies chemistry, OpenChemLib properties, SmilesDrawer previews, and Miew 3D."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher/Raphaël, SmilesDrawer, and Indigo",
+    "language": "TypeScript",
+    "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/main.ts#L839"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Raphaël, SmilesDrawer, Miew and runtime"
+    },
+    {
+      "language": "C++",
+      "role": "Indigo chemistry and preview WebAssembly"
+    },
+    {
+      "language": "C",
+      "role": "InChI support compiled to WebAssembly"
+    },
+    {
+      "language": "Java",
+      "role": "OpenChemLib compiled to JavaScript"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "JavaScript is generated output and build tooling.",
+  "thirdParty": {
+    "summary": "Ketcher's notices list LGPL-2.1 and MPL-1.0 dependencies alongside Apache-2.0, MIT and BSD components.",
+    "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/NOTICE",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      },
+      {
+        "name": "SmilesDrawer",
+        "license": "MIT",
+        "source": "https://github.com/reymond-group/smilesDrawer/blob/master/LICENSE.md"
+      },
+      {
+        "name": "Miew",
+        "license": "MIT",
+        "source": "https://github.com/epam/miew/blob/main/LICENSE.md"
+      }
+    ]
+  }
+}

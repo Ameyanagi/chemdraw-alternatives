@@ -1,0 +1,533 @@
+{
+  "id": "p05",
+  "slug": "marvin-desktop-suite",
+  "name": "Marvin Desktop Suite / MarvinSketch",
+  "rank": 79,
+  "tier": "alternative",
+  "tierReason": "MarvinSketch produces publication-quality 2D chemical documents with journal styles, annotations, and multipage layout.",
+  "summary": "Desktop software for drawing publication-quality chemical structures, reactions, and multipage documents.",
+  "website": "https://www.certara.com/marvin/",
+  "repo": null,
+  "docs": "https://docs.chemaxon.com/latest/marvin_marvinsketch_user-guide.html",
+  "vendor": "Chemaxon (Certara)",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Proprietary commercial software requiring a Chemaxon license.",
+    "source": "https://docs.chemaxon.com/latest/legal_end-user-license-agreement-eula.html"
+  },
+  "price": {
+    "text": "Commercial; contact sales for pricing (2026-11-05).",
+    "source": "https://docs.chemaxon.com/latest/licensing_index.html"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "26.1.4",
+    "date": "2026-10-15",
+    "source": "https://docs.chemaxon.com/latest/marvin_history-of-changes.html"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "Chemaxon chemistry toolkit (Marvin/JChem)",
+    "ui": "Java Swing",
+    "source": "https://docs.chemaxon.com/latest/general_public-repository.html"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_draw-bonds.html",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_stereochemistry-in-marvinsketch.html",
+      "note": null
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_draw-bonds.html",
+      "note": "Coordinate and multicenter bonds."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_draw-bonds.html",
+      "note": "Above, centered, and below alignments."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_templates-in-marvinsketch.html",
+      "note": null
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Conformer templates documented; chair/Haworth contents not verified."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_draw-chains.html",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_templates-in-marvinsketch.html",
+      "note": null
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_pop-up-menus-of-marvinsketch.html",
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_abbreviated-superatom-groups.html",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_pop-up-menus-of-marvinsketch.html",
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_pop-up-menus-of-marvinsketch.html",
+      "note": "Radical types can be assigned to individual atoms."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_marvinsketch_getting-started.html",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_geometric-transformation-of-structures-and-objects.html",
+      "note": "Lasso selection, rotation, scaling, and flipping are documented."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_moving-and-rotating.html",
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_creating-reactions.html",
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_electron-flow-arrows.html",
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_creating-reactions.html",
+      "note": "Chemical reaction export supports single-step reactions only."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_mapping-reactions.html",
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_adding-editing-and-formatting-text.html",
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_drawing-shapes.html",
+      "note": null
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_marvinsketch_edit-menu.html",
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Chemical S-groups documented; general object grouping not verified."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_cleaning.html",
+      "note": null,
+      "engine": {
+        "library": "In-house Chemaxon Cleaner (local Java core library)",
+        "source": "https://apidocs.chemaxon.com/marvin/developer/beans/api/chemaxon/core/calculations/clean/Cleaner.html"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_drawing-styles.html",
+      "note": "Includes ACS and Royal Society of Chemistry presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_drawing-styles.html",
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_pop-up-menus-of-marvinsketch.html",
+      "note": "Individual bond colors are configurable through Format."
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_creating-a-multipage-document.html",
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_valence-check.html",
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_stereochemistry-in-marvinsketch.html",
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_analysis-box.html",
+      "note": null,
+      "engine": {
+        "library": "In-house Chemaxon ElementalAnalysisPlugin (local Java calculator)",
+        "source": "https://docs.chemaxon.com/latest/marvin_marvin-beans-examples.html#events"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_calculations-plugins-in-marvinsketch.html",
+      "note": "logP and TPSA available inside licensed MarvinSketch.",
+      "engine": {
+        "library": "In-house Chemaxon Calculator Plugins (local Java LogPPlugin/TPSAPlugin)",
+        "source": "https://docs.chemaxon.com/latest/marvin_marvin-beans-examples.html#events"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/name-to-structure_user-guide.html",
+      "note": null,
+      "engine": {
+        "library": "In-house Chemaxon Name to Structure (local Java; MolImporter name module)",
+        "source": "https://docs.chemaxon.com/latest/name-to-structure_developer-guide.html"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/structure-to-name_user-guide.html",
+      "note": null,
+      "engine": {
+        "library": "In-house Chemaxon Structure to Name (local Java; MolExporter name module)",
+        "source": "https://docs.chemaxon.com/latest/structure-to-name_developer-guide.html"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/calculators_nmr-predictor.html",
+      "note": "Predicts both proton and carbon-13 chemical shifts.",
+      "engine": {
+        "library": "In-house Chemaxon NMR Predictor (local Java NMRCalculator)",
+        "source": "https://docs.chemaxon.com/latest/marvin_marvin-beans-examples.html#events"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_markush-structures-in-marvinsketch.html",
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_structural-repeating-unit-sru-polymers.html",
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_biomolecules.html",
+      "note": "Imports peptide, DNA, and RNA sequences."
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/formats_image-import-in-marvin.html",
+      "note": "Ordinary raster recognition requires separately installed OSRA.",
+      "engine": {
+        "library": "OSRA (separately installed native C++ command-line utility)",
+        "source": "https://docs.chemaxon.com/latest/formats_image-import-in-marvin.html"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/general_notice-about-cas-registry-numbers-r.html",
+      "note": "CAS-number lookup retrieves structures from public NIH/Wikimedia sources.",
+      "engine": {
+        "library": "In-house Chemaxon name resolver (Java client; remote NIH/Wikimedia HTTPS services)",
+        "source": "https://docs.chemaxon.com/latest/general_notice-about-cas-registry-numbers-r.html"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_moving-and-rotating.html",
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/formats_chemdraw-sketch-file-cdx-cdxml.html",
+      "note": "Import supported; alpha export through API or Source editor.",
+      "engine": {
+        "library": "In-house Chemaxon I/O CDXML module (local Java; alpha export)",
+        "source": "https://docs.chemaxon.com/latest/formats_chemdraw-sketch-file-cdx-cdxml.html"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/formats_chemdraw-sketch-file-cdx-cdxml.html",
+      "note": null,
+      "engine": {
+        "library": "In-house Chemaxon I/O CDX module (local Java MolImporter/MolExporter)",
+        "source": "https://docs.chemaxon.com/latest/formats_chemdraw-sketch-file-cdx-cdxml.html"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/formats_mdl-mol-import-and-export-options.html",
+      "note": "MOL V2000/V3000 and SDF supported.",
+      "engine": {
+        "library": "In-house Chemaxon I/O MDL module (local Java MolImporter/MolExporter)",
+        "source": "https://docs.chemaxon.com/latest/formats_mdl-mol-import-and-export-options.html"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/formats_smiles.html",
+      "note": null,
+      "engine": {
+        "library": "In-house Chemaxon I/O SMILES module (local Java MolImporter/MolExporter)",
+        "source": "https://docs.chemaxon.com/latest/formats_smiles.html"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/formats_iupac-inchi-inchikey-rinchi-and-rinchikey.html",
+      "note": "Windows/Linux; InChI input/output unavailable on macOS.",
+      "engine": {
+        "library": "InChI 1.06 (native C library; Windows/Linux Chemaxon integration)",
+        "source": "https://docs.chemaxon.com/latest/formats_iupac-inchi-inchikey-rinchi-and-rinchikey.html"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/formats_mdl-molfiles-rgfiles-sdfiles-rxnfiles-rdfiles-formats.html",
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_exporting-to-image.html",
+      "note": null
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/formats_pdf.html",
+      "note": "Vector PDF export documented."
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "PNG supported; 300 dpi export not verified."
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_copy-paste-and-draganddrop.html",
+      "note": "Editable MOL/SMILES transfer; drawing-layout preservation is not guaranteed."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_ole-user-guide.html",
+      "note": "Windows OLE; editing requires installed Marvin with OLE support."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/molconvert_index.html",
+      "note": "Bundled Molconvert converts structures and renders images."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/calculators_custom-calculator-plugin-implementation.html",
+      "note": "Custom Java Calculator Plugins and external services."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin_marvinsketch_simple-bean.html",
+      "note": "Java Swing JavaBean embedding; integration licensing applies."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Free individual academic licenses ended on July 31, 2026.",
+    "CDXML export is documented as alpha and limited to API/Source editor.",
+    "InChI input/output is unavailable on macOS; Office OLE editing requires Windows."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.certara.com/marvin/",
+    "https://www.certara.com/announcement/modernizing-the-academic-program-and-retiring-chemicalize/"
+  ],
+  "builtOn": {
+    "id": "p05",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "InChI",
+      "RInChI"
+    ],
+    "source": "https://docs.chemaxon.com/latest/formats_iupac-inchi-inchikey-rinchi-and-rinchikey.html",
+    "note": "Native InChI/RInChI libraries; original MarvinSketch canvas documented by Chemaxon."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "In-house Marvin molecular renderer",
+    "language": "Java",
+    "source": "https://apidocs.chemaxon.com/marvin/developer/beans/api/chemaxon/marvin/beans/MolPrinter.html"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Native InChI library"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Vendor core inventory (2024): LGPL-2.1/3.0, MPL, EPL/CDDL/GPL-2.0+Classpath alternatives, Ubuntu Font Licence and restricted UnRAR/Oracle terms.",
+    "source": "https://docs.chemaxon.com/latest/legal_used-libraries.html",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      },
+      {
+        "name": "RInChI",
+        "license": "IUPAC/InChI-Trust InChI Licence No. 1.0",
+        "source": "https://github.com/IUPAC-InChI/RInChI/blob/main/src/LICENCES/RINCHI_LICENCE.TXT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,563 @@
+{
+  "id": "p56",
+  "slug": "butlerov",
+  "name": "Butlerov",
+  "rank": 61,
+  "tier": "embeddable",
+  "tierReason": "Butlerov primarily supplies a single-structure input component for embedding in web applications.",
+  "summary": "An embeddable 2D chemical structure editor for drawing molecules in web applications.",
+  "website": "https://github.com/eizemazal/butlerov",
+  "repo": "https://github.com/eizemazal/butlerov",
+  "docs": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/README.md",
+  "vendor": "Lumiprobe Group",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT license permits commercial and noncommercial use.",
+    "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/README.md#license"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "vue-0.1.7",
+    "date": "2026-04-03",
+    "source": "https://github.com/eizemazal/butlerov/releases/tag/vue-0.1.7"
+  },
+  "engine": {
+    "rendering": "Konva.js on HTML canvas",
+    "chemistry": "In-house TypeScript molecular graph, converters and formula/mass calculations",
+    "ui": "Konva controls; Vue 3 wrapper; Electron desktop shell",
+    "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts#L758-L775",
+      "note": "Changed a bond to single, double, and triple.",
+      "shot": {
+        "image": "evidence/butlerov/f-bonds-core.webp",
+        "caption": "Bond menu lists single, double, and triple options."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/drawables/Edge.ts#L266-L299",
+      "note": "Solid, hollow down wedge and wavy; no hashed wedge.",
+      "shot": {
+        "image": "evidence/butlerov/f-stereo-bonds.webp",
+        "caption": "Molecule with solid and hollow wedge bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts#L761-L770",
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts#L855-L876",
+      "note": "Created cyclohexane and phenyl using context menus.",
+      "shot": {
+        "image": "evidence/butlerov/f-rings.webp",
+        "caption": "Ring menu lists phenyl and cycloalkane sizes."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts#L879-L890",
+      "note": "Menu adds chosen chain length; no drag tool observed.",
+      "shot": {
+        "image": "evidence/butlerov/f-chains.webp",
+        "caption": "Atom menu includes an Add normal chain option."
+      }
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No library beyond rings found in inspected menus."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/converter/LinearFormula.ts",
+      "note": "Recognizes abbreviation tokens and expands them into molecular graphs."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts",
+      "note": "Element/custom labels, charge shortcuts and isotope selection.",
+      "shot": {
+        "image": "evidence/butlerov/f-atom-labels.webp",
+        "caption": "Atom menu includes Edit and Isotopes options."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/README.md#how-to-use-it",
+      "note": "Keyboard shortcuts changed bond orders and inserted rings.",
+      "shot": {
+        "image": "evidence/butlerov/f-keyboard-drawing.webp",
+        "caption": "Bond menu displays keyboard shortcuts for bond types."
+      }
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts#L146-L458",
+      "note": "Selection limited to connected components, chains, rings and molecular fragments."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No arrow command found in inspected editor menus."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved-arrow command found in inspected menus."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/README.md#how-to-use-it",
+      "note": "Local automatic geometry adjustments and symmetry tools only."
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts#L44-L85",
+      "note": "Reusable API styles; editor document serialization omits bond/font styles."
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/drawables/Edge.ts#L127-L158",
+      "note": "Shared theme sets atom and bond colors, not individual objects."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/vue/README.md#descriptor-api-lazy--debounced",
+      "note": "Adapter displayed formula and molecular weight from editor API.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/descriptor/mw.ts"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name conversion command found in inspected menus."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in inspected menus."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view command found in inspected menus."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML command found in inspected menus."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/converter/MolConverter.ts",
+      "note": "Adapter read and wrote MOL; one SDF record loaded.",
+      "engine": {
+        "library": "In-house (MOL V2000; first SDF record only)",
+        "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/converter/MolConverter.ts"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/converter/SmilesConverter.ts#L18-L32",
+      "note": "Import corrupted both fixtures; SMILES export reports unimplemented.",
+      "shot": {
+        "image": "evidence/butlerov/f-smiles.webp",
+        "caption": "Loaded SMILES appears above an overlapping molecular drawing."
+      },
+      "engine": {
+        "library": "In-house (SMILES import only)",
+        "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/converter/SmilesConverter.ts#L18-L32"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No SVG export command found in inspected menus."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export command found in inspected menus."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG export command found in inspected menus."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/README.md#main-api-quick-reference",
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/README.md#vanilla-html-page-umd-script",
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Single-structure canvas; documented multi-object scheme mode is not implemented.",
+    "SMILES export is unimplemented despite documentation showing converter-based serialization.",
+    "Documentation lists V3000/SDF; converter implements V2000 and reads only the first SDF record."
+  ],
+  "github": {
+    "stars": 13,
+    "pushedAt": "2026-04-03T15:16:34Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.1.6",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "index.html",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "smiles",
+        "image": "evidence/butlerov/simple.png",
+        "note": "Local adapter SMILES produces a severely overlapping layout.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "smiles",
+        "image": "evidence/butlerov/complex.png",
+        "note": "Local adapter SMILES overlaps severely and loses stereochemistry.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/butlerov/canvas.webp",
+    "canvasLight": "evidence/butlerov/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "SMILES import overlaps and loses stereochemistry."
+    },
+    "memory": null,
+    "observations": [
+      "CodePen returned a Cloudflare verification page in headless Chromium.",
+      "Local adapter used core package 0.1.6; buttons expose its API.",
+      "SMILES caffeine became C8H14N4O2 instead of C8H10N4O2.",
+      "MOL round trips preserved both fixtures' isomeric structures.",
+      "Down bonds display hollow wedges rather than hashed wedges.",
+      "Current Kekule caffeine SMILES preserves connectivity but produces an overlapping layout.",
+      "Current Kekule paclitaxel SMILES retains connectivity but loses stereochemistry.",
+      "Hosted demo canvas paste did not load either SMILES; its MOL text box has no load button.",
+      "New captures use the earlier local adapter; its core bundle matches the hosted demo bundle byte-for-byte."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/eizemazal/butlerov",
+    "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/README.md"
+  ],
+  "builtOn": {
+    "id": "p56",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/controller/MoleculeEditor.ts",
+    "note": "In-house molecular graph, SMILES parser, mass calculations, and chemical drawing."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Butlerov bond and label drawing (Konva)",
+    "language": "TypeScript",
+    "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/packages/core/src/drawables/Edge.ts#L232-L617"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "Vue components use TypeScript; JavaScript handles builds, HTML/CSS presentation.",
+  "thirdParty": {
+    "summary": "MIT (Konva/Vue/Vuetify); Apache-2.0 (MDI icon fonts in desktop app).",
+    "source": "https://github.com/eizemazal/butlerov/blob/e4e64ae461832ce63bfeb5ff260ac8501edbac80/package-lock.json",
+    "notice": null,
+    "libraries": []
+  }
+}

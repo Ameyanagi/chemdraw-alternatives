@@ -1,0 +1,584 @@
+{
+  "id": "p103",
+  "slug": "sketchel-2",
+  "name": "SketchEl 2",
+  "rank": 58,
+  "tier": "alternative",
+  "tierReason": "It is a standalone 2D molecule editor with vector SVG export, although its desktop workflow remains minimal and source-only.",
+  "summary": "A standalone desktop application for drawing molecular structures and exporting vector diagrams.",
+  "website": null,
+  "repo": "https://github.com/aclarkxyz/web_sketchel2",
+  "docs": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/README.md",
+  "vendor": "Molecular Materials Informatics, Inc.",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-3.0",
+    "text": "GNU General Public License version 3.",
+    "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/README.md#license"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/aclarkxyz/web_sketchel2/releases"
+  },
+  "engine": {
+    "rendering": "WebMolKit DrawMolecule/MetaVector; HTML Canvas 2D on screen and SVG for export",
+    "chemistry": "WebMolKit",
+    "ui": "Electron with WebMolKit HTML/CSS widgets",
+    "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L19382"
+  },
+  "languages": [
+    "TypeScript",
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L18546",
+      "note": "Drew all three orders; changed double to triple in dialog.",
+      "shot": {
+        "image": "evidence/sketchel-2/f-bonds-core.webp",
+        "caption": "Single and triple bonds, bond tools, and an aromatic ring."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L25655",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/sketchel-2/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L18546",
+      "note": "Quadruple and zero-order bonds; dative support unverified."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L25662",
+      "note": "Drew plain six-membered and aromatic rings.",
+      "shot": {
+        "image": "evidence/sketchel-2/f-rings.webp",
+        "caption": "Six-membered and aromatic rings with ring tools."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/res/data/templates/rings.ds#L94",
+      "note": "Chair template previewed and committed.",
+      "shot": {
+        "image": "evidence/sketchel-2/f-conformers.webp",
+        "caption": "Chair ring drawing beside the template palette."
+      }
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L24806",
+      "note": "Inserted chair template; additional fragment libraries visible.",
+      "shot": {
+        "image": "evidence/sketchel-2/f-templates.webp",
+        "caption": "Chair drawing beside the fragment template palette."
+      }
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L20243",
+      "note": "Abbreviations retain underlying chemical fragments and can be expanded."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L20073",
+      "note": null,
+      "shot": {
+        "image": "evidence/sketchel-2/f-atom-labels.webp",
+        "caption": "Edit Atom dialog with symbol, charge, and isotope controls."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L20084",
+      "note": "Atom properties include the number of unpaired electrons.",
+      "shot": {
+        "image": "evidence/sketchel-2/f-radicals.webp",
+        "caption": "Edit Atom dialog with an unpaired electron field."
+      }
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L18526",
+      "note": "Point at an atom or bond, then use keyboard commands."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L18604",
+      "note": "Lasso selection plus rotation, flipping, and scaling."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No reaction-arrow command found in menus or tool banks."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No electron-pushing arrow command found in menus or tool banks."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L20098",
+      "note": "Manual mapping numbers on molecules; reaction workflow unverified.",
+      "shot": {
+        "image": "evidence/sketchel-2/f-atom-mapping.webp",
+        "caption": "Edit Atom dialog with a mapping field."
+      }
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L19902",
+      "note": "Projected SDF shows red overlap marker; valence checking unverified.",
+      "engine": {
+        "library": "WebMolKit (TypeScript; overlapping-atom checks only)",
+        "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L19902-L19907"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L19923",
+      "note": "Green R/S labels appeared automatically on paclitaxel.",
+      "shot": {
+        "image": "evidence/sketchel-2/f-stereo-perception.webp",
+        "caption": "Green R and S labels on a molecular drawing."
+      },
+      "engine": {
+        "library": "WebMolKit (TypeScript Stereochemistry)",
+        "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L19923-L19960"
+      }
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L22711",
+      "note": "Formula-abbreviation attempt rejected selection; no mass command found.",
+      "engine": {
+        "library": "WebMolKit (TypeScript; formula abbreviations only)",
+        "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L22711-L22728"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Name paste rejected; no conversion command found."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in menus, tool banks, or dialogs."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L23218",
+      "note": "Atom lists, exclusions, and other chemical query constraints."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L20628",
+      "note": "Polymer units store connectivity beyond their drawn brackets."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SDF opens flat; no 3D view command found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "CDXML paste rejected; opening test file left canvas empty."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/src/main/DrawPanel.ts#L50",
+      "note": "MOL read/write works; SDF opens; no SDF save format.",
+      "shot": {
+        "image": "evidence/sketchel-2/f-mol-sdf.webp",
+        "caption": "A molecule displayed in a window titled simple-out.mol."
+      },
+      "engine": {
+        "library": "WebMolKit (TypeScript MDLMOLReader / MDLMOLWriter; MOL only)",
+        "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/src/main/DrawPanel.ts#L50-L78"
+      }
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Caffeine SMILES paste rejected as unrecognisable molecule."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/src/main/DrawPanel.ts#L88",
+      "note": "Default SVG exports saved for all three fixtures."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "File menu exposes SVG only; no print or PDF command."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG command in File menu or save formats."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "No GitHub releases; source build required and current compatibility unverified.",
+    "README reports testing only on Linux and macOS; Windows support is unverified.",
+    "Bare-bones molecule editor with native/MOL saving and SVG export."
+  ],
+  "github": {
+    "stars": 10,
+    "pushedAt": "2022-12-12T14:17:35Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.1.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "web_sketchel2-aed47f5.zip",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 1213947,
+    "installedBytes": 593281024,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/sketchel-2/simple.svg",
+        "note": "SMILES rejected; MOL text pasted without cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/sketchel-2/complex.svg",
+        "note": "Opened supplied 2D MOL without cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/sketchel-2/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Default heteroatom colors are oxygen red and nitrogen blue.",
+      "Green R/S labels appear automatically on paclitaxel.",
+      "Default SVGs use outlined labels and approximately 100-point bounds.",
+      "MOL import preserves supplied 2D coordinates without cleanup.",
+      "The 3D SDF projection has overlapping explicit hydrogen labels."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 1213947,
+  "references": [
+    "https://github.com/aclarkxyz/web_sketchel2",
+    "https://github.com/aclarkxyz/web_sketchel2/blob/master/README.md"
+  ],
+  "builtOn": {
+    "id": "p103",
+    "relation": "wrapper",
+    "editor": "WebMolKit Sketcher",
+    "libraries": [
+      "WebMolKit"
+    ],
+    "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/src/main/DrawPanel.ts#L21-L42",
+    "note": "Mounts WebMolKit Sketcher; adds desktop file and clipboard integration."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "WebMolKit DrawMolecule / ArrangeMolecule / MetaVector",
+    "language": "TypeScript",
+    "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/app/sketchel2.js#L16335-L16385"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Electron desktop shell and menus"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "CSS/HTML style the interface; Shell/Emacs Lisp support builds and editing.",
+  "thirdParty": {
+    "summary": "Bundled 2021 WebMolKit uses GPL-3.0; its later Apache relicensing postdates this bundle.",
+    "source": "https://github.com/aclarkxyz/web_molkit/blob/46b347da911518f8317d68c103b6d84743747109/README.md#license",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "WebMolKit",
+        "license": "Apache-2.0",
+        "source": "https://github.com/aclarkxyz/web_molkit/blob/master/README.md"
+      }
+    ]
+  }
+}

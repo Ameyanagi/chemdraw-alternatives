@@ -1,0 +1,527 @@
+{
+  "id": "p17",
+  "slug": "chemstitch",
+  "name": "ChemStitch",
+  "rank": 107,
+  "tier": "alternative",
+  "tierReason": "Its standalone editor produces publication figures with ACS presets, vector SVG, high-resolution PNG, and structured reaction documents.",
+  "summary": "A browser-based chemical drawing editor for publication figures, property calculations, and AI-assisted structure and reaction analysis.",
+  "website": "https://www.chemstitch.ai/",
+  "repo": null,
+  "docs": "https://www.chemstitch.ai/docs",
+  "vendor": "ChemStitch",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary hosted service with free drawing and computations; AI uses subscription or student plans.",
+    "source": "https://www.chemstitch.ai/terms"
+  },
+  "price": {
+    "text": "Free drawing; AI US$19/month or US$190/year; verified students free (2026-11-05).",
+    "source": "https://www.chemstitch.ai/terms"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://www.chemstitch.ai/"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "RDKit",
+    "ui": "Ketcher structure editor",
+    "source": "https://www.chemstitch.ai/"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/structure-drawing",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/structure-drawing",
+      "note": "Ring templates include benzene; rings can be fused."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/structure-drawing",
+      "note": "Functional groups and common molecules, including aspirin and caffeine."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/reaction-mode",
+      "note": "RXN stores explicit reactant and product assignments."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/structure-drawing",
+      "note": "Clean command adjusts angles, spacing, and ring geometry."
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/publication-export",
+      "note": "ACS Document 1996 preset."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/structure-drawing",
+      "note": "Invalid atom labels and valence errors are flagged."
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/ai-chat",
+      "note": "RDKit computes logP and TPSA; calculations remain free.",
+      "engine": {
+        "library": "RDKit (remote FastAPI chemistry server)",
+        "source": "https://www.chemstitch.ai/security"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/ai-chat",
+      "note": "Requires Standard or verified Student after trial.",
+      "engine": {
+        "library": "PubChem web service (name lookup followed by Load to Canvas)",
+        "source": "https://www.chemstitch.ai/docs/pubchem-integration"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/ai-chat",
+      "note": "Requires Standard or verified Student after trial."
+    },
+    "nmr-prediction": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/compare",
+      "note": "No NMR spectrum simulation."
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/structure-ocr",
+      "note": "AI extraction; requires Standard or verified Student after trial.",
+      "engine": {
+        "library": "OpenAI vision API (remote server); RDKit backend validation of extracted SMILES",
+        "source": "https://www.chemstitch.ai/subprocessors"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/pubchem-integration",
+      "note": "PubChem via AI; Standard or verified Student after trial.",
+      "engine": {
+        "library": "PubChem web service (compound lookup and similarity search)",
+        "source": "https://www.chemstitch.ai/docs/pubchem-integration"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/",
+      "note": "Explicitly limited to 2D drawing and analysis."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/file-formats",
+      "note": "Import only; CDXML export is explicitly unsupported."
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/guides/import-from-chemdraw",
+      "note": "Binary CDX import unsupported; export remains on roadmap."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/file-formats",
+      "note": "MOL V2000/V3000 and SDF import/export documented; pricing lists fewer formats."
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/file-formats",
+      "note": "SMILES import and clipboard export."
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/file-formats",
+      "note": "InChI import and clipboard export."
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/reaction-mode",
+      "note": "MDL RXN import and export in reaction mode."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/publication-export",
+      "note": "Resolution-independent vector SVG."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/publication-export",
+      "note": "300, 450, or 600 DPI."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chemstitch.ai/docs/ai-chat",
+      "note": "Generates structures; Standard or verified Student after trial."
+    }
+  },
+  "caveats": [
+    "Main editor requires an account, internet access, and a desktop browser.",
+    "CDXML is import-only; binary CDX import is unsupported.",
+    "Pricing lists fewer export formats than the file-format manual."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://app.chemstitch.ai/",
+    "ran": false,
+    "failure": "The editor redirected to an email sign-in page; an account is required.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "The sign-in page offers an email link and a 14-day trial.",
+      "No version was displayed on the sign-in page."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.chemstitch.ai/"
+  ],
+  "builtOn": {
+    "id": "p17",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "RDKit",
+      "OPSIN"
+    ],
+    "source": "https://www.chemstitch.ai/compare",
+    "note": "Ketcher canvas; vendor documents RDKit computations and an OPSIN backend."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher SVG/Raphaël renderer",
+    "language": "TypeScript",
+    "source": "https://www.chemstitch.ai/compare"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Remote FastAPI chemistry backend"
+    },
+    {
+      "language": "C++",
+      "role": "RDKit chemistry backend"
+    },
+    {
+      "language": "JavaScript",
+      "role": "Raphaël SVG graphics"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      }
+    ]
+  }
+}

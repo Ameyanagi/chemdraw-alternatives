@@ -1,0 +1,627 @@
+{
+  "id": "p113",
+  "slug": "ai-chemical-drawing",
+  "name": "AI Chemical Drawing (CubicZnS)",
+  "rank": 17,
+  "tier": "alternative",
+  "tierReason": "The end-user app combines a full manual Ketcher editor, reaction drawing, styled text and SVG export for publication figures.",
+  "summary": "A local web app for drafting molecules and reactions with AI, editing them in Ketcher, and exporting structures.",
+  "website": "https://github.com/CubicZnS/ai-chemical-drawing",
+  "repo": "https://github.com/CubicZnS/ai-chemical-drawing",
+  "docs": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md",
+  "vendor": "CubicZnS",
+  "license": {
+    "kind": "unclear",
+    "spdx": null,
+    "text": "No license declared for the host app; embedded Ketcher is Apache-2.0.",
+    "source": "https://github.com/CubicZnS/ai-chemical-drawing/tree/d07af9cb02e79df13e93afc6d415217b091c7bf9"
+  },
+  "price": {
+    "text": "Not published (2026-11-05); AI provider costs vary.",
+    "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": false,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/CubicZnS/ai-chemical-drawing/releases"
+  },
+  "engine": {
+    "rendering": "Ketcher SVG (Raphaël) in the browser; Indigo renders SVG/PNG exports",
+    "chemistry": "Indigo WebAssembly through Ketcher standalone",
+    "ui": "Next.js 16 and React 19 host; embedded Ketcher React editor",
+    "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/Tech-Spec.md"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-bonds",
+      "note": "Drew single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/ai-chemical-drawing/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the editor canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L26",
+      "note": "Drew solid, hashed, and wavy bonds.",
+      "shot": {
+        "image": "evidence/ai-chemical-drawing/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L39",
+      "note": "Dative and hydrogen bond tools in embedded Ketcher."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#hotkeys",
+      "note": "Placed benzene and cyclohexane.",
+      "shot": {
+        "image": "evidence/ai-chemical-drawing/f-rings.webp",
+        "caption": "Benzene and cyclohexane on the canvas above ring tools."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/templates/library.sdf#L8258",
+      "note": "Embedded Ketcher library includes chair and boat templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/editor/tool/chain.ts#L174",
+      "note": "Dragging determines the number of chain segments."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Placed alanine from structure library."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Save a drawn structure into Ketcher's User Templates library."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md#L99",
+      "note": "Me/Et use chemically meaningful, contracted SUP S-groups."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/data/schema/struct-schema.ts#L83",
+      "note": "Element labels, charge and isotope are editable atom properties."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/data/schema/struct-schema.ts#L131",
+      "note": "Atom properties include mono- and diradical states."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/state/handleHotkeysOverItem.ts#L266",
+      "note": "Hovering an atom allows keyboard element and charge changes."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/editor/tool/select/select.ts#L285",
+      "note": "Lasso, rotate, flip; resizing applies to images and simple shapes."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md#L118",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/ai-chemical-drawing/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the editor canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/leftToolbarOptions.ts#L41",
+      "note": "Drew a curved arrow; editing not checked.",
+      "shot": {
+        "image": "evidence/ai-chemical-drawing/f-mechanism-arrows.webp",
+        "caption": "A curved arrow on the editor canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md#L61",
+      "note": "Reaction SMILES and RXN retain reactants, products and agents."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-reactions",
+      "note": "Embedded Ketcher provides manual mapping, unmapping and automapping."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/modal/components/Text/SpecialSymbolsList/SpecialSymbolsList.tsx#L30",
+      "note": "Text palette includes Greek, temperature, angstrom and reaction symbols."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#adding-text-objects-on-the-canvas",
+      "note": "Ketcher canvas text supports formatting, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-graphical-objects",
+      "note": "Ellipse, rectangle and line tools; chemical brackets through S-groups."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-molecules-mode",
+      "note": "Ketcher Clean Up regularizes bond lengths and angles.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L224"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#acs-american-chemical-society-style",
+      "note": "Embedded Ketcher includes an ACS settings preset."
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/settings/README.md#storage-adapters",
+      "note": "Ketcher persists settings; host reapplies atom font sizes on loading."
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Colored highlighting exists; host reports direct bond coloring unsupported."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#adding-images-on-the-canvas",
+      "note": "Ketcher places PNG and SVG images on the canvas."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-atoms",
+      "note": "Invalid atom valences are underlined in red.",
+      "engine": {
+        "library": "Ketcher 3.18.0 (TypeScript valence rules)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/domain/entities/atom.ts#L445"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-molecules-mode",
+      "note": "Calculate CIP determines R/S, r/s and E/Z configurations.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L170"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/README.md#calculate",
+      "note": "Caffeine: C8H10N4O2, molecular weight 194.194.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L182"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md#用法",
+      "note": "AI converts named molecules into editable structures; provider key required.",
+      "engine": {
+        "library": "Configurable LLM (remote server) via in-house TypeScript",
+        "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/lib/llm-client.ts#L14"
+      }
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No dedicated naming command found; AI requires a key."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-r-groups",
+      "note": "Ketcher supports R-group labels, fragments, attachment points and logic."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#marking-s-groups",
+      "note": "Semantic SRU and copolymer groups include repeat-connectivity options."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-macromolecules-mode",
+      "note": "Embedded Ketcher supports peptide and nucleic-acid monomers and sequences."
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts#L720",
+      "note": "Recognition explicitly rejects requests in standalone mode."
+    },
+    "database-lookup": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/PRD.md#L79",
+      "note": "Explicitly excludes name-to-structure databases and OPSIN/PubChem dependencies."
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#3d-viewer",
+      "note": "SDF model rotated in depth in Miew viewer.",
+      "shot": {
+        "image": "evidence/ai-chemical-drawing/f-model-3d.webp",
+        "caption": "Molecular model in the Miew viewer."
+      },
+      "engine": {
+        "library": "Miew (JavaScript/WebGL, through miew-react 0.11.0)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/modal/components/process/Miew/Miew.tsx#L44"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/README.md#supported-formats",
+      "note": "Exported and reopened a CDXML structure.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly)",
+        "source": "https://github.com/epam/Indigo/blob/b36d38f5293470721fe02ee570d9f0e6488a5b8d/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L193"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/README.md#supported-formats",
+      "note": "Embedded Ketcher reads and writes binary CDX.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly)",
+        "source": "https://github.com/epam/Indigo/blob/b36d38f5293470721fe02ee570d9f0e6488a5b8d/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L197"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/README.md#supported-formats",
+      "note": "Opened MOL and SDF; saved MOL and SDF.",
+      "engine": {
+        "library": "Ketcher 3.18.0 (TypeScript MOL V2000); Indigo 1.46.0 (WebAssembly MOL V3000/SDF)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L82"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md#用法",
+      "note": "Imported SMILES and saved Daylight SMILES.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly)",
+        "source": "https://github.com/epam/Indigo/blob/b36d38f5293470721fe02ee570d9f0e6488a5b8d/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L137"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md#用法",
+      "note": "Host provides Copy InChI export.",
+      "engine": {
+        "library": "InChI (C library through Indigo 1.46.0 WebAssembly)",
+        "source": "https://github.com/epam/Indigo/blob/b36d38f5293470721fe02ee570d9f0e6488a5b8d/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L201"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md#用法",
+      "note": "AI-generated RXN input and Copy RXN export."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md#用法",
+      "note": "Downloaded SVG drawings.",
+      "shot": {
+        "image": "evidence/ai-chemical-drawing/f-svg-export.webp",
+        "caption": "Export panel showing an SVG download confirmation."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF option in available export formats."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/lib/use-ketcher.ts#L262",
+      "note": "PNG downloaded at 750×292 pixels, reported 72 dpi.",
+      "shot": {
+        "image": "evidence/ai-chemical-drawing/f-png-export.webp",
+        "caption": "Export panel showing a PNG download confirmation."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/Tech-Spec.md#24-使用的-ketcher-api",
+      "note": "Technical specification documents the embedded Ketcher JavaScript API."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/README.md#用法",
+      "note": "Chat generates structures and revises current drawings through an AI provider.",
+      "shot": {
+        "image": "evidence/ai-chemical-drawing/f-ai-assistant.webp",
+        "caption": "Structure request panel with example prompts and generation button."
+      }
+    }
+  },
+  "caveats": [
+    "No license or released version is declared for the host app.",
+    "Requires separate local Ketcher setup; AI generation needs a provider key and manual chemistry checking.",
+    "Ketcher documents colored highlighting, while the host README says bond coloring is unsupported."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-10-15T07:52:01Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.1.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://github.com/CubicZnS/ai-chemical-drawing",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": 599539712,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/ai-chemical-drawing/simple.svg",
+        "note": "Default SMILES layout; MOL saved separately.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/ai-chemical-drawing/complex.svg",
+        "note": "Default layout has overlapping oxygen and hydroxyl labels.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/ai-chemical-drawing/threed.png",
+        "note": "3D viewer rotates supplied coordinates; viewport saved as threed-view.png.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/ai-chemical-drawing/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": "evidence/ai-chemical-drawing/canvas-dark.webp",
+    "themes": {
+      "light": false,
+      "dark": true,
+      "how": "fixed",
+      "note": "Fixed dark interface; embedded Ketcher canvas stays white."
+    },
+    "memory": null,
+    "observations": [
+      "Source package 0.1.0 at commit d07af9c; embedded Ketcher About shows 3.18.0.",
+      "Bun dependency transfer size was unavailable; downloadBytes is unknown.",
+      "Paclitaxel's automatic layout overlaps some oxygen and hydroxyl labels.",
+      "The SDF model displays explicit hydrogens in the 3D viewport.",
+      "Natural-language generation requires a provider API key."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/CubicZnS/ai-chemical-drawing",
+    "https://github.com/CubicZnS/ai-chemical-drawing",
+    "https://github.com/CubicZnS/ai-chemical-drawing/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p113",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "Ketcher",
+      "Indigo"
+    ],
+    "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/components/KetcherFrame.tsx#L92-L100",
+    "note": "Embeds Ketcher standalone through an iframe; Indigo supplies chemistry."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher/Raphaël; Indigo SVG/PNG exports",
+    "language": "TypeScript",
+    "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/render/raphaelRender.ts#L110"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Raphaël SVG and Miew 3D"
+    },
+    {
+      "language": "C++",
+      "role": "Indigo chemistry and image exports"
+    },
+    {
+      "language": "C",
+      "role": "InChI compiled to WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "JavaScript supports tooling and tests; CSS styles the interface.",
+  "thirdParty": {
+    "summary": "Includes LGPL-3.0-or-later (optional Sharp/libvips) and CC-BY-4.0 (caniuse-lite data); other listed runtime dependencies use permissive licenses.",
+    "source": "https://github.com/CubicZnS/ai-chemical-drawing/blob/d07af9cb02e79df13e93afc6d415217b091c7bf9/package-lock.json",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,563 @@
+{
+  "id": "p102",
+  "slug": "sciformation-vectormol",
+  "name": "Sciformation VectorMol",
+  "rank": 42,
+  "tier": "embeddable",
+  "tierReason": "Its documented iframe and JavaScript interfaces primarily provide molecular and reaction input for other applications.",
+  "summary": "A browser editor for drawing molecular structures and single-step reactions, with iframe embedding and SVG export.",
+  "website": "https://sciformation.com/vectormol.html?lang=en",
+  "repo": null,
+  "docs": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+  "vendor": "Sciformation Consulting GmbH",
+  "license": {
+    "kind": "source-available",
+    "spdx": "CC-BY-NC-SA-3.0",
+    "text": "CC BY-NC-SA 3.0 for noncommercial use; commercial use requires an individual license. Readable source available on request.",
+    "source": "https://sciformation.com/VecMol/info.html?embedded=&lang=en&mode=rxn"
+  },
+  "price": {
+    "text": "Free for noncommercial use; commercial pricing on request (2026-11-05).",
+    "source": "https://sciformation.com/VecMol/info.html?embedded=&lang=en&mode=rxn"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": true,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://sciformation.com/VecMol/info.html?embedded=&lang=en&mode=rxn"
+  },
+  "engine": {
+    "rendering": "Raphaël SVG graphics on screen and in SVG exports",
+    "chemistry": "In-house JavaScript molecular model and geometry optimizer",
+    "ui": "Custom HTML controls with jQuery",
+    "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Drew single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/sciformation-vectormol/f-bonds-core.webp",
+        "caption": "Single, triple and aromatic double bonds on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/sciformation-vectormol/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Coordination uses unspecified bonds rather than directed dative bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/templates/0.mol",
+      "note": "Phenyl shortcut inserted an aromatic ring.",
+      "shot": {
+        "image": "evidence/sciformation-vectormol/f-rings.webp",
+        "caption": "A benzene ring on the drawing canvas."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Chain tool creates zigzag backbones by dragging."
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25",
+      "note": "Phenyl shortcut worked; broader library not verified."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Requires template mode and access to the installation's templates folder."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Ph inserted a phenyl structure."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Element labels, charges, isotope masses and explicit hydrogen counts."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Atom radical dots and electron-pair modifiers."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Number and letter shortcuts changed drawing tools."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25",
+      "note": "Lasso, rotate, flip; Ctrl+wheel scales the active selection."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "3D rotation changed the selected structure's projection.",
+      "shot": {
+        "image": "evidence/sciformation-vectormol/f-perspective.webp",
+        "caption": "Cholesterol structure displayed in 3D mode with explicit hydrogens."
+      }
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25",
+      "note": "Forward arrow drawn; other arrow types not found.",
+      "shot": {
+        "image": "evidence/sciformation-vectormol/f-reaction-arrows.webp",
+        "caption": "A forward reaction arrow beside a benzene ring."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Arrow tool drew a straight reaction arrow; no curved tool found."
+    },
+    "reaction-data": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Reaction mode wrote RXN; reaction round-trip not checked."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Chemical substructure groups only; disconnected objects cannot be grouped."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25",
+      "note": "Toolbar command optimizes bond geometry in two dimensions.",
+      "engine": {
+        "library": "In-house (JavaScript)",
+        "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25",
+      "note": "Individual atom colors through JavaScript setAtomColors()."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Caffeine displayed formula and two masses.",
+      "shot": {
+        "image": "evidence/sciformation-vectormol/f-formula-mass.webp",
+        "caption": "Caffeine structure with its molecular formula and two mass values."
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Entering caffeine in atom field did not create caffeine."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Clicking formula did not produce a name; no command found."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sciformation.com/VecMol/index.html?lang=en&mode=rxn",
+      "note": "Toolbar provides R-group and wildcard atom choices."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Chemical repeat groups support variable polymers and fixed-count oligomers."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25",
+      "note": "Imported 3D coordinates rotated in depth on canvas.",
+      "shot": {
+        "image": "evidence/sciformation-vectormol/f-model-3d.webp",
+        "caption": "Cholesterol structure displayed in 3D mode with explicit hydrogens."
+      },
+      "engine": {
+        "library": "In-house (JavaScript; line-bond models)",
+        "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25",
+      "note": "Simple CDXML imported; CDXML export not found.",
+      "engine": {
+        "library": "In-house (JavaScript; CDXML import only)",
+        "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25"
+      }
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Opened MOL and SDF; molecule mode saved MOL.",
+      "engine": {
+        "library": "In-house (JavaScript; MOL read/write)",
+        "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25"
+      }
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Opening caffeine SMILES file left canvas empty."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Reaction mode saved RXN; import not checked."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "SVG button downloaded structure SVG.",
+      "shot": {
+        "image": "evidence/sciformation-vectormol/f-svg-export.webp",
+        "caption": "SVG button in the toolbar above the drawing canvas."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Save controls offered RXN or SVG, not PDF."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Save controls offered RXN or SVG, not PNG."
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciformation.com/vectormol.html?lang=en",
+      "note": "Vendor claim: ChemDraw copy/paste via MOL/CDXML, depending on browser."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "JavaScript getMolRxnfile() and setMolRxnfile(String) exchange structures."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol",
+      "note": "Iframe integration; embedded=true hides file loading and saving."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Commercial use requires an individual license; the hosted editor is labeled 'test use only'.",
+    "Only single-step reactions are documented; drawing another arrow replaces the first.",
+    "The manual denies external clipboard access, while current code and the product page support ChemDraw interchange."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "2026-08-25",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://sciformation.com/VecMol/index.html?lang=en&mode=rxn",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/sciformation-vectormol/simple.svg",
+        "note": "SMILES file produced no structure; MOL opened.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/sciformation-vectormol/complex.svg",
+        "note": null,
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/sciformation-vectormol/threed.png",
+        "note": "3D coordinates rotate on the drawing canvas; explicit hydrogens overlap.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/sciformation-vectormol/canvas.webp",
+    "canvasLight": "evidence/sciformation-vectormol/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Light and dark browser preferences rendered identically."
+    },
+    "memory": null,
+    "observations": [
+      "The script URL carries build identifier 2026-08-25; no semantic version was shown.",
+      "The public demo footer says test use only.",
+      "MOL exports in molecule mode matched fixture stereochemistry in RDKit.",
+      "The cholesterol SDF displayed all explicit hydrogens in a wireframe projection.",
+      "Reaction mode saves RXN; molecule mode saves MOL."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://sciformation.com/vectormol.html?lang=en",
+    "https://sciformation.com/VecMol/help.html?embedded=&lang=en&mode=mol"
+  ],
+  "builtOn": {
+    "id": "p102",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://sciformation.com/VecMol/info.html?embedded=&lang=en&mode=rxn",
+    "note": "Vendor credits its developer; third-party notices list generic graphics and utilities."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "VectorMol molecular renderer over Raphaël",
+    "language": "JavaScript",
+    "source": "https://sciformation.com/VecMol/svg-mol-full.min.min.js?version=2026-08-25"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "MIT/Zlib libraries, BSL-1.0 Clipper lasso code, and public-domain Tango icons.",
+    "source": "https://sciformation.com/VecMol/info.html?embedded=&lang=en&mode=rxn",
+    "notice": null,
+    "libraries": []
+  }
+}

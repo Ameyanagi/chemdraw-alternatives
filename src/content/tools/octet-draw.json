@@ -1,0 +1,676 @@
+{
+  "id": "p43",
+  "slug": "octet-draw",
+  "name": "Octet Draw",
+  "rank": 6,
+  "tier": "alternative",
+  "tierReason": "It creates styled 2D chemical documents with reactions, page layout, editable ChemDraw files and vector exports.",
+  "summary": "Free desktop software for drawing chemical structures, reaction schemes and publication figures.",
+  "website": "https://octet.software/",
+  "repo": "https://github.com/SamChemMan/Octet-Draw",
+  "docs": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md",
+  "vendor": "Sam Ellis",
+  "license": {
+    "kind": "open-source",
+    "spdx": "Apache-2.0",
+    "text": "Apache License 2.0; bundled NMR data has separate share-alike terms.",
+    "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v1.1.0",
+    "date": "2026-11-04",
+    "source": "https://github.com/SamChemMan/Octet-Draw/releases/tag/v1.1.0"
+  },
+  "engine": {
+    "rendering": "Custom TypeScript SVG renderer; svg2pdf for PDF and resvg/tiny-skia for raster export",
+    "chemistry": "Indigo WebAssembly, OPSIN, and in-house naming, stereochemistry and property calculations",
+    "ui": "React and TypeScript in Tauri 2",
+    "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx"
+  },
+  "languages": [
+    "TypeScript",
+    "Rust"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/keys.ts",
+      "note": "Drew single, double, triple; changed an existing bond to double.",
+      "shot": {
+        "image": "evidence/octet-draw/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/kinds.ts",
+      "note": "Drew solid wedge, hashed wedge and wavy bonds.",
+      "shot": {
+        "image": "evidence/octet-draw/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds on the drawing canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/kinds.ts",
+      "note": "Dative, hydrogen and quadruple bond tools."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Actions.tsx",
+      "note": "Double bonds offer left, right, centered and automatic positions."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/tools.tsx",
+      "note": "Placed benzene and cyclohexane using ring tools.",
+      "shot": {
+        "image": "evidence/octet-draw/f-rings.webp",
+        "caption": "A benzene ring on the drawing canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0017-template-library-sets.md",
+      "note": "Chair, Haworth, Newman and other conformer templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx",
+      "note": "Drag a zig-zag chain; atom count follows its length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0017-template-library-sets.md",
+      "note": "Inserted the built-in alanine template."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx",
+      "note": "Save selected drawings into reusable named template sets."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/labels.ts",
+      "note": "Ph, Boc and condensed labels resolve into chemical structures."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx",
+      "note": "Atom Properties sets element labels, charges and isotope mass numbers."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/tools.tsx",
+      "note": "Atom symbol tools place radical dots and lone pairs."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Coach.tsx",
+      "note": "Point at an atom or bond and use chemistry shortcut keys."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx",
+      "note": "Lasso selection supports rotation, flipping and resizing."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0012-structures-in-perspective.md",
+      "note": "Generated depth-shaded cholesterol and rotated it by dragging.",
+      "shot": {
+        "image": "evidence/octet-draw/f-perspective.webp",
+        "caption": "Depth-shaded cholesterol drawing with overlapping atom labels."
+      }
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/kinds.ts",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/octet-draw/f-reaction-arrows.webp",
+        "caption": "A forward reaction arrow on the drawing canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx",
+      "note": "Drew curved electron-pair and fishhook arrows.",
+      "shot": {
+        "image": "evidence/octet-draw/f-mechanism-arrows.webp",
+        "caption": "Curved arrows on the drawing canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts",
+      "note": "Chemistry-aware reactions export RXN, RDF and reaction SMILES."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts",
+      "note": "Automatic reaction mapping preserves manually mapped atom pairs."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/elements.tsx",
+      "note": "Orbital library includes s, p, hybrid and other shapes."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Actions.tsx",
+      "note": "Canvas captions support fonts, subscripts, superscripts and styled text."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/edit.ts",
+      "note": "Editable shapes, brackets and Bézier curves."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Actions.tsx",
+      "note": "Selected objects align by edges or centers and distribute evenly."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx",
+      "note": "Grouped structures and graphics select and move together."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts",
+      "note": "Clean Up straightens bond lengths and angles.",
+      "shot": {
+        "image": "evidence/octet-draw/f-cleanup.webp",
+        "caption": "Clean up structure command beside a selected molecule."
+      },
+      "engine": {
+        "library": "Ported from Indigo MoleculeCleaner2d and BiconnectedDecomposer (TypeScript, modified)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/clean2d.ts#L1"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md#what-it-does",
+      "note": "ACS default with additional journal presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/docstyle.ts",
+      "note": "Save named style templates containing bond and font settings."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx",
+      "note": "Color individual atoms, bonds, captions and drawing objects.",
+      "shot": {
+        "image": "evidence/octet-draw/f-color.webp",
+        "caption": "Colour controls beside a selected molecule."
+      }
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/docstyle.ts",
+      "note": "Page size controls and tiled printing; canvas lacks separate document pages."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/picture.ts",
+      "note": "Place raster images as picture objects."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/edit.ts",
+      "note": "Dedicated TLC plates and editable tables."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/check.ts",
+      "note": "Flags valence and other structure problems.",
+      "engine": {
+        "library": "In-house (TypeScript valence, charge and geometry checks); Indigo (WebAssembly stereochemistry checks)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/check.ts#L130"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0013-cip-labeller.md",
+      "note": "Computes R/S/r/s and E/Z with its own CIP labeller.",
+      "engine": {
+        "library": "In-house (TypeScript CIP and axial stereochemistry labellers)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts#L471"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md#what-it-does",
+      "note": "Caffeine: C8H10N4O2, 194.19 g/mol; exact mass 194.0804.",
+      "shot": {
+        "image": "evidence/octet-draw/f-formula-mass.webp",
+        "caption": "Caffeine formula, exact mass and molecular weight in Properties."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly), with In-house (TypeScript fragment and polymer aggregation)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts#L695"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts",
+      "note": "Caffeine properties panel showed logP 0.06 and tPSA 61.82.",
+      "shot": {
+        "image": "evidence/octet-draw/f-properties.webp",
+        "caption": "Caffeine properties include logP and tPSA estimates."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly, Wildman–Crippen logP and molar refractivity); In-house (TypeScript Ertl TPSA, Joback, ESOL and pKa calculators; thermo and Dimorphite-DL table values, PatWalters/solubility ESOL coefficients)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts#L695-L723"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0015-name-to-structure-reads-more.md",
+      "note": "Converted caffeine to a 14-atom structure.",
+      "engine": {
+        "library": "OPSIN 2.8.0 (JavaScript compiled from Java with TeaVM); In-house (TypeScript dictionaries and name parsers); Indigo (WebAssembly layout); PubChem PUG REST (remote server fallback)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx#L1753"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/namer.ts",
+      "note": "Generated caffeine systematic name as canvas text.",
+      "shot": {
+        "image": "evidence/octet-draw/f-structure-to-name.webp",
+        "caption": "Caffeine structure and systematic name on the canvas."
+      },
+      "engine": {
+        "library": "In-house (TypeScript IUPAC namer); OPSIN (JavaScript compiled from Java with TeaVM, round-trip validation); Indigo (WebAssembly InChI comparison)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx#L4538"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md#what-it-does",
+      "note": "Predicts proton and carbon-13 shifts.",
+      "engine": {
+        "library": "In-house (TypeScript HOSE-code predictor with bundled nmrshiftdb2 shift data)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/nmr.ts#L1"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/query.ts",
+      "note": "Supports R-group definitions, atom lists and query properties."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts",
+      "note": "Semantic repeat units contribute to molecular formulae and masses."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0015-name-to-structure-reads-more.md",
+      "note": "Reads three-letter peptide sequences with D/L residues and terminal caps."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0015-name-to-structure-reads-more.md#pubchem-online",
+      "note": "Fetches PubChem structures when offline name conversion fails.",
+      "engine": {
+        "library": "PubChem PUG REST (remote server, accessed with Rust reqwest)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src-tauri/src/pubchem.rs#L1"
+      }
+    },
+    "model-3d": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx",
+      "note": "Builds and rotates; cholesterol export inverts three stereocenters.",
+      "shot": {
+        "image": "evidence/octet-draw/f-model-3d.webp",
+        "caption": "Depth-shaded cholesterol drawing with overlapping atom labels."
+      },
+      "engine": {
+        "library": "In-house (TypeScript 3D geometry and rotatable SVG perspective drawing)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx#L1973"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0009-cdx-files.md",
+      "note": "Exported and re-imported structures, reaction arrow and mechanism arrows.",
+      "engine": {
+        "library": "In-house (TypeScript CDXML reader and writer)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/cdxml.ts#L1"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0009-cdx-files.md",
+      "note": "Native CDX reader and writer preserve drawing objects.",
+      "engine": {
+        "library": "In-house (TypeScript CDX binary reader and writer sharing the CDXML object tree)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/cdx.ts#L1"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md#what-it-does",
+      "note": "Imported MOL and SDF; exported both formats.",
+      "shot": {
+        "image": "evidence/octet-draw/f-mol-sdf.webp",
+        "caption": "Export dialog with MOL selected as the format."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly); In-house (TypeScript V3000 query/Markush reader and writer, SDF record handling)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts#L350"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md#what-it-does",
+      "note": "Pasted all three fixtures; exported caffeine SMILES.",
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts#L340"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md#what-it-does",
+      "note": "Imports and exports InChI.",
+      "engine": {
+        "library": "InChI 1.06 (compiled into Indigo WebAssembly, accessed through indigo-ketcher)",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts#L494-L506"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/chem.ts",
+      "note": "Reads and writes V2000 and V3000 RXN reactions."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/export.ts",
+      "note": "Exported all three fixtures; SVG files parse successfully."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src-tauri/src/export.rs",
+      "note": "Exported caffeine using default PDF settings."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/SettingsWindow.tsx",
+      "note": "Exported at default 600 dpi with transparent background.",
+      "shot": {
+        "image": "evidence/octet-draw/f-png-export.webp",
+        "caption": "PNG export dialog showing 600 dpi and transparent background."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src-tauri/src/clipboard.rs",
+      "note": "Reads and writes ChemDraw CDX and CDXML clipboard formats."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src-tauri/src/clipboard.rs",
+      "note": "Round-trip editing via macOS PDF and Windows EMF clipboard metadata."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Office round-trip editing depends on preserving embedded PDF or EMF chemistry metadata.",
+    "SMILES layout is capped at 1,000 atoms; 3D cleanup at 500.",
+    "Older notes predate implemented NMR, properties, queries, peptides, dictionaries, Windows EMF and PubChem fetching."
+  ],
+  "github": {
+    "stars": 76,
+    "pushedAt": "2026-11-04T14:13:50Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "1.1.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "Octet.Draw_1.1.0_universal.dmg",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 32510320,
+    "installedBytes": 43970560,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/octet-draw/simple.svg",
+        "note": "Current Kekule SMILES automatic layout retained; MOL matches fixture.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/octet-draw/complex.svg",
+        "note": "Current Kekule SMILES automatic layout retained; central oxygen labels overlap.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/octet-draw/threed.png",
+        "note": "Default depth-shaded 3D model; fresh MOL preserves all eight stereocenters.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/octet-draw/canvas.webp",
+    "canvasLight": "evidence/octet-draw/canvas-light.webp",
+    "canvasDark": "evidence/octet-draw/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Settings > Document > Page > Background: White or Dark."
+    },
+    "memory": null,
+    "observations": [
+      "Defaults: ACS Document 1996, Arial 10 pt, black on white.",
+      "Caffeine aromatic rings display only single-line ring bonds.",
+      "Paclitaxel automatic layout has overlapping central oxygen labels.",
+      "Caffeine and paclitaxel MOL exports match fixture connectivity and stereochemistry.",
+      "Cholesterol 3D labels overlap; exported coordinates invert three stereocenters.",
+      "Redraw: current Kekule SMILES displays caffeine and paclitaxel alternating ring double bonds.",
+      "Redraw: fresh cholesterol 3D export preserves all eight stereocenters; supersedes earlier inversion observation."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 32510320,
+  "references": [
+    "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md",
+    "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0009-cdx-files.md",
+    "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/docs/decisions/0011-clipboard-on-windows-and-linux.md"
+  ],
+  "builtOn": {
+    "id": "p43",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "Indigo",
+      "OPSIN",
+      "InChI"
+    ],
+    "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/Editor.tsx#L7324",
+    "note": "Custom SVG canvas; Indigo chemistry, OPSIN name conversion, and bundled InChI."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Octet ACS 1996 SVG renderer",
+    "language": "TypeScript",
+    "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/src/render.ts#L659"
+  },
+  "otherLanguages": [
+    {
+      "language": "Rust",
+      "role": "Native shell, export and clipboard"
+    },
+    {
+      "language": "JavaScript",
+      "role": "OPSIN bundle and WebAssembly glue"
+    },
+    {
+      "language": "C++",
+      "role": "Indigo chemistry compiled to WebAssembly"
+    },
+    {
+      "language": "C",
+      "role": "InChI compiled into Indigo WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "CSS styles UI; Java adapts OPSIN; JavaScript supports tooling/generated vendors.",
+  "thirdParty": {
+    "summary": "Includes MPL-2.0 crates, custom LGPL-2.1-based InChI, OFL-1.1 fonts, ODbL-derived share-alike NMR data (dependent software must be OSI-licensed), and proprietary WebView2 (Windows offline installer).",
+    "source": "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/THIRD_PARTY.md",
+    "notice": "https://github.com/SamChemMan/Octet-Draw/blob/main/THIRD_PARTY.md",
+    "libraries": [
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "id": "p66",
+  "slug": "bondcraft",
+  "name": "BondCraft",
+  "rank": 39,
+  "tier": "alternative",
+  "tierReason": "It creates editable 2D structures and reaction schemes with journal styles and vector exports for publication figures.",
+  "summary": "Browser-based editor for drawing chemical structures, reaction mechanisms, and publication figures, with stereochemistry checks and SMILES conversion.",
+  "website": "https://www.bondcraft.net/",
+  "repo": null,
+  "docs": "https://www.bondcraft.net/#manual",
+  "vendor": "Dr. Marcel Heinz",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Proprietary; free for academic and personal use. Copying, modification and redistribution are restricted.",
+    "source": "https://www.bondcraft.net/"
+  },
+  "price": {
+    "text": "Free for academic and personal use (2026-11-05)",
+    "source": "https://www.bondcraft.net/#citation"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": "0.2.1",
+    "date": "2026-08-15",
+    "source": "https://www.bondcraft.net/"
+  },
+  "engine": {
+    "rendering": "HTML Canvas 2D for screen and PNG; custom SVG and PostScript EPS exporters",
+    "chemistry": "In-house valence, CIP and SMILES engine; RDKit with CoordGen for SMILES import",
+    "ui": "React",
+    "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Drew a bond and cycled single, double, and triple.",
+      "shot": {
+        "image": "evidence/bondcraft/f-bonds-core.webp",
+        "caption": "A triple bond drawn on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/stereochemistry-drawing-tool",
+      "note": "Bond cycling produced solid wedge and hashed wedge.",
+      "shot": {
+        "image": "evidence/bondcraft/f-stereo-bonds.webp",
+        "caption": "Structure on the canvas with solid and hashed wedge bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Dative and dashed bonds; no dedicated hydrogen or quadruple bond types."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Placed benzene ring from the template selector.",
+      "shot": {
+        "image": "evidence/bondcraft/f-rings.webp",
+        "caption": "Structure selector with benzene and other ring templates."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Cyclohexane chair template."
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Benzene template placed and generated aromatic SMILES.",
+      "shot": {
+        "image": "evidence/bondcraft/f-templates.webp",
+        "caption": "Structure selector with cubane, adamantane, fullerene, and porphyrin templates."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Saved JSON/SVG projects can be reimported as movable placement templates."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Atom properties set custom symbols, formal charges and isotopes."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Single radicals, paired dots and lone-pair bars."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Number keys change hovered bonds; plus/minus changes hovered atom charges."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Lasso, rotation and flipping; bracket resizing, without whole-structure scaling."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Placed a straight reaction arrow by dragging.",
+      "shot": {
+        "image": "evidence/bondcraft/f-reaction-arrows.webp",
+        "caption": "Arrow selector with reaction, equilibrium, resonance, and retrosynthesis options."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Curved-arrow option available; drag and clicks produced no visible arrow.",
+      "shot": {
+        "image": "evidence/bondcraft/f-mechanism-arrows.webp",
+        "caption": "Arrow selector with one- and two-electron mechanism options."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Chemical text symbols include reaction arrows, Å and Greek letters."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Mixed fonts, bold, italic, subscripts and superscripts in canvas text."
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Editable brackets and curved arrows; no general shape objects."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Selected objects align left, center, right, top, middle or bottom."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Grouped objects move together; grouping and ungrouping are supported."
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.bondcraft.net/acs-style-chemical-editor",
+      "note": "ACS, Nature, Beilstein and Royal Society of Chemistry presets."
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Custom bond/font settings are session-only, omitted from saved projects."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Individually color atoms, bonds, arrows and text."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.bondcraft.net/#manual",
+      "note": "Octet violations receive red wavy halos.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.bondcraft.net/stereochemistry-drawing-tool",
+      "note": "Automatic R/S labels; alkene geometry encoded in isomeric SMILES.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Caffeine displayed C8H10N4O2 and mass 194.19.",
+      "shot": {
+        "image": "evidence/bondcraft/f-formula-mass.webp",
+        "caption": "Caffeine structure with its molecular formula and mass."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name import command found in editor controls."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name generation command found in editor controls."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Numeric repeats expand formula, mass and SMILES beyond graphical brackets.",
+      "shot": {
+        "image": "evidence/bondcraft/f-polymers.webp",
+        "caption": "Bracket templates include brackets marked with a repeating-unit n."
+      }
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js",
+      "note": "Amino-acid and DNA/RNA monomer templates provide directional connection anchors."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view found in menus or toolbars."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/cdxml-viewer",
+      "note": "Exported and reimported caffeine CDXML; formula and SMILES matched.",
+      "shot": {
+        "image": "evidence/bondcraft/f-cdxml.webp",
+        "caption": "ChemDraw panel with CDXML export and import options."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js"
+      }
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Project opener rejected MOL; picker accepts JSON and SVG."
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/smiles-to-structure",
+      "note": "Imported and copied both fixture SMILES.",
+      "shot": {
+        "image": "evidence/bondcraft/f-smiles.webp",
+        "caption": "Benzene on the canvas with its SMILES string."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly, import, with CoordGen layout); In-house (export)",
+        "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/chemical-structure-export",
+      "note": "Downloaded SVGs for both 2D fixtures.",
+      "shot": {
+        "image": "evidence/bondcraft/f-svg-export.webp",
+        "caption": "Image export panel listing SVG, PNG, and EPS options."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Image export offers PNG, SVG, and EPS."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.bondcraft.net/chemical-structure-export",
+      "note": "Downloaded caffeine PNG from export dialog.",
+      "shot": {
+        "image": "evidence/bondcraft/f-png-export.webp",
+        "caption": "Image export panel listing PNG, SVG, and EPS options."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Free usage terms specify academic and personal use.",
+    "CDXML exchange may omit unsupported graphical elements.",
+    "Custom drawing styles are not included in saved project files."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "0.2.1",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://www.bondcraft.net/#editor",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/bondcraft/simple.svg",
+        "note": "Imported current SMILES and placed the generated structure on the canvas.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/bondcraft/complex.svg",
+        "note": "Imported current SMILES and placed the generated structure on the canvas.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": null,
+        "image": null,
+        "note": "No 3D view found in the editor controls.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/bondcraft/canvas.webp",
+    "canvasLight": "evidence/bondcraft/canvas-light.webp",
+    "canvasDark": "evidence/bondcraft/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Dark mode changes the interface; the canvas remains white."
+    },
+    "memory": null,
+    "observations": [
+      "Default caffeine formula and mass displayed as C8H10N4O2 and 194.19.",
+      "Paclitaxel appeared with wedge bonds and stereochemical labels.",
+      "Copied SMILES matched both fixtures by RDKit isomeric canonicalization.",
+      "SMILES import required a click to place each generated structure."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.bondcraft.net/",
+    "https://www.linkedin.com/posts/marcel-heinz_chemistry-organicchemistry-cheminformatics-activity-7460337969649053697-qoEf",
+    "https://www.biophys.mpg.de/2205691/marcel-heinz"
+  ],
+  "builtOn": {
+    "id": "p66",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "CoordGen"
+    ],
+    "source": "https://zenodo.org/records/21078713/files/BondCraft_Manual_v0.2.0.pdf#page=31",
+    "note": "Custom canvas; RDKit and CoordGen provide SMILES parsing and imported coordinates."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "BondCraft Canvas, SVG and EPS renderer",
+    "language": "JavaScript",
+    "source": "https://www.bondcraft.net/assets/index-Pb2z6oOc.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "RDKit and CoordGen WebAssembly chemistry"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "JavaScript is generated; WebAssembly belongs to third-party chemistry libraries.",
+  "thirdParty": {
+    "summary": "BSD-3-Clause (RDKit/CoordGen); Apache-2.0 (bundled Arimo/Tinos fonts).",
+    "source": "https://zenodo.org/records/21078713/files/BondCraft_Manual_v0.2.0.pdf#page=31",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "CoordGen",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/schrodinger/coordgenlibs/blob/master/LICENSE"
+      }
+    ]
+  }
+}

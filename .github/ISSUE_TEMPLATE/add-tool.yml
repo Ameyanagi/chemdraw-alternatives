@@ -1,0 +1,18 @@
+name: Add a tool
+description: Suggest chemical drawing software for the comparison
+title: "Add tool: "
+labels: [add-tool]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Website or GitHub link
+      description: A link is all we need. We take it from there.
+      placeholder: https://github.com/you/your-tool
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else we should know?
+      description: Optional. If you work on this tool, please say so.

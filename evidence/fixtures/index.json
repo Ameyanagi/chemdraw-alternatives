@@ -1,0 +1,32 @@
+{
+  "simple": {
+    "name": "caffeine",
+    "pubchemCid": 2519,
+    "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+    "formula": "C8H10N4O2",
+    "inchiKey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+    "mass": 194.19,
+    "heavyAtoms": 14,
+    "stereocenters": 0
+  },
+  "complex": {
+    "name": "paclitaxel",
+    "pubchemCid": 36314,
+    "smiles": "CC1=C2[C@H](C(=O)[C@@]3([C@H](C[C@@H]4[C@]([C@H]3[C@@H]([C@@](C2(C)C)(C[C@@H]1OC(=O)[C@@H]([C@H](C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C",
+    "formula": "C47H51NO14",
+    "inchiKey": "RCINICONZNJXQF-MZXODVADSA-N",
+    "mass": 853.92,
+    "heavyAtoms": 62,
+    "stereocenters": 11
+  },
+  "threed": {
+    "name": "cholesterol",
+    "pubchemCid": 5997,
+    "smiles": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+    "formula": "C27H46O",
+    "inchiKey": "HVYWMOMLDIMFJA-DPAQBDIFSA-N",
+    "mass": 386.66,
+    "heavyAtoms": 28,
+    "stereocenters": 8
+  }
+}

@@ -1,0 +1,639 @@
+{
+  "id": "p72",
+  "slug": "erezdraw",
+  "name": "ErezDraw",
+  "rank": 21,
+  "tier": "alternative",
+  "tierReason": "Implemented structure, reaction, text and layout tools export vector drawings, although the application remains an incomplete prototype.",
+  "summary": "A prototype desktop and self-hosted web editor for drawing chemical structures, reactions, and figures.",
+  "website": null,
+  "repo": "https://github.com/nathantallen/ErezDraw",
+  "docs": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md",
+  "vendor": "Nathan Allen",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-3.0-or-later",
+    "text": "GNU GPL version 3 or later.",
+    "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/THIRD-PARTY-NOTICES.md"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/COPYING"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "windows-2026-10-15-template-picker",
+    "date": null,
+    "source": "https://github.com/nathantallen/ErezDraw/tree/windows-2026-10-15-template-picker"
+  },
+  "engine": {
+    "rendering": "Custom JavaScript/SVG",
+    "chemistry": "RDKit",
+    "ui": "PySide6/Qt desktop shells; HTML/CSS/JavaScript web interface",
+    "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#verification"
+  },
+  "languages": [
+    "JavaScript",
+    "Python",
+    "HTML",
+    "CSS"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#drawing-and-files",
+      "note": "Drew single, double and triple bonds by hand.",
+      "shot": {
+        "image": "evidence/erezdraw/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L126",
+      "note": "Drew solid wedge, hashed wedge and wavy bonds.",
+      "shot": {
+        "image": "evidence/erezdraw/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/web/desktop.js#L135",
+      "note": "Coordination bonds only; no hydrogen-bond or quadruple-bond tool."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#chemcanvas-adaptations-and-cp-centroid-tool",
+      "note": "Clicking a double bond cycles left, right and center."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#drawing-and-files",
+      "note": "Placed a six-membered ring; aromatic ring tool also visible.",
+      "shot": {
+        "image": "evidence/erezdraw/f-rings.webp",
+        "caption": "Six-membered ring and aromatic rings on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#arrow-palette-and-chair-correction",
+      "note": "Includes two cyclohexane chair templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L134",
+      "note": "Dragging determines zigzag chain length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#structure-view-and-organometallic-update-09-development",
+      "note": "Placed the triphenylphosphine ligand template.",
+      "shot": {
+        "image": "evidence/erezdraw/f-templates.webp",
+        "caption": "Triphenylphosphine drawing on the canvas."
+      }
+    },
+    "custom-templates": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/FEATURE-AUDIT.md#L51",
+      "note": "No general user template library."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L170",
+      "note": "Limited aliases, including Ph and OMe, are chemically interpreted."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/web/desktop.js#L125",
+      "note": "Arbitrary labels and formal charges; no editable isotope field."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/DEVELOPMENT-STATUS.md#L10",
+      "note": "Radical and lone-pair placement on atoms persists in drawings."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/KEYBOARD-SHORTCUTS.md#implemented",
+      "note": "Hover shortcuts change atom labels, bond orders and styles."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#interface",
+      "note": "Lasso selection, rotation, resizing and horizontal/vertical flips."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#structure-perspective-tool",
+      "note": "X/Y trackball tilts structures; depth persists in native drawings."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#arrow-palette-and-chair-correction",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/erezdraw/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/graphics.js#L43",
+      "note": "Drew and moved a curved half-head arrow.",
+      "shot": {
+        "image": "evidence/erezdraw/f-mechanism-arrows.webp",
+        "caption": "Selected curved fishhook arrow on the canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/FEATURE-AUDIT.md#L58",
+      "note": "No atom-to-atom reaction mapping."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#drawing-and-text",
+      "note": "Graphical s, p, dxy, dz2 and hybrid orbitals."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#drawing-and-text",
+      "note": "Captions support fonts, substring formatting, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L286",
+      "note": "Editable rectangles, ellipses, brackets and Bézier curves."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#interface",
+      "note": "Six alignment modes and horizontal/vertical equal-gap distribution."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#interface",
+      "note": "Persistent Group, Ungroup and integral grouping commands."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#chemistry-checks-and-cleanup",
+      "note": "RDKit 2D cleanup protects metal, coordination and wedge/hash components.",
+      "engine": {
+        "library": "RDKit (Python rdDepictor.Compute2DCoords)",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/chemistry.py#L131-L158"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/web/README.md#L52",
+      "note": "Built-in ACS Document 1996 preset."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/web/README.md#L52",
+      "note": "Custom bond and font settings persist in reusable drawing files."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L206",
+      "note": "Atom labels and captions can be colored individually."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/web/desktop.js#L75",
+      "note": "Editable page dimensions and margins; no multipage layout."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#drawing-and-text",
+      "note": "Editable tables; dedicated TLC tool was removed."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#chemistry-checks-and-cleanup",
+      "note": "Manual RDKit checks; metal and unsupported-label coverage is incomplete.",
+      "engine": {
+        "library": "RDKit (Python Chem.DetectChemistryProblems/SanitizeMol); in-house coverage warnings",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/chemistry.py#L94-L129"
+      }
+    },
+    "stereo-perception": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/FEATURE-AUDIT.md#L54",
+      "note": "No R/S or E/Z assignment."
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#structure-view-and-organometallic-update-09-development",
+      "note": "MOL caffeine: C8H10N4O2, molecular weight 194.194.",
+      "shot": {
+        "image": "evidence/erezdraw/f-formula-mass.webp",
+        "caption": "Molecular analysis shows caffeine’s formula and molecular weight."
+      },
+      "engine": {
+        "library": "RDKit (Python rdMolDescriptors and periodic table)",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L170-L179"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L197",
+      "note": "Offline RDKit logP and TPSA estimates for organic molecules.",
+      "engine": {
+        "library": "RDKit (Python Descriptors; Crippen logP and TPSA); optional PubChem PUG REST property lookup",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L197-L201"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#structure-view-and-organometallic-update-09-development",
+      "note": "Caffeine loaded using PubChem; absent from local dictionary.",
+      "engine": {
+        "library": "In-house common-name dictionary (Python); optional PubChem PUG REST web service; RDKit (Python structure generation)",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L153-L168"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L228",
+      "note": "PubChem returned 1,3,7-trimethylpurine-2,6-dione for MOL caffeine.",
+      "shot": {
+        "image": "evidence/erezdraw/f-structure-to-name.webp",
+        "caption": "Caffeine structure with its systematic name beneath it."
+      },
+      "engine": {
+        "library": "PubChem PUG REST web service (Python client; exact structure matches)",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L228-L245"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#predicted-nmr-and-fragment-masses",
+      "note": "Local 1H/13C shifts; limited coverage and approximate proton environments.",
+      "engine": {
+        "library": "nmr-predictor + openchemlib-extended (JavaScript; local HOSE reference matching with bundled proton/nmrshiftdb2 carbon data); in-house Python/RDKit proton refinement",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/nmr/source/entry.js#L1-L14"
+      }
+    },
+    "markush": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/FEATURE-AUDIT.md#L57",
+      "note": "No query atoms, alternative groups or generic matching rules."
+    },
+    "polymers": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/FEATURE-AUDIT.md#L58",
+      "note": "No repeat-unit model."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L159",
+      "note": "PubChem successfully resolved caffeine name and structure.",
+      "engine": {
+        "library": "PubChem PUG REST web service (Python urllib client)",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L153-L168"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/FEATURE-AUDIT.md#L55",
+      "note": "SDF opens flat; perspective edits drawings without a model viewer."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/web/README.md#L23",
+      "note": "Imported three-atom CDXML; no CDXML export command.",
+      "engine": {
+        "library": "In-house (Python xml.etree.ElementTree importer; import only)",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/chemdraw_io.py#L128-L153"
+      }
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/web/README.md#L23",
+      "note": "Imports supported objects; no CDX export or lossless round trip.",
+      "engine": {
+        "library": "In-house (Python struct-based binary CDX parser; import only)",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/chemdraw_io.py#L48-L131"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L106",
+      "note": "Imported MOL and SDF; exported MOL.",
+      "engine": {
+        "library": "In-house (JavaScript MOL V2000 parser/writer; first SDF record only)",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L106-L110"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/web/desktop.js#L114",
+      "note": "Paclitaxel imports correctly; caffeine becomes +3. No SMILES export.",
+      "engine": {
+        "library": "RDKit (Python Chem.MolFromSmiles import); output limited to PubChem-matched properties",
+        "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/structure_ops.py#L38-L53"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L357",
+      "note": "Default SVG files saved for both 2D fixtures."
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "Print PDF rasterizes the entire editor, including toolbars.",
+      "shot": {
+        "image": "evidence/erezdraw/f-pdf-export.webp",
+        "caption": "Printed page includes the editor toolbar and caffeine drawing."
+      }
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L358",
+      "note": "Default output is 276×243 pixels, without DPI metadata.",
+      "shot": {
+        "image": "evidence/erezdraw/f-png-export.webp",
+        "caption": "Exported PNG of the caffeine drawing."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/MANUAL-COMPATIBILITY.md#L26",
+      "note": "No proprietary ChemDraw clipboard data."
+    },
+    "office": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/README.md#charges-pubchem-and-word",
+      "note": "Word receives graphics; no ChemDraw OLE editing."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Development checkpoint with conflicting historical documentation; no feature-complete release is claimed.",
+    "ChemDraw imports are lossy; ChemDraw export and editable Office round trips are unavailable.",
+    "Organometallic checks and NMR predictions have explicit coverage limits."
+  ],
+  "github": {
+    "stars": 5,
+    "pushedAt": "2026-10-29T12:48:31Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "178f2b5",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://codeload.github.com/nathantallen/ErezDraw/zip/178f2b534b74da128a5710f4654ffa193c6e4b01",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 20858221,
+    "installedBytes": 660791296,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "smiles",
+        "image": "evidence/erezdraw/simple.svg",
+        "note": "SMILES import adds +3 charge; exported MOL fails aromatic sanitization.",
+        "structure": "mismatch"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/erezdraw/complex.svg",
+        "note": "Default SMILES layout; exported stereochemistry matches all 11 fixture centers.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/erezdraw/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Default canvas is white; labels use Arial 10 pt.",
+      "SMILES caffeine gains three positive nitrogen charges.",
+      "Caffeine MOL export fails RDKit aromatic sanitization.",
+      "Paclitaxel retains all 11 fixture stereocenters.",
+      "Default PNG is 276×243 pixels without DPI metadata."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 20858221,
+  "references": [
+    "https://github.com/nathantallen/ErezDraw"
+  ],
+  "builtOn": {
+    "id": "p72",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "ChemCanvas",
+      "nmr-predictor",
+      "OpenChemLib"
+    ],
+    "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L258",
+    "note": "Custom SVG editor; geometry partly adapted from ChemCanvas; RDKit and OpenChemLib support chemistry."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ErezDraw SVG; ported ChemCanvas geometry",
+    "language": "JavaScript",
+    "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/assets/editor.html#L258-L291"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Chemistry, import, desktop and server backends"
+    },
+    {
+      "language": "C++",
+      "role": "Native RDKit chemistry"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Batchfile, Shell and Dockerfile handle launch, build and deployment.",
+  "thirdParty": {
+    "summary": "Includes GPL-3.0-or-later (ChemCanvas), LGPL-3.0 (PySide6/Qt), and GPL-2.0-or-later with PyInstaller exception; NMRShiftDB2 data has ODbL-derived share-alike terms requiring OSI-approved dependent software.",
+    "source": "https://github.com/nathantallen/ErezDraw/blob/178f2b534b74da128a5710f4654ffa193c6e4b01/THIRD-PARTY-NOTICES.md",
+    "notice": "https://github.com/nathantallen/ErezDraw/blob/main/THIRD-PARTY-NOTICES.md",
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "ChemCanvas",
+        "license": "GPL-3.0-or-later",
+        "source": "https://github.com/ksharindam/chemcanvas/blob/main/pyproject.toml"
+      },
+      {
+        "name": "nmr-predictor",
+        "license": "MIT",
+        "source": "https://github.com/cheminfo-js/nmr-predictor/blob/master/LICENSE"
+      },
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      }
+    ]
+  }
+}

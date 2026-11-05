@@ -1,0 +1,13 @@
+---
+import { href } from '../lib/paths';
+import { canvasZoom, notRunReason, type Tool } from '../lib/tools';
+
+interface Props { tool: Tool; mode?: 'light' | 'dark'; class?: string }
+const { tool, mode = 'light', class: className } = Astro.props;
+const zoom = canvasZoom(tool, mode);
+const absent = tool.hands?.themes ? `No ${mode} mode` : mode === 'dark' ? 'Not checked yet' : 'No screenshot';
+const reason = tool.id === 'p01' ? 'Its license bars showing the interface' : tool.hands?.ran ? absent : notRunReason(tool);
+---
+{zoom
+  ? <a class:list={['hover:bg-silica block no-underline', className]} href={href(`tools/${tool.slug}/`)} {...zoom}><img class="size-full object-contain" src={zoom['data-zoom']} loading="lazy" decoding="async" alt={`${tool.name} main canvas, ${mode} mode`} /></a>
+  : <p class:list={['bg-silica text-muted flex items-center justify-center px-2 text-center text-[0.8rem] leading-tight', className]}>{reason}</p>}

@@ -1,0 +1,586 @@
+{
+  "id": "p21",
+  "slug": "jchempaint",
+  "name": "JChemPaint",
+  "rank": 40,
+  "tier": "alternative",
+  "tierReason": "The standalone editor creates 2D structures and reactions with vector SVG and PDF export for publication figures.",
+  "summary": "A Java desktop editor for drawing and exporting two-dimensional chemical structures and reactions.",
+  "website": "https://jchempaint.github.io/",
+  "repo": "https://github.com/JChemPaint/jchempaint",
+  "docs": "https://github.com/JChemPaint/jchempaint/wiki",
+  "vendor": "JChemPaint Developers",
+  "license": {
+    "kind": "open-source",
+    "spdx": "LGPL-2.1-or-later",
+    "text": "GNU Lesser General Public License 2.1 or later.",
+    "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/license.html"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/JChemPaint/jchempaint/wiki#features"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/JChemPaint/jchempaint/releases"
+  },
+  "engine": {
+    "rendering": "CDK rendering via Java2D/AWT; CDK DepictionGenerator for SVG and PDF",
+    "chemistry": "Chemistry Development Kit (CDK)",
+    "ui": "Java Swing",
+    "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/RenderPanel.java"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/contextMenuBond.html",
+      "note": "Drew single, double, and triple bonds by clicking atoms.",
+      "shot": {
+        "image": "evidence/jchempaint/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/contextMenuBond.html",
+      "note": "Solid wedge, hashed wedge, and wavy bonds drawn successfully.",
+      "shot": {
+        "image": "evidence/jchempaint/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/JCPGUI_application.properties",
+      "note": "Quadruple bonds exposed; coordination bonds lack a default UI binding."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/bottomButtons.html",
+      "note": "Inserted benzene using the dedicated ring tool.",
+      "shot": {
+        "image": "evidence/jchempaint/f-rings.webp",
+        "caption": "A benzene ring on the canvas beside the ring toolbar."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/drawingButtons.html",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/wiki/Templates",
+      "note": "Inserted Morphine from the built-in template library."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/dialog/EnterElementSwingModule.java",
+      "note": "Recognized group abbreviations expand into connected atoms during insertion."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/contextMenuAtom.html",
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/contextMenuAtom.html",
+      "note": "Single-electron radicals can be added and removed."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/hotkeys.properties",
+      "note": "Context-sensitive atom and bond keyboard shortcuts."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/controller/MoveModule.java",
+      "note": "Lasso selection, rotation, flipping and coordinate-based resizing."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/controller/Rotate3DModule.java",
+      "note": "Quasi-3D projection transforms selected two-dimensional drawing coordinates."
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/render/src/main/java/org/openscience/jchempaint/renderer/generators/ReactionArrowGenerator.java",
+      "note": "Forward reaction arrow worked; no alternative arrow styles found.",
+      "shot": {
+        "image": "evidence/jchempaint/f-reaction-arrows.webp",
+        "caption": "A forward reaction arrow on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved electron-pushing tool found in menus or toolbars."
+    },
+    "reaction-data": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/reactions.html",
+      "note": "Reaction tool assigned reactants and products while drawing forward arrow."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/SnapGuides.java",
+      "note": "Snap guides align molecule bounds and centers during dragging."
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/menuTools.html",
+      "note": null,
+      "engine": {
+        "library": "CDK StructureDiagramGenerator (Java)",
+        "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/controller/ControllerHub.java#L1986"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/dialog/editor/PropertiesModelEditor.java",
+      "note": "Bond settings persist; font-selection controls are disabled."
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Element coloring and background color controls visible; individual colors unverified."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/RenderPanel.java#L557",
+      "note": "Formula displayed in status bar; no mass command found.",
+      "shot": {
+        "image": "evidence/jchempaint/f-formula-mass.webp",
+        "caption": "A molecular structure and its formula in the status bar."
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Direct entry lists CAS, SMILES, InChI; no name command."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Tools offers SMILES/InChI generation; no naming command found."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/rgroup_tutorial.html",
+      "note": "R-group queries, attachment points, logic and enumeration."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/InsertTextPanel.java#L189",
+      "note": "CAS lookup uses legacy PubChem endpoints; service availability unverified.",
+      "engine": {
+        "library": "PubChem Entrez/E-utilities (remote HTTP), In-house Java client, and CDK SmilesParser (Java; legacy endpoints)",
+        "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/InsertTextPanel.java#L189"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "3D SDF rejected: cannot display without 2D coordinates."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Absent from inspected Open and Save As format lists."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/whatIs.html",
+      "note": "MOL round-trip succeeded; SDF parser requested 2D layout.",
+      "engine": {
+        "library": "CDK MDLV2000Reader and MDLV2000Writer (Java; general SDF import only)",
+        "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/io/FileHandler.java#L101"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/wiki#jchempaint-editor-applet",
+      "note": "Caffeine paste and generation worked; paclitaxel file autodetection failed.",
+      "engine": {
+        "library": "CDK SmilesParser, SMILESReader, SmilesGenerator and SMILESWriter (Java)",
+        "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/action/SaveAsAction.java#L417"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/menuTools.html",
+      "note": "Generates InChI; insertion also accepts InChI.",
+      "engine": {
+        "library": "CDK cdk-inchi (Java) through JNA-InChI to native InChI (C)",
+        "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/inchi-jni/src/main/java/org/openscience/jchempaint/inchi/JNIInChIHandler.java#L19"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/action/SaveAsAction.java#L232",
+      "note": "Reads and writes MDL RXN reaction files."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/en_US/contain/menuFile.html",
+      "note": null
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/RenderPanel.java#L374",
+      "note": "Print-to-PDF succeeded; default A4 output clipped the rightmost structure."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/RenderPanel.java#L392",
+      "note": "Image-save attempt failed: no file type chosen; automation limitation."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/controller/ControllerHub.java#L234",
+      "note": "Custom Java controller modules can receive editor mouse events."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/JChemPaintPanel.java#L79",
+      "note": "Reusable Java Swing editor panel with documented constructors."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Official downloads are nightly builds; the JAR requires an installed Java runtime.",
+    "Legacy browser applets are obsolete and absent from the current source.",
+    "Bundled documentation has outdated export, transform, bond-tool and Java-version descriptions."
+  ],
+  "github": {
+    "stars": 149,
+    "pushedAt": "2026-10-30T09:50:54Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "3.2.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "jar",
+    "artifact": "https://downloads.sourceforge.net/project/cdk/JChemPaint/3.2.0/jchempaint-3.2.0.jar",
+    "ran": true,
+    "failure": "Latest historical stable 3.3-1210 JAR returned 404; available archived stable 3.2.0 tested. GUI automation could not commit PNG/SVG format selection.",
+    "downloadBytes": 6563317,
+    "installedBytes": 6717440,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/jchempaint/simple.png",
+        "note": "Kekule SMILES imported; default layout retained; cropped canvas, native SVG and MOL saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/jchempaint/complex.png",
+        "note": "Kekule SMILES imported; overlapping auto-layout retained; cropped canvas, native SVG and MOL saved.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "3D SDF requires 2D coordinates; no rotatable 3D view.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/jchempaint/canvas.webp",
+    "canvasLight": "evidence/jchempaint/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "follows system",
+      "note": "Dark chrome observed; molecule entry failed, so dark capture remains unverified."
+    },
+    "memory": null,
+    "observations": [
+      "Caffeine paste auto-layout shows aromatic ring bonds as single lines.",
+      "Default heteroatoms are colored; hydrogens are largely implicit.",
+      "Paclitaxel MOL displays wedge and hashed stereo bonds.",
+      "Default PDF printing clips the rightmost template at the page boundary.",
+      "The app explicitly requires 2D coordinates to display cholesterol.",
+      "Current Kekule SMILES imported successfully for both caffeine and paclitaxel through Direct Entry.",
+      "Paclitaxel SMILES auto-layout contains overlapping bonds and labels; no cleanup or repositioning was applied.",
+      "Native SVG and MOL saving succeeded after keyboard format selection was committed with Enter.",
+      "Generating SMILES from imported paclitaxel failed: Comparison method violates its general contract!"
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 6563317,
+  "references": [
+    "https://jchempaint.github.io/",
+    "https://github.com/JChemPaint/jchempaint"
+  ],
+  "builtOn": {
+    "id": "p21",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "CDK",
+      "InChI"
+    ],
+    "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/RenderPanel.java",
+    "note": "Own canvas and controllers; CDK provides chemistry and rendering, with InChI for identifiers."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "CDK StandardGenerator",
+    "language": "Java",
+    "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/src/main/java/org/openscience/jchempaint/RenderPanel.java#L319"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Native InChI and macOS clipboard bridge"
+    },
+    {
+      "language": "Swift",
+      "role": "macOS native clipboard"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML/CSS docs; C/Swift clipboard bindings and utilities; Shell/Makefile packaging.",
+  "thirdParty": {
+    "summary": "Includes LGPL-2.1-or-later CDK/JNA-InChI, LGPL-2.1 XOM, GPL-2.0 with Classpath exception vecmath, and Apache-2.0 libraries.",
+    "source": "https://github.com/JChemPaint/jchempaint/blob/1494ae4f90316e4fa215e7a125f9ffa7406c74e1/core/pom.xml",
+    "notice": "https://github.com/JChemPaint/jchempaint/blob/master/core/src/main/resources/org/openscience/jchempaint/resources/userhelp_jcp/license.html",
+    "libraries": [
+      {
+        "name": "Chemistry Development Kit",
+        "license": "LGPL-2.1-or-later",
+        "source": "https://github.com/cdk/cdk/blob/main/pom.xml"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

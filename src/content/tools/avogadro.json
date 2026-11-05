@@ -1,0 +1,69 @@
+{
+  "id": "p38",
+  "slug": "avogadro",
+  "name": "Avogadro",
+  "rank": 129,
+  "tier": "related",
+  "tierReason": "Avogadro builds and visualizes 3D molecular models rather than authoring publication-grade 2D chemical drawing documents.",
+  "summary": "A desktop editor for building, optimizing, and visualizing three-dimensional molecules and materials.",
+  "website": "https://avogadro.cc/",
+  "repo": "https://github.com/OpenChemistry/avogadroapp",
+  "docs": "https://avogadro.cc/docs/",
+  "vendor": "OpenChemistry / Avogadro Teams",
+  "license": {
+    "kind": "open-source",
+    "spdx": "BSD-3-Clause",
+    "text": "Permissive BSD 3-Clause license.",
+    "source": "https://avogadro.cc/"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://avogadro.cc/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "2.1.0",
+    "date": "2026-10-23",
+    "source": "https://github.com/OpenChemistry/avogadrolibs/releases/tag/2.1.0"
+  },
+  "engine": {
+    "rendering": "Custom OpenGL/GLSL renderer; OpenGL framebuffer capture for PNG; Qt QPainter/QSvgGenerator for SVG.",
+    "chemistry": "Avogadro Core and Open Babel",
+    "ui": "Qt Widgets",
+    "source": "https://github.com/OpenChemistry/avogadrolibs/tree/0060fab355983e9375bda5575401ec7548b17b1b/avogadro"
+  },
+  "languages": [
+    "C++"
+  ],
+  "features": {},
+  "caveats": [
+    "SVG export projects the 3D model rather than laying out a 2D chemical document.",
+    "Input generators require a configured Python environment."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 96021909,
+  "references": [
+    "https://avogadro.cc/"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

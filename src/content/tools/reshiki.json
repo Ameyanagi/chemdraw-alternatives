@@ -1,0 +1,775 @@
+{
+  "id": "p02",
+  "slug": "reshiki",
+  "name": "ReShiki",
+  "rank": 2,
+  "tier": "alternative",
+  "tierReason": "Its standalone editor combines chemical drawing, captions, layout and publication-scale vector exports.",
+  "summary": "A chemical drawing editor for molecules, reaction schemes and publication figures.",
+  "website": "https://reshiki.com/",
+  "repo": "https://github.com/Ameyanagi/ReShiki",
+  "docs": "https://reshiki.com/guide/first-molecule/",
+  "vendor": "Ameyanagi",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT OR Apache-2.0",
+    "text": "Original code is MIT or Apache-2.0; third-party components retain their licenses.",
+    "source": "https://reshiki.com/guide/install/#1-download-and-open"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://reshiki.com/guide/install/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.13.1",
+    "date": "2026-10-26",
+    "source": "https://github.com/Ameyanagi/ReShiki/releases/tag/v0.13.1"
+  },
+  "engine": {
+    "rendering": "Iced Canvas and a shared vector scene for SVG, vector PDF and raster PNG",
+    "chemistry": "In-house Rust engine with native InChI and a Rust OPSIN port",
+    "ui": "Iced 0.14",
+    "source": "https://reshiki.com/developer/architecture/"
+  },
+  "languages": [
+    "Rust"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/guide/first-molecule/#change-a-bond",
+      "note": "Drew three bond orders; changed an existing bond and undid it.",
+      "shot": {
+        "image": "evidence/reshiki/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/bond-tools/",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/reshiki/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/bond-tools/",
+      "note": "Dative, hydrogen and quadruple bonds; molecular interchange has limits."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/bond-tools/#workflow",
+      "note": "Automatic, centered, left and right placement.",
+      "shot": {
+        "image": "evidence/reshiki/f-double-bond-side.webp",
+        "caption": "Double-bond placement menu with centered, left and right options."
+      }
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/ring-presets/#ring-workflow",
+      "note": "Inserted pentagon and benzene using ring tools.",
+      "shot": {
+        "image": "evidence/reshiki/f-rings.webp",
+        "caption": "Pentagon and benzene rings beside the template library."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/ring-presets/#ring-workflow",
+      "note": "Inserted Chair A from the ring menu.",
+      "shot": {
+        "image": "evidence/reshiki/f-conformers.webp",
+        "caption": "A chair ring on the canvas and the conformers category."
+      }
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/chain-tools/#drawing-workflow",
+      "note": "Drag zigzag chains with atom-count previews and exact length control."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/guide/templates/#macrocycles-and-ligands",
+      "note": "Placed built-in L-alanine template on canvas.",
+      "shot": {
+        "image": "evidence/reshiki/f-templates.webp",
+        "caption": "L-alanine template selected on the canvas and in the library."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/templates/#keep-a-fragment-for-later",
+      "note": "Save selected drawing objects as reusable local templates.",
+      "shot": {
+        "image": "evidence/reshiki/f-custom-templates.webp",
+        "caption": "The template library includes Save selection as template."
+      }
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/labels/#shorten-a-group",
+      "note": "Ph, Boc and OMe retain expandable graphs; attachment restrictions apply."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/labels/#number-atoms",
+      "note": "Charges, isotopes, elements and literal atom labels."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/scientific-symbols/#add-a-mark-to-an-atom",
+      "note": "Atom-owned radical dots and positioned lone pairs."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/shortcuts/#at-a-bond",
+      "note": "Hover targets support atom labels and bond-order shortcuts."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/editing/#select-what-to-change",
+      "note": "Lasso selection, rotation, flips and resizing.",
+      "shot": {
+        "image": "evidence/reshiki/f-selection-tools.webp",
+        "caption": "Selected structure with resize and rotation handles beside selection tools."
+      }
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/editing/#tilt-a-drawing",
+      "note": "X/Y tilt retains depth without changing chemical stereochemistry.",
+      "shot": {
+        "image": "evidence/reshiki/f-perspective.webp",
+        "caption": "Structure preview with tilt, roll and depth controls."
+      }
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/arrows/#draw-an-arrow",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/reshiki/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/arrows/#bend-and-aim-an-arrow",
+      "note": "Drew full and half-head curves; dragged bend handle.",
+      "shot": {
+        "image": "evidence/reshiki/f-mechanism-arrows.webp",
+        "caption": "Curved arrows and the selected arrow’s bend controls."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/reactions/#import-and-export",
+      "note": "Explicit participant roles persist through native files, RXN and reaction SMILES.",
+      "shot": {
+        "image": "evidence/reshiki/f-reaction-data.webp",
+        "caption": "Reaction roles panel with RXN V3000 and reaction SMILES options."
+      }
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/reactions/#use-atom-maps",
+      "note": "Manual maps and bounded, reviewed automatic mapping.",
+      "shot": {
+        "image": "evidence/reshiki/f-atom-mapping.webp",
+        "caption": "Atom maps panel with manual and automatic mapping controls."
+      }
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/scientific-symbols/#draw-an-orbital",
+      "note": "Editable orbital shapes and chemical symbols."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/labels/#write-a-caption",
+      "note": "Fonts and scripts supported; complex caret layout uses separate preview.",
+      "shot": {
+        "image": "evidence/reshiki/f-rich-text.webp",
+        "caption": "Text formatting controls and an ethanol caption on the canvas."
+      }
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/graphics/#draw-a-shape",
+      "note": "Editable shapes, brackets, Bézier curves and pen paths.",
+      "shot": {
+        "image": "evidence/reshiki/f-shapes.webp",
+        "caption": "Drawing toolbar includes rectangle, ellipse and bracket tools."
+      }
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/selection-and-groups/#workflow",
+      "note": "Align edges or centers; distribute groups and connected components."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/selection-and-groups/#workflow",
+      "note": "Nested groups retain complete molecules and captions.",
+      "shot": {
+        "image": "evidence/reshiki/f-groups.webp",
+        "caption": "Group command above a selected structure."
+      }
+    },
+    "cleanup": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/selection-cleanup/",
+      "note": "Selection cleanup leaves attachment-containing complexes unchanged; whole-scheme cleanup is missing.",
+      "engine": {
+        "library": "Ported from RDKit RDDepictor (Rust); In-house (Rust layout refinements)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/io/src/engine/native_cleanup.rs#L89"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/figures/",
+      "note": "JACS/ACS, Nature and RSC drawing presets; complete stationery remains unsupported.",
+      "shot": {
+        "image": "evidence/reshiki/f-journal-styles.webp",
+        "caption": "Drawing style panel shows the JACS / ACS preset."
+      }
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/drawing-styles/#reuse-a-style",
+      "note": "Save and load reusable bond and font settings."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/typography/#editing-workflow",
+      "note": "Color selected labels, bonds, captions, arrows and graphics independently.",
+      "shot": {
+        "image": "evidence/reshiki/f-color.webp",
+        "caption": "Bond properties include a color field and Apply button."
+      }
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/publication-pages/",
+      "note": "Standard/custom paper and page grids; uniform sizes, no automatic pagination.",
+      "shot": {
+        "image": "evidence/reshiki/f-pages.webp",
+        "caption": "Publication page settings show A4 dimensions, margins and page grid."
+      }
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/pictures/",
+      "note": "Embedded PNG, JPEG, TIFF and WebP pictures; no cropping.",
+      "shot": {
+        "image": "evidence/reshiki/f-pictures.webp",
+        "caption": "Structure import panel offers Paste picture and picture file import."
+      }
+    },
+    "tlc-tables": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/feature-status/#arrows-graphics-and-document-composition",
+      "note": "No TLC, gel or editable table objects."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/feature-status/#chemistry-reactions-and-specialist-workflows",
+      "note": "Chemistry errors appear in Properties/Labels; no per-atom warning overlays.",
+      "engine": {
+        "library": "Ported from RDKit (Rust)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/chemistry/src/graph.rs#L1"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/atom-labels/",
+      "note": "Computes tetrahedral R/S and ordinary alkene E/Z descriptors.",
+      "engine": {
+        "library": "Ported from RDKit CIPLabeler and SiMolecule centres (Rust)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/licenses/rdkit/NOTICE"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/feature-status/#chemistry-reactions-and-specialist-workflows",
+      "note": "Caffeine: C8H10N4O2, 194.194 g/mol.",
+      "shot": {
+        "image": "evidence/reshiki/f-formula-mass.webp",
+        "caption": "Molecular properties show C2H4 and 28.054 g/mol for the selection."
+      },
+      "engine": {
+        "library": "Ported from RDKit (Rust)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/chemistry/src/lib.rs#L1"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/feature-status/#chemistry-reactions-and-specialist-workflows",
+      "note": "Ethanol: cLogP -0.00; TPSA 20.23 square angstroms.",
+      "engine": {
+        "library": "Ported from RDKit (Rust descriptors)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/chemistry/src/descriptors.rs#L1"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/guide/names/#what-is-supported",
+      "note": "Ethanol name inserted an editable structure and default caption.",
+      "shot": {
+        "image": "evidence/reshiki/f-name-to-structure.webp",
+        "caption": "Ethanol name input and the resulting structure on the canvas."
+      },
+      "engine": {
+        "library": "Ported from OPSIN (Rust); PubChem web service (optional remote lookup)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/docs/chemical-naming-rust.md"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/guide/names/#what-is-supported",
+      "note": "Alanine generated (2S)-2-aminopropanoic acid using local subset rules.",
+      "shot": {
+        "image": "evidence/reshiki/f-structure-to-name.webp",
+        "caption": "Selected alanine structure and its generated systematic name."
+      },
+      "engine": {
+        "library": "Ported from openclatura (Rust)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/src/naming/openclatura/mod.rs#L1"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/guide/nmr/#what-the-numbers-mean",
+      "note": "Ethanol methyl: 1.050 ppm; two other sites withheld.",
+      "shot": {
+        "image": "evidence/reshiki/f-nmr-prediction.webp",
+        "caption": "Ethanol structure and predicted proton NMR shifts."
+      },
+      "engine": {
+        "library": "In-house (Rust HOSE predictor; bundled nmrshiftdb2 data)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/io/src/nmr.rs#L249"
+      }
+    },
+    "markush": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/generic-structures/#limits",
+      "note": "Finite element/group alternatives; general query predicates and R-logic remain unsupported."
+    },
+    "polymers": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/generic-structures/#limits",
+      "note": "Typed repeat units; only finite ordinary head-to-tail chemistry expands."
+    },
+    "biomolecules": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/feature-status/#chemistry-reactions-and-specialist-workflows",
+      "note": "Biological sequence and monomer assembly workflows are missing."
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/assistant/#draw-from-an-image",
+      "note": "Desktop Codex assistant reconstructs images into editable previews; requires internet.",
+      "shot": {
+        "image": "evidence/reshiki/f-image-to-structure.webp",
+        "caption": "Assistant panel offers an example image and image paste prompt."
+      },
+      "engine": {
+        "library": "OpenAI Codex (remote model via local app-server); In-house (Rust drawing reconstruction)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/src/assistant/codex.rs#L527"
+      }
+    },
+    "database-lookup": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/feature-status/#chemistry-reactions-and-specialist-workflows",
+      "note": "External structure lookup is missing; PubChem integration remains unreleased."
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/guide/editing/#show-a-molecule-as-a-3d-model",
+      "note": "Built cholesterol from SMILES; rotated ball-and-stick model by dragging.",
+      "shot": {
+        "image": "evidence/reshiki/f-model-3d.webp",
+        "caption": "Ball-and-stick model selected on the canvas with 3D tilt controls."
+      },
+      "engine": {
+        "library": "In-house (Rust viewer); COSMolKit (Rust conformer generation)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/docs/geometry-backend.md"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/crystal-structures/#open-a-structure",
+      "note": "Opens CIF structures with unit cells and atom sites."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/feature-status/#files-clipboard-automation-and-application-behavior",
+      "note": "Exported cholesterol CDXML and reopened the drawing.",
+      "shot": {
+        "image": "evidence/reshiki/f-cdxml.webp",
+        "caption": "Copy as menu includes CDXML and CDX."
+      },
+      "engine": {
+        "library": "Ported from RDKit External/ChemDraw and Glysade/chemdraw (Rust reader); In-house (Rust writer)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/io/src/chemistry/cdxml.rs#L1"
+      }
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/clipboard/#boundaries",
+      "note": "Bounded read/write clipboard subset; desktop file Open/Export UI lacks CDX.",
+      "shot": {
+        "image": "evidence/reshiki/f-cdx.webp",
+        "caption": "Copy as menu includes CDX and CDXML."
+      },
+      "engine": {
+        "library": "In-house (Rust CDX codec); Ported from RDKit External/ChemDraw and Glysade/chemdraw (Rust molecular reader)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/io/src/engine/native_import.rs#L228"
+      }
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://reshiki.com/guide/sharing/#choose-an-export",
+      "note": "MOL import/export worked; opening SDF reported Invalid SMILES at byte 1.",
+      "shot": {
+        "image": "evidence/reshiki/f-mol-sdf.webp",
+        "caption": "Structure export panel has MOL selected."
+      },
+      "engine": {
+        "library": "Ported from RDKit (Rust MOL reader/writer; no SDF)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/io/src/chemistry/molfile.rs#L1"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/guide/sharing/#choose-an-export",
+      "note": "Imported fixture SMILES; exported cholesterol SMILES text.",
+      "shot": {
+        "image": "evidence/reshiki/f-smiles.webp",
+        "caption": "Structure import panel detects the entered text as SMILES."
+      },
+      "engine": {
+        "library": "Ported from RDKit (Rust parser and writer)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/licenses/rdkit/NOTICE"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/sharing/#what-paste-uses",
+      "note": "InChI paste/import and explicit identifier copying.",
+      "shot": {
+        "image": "evidence/reshiki/f-inchi.webp",
+        "caption": "Structure and exchange panel lists InChI among its formats."
+      },
+      "engine": {
+        "library": "Ported from InChI and RDKit (Rust, cosmolkit-inchi)",
+        "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/chemistry/src/inchi/kernel.rs#L1"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/reactions/#import-and-export",
+      "note": "RXN import/export uses explicitly defined reaction roles.",
+      "shot": {
+        "image": "evidence/reshiki/f-rxn.webp",
+        "caption": "Reaction roles panel includes an RXN V3000 export option."
+      }
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/figure-export/",
+      "note": "Exported all fixtures as SVG; files contain vector paths.",
+      "shot": {
+        "image": "evidence/reshiki/f-svg-export.webp",
+        "caption": "Figure export panel offers vector SVG export."
+      }
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/figure-export/",
+      "note": "Default figure format PDF; exported caffeine and paclitaxel.",
+      "shot": {
+        "image": "evidence/reshiki/f-pdf-export.webp",
+        "caption": "Figure export panel offers vector PDF export."
+      }
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://reshiki.com/developer/figure-export/#large-png-drawings",
+      "note": "Default model PNG: 2973×1198 pixels, 1200 dpi metadata.",
+      "shot": {
+        "image": "evidence/reshiki/f-png-export.webp",
+        "caption": "Drawing style panel lists PNG output up to 1200 dpi."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/clipboard/#boundaries",
+      "note": "Editable desktop subset; unsupported objects may become pictures or simplified copies.",
+      "shot": {
+        "image": "evidence/reshiki/f-clipboard-chemdraw.webp",
+        "caption": "Copy as menu includes CDX and CDXML."
+      }
+    },
+    "office": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/clipboard/#office-and-macos",
+      "note": "Windows desktop Office OLE editing; Mac Office lacks this workflow."
+    },
+    "python-api": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/changes-unreleased/",
+      "note": "Python bindings are in the nightly build, not in stable 0.13.1."
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/changes-0.13/#the-editor-in-a-web-browser",
+      "note": "Published npm API supports loading, saving, rendering and change callbacks."
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/agent-cli/",
+      "note": "Experimental headless conversion, rendering, composition and analysis."
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/agent-api/",
+      "note": "Experimental stdio MCP; structure-level editing, no live GUI attachment."
+    },
+    "plugins": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/feature-status/#files-clipboard-automation-and-application-behavior",
+      "note": "No stable extension interface."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/developer/changes-0.13/#the-editor-in-a-web-browser",
+      "note": "npm editor mounts into elements, custom elements or iframes."
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://reshiki.com/guide/assistant/",
+      "note": "Desktop only; requires local Codex sign-in and internet.",
+      "shot": {
+        "image": "evidence/reshiki/f-ai-assistant.webp",
+        "caption": "Assistant panel offers a molecule prompt and example image."
+      }
+    }
+  },
+  "caveats": [
+    "CDX/CDXML interchange covers a subset; desktop UI exposes CDX through clipboard only.",
+    "Editable Office objects require Windows; the browser omits Office integration, printing and the assistant.",
+    "Drawings saved by 0.13.1 cannot be opened in 0.13.0 or earlier."
+  ],
+  "github": {
+    "stars": 146,
+    "pushedAt": "2026-11-05T10:33:31Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.13.1",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "reshiki-0.13.1-macos-arm64.dmg",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 33843741,
+    "installedBytes": 82063360,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/reshiki/simple.svg",
+        "note": "Current Kekule SMILES; automatic layout retained; fitted without cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/reshiki/complex.svg",
+        "note": "Current Kekule SMILES; automatic stereochemical layout retained; fitted without cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/reshiki/threed.png",
+        "note": "SMILES-built ball-and-stick model; depth rotation verified; viewport crop shows default orientation.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/reshiki/canvas.webp",
+    "canvasLight": "evidence/reshiki/canvas-light.webp",
+    "canvasDark": "evidence/reshiki/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Original light appearance restored before quitting."
+    },
+    "memory": null,
+    "observations": [
+      "Default JACS/ACS style: Arial 10 pt, 14.4 pt bonds, 0.6 pt lines.",
+      "Caffeine and paclitaxel received automatic SMILES layouts without cleanup.",
+      "Paclitaxel’s default layout included wedge and hashed bonds.",
+      "Cholesterol built a rotatable ball-and-stick model from SMILES.",
+      "Default figure format was PDF; PNG export recorded 1200 dpi."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 33843741,
+  "references": [
+    "https://github.com/Ameyanagi/ReShiki",
+    "https://reshiki.com/developer/clipboard/"
+  ],
+  "builtOn": {
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "COSMolKit (Rust port of RDKit)"
+    ],
+    "source": "https://github.com/Ameyanagi/ReShiki/blob/main/NOTICE",
+    "note": "Own Rust canvas. All chemistry is Rust: code ported with custom changes, plus a pinned fork of COSMolKit, a Rust port of RDKit.",
+    "ported": [
+      "RDKit",
+      "OPSIN",
+      "openclatura",
+      "InChI",
+      "Centres"
+    ]
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ReShiki vector scene",
+    "language": "Rust",
+    "source": "https://github.com/Ameyanagi/ReShiki/blob/39a21e7d9c99e3cab8bbd71d42a3a47ad72203b0/crates/model/src/scene.rs"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Bindings, in the nightly build only"
+    },
+    {
+      "language": "JavaScript",
+      "role": "Browser bindings and Office add-in"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Python bindings are in the nightly build. TypeScript is for bindings and tests.",
+  "thirdParty": {
+    "summary": "MIT or Apache compatible code. Bundled NMR data is share-alike, ChEBI aliases are CC BY 4.0, and fonts are OFL-1.1 and Bitstream Vera.",
+    "source": "https://github.com/Ameyanagi/ReShiki/blob/main/NOTICE",
+    "notice": "https://github.com/Ameyanagi/ReShiki/blob/main/NOTICE",
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "COSMolKit",
+        "license": "MIT",
+        "source": "https://github.com/cosmol-studio/COSMolKit/blob/main/LICENSE"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      },
+      {
+        "name": "OpenClatura",
+        "license": "MIT",
+        "source": "https://github.com/lamalab-org/openclatura/blob/main/LICENSE"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      },
+      {
+        "name": "Centres",
+        "license": "BSD-2-Clause",
+        "source": "https://github.com/SiMolecule/centres/blob/develop/LICENSE"
+      }
+    ]
+  }
+}

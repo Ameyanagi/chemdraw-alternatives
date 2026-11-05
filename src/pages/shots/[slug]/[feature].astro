@@ -1,0 +1,47 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Mark from '../../../components/Mark.astro';
+import { href } from '../../../lib/paths';
+import { featureOf, features, loadTools, manualFor, markKey, markLabels, testedVersion, type Feature, type Tool } from '../../../lib/tools';
+
+export async function getStaticPaths() {
+  const tools = await loadTools();
+  return tools.flatMap((tool) => features.flatMap((feature) => {
+    const value = featureOf(tool, feature.id);
+    return value.shot ? [{ params: { slug: tool.slug, feature: feature.id }, props: { tool, feature, value, shot: value.shot } }] : [];
+  }));
+}
+
+const { tool, feature, value, shot } = Astro.props as {
+  tool: Tool;
+  feature: (typeof features)[number];
+  value: Feature;
+  shot: NonNullable<Feature['shot']>;
+};
+const manual = manualFor(tool, feature.id);
+---
+<Layout title={`${feature.name} in ${tool.name}`} description={shot.caption}>
+  <section class="page py-10">
+    <p class="flex flex-wrap gap-x-5"><a href={href(`tools/${tool.slug}/`)}>{tool.name}</a><a href={href(`features/${feature.id}/`)}>This feature in other tools</a></p>
+    <h1 class="mt-2 text-5xl">{feature.name} in {tool.name}</h1>
+    <p class="lede mt-3">{shot.caption}</p>
+  </section>
+  <section class="page">
+    <a class="border-line block border" href={href(shot.image)}><img class="mx-auto max-h-[70vh] w-auto" src={href(shot.image)} alt={shot.caption} /></a>
+    <dl class="mt-6 grid max-w-3xl grid-cols-[minmax(0,10rem)_1fr] gap-x-4">
+      <dt class="border-line text-muted border-b py-1.5">What we checked</dt>
+      <dd class="border-line border-b py-1.5">{feature.test}</dd>
+      <dt class="border-line text-muted border-b py-1.5">Result</dt>
+      <dd class="border-line border-b py-1.5"><Mark feature={value} /> {markLabels[markKey(value)]}{value.note && `. ${value.note}`}</dd>
+      <dt class="border-line text-muted border-b py-1.5">Version we tested</dt>
+      <dd class="border-line border-b py-1.5">{testedVersion(tool)}, on {tool.hands?.platform}</dd>
+      <dt class="border-line text-muted border-b py-1.5">Manual</dt>
+      <dd class="border-line border-b py-1.5">
+        {manual
+          ? <a href={manual.url}>{manual.exact ? new URL(manual.url).hostname.replace(/^www\./, '') : 'General manual'}</a>
+          : 'We found no manual for this tool.'}
+        {manual && !manual.exact && <span class="text-muted"> We found no page on this feature.</span>}
+      </dd>
+    </dl>
+  </section>
+</Layout>

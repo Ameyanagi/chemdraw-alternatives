@@ -1,0 +1,548 @@
+{
+  "id": "p111",
+  "slug": "chemcanvasjs",
+  "name": "ChemCanvasJS",
+  "rank": 65,
+  "tier": "embeddable",
+  "tierReason": "It provides real browser drawing and editable-SVG code, but remains an incomplete component prototype without a publication-document workflow.",
+  "summary": "An unfinished browser editor for drawing molecules and experimenting with editable SVG structure exchange.",
+  "website": "https://github.com/yoeluk/ChemCanvasJS",
+  "repo": "https://github.com/yoeluk/ChemCanvasJS",
+  "docs": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/README.md",
+  "vendor": "Yoel R Garcia Diaz",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT license included in the CoffeeScript source.",
+    "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L2-L24"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/README.md"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/yoeluk/ChemCanvasJS/releases"
+  },
+  "engine": {
+    "rendering": "Paper.js on HTML5 Canvas, with modified Paper.js SVG export",
+    "chemistry": "In-house atom/bond model, MOL parser and incomplete CIP routines; unspecified server for SMILES conversion",
+    "ui": "jQuery and Bootstrap",
+    "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee"
+  },
+  "languages": [
+    "CoffeeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/README.md",
+      "note": "Single and double work; triple tool did not create one.",
+      "shot": {
+        "image": "evidence/chemcanvasjs/f-bonds-core.webp",
+        "caption": "Single and double bonds in a molecule on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L2689-L2763",
+      "note": "Solid and hashed wedges work; no wavy tool visible.",
+      "shot": {
+        "image": "evidence/chemcanvasjs/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds in a molecule on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L2035-L2084",
+      "note": "Repeated clicks switch sides; no centered placement."
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L713-L736",
+      "note": "Cyclohexane works; no aromatic ring tool visible.",
+      "shot": {
+        "image": "evidence/chemcanvasjs/f-rings.webp",
+        "caption": "Ring tools beside a molecule with fused rings."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No library beyond ring tools visible."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L2231-L2309",
+      "note": "Element and plain-text labels; no chemical charge or isotope fields.",
+      "shot": {
+        "image": "evidence/chemcanvasjs/f-atom-labels.webp",
+        "caption": "Element palette and nitrogen and oxygen labels on the canvas."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L2574-L2644",
+      "note": "Point at atoms and type to create or extend labels."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L2986-L3053",
+      "note": "Whole-molecule move and rotate; no lasso, flip or resize."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No reaction arrow control found."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow control found."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L1511-L1576",
+      "note": "Limited R/S console output; four-neighbor stereocenters remain unfinished.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L1511-L1578"
+      }
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass command found."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name input found."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view control found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML command or format option found."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L1387-L1414",
+      "note": "MOL imports and logs output; SDF rejected.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L269-L470"
+      }
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L2194-L2229",
+      "note": "SMILES file rejected; no paste field found."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee#L196-L205",
+      "note": "Shortcut logs SVG element; no file download."
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "Print generates PDF through browser; includes page headers."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "Browser saves canvas PNG; no resolution control in editor."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/index.html#L12-L20",
+      "note": "Canvas constructor example only; no public API reference."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/index.html#L6-L26",
+      "note": "HTML example embeds editor; references missing js/main.js."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Unfinished prototype, last pushed in 2013; triple bonds and automatic heteroatom hydrogens are unimplemented.",
+    "README export claims exceed the bundled UI: MOL/SVG output is console-based; SMILES requires an unbundled backend.",
+    "README overstates stereochemistry: R/S output is limited to console diagnostics; CIP rule 5 is omitted."
+  ],
+  "github": {
+    "stars": 10,
+    "pushedAt": "2013-12-27T15:49:31Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.9 (aa2b985)",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://github.com/yoeluk/ChemCanvasJS",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": 1798144,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/chemcanvasjs/simple.png",
+        "note": "Browser canvas PNG has a transparent background.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/chemcanvasjs/complex.png",
+        "note": "Heteroatom hydrogens are not displayed; MOL roundtrip matched stereochemistry.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "No 3D view; SDF import produced no drawing.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemcanvasjs/canvas.webp",
+    "canvasLight": "evidence/chemcanvasjs/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Editor stays light in both browser color schemes."
+    },
+    "memory": null,
+    "observations": [
+      "The app reports ChemCanvas v0.9 in its MOL output.",
+      "Imported structures are centered and initially small; zoom fits them.",
+      "The browser saved transparent canvas images; the editor offers no image download.",
+      "MOL output appears in the console and was extracted from saved logs.",
+      "README advertises SMILES and SVG exchange; this example exposes console diagnostics."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/yoeluk/ChemCanvasJS",
+    "https://github.com/yoeluk/ChemCanvasJS/blob/master/README.md"
+  ],
+  "builtOn": {
+    "id": "p111",
+    "relation": "original",
+    "editor": null,
+    "libraries": null,
+    "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee",
+    "note": "Own canvas and chemistry code; SMILES conversion backend is undisclosed."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ChemCanvasJS molecular renderer over Paper.js",
+    "language": "CoffeeScript",
+    "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/src/chemcanvas.coffee"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Compiled runtime and Paper.js graphics"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Own JavaScript is generated; CSS provides styling.",
+  "thirdParty": {
+    "summary": "MIT/Apache-2.0 libraries; Glyphicons Halflings have Bootstrap-specific permission; custom font licensing unestablished.",
+    "source": "https://github.com/yoeluk/ChemCanvasJS/blob/aa2b9859e4f6662b87c4912784a4c4fb2da145b9/js/chemcanvas-libs.js",
+    "notice": null,
+    "libraries": []
+  }
+}

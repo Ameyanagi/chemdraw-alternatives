@@ -1,0 +1,520 @@
+{
+  "id": "p139",
+  "slug": "ketcherails",
+  "name": "Ketcherails (ketcher-rails)",
+  "rank": 97,
+  "tier": "embeddable",
+  "tierReason": "It is a Rails engine for embedding a structure editor in applications, with host-managed templates and server chemistry services.",
+  "summary": "A Rails component for embedding a 2D chemical structure editor with templates and server chemistry services.",
+  "website": "https://github.com/ComPlat/ketcher-rails",
+  "repo": "https://github.com/ComPlat/ketcher-rails",
+  "docs": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/README.md",
+  "vendor": "ComPlat research group, Karlsruhe Institute of Technology",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-3.0",
+    "text": "Wrapper declares GPLv3; bundled Ketcher code carries AGPLv3 notices.",
+    "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/README.md#license"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/README.md#license"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.1.12",
+    "date": "2021-07-13",
+    "source": "https://github.com/ComPlat/ketcher-rails/releases/tag/v0.1.12"
+  },
+  "engine": {
+    "rendering": "Raphaël SVG/VML in the browser; Open Babel SVG and Inkscape template PNG conversion.",
+    "chemistry": "Ketcher 1.1-beta JavaScript chemistry core; Open Babel; inchi-gem in current source.",
+    "ui": "Ruby on Rails with Prototype.js, jQuery UI and Bootstrap.",
+    "source": "https://github.com/ComPlat/ketcher-rails/tree/e3f11fef31a177fc69c3549cb0e195eb2276cf08"
+  },
+  "languages": [
+    "JavaScript",
+    "Ruby"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L867-L884",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L869-L875",
+      "note": null
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L867-L884",
+      "note": "Dative and dashed coordination are the available specialist bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/templates.js#L16-L168",
+      "note": "Ring templates include benzene and three- through eight-membered rings."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/db/common_templates.json#L2016-L2030",
+      "note": "Chair templates are included in the seed library."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/editor.js#L818-L845",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/db/template_categories.json",
+      "note": "Seeded libraries include amino acids, hexoses, polyhedra and solid supports."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/README.md#usage",
+      "note": "Personal templates require host authentication and server storage."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L2006-L2055",
+      "note": "Approved abbreviations resolve to structures and chemical S-groups."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L1984-L1990",
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/views/ketcherails/ketcher/index.html.erb#L624-L631",
+      "note": "Mono- and diradical atom settings."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/editor.js#L251-L278",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L822-L1024",
+      "note": "Lasso, rotation and flips; no resize tool."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/views/ketcherails/ketcher/index.html.erb#L408-L422",
+      "note": "Only a forward reaction arrow."
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/chem/molfile.js#L1111-L1130",
+      "note": "RXN serialization; reactions containing R-groups are rejected."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/editor.js#L1491-L1539",
+      "note": "Manual reactant/product atom mapping."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/chem/sgroup.js#L266-L314",
+      "note": "Chemical S-group brackets only."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/editor.js",
+      "note": "Atoms and bonds group through chemical S-groups."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/api/ketcherails/ketcher_api.rb#L16-L81",
+      "note": "Server-side Open Babel generates 2D coordinates.",
+      "engine": {
+        "library": "Open Babel (Ruby bindings, application server; gen2D)",
+        "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/api/ketcherails/ketcher_api.rb#L35"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/restruct_rendering.js#L1077-L1087",
+      "note": "Invalid connectivity receives a red warning.",
+      "engine": {
+        "library": "Ketcher (bundled JavaScript)",
+        "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/chem/struct_valence.js#L438"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/periodic_table.js#L129-L208",
+      "note": "Molecular formula and average molecular weight.",
+      "engine": {
+        "library": "In-house (JavaScript; Ketcher implicit hydrogens)",
+        "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/periodic_table.js#L185"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/api/ketcherails/ketcher_api.rb#L90-L100",
+      "note": "PubChem IUPAC lookup for indexed compounds; requires internet.",
+      "engine": {
+        "library": "PubChem PUG REST (remote web service, through Rails server)",
+        "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/lib/ketcherails/pub_chem.rb#L11"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/views/ketcherails/ketcher/index.html.erb#L425-L450",
+      "note": "R-group labels, fragments and attachment points."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/chem/sgroup.js#L592-L637",
+      "note": "Semantic SRU repeat units with connectivity and MOL serialization."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/api/ketcherails/amino_acids_api.rb#L5-L19",
+      "note": "Builds structures from hyphenated amino acid or peptoid monomer sequences."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/s13321-018-0292-9",
+      "note": "MOL read/write; SDF import through template management.",
+      "engine": {
+        "library": "Ketcher (JavaScript MOL); In-house (Ruby SDF import)",
+        "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/chem/molfile.js#L53"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L1193-L1409",
+      "note": "Export implemented; bundled import handler is a stub.",
+      "engine": {
+        "library": "Ketcher (bundled JavaScript; export only)",
+        "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/chem/smiles.js#L45"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/api/ketcherails/ketcher_api.rb#L104-L117",
+      "note": "Server export added after v0.1.12.",
+      "engine": {
+        "library": "InChI (C via inchi-gem native Ruby extension, server)",
+        "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/api/ketcherails/ketcher_api.rb#L104"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/chem/molfile.js#L1111-L1130",
+      "note": "Reads and writes MDL RXN reaction data."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/README.md#usage",
+      "note": "SVG getter exposed through the embedding API."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/README.md#usage",
+      "note": "Documented JavaScript getters and molecule setter."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/README.md#usage",
+      "note": "Mountable Rails engine with iframe embedding example."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Requires a host Rails application; personal templates require Warden authentication.",
+    "The paper claims SMILES import and mobile use; import is stubbed and touch handling disabled.",
+    "README declares GPLv3; bundled Ketcher source declares AGPLv3."
+  ],
+  "github": {
+    "stars": 3,
+    "pushedAt": "2024-08-06T03:42:13Z",
+    "archived": false
+  },
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/ComPlat/ketcher-rails",
+    "https://github.com/ComPlat/ketcher-rails",
+    "https://github.com/ComPlat/ketcher-rails"
+  ],
+  "builtOn": {
+    "id": "p139",
+    "relation": "fork",
+    "editor": "Ketcher",
+    "libraries": [
+      "Open Babel",
+      "InChI"
+    ],
+    "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/editor.js",
+    "note": "Modified Ketcher 1.1 canvas adds polymer tools and coordination-bond rendering."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher 1.1 Raphaël renderer",
+    "language": "JavaScript",
+    "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/restruct_rendering.js#L75"
+  },
+  "otherLanguages": [
+    {
+      "language": "Ruby",
+      "role": "Rails engine and server chemistry"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML/Haml templates and SCSS/CSS provide presentation; Shell handles tooling.",
+  "thirdParty": {
+    "summary": "Includes AGPL-3.0-only Ketcher; GPL-2.0-only Open Babel (GPL-3.0 wrapper); LGPL-2.1 inchi-gem; InChI 1.06 under legacy InChI-Trust 1.0 weak copyleft; MIT libraries/fonts.",
+    "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/LICENSE.GPL",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "Open Babel",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/openbabel/openbabel/blob/master/COPYING"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "p63",
+  "slug": "chemfig-editor",
+  "name": "ChemFig Editor",
+  "rank": 130,
+  "tier": "related",
+  "tierReason": "It compiles and previews user-written ChemFig/LaTeX source without providing a ChemDraw-style graphical drawing-document workflow.",
+  "summary": "Browser interface for writing ChemFig/LaTeX code and compiling chemical structure images.",
+  "website": "https://github.com/davidil98/chemfig_editor",
+  "repo": "https://github.com/davidil98/chemfig_editor",
+  "docs": "https://github.com/davidil98/chemfig_editor/blob/320b563bd3bf6acc99255d20cc176f777d7c8533/README.md",
+  "vendor": "DaviT Ibarra",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT license; permits commercial use, modification and redistribution.",
+    "source": "https://github.com/davidil98/chemfig_editor/blob/320b563bd3bf6acc99255d20cc176f777d7c8533/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/davidil98/chemfig_editor/blob/320b563bd3bf6acc99255d20cc176f777d7c8533/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/davidil98/chemfig_editor/releases"
+  },
+  "engine": {
+    "rendering": "ChemFig/TikZ via pdfLaTeX; Poppler pdftoppm converts PDF to 300 dpi PNG for preview and export",
+    "chemistry": null,
+    "ui": "NiceGUI",
+    "source": "https://github.com/davidil98/chemfig_editor/blob/320b563bd3bf6acc99255d20cc176f777d7c8533/src/chemfig_editor.py"
+  },
+  "languages": [
+    "Python"
+  ],
+  "features": {},
+  "caveats": [
+    "UI exports PNG and .tex; the intermediate PDF is deleted.",
+    "Conda instructions name environment.yml; the repository file is eviroment.yml.",
+    "README misstates debounce and session isolation: preview polls every two seconds, and headers are shared across sessions."
+  ],
+  "github": {
+    "stars": 1,
+    "pushedAt": "2026-05-22T00:22:27Z",
+    "archived": false
+  },
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/davidil98/chemfig_editor",
+    "https://github.com/davidil98/chemfig_editor/blob/320b563bd3bf6acc99255d20cc176f777d7c8533/README.md"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

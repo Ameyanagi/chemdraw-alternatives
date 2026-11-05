@@ -1,0 +1,506 @@
+{
+  "id": "p116",
+  "slug": "chemdraft-yuansu",
+  "name": "ChemDraft (元素智研)",
+  "rank": 80,
+  "tier": "alternative",
+  "tierReason": "It supports complete 2D drawing documents with reaction schemes, publication styles, editable annotations and export for publication.",
+  "summary": "Chemical drawing software for molecular structures, reaction schemes, publication figures, and editable Office documents.",
+  "website": "https://en.chemdraft.com/",
+  "repo": null,
+  "docs": "https://en.chemdraft.com/help",
+  "vendor": "深圳元素智研科技有限公司",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Proprietary; individual drawing is free, with noncommercial use by default.",
+    "source": "https://en.chemdraft.com/legal/service"
+  },
+  "price": {
+    "text": "Free individual drawing (2026-11-05); enterprise services require a quote.",
+    "source": "https://en.chemdraft.com/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "0.9.43",
+    "date": null,
+    "source": "https://en.chemdraft.com/api/download/windows"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/5-2",
+      "note": "Single, double and triple bonds; manual bond-order changes."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/5-2",
+      "note": "Solid wedge, hashed wedge and wavy bonds explicitly listed."
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/5-2",
+      "note": "Dative, hydrogen and quadruple bonds explicitly listed."
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/a-3",
+      "note": "Direction cycling documented; left/right/center states not individually specified."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/5-3",
+      "note": "Three- through eight-membered rings and benzene tools."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/5-3",
+      "note": "Dedicated left and right chair conformation tools."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/5-3",
+      "note": "Drag zigzag chains with live carbon counts."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/5-4",
+      "note": "Functional groups, amino acids, peptides, sugars and supramolecular templates."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/5-4",
+      "note": "Save selected structures into the custom template library."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/10-1",
+      "note": "Chemically recognized groups expand and collapse."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/7-1",
+      "note": "Elements and charges supported; general isotope mass editing unverified."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/7-1",
+      "note": "Atom-associated radical dots and lone-pair markers."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/a-3",
+      "note": "Hover atoms or bonds, then press drawing shortcuts."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/6-3",
+      "note": "Lasso selection, scaling, rotation and flips documented across editing sections."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/6-9",
+      "note": "Rotate editable canvas structures to change their perspective."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/8-3",
+      "note": "Forward, equilibrium, resonance and retrosynthetic arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/8-3",
+      "note": "Electron-transfer arrows with editable curvature and arrowhead styles."
+    },
+    "reaction-data": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/8-3",
+      "note": "Recognizes reactant/product relationships; reaction-format storage not documented."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/10-3",
+      "note": "Editable orbital shapes, including s, p, d and f."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/8-1",
+      "note": "Canvas text supports fonts, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/8-4",
+      "note": "Editable shapes, brackets, arcs and free curves."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/6-4",
+      "note": "Object alignment and horizontal or vertical equal distribution."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/10-5",
+      "note": "Group, move collectively, edit members and ungroup."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/6-8",
+      "note": "Normalizes bond lengths, angles, rings and overall layout."
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/9-1",
+      "note": "ACS, RSC and Nature presets explicitly listed."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/9-1",
+      "note": "Custom mode saves bond, font and other drawing parameters."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/8-4",
+      "note": "Selected objects support individual line and fill colors."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/9-2",
+      "note": "Page sizes and margins documented; multipage documents unverified."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/11-2",
+      "note": "Import PNG, JPEG, BMP, GIF and WebP images."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/7-6",
+      "note": "Structure problems receive red warning borders."
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/7-4",
+      "note": "Automatically computes atom R/S and bond E/Z descriptors."
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/12-1",
+      "note": "Computes molecular formula, exact mass and molecular weight."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/12-4",
+      "note": "Converts pasted IUPAC names into editable 2D structures."
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/12-4",
+      "note": "Generates IUPAC names that update with structure edits."
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/12-5",
+      "note": "Predicts proton and carbon-13 chemical shifts and spectra."
+    },
+    "markush": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/7-1",
+      "note": "Markush attachment markers documented; full R-group/query handling unverified."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/10-2",
+      "note": "Recognizes bracket-associated repeat units and supports polymer connection points."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/10-8",
+      "note": "PNG/JPG uploads and screenshots become editable chemical structures."
+    },
+    "database-lookup": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/12-3",
+      "note": "Searches PubChem/Reaxys externally; structure retrieval into editor unverified."
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/12-2",
+      "note": "Generates rotatable, zoomable 3D molecular models."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/1-4",
+      "note": "Import and export explicitly documented; clipboard exchange also supported."
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/1-4",
+      "note": "Import and export explicitly documented; clipboard exchange also supported."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/1-4",
+      "note": "MOL, including V2000, and SDF import/export explicitly documented.",
+      "engine": {
+        "library": "RDKit FileParsers (C++ compiled to browser WebAssembly; confirmed MOL import)",
+        "source": "https://web.chemdraft.com/ChemDraft.wasm?v=94ddc3b4ef67"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/11-7",
+      "note": "Clipboard export; import through Special Paste in section 11.3.",
+      "engine": {
+        "library": "RDKit SmilesWrite (vendor SciRDKit C++ compiled to browser WebAssembly; confirmed SMILES clipboard export)",
+        "source": "https://web.chemdraft.com/ChemDraft.wasm?v=94ddc3b4ef67"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/11-7",
+      "note": "Copies structures as InChI and InChIKey.",
+      "engine": {
+        "library": "RDKit InChI adapter with InChI 1.07.3 (C/C++ compiled to browser WebAssembly; confirmed InChI clipboard export)",
+        "source": "https://web.chemdraft.com/ChemDraft.wasm?v=94ddc3b4ef67"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/11-6",
+      "note": "PDF export documented; vector output not specified."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/11-6",
+      "note": "PNG export documented; 300-dpi output not specified."
+    },
+    "clipboard-chemdraw": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/11-4",
+      "note": "Editable ChemDraw import; reverse direct clipboard editing unverified."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/11-5",
+      "note": "Double-click embedded Office/WPS structures to edit and update them."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/openapi",
+      "note": "Vendor claim; JS editor integration offered through contact."
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://en.chemdraft.com/help/13-6",
+      "note": "Built-in assistant generates editable structures, mechanisms and routes on canvas."
+    }
+  },
+  "caveats": [
+    "Service terms restrict use to noncommercial purposes unless otherwise authorized.",
+    "The browser edition has fewer functions; Linux and mobile clients are listed as coming soon.",
+    "Live downloads supply 0.9.43 beta and Mac PKG; older pages claim 2.1.0, DMG, or additional platforms."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "build 3d096b252fa8",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://web.chemdraft.com/",
+    "ran": false,
+    "failure": "The editor opened with a WeChat sign-in panel; Escape and canvas clicks did not dismiss it. Testing stopped without signing in.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Startup displayed a WeChat sign-in panel.",
+      "The build identifier comes from the hosted version.json.",
+      "Login screen recorded in login-required.png."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://en.chemdraft.com/",
+    "https://en.chemdraft.com/help/11-6"
+  ],
+  "builtOn": {
+    "id": "p116",
+    "relation": "original",
+    "editor": null,
+    "libraries": null,
+    "source": "https://en.chemdraft.com/",
+    "note": "Vendor claims independent development; external chemistry dependencies remain undisclosed."
+  },
+  "renderer": {
+    "origin": null,
+    "name": "ChemDraft Qt/QPainter renderer (WCanvasImpl)",
+    "language": "C++",
+    "source": "https://web.chemdraft.com/ChemDraft.wasm?v=94ddc3b4ef67"
+  },
+  "otherLanguages": [
+    {
+      "language": "QML",
+      "role": "Qt Quick user interface"
+    },
+    {
+      "language": "JavaScript",
+      "role": "WebAssembly browser loader"
+    },
+    {
+      "language": "C",
+      "role": "InChI code compiled to WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

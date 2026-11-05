@@ -1,0 +1,464 @@
+{
+  "id": "p99",
+  "slug": "zoho-chemstudio",
+  "name": "Zoho ChemStudio",
+  "rank": 92,
+  "tier": "alternative",
+  "tierReason": "Documented multipage layouts, journal presets, editable structures, and SVG exports support publication-grade 2D drawing.",
+  "summary": "A web and desktop editor for drawing chemical structures, reaction schemes, and publication figures.",
+  "website": "https://www.zoho.com/chemstudio/",
+  "repo": null,
+  "docs": "https://help.zoho.com/portal/en/kb/chemstudio",
+  "vendor": "Zoho Corporation",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Currently free to use.",
+    "source": "https://www.zoho.com/chemstudio/"
+  },
+  "price": {
+    "text": "Free (2026-11-05)",
+    "source": "https://www.zoho.com/chemstudio/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://www.zoho.com/chemstudio/chemstudio-desktop-app.html"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-in-chemstudio/articles/add-edit-format-chemical-structures-zoho-chemstudio",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tools/articles/molecule-drawing-tool",
+      "note": "Wedge, hashed wedge, and wavy bonds appear in official screenshots."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tools/articles/molecule-drawing-tool",
+      "note": "Common ring sizes and aromatic ring tools appear in official screenshots."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tools/articles/molecule-drawing-tool",
+      "note": "Horizontal and vertical cyclohexane chair tools."
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tools/articles/molecule-drawing-tool",
+      "note": "Chains are inserted by carbon count through a dialog."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tools/articles/importing-standard-structures",
+      "note": null
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-in-chemstudio/articles/add-edit-format-chemical-structures-zoho-chemstudio",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-in-chemstudio/articles/add-edit-format-chemical-structures-zoho-chemstudio",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-in-chemstudio/articles/add-edit-format-chemical-structures-zoho-chemstudio",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tools/articles/reaction-drawing-tools",
+      "note": "Forward, equilibrium, and resonance arrows appear in official screenshots."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-in-chemstudio/articles/add-edit-format-chemical-structures-zoho-chemstudio",
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/security-compliance/articles/encryption-at-zoho-chemstudio",
+      "note": "RXN import and native reaction storage are documented."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/utility/articles/utility-tools",
+      "note": "Official screenshot shows font controls, subscripts, and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/utility/articles/utility-tools",
+      "note": "Shapes; brackets also covered in the drawing guide."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-in-chemstudio/articles/add-edit-format-chemical-structures-zoho-chemstudio",
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-in-chemstudio/articles/add-edit-format-chemical-structures-zoho-chemstudio",
+      "note": null
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/file-operation/document-settings-in-chemstudio/articles/document-settings-in-chemstudio",
+      "note": "ACS, RSC, and Wiley presets."
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/file-operation/document-settings-in-chemstudio/articles/document-settings-in-chemstudio",
+      "note": "Saved settings and styles affect the current document only."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tlc-plate-in-chemstudio/articles/how-to-draw-a-tlc-plate-in-chemstudio",
+      "note": "Individual TLC spots have color controls."
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/file-operation/document-settings-in-chemstudio/articles/document-settings-in-chemstudio",
+      "note": "Page size plus page rows and columns."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tlc-plate-in-chemstudio/articles/how-to-draw-a-tlc-plate-in-chemstudio",
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/utility/articles/utility-tools",
+      "note": "Structure errors are indicated on hover."
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/file-operation/document-settings-in-chemstudio/articles/document-settings-in-chemstudio",
+      "note": "R/S and E/Z stereo annotations."
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/analysis-and-reports/articles/chemical-analysis-tools-zoho-chemstudio",
+      "note": null
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/utility/articles/utility-tools",
+      "note": "cLogP appears in the official properties-panel screenshot."
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tools/articles/importing-standard-structures",
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.zoho.com/chemstudio/chemstudio-desktop-app.html",
+      "note": "IUPAC name generation; vendor claim."
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/analysis-and-reports/articles/chemical-analysis-tools-zoho-chemstudio",
+      "note": "Web only; unavailable in the desktop app."
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-in-chemstudio/articles/add-edit-format-chemical-structures-zoho-chemstudio",
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/drawing-tools/articles/importing-standard-structures",
+      "note": "Sequence tool accepts peptide, DNA, and RNA sequences."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/security-compliance/articles/privacy-and-compliance",
+      "note": "PubChem data populates structures on the drawing board.",
+      "engine": {
+        "library": "PubChem (remote database service)",
+        "source": "https://help.zoho.com/portal/en/kb/chemstudio/security-compliance/articles/privacy-and-compliance"
+      }
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/security-compliance/articles/privacy-and-compliance",
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.zoho.com/chemstudio/",
+      "note": "MOL and SDF import/export also appear in help documentation."
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/security-compliance/articles/privacy-and-compliance",
+      "note": null
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/security-compliance/articles/export-options-available-in-zoho-chemstudio",
+      "note": null
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/security-compliance/articles/encryption-at-zoho-chemstudio",
+      "note": "Imported RXN files are explicitly listed."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://help.zoho.com/portal/en/kb/chemstudio/security-compliance/articles/export-options-available-in-zoho-chemstudio",
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "The web app requires a Zoho account and a team workspace.",
+    "NMR reports require the connected web version; desktop drawing and export work offline.",
+    "CDX and RXN marketing claims differ from the dedicated export-format list."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 322964776,
+  "references": [
+    "https://www.zoho.com/chemstudio/",
+    "https://www.zoho.com/chemstudio/chemstudio-desktop-app.html"
+  ],
+  "builtOn": {
+    "id": "p99",
+    "relation": null,
+    "editor": null,
+    "libraries": null,
+    "source": null,
+    "note": "Public vendor materials do not establish editor provenance or chemistry dependencies."
+  },
+  "renderer": {
+    "origin": null,
+    "name": null,
+    "language": null,
+    "source": null
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

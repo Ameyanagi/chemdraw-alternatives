@@ -1,0 +1,491 @@
+{
+  "id": "p105",
+  "slug": "molprime",
+  "name": "MolPrime+",
+  "rank": 117,
+  "tier": "alternative",
+  "tierReason": "A standalone mobile editor produces 2D chemical structure drawings and exports vector graphics in Word documents.",
+  "summary": "Mobile editor for drawing chemical structures, calculating molecular properties, and exporting structure graphics.",
+  "website": "https://apps.apple.com/gb/app/molprime/id497295446",
+  "repo": null,
+  "docs": "https://cheminf20.org/category/molprime/",
+  "vendor": "Molecular Materials Informatics, Inc.",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free App Store application; copyright Molecular Materials Informatics, Inc.",
+    "source": "https://apps.apple.com/gb/app/molprime/id497295446"
+  },
+  "price": {
+    "text": "Free (2026-11-05)",
+    "source": "https://apps.apple.com/gb/app/molprime/id497295446"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": false,
+    "linux": false,
+    "web": false,
+    "ios": true,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "1.2.7",
+    "date": "2019-01-03",
+    "source": "https://apps.apple.com/gb/app/molprime/id497295446"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "In-house MMDS core library (Objective-C)",
+    "ui": null,
+    "source": "https://cheminf20.org/2015/02/07/recent-developments-with-bayesian-models-and-app-data-sharing/"
+  },
+  "languages": [
+    "Objective-C"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-2-8",
+      "note": "Shared MMDS sketcher supports manually setting bond orders."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-2-8",
+      "note": "Shared sketcher supports solid wedge, hashed wedge, and wavy bonds."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-2-8",
+      "note": "Shared sketcher includes benzene and common ring sizes."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminf20.org/2011/12/14/recent-mmds-improvements-drawing-and-rendering/",
+      "note": "Shared sketcher includes functional groups and molecular building blocks."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminf20.org/2012/07/27/molprime-can-now-calculate-distributions-for-mass-spectroscopy/",
+      "note": "Inline abbreviations expand automatically for chemical calculations."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-2-8",
+      "note": "Shared sketcher supports charges, isotopes, and arbitrary atom labels."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-2-8",
+      "note": "Shared sketcher supports setting atom radical counts."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-2-8",
+      "note": "Shared sketcher supports free selection, rotation, flipping, and scaling."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/gb/app/molprime/id497295446",
+      "note": "Highlights atomic valence violations.",
+      "engine": {
+        "library": "MMDS core library (Objective-C, local)",
+        "source": "https://cheminf20.org/2015/02/07/recent-developments-with-bayesian-models-and-app-data-sharing/"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/gb/app/molprime/id497295446",
+      "note": "Computes R/S and E/Z labels locally.",
+      "engine": {
+        "library": "MMDS core library (Objective-C, local)",
+        "source": "https://cheminf20.org/2015/02/07/recent-developments-with-bayesian-models-and-app-data-sharing/"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminf20.org/2012/07/27/molprime-can-now-calculate-distributions-for-mass-spectroscopy/",
+      "note": null,
+      "engine": {
+        "library": "MMDS core library (Objective-C, local)",
+        "source": "https://cheminf20.org/2015/02/07/recent-developments-with-bayesian-models-and-app-data-sharing/"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/gb/app/molprime/id497295446",
+      "note": "Calculates logP locally.",
+      "engine": {
+        "library": "MMDS core library (Objective-C, local)",
+        "source": "https://cheminf20.org/2015/02/07/recent-developments-with-bayesian-models-and-app-data-sharing/"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminf20.org/2013/01/20/search-integration-added-to-molprime/",
+      "note": "Database name lookup imports matching structures.",
+      "engine": {
+        "library": "MetaSearch (remote server; PubChem, ChEBI and ChemSpider name lookup)",
+        "source": "https://cheminf20.org/2013/04/20/chemspider-now-integrated-into-searching-with-mmds/"
+      }
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminf20.org/2013/01/20/search-integration-added-to-molprime/",
+      "note": "Searches PubChem and ChEBI by name or structure.",
+      "engine": {
+        "library": "MetaSearch (remote server; PubChem, ChEBI and ChemSpider web services)",
+        "source": "https://cheminf20.org/2013/09/14/scaffolding-of-tuberculosis-drugs-part-2-adding-public-data/"
+      }
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Last listed release: 1.2.7, dated 2019-01-03.",
+    "App Store labels Apple silicon Mac compatibility as unverified.",
+    "Word vector export uses a web service; current service availability is unverified."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://apps.apple.com/ie/app/molprime/id497295446"
+  ],
+  "builtOn": {
+    "id": "p105",
+    "relation": "wrapper",
+    "editor": "MMDS sketcher",
+    "libraries": null,
+    "source": "https://cheminf20.org/2013/03/19/molprime-ios-due-for-an-overhaul/",
+    "note": "Reuses the vendor's MMDS sketcher; third-party chemistry dependencies remain unestablished."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "MMDS sketcher (MMDSLib)",
+    "language": "Objective-C",
+    "source": "https://cheminf20.org/2013/03/19/molprime-ios-due-for-an-overhaul/"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": [
+      {
+        "name": "MMDS sketcher",
+        "license": null,
+        "source": null
+      }
+    ]
+  }
+}

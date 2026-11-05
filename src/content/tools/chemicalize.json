@@ -1,0 +1,69 @@
+{
+  "id": "p35",
+  "slug": "chemicalize",
+  "name": "Chemicalize",
+  "rank": 131,
+  "tier": "related",
+  "tierReason": "Its advertised publication-ready Marvin JS drawing, journal presets, and image export support producing publication-grade 2D chemical figures.",
+  "summary": "Browser service for chemical property prediction, structure search, and publication-oriented molecule drawing with Marvin JS.",
+  "website": "https://chemicalize.com/",
+  "repo": null,
+  "docs": "https://docs.chemaxon.com/latest/chemicalize_index.html",
+  "vendor": "Chemaxon (Certara)",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary hosted service with a free Basic tier and paid subscription plans.",
+    "source": "https://docs.chemaxon.com/latest/chemicalize_single-user-subscribing.html"
+  },
+  "price": {
+    "text": "2026-11-05: Free Basic plan advertised; paid subscription renewals restricted.",
+    "source": "https://www.certara.com/announcement/modernizing-the-academic-program-and-retiring-chemicalize/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://chemicalize.com/welcome"
+  },
+  "engine": {
+    "rendering": "HTML5 canvas in Marvin JS; file-export rendering backend undisclosed",
+    "chemistry": null,
+    "ui": null,
+    "source": "https://docs.chemaxon.com/latest/marvin-js_troubleshooting.html#sketch-does-not-appear-in-the-iframe-on-my-page"
+  },
+  "languages": [],
+  "features": {},
+  "caveats": [
+    "Retirement is scheduled for June 30, 2027.",
+    "Monthly renewals ended July 31, 2026; annual renewals are unavailable, despite subscription documentation still advertising both.",
+    "Service-dependent Marvin JS capabilities remain unconfirmed for Chemicalize; no offline desktop application."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.certara.com/announcement/modernizing-the-academic-program-and-retiring-chemicalize/",
+    "https://marvincloud.marvin.cxn.io/"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

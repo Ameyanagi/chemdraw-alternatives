@@ -1,0 +1,462 @@
+{
+  "id": "p125",
+  "slug": "easychem",
+  "name": "EasyChem",
+  "rank": 114,
+  "tier": "alternative",
+  "tierReason": "A standalone 2D chemical drawing editor with text, layout tools and vector export for publication figures.",
+  "summary": "A desktop editor for creating 2D chemical structure drawings and publication figures.",
+  "website": "https://easychem.sourceforge.net/",
+  "repo": "https://sourceforge.net/p/easychem/code/",
+  "docs": "https://easychem.sourceforge.net/",
+  "vendor": "François-Xavier Coudert",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0-or-later",
+    "text": "GNU General Public License version 2 or later.",
+    "source": "https://sourceforge.net/p/easychem/code/1/tree/easychem.c#l13"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://sourceforge.net/projects/easychem/files/EasyChem%20gtk%2B/easychem-0.6/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "0.6",
+    "date": "2005-05-04",
+    "source": "https://sourceforge.net/projects/easychem/files/EasyChem%20gtk%2B/easychem-0.6/"
+  },
+  "engine": {
+    "rendering": "GDK drawing primitives with Pango text; custom EPS/XFig export and Ghostscript PDF conversion",
+    "chemistry": null,
+    "ui": "GTK+ 2",
+    "source": "https://sourceforge.net/p/easychem/code/1/tree/drawing.c#l273"
+  },
+  "languages": [
+    "C"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/dialogs.c#l441",
+      "note": "Single, double and triple bonds can be created and edited."
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/drawing.c#l351",
+      "note": "Solid and hashed wedges only; no wavy bond type."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/drawing.c#l314",
+      "note": "Double bonds are always drawn centered."
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/easychem.c#l1797",
+      "note": "Regular rings with 3–10 sides; aromatic bonds require manual editing."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/TODO#l15",
+      "note": "One-step carbon-chain drawing is listed as a future feature."
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/TODO#l17",
+      "note": "A library of predrawn elements is listed as a future feature."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/dialogs.c#l151",
+      "note": "Charges and isotopes drawn as formatted atom-label text."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/dialogs.c#l803",
+      "note": "Radical, lone-electron and lone-pair ornaments attach to atoms or bond ends."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/easychem.c#l1831",
+      "note": "Rectangle selection and rotate/flip; lasso remains a planned feature."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/dialogs.c#l506",
+      "note": "Straight arrows support full heads at either or both ends."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/dialogs.c#l520",
+      "note": "Editable three-point arcs support full or half arrowheads."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/dialogs.c#l96",
+      "note": "Bold/italic and scripts supported; canvas font family fixed to Serif."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/bonds.c#l1781",
+      "note": "Editable circles and three-point circular arcs."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/easychem.c#l779",
+      "note": "Selected objects align horizontally and vertically."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/easychem.c#l743",
+      "note": "Group and ungroup selected objects."
+    },
+    "cleanup": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/easychem.c#l2698",
+      "note": "Cleanup only removes duplicate objects and empty groups."
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/dialogs.c#l486",
+      "note": "Individual bonds and text objects have editable colors."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/dialogs.c#l938",
+      "note": "Drawing width and height configurable; no multipage document model."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/export.c#l2004",
+      "note": "Vector EPS converted through Ghostscript; Unix builds only."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/TODO#l13",
+      "note": "PNG export is listed as a future feature."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://sourceforge.net/p/easychem/code/1/tree/easychem.c#l3158",
+      "note": "Command line opens files in GUI; no headless conversion."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Released 0.6 dates to 2005; the Mac build requires X11.",
+    "SourceForge lists Cocoa, but released 0.6 uses GTK+ 2.",
+    "Advertised LaTeX support means export fonts; PDF requires Ghostscript on Unix."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 265458,
+  "references": [
+    "https://easychem.sourceforge.net/",
+    "https://sourceforge.net/projects/easychem/"
+  ],
+  "builtOn": {
+    "id": "p125",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://sourceforge.net/p/easychem/code/1/tree/drawing.c#l273",
+    "note": "Custom bond model and renderer; build files link GTK without third-party chemistry libraries."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "EasyChem bond and label renderer",
+    "language": "C",
+    "source": "https://sourceforge.net/p/easychem/code/1/tree/drawing.c#l273"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "PostScript supplies export resources; Makefiles only build the program.",
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

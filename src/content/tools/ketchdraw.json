@@ -1,0 +1,643 @@
+{
+  "id": "p53",
+  "slug": "ketchdraw",
+  "name": "KetchDraw",
+  "rank": 22,
+  "tier": "embeddable",
+  "tierReason": "Its main interface combines an embedded Ketcher structure-input editor with RDKit property cards.",
+  "summary": "Browser-based molecular drawing editor combining Ketcher structure editing with RDKit property calculations.",
+  "website": "https://gsmithofficial.github.io/Ketchdraw/",
+  "repo": "https://github.com/GSmithOfficial/Ketchdraw",
+  "docs": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md",
+  "vendor": "GSmithOfficial",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT stated in README without a separate license file; bundled Ketcher uses Apache-2.0.",
+    "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/README.md#license"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/README.md"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/GSmithOfficial/Ketchdraw/releases"
+  },
+  "engine": {
+    "rendering": "SVG in the Ketcher editor and RDKit.js previews; Indigo renders SVG/PNG exports",
+    "chemistry": "RDKit.js and Indigo through Ketcher standalone WebAssembly",
+    "ui": "HTML/CSS/JavaScript wrapper around a React-based Ketcher iframe",
+    "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/index.html"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-bonds",
+      "note": "Drew single, double and triple bonds.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts",
+      "note": "Drew wedge, hash and wavy bonds.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts",
+      "note": "Dative and hydrogen bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#templates-toolbar",
+      "note": "Placed benzene; multiple ring sizes available.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-rings.webp",
+        "caption": "A benzene ring alongside bond examples on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/templates/library.sdf#L8254",
+      "note": "Built-in chair and boat templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-bonds",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#templates-toolbar",
+      "note": null,
+      "shot": {
+        "image": "evidence/ketchdraw/f-templates.webp",
+        "caption": "Structure library lists sugars, bicycles, amino acids, and other templates."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#templates-toolbar",
+      "note": null,
+      "shot": {
+        "image": "evidence/ketchdraw/f-custom-templates.webp",
+        "caption": "Save Structure dialog with a disabled Save to Templates button."
+      }
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#functional-groups",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/modal/components/toolbox/Atom/Atom.tsx",
+      "note": null,
+      "shot": {
+        "image": "evidence/ketchdraw/f-atom-labels.webp",
+        "caption": "Caffeine drawing with nitrogen and oxygen labels and element controls."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/data/schema/struct-schema.js#L80",
+      "note": "Monoradical and singlet/triplet diradical atom settings."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/state/handleHotkeysOverItem.ts",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/editor/tool/select.ts#L202",
+      "note": "Lasso, rotate, flip; resizing covers images, shapes and arrows.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-selection-tools.webp",
+        "caption": "Selection palette with rectangle, lasso, and fragment icons."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/leftToolbarOptions.ts",
+      "note": "Placed forward and equilibrium arrows on separate canvases.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-reaction-arrows.webp",
+        "caption": "Reaction arrow palette with forward and equilibrium arrow styles."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/editor/operations/rxn/RxnArrowResize.ts#L65",
+      "note": "Placed curved half-headed arrow.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-mechanism-arrows.webp",
+        "caption": "Curved half-headed arrow on the drawing canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#ketcher-api",
+      "note": "RXN reaction serialization."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-reactions",
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#creating-text-objects-on-the-canvas",
+      "note": "Font size, bold, italic, subscript and superscript."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-graphical-objects",
+      "note": "Ellipse, rectangle and line tools; S-groups provide brackets.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-shapes.webp",
+        "caption": "Shape palette with ellipse, rectangle, and line icons."
+      }
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#functional-groups",
+      "note": "Chemical groups move together; mixed text/shape grouping unverified."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#ketcher-overview",
+      "note": null,
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L208"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/state/options/index.js",
+      "note": "Font and bond settings persist in browser storage."
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#adding-images-on-the-canvas",
+      "note": "PNG and SVG images."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-atoms",
+      "note": "Invalid atom valences are underlined in red.",
+      "engine": {
+        "library": "Ketcher (TypeScript); Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/state/server/index.js#L61"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#ketcher-overview",
+      "note": "Calculate CIP assigns R/S and E/Z.",
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L158"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/modal/components/process/Analyse/Analyse.jsx",
+      "note": "Caffeine: C8H10N4O2, molecular weight 194.191.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-formula-mass.webp",
+        "caption": "Calculated formula, molecular weight, and exact mass."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly); RDKit.js (WebAssembly mass descriptors)",
+        "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/index.html#L891-L916"
+      }
+    },
+    "properties": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/index.html",
+      "note": "Wrapper property panel stayed empty after importing molecules."
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Entering caffeine in structure import produced conversion error."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in inspected controls."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-r-groups",
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#marking-s-groups",
+      "note": "SRU repeat units with head-to-tail or head-to-head connectivity."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts",
+      "note": "Recognition explicitly rejects requests in standalone mode."
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#3d-viewer",
+      "note": "Imported 3D SDF rotates in Miew viewer.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-model-3d.webp",
+        "caption": "Miew viewer displaying a molecular model with coordinate axes."
+      },
+      "engine": {
+        "library": "Miew (JavaScript)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/modal/components/process/Miew/Miew.tsx#L125"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/identifyStructFormat.ts",
+      "note": "Exported and reopened caffeine CDXML.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-cdxml.webp",
+        "caption": "Open Structure dialog containing CDXML text."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L108"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/utils/fileOpener.js",
+      "note": "Binary CDX import; binary and Base64 CDX export.",
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L109"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/modal/components/document/Save/Save.jsx",
+      "note": "Imported MOL and SDF; exported MOL.",
+      "shot": {
+        "image": "evidence/ketchdraw/f-mol-sdf.webp",
+        "caption": "Save Structure dialog with MDL Molfile V2000 selected."
+      },
+      "engine": {
+        "library": "Ketcher (TypeScript); Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L84"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#key-features",
+      "note": "Imported and exported SMILES.",
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L104"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#ketcher-api",
+      "note": null,
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L101"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#ketcher-api",
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#working-with-files",
+      "note": "SVG downloads saved successfully."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF option in save format list."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/issues/5152",
+      "note": "PNG exported at 553 by 392 pixels; no resolution control."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/utils/fileOpener.js",
+      "note": "Imports embedded ChemDraw objects from PowerPoint; editable Office insertion unverified."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#ketcher-api",
+      "note": "Underlying Ketcher JavaScript API is accessible through the iframe."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/ketcher/iframe.html",
+      "note": "Bundled iframe example covers the Ketcher editor."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "README calls it KetchDraw; the hosted interface calls it BoltzDraw.",
+    "RDKit and Chart.js load from public CDNs; pKa calculations use a remote API.",
+    "Property cards use exact mass for MW and hardcode unspecified stereocenters to zero."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-03-28T21:22:43Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "2.24.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://gsmithofficial.github.io/Ketchdraw/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/ketchdraw/simple.svg",
+        "note": "Caffeine imported from the current SMILES and was laid out automatically.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/ketchdraw/complex.svg",
+        "note": "Paclitaxel imported; central labels and bonds are crowded.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/ketchdraw/threed.png",
+        "note": "SDF model rotates in depth; SMILES-derived model was flat.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/ketchdraw/canvas.webp",
+    "canvasLight": "evidence/ketchdraw/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "The hosted page identifies itself as BoltzDraw; About identifies Ketcher 2.24.0.",
+      "Imported SMILES produced centered drawings with colored heteroatom labels.",
+      "Paclitaxel's central labels and bonds overlap in the automatic layout.",
+      "The wrapper property panel continued to show zero molecules after imports.",
+      "The SMILES-derived 3D view looked flat; the supplied SDF showed depth."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/GSmithOfficial/Ketchdraw",
+    "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/README.md"
+  ],
+  "builtOn": {
+    "id": "p53",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "RDKit",
+      "Indigo"
+    ],
+    "source": "https://github.com/GSmithOfficial/Ketchdraw/blob/9efda4862c52c0d38765f8dc287edd8647be5d0d/index.html#L612",
+    "note": "Embedded Ketcher supplies drawing; RDKit calculates properties and Indigo handles chemistry."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher; Indigo exports; RDKit previews",
+    "language": "TypeScript",
+    "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/render/restruct/reatom.ts#L282"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Wrapper and molecule analysis interface"
+    },
+    {
+      "language": "C++",
+      "role": "Indigo exports and RDKit previews"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "JavaScript embedded in HTML; presentation markup and bundled Ketcher excluded.",
+  "thirdParty": {
+    "summary": "Ketcher/Indigo Apache-2.0; RDKit BSD-3-Clause; Chart.js/React MIT. Indigo rendering bundles Cairo (LGPL-2.1 OR MPL-1.1) and Noto Sans fonts (OFL-1.1).",
+    "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/NOTICE",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      }
+    ]
+  }
+}

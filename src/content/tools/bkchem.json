@@ -1,0 +1,536 @@
+{
+  "id": "p23",
+  "slug": "bkchem",
+  "name": "BKChem",
+  "rank": 85,
+  "tier": "alternative",
+  "tierReason": "Standalone structure and reaction-scheme drawing, typography, layout controls and vector exports support publication figures.",
+  "summary": "Desktop editor for drawing two-dimensional chemical structures, reaction schemes, and publication figures.",
+  "website": "https://bkchem.zirael.org/",
+  "repo": "https://gitlab.com/bkchem/bkchem",
+  "docs": "https://bkchem.zirael.org/wiki/howtos",
+  "vendor": "Beda Kosata; Reinis Danne",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0-or-later",
+    "text": "GNU GPL version 2 or later.",
+    "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/config.py"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://bkchem.zirael.org/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "0.14.0-pre4",
+    "date": "2014-01-19",
+    "source": "https://gitlab.com/bkchem/bkchem/-/tags/v0.14.0-pre4"
+  },
+  "engine": {
+    "rendering": "Tkinter Canvas on screen; custom SVG serialization and Cairo PDF/PNG export.",
+    "chemistry": "OASA; external IUPAC InChI executable for InChI generation.",
+    "ui": "Tkinter with Python megawidgets (Pmw).",
+    "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/main.py"
+  },
+  "languages": [
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/doc/doc.xml",
+      "note": "Click existing bonds to cycle single, double and triple."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/modes.py",
+      "note": "Wedge, hatch and wavy adder bond styles."
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/modes.py",
+      "note": "Dashed and dotted bonds; no dedicated dative bond type."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/doc/doc.xml",
+      "note": "Shift-click cycles centered and either-side double bonds."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/templates/templates.cdml",
+      "note": "Includes benzene and common carbocyclic ring templates."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/templates/templates.cdml",
+      "note": "Built-in chair template."
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/wiki/tips",
+      "note": "Keyboard appends 2–9 atoms; no drag-to-length chain tool."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/templates/templates.cdml",
+      "note": "Includes a fused heterocyclic purine template."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/custom_templates_en.html",
+      "note": "Save As Template creates reusable user templates."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/features_en.html",
+      "note": "Common groups and linear formulas expand into structures."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/atom.py",
+      "note": "Element labels and charges; isotope notation lacks chemical interpretation."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/modes.py",
+      "note": "Radical, biradical and lone-pair marks."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/fna_en.html",
+      "note": "Select an atom and type its replacement label."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/modes.py",
+      "note": "Rectangular selection; no lasso. Rotation, mirroring and scaling available."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/features_en.html",
+      "note": "3D rotation of drawn molecules and fragments."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/features_en.html",
+      "note": "Forward, retrosynthetic and equilibrium arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/arrow.py",
+      "note": "Editable splines with full or electron-transfer half heads."
+    },
+    "reaction-data": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/main.py",
+      "note": "Legacy reactant/product serialization remains; reaction authoring mode is disabled."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/modes.py",
+      "note": "Includes a pz orbital mark."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/doc/doc.xml",
+      "note": "Free text supports font styling, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/modes.py",
+      "note": "Editable vector shapes, polylines and brackets."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/doc/doc.xml",
+      "note": "Align selected objects by edges or centers."
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/dialogs.py",
+      "note": "Save personal bond, font and color standards."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/atom.py",
+      "note": "Individual atom colors and configurable bond/object colors."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/main.py",
+      "note": "Page sizing supported; tabs save separate documents."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/validator.py",
+      "note": "Reports exceeded valence and zero-order bonds.",
+      "engine": {
+        "library": "In-house (Python validator) with OASA (Python atom valence)",
+        "source": "https://gitlab.com/bkchem/bkchem/-/blob/adfa8595d999fecd6191ce096932c16db6321347/bkchem/validator.py#L56"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/paper.py",
+      "note": "Computes formula, molecular weight and monoisotopic mass.",
+      "engine": {
+        "library": "OASA (Python formula and periodic-table mass routines)",
+        "source": "https://gitlab.com/bkchem/bkchem/-/blob/adfa8595d999fecd6191ce096932c16db6321347/bkchem/paper.py#L1305"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem-plugins/-/raw/f2600ac1672f98f93e36d5c382c4a80d47428a19/fetch_from_webbook.py",
+      "note": "NIST WebBook lookup plugin; current service compatibility unverified.",
+      "engine": {
+        "library": "NIST Chemistry WebBook (remote HTTP name lookup plugin; OASA Python MOL import)",
+        "source": "https://gitlab.com/bkchem/bkchem-plugins/-/blob/f2600ac1672f98f93e36d5c382c4a80d47428a19/fetch_from_webbook.py#L16"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem-plugins/-/raw/f2600ac1672f98f93e36d5c382c4a80d47428a19/fetch_name_from_webbook.py",
+      "note": "Retrieves database names rather than generating systematic nomenclature."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/oasa/oasa/-/raw/40cdb2d7cac6bad44a93c0200eb93236d550e06e/oasa/query_atom.py",
+      "note": "Atom lists and A/Q/X/R query atoms."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem-plugins/-/raw/f2600ac1672f98f93e36d5c382c4a80d47428a19/fetch_from_webbook.py",
+      "note": "Imports NIST WebBook structures; current service compatibility unverified.",
+      "engine": {
+        "library": "NIST Chemistry WebBook (remote HTTP lookup plugin; OASA Python MOL import)",
+        "source": "https://gitlab.com/bkchem/bkchem-plugins/-/blob/f2600ac1672f98f93e36d5c382c4a80d47428a19/fetch_from_webbook.py#L16"
+      }
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/plugins/CDXML.py",
+      "note": "Experimental CDXML import and export.",
+      "engine": {
+        "library": "In-house (Python CDXML import/export plugin using xml.dom.minidom)",
+        "source": "https://gitlab.com/bkchem/bkchem/-/blob/adfa8595d999fecd6191ce096932c16db6321347/bkchem/plugins/CDXML.py#L45"
+      }
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/plugins/molfile.py",
+      "note": "MOL read/write; single-molecule export; SDF support unverified.",
+      "engine": {
+        "library": "OASA (Python MOL reader/writer; SDF unconfirmed)",
+        "source": "https://gitlab.com/bkchem/bkchem/-/blob/adfa8595d999fecd6191ce096932c16db6321347/bkchem/oasa_bridge.py#L66"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/features_en.html",
+      "note": "Imports a SMILES subset and generates SMILES.",
+      "engine": {
+        "library": "OASA (Python SMILES parser/writer and coordinate generator)",
+        "source": "https://gitlab.com/bkchem/bkchem/-/blob/adfa8595d999fecd6191ce096932c16db6321347/bkchem/oasa_bridge.py#L35"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/inchi_en.html",
+      "note": "Subset import; export uses an external InChI executable.",
+      "engine": {
+        "library": "OASA (Python InChI parser); IUPAC InChI (external native C executable for generation)",
+        "source": "https://gitlab.com/bkchem/bkchem/-/blob/adfa8595d999fecd6191ce096932c16db6321347/bkchem/oasa_bridge.py#L52"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/doc/doc.xml",
+      "note": "Vector SVG; native CD-SVG also embeds editable BKChem data."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/plugins/pdf_cairo.py",
+      "note": "Vector PDF via Cairo."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/plugins/png_cairo.py",
+      "note": "Cairo export offers configurable resolution up to 10,000 dpi."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/external_import_en.html",
+      "note": "Documented external Python control; API described as unstable."
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/batch_mode_en.html",
+      "note": "Batch conversion hides windows but requires X on Unix."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/custom_plugins_en.html",
+      "note": "XML descriptors and Python script or mode extensions."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Homepage lists pre2; latest tag is pre4 (2014); desktop binaries target legacy systems.",
+    "Older docs conflict with source: CDXML exists, Cairo exports text on Windows, and SMILES imports E/Z stereochemistry.",
+    "Batch conversion requires X on Unix; WebBook lookup plugins use legacy interfaces."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "bkchem-0.13.0.tar.gz",
+    "ran": false,
+    "failure": "Official stable 0.13.0 source fails before launch under uv Python 3.11.17 with Tk: Python 2 print syntax causes SyntaxError at bkchem.py:96. uv does not support Python 2.7. Official Mac fallback contains only PowerPC/i386 executables; open -n and computer-use fail with -10386 (i386 is no longer supported). No BKChem window opened.",
+    "downloadBytes": 965969,
+    "installedBytes": 11149312,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "No document window opened.",
+      "Molecule imports, rendering, and feature checks could not be tested."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 965969,
+  "references": [
+    "https://bkchem.zirael.org/"
+  ],
+  "builtOn": {
+    "id": "p23",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "OASA",
+      "InChI"
+    ],
+    "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/bkchem/paper.py",
+    "note": "Custom canvas uses OASA chemistry; InChI generation invokes an optional external executable."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "BKChem bond/atom/ftext renderer (Tk Canvas)",
+    "language": "Python",
+    "source": "https://gitlab.com/bkchem/bkchem/-/blob/adfa8595d999fecd6191ce096932c16db6321347/bkchem/bond.py#L279"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Bundled Windows InChI executable"
+    },
+    {
+      "language": "Tcl",
+      "role": "Tk GUI runtime"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Auxiliary browser JavaScript and release shell scripts are excluded.",
+  "thirdParty": {
+    "summary": "Includes GPL-2.0-or-later (OASA), LGPL (Piddle), MIT (Pmw) and legacy IUPAC/InChI Trust Licence 1.0 in Windows builds.",
+    "source": "https://gitlab.com/bkchem/bkchem/-/raw/adfa8595d999fecd6191ce096932c16db6321347/README",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "OASA",
+        "license": "GPL-2.0-or-later",
+        "source": "https://bkchem.zirael.org/download/oasa-0.13.1.tar.gz"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

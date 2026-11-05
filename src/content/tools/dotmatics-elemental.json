@@ -1,0 +1,486 @@
+{
+  "id": "p101",
+  "slug": "dotmatics-elemental",
+  "name": "Dotmatics Elemental / Elemental Draw",
+  "rank": 113,
+  "tier": "embeddable",
+  "tierReason": "The vendor's standalone Elemental Draw release documents saving and printing structures and reactions for publications.",
+  "summary": "Chemical structure and reaction drawing suite with desktop, web, and iOS editions.",
+  "website": "https://www.dotmatics.com/",
+  "repo": null,
+  "docs": "https://images.webofknowledge.com/WOK50B6/images/dhtmlsuite/docs/Elemental.pdf",
+  "vendor": "Dotmatics Limited",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Commercial desktop/site licensing; the separate iOS app is free.",
+    "source": "https://www.prnewswire.co.uk/news-releases/dotmatics-announces-new-academic-site-license-program-at-the-248th-acs-meeting-in-san-francisco-270727741.html"
+  },
+  "price": {
+    "text": "2026-11-05: iOS app Free; current desktop/platform price unverified.",
+    "source": "https://apps.apple.com/us/app/elemental/id518655328"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": false,
+    "web": true,
+    "ios": true,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://www.dotmatics.com/webinars/whats-new-in-dotmatics-7-5"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "In-house Dotmatics Chemistry Toolkit (JavaScript and C)",
+    "ui": null,
+    "source": "https://www.rsc.org/images/CICAG_Newsletter_Winter_2019-20_tcm18-252021.pdf"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://images.webofknowledge.com/WOK50B6/images/dhtmlsuite/docs/Elemental.pdf",
+      "note": "Bond-order cycling and single, double, triple bond types documented."
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://images.webofknowledge.com/WOK50B6/images/dhtmlsuite/docs/Elemental.pdf",
+      "note": "Template groups with atom or bond attachment points."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://images.webofknowledge.com/WOK50B6/images/dhtmlsuite/docs/Elemental.pdf",
+      "note": "User templates are stored in browser cookies."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://images.webofknowledge.com/WOK50B6/images/dhtmlsuite/docs/Elemental.pdf",
+      "note": "Hover over an atom and type an element symbol."
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/elemental/id518655328",
+      "note": "iOS edition opens and exports chemical reactions as RXN."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://images.webofknowledge.com/WOK50B6/images/dhtmlsuite/docs/Elemental.pdf",
+      "note": "Context menu tidies sketched geometries.",
+      "engine": {
+        "library": "In-house (Elemental JavaScript)",
+        "source": "https://www.hit2lead.com/elemental/elemental-obf.js"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.technologynetworks.com/informatics/news/ccdc-selects-dotmatics-to-support-2d-queries-in-its-new-cambridge-structural-database-web-289738",
+      "note": "Automatically flags valence violations; vendor claim.",
+      "engine": {
+        "library": "In-house (Elemental JavaScript)",
+        "source": "https://www.hit2lead.com/elemental/elemental-obf.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/elemental/id518655328",
+      "note": "iOS edition calculates molecular formula and mass; vendor claim.",
+      "engine": {
+        "library": "In-house (Elemental JavaScript)",
+        "source": "https://www.hit2lead.com/elemental/elemental-obf.js"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/elemental/id518655328",
+      "note": "iOS edition predicts LogP; vendor claim.",
+      "engine": {
+        "library": "In-house (Dotmatics C Chemistry Toolkit, iOS)",
+        "source": "https://www.rsccicag.org/index_htm_files/CICAG_Newsletter_Winter_2019-20_tcm18-252021.pdf"
+      }
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://images.webofknowledge.com/WOK50B6/images/dhtmlsuite/docs/Elemental.pdf",
+      "note": "R-group definitions, attachment points, logic, and atom lists."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.dotmatics.com/events/whats-new-in-dotmatics-eln-7.4",
+      "note": "Paid platform edition: biological sequence editing; vendor claim."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.prlog.org/12222629-dotmatics-elemental-suite-enhanced-with-the-launch-of-elemental-draw.html",
+      "note": "Elemental DB edition searches ChEMBL; vendor claim."
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/elemental/id518655328",
+      "note": "iOS reads and writes MOL; SDF support unverified.",
+      "engine": {
+        "library": "In-house (Elemental JavaScript MOL/SDF parser and writer)",
+        "source": "https://www.hit2lead.com/elemental/elemental-obf.js"
+      }
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/elemental/id518655328",
+      "note": "iOS opens RXN attachments and emails RXN files."
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.technologynetworks.com/informatics/news/ccdc-selects-dotmatics-to-support-2d-queries-in-its-new-cambridge-structural-database-web-289738",
+      "note": "Elemental JavaScript component; documented integration into CCDC webpages."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Standalone Elemental Draw was announced in 2013; current desktop installers and support status were not verified.",
+    "The iOS listing's latest update is from 2017; installation and operation were not tested.",
+    "Public feature documentation spans editions and years; current desktop pricing, release version, and publication export formats remain unverified."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.dotmatics.com/webinars/whats-new-in-dotmatics-7-5"
+  ],
+  "builtOn": {
+    "id": "p101",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://www.rsccicag.org/index_htm_files/CICAG_Newsletter_Winter_2019-20_tcm18-252021.pdf#page=19",
+    "note": "Toolkit author identifies Elemental with Dotmatics' internal JavaScript chemistry engine."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Elemental Canvas 2D renderer",
+    "language": "JavaScript",
+    "source": "https://www.hit2lead.com/elemental/elemental-obf.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "iPad property calculations"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "C is documented for toolkit/iPad calculations; Elemental linkage is unconfirmed.",
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

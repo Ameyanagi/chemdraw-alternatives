@@ -1,0 +1,623 @@
+{
+  "id": "p78",
+  "slug": "molecule-builder",
+  "name": "Molecule Builder (OvOHongYu)",
+  "rank": 56,
+  "tier": "alternative",
+  "tierReason": "A standalone 2D molecule editor with cleanup and vector figure export, despite its limited chemistry scope.",
+  "summary": "A browser-based workbench for drawing small organic molecules and assembling reaction schemes.",
+  "website": "https://github.com/OvOHongYu/molecule-builder",
+  "repo": "https://github.com/OvOHongYu/molecule-builder",
+  "docs": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+  "vendor": "OvOHongYu",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT license; free to use, modify and redistribute.",
+    "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.1.0",
+    "date": "2026-09-13",
+    "source": "https://github.com/OvOHongYu/molecule-builder/releases/tag/v0.1.0"
+  },
+  "engine": {
+    "rendering": "Custom SVG rendering; serialized SVG, browser-print PDF, and HTML canvas rasterization for PNG.",
+    "chemistry": "RDKit.js (WebAssembly), with in-house graph editing, valence, layout and naming rules.",
+    "ui": "React 18 with Zustand.",
+    "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L34-L44"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L95-L102",
+      "note": "Added and changed single, double and triple bonds.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-bonds-core.webp",
+        "caption": "Selected bond with single, double and triple bond controls."
+      }
+    },
+    "stereo-bonds": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L27-L30",
+      "note": "Stereochemistry editing is explicitly unsupported; stereo fields are reserved."
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/types/molecule.ts#L6-L44",
+      "note": "Bond model supports only single, double, triple and aromatic bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L95-L120",
+      "note": "Phenyl group inserts a benzene ring; no ring-size tools visible.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-rings.webp",
+        "caption": "Ethylbenzene drawing with an aromatic ring."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L95-L102",
+      "note": "Fixed functional groups and phenyl insert; no broader template library.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-templates.webp",
+        "caption": "Ethylbenzene drawing beside functional-group replacement controls."
+      }
+    },
+    "custom-templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L213-L220",
+      "note": "Library saves and reloads whole molecules, replacing the drawing.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-custom-templates.webp",
+        "caption": "Ethane drawing and save-to-molecule-library button."
+      }
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L95-L102",
+      "note": "Ph group expands into a chemically recognized phenyl ring.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-abbreviations.webp",
+        "caption": "Ethylbenzene drawing and Ph group replacement control."
+      }
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/components/RightPanel.tsx#L119-L176",
+      "note": "Fixed element buttons; no charge or isotope editing controls.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-atom-labels.webp",
+        "caption": "Selected atom and element replacement buttons."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Individual atom and bond selection; no lasso or transforms visible.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-selection-tools.webp",
+        "caption": "Selected bond with its properties and bond-order controls."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/components/SchemeCanvas.tsx#L195-L219",
+      "note": "Source checkout; equilibrium/resonance become forward arrows in SVG/PNG exports."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow control found."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L322-L333",
+      "note": "Source checkout; chemical graphs, RXN and reaction SMILES."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/components/ReactionView.tsx#L215-L229",
+      "note": "Plain reaction captions only; no font controls; source checkout."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L156-L177",
+      "note": null,
+      "shot": {
+        "image": "evidence/molecule-builder/f-cleanup.webp",
+        "caption": "Automatic layout button beside an ethylbenzene drawing."
+      },
+      "engine": {
+        "library": "In-house (TypeScript ring and chain layout, alignment and spacing)",
+        "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/layout/arrange.ts#L609-L684"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L104-L112",
+      "note": "Attempted overvalent carbon flagged and rejected.",
+      "engine": {
+        "library": "In-house (TypeScript valence tables and bond-order checks)",
+        "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/engine/valence.ts#L89-L123"
+      }
+    },
+    "stereo-perception": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L265-L268",
+      "note": "R/S and E/Z support is listed as future work."
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/engine/descriptors.ts#L25-L53",
+      "note": "Formula updates; molecular mass is not displayed.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-formula-mass.webp",
+        "caption": "Ethylbenzene drawing and molecular formula C8H10."
+      },
+      "engine": {
+        "library": "In-house (TypeScript; molecular formula only, no mass calculation)",
+        "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/engine/descriptors.ts#L13-L44"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Typing caffeine into the name field left ethane unchanged."
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L192-L209",
+      "note": "Changing ethane to ethene updated the IUPAC name.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-structure-to-name.webp",
+        "caption": "Ethylbenzene drawing and IUPAC name."
+      },
+      "engine": {
+        "library": "In-house (TypeScript IUPAC and Chinese naming rules); PubChem PUG REST and NCI CACTUS (remote server fallbacks)",
+        "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/engine/naming.ts#L39-L61"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L13-L18",
+      "note": "Polymerization hints only; no editable polymer repeat-unit representation."
+    },
+    "biomolecules": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L13-L18",
+      "note": "Biomacromolecules are explicitly outside the supported scope."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view control found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML import or export control found."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L224-L235",
+      "note": "MOL exports, but RDKit rejects coordinates; no import or SDF control.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-mol-sdf.webp",
+        "caption": "MOL export button beside an ethylbenzene drawing."
+      },
+      "engine": {
+        "library": "In-house (TypeScript V2000 MOL writer; user export only, no SDF workflow)",
+        "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/engine/serialize.ts#L34-L74"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L224-L235",
+      "note": "SMILES exports; pasting fixture SMILES did not import.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-smiles.webp",
+        "caption": "Ethylbenzene drawing and its SMILES identifier."
+      },
+      "engine": {
+        "library": "RDKit.js @rdkit/rdkit 2025.3.4-1.0.0 (browser WebAssembly canonical SMILES); In-house (TypeScript fallback writer; user export only)",
+        "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/engine/naming.ts#L25-L37"
+      }
+    },
+    "inchi": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/layout/rdkitLayout.ts#L32-L81",
+      "note": "InChI and InChIKey displayed and updated; no import found.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-inchi.webp",
+        "caption": "Ethane drawing with InChI and InChIKey fields."
+      },
+      "engine": {
+        "library": "RDKit.js @rdkit/rdkit 2025.3.4-1.0.0 (browser WebAssembly with bundled InChI; InChI/InChIKey generation only)",
+        "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/layout/rdkitLayout.ts#L30-L64"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L322-L333",
+      "note": "Source checkout; RXN V2000 export."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L224-L235",
+      "note": "Downloaded SVG of a manually built ethylbenzene.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-svg-export.webp",
+        "caption": "SVG export button beside an ethylbenzene drawing."
+      }
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#L322-L333",
+      "note": "Source checkout; browser Print to PDF preserves vectors."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/lib/exportFile.ts#L63-L87",
+      "note": "PNG exports at 447×471; no DPI metadata or resolution control.",
+      "shot": {
+        "image": "evidence/molecule-builder/f-png-export.webp",
+        "caption": "PNG export button beside an ethylbenzene drawing."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Small organic molecules only; stereochemistry editing, biomacromolecules and organometallic complexes are unsupported.",
+    "ZIP requires HTTP hosting; v0.1.0 omits source-only reactions/PDF described by the newer manual.",
+    "Source predictions ignore entered temperature; SVG/PNG lose reaction arrow types; fallback InChI is unavailable despite manual claims."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-09-18T13:10:21Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.1.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "zip",
+    "artifact": "molecule-builder-0.1.0-dist.zip",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 2168382,
+    "installedBytes": 7299072,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "SMILES paste and MOL drop did nothing; no import control found.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "SMILES paste and MOL drop did nothing; no import control found.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No 3D view found; cholesterol test skipped.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/molecule-builder/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Version comes from the release archive; the app shows no version.",
+      "The editor starts and resets to ethane; no blank-document control found.",
+      "Default ethylbenzene export showed an expanded aromatic ring.",
+      "MOL export failed RDKit parsing: cannot process coordinates on line 5.",
+      "Editor status says hover edits, but clicking opened editing controls."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 2168382,
+  "references": [
+    "https://github.com/OvOHongYu/molecule-builder",
+    "https://github.com/OvOHongYu/molecule-builder/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p78",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit"
+    ],
+    "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/components/Canvas.tsx#L300-L342",
+    "note": "Custom SVG editor with RDKit WebAssembly chemistry."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Molecule Builder SVG renderer",
+    "language": "TypeScript",
+    "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/src/render/bonds.tsx#L116-L217"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "RDKit WebAssembly loader and bindings"
+    },
+    {
+      "language": "C++",
+      "role": "RDKit chemistry compiled to WebAssembly"
+    },
+    {
+      "language": "C",
+      "role": "InChI compiled into RDKit WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "CSS/HTML are presentation; JavaScript and Batchfile are setup or vendored code.",
+  "thirdParty": {
+    "summary": "Bundled RDKit WebAssembly is BSD-3-Clause; React, React DOM and Zustand are MIT.",
+    "source": "https://github.com/OvOHongYu/molecule-builder/blob/4e260930e92e80f115aa174b184ee76889e5ed02/package-lock.json",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      }
+    ]
+  }
+}

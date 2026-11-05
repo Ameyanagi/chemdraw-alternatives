@@ -1,0 +1,697 @@
+{
+  "id": "p44",
+  "slug": "sketchiq",
+  "name": "SketchIQ",
+  "rank": 20,
+  "tier": "alternative",
+  "tierReason": "The standalone editor produces reaction schemes and mechanisms with ACS styling and vector exports for publication figures.",
+  "summary": "Browser editor for chemical structures, reaction schemes, mechanisms, and publication figures.",
+  "website": "https://proteiniq.io/app/molecule-drawer",
+  "repo": null,
+  "docs": "https://proteiniq.io/app/molecule-drawer#how-to-draw-a-molecule-and-get-its-smiles",
+  "vendor": "ProteinIQ (Matic Broz s.p.)",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary hosted service; free drawing, credit-paid NMR; commercial use requires Pro or Enterprise.",
+    "source": "https://proteiniq.io/legal/terms"
+  },
+  "price": {
+    "text": "Free drawing and exports; NMR prediction: 10 credits/structure (2026-11-05).",
+    "source": "https://proteiniq.io/app/molecule-drawer#predicted-nmr-shifts"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://proteiniq.io/app/molecule-drawer"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "RDKit; Indigo; OPSIN; Orthonym",
+    "ui": "Ketcher web editor",
+    "source": "https://proteiniq.io/app/molecule-drawer"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/guides/draw-chemical-structures-online#bonds-chains-and-charges",
+      "note": "Drew single, double and triple bonds.",
+      "shot": {
+        "image": "evidence/sketchiq/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds drawn on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/guides/stereochemistry-wedges-dashes#what-wedges-hashes-and-wavy-bonds-mean",
+      "note": "Drew solid, hashed and wavy bonds.",
+      "shot": {
+        "image": "evidence/sketchiq/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Dative and hydrogen bond tools in palette."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/guides/draw-chemical-structures-online#templates-and-the-structure-library",
+      "note": "Drew benzene; multiple ring sizes shown.",
+      "shot": {
+        "image": "evidence/sketchiq/f-rings.webp",
+        "caption": "Benzene drawing with ring tools below the canvas."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/guides/draw-chemical-structures-online#bonds-chains-and-charges",
+      "note": null
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#structure-library",
+      "note": "Library opens; attempted naphthalene placement did not succeed.",
+      "shot": {
+        "image": "evidence/sketchiq/f-templates.webp",
+        "caption": "Template library displaying rings and fused-ring scaffolds."
+      }
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#typing-atom-labels-and-formulas",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/guides/molecular-weight-exact-mass",
+      "note": "Isotopes can be drawn or entered through SMILES.",
+      "shot": {
+        "image": "evidence/sketchiq/f-atom-labels.webp",
+        "caption": "Element palette and charge buttons beside a caffeine drawing."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#drawing-mechanisms-and-projections",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/guides/draw-chemical-structures-online#keyboard-shortcuts-for-drawing-faster",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Rectangle selection and hand tools visible."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#drawing-reactions-and-schemes",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/sketchiq/f-reaction-arrows.webp",
+        "caption": "An equilibrium arrow on the drawing canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#drawing-mechanisms-and-projections",
+      "note": "Curved and fishhook tools shown; attempted drag produced no clear arrow.",
+      "shot": {
+        "image": "evidence/sketchiq/f-mechanism-arrows.webp",
+        "caption": "Arrow palette includes curved arrow icons."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#drawing-reactions-and-schemes",
+      "note": null,
+      "shot": {
+        "image": "evidence/sketchiq/f-reaction-data.webp",
+        "caption": "Reaction panel displays an empty reaction SMILES field."
+      }
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Reaction mapping tool visible."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Add text tool visible; formatting not checked."
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Shape ellipse tool visible."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/guides/draw-chemical-structures-online#editing-what-youve-drawn",
+      "note": null,
+      "engine": {
+        "library": "Indigo 1.40.0 (WebAssembly, through Ketcher standalone)",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/0k74rwlu56yiu.js"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#typing-atom-labels-and-formulas",
+      "note": "ChemDraw ACS 1996 preset."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/guides/publication-quality-chemical-structures#how-to-make-acs-style-structure-images-in-sketchiq",
+      "note": "Bond and font settings persist in the browser."
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Add Image button visible."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#stoichiometry-table",
+      "note": "Editable stoichiometry panel; copies as text."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#what-the-details-panel-shows",
+      "note": null,
+      "engine": {
+        "library": "Indigo (WebAssembly, valence and radical checks)",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/333cktyh0dvz-.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/guides/stereochemistry-wedges-dashes#how-to-draw-a-stereocenter-in-sketchiq",
+      "note": "Paclitaxel panel displays stereocenter descriptors.",
+      "shot": {
+        "image": "evidence/sketchiq/f-stereo-perception.webp",
+        "caption": "Cholesterol panel lists eight stereocentres and their descriptors."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#what-the-details-panel-shows",
+      "note": "Caffeine formula C8H10N4O2 and mass 194.19 displayed.",
+      "shot": {
+        "image": "evidence/sketchiq/f-formula-mass.webp",
+        "caption": "Caffeine structure with molecular formula and molecular weight."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly); RDKit.js (WebAssembly, fragment masses) with In-house formula assembly",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/333cktyh0dvz-.js"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#what-the-details-panel-shows",
+      "note": "Caffeine cLogP and TPSA displayed.",
+      "shot": {
+        "image": "evidence/sketchiq/f-properties.webp",
+        "caption": "Caffeine structure with cLogP and TPSA values."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly, Crippen logP and TPSA); PubChem web service for XLogP3",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#names-pubchem-does-not-have",
+      "note": "Searching aspirin produced its structure.",
+      "engine": {
+        "library": "OPSIN (remote server); PubChem PUG REST web service",
+        "source": "https://proteiniq.io/app/molecule-drawer#names-pubchem-does-not-have"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#systematic-names-from-orthonym",
+      "note": "Caffeine drawing displayed a systematic name.",
+      "shot": {
+        "image": "evidence/sketchiq/f-structure-to-name.webp",
+        "caption": "Caffeine structure and its systematic name."
+      },
+      "engine": {
+        "library": "Orthonym (remote server), validated with OPSIN; PubChem web service for known compounds",
+        "source": "https://proteiniq.io/app/molecule-drawer#systematic-names-from-orthonym"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#predicted-nmr-shifts",
+      "note": "1H/13C predictions require sign-in and 10 credits per structure.",
+      "shot": {
+        "image": "evidence/sketchiq/f-nmr-prediction.webp",
+        "caption": "Caffeine panel offers NMR prediction for 10 credits."
+      },
+      "engine": {
+        "library": "MagNET with AIMNet2 geometry optimisation (remote server)",
+        "source": "https://proteiniq.io/app/molecule-drawer#predicted-nmr-shifts"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/guides/chemsketch-alternatives#sketchiq-for-former-chemsketch-users",
+      "note": "R-groups are available from the toolbars."
+    },
+    "polymers": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "S-Group tool visible."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#what-the-drawer-does-not-do",
+      "note": "Does not read structures from images."
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#finding-a-molecule-by-name-cas-number-or-smiles",
+      "note": "Aspirin search returned PubChem entry and structure.",
+      "engine": {
+        "library": "PubChem PUG REST and autocomplete web services",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/333cktyh0dvz-.js"
+      }
+    },
+    "model-3d": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "Viewer rotates; SMILES and 3D SDF yielded flat cholesterol."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#can-i-open-chemdraw-files",
+      "note": "Exported and reimported caffeine CDXML.",
+      "shot": {
+        "image": "evidence/sketchiq/f-cdxml.webp",
+        "caption": "Export menu includes a ChemDraw CDXML download."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly, through Ketcher); In-house mechanism-arrow preservation",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#formats-that-cannot-hold-a-scheme-or-and-and-or-stereo",
+      "note": "Export excludes multi-step schemes and convergent arrows.",
+      "shot": {
+        "image": "evidence/sketchiq/f-cdx.webp",
+        "caption": "Export menu includes a ChemDraw CDX download."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly, through Ketcher); In-house mechanism-arrow preservation",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#copying-and-exporting",
+      "note": "MOL and SDF imports, MOL export worked; SDF flattened.",
+      "shot": {
+        "image": "evidence/sketchiq/f-mol-sdf.webp",
+        "caption": "Export menu lists MOL and SDF download formats."
+      },
+      "engine": {
+        "library": "Ketcher (TypeScript/JavaScript MOL V2000 parser/writer); Indigo (WebAssembly, V3000/SDF conversion)",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/06hojo2rvu69i.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#copying-and-exporting",
+      "note": "Imported SMILES and downloaded SMILES.",
+      "shot": {
+        "image": "evidence/sketchiq/f-smiles.webp",
+        "caption": "Export menu lists SMILES copy and download options."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly, canonicalisation); Indigo (WebAssembly, through Ketcher import/export)",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/1_ntzx6hx6o-0.js"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#copying-and-exporting",
+      "note": null,
+      "shot": {
+        "image": "evidence/sketchiq/f-inchi.webp",
+        "caption": "Export menu lists InChI copy and download options."
+      },
+      "engine": {
+        "library": "Indigo/InChI (WebAssembly, through Ketcher standalone)",
+        "source": "https://proteiniq.io/_next/static/immutable/chunks/2x2xk_4jutjni.js"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/app/molecule-drawer#copying-and-exporting",
+      "note": null,
+      "shot": {
+        "image": "evidence/sketchiq/f-rxn.webp",
+        "caption": "Reaction panel lists RXN among the export formats."
+      }
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#copying-and-exporting",
+      "note": "Downloaded SVG drawings.",
+      "shot": {
+        "image": "evidence/sketchiq/f-svg-export.webp",
+        "caption": "Export menu includes an SVG image download."
+      }
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/app/molecule-drawer#copying-and-exporting",
+      "note": "Downloaded PDF; no embedded raster images detected.",
+      "shot": {
+        "image": "evidence/sketchiq/f-pdf-export.webp",
+        "caption": "Export menu includes a PDF image download."
+      }
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://proteiniq.io/guides/publication-quality-chemical-structures#what-the-exported-files-contain",
+      "note": "PNG downloaded at 880×640; metadata says 72 dpi.",
+      "shot": {
+        "image": "evidence/sketchiq/f-png-export.webp",
+        "caption": "PNG export menu shows image size choices up to 4×."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://proteiniq.io/guides/chemsketch-alternatives#sketchiq-for-former-chemsketch-users",
+      "note": "Pastes an image without editable chemical objects."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "NMR prediction requires an account and costs 10 credits per structure.",
+    "Commercial use requires Pro or Enterprise under ProteinIQ's general terms.",
+    "ChemDraw round-trips can lose document styles, annotations and object groups."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "dpl_44ysNf1Cbx9iepy8z4SrXP7…",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://proteiniq.io/app/molecule-drawer",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/sketchiq/simple.svg",
+        "note": "Current SMILES rendered caffeine; exported MOL matches fixture InChIKey.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/sketchiq/complex.svg",
+        "note": "Current SMILES rendered paclitaxel; exported MOL matches fixture InChIKey.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/sketchiq/canvas.webp",
+    "canvasLight": "evidence/sketchiq/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Dark browser preference did not change the appearance."
+    },
+    "memory": null,
+    "observations": [
+      "Caffeine aromatic rings appear as circles in the default SMILES layout.",
+      "Paclitaxel's automatically generated layout has overlapping methyl labels.",
+      "Cholesterol SMILES opened as a flat structure in the 3D viewer.",
+      "The 3D SDF import became 2D and showed an AND racemic stereo group.",
+      "The default PNG export reports 72 dpi; a 4× print option is offered."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://proteiniq.io/docs/viewers",
+    "https://proteiniq.io/app/molecule-drawer"
+  ],
+  "builtOn": {
+    "id": "p44",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "RDKit",
+      "Indigo",
+      "OPSIN",
+      "Orthonym"
+    ],
+    "source": "https://proteiniq.io/app/molecule-drawer",
+    "note": "Vendor confirms Ketcher canvas; identifier guide additionally confirms Indigo."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher/Raphael canvas; Indigo export renderer",
+    "language": "TypeScript",
+    "source": "https://proteiniq.io/_next/static/immutable/chunks/06hojo2rvu69i.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Browser host and Raphael graphics"
+    },
+    {
+      "language": "C++",
+      "role": "WebAssembly chemistry and Indigo export rendering"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      },
+      {
+        "name": "Orthonym",
+        "license": "MIT",
+        "source": "https://github.com/Steinbeck-Lab/Orthonym/blob/main/LICENSE"
+      }
+    ]
+  }
+}

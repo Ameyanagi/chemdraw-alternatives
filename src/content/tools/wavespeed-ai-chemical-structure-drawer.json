@@ -1,0 +1,628 @@
+{
+  "id": "p136",
+  "slug": "wavespeed-ai-chemical-structure-drawer",
+  "name": "WaveSpeed AI Chemical Structure Drawer",
+  "rank": 59,
+  "tier": "alternative",
+  "tierReason": "A standalone molecular drawing editor with documented vector SVG export for publication figures.",
+  "summary": "Browser editor for drawing molecules, calculating properties, exporting images and structure files, and viewing 3D models.",
+  "website": "https://wavespeed.ai/free-tools/chemical-structure-drawer",
+  "repo": null,
+  "docs": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+  "vendor": "WaveSpeedAI",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Proprietary browser tool, free to use under WaveSpeedAI terms.",
+    "source": "https://wavespeed.ai/static/terms"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "RDKit MinimalLib; OpenChemLib JS for 3D conformers and MMFF94",
+    "ui": null,
+    "source": "https://wavespeed.ai/static/third-party-licenses"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-tool",
+      "note": "Drew all three orders and changed a single bond.",
+      "shot": {
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/f-bonds-core.webp",
+        "caption": "Single, double, and triple bond tools beside the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-tool",
+      "note": "Placed wedge, hashed, and wavy bonds.",
+      "shot": {
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/f-stereo-bonds.webp",
+        "caption": "Wedge, hashed, and wavy bond tools beside a structure."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-tool",
+      "note": "Placed benzene and cyclohexane.",
+      "shot": {
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/f-rings.webp",
+        "caption": "Aromatic and ring-size tools beside a caffeine structure."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-tool",
+      "note": "Placed carboxylic acid from functional groups."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-tool",
+      "note": null,
+      "shot": {
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/f-atom-labels.webp",
+        "caption": "Element labels and charge controls beside a caffeine structure."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-tool",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-tool",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Select and move tool visible."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-tool",
+      "note": null,
+      "shot": {
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/f-cleanup.webp",
+        "caption": "Clean up command above the drawing canvas."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly; CoordGen 2D layout)",
+        "source": "https://wavespeed.ai/_next/static/chunks/80076.e761f423c867abdd.js"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Individual colour overrides unverified."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": null,
+      "engine": {
+        "library": "In-house",
+        "source": "https://wavespeed.ai/_next/static/chunks/77134.7ba20c5fb809f820.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-tool",
+      "note": "Paclitaxel stereocentres displayed R/S labels.",
+      "shot": {
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/f-stereo-perception.webp",
+        "caption": "Molecular structure with R and S stereochemical labels."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://wavespeed.ai/_next/static/chunks/80076.e761f423c867abdd.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": "Caffeine: C8H10N4O2, 194.194 g/mol.",
+      "shot": {
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/f-formula-mass.webp",
+        "caption": "Caffeine structure with its formula and molecular weight."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly masses and implicit hydrogens); In-house (formula assembly)",
+        "source": "https://wavespeed.ai/_next/static/chunks/80076.e761f423c867abdd.js"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": "Caffeine logP and TPSA displayed.",
+      "shot": {
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/f-properties.webp",
+        "caption": "Caffeine structure with logP and TPSA values."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://wavespeed.ai/_next/static/chunks/80076.e761f423c867abdd.js"
+      }
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": "Caffeine entered as text was rejected."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Name field is manually entered; no naming command found."
+    },
+    "nmr-prediction": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": "SDF displayed as rotatable ball-and-stick model.",
+      "shot": {
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/f-model-3d.webp",
+        "caption": "Ball-and-stick structure in the 3D viewer."
+      },
+      "engine": {
+        "library": "OpenChemLib JS (JavaScript conformers and MMFF94); 3Dmol.js (JavaScript viewer)",
+        "source": "https://wavespeed.ai/static/third-party-licenses"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "CDXML file rejected as unsupported."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": "Opened MOL and 3D SDF; exported MOL and SDF.",
+      "engine": {
+        "library": "RDKit.js (WebAssembly); In-house (MOL/SDF parsing and SDF writing)",
+        "source": "https://wavespeed.ai/_next/static/chunks/77134.7ba20c5fb809f820.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": "Loaded SMILES and exported canonical SMILES.",
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://wavespeed.ai/_next/static/chunks/80076.e761f423c867abdd.js"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": null,
+      "engine": {
+        "library": "RDKit.js (WebAssembly, including InChI; export only)",
+        "source": "https://wavespeed.ai/_next/static/chunks/80076.e761f423c867abdd.js"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer#structure-drawer-faq",
+      "note": "Downloaded default SVG drawings."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Export menu has no PDF option."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "PNG exported at 3×; no DPI control found."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "No reactions or drawing arrows.",
+    "No name-to-structure, NMR prediction, or database search.",
+    "Full offline use and ChemDraw interoperability are undocumented."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "cBQ3oDFlZ9g0696A_FKvj",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://wavespeed.ai/free-tools/chemical-structure-drawer",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/simple.svg",
+        "note": null,
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/complex.svg",
+        "note": "Canvas shows R/S labels; default SVG export omits them.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/wavespeed-ai-chemical-structure-drawer/threed.png",
+        "note": "SMILES build remained pending; 3D SDF opened and rotated.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/wavespeed-ai-chemical-structure-drawer/canvas.webp",
+    "canvasLight": "evidence/wavespeed-ai-chemical-structure-drawer/canvas-light.webp",
+    "canvasDark": "evidence/wavespeed-ai-chemical-structure-drawer/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Hosted build identifier comes from the page's Next.js payload.",
+      "Default canvas uses a dark background and element colors.",
+      "Paclitaxel shows R/S labels on canvas, omitted from default SVG.",
+      "Cholesterol SMILES-to-3D remained pending before SDF fallback.",
+      "Default 3D view uses ball-and-stick, colored by element."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://wavespeed.ai/free-tools/chemical-structure-drawer",
+    "https://wavespeed.ai/free-tools/chemical-structure-drawer"
+  ],
+  "builtOn": {
+    "id": "p136",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "OpenChemLib",
+      "3Dmol.js",
+      "InChI",
+      "CoordGen",
+      "maeparser"
+    ],
+    "source": "https://wavespeed.ai/static/third-party-licenses",
+    "note": "Vendor notices identify chemistry and 3D libraries; drawing canvas provenance remains unestablished."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Custom SVG editor; RDKit.js exports",
+    "language": "JavaScript",
+    "source": "https://wavespeed.ai/_next/static/chunks/77134.7ba20c5fb809f820.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "RDKit WebAssembly chemistry and export rendering"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "RDKit, CoordGen, OpenChemLib JS and 3Dmol.js BSD-3-Clause; InChI 1.07 and maeparser MIT. Chemistry components load unmodified at runtime.",
+    "source": "https://wavespeed.ai/static/third-party-licenses",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      },
+      {
+        "name": "3Dmol.js",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/3dmol/3Dmol.js/blob/master/LICENSE"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      },
+      {
+        "name": "CoordGen",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/schrodinger/coordgenlibs/blob/master/LICENSE"
+      },
+      {
+        "name": "maeparser",
+        "license": "MIT",
+        "source": "https://github.com/schrodinger/maeparser/blob/master/LICENSE.txt"
+      }
+    ]
+  }
+}

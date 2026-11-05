@@ -1,0 +1,542 @@
+{
+  "id": "p57",
+  "slug": "chemistry-draw",
+  "name": "Chemistry Draw",
+  "rank": 89,
+  "tier": "alternative",
+  "tierReason": "The desktop editor combines chemical drawing, captions, shapes, ACS styling and vector SVG export for publication figures.",
+  "summary": "An offline desktop editor for chemical structures, reactions and biomolecules, built around Ketcher.",
+  "website": "https://github.com/spalax-dev/chemistry_draw",
+  "repo": "https://github.com/spalax-dev/chemistry_draw",
+  "docs": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md",
+  "vendor": "Chemistry Draw Contributors",
+  "license": {
+    "kind": "open-source",
+    "spdx": "Apache-2.0",
+    "text": "Apache License 2.0.",
+    "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/README.md#license"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "chemistry-draw-v0.1.6",
+    "date": "2026-11-04",
+    "source": "https://github.com/spalax-dev/chemistry_draw/releases/tag/chemistry-draw-v0.1.6"
+  },
+  "engine": {
+    "rendering": "SVG through Raphael on screen; native Indigo Renderer for image files.",
+    "chemistry": "EPAM Indigo; EPAM Imago for Linux image recognition.",
+    "ui": "Tauri v2 with React and TypeScript.",
+    "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/docs/architecture.md"
+  },
+  "languages": [
+    "Rust",
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-bonds",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts",
+      "note": "Solid wedge, hashed wedge and wavy bond tools."
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts",
+      "note": "Dative and hydrogen bond tools."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Dedicated aromatic and three- through eight-membered ring templates."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/templates/library.sdf#L8258",
+      "note": "Built-in chair and boat templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/editor/tool/chain.ts",
+      "note": "Dragging controls the number of chain segments."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": null
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#functional-groups",
+      "note": "Functional groups expand, contract and retain underlying chemistry."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-atoms",
+      "note": "Atom properties include labels, charges and isotopes."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/epam/ketcher/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/images/13_atom_propn.png",
+      "note": "Atom Properties includes a radical selector."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-atoms",
+      "note": "Click an atom and type its replacement label."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/editor/tool/select/select.ts",
+      "note": "Lasso, rotate and flip; resizing limited to images and shapes."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-reactions",
+      "note": "Forward, equilibrium, retrosynthetic and resonance-style arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/editor/operations/rxn/RxnArrowResize.ts",
+      "note": "Editable elliptical arrows; full and half heads are available."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/tests/stereochemistry.rs",
+      "note": "Native automapping accepts reaction chemistry and produces mapped RXN."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-reactions",
+      "note": "Manual mapping, automatic mapping and unmapping."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#adding-text-objects-on-the-canvas",
+      "note": "Font settings, bold, italic, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-graphical-objects",
+      "note": "Ellipse, rectangle and line tools; structural S-group brackets."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-molecules-mode",
+      "note": "Clean Up standardizes bond lengths and angles.",
+      "engine": {
+        "library": "Indigo (native C++ via Rust FFI; indigoClean2d and indigoLayout)",
+        "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/ffi/indigo.rs#L151-L159"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#acs-american-chemical-society-style",
+      "note": "Built-in ACS settings preset."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/modal/components/meta/Settings/Settings.tsx",
+      "note": "Font and bond settings can be saved and imported as JSON."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Individual atoms and bonds support eight highlight colours."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#adding-images-on-the-canvas",
+      "note": "PNG and SVG images can be placed on canvas."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-atoms",
+      "note": "Invalid valences are underlined; structure-check command also available.",
+      "engine": {
+        "library": "Indigo (native C++ via Rust FFI; indigoCheckObj)",
+        "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/ffi/indigo.rs#L209-L221"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#stereochemistry",
+      "note": "Calculates R/S, r/s and E/Z descriptors.",
+      "engine": {
+        "library": "Indigo (native C++ via Rust FFI; indigoAddCIPStereoDescriptors)",
+        "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/ffi/indigo.rs#L273-L280"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/service/indigo_ops.rs",
+      "note": "Computes molecular formula, molecular weight and isotope masses.",
+      "engine": {
+        "library": "Indigo (native C++ via Rust FFI)",
+        "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/service/indigo_ops.rs#L83-L115"
+      }
+    },
+    "properties": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/service/indigo_ops.rs",
+      "note": "Calculation backend implements formula and masses, excluding logP and TPSA."
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-r-groups",
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#marking-s-groups",
+      "note": "SRU and copolymer groups encode repeat-unit connectivity."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-macromolecules-mode",
+      "note": "Peptide and nucleic-acid monomer libraries and sequence editing."
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/README.md#features",
+      "note": "Imago recognition is Linux-only; disabled on Windows.",
+      "engine": {
+        "library": "Imago v2 (native C++ via Rust FFI, Linux only); Indigo (native C++ postprocessing)",
+        "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/service/imago_ops.rs"
+      }
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#3d-viewer",
+      "note": "Rotatable Miew viewer.",
+      "engine": {
+        "library": "Miew (browser JavaScript via miew-react 0.11.0 in Ketcher)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/modal/components/process/Miew/Miew.tsx"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/ffi/indigo.rs",
+      "note": "Native converter writes CDXML; Ketcher recognizes CDXML input.",
+      "engine": {
+        "library": "Indigo (native C++ via Rust FFI; CDXML loading and indigoCdxml output)",
+        "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/ffi/indigo.rs#L82-L131"
+      }
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/ffi/indigo.rs",
+      "note": "Native CDX export absent; native import support unverified."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/ffi/indigo.rs",
+      "note": "MOL supported; native converter lacks SDF output.",
+      "engine": {
+        "library": "Ketcher MolSerializer (TypeScript, MOL V2000); Indigo (native C++ via Rust FFI, other MOL conversion; no SDF output)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/tests/convert.rs",
+      "note": "SMILES/MOL round trips and canonical SMILES output.",
+      "engine": {
+        "library": "Indigo (native C++ via Rust FFI; SMILES loading and canonical SMILES output)",
+        "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/ffi/indigo.rs#L82-L131"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/ffi/indigo.rs",
+      "note": "Native InChI export absent; native import support unverified."
+    },
+    "rxn": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/service/indigo_ops.rs",
+      "note": "Native automapping supports RXN; ordinary conversion uses a molecule loader."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/README.md#features",
+      "note": null
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/service/indigo_ops.rs",
+      "note": "Native renderer accepts PDF; editor save dialog omits PDF."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src-tauri/sidecar/src/transport/indigo.rs",
+      "note": "PNG export works; native backend ignores requested image resolution."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Community-maintained packaging without official EPAM support.",
+    "Image recognition is Linux-only; Linux requires x86_64 and glibc 2.36.",
+    "Native conversion and rendering implement fewer formats and settings than Ketcher exposes."
+  ],
+  "github": {
+    "stars": 6,
+    "pushedAt": "2026-11-04T02:56:20Z",
+    "archived": false
+  },
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 21793272,
+  "references": [
+    "https://github.com/spalax-dev/chemistry_draw",
+    "https://github.com/spalax-dev/chemistry_draw/blob/71cf437e4363cc64eca28845516ada0021d80cec/README.md"
+  ],
+  "builtOn": {
+    "id": "p57",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "Ketcher",
+      "Indigo",
+      "Miew",
+      "Imago"
+    ],
+    "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/src/App.tsx",
+    "note": "Embeds Ketcher with native Indigo; Imago recognition is Linux-only."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher Raphaël/SVG; native Indigo exports",
+    "language": "TypeScript",
+    "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/render/raphaelRender.ts"
+  },
+  "otherLanguages": [
+    {
+      "language": "Rust",
+      "role": "Desktop shell and native chemistry service"
+    },
+    {
+      "language": "C++",
+      "role": "Native Indigo chemistry/rendering and Imago recognition"
+    },
+    {
+      "language": "JavaScript",
+      "role": "Raphaël graphics and Miew 3D"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "JavaScript is vendored Raphael and tooling; other scripts handle builds/packaging.",
+  "thirdParty": {
+    "summary": "Apache-2.0 Ketcher/Indigo/Imago; Windows also bundles proprietary Microsoft Visual C++ runtime DLLs.",
+    "source": "https://github.com/spalax-dev/chemistry_draw/blob/9064819e949d3c4c7d2c2f5888a03894c12a406c/docs/architecture.md",
+    "notice": "https://github.com/spalax-dev/chemistry_draw/blob/main/NOTICE",
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "Miew",
+        "license": "MIT",
+        "source": "https://github.com/epam/miew/blob/main/LICENSE.md"
+      },
+      {
+        "name": "Imago",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Imago/blob/master/LICENSE"
+      }
+    ]
+  }
+}

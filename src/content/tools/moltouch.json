@@ -1,0 +1,547 @@
+{
+  "id": "p132",
+  "slug": "moltouch",
+  "name": "MolTouch",
+  "rank": 74,
+  "tier": "alternative",
+  "tierReason": "Its documented workflow is browser-based molecular structure input and ChemSpider search, with MOL and canvas PNG output.",
+  "summary": "A touch-friendly browser editor for drawing chemical structures and saving MOL files or PNG images.",
+  "website": "https://apricot.cis.ibaraki.ac.jp/moltouch/",
+  "repo": null,
+  "docs": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/manual/index.html",
+  "vendor": "Yuuki Nagai, Yuhei Fujishima, Shota Enokido, and Akio Fujiyoshi (Ibaraki University)",
+  "license": {
+    "kind": "unclear",
+    "spdx": null,
+    "text": "Homepage claims open source; source headers reserve all rights, with no license grant identified.",
+    "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/index.html"
+  },
+  "price": {
+    "text": "Not published",
+    "source": null
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": "v1.0.0",
+    "date": "2014-03-05",
+    "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/"
+  },
+  "engine": {
+    "rendering": "HTML5 Canvas 2D; PNG output uses canvas.toDataURL.",
+    "chemistry": "In-house JavaScript atom/bond model and MOL-file parser/writer.",
+    "ui": "HTML/CSS with jQuery 1.4.2, jQuery.radmenu, and Tinybox.",
+    "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/index.html"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/manual/index.html#content1-3",
+      "note": "Bond orders editable; blank-canvas mouse drag produced nothing.",
+      "shot": {
+        "image": "evidence/moltouch/f-bonds-core.webp",
+        "caption": "Single and double bonds in a molecular drawing."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/manual/index.html#content1-3",
+      "note": "Solid and hashed wedges work; no wavy option observed.",
+      "shot": {
+        "image": "evidence/moltouch/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedges in a molecular drawing."
+      }
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/Event.js",
+      "note": "Bond menu supports only single, double, triple, wedge, and hash."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/manual/index.html#content1-2",
+      "note": "Imported rings display; no dedicated ring palette found.",
+      "shot": {
+        "image": "evidence/moltouch/f-rings.webp",
+        "caption": "Fused rings in a molecular drawing on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/CreateMolFile.js",
+      "note": "Only element symbols are retained; isotope and charge fields are zeroed."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/Event.js",
+      "note": "Typed characters replace a selected atom label when Enter is pressed."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/Event.js",
+      "note": "Rotation and scaling supported; no lasso or flip controls."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/Canvas_draw.js",
+      "note": "Invalid bond order produced a red underline on nitrogen.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/Canvas_draw.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/CreateMolFile.js",
+      "note": "Submits ChemSpider searches; no returned structures are fetched into the editor.",
+      "engine": {
+        "library": "ChemSpider web service (outbound search form only)",
+        "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/CreateMolFile.js"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SDF rendered flat; no rotatable 3D view found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/manual/index.html#content2",
+      "note": "MOL and SDF import; MOL save returned blank response.",
+      "shot": {
+        "image": "evidence/moltouch/f-mol-sdf.webp",
+        "caption": "SDF file contents and its structure in the editor."
+      },
+      "engine": {
+        "library": "In-house (MOL V2000 parser/writer; SDF unconfirmed)",
+        "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/CreateMolFile.js"
+      }
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SMILES file displayed as text without a structure."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/CreateMolFile.js",
+      "note": "Exports transparent 1176 × 833 PNG at 72 dpi.",
+      "shot": {
+        "image": "evidence/moltouch/f-png-export.webp",
+        "caption": "Exported PNG of a molecular structure."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Homepage claims open source, but public source headers reserve all rights without identifying a license.",
+    "Latest release announcement is dated 2014-03-05; documented browser tests cover historical versions.",
+    "MOL/PNG download forms submit drawings to server-side PHP handlers."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "v1.0.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/index.html",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/moltouch/simple.png",
+        "note": "MOL imported; default PNG has a transparent background.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/moltouch/complex.png",
+        "note": "MOL imported with solid and hashed wedges visible.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/moltouch/canvas.webp",
+    "canvasLight": "evidence/moltouch/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "The editor labels nitrogen blue and oxygen red by default.",
+      "The exported PNGs retain the full transparent canvas.",
+      "The MOL save endpoint returned HTTP 500 during the test.",
+      "The cholesterol import panel obscured part of the flat projection.",
+      "Several requested features had no discoverable controls and were not tested."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://apricot.cis.ibaraki.ac.jp/moltouch/",
+    "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/manual/index.html"
+  ],
+  "builtOn": {
+    "id": "p132",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/Canvas_draw.js",
+    "note": "Own atom/bond model and Canvas renderer; external scripts supply interface controls."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "MolTouch Canvas renderer",
+    "language": "JavaScript",
+    "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/js/Canvas_draw.js"
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": "HTML/CSS provide interface markup and styling; PHP handles downloads.",
+  "thirdParty": {
+    "summary": "MIT option for jQuery/Sizzle (GPL-2.0 alternative); other bundled UI licenses unconfirmed.",
+    "source": "https://apricot.cis.ibaraki.ac.jp/moltouch/editor/tool/jquery-1.4.2.min.js",
+    "notice": null,
+    "libraries": []
+  }
+}

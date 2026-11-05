@@ -1,0 +1,576 @@
+{
+  "id": "p20",
+  "slug": "molsketch-desktop",
+  "name": "Molsketch",
+  "rank": 41,
+  "tier": "alternative",
+  "tierReason": "A standalone 2D editor with reaction diagrams, captions, alignment, and vector output can produce publication figures.",
+  "summary": "Desktop editor for drawing two-dimensional molecular structures, reaction schemes, and mechanism diagrams.",
+  "website": "https://sourceforge.net/projects/molsketch/",
+  "repo": "https://github.com/hvennekate/Molsketch",
+  "docs": "https://www.youtube.com/channel/UCIYnNzSnI9AHpB_c48BR7fQ",
+  "vendor": "Hendrik Vennekate and contributors",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0-or-later",
+    "text": "GPLv2 or later in source; application metadata instead says GPL-2.0-only.",
+    "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/molsketch/mainwindow.cpp#L385"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://sourceforge.net/projects/molsketch/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "0.8.4",
+    "date": "2025-10-11",
+    "source": "https://sourceforge.net/p/molsketch/news/2025/10/084-fluorine-16/"
+  },
+  "engine": {
+    "rendering": "Qt QPainter on QGraphicsScene; QSvgGenerator for SVG and QPrinter for printing.",
+    "chemistry": "In-house molecular model with an optional Open Babel adapter.",
+    "ui": "Qt Widgets (Qt 5 or Qt 6)",
+    "source": "https://github.com/hvennekate/Molsketch/tree/b8725eee1037b811be235ede66712c48fcc5c569"
+  },
+  "languages": [
+    "C++"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/actions/bondtypewidget.cpp#L32",
+      "note": "Single, double, and triple bonds drawn; features-test.png.",
+      "shot": {
+        "image": "evidence/molsketch-desktop/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds in an exported drawing."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/bond.cpp#L338",
+      "note": "Wedge, hash, and wavy bonds drawn; features-test.png.",
+      "shot": {
+        "image": "evidence/molsketch-desktop/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds in an exported drawing."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/actions/bondtypewidget.cpp#L38",
+      "note": "Dotted/dashed dative styles; no additional specialist bond category in controls."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/actions/bondtypewidget.cpp#L42",
+      "note": "Symmetric, asymmetric, and inverted asymmetric double bonds."
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/actions/ringaction.cpp#L148",
+      "note": "Triangle drawn; other ring sizes and aromatic options untested.",
+      "shot": {
+        "image": "evidence/molsketch-desktop/f-rings.webp",
+        "caption": "A triangular ring alongside straight and curved arrows."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/p/molsketch/news/2017/01/new-release-beryllium-040/",
+      "note": "Library refresh remained empty; interface requests user-defined library folders."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/moleculepopup.cpp#L87",
+      "note": "Save molecules as MSM files for reuse in folder-based libraries."
+    },
+    "abbreviations": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/actions/drawaction.cpp#L247",
+      "note": "Labels supported; chemical abbreviation handling remains a TODO."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/atompopup.ui#L40",
+      "note": "Charges and custom labels; no dedicated isotope field."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/atompopup.cpp#L152",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/molscene.cpp#L626",
+      "note": "Rectangular selection and rotation; full free-selection transforms are not provided."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/actions/arrowtypewidget.cpp#L29",
+      "note": "Forward arrow drawn; alternate arrow styles not exercised.",
+      "shot": {
+        "image": "evidence/molsketch-desktop/f-reaction-arrows.webp",
+        "caption": "A straight reaction arrow alongside a ring and curved arrow."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/actions/mechanismarrowaction.cpp#L25",
+      "note": "Curved full-head arrow drawn and exported.",
+      "shot": {
+        "image": "evidence/molsketch-desktop/f-mechanism-arrows.webp",
+        "caption": "A curved arrow alongside a ring and straight arrow."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sourceforge.net/p/molsketch/news/2017/03/new-release-beryllium-7-041/",
+      "note": "Paste formatted text from another application."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/actions/frameaction.cpp#L97",
+      "note": "Rectangular and rounded frames, square and curly brackets."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/molsketch/actioncontainer.cpp#L227",
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/molsketch/optimizestructureaction.cpp#L37",
+      "note": "Requires the Open Babel adapter and gen2D operation.",
+      "engine": {
+        "library": "Open Babel gen2D (native C++ through optional obabeliface shared library)",
+        "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/obabeliface/obabeliface.cpp#L203"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/molsketch/settingsdialog.cpp#L100",
+      "note": "Bond and font preferences persist for reuse."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/actions/coloraction.cpp#L51",
+      "note": null
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Print preview offers page setup; multipage editing not verified."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/molecule.cpp#L384",
+      "note": "Selection displayed C47H51NO14; no mass readout found."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/molsketch/wikiquerywidget.cpp#L90",
+      "note": "Caffeine Wikidata query failed with network error 499."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Only editable Name field; no naming command found."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/molsketch/wikiquerywidget.cpp#L147",
+      "note": "Caffeine Wikidata query failed with network error 499."
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D command in File, Edit, View, or Help."
+    },
+    "crystals": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/obabeliface/obabeliface.cpp#L156",
+      "note": "Open Babel imports atoms/bonds; crystal unit-cell information is discarded."
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://openbabel.org/docs/FileFormats/ChemDraw_CDXML_format.html",
+      "note": "Export re-imported; reaction and mechanism arrows absent from CDXML.",
+      "engine": {
+        "library": "Open Babel ChemDrawXMLFormat (native C++ through optional obabeliface shared library; chemical structures only)",
+        "source": "https://github.com/openbabel/openbabel/blob/9be528bcdb31a219637ae3d1699170a8aaa5be6d/src/formats/xml/cdxmlformat.cpp#L54"
+      }
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "CDX import listed; no CDX save format listed."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/obabeliface/obabeliface.cpp#L138",
+      "note": "Caffeine MOL opened and saved; SDF listed in formats.",
+      "engine": {
+        "library": "Open Babel MDL MOL/SDF format plugin (native C++ through optional obabeliface shared library; one record)",
+        "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/obabeliface/obabeliface.cpp#L241"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/molsketch/mainwindow.cpp#L172",
+      "note": "Imported both fixtures; paclitaxel round-trip altered stereochemistry.",
+      "engine": {
+        "library": "Open Babel SMILES format plugin (native C++ through optional obabeliface shared library)",
+        "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/obabeliface/obabeliface.cpp#L138"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/obabeliface/obabeliface.cpp#L319",
+      "note": "Requires Open Babel's InChI support.",
+      "engine": {
+        "library": "Open Babel InChI format plugin (native C++ adapter to native InChI C library)",
+        "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/obabeliface/obabeliface.cpp#L319"
+      }
+    },
+    "rxn": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/obabeliface/obabeliface.cpp#L156",
+      "note": "Open Babel 3 imports components; reaction roles and mapping are discarded."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/molscene.cpp#L350",
+      "note": "Native SVG export wrote features-test.svg."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/fileio.cpp#L105",
+      "note": "Saved through Print Preview and macOS PDF save."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/molsketch/settingsdialog.ui#L226",
+      "note": "Default 10× scaling; 1850×1750 caffeine PNG; no DPI control.",
+      "shot": {
+        "image": "evidence/molsketch-desktop/f-png-export.webp",
+        "caption": "Preferences show bitmap export scaling set to 10.0×."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "macOS requires a source build; Apple Silicon build issues remain open.",
+    "Chemistry file exchange, cleanup, and Wikidata lookup require Open Babel.",
+    "App metadata advertises weight and bundled templates; current code and release notes differ."
+  ],
+  "github": {
+    "stars": 20,
+    "pushedAt": "2025-10-11T09:42:47Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.8.4",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://downloads.sourceforge.net/project/molsketch/Molsketch/Molsketch-0.8.4-src.tar.gz",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 1855977,
+    "installedBytes": 12021760,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molsketch-desktop/simple.png",
+        "note": "Automatic SMILES layout; unchanged default styling.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molsketch-desktop/complex.png",
+        "note": "Automatic layout; exported SMILES changed or omitted stereochemistry.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "No 3D model view found in menus; cholesterol test skipped.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/molsketch-desktop/canvas.webp",
+    "canvasLight": "evidence/molsketch-desktop/canvas-light.webp",
+    "canvasDark": "evidence/molsketch-desktop/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "follows system",
+      "note": "Dark canvas retains black bonds, reducing contrast."
+    },
+    "memory": null,
+    "observations": [
+      "SMILES imports generated 2D coordinates without manual cleanup.",
+      "Default canvas showed black structures on a dark background.",
+      "Default PNG export used white background and 10× pixel scaling.",
+      "Caffeine round-trip matched; paclitaxel output changed and omitted stereochemical assignments.",
+      "Template library was empty after refresh."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 1855977,
+  "references": [
+    "https://sourceforge.net/projects/molsketch/",
+    "https://github.com/hvennekate/Molsketch"
+  ],
+  "builtOn": {
+    "id": "p20",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "Open Babel"
+    ],
+    "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/molview.cpp#L58",
+    "note": "Custom canvas; optional Open Babel handles chemical formats and 2D coordinate generation."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Molsketch libmolsketch (Qt QPainter)",
+    "language": "C++",
+    "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/libmolsketch/bond.cpp#L502"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Optional native InChI library"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Other languages provide license text, tests, build scripts and installer support.",
+  "thirdParty": {
+    "summary": "Includes LGPL-3.0 (Qt and Oxygen icons), GPL-2.0 (optional Open Babel), and GPL runtimes with linking exceptions.",
+    "source": "https://github.com/hvennekate/Molsketch/blob/b8725eee1037b811be235ede66712c48fcc5c569/molsketch/licensedialog.cpp",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Open Babel",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/openbabel/openbabel/blob/master/COPYING"
+      }
+    ]
+  }
+}

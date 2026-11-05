@@ -1,0 +1,655 @@
+{
+  "id": "p135",
+  "slug": "vibe-sketcher",
+  "name": "vibe-sketcher",
+  "rank": 15,
+  "tier": "alternative",
+  "tierReason": "It creates editable 2D structure and reaction documents with journal styles and publication SVG, PDF and high-resolution PNG exports.",
+  "summary": "A 2D chemical structure and reaction editor for publication figures and computational chemistry input preparation.",
+  "website": "https://vibyverse.com/vibe-sketcher",
+  "repo": null,
+  "docs": "https://vibyverse.com/vibe-sketcher/docs/index.html",
+  "vendor": "Michael F. Peintinger",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MPL-2.0",
+    "text": "Mozilla Public License 2.0; matching release source is downloadable.",
+    "source": "https://vibyverse.com/vibe-sketcher/docs/license.html"
+  },
+  "price": {
+    "text": "Free (public desktop downloads and source; 2026-11-05)",
+    "source": "https://vibyverse.com/download/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": false,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "0.6.5",
+    "date": "2026-11-03",
+    "source": "https://vibyverse.com/vibe-sketcher/docs/changelog.html"
+  },
+  "engine": {
+    "rendering": "Ketcher's canvas renderer; RDKit and custom SVG exports; resvg PNG and svg2pdf PDF.",
+    "chemistry": "RDKit on the server; Indigo WebAssembly in Ketcher.",
+    "ui": "TypeScript shell with React/Ketcher; Electron desktop shell.",
+    "source": "https://vibyverse.com/vibe-sketcher/docs/license.html"
+  },
+  "languages": [
+    "Python",
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Drew single, double, triple bonds; changed an existing bond order.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Drew solid wedge, hashed wedge and wavy bonds.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/reaction-library.html#compounds-and-fragments",
+      "note": "Dative and haptic bonds are deferred."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Placed benzene; common ring-size tools also visible.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-rings.webp",
+        "caption": "Benzene on the canvas with ring tools below."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Chair and boat templates visible in Structure Library."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Dedicated Chain toolbar tool."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/reaction-library.html#compounds-and-fragments",
+      "note": "Searched aspirin and inserted its editable compound template."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/spike_canvas.html#criterion-2-toolbar-and-template-library",
+      "note": "Ketcher user templates persist in browser storage."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#abbreviations",
+      "note": "Ph, Boc and other groups contract and expand chemically."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/tutorials/stereo-and-properties.html#draw-and-inspect",
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/app.html#what-the-server-reads-from-the-drawing",
+      "note": "Drawn radicals contribute to species multiplicity."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Lasso and flip tools visible; resizing not checked."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#cdxml-for-chemdraw",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the drawing canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/app.html#drawing",
+      "note": "Drew a curved, filled-head elliptical arc arrow.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-mechanism-arrows.webp",
+        "caption": "A curved arrow on the drawing canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#supported-formats",
+      "note": "RXN and reaction SMILES preserve chemical participants."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/inputs.html#reaction-paths-neb",
+      "note": "Automatic mapping with manually pinned atom pairs."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Text editor offers bold, italic, subscript and superscript."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#shapes-and-tlc-plates",
+      "note": "Editable rectangles, ellipses and lines; chemical S-group brackets."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/cleanup.html",
+      "note": "Standardizes bond lengths and angles while checking stereochemistry.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-cleanup.webp",
+        "caption": "The Clean up command above structures on the canvas."
+      },
+      "engine": {
+        "library": "RDKit/CoordGen (Python, local server) + In-house NumPy/FIRE refinement",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/chem/clean.html#clean_2d"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#draw-once-in-the-document-s-style",
+      "note": "ACS 1996, RSC and Wiley JCC presets."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#highlights",
+      "note": "Selected atoms and connecting bonds receive palette-colored highlights."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Add Image toolbar button."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#shapes-and-tlc-plates",
+      "note": "TLC plate generator produces editable drawing objects."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/document.html#what-validation-checks",
+      "note": "Invalid carbon valence flagged during manual drawing.",
+      "engine": {
+        "library": "RDKit (Python sanitization, local server) + In-house structure checks",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/document/ket.html#molecule_reason"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/app.html#stereodescriptors",
+      "note": "Paclitaxel and cholesterol received computed R/S descriptors.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-stereo-perception.webp",
+        "caption": "A molecular drawing alongside its calculated R and S descriptors."
+      },
+      "engine": {
+        "library": "RDKit rdCIPLabeler (Python bindings, local server)",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/chem/cip.html#stereo_labels"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/tutorials/stereo-and-properties.html#draw-and-inspect",
+      "note": "Caffeine formula C8H10N4O2 and mass 194.19 g/mol computed.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-formula-mass.webp",
+        "caption": "Caffeine structure with its molecular formula and mass."
+      },
+      "engine": {
+        "library": "RDKit (Python bindings, local server)",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/chem/species.html#properties"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/app.html#elemental-analysis-and-descriptors",
+      "note": "Caffeine clogP, MR, TPSA and HBD/HBA computed.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-properties.webp",
+        "caption": "Caffeine structure with calculated clogP, TPSA and other estimates."
+      },
+      "engine": {
+        "library": "RDKit (Python bindings, local server)",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/chem/analysis.html#descriptors"
+      }
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#supported-formats",
+      "note": "Name import reports missing naming engine or OPSIN with Java."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/app.html#names",
+      "note": "Imported structures report naming engine not installed."
+    },
+    "nmr-prediction": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/results.html#nmr-shifts",
+      "note": "Shifts require external ORCA calculations and a computed reference.",
+      "engine": {
+        "library": "ORCA (external executable) + In-house Python shielding-to-shift conversion",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/document/nmr.html#nmr_shifts"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#r-groups",
+      "note": "R-group cores, substituent definitions and R-logic."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#polymer-repeat-units",
+      "note": "SRU/COP S-groups preserve repeat-unit connectivity and labels."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#peptides-and-nucleic-acids",
+      "note": "Peptide, DNA, RNA sequence and HELM import/export."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/app.html#in-3d-in-vibe-viewer",
+      "note": "Coordinates generated; no rotatable viewport available in bundled app."
+    },
+    "crystals": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/roadmap.html#phase-5-inorganic-and-crystals-after-1-0-scope-to-be-decided",
+      "note": "CIF/crystal authoring is planned after 1.0."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#cdxml-for-chemdraw",
+      "note": "Exported caffeine CDXML reopened as a recognized chemical structure.",
+      "engine": {
+        "library": "In-house Python drawing reader/writer + RDKit Python structure parser",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/document/cdxml.html"
+      }
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#supported-formats",
+      "note": "Imports binary CDX; no CDX export.",
+      "engine": {
+        "library": "In-house Python CDX-to-CDXML translator + RDKit Python parser (import only)",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/document/formats.html"
+      }
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#supported-formats",
+      "note": "Caffeine MOL/SDF round trips worked; cholesterol 3D SDF rejected.",
+      "engine": {
+        "library": "RDKit (Python bindings, local server)",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/document/formats.html"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#supported-formats",
+      "note": "Imported all fixtures; exported caffeine SMILES.",
+      "shot": {
+        "image": "evidence/vibe-sketcher/f-smiles.webp",
+        "caption": "Caffeine structure and its SMILES in the species panel."
+      },
+      "engine": {
+        "library": "RDKit (Python bindings, local server)",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/document/formats.html"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#supported-formats",
+      "note": null,
+      "engine": {
+        "library": "InChI (native library through RDKit Python bindings, local server)",
+        "source": "https://vibyverse.com/vibe-sketcher/docs/_modules/vibesketcher/document/formats.html"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#supported-formats",
+      "note": "Read/write; export requires exactly one reaction."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#supported-formats",
+      "note": "Default SVG exports saved for all three structures."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#png-and-pdf-publication-figures",
+      "note": "Default caffeine PDF saved; vector paths verified."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#png-and-pdf-publication-figures",
+      "note": "Default caffeine PNG saved at 300 dpi."
+    },
+    "clipboard-chemdraw": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/formats.html#cdxml-for-chemdraw",
+      "note": "Copies CDXML text; direct ChemDraw clipboard round trips remain unverified."
+    },
+    "office": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/figures.html#figures-for-office-programs",
+      "note": "EMF is editable vector artwork, without chemical object editing."
+    },
+    "python-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/python_api.html",
+      "note": "Documented vibesketcher SDK."
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/cli.html",
+      "note": "Headless conversion and rendering commands."
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/agents.html",
+      "note": "MCP tools and REST edit the shared document."
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://vibyverse.com/vibe-sketcher/docs/inputs.html#adding-a-writer",
+      "note": "InputWriter subclasses register extensions; no automatic plugin discovery."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Officially described as a testing version.",
+    "Self-contained desktop packages omit naming integrations and calculation submission.",
+    "CDXML compatibility with ChemDraw itself is unverified."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "0.6.5",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "https://vibyverse.com/updates/vibe-sketcher/releases/0.6.5/vibe-sketcher-0.6.5-arm64.dmg",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 510821544,
+    "installedBytes": 876380160,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/vibe-sketcher/simple.svg",
+        "note": "Automatic SMILES layout retained; screenshot zoomed to 200%.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/vibe-sketcher/complex.svg",
+        "note": "Automatic SMILES layout retained without cleanup or repositioning.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "Coordinates generated; screenshot and export are 2D. No rotatable viewport was available.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/vibe-sketcher/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": "evidence/vibe-sketcher/canvas-dark.webp",
+    "themes": {
+      "light": false,
+      "dark": true,
+      "how": "fixed",
+      "note": "Fixed dark interface; drawing canvas stays white."
+    },
+    "memory": null,
+    "observations": [
+      "SMILES imports produced automatic layouts without cleanup.",
+      "Canvas heteroatoms are colored; default SVG output is monochrome.",
+      "Paclitaxel imported with wedge and hashed stereobonds.",
+      "The desktop package reported its naming engine unavailable.",
+      "Cholesterol coordinates generated, but no rotatable viewport was available."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 510821544,
+  "references": [
+    "https://vibyverse.com/vibe-sketcher",
+    "https://vibyverse.com/vibe-sketcher/docs/index.html"
+  ],
+  "builtOn": {
+    "id": "p135",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "Ketcher",
+      "RDKit",
+      "Indigo",
+      "OPSIN",
+      "InChI",
+      "CoordGen"
+    ],
+    "source": "https://vibyverse.com/vibe-sketcher/docs/license.html",
+    "note": "Ketcher canvas with Indigo; RDKit server chemistry; OPSIN naming is optional."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher/Raphaël canvas; RDKit/custom SVG exports",
+    "language": "TypeScript",
+    "source": "https://vibyverse.com/updates/vibe-sketcher/releases/0.6.5/vibe-sketcher-0.6.5-source.tar.gz"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Chemistry server and SVG drawing"
+    },
+    {
+      "language": "JavaScript",
+      "role": "Electron desktop shell"
+    },
+    {
+      "language": "C++",
+      "role": "RDKit and Indigo WebAssembly chemistry"
+    },
+    {
+      "language": "Rust",
+      "role": "Publication PNG/PDF conversion via Python"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Ketcher/Indigo Apache-2.0; RDKit BSD-3-Clause; React/Electron MIT. Indigo includes InChI 1.06 under LGPL-style IUPAC terms; macOS runtime adds Cairo MPL-1.1 and Eigen MPL-2.0. Telex OFL-1.1 and Roboto Apache-2.0 font notices apply.",
+    "source": "https://vibyverse.com/vibe-sketcher/docs/license.html",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      },
+      {
+        "name": "CoordGen",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/schrodinger/coordgenlibs/blob/master/LICENSE"
+      }
+    ]
+  }
+}

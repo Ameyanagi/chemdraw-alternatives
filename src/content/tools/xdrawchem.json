@@ -1,0 +1,594 @@
+{
+  "id": "p22",
+  "slug": "xdrawchem",
+  "name": "XDrawChem",
+  "rank": 28,
+  "tier": "alternative",
+  "tierReason": "A standalone desktop editor provides chemical drawing documents with reaction schemes, annotations, templates, and layout controls.",
+  "summary": "Desktop editor for drawing two-dimensional chemical structures, reaction schemes, and annotated chemistry figures.",
+  "website": "https://bryanherger.github.io/xdrawchem/",
+  "repo": "https://github.com/bryanherger/xdrawchem",
+  "docs": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/index.html",
+  "vendor": "Bryan Herger",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0-or-later",
+    "text": "GNU GPL version 2 or later.",
+    "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/COPYRIGHT.txt"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/bryanherger/xdrawchem/releases/tag/v2.0.1"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v2.0.1",
+    "date": "2026-04-24",
+    "source": "https://github.com/bryanherger/xdrawchem/releases/tag/v2.0.1"
+  },
+  "engine": {
+    "rendering": "Qt QPainter; custom legacy SVG/EPS writers; raster-backed PDF and newer SVG export",
+    "chemistry": "Open Babel 3 and in-house chemistry algorithms",
+    "ui": "Qt 6 Widgets; legacy Qt 5 build also available",
+    "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/CMakeLists.txt"
+  },
+  "languages": [
+    "C++"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/toolbar.html",
+      "note": "Single and double drawn; triple control seen but not confirmed.",
+      "shot": {
+        "image": "evidence/xdrawchem/f-bonds-core.webp",
+        "caption": "A double bond on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/bondedit.cpp#L152",
+      "note": "Solid wedge, hashed wedge, and wavy bonds drawn.",
+      "shot": {
+        "image": "evidence/xdrawchem/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/bond.cpp#L113",
+      "note": "Dative and partial-order aromatic/double-triple bonds."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/bondedit.cpp#L188",
+      "note": null
+    },
+    "rings": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application_ring.cpp#L87",
+      "note": "Benzene insertion reports missing Resources/benzene.cml."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application_ring.cpp#L92",
+      "note": "Cyclohexane chair and boat templates."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/render2d.cpp#L195",
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application_ring.cpp#L111",
+      "note": "Alanine insertion reports missing Resources/alanine.cml."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/toolmenu.html",
+      "note": "Save molecules in the custom ring library."
+    },
+    "abbreviations": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/backlog.md#L75",
+      "note": "Expandable superatom abbreviations require a future data model."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/backlog.md#L69",
+      "note": "Arbitrary labels work; formal charges and isotopes lack chemical representation."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application.cpp#L814",
+      "note": "Graphical electron-dot and lone-pair symbols."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/render2d_text.cpp#L339",
+      "note": "Typing over an atom starts or changes its label."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/render2d_select.cpp#L9",
+      "note": "Lasso selection, rotation, mirroring, and resizing."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application.cpp#L833",
+      "note": "Forward and retrosynthetic arrows drawn.",
+      "shot": {
+        "image": "evidence/xdrawchem/f-reaction-arrows.webp",
+        "caption": "Forward and hollow reaction arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/curvearrow.cpp#L99",
+      "note": "90-degree curved arrow drawn on scratch canvas.",
+      "shot": {
+        "image": "evidence/xdrawchem/f-mechanism-arrows.webp",
+        "caption": "A curved arrow on the drawing canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/molecule.cpp#L839",
+      "note": "Native XDC stores molecules with reactant and product roles."
+    },
+    "atom-mapping": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/backlog.md#L65",
+      "note": "Listed as future work for v2.1 or later."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application.cpp#L818",
+      "note": "Orbital shapes and chemical symbols."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/text.html",
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/edit.html",
+      "note": "Editable brackets, boxes, circles, ellipses, and curves."
+    },
+    "align": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/chemdata_tools.cpp#L337",
+      "note": "Auto layout aligns whole schemes rather than selected objects."
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/toolmenu.html",
+      "note": null,
+      "engine": {
+        "library": "Ported from JMDraw (C++ SDG implementation)",
+        "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/sdg.h#L1"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application.cpp#L2295",
+      "note": "Built-in ACS style preset."
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/prefs.h#L158",
+      "note": "Bond settings persist; drawing-font presets are not saved."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/edit.html",
+      "note": null
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/pagesetupdialog.cpp#L21",
+      "note": "Page size and orientation controls; document uses one canvas."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/molecule_valence.cpp#L16",
+      "note": null,
+      "engine": {
+        "library": "In-house (C++ Molecule::ValenceErrors and MolData valence table)",
+        "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/molecule_valence.cpp#L16"
+      }
+    },
+    "stereo-perception": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/backlog.md#L63",
+      "note": "Absent from v2.0.1; implemented in newer unreleased source."
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/toolmenu.html",
+      "note": "Drawn ethene returned C2H4 and molecular weight 28.0538.",
+      "shot": {
+        "image": "evidence/xdrawchem/f-formula-mass.webp",
+        "caption": "Molecule Info displays C2H4 and molecular weight 28.0538."
+      },
+      "engine": {
+        "library": "In-house (C++ Molecule formula calculation and MolData atomic masses)",
+        "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/molecule_tools_2.cpp#L277"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/chemdata_tools.cpp#L190",
+      "note": "Estimates log Kow.",
+      "engine": {
+        "library": "In-house (C++ log Kow fragment estimator)",
+        "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/molecule_tools_1.cpp#L451"
+      }
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/molecule_nts.cpp#L26",
+      "note": "Submitting caffeine returned without adding a structure."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/molecule_iupac.cpp#L24",
+      "note": "Drawn ethene lookup reported Could not retrieve IUPAC name."
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/toolmenu.html",
+      "note": null,
+      "engine": {
+        "library": "Ported from Christoph Steinbeck's BremserOneSphereHOSECodePredictor (C++/Qt 13C); In-house (C++ 1H predictor)",
+        "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/boshcp.cpp#L1"
+      }
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/backlog.md#L75",
+      "note": "S-groups and repeat-unit semantics require a future data model."
+    },
+    "biomolecules": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application_ring.cpp#L111",
+      "note": "Amino-acid and nucleic-base templates; sequence builder does not assemble structures."
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/backlog.md#L81",
+      "note": "OSRA integration is listed as future work."
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/netaccess.cpp#L102",
+      "note": "PubChem search by name, CAS number, or formula.",
+      "engine": {
+        "library": "PubChem PUG REST (remote HTTPS/JSON API; Qt C++ client)",
+        "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/netaccess.cpp#L111"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/to3d.cpp#L259",
+      "note": "Build 3D reports coordinate-generation service unavailable."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application_ob.cpp#L95",
+      "note": "CDXML written; reopening same file hung at 100% CPU.",
+      "engine": {
+        "library": "In-house (C++ CDXML_Reader parser and ToCDXML writer)",
+        "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/chemdata_cdx.cpp#L32"
+      }
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application_ob.cpp#L238",
+      "note": "Reads binary CDX; saving uses CDXML instead.",
+      "engine": {
+        "library": "In-house (C++ CDX-to-CDXML binary parser; import only)",
+        "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/cdx2cdxml.cpp#L126"
+      }
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application_ob.cpp#L56",
+      "note": "MOL/SDF opening rejected; format menus contain only CDX, CDXML, XDC."
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/doc/toolmenu.html",
+      "note": "Fixture input left blank canvases; drawn ethene output string empty."
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/molecule_smiles.cpp#L275",
+      "note": "Reads and writes via Open Babel; import loses chemical metadata.",
+      "engine": {
+        "library": "Open Babel 3 (native C++ OBConversion InChI format plugin)",
+        "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/molecule_smiles.cpp#L275"
+      }
+    },
+    "rxn": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/backlog.md#L67",
+      "note": "RXN interchange is listed as future work."
+    },
+    "svg-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/render2d_svg.cpp#L24",
+      "note": "Export succeeds, but SVG embeds one bitmap and no vector paths."
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/render2d_pdf.cpp#L33",
+      "note": "PDF export contains a raster image instead of vector drawing."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/render2d_svg.cpp#L97",
+      "note": "Default file export is 263x350 pixels at 72 dpi.",
+      "shot": {
+        "image": "evidence/xdrawchem/f-png-export.webp",
+        "caption": "The canvas and a saved PNG file status message."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/main.cpp#L59",
+      "note": "PNG command-line mode still initializes and displays the GUI."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Ratings cover v2.0.1; newer unreleased source adds CIP labels and local 3D generation.",
+    "PDF and Export SVG embed bitmaps despite vector claims; the 300 dpi clipboard option upscales pixels.",
+    "Older docs conflict with code on 3D, Babel export, text/projections, template refresh, CDX output, and MOL/SDF support."
+  ],
+  "github": {
+    "stars": 56,
+    "pushedAt": "2026-10-31T12:04:44Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "2.0.1",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "https://github.com/bryanherger/xdrawchem/releases/download/v2.0.1/XDrawChem-2.0.1-macos.dmg",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 39611513,
+    "installedBytes": 110833664,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "No drawing: current Kekulé SMILES stayed blank; MOL rejected with file-type selection error.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "No drawing: current Kekulé SMILES stayed blank; MOL rejected with file-type selection error.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "No rotatable model; cholesterol SMILES blank and SDF rejected.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/xdrawchem/canvas.webp",
+    "canvasLight": "evidence/xdrawchem/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Fixed light palette; paclitaxel import failed, leaving blank canvas."
+    },
+    "memory": null,
+    "observations": [
+      "Caffeine and paclitaxel SMILES inputs left empty default canvases.",
+      "Default controls show Helvetica 12 and line thickness 1.",
+      "Benzene and alanine insertion failed with missing-template-file alerts.",
+      "Default SVG and PDF exports embed raster images.",
+      "Reopening the app’s own CDXML export made it unresponsive.",
+      "Current Kekulé SMILES also left caffeine and paclitaxel canvases empty.",
+      "Redraw stderr reports missing OpenBabel plugins and zero atoms after each fixture SMILES import.",
+      "About reports 2.0.1; both Info.plist bundle-version fields report 2.0."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 39611513,
+  "references": [
+    "https://github.com/bryanherger/xdrawchem"
+  ],
+  "builtOn": {
+    "id": "p22",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "Open Babel"
+    ],
+    "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/application.cpp#L169",
+    "note": "Own Render2D canvas and editing logic; Open Babel handles molecular conversion and chemistry."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "XDrawChem Render2D (Qt QPainter)",
+    "language": "C++",
+    "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/xdrawchem/render2d_draw.cpp#L47"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Native InChI through Open Babel"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "C-classified headers are C++; HTML documentation; remaining languages build files.",
+  "thirdParty": {
+    "summary": "Includes GPL-2.0-only (Open Babel) and LGPL-3.0/GPL or commercial licensing (Qt6).",
+    "source": "https://github.com/bryanherger/xdrawchem/blob/fec22dde95bfabfd55d616b77279d4fc4a79f7b7/xdrawchem-qt5/CMakeLists.txt",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Open Babel",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/openbabel/openbabel/blob/master/COPYING"
+      }
+    ]
+  }
+}

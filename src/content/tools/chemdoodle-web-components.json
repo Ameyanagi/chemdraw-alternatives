@@ -1,0 +1,625 @@
+{
+  "id": "p29",
+  "slug": "chemdoodle-web-components",
+  "name": "ChemDoodle Web Components",
+  "rank": 11,
+  "tier": "embeddable",
+  "tierReason": "Primarily a JavaScript component library for embedding chemical sketchers and molecular graphics in applications.",
+  "summary": "JavaScript components for embedding chemical structure drawing, molecular visualization, and chemistry interfaces in websites.",
+  "website": "https://web.chemdoodle.com/",
+  "repo": null,
+  "docs": "https://web.chemdoodle.com/tutorial/2d-structure-canvases/sketcher-canvas",
+  "vendor": "iChemLabs, LLC",
+  "license": {
+    "kind": "open-source",
+    "spdx": null,
+    "text": "GPLv3 library; separate proprietary licenses available.",
+    "source": "https://web.chemdoodle.com/installation/license"
+  },
+  "price": {
+    "text": "Free under GPLv3; proprietary licensing by quote (2026-11-05).",
+    "source": "https://web.chemdoodle.com/store/proprietary-licensing"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": true,
+    "offline": true
+  },
+  "version": {
+    "name": "11.0.0",
+    "date": "2025-05-17",
+    "source": "https://web.chemdoodle.com/installation/changelog"
+  },
+  "engine": {
+    "rendering": "HTML5 Canvas 2D; WebGL for 3D; canvas2svg for proprietary SVG export",
+    "chemistry": "ChemDoodle informatics; optional ChemDoodle Java API through iChemLabs Cloud Services",
+    "ui": "Custom JavaScript/HTML/CSS UI in the ChemDoodleWeb-uis extension",
+    "source": "https://web.chemdoodle.com/docs/api"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/demos/2d-sketcher",
+      "note": "Drew single bond and changed it to double and triple.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-bonds-core.webp",
+        "caption": "Bond palette beside a molecular drawing in the sketcher."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/installation/changelog",
+      "note": "Changed a bond to recessed, protruding, and wavy.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-stereo-bonds.webp",
+        "caption": "A molecular drawing with solid and hashed wedge bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/installation/changelog",
+      "note": "Dative plus zero-order ionic/hydrogen bonds."
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/2d-sketcher",
+      "note": "Sketcher flips asymmetric bonds; centered rendering requires API styles."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/docs/api",
+      "note": "Added benzene; other ring sizes appear in toolbar.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-rings.webp",
+        "caption": "Benzene ring on the sketcher canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Template library includes a Ring Conformers category."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/2d-sketcher",
+      "note": "Drag distance determines carbon-chain length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/docs/api",
+      "note": "Attached alanine from the amino acid template library.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-templates.webp",
+        "caption": "Templates panel showing amino acid structures and alanine choices."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/docs/api",
+      "note": "User-created templates persist in browser localStorage.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-custom-templates.webp",
+        "caption": "Templates panel with amino acid choices and an Add Template button."
+      }
+    },
+    "abbreviations": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/store/proprietary-licensing",
+      "note": "Proprietary label parsing and formatting; structural expansion unverified."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/2d-sketcher",
+      "note": "Element/isotope/charge tools; arbitrary typed labels require proprietary builds."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/2d-sketcher",
+      "note": "Tools add and remove radicals and lone pairs."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/2d-sketcher",
+      "note": "Hover shortcuts change elements, bond orders, charges, and orientation."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/2d-sketcher",
+      "note": "Lasso, flips, whole-figure rotation; scaling changes rendering size."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/docs/2d-shapes",
+      "note": "Drew synthetic and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the sketcher canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/docs/2d-shapes",
+      "note": "Drew an electron-pair pusher between atoms.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-mechanism-arrows.webp",
+        "caption": "A curved red arrow beside a structure on the canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/docs/chemdoodle-json-format",
+      "note": "JSON stores molecular reactants/products assigned to reaction arrows."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/2d-sketcher",
+      "note": "Drag between atoms to create reaction atom mappings."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/docs/2d-shapes",
+      "note": "Editable lines, arrows, pushers, brackets, and repeat units."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/2d-sketcher",
+      "note": "Requires registered iChemLabs Cloud Services access.",
+      "engine": {
+        "library": "In-house ChemDoodle Java API (remote iChemLabs CloudServices; optimize with dimension 2)",
+        "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+      }
+    },
+    "journal-styles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/advanced/styles",
+      "note": "ACS 1996 example requires manual API settings."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/advanced/styles",
+      "note": "Reusable JavaScript Styles objects configure bond and font settings."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/advanced/styles",
+      "note": "Individual atom and bond colors through API style objects."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/docs/api",
+      "note": "API places images as canvas backgrounds."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/non-canvas/stoichiometry-table",
+      "note": "Separate editable stoichiometry-table component; calculations require Cloud Services."
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/docs/ichemlabs-cloud-services",
+      "note": "R/S and E/Z resolution through iChemLabs Cloud Services.",
+      "engine": {
+        "library": "ChemDoodle Java API (remote iChemLabs CloudServices; resolveCIP)",
+        "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/demos/elemental-analysis",
+      "note": "Calculator returned paclitaxel formula and molecular mass.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-formula-mass.webp",
+        "caption": "Calculations panel lists molecular formula and mass above the structure."
+      },
+      "engine": {
+        "library": "ChemDoodle Java API (remote iChemLabs CloudServices; elementalAnalysis)",
+        "source": "https://web.chemdoodle.com/demos/elemental-analysis"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/docs/ichemlabs-cloud-services",
+      "note": "Calculator returned polar surface area and other descriptors.",
+      "engine": {
+        "library": "ChemDoodle Java API (remote iChemLabs CloudServices; calculate with xlogp2 and tpsa descriptors)",
+        "source": "https://web.chemdoodle.com/demos/calculate-molecule-properties"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/demos/iupac-naming",
+      "note": "Naming demo converted caffeine to a 14-atom structure.",
+      "engine": {
+        "library": "OPSIN (Java on remote iChemLabs CloudServices, accessed through ChemDoodle.iChemLabs.readIUPACName)",
+        "source": "https://web.chemdoodle.com/demos/iupac-naming"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/demos/iupac-naming",
+      "note": "Naming demo returned traditional and preferred names for caffeine.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-structure-to-name.webp",
+        "caption": "Structure to Name displays traditional and attempted preferred names."
+      },
+      "engine": {
+        "library": "In-house ChemDoodle Java API (remote iChemLabs CloudServices; generateIUPACName)",
+        "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/simulate-nmr-and-ms",
+      "note": "Proton and carbon-13 prediction through iChemLabs Cloud Services.",
+      "engine": {
+        "library": "ChemDoodle Java API (remote iChemLabs CloudServices; simulate1HNMR and simulate13CNMR)",
+        "source": "https://web.chemdoodle.com/docs/ichemlabs-cloud-services"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/advanced/sketcher-query-sketcher",
+      "note": "Query atoms support element lists, wildcards, and attachment constraints."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/docs/2d-shapes",
+      "note": "Repeat units associate boundary bonds and repeat-count ranges."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/demos/chemical-image-recovery",
+      "note": "Chemical image recovery through iChemLabs Cloud Services.",
+      "engine": {
+        "library": "ChemDoodle Chemical Image Recovery (remote iChemLabs CloudServices; ChemDoodle.iChemLabs.cir)",
+        "source": "https://web.chemdoodle.com/demos/chemical-image-recovery"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/2d-structure-canvases/molgrabber-canvas",
+      "note": "PubChem, ChemSpider, and ChemExper through iChemLabs Cloud Services.",
+      "engine": {
+        "library": "ChemDoodle Java API (remote iChemLabs CloudServices; getMoleculeFromDatabase accesses PubChem, ChemSpider and ChemExper)",
+        "source": "https://web.chemdoodle.com/docs/ichemlabs-cloud-services"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/tutorial/3d-structure-canvases/transform3d-canvas",
+      "note": "Separate 3D editor loaded and rotated cholesterol; rendering was very dark.",
+      "shot": {
+        "image": "evidence/chemdoodle-web-components/f-model-3d.webp",
+        "caption": "Ball-and-stick molecular model in the 3D editor."
+      },
+      "engine": {
+        "library": "In-house ChemDoodle Web Components (browser JavaScript/WebGL and GLSL; glMatrix matrix math; TransformCanvas3D)",
+        "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/advanced/working-with-cif-files",
+      "note": "Reads CIF files and constructs unit cells and supercells."
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/tutorial/loading-data",
+      "note": "Save dialog offered CDXML; generation stalled with a script error.",
+      "engine": {
+        "library": "ChemDoodle Java API (remote iChemLabs CloudServices; getMoleculeFromContent and saveFile format conversion)",
+        "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/loading-data",
+      "note": "Read/write through iChemLabs Cloud Services using desktop-format support.",
+      "engine": {
+        "library": "ChemDoodle Java API (remote iChemLabs CloudServices; getMoleculeFromContent and saveFile format conversion)",
+        "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+      }
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/tutorial/loading-data",
+      "note": "MOL and single-record SDF loaded; MOL generation stalled with error.",
+      "engine": {
+        "library": "In-house ChemDoodle.io.MOLInterpreter (browser JavaScript; MOL V2000/V3000); ChemDoodle Java API (remote iChemLabs CloudServices for SDF)",
+        "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://web.chemdoodle.com/docs/ichemlabs-cloud-services",
+      "note": "Separate SMILES demo read caffeine and wrote imported structures.",
+      "engine": {
+        "library": "ChemDoodle Java API (remote iChemLabs CloudServices; readSMILES and writeSMILES)",
+        "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/loading-data",
+      "note": "Read/write through iChemLabs Cloud Services using desktop-format support.",
+      "engine": {
+        "library": "ChemDoodle Java API (remote iChemLabs CloudServices; getMoleculeFromContent and saveFile format conversion)",
+        "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/docs/api",
+      "note": "Native readRXN and writeRXN APIs."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/advanced/image-export",
+      "note": "Proprietary builds only; 2D canvases only."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No image export option in the demo save dialog."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No image export option in the demo save dialog."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/docs/api",
+      "note": "Documented JavaScript API."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/advanced/developing-plugins",
+      "note": "Documented JavaScript plugin extension mechanism."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/2d-structure-canvases/sketcher-canvas",
+      "note": "Embed SketcherCanvas using JavaScript and the uis extension."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "GPLv3 library; proprietary integration and bundled asset reuse have separate licensing terms.",
+    "SVG export and condensed-label editing require proprietary builds.",
+    "Cleanup, naming, SMILES conversion, and advanced calculations require cloud-service access."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "11.0.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://web.chemdoodle.com/demos/2d-sketcher",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/chemdoodle-web-components/simple.png",
+        "note": "SMILES rejected; MOL imported. SMILES output generated in separate demo.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/chemdoodle-web-components/complex.png",
+        "note": "SMILES rejected; imported MOL has crowded labels near the central ring.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/chemdoodle-web-components/threed.png",
+        "note": "Rotatable 3D model is extremely dark in headless Chromium.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemdoodle-web-components/canvas.webp",
+    "canvasLight": "evidence/chemdoodle-web-components/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "The hosted sketcher reports version 11.0.0.",
+      "Separate demos provide SMILES conversion, naming, and a 3D editor.",
+      "The save dialog stalled generating MOL, SDF, CDXML, and SMILES files.",
+      "The 3D cholesterol model is barely visible against the black background.",
+      "No image-export command appeared in the sketcher save dialog.",
+      "The sketcher open dialog rejected both current Kekule SMILES fixtures."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://web.chemdoodle.com/",
+    "https://www.ichemlabs.com/download"
+  ],
+  "builtOn": {
+    "id": "p29",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip",
+    "note": "ChemDoodle's own sketcher and chemistry implementation; derived from its desktop application."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ChemDoodle Atom/Bond canvas renderer",
+    "language": "JavaScript",
+    "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip"
+  },
+  "otherLanguages": [
+    {
+      "language": "Java",
+      "role": "Remote ChemDoodle chemistry services"
+    },
+    {
+      "language": "GLSL",
+      "role": "WebGL 3D rendering shaders"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML provides examples; CSS styles the interface.",
+  "thirdParty": {
+    "summary": "MIT and Zlib third-party code; bundled UI icons have proprietary CWC-only reuse terms.",
+    "source": "https://web.chemdoodle.com/downloads/ChemDoodleWeb-11.0.0.zip",
+    "notice": null,
+    "libraries": []
+  }
+}

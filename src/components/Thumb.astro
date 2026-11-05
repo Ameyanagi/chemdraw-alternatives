@@ -1,0 +1,12 @@
+---
+import { href } from '../lib/paths';
+import { drawingZoom, type Fixture, type Tool } from '../lib/tools';
+import Specimen from './Specimen.astro';
+
+interface Props { tool: Tool; fixture: Fixture; class?: string }
+const { tool, fixture, class: className } = Astro.props;
+const zoom = drawingZoom(tool, fixture);
+---
+{zoom
+  ? <a class:list={['hover:bg-silica block no-underline', className]} href={href(`tools/${tool.slug}/`)} {...zoom}><Specimen tool={tool} fixture={fixture} compact /></a>
+  : <div class={className}><Specimen tool={tool} fixture={fixture} compact /></div>}

@@ -1,0 +1,565 @@
+{
+  "id": "p52",
+  "slug": "ferrum-chemical-forge",
+  "name": "Ferrum Chemical Forge",
+  "rank": 95,
+  "tier": "alternative",
+  "tierReason": "A standalone 2D chemical document editor provides structure and reaction authoring, annotations, and vector SVG/PDF export.",
+  "summary": "Pre-alpha desktop editor for drawing chemical structures, composing reaction documents, and exporting vector figures.",
+  "website": "https://github.com/vosslab/ferrum-chemical-forge",
+  "repo": "https://github.com/vosslab/ferrum-chemical-forge",
+  "docs": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/USAGE.md",
+  "vendor": "Neil R. Voss",
+  "license": {
+    "kind": "open-source",
+    "spdx": "AGPL-3.0-only",
+    "text": "Application: AGPL-3.0-only; Rust engine: LGPL-3.0-only.",
+    "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/PROVENANCE.md"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/PROVENANCE.md"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": false,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/vosslab/ferrum-chemical-forge/releases"
+  },
+  "engine": {
+    "rendering": "Custom Rust render plans replayed by Qt QPainter; Rust SVG, tiny-skia PNG, and pdf-writer PDF export.",
+    "chemistry": "Ferrum-Chem Rust model with RDKit through a private native adapter.",
+    "ui": "PySide6 / Qt Widgets with PyO3 bindings.",
+    "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/PROVENANCE.md"
+  },
+  "languages": [
+    "Rust",
+    "Python",
+    "C++"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/QT_CONTRACT.md#L445-L452",
+      "note": "Manual single, double, and triple bond authoring and property editing."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/CDML_AUTHORING_GESTURE_CONTRACT.md#directed-stereobond-creation",
+      "note": "Wedge and hashed tools; wavy bonds through Bond Properties."
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/document/src/bond_presentation.rs#L6-L26",
+      "note": "Closed authoring vocabulary excludes dative, hydrogen, and quadruple bonds."
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/dialogs/bond_dialog.py#L80-L82",
+      "note": "Center checkbox only; no explicit left/right choice."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/domain/src/catalog/template_manifest_v1.rs#L237-L299",
+      "note": "Common ring templates include benzene and aromatic heterocycles."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/QT_CONTRACT.md#L503-L522",
+      "note": "Four alpha/beta D-glucose pyranose/furanose Haworth recipes."
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/domain/src/catalog/template_manifest_v1.rs#L237-L349",
+      "note": "Built-ins include substituted D-glucose Haworth structures and purine."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/ferrum/user_templates.py#L29-L43",
+      "note": "Save Current as Template publishes reusable single-molecule CDML templates."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/document-model/src/compact_group_catalog_v1.rs#L488-L563",
+      "note": "Nine expandable compact groups include Me, Et, Ph, and OMe."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/dialogs/atom_dialog.py#L20-L81",
+      "note": "Atom Properties edits element symbols, charge, isotope, and multiplicity."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/render/src/atom_bond/atom.rs#L499-L532",
+      "note": "Radical dots, paired dots, and electron-pair marks."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/ferrum/top_level_transform.py#L242-L267",
+      "note": "Rotation, scaling and mirroring available; lasso selection unverified."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/ferrum/line_tool_actions.py#L81-L110",
+      "note": "Forward and equilibrium arrows; additional curved reaction-arrow tools."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/CDML_AUTHORING_GESTURE_CONTRACT.md#curved-electron-arrow-v1",
+      "note": "Three-point curved electron arrows with Rust-generated heads."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/CDML_FORMAT_SPEC.md#reaction",
+      "note": "CDML reactions reference reactant and product molecular graphs."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/render/src/atom_bond/atom.rs#L534-L555",
+      "note": "Pz-orbital atom marks render as two lobes."
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/ferrum/text_properties.py#L189-L211",
+      "note": "Size, color, subscript and superscript; fixed typeface, no bold/italic."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/QT_CONTRACT.md#selection-and-interaction",
+      "note": "Editable geometric shapes, rectangular brackets, round brackets, and wavy lines."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/ferrum/top_level_transform.py#L12-L19",
+      "note": "Six alignment commands operate on complete selected roots."
+    },
+    "groups": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/CDML_FORMAT_SPEC.md#deferred-document-concepts",
+      "note": "Visual grouping remains a proposal outside current document grammar."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/ferrum/geometry_repair.py#L121-L165",
+      "note": "Clean Geometry plus bond-length, bond-angle, and ring normalization.",
+      "engine": {
+        "library": "RDKit (C++)",
+        "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/chemistry/native/ferrum_chem_adapter.cpp#L447"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/ferrum/geometric_properties.py#L107-L137",
+      "note": "Individual geometric objects have editable stroke and fill colors."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/CDML_FORMAT_SPEC.md#paper",
+      "note": "Paper sizes and orientation supported; multipage model remains deferred."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/QT_CONTRACT.md#selection-and-interaction",
+      "note": "Bounded neutral-atom capacity warnings; explicitly not general chemical-validity checking.",
+      "engine": {
+        "library": "In-house (Rust neutral bond-capacity check)",
+        "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/domain/src/neutral_bond_capacity_diagnostic_v1.rs#L89"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/QT_CONTRACT.md#selection-and-interaction",
+      "note": "Formula, average molecular weight, monoisotopic mass, and elemental composition.",
+      "engine": {
+        "library": "RDKit (C++)",
+        "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/chemistry/native/ferrum_chem_composition.cpp#L252"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/active_plans/active/FULL_PARITY_RUST_FIRST.md#L656-L658",
+      "note": "Authored display names only; generated naming is future work."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/active_plans/decisions/native_peptide_sequence_import_v1.md#closed-contract",
+      "note": "One-letter peptide sequences; bounded native-17 residue profile with zwitterionic termini."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/FILE_FORMATS.md#conversion-is-not-desktop-fileopen",
+      "note": "Bounded simple-molecule import only; no CDXML export.",
+      "engine": {
+        "library": "In-house (Rust CDXML importer)",
+        "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/chemistry/src/cdxml_decoder.rs#L158"
+      }
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/FILE_FORMATS.md#refused-format-families",
+      "note": "Binary CDX input is explicitly refused."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/FERRUM_API_CONTRACT.md#operations",
+      "note": "MOL and SDF V2000/V3000 molecular interchange.",
+      "engine": {
+        "library": "RDKit (C++)",
+        "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/chemistry/native/ferrum_chem_sdf.cpp#L215"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/FERRUM_API_CONTRACT.md#operations",
+      "note": "SMILES conversion input and output through the local chemistry runtime.",
+      "engine": {
+        "library": "RDKit (C++)",
+        "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/chemistry/native/ferrum_chem_smiles.cpp#L84"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/FERRUM_API_CONTRACT.md#operations",
+      "note": "Standard and fixed-H InChI interchange.",
+      "engine": {
+        "library": "RDKit (C++, RDInchiLib)",
+        "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/chemistry/native/ferrum_chem_inchi.cpp#L122"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/FILE_FORMATS.md#rendered-document-artifacts",
+      "note": "Complete vector SVG document export."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/FILE_FORMATS.md#rendered-document-artifacts",
+      "note": "Complete vector PDF document export."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/FILE_FORMATS.md#rendered-document-artifacts",
+      "note": "PNG uses one pixel per page point, below 300 dpi."
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-chem-qt.app/ferrum_qt/ferrum/clipboard.py#L273-L315",
+      "note": "Editable clipboard transfer accepts Ferrum CDML only."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/FERRUM_API_CONTRACT.md#python-boundary",
+      "note": "Documented ferrum_chem operation protocol binding."
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/USAGE.md#common-document-tasks",
+      "note": "Inspect, validate, render, convert, and protocol commands without the GUI."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Pre-alpha macOS arm64 source build; no released distribution or completed native accessibility acceptance.",
+    "CDXML supports bounded simple-molecule import only; binary CDX is refused.",
+    "Contract docs understate implemented ring choices, templates, atom properties, and paper controls."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-10-11T19:34:35Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "commit 349438d",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://github.com/vosslab/ferrum-chemical-forge.git",
+    "ran": false,
+    "failure": "Unmodified ./build.sh exited 1 while building pinned RDKit Release_2026_03_5. With Homebrew LLVM/Clang 23.1.5 and CMake 4.4.5, RealValueVect.h lines 90, 91 and 96 report: no template named 'vector' in namespace 'std'. CMake's FileParsers target exited 2. The build removed its staging output and produced no build/current runtime or runnable GUI. See build.log and install-checks.json. No app version command could run; testedVersion records the checkout commit as requested.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "Not attempted: source build failed before GUI launch.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "Not attempted: source build failed before GUI launch.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "Not attempted: source build failed before GUI launch.",
+        "structure": null
+      }
+    ],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "No app window opened; default rendering could not be assessed.",
+      "No fixture imports or exports were attempted.",
+      "No feature statuses assigned because the GUI was unavailable."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/vosslab/ferrum-chemical-forge",
+    "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/README.md"
+  ],
+  "builtOn": {
+    "id": "p52",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "InChI"
+    ],
+    "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/PROVENANCE.md",
+    "note": "BKChem-Qt lineage documented; current canvas derivation not established."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Ferrum-Chem molecular renderer",
+    "language": "Rust",
+    "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/packages/ferrum-rust/crates/render/src/atom_bond.rs#L204"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Qt desktop frontend"
+    },
+    {
+      "language": "C++",
+      "role": "Native RDKit chemistry adapter"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "C headers define bindings; Shell, CMake and Ruby support builds.",
+  "thirdParty": {
+    "summary": "Includes LGPL-3.0 PySide6/Qt, BSD-3-Clause RDKit, MIT/Apache-2.0/BSD Rust dependencies and bundled OFL-1.1 Atkinson fonts.",
+    "source": "https://github.com/vosslab/ferrum-chemical-forge/blob/349438dcb6eae37bed92a4158389b94161c92963/docs/PROVENANCE.md",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

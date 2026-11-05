@@ -1,14 +1,11 @@
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
+import tailwindcss from '@tailwindcss/vite';
 
-// GitHub Actions supplies the actual owner/repository. Local builds use the
-// intended project URL; override both variables when deploying a fork.
-const [owner, repo] = (process.env.GITHUB_REPOSITORY || 'Ameyanagi/chemdraw-alternatives').split('/');
+// The site lives at the root of its own domain. Set both variables to deploy a fork elsewhere.
 export default defineConfig({
-  site: process.env.SITE_URL || `https://${owner.toLowerCase()}.github.io`,
-  base: process.env.BASE_PATH || (repo === `${owner.toLowerCase()}.github.io` ? '/' : `/${repo}`),
+  site: process.env.SITE_URL || 'https://chemdraw-alternatives.reshiki.com',
+  base: process.env.BASE_PATH || '/',
   output: 'static',
   trailingSlash: 'always',
-  integrations: [mdx()],
-  markdown: { syntaxHighlight: 'shiki' },
+  vite: { plugins: [tailwindcss()] },
 });

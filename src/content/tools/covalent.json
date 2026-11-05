@@ -1,0 +1,607 @@
+{
+  "id": "p124",
+  "slug": "covalent",
+  "name": "Covalent",
+  "rank": 31,
+  "tier": "alternative",
+  "tierReason": "Multipage layouts, ACS styling, formatted text and vector exports support finished 2D chemical drawing documents.",
+  "summary": "A free browser editor for chemical structures, reaction schemes, and multipage drawing documents.",
+  "website": "https://chempirical.com/covalent/",
+  "repo": null,
+  "docs": "https://chempirical.com/chemdraw-alternative/",
+  "vendor": "Nitramine (Chempirical)",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free browser service; no open-source license identified.",
+    "source": "https://chempirical.com/for-students/"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://chempirical.com/for-students/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": true,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://chempirical.com/covalent/"
+  },
+  "engine": {
+    "rendering": "Custom SVG for 2D and SVG export; Canvas 2D for PNG and 3D; custom vector PDF writer.",
+    "chemistry": "Custom JavaScript chemistry core",
+    "ui": "Custom JavaScript DOM UI",
+    "source": "https://chempirical.com/_/1u8nv47olv/covalent/app.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Drew single, double and triple bonds.",
+      "shot": {
+        "image": "evidence/covalent/f-bonds-core.webp",
+        "caption": "Bond tools and a Paclitaxel structure with single and double bonds."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/inspector.js",
+      "note": "Drew wedge and hash; changed selected bond to wavy.",
+      "shot": {
+        "image": "evidence/covalent/f-stereo-bonds.webp",
+        "caption": "Wedge, hashed and wavy bond tools beside a Paclitaxel structure."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Drew benzene and a six-membered ring.",
+      "shot": {
+        "image": "evidence/covalent/f-rings.webp",
+        "caption": "Ring tools and aromatic rings in a Paclitaxel structure."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/app.js",
+      "note": "Drag length controls a carbon chain with 120-degree zigzags."
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Worksheet template adds several editable structures, not individual structure templates."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/editing.js",
+      "note": "Groups such as Ph, OMe and Boc expand into atoms.",
+      "shot": {
+        "image": "evidence/covalent/f-abbreviations.webp",
+        "caption": "Keyboard instructions mention OMe, Ph and Boc group labels."
+      }
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/inspector.js",
+      "note": "Charges and elements editable; direct isotope editing unverified.",
+      "shot": {
+        "image": "evidence/covalent/f-atom-labels.webp",
+        "caption": "Keyboard instructions for element labels and atom charges."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Element hotkeys and 1/2/3 change atoms and bonds under pointer.",
+      "shot": {
+        "image": "evidence/covalent/f-keyboard-drawing.webp",
+        "caption": "Keyboard instructions for atom labels, charges and bond order."
+      }
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/app.js",
+      "note": "Rectangular selection, rotation and flipping; drawings resize in Page view."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Drew forward arrow and changed another to equilibrium."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Converted page arrow to curved electron-pair arrow."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/app.js",
+      "note": "Reaction SMILES and RXN preserve reactants and products."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Subscripts, superscripts and font sizing; typeface is fixed."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Page tools include boxes, ellipses and brackets."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Align objects or distribute them horizontally and vertically."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Group and ungroup page objects."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Clean up command: Ctrl+L.",
+      "shot": {
+        "image": "evidence/covalent/f-cleanup.webp",
+        "caption": "Clean up command above the caffeine drawing."
+      },
+      "engine": {
+        "library": "In-house layoutMolecule 2D coordinate generator (JavaScript module in browser)",
+        "source": "https://chempirical.com/_/20y4li0mgj/chem/layout.js"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "ACS Document 1996 preset."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Text, arrows and shapes have individual colour controls."
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Worksheet template added a second page; page-size control visible."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/inspector.js",
+      "note": "Valence problems are displayed in the Check section.",
+      "engine": {
+        "library": "In-house valenceProblems and valencesFor (JavaScript modules in browser)",
+        "source": "https://chempirical.com/_/20y4li0mgj/chem/valence.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/inspector.js",
+      "note": "Paclitaxel panel displayed R/S descriptors.",
+      "shot": {
+        "image": "evidence/covalent/f-stereo-perception.webp",
+        "caption": "Paclitaxel structure with R and S descriptors in the panel."
+      },
+      "engine": {
+        "library": "Ported from SiMolecule Centres (JavaScript adaptation of CIP rules in chem/cip.js; browser and inspector Web Worker)",
+        "source": "https://chempirical.com/_/20y4li0mgj/chem/cip.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/inspector.js",
+      "note": "Caffeine displayed C8H10N4O2 and 194.19 g/mol.",
+      "shot": {
+        "image": "evidence/covalent/f-formula-mass.webp",
+        "caption": "Caffeine structure with molecular formula and molar mass."
+      },
+      "engine": {
+        "library": "In-house formula.js formula, molecular weight and exact mass calculations (JavaScript; inspector Web Worker)",
+        "source": "https://chempirical.com/_/20y4li0mgj/chem/formula.js"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Aspirin search inserted its structure.",
+      "engine": {
+        "library": "Chempirical catalogue web service; PubChem web service (fallback)",
+        "source": "https://chempirical.com/_/20y4li0mgj/covalent/app.js"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chempirical.com/chemdraw-alternative/",
+      "note": "Identified caffeine; systematic name generation was not demonstrated.",
+      "shot": {
+        "image": "evidence/covalent/f-structure-to-name.webp",
+        "caption": "Caffeine structure and its name in the structure panel."
+      },
+      "engine": {
+        "library": "Chempirical catalogue web service; PubChem web service (existing-name lookup)",
+        "source": "https://chempirical.com/_/20y4li0mgj/covalent/inspector.js"
+      }
+    },
+    "nmr-prediction": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://chempirical.com/chemdraw-alternative/",
+      "note": "Provided by a separate Chempirical NMR predictor."
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/privacy/",
+      "note": "Search returned and inserted aspirin.",
+      "engine": {
+        "library": "PubChem web service (via Chempirical server proxy)",
+        "source": "https://chempirical.com/_/20y4li0mgj/ui/lookup.js"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/ui/viewer3d.js",
+      "note": "Generated cholesterol ball-and-stick model and rotated it.",
+      "shot": {
+        "image": "evidence/covalent/f-model-3d.webp",
+        "caption": "Cholesterol ball-and-stick model with 3D display controls."
+      },
+      "engine": {
+        "library": "In-house Canvas 2D molecular viewer (JavaScript; in-house JavaScript 3D embedding in a module Web Worker)",
+        "source": "https://chempirical.com/_/20y4li0mgj/ui/viewer3d.js"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Imported a two-atom CDXML; no CDXML export shown.",
+      "engine": {
+        "library": "In-house CDXML reader (JavaScript module in browser; import only)",
+        "source": "https://chempirical.com/_/20y4li0mgj/chem/cdxml.js"
+      }
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://chempirical.com/chemdraw-alternative/",
+      "note": "Official comparison explicitly says CDX is not yet supported."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Imported MOL and SDF; exported V3000 MOL.",
+      "engine": {
+        "library": "In-house MOL V2000/V3000 reader and V3000 writer with SDF record handling (JavaScript modules in browser)",
+        "source": "https://chempirical.com/_/20y4li0mgj/chem/molfile.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Pasted fixtures and copied caffeine SMILES.",
+      "engine": {
+        "library": "In-house parseSmiles and writeSmiles (JavaScript parser, canonicalizer and writer modules in browser)",
+        "source": "https://chempirical.com/_/20y4li0mgj/chem/smiles-writer.js"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Open and export RXN reaction files."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Downloaded structure SVGs."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/pdf.js",
+      "note": "Downloaded a one-page PDF."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chempirical.com/covalent/",
+      "note": "Page PNG was 2550 by 3300 pixels for US Letter.",
+      "shot": {
+        "image": "evidence/covalent/f-png-export.webp",
+        "caption": "Exported PNG page showing a caffeine structure."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://chempirical.com/_/1u8nv47olv/covalent/document.js",
+      "note": "Word paste retains editable text; structures and arrows become pictures."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "ChemDraw CDXML import is available; binary CDX is unsupported.",
+    "Office pasting turns structures and arrows into pictures.",
+    "Offline operation is undocumented; the browser editor requires JavaScript."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "2uu6kqoryy",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://chempirical.com/covalent/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/covalent/simple.svg",
+        "note": "Pasted SMILES; automatic layout and fit.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/covalent/complex.svg",
+        "note": "Pasted SMILES; automatic layout with stereobonds.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/covalent/threed.png",
+        "note": "3D model saved in threed-view.png; rotation verified.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/covalent/canvas.webp",
+    "canvasLight": "evidence/covalent/canvas-light.webp",
+    "canvasDark": "evidence/covalent/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "The hosted build identifier appears in the served asset path.",
+      "Default 2D canvas used a dark background and coloured heteroatoms.",
+      "Paclitaxel was automatically fitted with wedge and hashed bonds.",
+      "Cholesterol 3D default was ball-and-stick with hydrogens shown.",
+      "The SDF import displayed explicit hydrogens in the drawing."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://chempirical.com/covalent/",
+    "https://chempirical.com/"
+  ],
+  "builtOn": {
+    "id": "p124",
+    "relation": null,
+    "editor": null,
+    "libraries": null,
+    "source": null,
+    "note": "Public vendor documentation does not establish canvas provenance or third-party chemistry libraries."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Covalent SVG molecular renderer",
+    "language": "JavaScript",
+    "source": "https://chempirical.com/_/20y4li0mgj/chem/depict.js"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "HTML and CSS provide layout and styling.",
+  "thirdParty": {
+    "summary": "Includes Inter fonts under SIL OFL-1.1 with font share-alike terms; documents are exempt.",
+    "source": "https://github.com/rsms/inter/blob/66647c0bb/LICENSE.txt",
+    "notice": null,
+    "libraries": []
+  }
+}

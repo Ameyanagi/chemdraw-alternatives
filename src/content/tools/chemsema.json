@@ -1,0 +1,591 @@
+{
+  "id": "p77",
+  "slug": "chemsema",
+  "name": "ChemSema",
+  "rank": 12,
+  "tier": "alternative",
+  "tierReason": "Its standalone editor creates editable 2D chemical figures and reaction schemes with vector export and Office integration.",
+  "summary": "Chemical drawing editor for structures, reaction schemes, ChemDraw file exchange, and editable Office documents.",
+  "website": "https://dreamlovesu32.github.io/chemsema/",
+  "repo": "https://github.com/dreamlovesu32/chemsema",
+  "docs": "https://github.com/dreamlovesu32/chemsema/blob/main/README.md#design-documents",
+  "vendor": "Jiajun Zhang",
+  "license": {
+    "kind": "open-source",
+    "spdx": "Apache-2.0",
+    "text": "Apache License 2.0; bundled components retain their own licenses.",
+    "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/README.md#license"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v1.0.0-beta.8",
+    "date": "2026-07-15",
+    "source": "https://github.com/dreamlovesu32/chemsema/releases/tag/v1.0.0-beta.8"
+  },
+  "engine": {
+    "rendering": "Custom Rust render primitives rendered as SVG DOM/SVG files; Win32 GDI EMF; resvg/tiny-skia CLI PNG.",
+    "chemistry": "In-house Rust chemistry; bundled IUPAC InChI 1.07.5.",
+    "ui": "JavaScript, HTML and CSS; Tauri 2/WebView2 on Windows.",
+    "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/README.md#design-details"
+  },
+  "languages": [
+    "Rust",
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L722-L748",
+      "note": "Drew all three orders; changing existing bonds not checked."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L734-L748",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/chemsema/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds in a structure."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L853-L880",
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L799-L823",
+      "note": "Benzene placed; ring sizes three through eight available."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L810-L823",
+      "note": "Dedicated chair cyclohexane and flipped chair tools."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/engine/templates.rs#L905-L935",
+      "note": null
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/template-library-rules.zh-CN.md#L21-L34",
+      "note": "Chairs included; larger libraries require locally extracted ChemDraw assets."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/abbreviation-recognition-rules.md#L75-L138",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/atom-property-editing-rules.zh-CN.md#L23-L35",
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/charge-radical-symbol-rules.md#symbol-set",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/viewer/editor_bindings.js#L599-L660",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/viewer/editor_pointer_controller.js#L1480-L1494",
+      "note": "Freehand selection, rotation, flipping, and resizing.",
+      "shot": {
+        "image": "evidence/chemsema/f-selection-tools.webp",
+        "caption": "Selection and flip controls in the toolbar."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L1054-L1080",
+      "note": "Drew forward and equilibrium arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L1054-L1115",
+      "note": "Drew a curved arrow; half-head options visible."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/logical-object-native-model.zh-CN.md#L18-L32",
+      "note": "Native scheme and step data retain reactants and products."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/logical-object-native-model.zh-CN.md#L105-L118",
+      "note": "Manual mappings through Logical Objects JSON fields."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L1368-L1388",
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L1130-L1178",
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L1220-L1280",
+      "note": null,
+      "shot": {
+        "image": "evidence/chemsema/f-shapes.webp",
+        "caption": "Bracket and circle tools beside the drawing canvas."
+      }
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L1543-L1567",
+      "note": null,
+      "shot": {
+        "image": "evidence/chemsema/f-align.webp",
+        "caption": "Alignment and distribution controls in the toolbar."
+      }
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L1583-L1615",
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L1681-L1703",
+      "note": "ACS Document 1996 preset."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/cli-gui-parity-checklist.md#L38",
+      "note": null
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/document-layout-rules.zh-CN.md#L83-L90",
+      "note": "Paper sizes, page counts, and automatic pagination."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/viewer/image_import_host.js#L4-L16",
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chromatography-plate-rules.zh-CN.md#L3-L18",
+      "note": "Editable native TLC plates, gel plates, and tables."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/charge-radical-symbol-rules.md#relationship-to-label-validity",
+      "note": null,
+      "engine": {
+        "library": "In-house (Rust live element valence and label validation)",
+        "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/engine/text_edit/labels.rs#L1977-L2015"
+      }
+    },
+    "stereo-perception": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/engine/chemistry.rs#L628-L647",
+      "note": "R/S from wedges; E/Z requires imported directional semantics.",
+      "engine": {
+        "library": "In-house (Rust chemsema-chemistry CIP and stereo analysis)",
+        "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-chemistry/src/cip.rs#L29-L65"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/README.md#L200-L201",
+      "note": "Caffeine selection showed C8H10N4O2 and formula weight 194.19.",
+      "engine": {
+        "library": "In-house (Rust formula, average mass and exact mass calculations)",
+        "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/engine/selection_summary.rs#L78-L144"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name-to-structure command found."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Chemical property dialog requires a manually entered name."
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/spectrum-object-rules.zh-CN.md#L76-L84",
+      "note": "Generated a proton NMR spectrum for a drawn bond.",
+      "engine": {
+        "library": "ChemSema NMR (bundled WebAssembly via JavaScript adapter)",
+        "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/viewer/nmr_prediction_provider.js#L1-L26"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/atom-query-editing-rules.zh-CN.md#L5-L20",
+      "note": "Editable element lists, generic lists, and atom-query properties."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/logical-object-native-model.zh-CN.md#L81-L89",
+      "note": "Native repeat semantics, attachments, crossing bonds, and repeat-unit expansion."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No rotatable 3D view found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L258-L269",
+      "note": "Imported simple CDXML; Save As produced CCJZ.",
+      "engine": {
+        "library": "In-house (Rust CDXML reader and writer using quick-xml)",
+        "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/cdxml.rs#L363-L390"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L258-L269",
+      "note": null,
+      "engine": {
+        "library": "In-house (Rust CDX binary reader and writer through CDXML conversion)",
+        "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/cdx.rs#L33-L77"
+      }
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/sdf.rs#L165-L283",
+      "note": "SDF opened; MOL rejected; no MOL export found.",
+      "engine": {
+        "library": "In-house (Rust V2000 molblock/SDF reader and writer)",
+        "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/sdf.rs#L165-L283"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#17-import-smiles-and-copy-chemical-identifiers",
+      "note": "SMILES copy command reported success; SMILES files failed to open.",
+      "engine": {
+        "library": "Ported from RDKit (grammar and lexer reimplemented in Rust; ChemSema parser and writer)",
+        "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-chemistry/src/smiles.rs#L1-L10"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#17-import-smiles-and-copy-chemical-identifiers",
+      "note": "Local InChI/InChIKey generation; dative bonds rejected.",
+      "engine": {
+        "library": "IUPAC InChI 1.07.5 (statically linked C for native targets; official WebAssembly in browser)",
+        "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/engine/chemistry.rs#L345-L379"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L258-L269",
+      "note": null
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/viewer/export_preview.js#L5-L54",
+      "note": "PDF pages contain rasterized JPEG images, lacking vector artwork."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#L258-L269",
+      "note": "CLI export supports adjustable scale and pixel dimensions."
+    },
+    "clipboard-chemdraw": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/clipboard-interoperability.md",
+      "note": "Editable paste from ChemDraw; reverse clipboard compatibility remains unverified."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/apps/chemsema-office/src/windows_office/server.rs#L309-L388",
+      "note": "Windows OLE objects support editing and storage write-back; beta."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/viewer/engine/chemsema_engine.d.ts#L63-L99",
+      "note": "Typed WASM API loads documents, executes commands, and renders SVG."
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/docs/chemsema-cli-guide.md#2-file-commands",
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/README.md#object-grounded-agent-cli",
+      "note": "Documented agent CLI with selectors, bundles, transactions, and JSONL sessions."
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Beta; some architecture notes lag implemented multipage layout and Office write-back.",
+    "Native desktop/OLE requires Windows; Linux is CLI-only; current source is newer than the released installer.",
+    "Extended template libraries require assets from a locally licensed ChemDraw installation."
+  ],
+  "github": {
+    "stars": 6,
+    "pushedAt": "2026-09-26T03:27:14Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "Web build 8e6f995 (2026-09-…",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://dreamlovesu32.github.io/chemsema/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "sdf",
+        "image": null,
+        "note": "SDF rendered without atom labels; SMILES and MOL imports failed.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "sdf",
+        "image": null,
+        "note": "SDF rendered without atom labels and overlapped; SMILES and MOL imports failed.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "No 3D view found; fixture not opened.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemsema/canvas.webp",
+    "canvasLight": "evidence/chemsema/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "SDF import omits atom labels and overlaps bonds."
+    },
+    "memory": null,
+    "observations": [
+      "Tested the hosted build in an isolated native WebKit host.",
+      "SMILES and MOL files produced JSON parse errors; SDF files opened.",
+      "SDF drawings projected 3D coordinates and omitted visible atom labels in WebKit.",
+      "The fallback PNGs are crops of the test host window, not native exports.",
+      "Save As downloaded the native CCJZ format."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 215490204,
+  "references": [
+    "https://github.com/dreamlovesu32/chemsema",
+    "https://dreamlovesu32.github.io/chemsema/"
+  ],
+  "builtOn": {
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "InChI"
+    ],
+    "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/THIRD_PARTY_NOTICES.md#L3-L46",
+    "note": "Custom editor; RDKit-derived SMILES grammar reimplemented in Rust; no RDKit runtime.",
+    "ported": [
+      "RDKit SMILES grammar"
+    ]
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ChemSema molecular renderer",
+    "language": "Rust",
+    "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/crates/chemsema-engine/src/render_objects.rs#L180-L245"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Editor interface and SVG DOM display"
+    },
+    {
+      "language": "C",
+      "role": "Bundled official InChI chemistry library"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Other languages serve presentation, build tooling, packaging, and generated bindings.",
+  "thirdParty": {
+    "summary": "MIT InChI and BSD-3-Clause RDKit-derived code; Windows installer bundles proprietary Microsoft WebView2.",
+    "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/apps/chemsema-desktop/src-tauri/tauri.conf.json",
+    "notice": "https://github.com/dreamlovesu32/chemsema/blob/main/NOTICE",
+    "libraries": [
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,633 @@
+{
+  "id": "p41",
+  "slug": "molcanvas",
+  "name": "MolCanvas",
+  "rank": 35,
+  "tier": "alternative",
+  "tierReason": "Its standalone editor combines molecular drawings, reaction arrows, text and polymer units with SVG export for publication figures.",
+  "summary": "A chemical structure editor for drawing organic molecules, reaction schemes, and polymer repeat units.",
+  "website": "https://ashif3hq.github.io/molCanvas/",
+  "repo": "https://github.com/Ashif3hq/molCanvas",
+  "docs": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md",
+  "vendor": "Ashif",
+  "license": {
+    "kind": "source-available",
+    "spdx": null,
+    "text": "Free to use; current code requires permission for modification or redistribution. Versions through v0.3.0 retain MIT licensing.",
+    "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "untagged-db1f52e99abd1bd7cd7b",
+    "date": "2026-11-04",
+    "source": "https://github.com/Ashif3hq/molCanvas/releases/tag/untagged-db1f52e99abd1bd7cd7b"
+  },
+  "engine": {
+    "rendering": "Custom SVG renderer for screen and vector export; HTML canvas rasterization for PNG",
+    "chemistry": "OpenChemLib",
+    "ui": "Browser DOM/SVG interface; Tauri desktop shell using system WebKit",
+    "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#how-it-works"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Drew single; changed to double and triple.",
+      "shot": {
+        "image": "evidence/molcanvas/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Drew wedge, hashed and wavy bonds.",
+      "shot": {
+        "image": "evidence/molcanvas/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/cdxml.ts#L252-L265",
+      "note": "Dative becomes single; hydrogen and ionic bonds explicitly unsupported."
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/render.ts#L190-L222",
+      "note": "Automatic side placement only; no manual side setting."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Placed benzene and cyclohexane using dedicated tools.",
+      "shot": {
+        "image": "evidence/molcanvas/f-rings.webp",
+        "caption": "Benzene and cyclohexane rings on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/main.ts#L226",
+      "note": "Dragging created a six-bond zig-zag carbon chain.",
+      "shot": {
+        "image": "evidence/molcanvas/f-chains.webp",
+        "caption": "A zig-zag chain on the canvas."
+      }
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Stamped naphthalene from the built-in library.",
+      "shot": {
+        "image": "evidence/molcanvas/f-templates.webp",
+        "caption": "Structure library showing rings and fused-ring templates."
+      }
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/chem.ts#L140-L149",
+      "note": "Elements and charges editable; isotopes supported through import only."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/editor.ts#L923-L945",
+      "note": "Box selection, rotation and flips; no lasso or object resizing.",
+      "shot": {
+        "image": "evidence/molcanvas/f-selection-tools.webp",
+        "caption": "Selected caffeine structure and box-selection instructions."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Drew forward, equilibrium, retrosynthesis and resonance arrows.",
+      "shot": {
+        "image": "evidence/molcanvas/f-reaction-arrows.webp",
+        "caption": "Four reaction arrow styles on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Curved arrows explicitly cannot be represented."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "CDXML export identifies chemical reactants and products."
+    },
+    "atom-mapping": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#roadmap",
+      "note": "Atom mapping is on the roadmap."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/render.ts#L414-L430",
+      "note": "Automatic subscripts; fixed font and no superscript formatting."
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/cdxml.ts#L185-L193",
+      "note": "Polymer brackets supported; general shapes and curves unsupported."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/editor.ts#L947-L953",
+      "note": "Regenerates selected or whole structure coordinates through OpenChemLib.",
+      "engine": {
+        "library": "OpenChemLib (JavaScript npm package)",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/chem.ts#L188-L198"
+      }
+    },
+    "journal-styles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Fixed ACS 1996 formatting applies only to CDXML export."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/render.ts#L33-L43",
+      "note": "Fixed element palette toggle; no individual object color settings.",
+      "shot": {
+        "image": "evidence/molcanvas/f-color.webp",
+        "caption": "Caffeine structure with blue nitrogen and red oxygen labels."
+      }
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/cdxml.ts#L185-L193",
+      "note": "Embedded raster objects are unsupported and skipped."
+    },
+    "tlc-tables": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/cdxml.ts#L185-L193",
+      "note": "TLC plates and tables are explicitly unsupported and skipped."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/render.ts#L252-L254",
+      "note": "Valence problems are collected for on-canvas warnings.",
+      "engine": {
+        "library": "In-house (TypeScript valence rules)",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/valence.ts#L1-L87"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Caffeine: C8H10N4O2, 194.19 g/mol; exact mass also shown.",
+      "shot": {
+        "image": "evidence/molcanvas/f-formula-mass.webp",
+        "caption": "Caffeine structure with molecular formula and mass."
+      },
+      "engine": {
+        "library": "OpenChemLib (JavaScript npm package)",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/chem.ts#L233-L258"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Caffeine cLogP -0.18 and TPSA 58.4 square angstroms displayed.",
+      "shot": {
+        "image": "evidence/molcanvas/f-properties.webp",
+        "caption": "Caffeine structure with cLogP and TPSA values."
+      },
+      "engine": {
+        "library": "OpenChemLib (JavaScript npm package, MoleculeProperties)",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/chem.ts#L233-L270"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Typing caffeine fetched and drew its structure from PubChem.",
+      "engine": {
+        "library": "PubChem PUG REST web service",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/main.ts#L688-L737"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Caffeine identified as 1,3,7-trimethylpurine-2,6-dione, CID 2519.",
+      "shot": {
+        "image": "evidence/molcanvas/f-structure-to-name.webp",
+        "caption": "Caffeine structure with its PubChem name and CID."
+      },
+      "engine": {
+        "library": "PubChem PUG REST web service",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/main.ts#L698-L717"
+      }
+    },
+    "nmr-prediction": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#roadmap",
+      "note": "NMR shift prediction is on the roadmap."
+    },
+    "markush": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Query atoms explicitly cannot be represented."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Repeat-unit chemistry, block counts and monomer-to-polymer conversion.",
+      "shot": {
+        "image": "evidence/molcanvas/f-polymers.webp",
+        "caption": "Polymer tools panel with a repeat-unit command."
+      }
+    },
+    "biomolecules": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Amino-acid and biomolecule template categories; no sequence editor seen."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Caffeine lookup fetched its structure through PubChem.",
+      "engine": {
+        "library": "PubChem PUG REST web service",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/main.ts#L688-L737"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "3D SDF opens on 2D canvas; no viewer control found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Exported caffeine CDXML and re-imported it successfully.",
+      "engine": {
+        "library": "In-house (TypeScript XML reader/writer); OpenChemLib (JavaScript) aromatic bond conversion",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/cdxml.ts"
+      }
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#roadmap",
+      "note": "Binary CDX support is on the roadmap."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/main.ts#L749-L886",
+      "note": "Imported MOL and SDF; exported V2000 MOL and 3D SDF.",
+      "engine": {
+        "library": "OpenChemLib (JavaScript npm package) for MOL; In-house (TypeScript) SDF framing",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/modeling.ts#L44-L60"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Pasted fixture SMILES and saved a .smi export.",
+      "shot": {
+        "image": "evidence/molcanvas/f-smiles.webp",
+        "caption": "Caffeine structure and its displayed SMILES string."
+      },
+      "engine": {
+        "library": "OpenChemLib (JavaScript npm package)",
+        "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/chem.ts#L114-L169"
+      }
+    },
+    "inchi": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#roadmap",
+      "note": "InChI and InChIKey are on the roadmap."
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/README.md#features",
+      "note": "Saved default SVG exports for caffeine and paclitaxel."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "No PDF menu option; Command-P produced no response."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/main.ts#L790-L802",
+      "note": "Default PNG saved at 800x868 pixels; no DPI metadata.",
+      "shot": {
+        "image": "evidence/molcanvas/f-png-export.webp",
+        "caption": "PNG image of a caffeine structure."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/editor.ts#L1157-L1196",
+      "note": "Text CDXML/MOL/SMILES only; native ChemDraw clipboard formats unsupported."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Current source license restricts modification, redistribution and self-hosting.",
+    "CDXML import omits curved arrows, shapes, query atoms and embedded objects.",
+    "macOS minimum conflicts: release notes say 11+, app configuration requires 12+."
+  ],
+  "github": {
+    "stars": 6,
+    "pushedAt": "2026-11-04T07:48:19Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.4.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "https://github.com/Ashif3hq/molCanvas/releases/download/untagged-db1f52e99abd1bd7cd7b/MolCanvas_0.4.0_aarch64.dmg",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 3248540,
+    "installedBytes": 5627904,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molcanvas/simple.svg",
+        "note": "Current Kekule SMILES; automatic layout fitted without cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molcanvas/complex.svg",
+        "note": "Current Kekule SMILES; automatic layout retains wedge and hashed bonds.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/molcanvas/canvas.webp",
+    "canvasLight": "evidence/molcanvas/canvas-light.webp",
+    "canvasDark": "evidence/molcanvas/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Default app canvas is dark with coloured heteroatoms.",
+      "SMILES import automatically lays out and selects each structure.",
+      "Paclitaxel displays wedge and hashed bonds without cleanup.",
+      "SVG exports crop to the structure and use dark bonds.",
+      "Cholesterol 3D SDF opens on the 2D canvas with explicit hydrogens."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 3248540,
+  "references": [
+    "https://github.com/Ashif3hq/molCanvas/blob/f8e5def62afad3bca4369fae838457dc7c935f82/README.md",
+    "https://github.com/Ashif3hq/molCanvas/blob/f8e5def62afad3bca4369fae838457dc7c935f82/LICENSE",
+    "https://github.com/Ashif3hq/molCanvas/blob/v0.3.0/LICENSE"
+  ],
+  "builtOn": {
+    "id": "p41",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "OpenChemLib"
+    ],
+    "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/main.ts#L46",
+    "note": "Own SVG editor and renderer; OpenChemLib supplies molecular chemistry, conversion and coordinates."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "MolCanvas SVG renderer",
+    "language": "TypeScript",
+    "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/src/render.ts#L471-L501"
+  },
+  "otherLanguages": [
+    {
+      "language": "Rust",
+      "role": "Tauri desktop shell and native commands"
+    },
+    {
+      "language": "JavaScript",
+      "role": "OpenChemLib chemistry library"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Rust supplies desktop plumbing; HTML and CSS provide presentation.",
+  "thirdParty": {
+    "summary": "Includes BSD-3-Clause (OpenChemLib).",
+    "source": "https://github.com/Ashif3hq/molCanvas/blob/bcfd043bad801dd440825bd1a0198679996eda8f/package-lock.json",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      }
+    ]
+  }
+}

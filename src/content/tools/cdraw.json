@@ -1,0 +1,590 @@
+{
+  "id": "p24",
+  "slug": "cdraw",
+  "name": "cDraw",
+  "rank": 36,
+  "tier": "alternative",
+  "tierReason": "It creates styled 2D structures and reaction figures with text, layout tools and vector export.",
+  "summary": "A Java desktop editor for creating publication-quality 2D chemical structures and reaction schemes.",
+  "website": "https://www.structuralchemistry.org/pcsb/cdraw.php",
+  "repo": null,
+  "docs": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf",
+  "vendor": "Hofmann Laboratory",
+  "license": {
+    "kind": "open-source",
+    "spdx": "AGPL-3.0-only",
+    "text": "GNU Affero General Public License version 3.",
+    "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=19"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://zenodo.org/records/6814919"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "1.4.1",
+    "date": "2019-10-21",
+    "source": "https://zenodo.org/records/6814919"
+  },
+  "engine": {
+    "rendering": "Java2D in ChemPanel; custom SVG/PostScript generators; Ghostscript converts PostScript to PDF.",
+    "chemistry": "In-house PCSB code with CDK modules, MCDL, JNI-InChI and Beam.",
+    "ui": "Java Swing",
+    "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=5",
+      "note": "Tools selected; canvas input produced no visible marks during automation.",
+      "shot": {
+        "image": "evidence/cdraw/f-bonds-core.webp",
+        "caption": "Single, double and triple bond tools above a structure."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=6",
+      "note": "Tools selected; canvas input produced no visible marks during automation.",
+      "shot": {
+        "image": "evidence/cdraw/f-stereo-bonds.webp",
+        "caption": "A molecular drawing with solid and hashed wedge bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=5",
+      "note": "Cycles both offset positions and a symmetric double bond."
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=7",
+      "note": "Tools selected; canvas input produced no visible marks during automation.",
+      "shot": {
+        "image": "evidence/cdraw/f-rings.webp",
+        "caption": "Ring tools above benzene and cyclohexane chair drawings."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=7",
+      "note": "Two cyclohexane chair templates.",
+      "shot": {
+        "image": "evidence/cdraw/f-conformers.webp",
+        "caption": "Chair presets and a cyclohexane chair on the canvas."
+      }
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=7",
+      "note": "Drag to draw an alkane chain with 120-degree angles."
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=7",
+      "note": "Ring and chair presets; insertion attempt produced no visible drawing.",
+      "shot": {
+        "image": "evidence/cdraw/f-templates.webp",
+        "caption": "Ring and chair presets above two drawings."
+      }
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar",
+      "note": "Labels and charges supported; isotope metadata is not saved or copied."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=10",
+      "note": "Radical dots and atom-localized, rotatable electron pairs."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Freehand Select and Rotation Mode tools; resizing unverified."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=9",
+      "note": "Tools selected; canvas input produced no visible marks during automation."
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=9",
+      "note": "Tools selected; canvas input produced no visible marks during automation."
+    },
+    "reaction-data": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar",
+      "note": "Reaction SMILES imports as molecules and graphics, without retained reaction roles."
+    },
+    "atom-mapping": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=12",
+      "note": "Manual explicitly states atom mapping is unsupported."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar",
+      "note": "TextInputDialog provides subscripts, superscripts, font sizing and text formatting."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=10",
+      "note": "Editable lines, rectangles, ellipses and bracket pairs."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=11",
+      "note": "Alignment and equal-spacing commands for selected objects."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=12",
+      "note": "Grouped components translate and align as a fixed assembly."
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=15",
+      "note": "ACS and RSC presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=16",
+      "note": "Save and load bond, font and page settings."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=4",
+      "note": "Right-click objects to edit their individual colors."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar",
+      "note": "Custom page dimensions on a single-page drawing canvas."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=13",
+      "note": "R/S labels for tetrahedral carbons require four explicit substituents.",
+      "engine": {
+        "library": "Ported from CDK 2.0 CIPTool/stereo (Java), with in-house CalculateCIPchirality",
+        "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar"
+      }
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or molecular mass command found."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Insert menu offers SMILES, InChI, MCDL; no chemical-name entry."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=14",
+      "note": "Get IUPAC Name failed: missing jniinchi-1.03_1-UNKNOWN library."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=11",
+      "note": "Experimental optical recognition of GIF, PNG and TIFF structure images.",
+      "engine": {
+        "library": "In-house ChemOSR (Java); OCR ported from Dombi Attila optical_character_recognition (Java)",
+        "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar"
+      }
+    },
+    "database-lookup": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=14",
+      "note": "Opens matching PubChem pages instead of importing structures into the editor."
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view command in menus or toolbars."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=11",
+      "note": "Basic CDXML import and export.",
+      "engine": {
+        "library": "In-house CDXMLparser/CDXMLgenerator (Java SAX parser and XML writer)",
+        "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar"
+      }
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar",
+      "note": "MOL selection blocked by automation; Save offers SDF only.",
+      "engine": {
+        "library": "In-house SDFparser/SDFgenerator (Java; MOL/SDF input, SDF output)",
+        "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=3",
+      "note": "Both fixtures imported; output failed because JNI-InChI library was missing.",
+      "engine": {
+        "library": "Ported from CDK SmilesParser/CDKToBeam/InChINumbersTools (Java); Beam 1.3.2 (bundled Java); JNI-InChI 0.7 (local native canonical numbering); MCDL 1.00 (bundled Java coordinate generation)",
+        "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=3",
+      "note": "InChI input and InChI/InChIKey output through JNI-InChI.",
+      "engine": {
+        "library": "JNI-InChI 0.7 (bundled Java/JNI and native InChI 1.03); import adapter ported from CDK InChIToStructure",
+        "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=11",
+      "note": "Caffeine SVG exported successfully with default settings."
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar",
+      "note": "Export opened Save panel; automation could not enter filename."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=15",
+      "note": "Command invoked on empty canvas; no PNG produced; meaningful export unverified."
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar",
+      "note": "External clipboard exposes imageFlavor only, without ChemDraw structure data."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Requires Java; bundled InChI native binaries do not include macOS ARM64.",
+    "Website groups MOL/SDF exchange together; source exports SDF only.",
+    "EPS/PDF export supports only Latin and Greek character sets."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "1.4.1",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "jar",
+    "artifact": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1.jar",
+    "ran": true,
+    "failure": "Automation lost keyboard and canvas input focus; complex export and file round-trips remain unverified.",
+    "downloadBytes": 9633851,
+    "installedBytes": 9789440,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/cdraw/simple.svg",
+        "note": "Current Kekule SMILES; default layout retained; SVG saved; structure output unavailable.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/cdraw/complex.svg",
+        "note": "Current Kekule SMILES; overlapping bonds and labels retained; SVG saved; stereo warning.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": null,
+        "image": null,
+        "note": "No rotatable 3D view; cholesterol skipped.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/cdraw/canvas.webp",
+    "canvasLight": "evidence/cdraw/canvas-light.webp",
+    "canvasDark": "evidence/cdraw/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "follows system",
+      "note": "Dark chrome, white canvas; dark molecule import blocked. Light capture reused."
+    },
+    "memory": null,
+    "observations": [
+      "Default heteroatom labels are blue for nitrogen and red for oxygen.",
+      "Generated structures appear near the upper-left canvas corner at 200% zoom.",
+      "Paclitaxel default layout contains overlapping bonds and atom labels.",
+      "Isomeric SMILES import warns users to check chiral-centre depiction.",
+      "Default SVG exports a 215.9 by 279.4 mm page.",
+      "Redraw successfully saved both current Kekule-SMILES fixtures as default SVG exports; paclitaxel overlaps remain."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 9633851,
+  "references": [
+    "https://www.structuralchemistry.org/pcsb/cdraw.php"
+  ],
+  "builtOn": {
+    "id": "p24",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "MCDL",
+      "CDK",
+      "InChI",
+      "Beam"
+    ],
+    "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar",
+    "note": "Custom Java2D canvas; MCDL supplies coordinates, with CDK-derived chemistry and identifier toolkits."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "cDraw ChemPanel/drawingobjects (Java2D)",
+    "language": "Java",
+    "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4.1_source.jar"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Native InChI and Ghostscript libraries"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Excludes third-party native libraries and XML data.",
+  "thirdParty": {
+    "summary": "LGPL copyleft CDK code, JNI-InChI and ghost4j; proprietary Sun-licensed JAI; BSD Beam, Apache components and SIL-OFL Liberation Sans font.",
+    "source": "https://zenodo.org/records/6814919/files/cdraw_v1.4_manual.pdf#page=17",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "MCDL",
+        "license": "Public Domain",
+        "source": "https://sourceforge.net/projects/mcdl/"
+      },
+      {
+        "name": "Chemistry Development Kit",
+        "license": "LGPL-2.1-or-later",
+        "source": "https://github.com/cdk/cdk/blob/main/pom.xml"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      },
+      {
+        "name": "Beam",
+        "license": "BSD-2-Clause-Views",
+        "source": "https://github.com/johnmay/beam/blob/master/LICENSE"
+      }
+    ]
+  }
+}

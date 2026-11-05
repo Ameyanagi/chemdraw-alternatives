@@ -1,0 +1,74 @@
+{
+  "id": "p18",
+  "slug": "molview-org",
+  "name": "MolView.org",
+  "rank": 136,
+  "tier": "related",
+  "tierReason": "MolView.org focuses on 3D visualization, and its basic sketcher lacks reaction mechanisms, custom styles and SVG export for publication document work.",
+  "summary": "A browser-based tool for sketching molecules, exploring chemical databases and visualizing structures in 3D.",
+  "website": "https://molview.org/",
+  "repo": "https://github.com/molview/molview",
+  "docs": "https://molview.org/",
+  "vendor": "Herman Bergwerf",
+  "license": {
+    "kind": "source-available",
+    "spdx": null,
+    "text": "Public source code; redistribution requires written permission. Generated content may be used commercially.",
+    "source": "https://molview.org/legal"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://molview.com/article/new-app/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": "v2.4.6",
+    "date": "2015-07-13",
+    "source": "https://github.com/molview/molview/releases/tag/v2.4.6"
+  },
+  "engine": {
+    "rendering": "HTML canvas 2D through MolPad; GLmol and ChemDoodle WebGL viewers, with JSmol as another 3D renderer.",
+    "chemistry": "Ketcher chemical utilities; JSmol calculations; NCI/CADD Chemical Identifier Resolver web service.",
+    "ui": "jQuery with HTML and CSS",
+    "source": "https://github.com/molview/molview/blob/c92563ab813d50b5462f305329ee9c0a7a67ce63/src/js/Sketcher.js"
+  },
+  "languages": [
+    "JavaScript",
+    "PHP",
+    "HTML",
+    "Less"
+  ],
+  "features": {},
+  "caveats": [
+    "Legacy app is deprecated and receives only critical bug fixes.",
+    "Structure images export as PNG; SVG export, reaction mechanisms and custom styles are unavailable.",
+    "The newer MolView at molview.com has separate features and pricing."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://molview.org/",
+    "https://molview.org/legal"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

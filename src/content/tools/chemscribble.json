@@ -1,0 +1,514 @@
+{
+  "id": "p83",
+  "slug": "chemscribble",
+  "name": "ChemScribble",
+  "rank": 118,
+  "tier": "alternative",
+  "tierReason": "This desktop handwriting recognizer hands interpreted chemistry to ChemDoodle and cannot independently export publication drawing documents.",
+  "summary": "Desktop tool for drawing and interpreting chemical structures and reaction schemes with a stylus.",
+  "website": "https://www.chemscribble.com/",
+  "repo": null,
+  "docs": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf",
+  "vendor": "iChemLabs, LLC",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Proprietary iChemLabs Suite license; beta software is restricted to evaluation.",
+    "source": "https://ichemlabs.com/legal/?tab=eula"
+  },
+  "price": {
+    "text": "2026-11-05: iChemLabs Suite US$29/month, US$199/year or US$999 lifetime, plus tax.",
+    "source": "https://www.ichemlabs.com/store"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "1.1.0",
+    "date": "2026-07-18",
+    "source": "https://www.ichemlabs.com/support/version-history.php?product=ChemScribble"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "ChemDoodle engine",
+    "ui": null,
+    "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=57"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=53",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=55",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=56",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=57",
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=75",
+      "note": "Interpreted reactions can be exported as chemical text."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=58",
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=76",
+      "note": "Image files cannot be opened; only own strokes can paste."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=57",
+      "note": "Automatically assigns CIP descriptors.",
+      "engine": {
+        "library": "ChemDoodle engine (embedded in Java desktop application)",
+        "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=57"
+      }
+    },
+    "formula-mass": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=76",
+      "note": "Image files cannot open; external data cannot paste."
+    },
+    "database-lookup": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=74",
+      "note": "Search results open in browser; structures cannot be imported.",
+      "engine": {
+        "library": "PubChem (remote website search opened in browser; no structure import)",
+        "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=74"
+      }
+    },
+    "model-3d": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=69",
+      "note": "Requires separate ChemDoodle 3D; only the last molecule transfers.",
+      "engine": {
+        "library": "ChemDoodle 3D (separate local desktop application)",
+        "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=69"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=76",
+      "note": "Only .scrb files can be opened or saved."
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=76",
+      "note": "Only .scrb files can be opened or saved."
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=75",
+      "note": "MOL clipboard export only; no MOL/SDF file import or export."
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=75",
+      "note": "Clipboard export only; chemical text cannot be imported."
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=75",
+      "note": "Clipboard text export."
+    },
+    "rxn": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=76",
+      "note": "Chemical file import and export are unavailable."
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=76",
+      "note": "Image files cannot be saved."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=76",
+      "note": "Only .scrb files can be saved."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=76",
+      "note": "Image files cannot be saved."
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=76",
+      "note": "Chemical data cannot be pasted into ChemScribble."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Public beta; the EULA restricts beta software to evaluation.",
+    "Saves only .scrb; publication image export requires separate ChemDoodle software.",
+    "Handwriting training and internet activation required; stylus recommended."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "1.1.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "https://www.chemscribble.com/downloads/ChemScribble-macos-aarch64-1.1.0.dmg",
+    "ran": false,
+    "failure": "Startup requires accepting the iChemLabs Software License Agreement before drawing. Acceptance requires explicit user confirmation under the computer-use policy; no approval was received. Rejected the agreement and the app quit. No license-key or account prompt was reached.",
+    "downloadBytes": 109442049,
+    "installedBytes": 222183424,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Welcome title shows ChemScribble v1.1.0.",
+      "Startup displays Accept and Reject buttons for the license agreement.",
+      "Drawing canvas was not reached; molecule and feature checks remain untested.",
+      "Startup screenshot saved as welcome-license.png.",
+      "Rejecting the agreement closed the app."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 109442049,
+  "references": [
+    "https://www.chemscribble.com/",
+    "https://www.ichemlabs.com/support/version-history.php?product=ChemScribble"
+  ],
+  "builtOn": {
+    "id": "p83",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "ChemDoodle"
+    ],
+    "source": "https://www.ichemlabs.com/downloads/ChemScribbleUserGuide.pdf#page=57",
+    "note": "ChemDoodle powers stereochemistry; canvas provenance is not publicly established."
+  },
+  "renderer": {
+    "origin": null,
+    "name": null,
+    "language": null,
+    "source": null
+  },
+  "otherLanguages": [
+    {
+      "language": "Java",
+      "role": "Desktop application"
+    },
+    {
+      "language": "JavaScript",
+      "role": "Bundled ChemDoodle Web Components"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": [
+      {
+        "name": "ChemDoodle Web Components",
+        "license": "GPL-3.0-or-later",
+        "source": "https://web.chemdoodle.com/libs/cwc/ChemDoodleWeb.js?v=11.0.0"
+      }
+    ]
+  }
+}

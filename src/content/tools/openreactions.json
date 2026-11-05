@@ -1,0 +1,580 @@
+{
+  "id": "p98",
+  "slug": "openreactions",
+  "name": "OpenReactions",
+  "rank": 32,
+  "tier": "alternative",
+  "tierReason": "Standalone drawing and figure workspaces implement editable chemistry, page composition, and vector SVG/PDF export.",
+  "summary": "Browser editor for chemical structures, reaction mechanisms, animations, and composed scientific figures.",
+  "website": "https://openreactions.com/",
+  "repo": null,
+  "docs": "https://openreactions.com/",
+  "vendor": "Nathan Levy",
+  "license": {
+    "kind": "unclear",
+    "spdx": null,
+    "text": "No product license stated.",
+    "source": "https://openreactions.com/"
+  },
+  "price": {
+    "text": "Not published",
+    "source": null
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://openreactions.com/"
+  },
+  "engine": {
+    "rendering": "HTML Canvas 2D for drawings; SVG for figures and vector export; jsPDF/svg2pdf for PDF.",
+    "chemistry": "OpenChemLib",
+    "ui": "React",
+    "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js"
+  },
+  "languages": [
+    "JavaScript",
+    "CSS",
+    "HTML"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Drew single and triple; clicked single to make double.",
+      "shot": {
+        "image": "evidence/openreactions/f-bonds-core.webp",
+        "caption": "Bond tools and a structure with single and double bonds"
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Placed solid, hashed, and wavy bonds.",
+      "shot": {
+        "image": "evidence/openreactions/f-stereo-bonds.webp",
+        "caption": "Stereo bond tools and a structure with wedge and hashed bonds"
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Placed benzene; several ring sizes appear in toolbar.",
+      "shot": {
+        "image": "evidence/openreactions/f-rings.webp",
+        "caption": "Ring tools and aromatic rings on the canvas"
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Dedicated chair and Newman tools."
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Placed a morpholine fragment from the library."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Structure fragments saved locally as SMILES."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Recognized groups can be expanded or contracted."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Charges and labels editable; isotopes imported through SMILES/MOL.",
+      "shot": {
+        "image": "evidence/openreactions/f-atom-labels.webp",
+        "caption": "Element and charge controls beside a labeled structure"
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Lone-pair tool also supports single-electron dots."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://openreactions.com/",
+      "note": "Hover over an atom and type its label."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Box selection, rotation, flipping; resizing only in Figure mode."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Placed forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/openreactions/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrow tools in the reaction toolbar"
+      }
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Placed a curved electron-pair arrow; editing unverified.",
+      "shot": {
+        "image": "evidence/openreactions/f-mechanism-arrows.webp",
+        "caption": "Curved arrow tools in the reaction toolbar"
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "RXN import and export preserve reactants and products."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/FigureEditor-10qncLgg.js",
+      "note": "Figure symbol palette includes Greek letters, charges, and arrows."
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/FigureEditor-10qncLgg.js",
+      "note": "Fonts and styling; sub/superscripts use limited Unicode symbols."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/FigureEditor-10qncLgg.js",
+      "note": "Editable shapes and freehand brush paths."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/FigureEditor-10qncLgg.js",
+      "note": "Selected objects align left, top, or center."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/FigureEditor-10qncLgg.js",
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Tidy structure regenerates coordinates with OpenChemLib.",
+      "engine": {
+        "library": "OpenChemLib (JavaScript)",
+        "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/FigureEditor-10qncLgg.js",
+      "note": null
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/FigureEditor-10qncLgg.js",
+      "note": "Page-size presets; figure documents contain one page."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/FigureEditor-10qncLgg.js",
+      "note": "PNG, JPEG, and WebP image insertion."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Basic structure check flags valence and stereochemistry issues.",
+      "engine": {
+        "library": "OpenChemLib (JavaScript)",
+        "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Caffeine: C8H10N4O2 and 194.19 g/mol.",
+      "engine": {
+        "library": "OpenChemLib (JavaScript) + In-house JavaScript isotope and charge corrections",
+        "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Caffeine entered as SMILES produced a parse error."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Info and menus showed no naming command."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "R atom tool appears; query behavior unverified."
+    },
+    "polymers": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Repeat-unit brackets are graphical; chemical polymer export unsupported."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/MoleculeViewer-DqqJ3BPE.js",
+      "note": "Generated cholesterol model and rotated it.",
+      "shot": {
+        "image": "evidence/openreactions/f-model-3d.webp",
+        "caption": "3D molecular model with hydrogen and rotation controls"
+      },
+      "engine": {
+        "library": "Three.js (JavaScript WebGL viewer) + OpenChemLib (JavaScript conformer-generation Web Worker)",
+        "source": "https://openreactions.com/draw/assets/MoleculeViewer-DqqJ3BPE.js"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "CDXML probe rejected; no CDXML export shown."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Imported MOL and SDF; exported both formats.",
+      "engine": {
+        "library": "OpenChemLib (JavaScript)",
+        "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Imported SMILES and copied generated SMILES.",
+      "engine": {
+        "library": "OpenChemLib (JavaScript)",
+        "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Single reaction arrow required; agent structures rejected on import."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "Exported SVG drawings."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/pdfExport-W_f_5toa.js",
+      "note": "Exported PDF; no raster images found inside."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js",
+      "note": "PNG exported at 760×812; no 300 dpi setting found.",
+      "shot": {
+        "image": "evidence/openreactions/f-png-export.webp",
+        "caption": "PNG output showing the caffeine structure"
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Browser-local drawings stay in that browser; cross-device saving requires sign-in.",
+    "No product license, pricing, or release version found in official documentation.",
+    "Interactive behavior was not tested; findings rely on documentation and served code."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://openreactions.com/draw/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/openreactions/simple.svg",
+        "note": "Automatically laid out caffeine; MOL also saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/openreactions/complex.svg",
+        "note": "Automatically laid out 62 atoms; MOL also saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/openreactions/threed.png",
+        "note": "Generated rotatable model; 2D SVG and MOL also saved.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/openreactions/canvas.webp",
+    "canvasLight": "evidence/openreactions/canvas-light.webp",
+    "canvasDark": "evidence/openreactions/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "SMILES imports generated 2D layouts without a cleanup command.",
+      "Caffeine, paclitaxel, and cholesterol MOL exports retained fixture stereochemistry in RDKit.",
+      "The 3D viewer generated a ball-and-stick model with hydrogens shown.",
+      "Image exports cropped to the drawing; PNG used a 2× canvas scale.",
+      "No app version was shown in About; the served JavaScript filename supplies the build ID."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://openreactions.com/"
+  ],
+  "builtOn": {
+    "id": "p98",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "OpenChemLib"
+    ],
+    "source": "https://openreactions.com/draw/assets/openchemlib-zeHud5Jx.js",
+    "note": "OpenChemLib dependency confirmed by bundled license notice; editor provenance remains unestablished."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Custom Canvas/SVG renderer",
+    "language": "JavaScript",
+    "source": "https://openreactions.com/draw/assets/index-CoJdvsa_.js"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Includes BSD-3-Clause (OpenChemLib) and MIT (React).",
+    "source": "https://openreactions.com/draw/assets/openchemlib-zeHud5Jx.js",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      }
+    ]
+  }
+}

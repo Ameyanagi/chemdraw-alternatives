@@ -1,0 +1,614 @@
+{
+  "id": "p15",
+  "slug": "molsketch-web",
+  "name": "MolSketch",
+  "rank": 53,
+  "tier": "alternative",
+  "tierReason": "Its standalone editor creates chemical drawings with reaction arrows and rich text, with vector SVG and editable PowerPoint export.",
+  "summary": "A free browser editor for drawing chemical structures and reaction schemes and exporting figures.",
+  "website": "https://molsketch.net/",
+  "repo": null,
+  "docs": "https://molsketch.net/blog/molsketch-features?lang=en",
+  "vendor": "banana",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free hosted service under MolSketch's terms; no open-source license stated.",
+    "source": "https://molsketch.net/terms?lang=en"
+  },
+  "price": {
+    "text": "Free (2026-11-05)",
+    "source": "https://molsketch.net/terms?lang=en"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": true,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://molsketch.net/announcements?lang=en"
+  },
+  "engine": {
+    "rendering": "Custom HTML Canvas 2D renderer; custom SVG serialization and native PowerPoint shapes/text.",
+    "chemistry": "RDKit/RDKit.js for validation and SMILES processing; SmilesDrawer for SMILES layout.",
+    "ui": "React / Next.js",
+    "source": "https://molsketch.net/_next/static/chunks/4195-1583900bc0130be1.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molsketch.net/blog/molsketch-features?lang=en#1-intuitive-drawing-of-bonds",
+      "note": "Clicked one bond through single, double, and triple orders.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-bonds-core.webp",
+        "caption": "A triple bond drawn on the editor canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Solid and hashed wedges drawn; no wavy tool found.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Drew benzene; cyclopentane and cyclohexane tools visible.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-rings.webp",
+        "caption": "A benzene ring and ring tools in the editor."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Dragging sets zigzag chain length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Placed glycine from amino acid templates.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-templates.webp",
+        "caption": "The amino acid template library, including glycine and alanine."
+      }
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://molsketch.net/_next/static/chunks/4647-8a1137f4cb85219c.js",
+      "note": "Charges/custom labels supported; stored isotopes lack editor/display controls.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-atom-labels.webp",
+        "caption": "A caffeine structure with nitrogen and oxygen atom labels."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Lasso, rotation, and flips; no whole-selection resizing control.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-selection-tools.webp",
+        "caption": "A selected curved arrow with a rotation handle and controls."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-reaction-arrows.webp",
+        "caption": "A forward arrow and the reaction arrow menu."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Drew curved arrow; selection exposes control points.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-mechanism-arrows.webp",
+        "caption": "A selected curved arrow with visible control points."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://molsketch.net/_next/static/chunks/4647-8a1137f4cb85219c.js",
+      "note": "Font size, bold, italic, underline, superscript, and subscript."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Group/ungroup atoms, bonds, arrows, and text; move selections together."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Clean Structure adjusts coordinates, bond geometry, arrows, and text.",
+      "engine": {
+        "library": "In-house browser JavaScript coordinate optimizer (Clean Structure)",
+        "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molsketch.net/blog/gradient-bond?lang=en",
+      "note": "Individual atom colors, bond colors, and endpoint gradients."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://molsketch.net/_next/static/chunks/4647-8a1137f4cb85219c.js",
+      "note": "Checks valence, invalid elements, duplicate bonds, and RDKit validity.",
+      "engine": {
+        "library": "In-house browser JavaScript graph/valence checks plus RDKit.js browser WebAssembly get_mol validation",
+        "source": "https://molsketch.net/_next/static/chunks/4647-8a1137f4cb85219c.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass command found for editor drawing."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molsketch.net/chemistry/chemical-name-to-structure?lang=en",
+      "note": "Benzene produced a preview and loaded onto canvas.",
+      "engine": {
+        "library": "PubChem PUG REST (remote HTTP name/CAS-to-SMILES lookup); RDKit.js browser WebAssembly normalization; SmilesDrawer browser JavaScript layout",
+        "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js"
+      }
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure-to-name command found in editor."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js",
+      "note": "Dedicated repeat-unit objects link structural groups and repeat labels."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molsketch.net/blog/ocr?lang=en",
+      "note": "OCR imports printed or handwritten structures as editable chemistry.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-image-to-structure.webp",
+        "caption": "The Auto Generate panel offers OCR image upload."
+      },
+      "engine": {
+        "library": "DECIMER Image Transformer (Python package in MolSketch-operated remote OCR service)",
+        "source": "https://molsketch.net/third-party-notices?lang=en"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molsketch.net/third-party-notices?lang=en",
+      "note": "Name and CAS lookup through PubChem PUG REST.",
+      "engine": {
+        "library": "PubChem PUG REST (remote HTTP name/CAS lookup)",
+        "source": "https://molsketch.net/_next/static/chunks/5841-b835cc0641af835d.js"
+      }
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view found in editor or chemistry navigation."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML import or export control found."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No MOL or SDF import or export control found."
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://molsketch.net/announcements?lang=en",
+      "note": "Caffeine matched; paclitaxel output changed ten stereocenters.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-smiles.webp",
+        "caption": "A caffeine drawing with its SMILES output."
+      },
+      "engine": {
+        "library": "RDKit.js (browser WebAssembly normalization/export); SmilesDrawer Parser/SvgDrawer.preprocessor (browser JavaScript import/layout)",
+        "source": "https://molsketch.net/_next/static/chunks/4195-1583900bc0130be1.js"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molsketch.net/blog/molsketch-features?lang=en#2-export-in-png-svg-powerpoint",
+      "note": "Downloaded SVG for both structures.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-svg-export.webp",
+        "caption": "The download menu offers SVG export for the drawing."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Download menu offers PNG, SVG and PowerPoint only."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "PNG exported; default caffeine image reports 72 dpi.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-png-export.webp",
+        "caption": "The download menu offers PNG export for the drawing."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molsketch.net/blog/power-point?lang=en",
+      "note": "PowerPoint objects remain editable as text and shapes.",
+      "shot": {
+        "image": "evidence/molsketch-web/f-office.webp",
+        "caption": "The download menu offers a PowerPoint file."
+      }
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Offline support is not documented; the offered editor is browser-hosted.",
+    "Logged-out OCR and handwriting recognition are limited to three uses daily.",
+    "OCR and structure generation may send inputs to servers or external services."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "build m0PiI1PnCmq4Tn2qz-p-a",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://molsketch.net/chemistry/structure-editor?lang=en",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molsketch-web/simple.svg",
+        "note": "Caffeine SMILES round-tripped with matching structure.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "smiles",
+        "image": "evidence/molsketch-web/complex.svg",
+        "note": "Returned SMILES inverted nine stereocenters and lost one; MOL import unavailable.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": null,
+        "image": null,
+        "note": "No rotatable 3D view found in the editor.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/molsketch-web/canvas.webp",
+    "canvasLight": "evidence/molsketch-web/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "SMILES import changes stereochemistry; default layout has overlaps."
+    },
+    "memory": null,
+    "observations": [
+      "Caffeine imported as a black drawing with bold atom labels.",
+      "Paclitaxel's default layout has overlapping bonds and labels.",
+      "Paclitaxel SMILES retained connectivity but changed or lost ten stereocenters.",
+      "The default caffeine PNG measured 350 by 335 pixels.",
+      "No version number was visible in the editor."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://molsketch.net/blog/molsketch-features?lang=en",
+    "https://molsketch.net/"
+  ],
+  "builtOn": {
+    "id": "p15",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "DECIMER"
+    ],
+    "source": "https://molsketch.net/third-party-notices?lang=en",
+    "note": "Canvas provenance unconfirmed; vendor credits RDKit for chemistry and DECIMER for image recognition."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "In-house Canvas 2D atom/bond renderer",
+    "language": "JavaScript",
+    "source": "https://molsketch.net/_next/static/chunks/4195-1583900bc0130be1.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "RDKit WebAssembly chemistry"
+    },
+    {
+      "language": "Python",
+      "role": "DECIMER image recognition service"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "JavaScript bundles are generated output; original core languages are undisclosed.",
+  "thirdParty": {
+    "summary": "RDKit BSD-3-Clause; DECIMER package MIT with separate model terms; KaTeX fonts OFL-1.1. The separate PDF translation tool uses pikepdf MPL-2.0.",
+    "source": "https://molsketch.net/third-party-notices?lang=en",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "DECIMER",
+        "license": "MIT",
+        "source": "https://github.com/Kohulan/DECIMER-Image_Transformer/blob/master/LICENSE"
+      }
+    ]
+  }
+}

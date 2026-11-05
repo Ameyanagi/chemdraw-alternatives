@@ -1,0 +1,610 @@
+{
+  "id": "p87",
+  "slug": "molecule-clipboard",
+  "name": "Molecule Clipboard",
+  "rank": 60,
+  "tier": "alternative",
+  "tierReason": "Its JSME structure-input editor and RDKit inspector export individual structures rather than compose publication drawing documents.",
+  "summary": "Browser tool for drawing, editing, inspecting, and sharing individual molecules.",
+  "website": "https://ruibin-liu.github.io/molecule-clipboard/",
+  "repo": "https://github.com/Ruibin-Liu/molecule-clipboard",
+  "docs": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/README.md",
+  "vendor": "Ruibin Liu",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT project; JSME and RDKit have separate BSD licenses.",
+    "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": true,
+    "offline": false
+  },
+  "version": {
+    "name": "v0.4.0",
+    "date": "2026-01-05",
+    "source": "https://github.com/Ruibin-Liu/molecule-clipboard/releases/tag/v0.4.0"
+  },
+  "engine": {
+    "rendering": "JSME SVG editor; RDKit.js SVG depiction/export; HTML Canvas 2D for PNG.",
+    "chemistry": "RDKit.js (WebAssembly) and JSME",
+    "ui": "Plain HTML/CSS/JavaScript with JSME JSApplet",
+    "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "Single, double and triple bonds drawn in editor.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-bonds-core.webp",
+        "caption": "Single, double and triple bond tools in the editor."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "Imported stereochemistry rendered wedges and hashes; manual attempt inconclusive.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-stereo-bonds.webp",
+        "caption": "Molecular structure with solid and hashed wedge bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "Bundled version predates JSME coordination-bond support."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/help.html",
+      "note": "Aromatic ring inserted; multiple ring sizes visible.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-rings.webp",
+        "caption": "Ring tools in the editor toolbar."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/help.html",
+      "note": "JSME chain drawing tool.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-chains.webp",
+        "caption": "Zigzag chain on the editor canvas."
+      }
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://jsme-editor.github.io/help.html",
+      "note": "Functional-group menu inserted a carboxyl group."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "JSME supports charges, isotopic atoms and X atom entry.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-atom-labels.webp",
+        "caption": "Element palette and charge control in the editor."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://jsme-editor.github.io/dist/release_notes.txt",
+      "note": "Hover shortcuts change atom types and add bonds."
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No reaction-arrow tools found in editor."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved-arrow tools found in editor."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L783-L818",
+      "note": "Only fixed-style molecule-name captions; no subscript or superscript controls."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L700-L720",
+      "note": "Applying edits regenerates layout through SMILES.",
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L700-L718"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L700-L720",
+      "note": "Invalid molecules trigger parsing or validity errors.",
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L708-L716"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L837-L879",
+      "note": "Molecular weight displayed; no dedicated formula field found.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-formula-mass.webp",
+        "caption": "Caffeine structure and molecular weight in the properties panel."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly; molecular weights only)",
+        "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L837-L879"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L837-L845",
+      "note": "Displays cLogP, TPSA and other properties.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-properties.webp",
+        "caption": "Caffeine structure with cLogP and TPSA values."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L837-L845"
+      }
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Entering caffeine returned Unable to parse molecule."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L730-L780",
+      "note": "SMILES inputs received generated identifiers, not systematic names."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L1156-L1164",
+      "note": "Query drawing enabled in embedded JSME."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D model view control found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "CDXML sample rejected; no CDXML export command found."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L824-L960",
+      "note": "MOL block imported; SDF downloaded.",
+      "engine": {
+        "library": "RDKit.js (WebAssembly); In-house SDF record framing",
+        "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L783-L960"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L700-L720",
+      "note": "SMILES input produced canonical SMILES output.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-smiles.webp",
+        "caption": "Canonical SMILES and InChI in the representations panel."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly); JSME (Java compiled to JavaScript, editor SMILES)",
+        "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L832-L835",
+      "note": "InChI and InChIKey displayed for caffeine.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-inchi.webp",
+        "caption": "InChI in the representations panel."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L832-L835"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L992-L1001",
+      "note": "Downloaded SVG files contain vector paths.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-svg-export.webp",
+        "caption": "Structure preview and Download SVG button."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export command found."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L1004-L1077",
+      "note": "Downloaded 1200 by 1200 PNG; no resolution controls found.",
+      "shot": {
+        "image": "evidence/molecule-clipboard/f-png-export.webp",
+        "caption": "Structure preview and Download PNG button."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Single-molecule editor and inspector; no document composition workflow.",
+    "README claims offline capability, but JSME and RDKit load from CDN.",
+    "Applying edits regenerates layout from SMILES, discarding manual coordinates."
+  ],
+  "github": {
+    "stars": 3,
+    "pushedAt": "2026-01-04T15:04:06Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "6e00a7d",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://ruibin-liu.github.io/molecule-clipboard/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 44470,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molecule-clipboard/simple.svg",
+        "note": "Canonical SMILES saved separately.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molecule-clipboard/complex.svg",
+        "note": "Canonical SMILES saved separately.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No rotatable 3D view found; skipped.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/molecule-clipboard/canvas.webp",
+    "canvasLight": "evidence/molecule-clipboard/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Default depictions use colored heteroatoms and autogenerated molecule captions.",
+      "The SVG exports include the autogenerated captions.",
+      "Hosted HTML is 44,470 bytes; CDN dependencies are additional.",
+      "The page displayed RDKit 2026.09.1; application build matches commit 6e00a7d."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 44470,
+  "references": [
+    "https://github.com/Ruibin-Liu/molecule-clipboard",
+    "https://ruibin-liu.github.io/molecule-clipboard/",
+    "https://github.com/Ruibin-Liu/molecule-clipboard/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p87",
+    "relation": "wrapper",
+    "editor": "JSME",
+    "libraries": [
+      "JSME",
+      "RDKit"
+    ],
+    "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html#L1156",
+    "note": "Mounts JSME directly; RDKit handles depiction, identifiers, properties, and conversions."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "JSME editor; RDKit MolDraw2D depiction/export",
+    "language": "Java (compiled to JavaScript); C++ (WebAssembly)",
+    "source": "https://github.com/Ruibin-Liu/molecule-clipboard/blob/6e00a7d2d79a484f152b3e4dac5eb61f3ff205f6/index.html"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Application logic and export handling"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Inline JavaScript implements behavior; HTML/CSS provide presentation.",
+  "thirdParty": {
+    "summary": "BSD-3-Clause/Apache-2.0 components; legacy InChI-Trust Licence 1.0 copyleft (InChI 1.05); OFL-1.1 Telex font (font-only share-alike).",
+    "source": "https://github.com/IUPAC-InChI/InChI/blob/v1.05/INCHI-1-SRC/LICENCE",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "JSME",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/jsme-editor/jsme-editor.github.io/blob/main/dist/license.txt"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      }
+    ]
+  }
+}

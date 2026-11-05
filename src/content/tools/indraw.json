@@ -1,0 +1,549 @@
+{
+  "id": "p96",
+  "slug": "indraw",
+  "name": "InDraw",
+  "rank": 83,
+  "tier": "alternative",
+  "tierReason": "Its documented structure, reaction, text and layout tools support complete publication figures and editable Office documents.",
+  "summary": "A desktop and web editor for chemical structures, reactions, and publication figures.",
+  "website": "https://www.atomdeep.com/en/site/indraw-office?slug=indraw",
+  "repo": null,
+  "docs": "https://www.integle.com/static/indraw-guide",
+  "vendor": "AtomDeep Scientific Technologies Pte. Ltd. (Integle)",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary; free edition with paid Professional features.",
+    "source": "https://www.atomdeep.com/en/site/indraw-office?slug=indraw"
+  },
+  "price": {
+    "text": "Free edition; Professional listed at $96/user/month or $960/user/year (2026-11-05).",
+    "source": "https://www.atomdeep.com/en/site/indraw-office?slug=indraw"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "8.0",
+    "date": "2026-07-31",
+    "source": "https://www.integle.com/news/news/detail?title_id=11744"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://blog.csdn.net/ShanghaiIntegle/article/details/147387849",
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": "Alignment switches; left, right and centered choices unspecified."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.atomdeep.com/en/site/indraw-office?slug=indraw",
+      "note": "Professional only; vendor claim."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null,
+      "engine": {
+        "library": "RDKit.js (browser WebAssembly get_new_coords); RDKit and Indigo (desktop Electron IPC); In-house (desktop normalClean)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zhuanlan.zhihu.com/p/2062539263732872163",
+      "note": "ACS Document 1996 preset."
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://blog.csdn.net/ShanghaiIntegle/article/details/162278606",
+      "note": "Bond settings persist; font persistence unverified."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/news/news/detail?title_id=11744",
+      "note": "TIF/TIFF import."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": "R/S computed; E/Z unverified.",
+      "engine": {
+        "library": "RDKit.js (browser WebAssembly get_stereo_tags); RDKit (desktop rdkitAPI.getStereoTags IPC)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null,
+      "engine": {
+        "library": "In-house (JavaScript getFormulaLayout and isotopicDistribution formula/mass calculators)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null,
+      "engine": {
+        "library": "RDKit.js (browser WebAssembly get_descriptors, CrippenClogP and TPSA); RDKit (desktop rdkitAPI IPC)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.atomdeep.com/en/site/indraw-office?slug=indraw",
+      "note": "Vendor claim; Chinese and English IUPAC names."
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": "Free: 10/day; Professional: unlimited.",
+      "engine": {
+        "library": "NMRNet++ (remote prediction service, /predict for proton and carbon shifts)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": "Free: 10/day; Professional: unlimited."
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": "Built-in compound database.",
+      "engine": {
+        "library": "PubChem PUG REST (remote CAS-to-SMILES fallback to the internal compound database)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": null
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": "3D module reads mmCIF/bCIF."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://zhuanlan.zhihu.com/p/2038310303029514913",
+      "note": "Import documented in manual; export in publisher tutorial.",
+      "engine": {
+        "library": "In-house (JavaScript MPMolecule.loadCDXML/getCDXML parser and serializer)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.atomdeep.com/en/site/indraw-office?slug=indraw",
+      "note": null,
+      "engine": {
+        "library": "CDXConverter 1.0.0 (bundled JavaScript cdx2cdxml/cdxml2cdx); In-house (CDXML drawing-model mapping)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/lib-cac61bbd.js"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://blog.csdn.net/ShanghaiIntegle/article/details/151624471",
+      "note": "MOL/SDF export; imports documented in 3D and InTable.",
+      "engine": {
+        "library": "Ported from Ketcher (bundled JavaScript MolfileParser and MolfileSaver for MOL/SDF)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/lib-cac61bbd.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": "Bundled InTable reads and generates SMILES.",
+      "engine": {
+        "library": "RDKit.js (browser WebAssembly SMILES import); Ported from Ketcher (bundled JavaScript SmilesGenerator export)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/lib-cac61bbd.js"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/static/indraw-guide",
+      "note": "InTable conversion.",
+      "engine": {
+        "library": "RDKit.js (browser WebAssembly get_inchi and get_inchikey_for_inchi)",
+        "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://blog.csdn.net/ShanghaiIntegle/article/details/151624471",
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://blog.csdn.net/ShanghaiIntegle/article/details/151624471",
+      "note": "PNG export; 300 dpi output undocumented."
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/news/news/detail?title_id=11658",
+      "note": null
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.integle.com/news/news/detail?title_id=11658",
+      "note": "Free Word copies watermarked; Professional removes watermark."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Free Word copies and 3D exports carry watermarks; custom templates require Professional.",
+    "Desktop requires registration and periodic login; naming, NMR and image recognition require internet.",
+    "One desktop account can be active on only one device at a time."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://indrawforweb.atomdeep.com/",
+    "ran": false,
+    "failure": "The hosted app displayed “Login to Edit”; testing stopped as instructed.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "The hosted page opened to a blank canvas with a Login to Edit button.",
+      "Build identifier taken from the served app-iframe-CiYMKsXf.js bundle name.",
+      "The access screen is saved as login-required.png."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.atomdeep.com/en/site/indraw-office?slug=indraw"
+  ],
+  "builtOn": {
+    "id": "p96",
+    "relation": "fork",
+    "editor": "MolPad",
+    "libraries": [
+      "RDKit",
+      "Indigo",
+      "InChI"
+    ],
+    "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js",
+    "note": "Modified MolPad canvas; RDKit chemistry and desktop Indigo cleanup are visible in shipped code."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Modified MolPad Canvas renderer",
+    "language": "JavaScript",
+    "source": "https://indrawforweb.atomdeep.com/src/js/core-1abaed23.js"
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Bundled SVG parser code carries MPL-2.0 file-level copyleft; MIT/Zlib libraries are also included.",
+    "source": "https://indrawforweb.atomdeep.com/src/js/lib-cac61bbd.js",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "MolPad",
+        "license": "MIT",
+        "source": "https://github.com/chemistry/molpad/blob/master/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

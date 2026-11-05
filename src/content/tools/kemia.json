@@ -1,0 +1,544 @@
+{
+  "id": "p112",
+  "slug": "kemia",
+  "name": "Kemia",
+  "rank": 55,
+  "tier": "embeddable",
+  "tierReason": "Kemia provides a reusable browser structure and reaction editor, with incomplete document-authoring and export functionality.",
+  "summary": "A JavaScript editor and chemistry toolkit for embedding 2D molecular structures and reactions in web pages.",
+  "website": "https://kemia.github.io/",
+  "repo": "https://github.com/kemia/kemia",
+  "docs": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/README",
+  "vendor": "European Bioinformatics Institute and Wingu Inc.",
+  "license": {
+    "kind": "open-source",
+    "spdx": "Apache-2.0",
+    "text": "Apache License 2.0.",
+    "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/LICENSE"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.2",
+    "date": "2010-12-16",
+    "source": "https://api.github.com/repos/kemia/kemia/git/tags/338852fbb59e740af64c205bd86681f3c86fd7a3"
+  },
+  "engine": {
+    "rendering": "Google Closure goog.graphics with SVG, VML, or HTML canvas backends",
+    "chemistry": "Kemia's own JavaScript chemistry toolkit",
+    "ui": "Google Closure Library (goog.ui)",
+    "source": "https://github.com/kemia/kemia.github.com/blob/b137d0109871ea1531d34da89ed80a278def4eea/js/kemia.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugins/bond_edit.js#L208-L252",
+      "note": "Single, double, triple update atom labels; drawings are clipped."
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/view/single_up_or_down_bond_renderer.js#L24-L88",
+      "note": "Up, down, and wavy tools respond; drawings are clipped."
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugins/bond_edit.js#L95-L123",
+      "note": "Quadruple bonds available; no dative option in bond menu."
+    },
+    "double-bond-side": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/view/double_bond_renderer.js#L85-L125",
+      "note": "Automatic ring-interior or centered placement; no manual side selection."
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugins/molecule_edit.js#L496-L1031",
+      "note": "Benzene tool responds; drawing is clipped."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugins/bond_edit.js#L138-L165",
+      "note": "Number keys grow chains; no drag-chain tool."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugins/molecule_edit.js#L799-L937",
+      "note": "Includes naphthalene beyond simple ring templates."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugins/atom_edit.js#L123-L158",
+      "note": "Element and charge editing; isotope labels are not rendered."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugins/atom_edit.js#L123-L188",
+      "note": "Hover an atom, then change its element or charge with shortcuts."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugins/move.js#L949-L996",
+      "note": "Molecule movement and rotation; rectangle selector remains a stub."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/view/arrow_renderer.js#L72-L107",
+      "note": "Forward arrow tool responds; drawing is clipped."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow control in editor."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/io/json.js#L296-L404",
+      "note": "Reactants and products serialize as molecular graphs in reaction JSON."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugins/cleanup.js#L49-L83",
+      "note": "Optional coordinate-regeneration command; omitted from default toolbar.",
+      "engine": {
+        "library": "Ported from CDK (JavaScript)",
+        "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/layout/coordinate_generator.js#L19-L30"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/view/atom_renderer.js#L48-L65",
+      "note": "Element-wide palette configuration; no individual atom color control."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass command in demo."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/kemia/kemia.github.com/blob/b137d0109871ea1531d34da89ed80a278def4eea/demos/_posts/2011-01-17-identifier-resolver.html",
+      "note": "Aspirin resolver returned no structure."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command in demo."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/query/query_atom.js#L27-L57",
+      "note": "R1 placement adds accessible label; drawing clipped."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/service/identifier.js",
+      "note": "NIH resolver wrapper uses a legacy external proxy; availability unverified."
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view control in demos."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "File menu contains only New."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/io/mdl.js#L139-L385",
+      "note": "MOL read/write API; SDF records split manually.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/io/mdl.js#L139-L343"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/io/smiles/smiles_generator.js",
+      "note": "Separate demo accepts SMILES; no output command; drawing clipped.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/io/smiles/smiles_parser.js#L73-L208"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": "https://github.com/kemia/kemia.github.com/blob/b137d0109871ea1531d34da89ed80a278def4eea/demos/_posts/2011-01-17-identifier-resolver.html",
+      "note": "Resolver demo accepts InChI; remote backend availability unverified."
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/io/mdl.js#L252-L385",
+      "note": "RXN reading and writing through JavaScript API."
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No image export command in demo."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export command in demo."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG export command in demo."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/README",
+      "note": "Documents parsing, coordinate generation, and editor initialization."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/controller/plugin.js",
+      "note": "Documented plugin base class with event and command extension hooks."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/README",
+      "note": "HTML and JavaScript example embeds the editor."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Pre-alpha software; repository last updated in June 2011.",
+    "SMILES generation is a stub; MOL export omits charges and isotopes.",
+    "Several capabilities require API integration; the default toolbar omits cleanup."
+  ],
+  "github": {
+    "stars": 14,
+    "pushedAt": "2011-06-13T20:19:57Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "v0.2-79-gceacc9a",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://kemia.github.io/demos/2010/08/23/reaction-editor.html",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "SMILES demo generated labels; drawing clipped to a thin strip.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "SMILES demo generated labels; drawing clipped to a thin strip.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No 3D view found in the demos.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/kemia/canvas.webp",
+    "canvasLight": "evidence/kemia/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Paclitaxel rendering is clipped to a thin strip."
+    },
+    "memory": null,
+    "observations": [
+      "Hosted reaction editor loaded with a preset reaction.",
+      "Drawings were clipped to a thin strip in WebKit and Chromium.",
+      "The separate SMILES demo accepted caffeine and paclitaxel.",
+      "The editor File menu offered only New.",
+      "The name resolver produced no result for aspirin."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/kemia/kemia"
+  ],
+  "builtOn": {
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/layout/coordinate_generator.js#L19-L25",
+    "note": "Own canvas; CDK coordinate generation and MX ring perception are ported.",
+    "ported": [
+      "CDK",
+      "MX"
+    ]
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Kemia MoleculeRenderer over Closure graphics",
+    "language": "JavaScript",
+    "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/view/molecule_renderer.js#L17-L116"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "Java and Python files support builds and tests.",
+  "thirdParty": {
+    "summary": "Google Closure Library: Apache-2.0; MX-derived ring code: MIT upstream. CDK-derived layout files carry Apache-2.0 notices.",
+    "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/layout/coordinate_generator.js",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Chemistry Development Kit",
+        "license": "LGPL-2.1-or-later",
+        "source": "https://github.com/cdk/cdk/blob/main/pom.xml"
+      },
+      {
+        "name": "MX",
+        "license": "MIT",
+        "source": "https://github.com/metamolecular/mx/blob/master/LICENSE"
+      }
+    ]
+  }
+}

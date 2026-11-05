@@ -1,0 +1,617 @@
+{
+  "id": "p19",
+  "slug": "molview-com",
+  "name": "MolView.com",
+  "rank": 45,
+  "tier": "alternative",
+  "tierReason": "Its standalone web app draws molecular and reaction diagrams and exports publication-quality SVG figures on paid plans.",
+  "summary": "Web application for drawing small molecules and reaction mechanisms, viewing 3D models, and exporting chemical figures.",
+  "website": "https://molview.com/",
+  "repo": null,
+  "docs": "https://molview.com/api/",
+  "vendor": "Bergwerf Labs",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary service with free sketching and viewing; saving and advanced features require subscriptions.",
+    "source": "https://molview.com/terms-and-conditions/"
+  },
+  "price": {
+    "text": "2026-11-05 (USD): Free; Student $9/year; Academic $49/year; Standard $99/user/year; Publisher $250/user/year. Commercial prices exclude tax.",
+    "source": "https://molview.com/subscriptions/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://molview.com/updates/"
+  },
+  "engine": {
+    "rendering": "In-house vector-outline rendering algorithms (vendor statement)",
+    "chemistry": null,
+    "ui": null,
+    "source": "https://molview.com/"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molview.com/doc/api/types/sketcher.Bond_Type.html",
+      "note": "Single, double and triple bonds visible and drawn.",
+      "shot": {
+        "image": "evidence/molview-com/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds in the sketcher."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://molview.com/doc/api/types/sketcher.Bond_Type.html",
+      "note": "Solid wedge and hashed wedge drawn; wavy option not seen.",
+      "shot": {
+        "image": "evidence/molview-com/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds on a structure."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://molview.com/doc/api/types/sketcher.Bond_Type.html",
+      "note": "Hydrogen/incipient types documented; dative absent from published bond-type model.",
+      "shot": {
+        "image": "evidence/molview-com/f-special-bonds.webp",
+        "caption": "Bond menu lists delocalized and hydrogen bonds."
+      }
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molview.com/doc/api/interfaces/sketcher.Toolset.html#template",
+      "note": "Placed benzene; several other ring tools visible.",
+      "shot": {
+        "image": "evidence/molview-com/f-rings.webp",
+        "caption": "Benzene on the canvas with ring tools visible."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Linear chain tool visible."
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Only ring templates visible in inspected toolbar."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Element palette visible; custom label tool has subscription marker.",
+      "shot": {
+        "image": "evidence/molview-com/f-atom-labels.webp",
+        "caption": "Element palette and nitrogen and oxygen labels in the sketcher."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molview.com/doc/api/interfaces/sketcher.Toolset.html#atom",
+      "note": "Lone pairs and unpaired electrons can be edited."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Pointer and lasso tools visible."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://molview.com/doc/api/types/sketcher.Arrow_Type.html",
+      "note": "Forward arrow tool prompts for subscription."
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://molview.com/doc/api/interfaces/sketcher.Arrow.html",
+      "note": "Electron arrow tool prompts for subscription."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molview.com/features/",
+      "note": "Vendor claim: automatic structure cleanup.",
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://app.molview.com/asset/sketcher-GXTu5bnp.js"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Style controls have subscription marker."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molview.com/doc/api/interfaces/sketcher.Style.html#mark_colors",
+      "note": "API supports per-object color marks; custom styling requires higher paid plans."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Caffeine Infocard shows C8H10N4O2 and molecular weight 194.19.",
+      "shot": {
+        "image": "evidence/molview-com/f-formula-mass.webp",
+        "caption": "Caffeine Infocard shows molecular formula and weight."
+      },
+      "engine": {
+        "library": "PubChem web service (formula and mass lookup)",
+        "source": "https://app.molview.com/asset/global-C8t_KQe2.js"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molview.com/features/",
+      "note": "Searched aspirin and selected exact result.",
+      "shot": {
+        "image": "evidence/molview-com/f-name-to-structure.webp",
+        "caption": "Aspirin search and its structure in the sketcher."
+      },
+      "engine": {
+        "library": "PubChem web service; OPSIN (remote server)",
+        "source": "https://app.molview.com/asset/global-C8t_KQe2.js"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Caffeine SMILES Infocard returned common and IUPAC names via PubChem.",
+      "shot": {
+        "image": "evidence/molview-com/f-structure-to-name.webp",
+        "caption": "Caffeine Infocard displays a common name and IUPAC name."
+      },
+      "engine": {
+        "library": "PubChem web service (IUPAC-name lookup)",
+        "source": "https://app.molview.com/asset/global-C8t_KQe2.js"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molview.com/doc/api/interfaces/sketcher.Toolset.html#atom",
+      "note": "R-group atom labels, including optional numbering."
+    },
+    "polymers": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Bracket tool visible."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molview.com/terms-and-conditions/",
+      "note": "Infocard identified caffeine using PubChem.",
+      "shot": {
+        "image": "evidence/molview-com/f-database-lookup.webp",
+        "caption": "Caffeine Infocard includes a PubChem link and identifiers."
+      },
+      "engine": {
+        "library": "PubChem web service",
+        "source": "https://app.molview.com/asset/global-C8t_KQe2.js"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molview.com/features/",
+      "note": "Generated and displayed cholesterol 3D from SMILES.",
+      "shot": {
+        "image": "evidence/molview-com/f-model-3d.webp",
+        "caption": "Aspirin structure alongside a ball-and-stick 3D model."
+      },
+      "engine": {
+        "library": "Mol* (JavaScript)",
+        "source": "https://app.molview.com/asset/viewer-DPGOQ4fZ.js"
+      }
+    },
+    "crystals": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://molview.com/article/new-app/",
+      "note": "New app explicitly excludes crystal-lattice viewing."
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML choice in inspected import or export menus."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://molview.com/doc/api/classes/Sketcher.html",
+      "note": "MOL/SDF import and export both require subscription.",
+      "shot": {
+        "image": "evidence/molview-com/f-mol-sdf.webp",
+        "caption": "Export menu lists 2D and 3D SDF/MOL files."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://app.molview.com/asset/molpad-KGu363v3.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molview.com/doc/api/classes/Sketcher.html",
+      "note": "Loaded SMILES; Infocard displays isomeric SMILES.",
+      "shot": {
+        "image": "evidence/molview-com/f-smiles.webp",
+        "caption": "Caffeine Infocard displays canonical and isomeric SMILES."
+      },
+      "engine": {
+        "library": "OpenChemLib (JavaScript, browser worker)",
+        "source": "https://app.molview.com/asset/worker-BxejRJJn.js"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molview.com/features/",
+      "note": "Vendor claim: search accepts InChI and InChIKey.",
+      "shot": {
+        "image": "evidence/molview-com/f-inchi.webp",
+        "caption": "Caffeine Infocard displays an InChI and InChI key."
+      },
+      "engine": {
+        "library": "PubChem web service (identifier lookup and retrieval)",
+        "source": "https://app.molview.com/asset/global-C8t_KQe2.js"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://molview.com/subscriptions/",
+      "note": "SVG option requires subscription.",
+      "shot": {
+        "image": "evidence/molview-com/f-svg-export.webp",
+        "caption": "SVG export selection shows a subscription required dialog."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF choice in inspected export menus."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "Downloaded 480-pixel PNG; higher resolutions require subscription.",
+      "shot": {
+        "image": "evidence/molview-com/f-png-export.webp",
+        "caption": "PNG export dialog shows 480p and a high-resolution subscription notice."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molview.com/api/",
+      "note": "Documented JavaScript web-component API; subscription and client ID required."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molview.com/api/",
+      "note": "Web-component embedding requires subscriptions or a production-domain license."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Free cannot save diagrams; Student excludes custom styling and SVG/SDF/XYZ export.",
+    "Standard allows 10 SVG exports monthly; for-profit content creation requires Publisher.",
+    "New MolView.com excludes legacy crystal-lattice and protein viewers."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "2026-11-02 (5ecc001a)",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://app.molview.com/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molview-com/simple.png",
+        "note": "Default PNG export; Infocard isomeric SMILES saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molview-com/complex.png",
+        "note": "Zoomed to fit; default PNG export and Infocard isomeric SMILES saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molview-com/threed.png",
+        "note": "Rotatable 3D model; Infocard isomeric SMILES saved.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/molview-com/canvas.webp",
+    "canvasLight": "evidence/molview-com/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "White sketcher and black 3D viewer are the defaults."
+    },
+    "memory": null,
+    "observations": [
+      "Default sketcher shows colored heteroatoms beside a black-background 3D viewer.",
+      "Paclitaxel initially exceeded the sketcher viewport at 200% zoom.",
+      "Free PNG exports default to 480 by 480 pixels.",
+      "Infocard isomeric SMILES matched all three inputs in RDKit."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://molview.com/subscriptions/",
+    "https://molview.com/api/"
+  ],
+  "builtOn": {
+    "id": "p19",
+    "relation": "original",
+    "editor": null,
+    "libraries": null,
+    "source": "https://molview.com/mission/",
+    "note": "Vendor describes sketcher algorithms developed from scratch; third-party chemistry libraries are undisclosed."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "MolView vector-outline renderer",
+    "language": null,
+    "source": "https://app.molview.com/asset/molpad-KGu363v3.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Browser UI and OpenChemLib worker"
+    },
+    {
+      "language": "C++",
+      "role": "RDKit cleanup compiled to WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Permissive licenses for third-party components, according to the vendor.",
+    "source": "https://molview.com/terms-and-conditions/",
+    "notice": null,
+    "libraries": []
+  }
+}

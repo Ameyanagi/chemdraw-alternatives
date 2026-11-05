@@ -1,0 +1,460 @@
+{
+  "id": "p126",
+  "slug": "fx-chemstruct",
+  "name": "FX ChemStruct / FX Draw Chemical Structures",
+  "rank": 105,
+  "tier": "alternative",
+  "tierReason": "FX Draw combines editable chemical structures, text and layout tools with vector SVG output for publication-quality 2D figures.",
+  "summary": "Desktop software for creating 2D chemical structure diagrams from typed formulas, now integrated into FX Draw.",
+  "website": "https://www.efofex.com/fxchemstruct.php",
+  "repo": null,
+  "docs": "https://www.efofex.com/documentation/chemical_structures.htm",
+  "vendor": "Efofex Pty Ltd",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Proprietary subscription software; evaluation drawings are watermarked.",
+    "source": "https://www.efofex.com/documentation/generalconditions_2.htm"
+  },
+  "price": {
+    "text": "Paid subscription; quote via regional calculator (2026-11-05).",
+    "source": "https://www.efofex.com/ns2.php"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "V26.10.25",
+    "date": "2026-10-25",
+    "source": "https://www.efofex.com/FXTVerInfo.php"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": "Qt",
+    "source": "https://www.efofex.com/FXTVerInfo.php"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/basicstructures.htm",
+      "note": "Bond orders generated from typed formulas; direct bond editing unverified."
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/toolsoptions.htm",
+      "note": "Coordinate bonds supported; another specialist bond type unverified."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/ringstructures.htm",
+      "note": "Typed ring notation; automatic recognition and supported rings are limited."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/basicstructures.htm",
+      "note": "Chains generated from typed formulas; dragging chains is unverified."
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/howdoisavemyowngraphics.htm",
+      "note": "FX Draw saves selected drawings to reusable galleries."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/benzenerings.htm",
+      "note": "Recognizes bz and optional ph as benzene-ring codes."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/overridingcharges.htm",
+      "note": "Charges supported; isotope and arbitrary atom labels unverified."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/allowingforunbondedelectron.htm",
+      "note": "Displays lone pairs on atoms."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/selecting_figures.htm",
+      "note": "Rectangle/Ctrl selection and transforms; lasso selection unverified."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/arrowsequations.htm",
+      "note": "Forward and double arrows, with labels above and below."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/smooth_lines.htm",
+      "note": "FX Draw provides editable Bezier curves with arrowheads."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/text_equation_boxes.htm",
+      "note": "FX Draw text boxes combine formatted text, superscripts and subscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/smooth_lines.htm",
+      "note": "FX Draw provides editable shapes and Bezier/freehand curves."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/groupingandungrouping.htm",
+      "note": "FX Draw groups can be moved and resized together."
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/toolsoptions.htm",
+      "note": "Saves bond defaults; separate default font settings are available."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/the_toolbars.htm",
+      "note": "FX Draw supports individual object line and fill colors."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/bitmaptool.htm",
+      "note": "FX Draw places imported bitmaps on the canvas."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/tables.htm",
+      "note": "FX Draw offers editable tables."
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/rr.htm",
+      "note": "Supports R and R-prime groups in structures."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/use_svg_output.htm",
+      "note": "Exports vector SVG graphics."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/create_higher_resolution_graph.htm",
+      "note": "PNG output at 360 dpi; optional 600 dpi."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.efofex.com/documentation/classic_mode.htm",
+      "note": "Word for Windows OLE; Classic Edition is deprecated."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Standalone FX ChemStruct is deprecated; chemical drawing is now integrated into FX Draw.",
+    "Designed for secondary-school diagrams; ring handling is limited.",
+    "Current PowerPoint integration documentation and FX Draw release notes disagree."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.efofex.com/fxchemstruct.php",
+    "https://www.efofex.com/documentation/chemical_structures.htm"
+  ],
+  "builtOn": {
+    "id": "p126",
+    "relation": null,
+    "editor": null,
+    "libraries": null,
+    "source": null,
+    "note": "Vendor documentation does not establish canvas provenance or chemistry libraries."
+  },
+  "renderer": {
+    "origin": null,
+    "name": null,
+    "language": null,
+    "source": null
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

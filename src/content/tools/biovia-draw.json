@@ -1,0 +1,496 @@
+{
+  "id": "p06",
+  "slug": "biovia-draw",
+  "name": "BIOVIA Draw",
+  "rank": 87,
+  "tier": "alternative",
+  "tierReason": "It produces publication-quality 2D structures and reaction schemes for scientific documents and Office presentations.",
+  "summary": "Windows software for drawing chemical structures, reactions, and chemically modified biological sequences for publications and informatics workflows.",
+  "website": "https://www.3ds.com/products/biovia/draw",
+  "repo": null,
+  "docs": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+  "vendor": "Dassault Systèmes BIOVIA",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Proprietary commercial software with a free academic and non-commercial edition.",
+    "source": "https://www.3ds.com/assets/Terms/OfferingSpecificTerms/CollaborativeScienceUnifiedLabManagement_2026.pdf"
+  },
+  "price": {
+    "text": "2026-11-05: Free for academic/non-commercial use; contact vendor for commercial pricing.",
+    "source": "https://discover.3ds.com/biovia-draw-academic"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": "BIOVIA Draw 2026",
+    "date": null,
+    "source": "https://www.3ds.com/support/documentation/t49-2025-notification-regarding-biovia-draw-2026"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "OpenEye Lexichem (chemical naming)",
+    "ui": ".NET desktop application",
+    "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/products/biovia/draw",
+      "note": "vendor claim; manually toggle single, double, and triple bonds."
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/products/biovia/draw",
+      "note": "vendor claim; benzene and cyclohexane ring tools."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/products/biovia/draw",
+      "note": "vendor claim; drag to create zigzag carbon chains."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/documentation/resource-library/t104-2024-notification-regarding-biovia-draw-2025",
+      "note": "Includes named-reaction templates and abbreviations."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/documentation/t30-2025-notification-regarding-biovia-draw-2025-sp1",
+      "note": "Save structures as SCSR templates, including CHEM templates."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://blog.3ds.com/brands/biovia/introducing-a-new-but-familiar-way-to-sketch/",
+      "note": "vendor claim; chemically understood abbreviations."
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/products/biovia/draw",
+      "note": "vendor claim; hover over atoms and type element symbols."
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/fileadmin/PRODUCTS-SERVICES/BIOVIA/PDF/biovia-draw-ds.pdf",
+      "note": "vendor claim; 3D rotation of drawn queries."
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; RXN stores reactants, products, and reagents."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
+      "note": "Rectangle/square graphic tools and nonchemical brackets."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/documentation/t30-2025-notification-regarding-biovia-draw-2025-sp1",
+      "note": "Align Reaction command aligns sequence reactions."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
+      "note": "Preserves grouping when copying and pasting graphical objects."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/products/biovia/draw",
+      "note": "vendor claim; standardizes bond lengths and angles.",
+      "engine": {
+        "library": "BIOVIA Pipeline Pilot Chemistry SDK / PPChem SDK (local SDK; small-molecule cleanup since Draw 2021)",
+        "source": "https://modularss.mood4apps.com/recordati/Server2021/BIOVIA%20Draw%202021%20PRD.pdf"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://discover.3ds.com/ja/biovia-draw-campaign",
+      "note": "vendor claim; ACS and Wiley publication formats."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; colored reaction-scheme annotations."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; bitmap clipboard paste."
+    },
+    "tlc-tables": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://3dswym.3dexperience.3ds.com/wiki/biovia-drug-discovery-development/biovia-draw-add-ins-tlc-plate-authoring-tool_52wF367cTK-AHXurs_sJKw",
+      "note": "TLC authoring add-in inserts images, rather than editable canvas objects."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
+      "note": "Flags excessive valences, overlaps, and stereochemistry rule violations."
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
+      "note": "Computed tetrahedral labels and enhanced E/Z stereochemistry.",
+      "engine": {
+        "library": "In-house BIOVIA NEMA algorithm (built-in stereochemistry recognition)",
+        "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; formula, molecular weight, and composition."
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; HlogP and polar surface area."
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; included IUPAC name converter.",
+      "engine": {
+        "library": "NCI/CADD, PubChem and BIOVIA DiscoveryGate (remote web services via Structure Resolver)",
+        "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/documentation/resource-library/t49-2024-notification-regarding-biovia-draw-2024-sp1",
+      "note": "Generates IUPAC names, including granular RNA sequences.",
+      "engine": {
+        "library": "OpenEye Lexichem Toolkit (integrated library; binding undisclosed)",
+        "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/"
+      }
+    },
+    "nmr-prediction": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://3dswym.3dexperience.3ds.com/wiki/biovia-drug-discovery-development/biovia-draw-add-ins_82s_cafHRzuBOKB7FB6Kgw",
+      "note": "External Mnova/NMRdb prediction add-ins; supported nuclei unspecified.",
+      "engine": {
+        "library": "Mnova (external-tool add-in) or NMRdb.org (remote-web-service add-in)",
+        "source": "https://3dswym.3dexperience.3ds.com/wiki/biovia-drug-discovery-development/biovia-draw-add-ins_82s_cafHRzuBOKB7FB6Kgw"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; R-group queries and variable attachments."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/documentation/t49-2025-notification-regarding-biovia-draw-2026",
+      "note": "Supports polymer Sgroups and expansion of MULT bracket structures."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/documentation/t49-2025-notification-regarding-biovia-draw-2026",
+      "note": "SCSR, HELM, and BILN support for modified biological sequences."
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; OSRA add-in.",
+      "engine": {
+        "library": "OSRA (local executable via optional OSRAAction .NET add-in)",
+        "source": "https://downloads.sourceforge.net/project/osra/plugins/biovia%20draw%202019/OSRAAction.zip"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; Structure Resolver retrieves PubChem and NCI/CADD structures.",
+      "engine": {
+        "library": "NCI/CADD, PubChem and BIOVIA DiscoveryGate (remote web services via Structure Resolver)",
+        "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf"
+      }
+    },
+    "model-3d": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
+      "note": "Separate 3D Visualizer removed in 2024; 3D editing remains advertised."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "CDX import documented; export unverified."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; MOL exchange and SDF opening/creation/export."
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; SMILES conversion in both directions."
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; InChI conversion and InChIKey generation."
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; saves RXN reactions with reagent information."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/documentation/t30-2025-notification-regarding-biovia-draw-2025-sp1",
+      "note": "SVG saving and clipboard export added in 2025 SP1."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/support/documentation/resource-library/t49-2024-notification-regarding-biovia-draw-2024-sp1",
+      "note": "Re-editable OLE objects retain updated drawing styles."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://3dswym.3dexperience.3ds.com/post/biovia-laboratory-informatics/integrating-biovia-draw-with-web-applications-%E2%80%93-the-drawbridge_MTK8jYocSMea5uv-7QkN-Q",
+      "note": "Enterprise DrawBridge; JavaScript examples invoke installed desktop Draw."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://3dswym.3dexperience.3ds.com/wiki/biovia-drug-discovery-development/biovia-draw-add-ins_82s_cafHRzuBOKB7FB6Kgw",
+      "note": "Documented .NET API supports custom C# and VB add-ins."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.3ds.com/assets/invest/2024-02/biovia-draw-ds.pdf",
+      "note": "vendor claim; Java/.NET integration; web integration requires desktop DrawBridge."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Free use is restricted to academics and non-commercial users; registration is required.",
+    "Desktop support is Windows; Enterprise web integration launches an installed desktop editor.",
+    "Some add-ins require separate products or licenses; the linked datasheet predates Draw 2026."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.3ds.com/products/biovia/draw",
+    "https://discover.3ds.com/biovia-draw-academic"
+  ],
+  "builtOn": {
+    "id": "p06",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "OpenEye Lexichem"
+    ],
+    "source": "https://www.3ds.com/support/news/single/t65-2023-notification-regarding-biovia-draw-2024/",
+    "note": "Lexichem confirmed for Draw 2024; current canvas provenance unestablished."
+  },
+  "renderer": {
+    "origin": null,
+    "name": null,
+    "language": null,
+    "source": null
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": [
+      {
+        "name": "OpenEye Lexichem",
+        "license": null,
+        "source": null
+      }
+    ]
+  }
+}

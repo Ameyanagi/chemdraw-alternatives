@@ -1,0 +1,527 @@
+{
+  "id": "p118",
+  "slug": "chemeditor-lernprogramme",
+  "name": "Chemeditor (Chemie-Lernprogramme)",
+  "rank": 73,
+  "tier": "alternative",
+  "tierReason": "It composes Unicode text formulas and relies on a word processor for document layout and assembled reaction figures.",
+  "summary": "A browser editor for composing Unicode chemical formulas, simple structural formulas, and reaction equations for word processors.",
+  "website": "https://chemie-lernprogramme.de/daten/html/chemeditor.html",
+  "repo": null,
+  "docs": "https://chemie-lernprogramme.de/daten/ueb/ueb_chemeditor_libreoffice_loes.pdf",
+  "vendor": "Joachim Jakob (Kronberg-Gymnasium Aschaffenburg)",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-3.0-only",
+    "text": "Program code under GPLv3; original media under CC BY 4.0.",
+    "source": "https://chemie-lernprogramme.de/daten/html/lizenz.html"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://chemie-lernprogramme.de/daten/html/lizenz.html"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://chemie-lernprogramme.de/daten/html/chemeditor.html"
+  },
+  "engine": {
+    "rendering": "Browser text rendering; HTML Canvas 2D text rendering for PNG export",
+    "chemistry": null,
+    "ui": "Plain HTML/CSS and JavaScript",
+    "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/daten/js/funktionen.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
+      "note": "Single, double, triple characters insert as text, not bonds.",
+      "shot": {
+        "image": "evidence/chemeditor-lernprogramme/f-bonds-core.webp",
+        "caption": "Single, double and triple bond characters in the text editor."
+      }
+    },
+    "stereo-bonds": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No wedge, hashed wedge, or wavy bond controls visible."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
+      "note": "Benzene text template inserts; no general ring tools.",
+      "shot": {
+        "image": "evidence/chemeditor-lernprogramme/f-rings.webp",
+        "caption": "Benzene character diagram and selected structure template."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chemie-lernprogramme.de/daten/ueb/ueb_chemeditor_libreoffice_loes.pdf",
+      "note": "Structure templates insert fixed character diagrams, not chemical objects."
+    },
+    "custom-templates": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chemie-lernprogramme.de/daten/ueb/ueb_chemeditor_libreoffice_loes.pdf",
+      "note": "Offline templates require manual JavaScript and HTML edits."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
+      "note": "Unicode charges and isotope digits; no atom-property editing."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
+      "note": "Lone pairs use text strokes around element symbols."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
+      "note": "Forward and equilibrium characters insert into text.",
+      "shot": {
+        "image": "evidence/chemeditor-lernprogramme/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrow characters in the text editor."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved electron-pushing arrow tool visible."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
+      "note": "Palette includes chemical charge, bond and electron-pair symbols."
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
+      "note": "Unicode subscripts and superscripts; fixed-width plain text without mixed styling."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No calculation command or computed formula and mass display."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Typing caffeine leaves literal text."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure naming command visible."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No rotatable 3D viewer control visible."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML import or export control visible."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No MOL or SDF import or export control visible."
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SMILES input remained literal text; no chemistry conversion."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No SVG export control visible."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export control visible."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/daten/js/funktionen.js",
+      "note": "PNG button opened blank popup in isolated WebKit host."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chemie-lernprogramme.de/daten/ueb/ueb_chemeditor_libreoffice_loes.pdf",
+      "note": "Copies editable Unicode text, without an embedded chemical structure object."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Structures are Unicode text and require a monospaced font.",
+    "Multiple structures must be arranged in a separate word processor.",
+    "PNG export uses fixed 16-pixel monochrome text."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "sha256:4c8fae476591",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "SMILES remained plain text; no MOL import control.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "SMILES remained plain text; no MOL import control.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No rotatable 3D view; fixture skipped.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemeditor-lernprogramme/canvas.webp",
+    "canvasLight": "evidence/chemeditor-lernprogramme/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Paclitaxel SMILES remains literal text; no molecular drawing."
+    },
+    "memory": null,
+    "observations": [
+      "No version was shown; identifier is the served HTML SHA-256 prefix.",
+      "The main editing area is a monospaced text field.",
+      "Benzene and methane templates insert multiline character diagrams.",
+      "Fixture screenshots show literal input rather than molecular drawings.",
+      "PNG popup was blank in the isolated WebKit host; export remains unverified."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://chemie-lernprogramme.de/daten/html/chemeditor.html",
+    "https://chemie-lernprogramme.de/daten/html/chemeditor.html"
+  ],
+  "builtOn": {
+    "id": "p118",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/index.html",
+    "note": "Own Unicode text composer and PNG renderer; FileSaver only handles downloads."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Unicode text and Canvas text renderer",
+    "language": "JavaScript",
+    "source": "https://chemie-lernprogramme.de/daten/programme/js/chemeditor/daten/js/funktionen.js"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "HTML and CSS provide layout and styling.",
+  "thirdParty": {
+    "summary": "Offline download includes GPL-2.0 Liberation fonts with a font embedding exception.",
+    "source": "https://github.com/liberationfonts/liberation-1.7-fonts/blob/c9bf24210d99ab6d1fe83745e6b58086bef61dda/License.txt",
+    "notice": null,
+    "libraries": []
+  }
+}

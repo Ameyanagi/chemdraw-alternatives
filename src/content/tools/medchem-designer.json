@@ -1,0 +1,68 @@
+{
+  "id": "p09",
+  "slug": "medchem-designer",
+  "name": "MedChem Designer",
+  "rank": 134,
+  "tier": "related",
+  "tierReason": "It focuses on molecular sketching and ADMET prediction, while public documentation does not establish ChemDraw-style publication document production.",
+  "summary": "A molecular sketcher for designing compounds and predicting selected ADMET properties.",
+  "website": "https://www.simulations-plus.com/software/medchem-designer/",
+  "repo": null,
+  "docs": "https://admetpredictor.slp-software.com/admet-predictor-user-manual/ap14-release/1-8-4-medchem-designertm",
+  "vendor": "Simulations Plus, Inc.",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary; basic sketching and selected predictions are free, with additional functions requiring paid companion licenses.",
+    "source": "https://www.simulations-plus.com/software/medchem-designer/"
+  },
+  "price": {
+    "text": "Free; additional functions require paid companion licenses (2026-11-05).",
+    "source": "https://www.simulations-plus.com/software/medchem-designer/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://www.simulations-plus.com/software/medchem-designer/"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "ADMET Predictor (property predictions)",
+    "ui": null,
+    "source": "https://www.simulations-plus.com/software/medchem-designer/"
+  },
+  "languages": [],
+  "features": {},
+  "caveats": [
+    "Optical structure recognition requires a paid ADMET Predictor or MedChem Studio license.",
+    "Download is gated by a vendor registration form.",
+    "The full MedChem Designer manual is bundled with the ADMET Predictor installation."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.simulations-plus.com/software/medchem-designer/"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

@@ -1,0 +1,642 @@
+{
+  "id": "p47",
+  "slug": "schrodinger-sketcher",
+  "name": "Schrödinger Sketcher",
+  "rank": 37,
+  "tier": "embeddable",
+  "tierReason": "Its Qt widget and React wrapper provide chemical structure input for larger applications.",
+  "summary": "An open-source editor for drawing molecules, reactions, and biomolecular sequences in desktop and web applications.",
+  "website": "https://www.schrodinger.com/platform/products/schrodinger-sketcher/",
+  "repo": "https://github.com/schrodinger/sketcher",
+  "docs": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/README.md",
+  "vendor": "Schrödinger, Inc.",
+  "license": {
+    "kind": "open-source",
+    "spdx": "BSD-3-Clause",
+    "text": "Permissive BSD 3-Clause license.",
+    "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/README.md#access-and-training"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v2026-4",
+    "date": "2026-10-30",
+    "source": "https://github.com/schrodinger/sketcher/releases/tag/v2026-4"
+  },
+  "engine": {
+    "rendering": "Qt QGraphicsScene and QPainter; QSvgGenerator for SVG and QImage for PNG",
+    "chemistry": "RDKit",
+    "ui": "Qt Widgets, compiled to WebAssembly for the browser",
+    "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/image_generation.cpp"
+  },
+  "languages": [
+    "C++"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/menu/bond_context_menu.cpp#L26",
+      "note": "Drew single and double; changed double to triple.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-bonds-core.webp",
+        "caption": "Bond menu lists single, double and triple bond orders."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/molviewer/bond_item.cpp#L188",
+      "note": "Drew solid/hash wedges; set unknown stereo to zigzag.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-stereo-bonds.webp",
+        "caption": "Wavy, solid wedge and hashed wedge bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/widget/bond_order_popup.cpp#L21",
+      "note": "Dative and zero-order bonds.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-special-bonds.webp",
+        "caption": "Bond type menu lists coordinate and zero-order bonds."
+      }
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/widget/ring_tool_widget.cpp#L20",
+      "note": "Placed cyclohexane and benzene with dedicated tools.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-rings.webp",
+        "caption": "Cyclohexane and benzene rings alongside the ring toolbar."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/tool/draw_chain_scene_tool.cpp#L66",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/widget/monomer_tool_widget.cpp#L160",
+      "note": "Placed an alanine monomer from the amino-acid library.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-templates.webp",
+        "caption": "A monomer on the canvas beside the amino acid library."
+      }
+    },
+    "custom-templates": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/widget/sketcher_top_bar.cpp#L143",
+      "note": "General custom-fragment saving is explicitly unimplemented."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/dialog/edit_atom_properties.cpp#L435",
+      "note": null,
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-atom-labels.webp",
+        "caption": "Atom menu offers element and charge controls."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/menu/atom_context_menu.cpp#L61",
+      "note": "Unpaired-electron controls; lone pairs unverified.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-radicals.webp",
+        "caption": "Atom menu includes Add Unpaired Electron."
+      }
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/sketcher_widget.cpp#L1501",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/widget/selection_tool_popup.cpp#L35",
+      "note": "Lasso, rotate and flip; structure resizing unverified.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-selection-tools.webp",
+        "caption": "Modify menu offers horizontal and vertical flips."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/molviewer/non_molecular_item.cpp#L82",
+      "note": "Placed forward arrow; other arrow styles unverified.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-reaction-arrows.webp",
+        "caption": "A forward arrow on the drawing canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved electron-arrow tool found in inspected toolbar or menus."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/model/mol_model.h#L188",
+      "note": "RDKit reactions and reaction SMILES/RXN exchange."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/ui/reaction_popup.ui#L107",
+      "note": "Manual mapping by dragging between matching reactant and product atoms."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/dialog/bracket_subgroup_dialog.cpp#L21",
+      "note": "Chemical subgroup brackets; general shapes and curves unverified."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/model/mol_model.cpp#L1632",
+      "note": null,
+      "engine": {
+        "library": "RDKit RDDepictor (C++; WebAssembly in browser build); In-house monomer layout",
+        "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/rdkit_extensions/coord_utils.cpp#L33-L67"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/dialog/rendering_settings_dialog.cpp#L68",
+      "note": "Element palettes; individual object coloring unverified.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-color.webp",
+        "caption": "2D settings show heteroatom coloring and a color mode."
+      }
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/molviewer/atom_item.cpp#L912",
+      "note": null,
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-valence-check.webp",
+        "caption": "View menu shows Valence Errors enabled."
+      },
+      "engine": {
+        "library": "RDKit (C++; WebAssembly in browser build)",
+        "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/molviewer/atom_item.cpp#L912-L915"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/rdkit/mol_update.cpp#L138",
+      "note": "R/S labels appeared automatically on imported paclitaxel and cholesterol.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-stereo-perception.webp",
+        "caption": "R and S labels appear on a stereochemical structure."
+      },
+      "engine": {
+        "library": "RDKit CIPLabeler and MolOps (C++; WebAssembly in browser build)",
+        "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/rdkit/mol_update.cpp#L92-L195"
+      }
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula/mass command found in action menus or property dialog."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Importing caffeine as text returned Unable to determine format."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command in conversion menus; chemical formats only."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/dialog/edit_atom_properties.cpp#L456",
+      "note": "R-groups, element lists and query constraints."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/dialog/bracket_subgroup_dialog.cpp#L21",
+      "note": "SRU polymers, copolymers and repeat patterns."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/dialog/file_import_export.cpp#L45",
+      "note": "Placed alanine monomer; amino-acid and nucleic-acid libraries visible.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-biomolecules.webp",
+        "caption": "A monomer on the canvas beside amino acid and nucleic tabs."
+      }
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D viewer found; imported 3D SDF displayed on 2D canvas."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/test/schrodinger/rdkit_extensions/test_convert.cpp#L199",
+      "note": "Imported methanol CDXML; no CDXML option in export formats.",
+      "engine": {
+        "library": "RDKit CDXMLToMols (C++; WebAssembly in browser build; import only)",
+        "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/rdkit_extensions/convert.cpp#L650-L660"
+      }
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/dialog/file_import_export.cpp#L20",
+      "note": "Imported V2000 MOL and 3D SDF; exported V3000 MOL.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-mol-sdf.webp",
+        "caption": "Format menu lists MDL SD V3000."
+      },
+      "engine": {
+        "library": "RDKit SDMolSupplier and SDWriter (C++; WebAssembly in browser build)",
+        "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/rdkit_extensions/convert.cpp"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/rdkit_extensions/convert.cpp#L563",
+      "note": "Pasted fixture SMILES; exported imported methanol as CO.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-smiles.webp",
+        "caption": "Format menu lists SMILES and Extended SMILES."
+      },
+      "engine": {
+        "library": "RDKit (C++; WebAssembly in browser build)",
+        "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/rdkit_extensions/convert.cpp"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/rdkit_extensions/convert.cpp#L611",
+      "note": "InChI import and export; InChIKey export.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-inchi.webp",
+        "caption": "Format menu lists InChI and InChIKey."
+      },
+      "engine": {
+        "library": "InChI via RDKit RDInchiLib (native C/C++; WebAssembly in browser build)",
+        "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/rdkit_extensions/convert.cpp"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/rdkit_extensions/convert.cpp#L903",
+      "note": "RXN import and V3000 export."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/image_generation.cpp#L361",
+      "note": "Saved svg-test.svg using SVG image format."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/include/schrodinger/sketcher/image_generation.h#L30",
+      "note": "Only PNG/SVG formats; Command-P opened no print dialog."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/dialog/file_save_image_dialog.cpp#L46",
+      "note": "Default 400×400 PNG, approximately 72 dpi; higher resolution unverified.",
+      "shot": {
+        "image": "evidence/schrodinger-sketcher/f-png-export.webp",
+        "caption": "Caffeine structure on a white background."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/wasm/package/src/Sketcher.tsx#L57",
+      "note": "Typed React/WASM API for structure and image exchange."
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/utils/smiles_to_helm.cpp#L48",
+      "note": "Bundled headless SMILES-to-HELM converter."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/wasm/package/src/Sketcher.tsx#L194",
+      "note": "React iframe component and native Qt widget."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "CDXML import is supported; CDXML export is unsupported.",
+    "Native image export is limited to PNG and SVG.",
+    "General custom-fragment saving is not implemented."
+  ],
+  "github": {
+    "stars": 43,
+    "pushedAt": "2026-11-05T04:20:21Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "Release 2026-4 (build 131)",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "zip",
+    "artifact": "sketcher-2026-4-macos-26-arm64.zip",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 19120979,
+    "installedBytes": 48451584,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/schrodinger-sketcher/simple.png",
+        "note": "Current Kekule SMILES; automatic layout preserved; Fit to Screen used.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/schrodinger-sketcher/complex.png",
+        "note": "Current Kekule SMILES; automatic layout preserved; Fit to Screen used.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/schrodinger-sketcher/canvas.webp",
+    "canvasLight": "evidence/schrodinger-sketcher/canvas-light.webp",
+    "canvasDark": "evidence/schrodinger-sketcher/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "follows system",
+      "note": "Native window frame changes; canvas and toolbars remain white."
+    },
+    "memory": null,
+    "observations": [
+      "SMILES paste generated a 2D layout automatically.",
+      "Default heteroatom colors and stereo annotations were enabled.",
+      "Paclitaxel required Fit to Screen to show the whole drawing.",
+      "Default PNG export was white, 400 × 400 pixels, approximately 72 dpi.",
+      "The app uses one canvas; Clear Sketcher started each fresh fixture."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 19120979,
+  "references": [
+    "https://github.com/schrodinger/sketcher",
+    "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/README.md"
+  ],
+  "builtOn": {
+    "id": "p47",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "InChI"
+    ],
+    "source": "https://github.com/schrodinger/sketcher/blob/ff14609b2b365269e05a9a05131d09368b7511f8/CMakeLists.txt#L276-L309",
+    "note": "Original Qt editor with RDKit; InChI import/export runs through RDKit."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Sketcher Qt graphics-item renderer",
+    "language": "C++",
+    "source": "https://github.com/schrodinger/sketcher/blob/8586db9dc70a23740f737168b9d533ef4dfed06b/src/schrodinger/sketcher/molviewer/bond_item.cpp#L810-L858"
+  },
+  "otherLanguages": [
+    {
+      "language": "TypeScript",
+      "role": "Browser React wrapper and API"
+    },
+    {
+      "language": "JavaScript",
+      "role": "Qt WebAssembly browser loader and glue"
+    },
+    {
+      "language": "C",
+      "role": "InChI identifier library"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Other languages support bindings, tests, builds and browser packaging.",
+  "thirdParty": {
+    "summary": "Includes LGPL-3.0-only (Qt), MPL-2.0 (Eigen), and OFL-1.1 (bundled Arimo fonts).",
+    "source": "https://github.com/schrodinger/sketcher/blob/4cf7582e947d7de8522fdf80575247c05d6103ce/external/versions.json",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,592 @@
+{
+  "id": "p127",
+  "slug": "molbrett",
+  "name": "Molbrett",
+  "rank": 23,
+  "tier": "alternative",
+  "tierReason": "Combines editable 2D chemical structures, annotations, diagram layout, and vector export for complete chemical figures.",
+  "summary": "A browser whiteboard for drawing chemical structures, synthetic routes, and annotated chemistry diagrams.",
+  "website": "https://elsci.io/molbrett/index.html",
+  "repo": null,
+  "docs": "https://elsci.io/docs/molbrett/index.html",
+  "vendor": "Elsci LLC",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Free cloud service; local deployment requires a license, free for academia.",
+    "source": "https://elsci.io/docs/molbrett/index.html"
+  },
+  "price": {
+    "text": "Free cloud; local academic licenses free; other local pricing by enquiry (2026-11-05).",
+    "source": "https://elsci.io/docs/molbrett/index.html"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://elsci.io/docs/molbrett/installation.html"
+  },
+  "engine": {
+    "rendering": "Excalidraw HTML canvas whiteboard displaying SVG molecular images",
+    "chemistry": "Indigo through embedded Ketcher standalone",
+    "ui": "React, Ketcher, and Excalidraw",
+    "source": "https://molbrett.elsci.io/static/js/main-page.bundle.06dde1e7.js"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-bonds",
+      "note": "Drew single, double and triple bonds."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-bonds",
+      "note": "Drew solid wedge, hashed wedge and wavy bonds.",
+      "shot": {
+        "image": "evidence/molbrett/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedges in a molecular drawing."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-bonds",
+      "note": "Dative and hydrogen bonds in Ketcher."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Placed benzene; other ring sizes appear in the toolbar.",
+      "shot": {
+        "image": "evidence/molbrett/f-rings.webp",
+        "caption": "Ring tools and aromatic rings in the editor."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/editor/tool/chain.ts#L150",
+      "note": "Dragging determines chain length in Ketcher."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Selected and placed adenine from the structure library."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Ketcher saves drawings into its User Templates library."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#expandingcontracting-s-group",
+      "note": "Ketcher functional groups expand and contract chemically."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/images/13_atom_propn.png",
+      "note": "Ketcher atom dialog includes label, alias, charge, and isotope."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/images/13_atom_propn.png",
+      "note": "Radical setting in Ketcher's atom properties."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-atoms",
+      "note": "Click an atom and type its replacement label."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#changing-structure-display",
+      "note": "Ketcher lasso/rotate/flip; whiteboard objects can be resized."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-reactions",
+      "note": "Drew forward and equilibrium arrows."
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "Drew a curved arrow; later editing was not checked."
+    },
+    "reaction-data": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#reaction-specific-format-support",
+      "note": "Reaction drawing generated an RXN preview."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-reactions",
+      "note": "Manual mapping, automatic mapping, and unmapping in Ketcher."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/elsci-io/excalidraw/blob/bf509553b4581be9a8db2d0e2388f690f31349e0/packages/element/src/types.ts",
+      "note": "Whiteboard fonts supported; subscript/superscript formatting is confined to Ketcher."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/elsci-io/excalidraw/blob/bf509553b4581be9a8db2d0e2388f690f31349e0/README.md#features",
+      "note": "Excalidraw shapes, lines, and free drawing."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/elsci-io/excalidraw/blob/bf509553b4581be9a8db2d0e2388f690f31349e0/packages/excalidraw/actions/actionAlign.tsx",
+      "note": "Align selected whiteboard objects."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/elsci-io/excalidraw/blob/bf509553b4581be9a8db2d0e2388f690f31349e0/packages/excalidraw/actions/actionGroup.tsx",
+      "note": "Group and ungroup whiteboard objects."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-molecules-mode",
+      "note": "Ketcher normalizes bond lengths and angles.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly, Ketcher standalone browser worker)",
+        "source": "https://molbrett.elsci.io/static/js/8300.bundle.ccb3f267.js"
+      }
+    },
+    "journal-styles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#acs-american-chemical-society-style",
+      "note": "ACS preset applies in Ketcher, not to whiteboard styling."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Settings provide Save to File and Open from File."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/elsci-io/excalidraw/blob/bf509553b4581be9a8db2d0e2388f690f31349e0/packages/excalidraw/actions/actionProperties.tsx#L294",
+      "note": "Selected whiteboard objects have individual stroke and fill colors."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/elsci-io/excalidraw/blob/bf509553b4581be9a8db2d0e2388f690f31349e0/README.md#features",
+      "note": "Raster pictures on the Excalidraw whiteboard."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-atoms",
+      "note": "Ketcher underlines invalid valences in red.",
+      "engine": {
+        "library": "Ketcher (TypeScript valence checks); Indigo (WebAssembly structure checks)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/state/server/index.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#stereochemistry",
+      "note": "Ketcher computes R/S, r/s, and E/Z descriptors.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly, Ketcher standalone browser worker)",
+        "source": "https://molbrett.elsci.io/static/js/8300.bundle.ccb3f267.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/images/6_calc_values.png",
+      "note": "Caffeine: C8H10N4O2, molecular weight 194.194.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly, Ketcher standalone browser worker)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/state/server/index.js"
+      }
+    },
+    "properties": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Calculated Values showed formula, masses and elemental analysis only."
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Entering caffeine in Open structure produced an editor error."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in editor controls or save formats."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-r-groups",
+      "note": "Ketcher supports R-groups, atom lists, and attachment logic."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#marking-s-groups",
+      "note": "Ketcher SRU polymers and copolymer S-groups."
+    },
+    "biomolecules": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://molbrett.elsci.io/static/js/main-page.bundle.06dde1e7.js",
+      "note": "Dedicated macromolecule authoring is explicitly disabled."
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts#L720",
+      "note": "Recognition explicitly unsupported in the embedded standalone service."
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#3d-viewer",
+      "note": "SDF model rotated in depth; SMILES model was flat.",
+      "shot": {
+        "image": "evidence/molbrett/f-model-3d.webp",
+        "caption": "Molecular model in the 3D viewing dialog."
+      },
+      "engine": {
+        "library": "Miew (JavaScript/Three.js via miew-react in Ketcher)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/modal/components/process/Miew/Miew.tsx"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Generated CDXML preview reimported; file download failed in host.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly, Ketcher standalone browser worker)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Structure import/export through Ketcher; whiteboards use Excalidraw format.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly, Ketcher standalone browser worker)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts"
+      }
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "MOL and SDF opened; MOL preview generated, download absent.",
+      "engine": {
+        "library": "Ketcher MolSerializer (TypeScript, MOL V2000); Indigo 1.46.0 (WebAssembly, MOL V3000/SDF)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "SMILES imported and output previews generated for three fixtures.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly, Ketcher standalone browser worker)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://elsci.io/docs/molbrett/index.html",
+      "note": "Paste InChI directly onto the whiteboard.",
+      "engine": {
+        "library": "Indigo 1.46.0 (WebAssembly, Ketcher standalone browser worker)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts"
+      }
+    },
+    "rxn": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/ketcher-autotests/tests/specs/File-Management/Open-And-Save-Files/Rxn-Files/rxn-files.spec.ts#L44",
+      "note": "RXN preview generated for a drawing with arrows."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/elsci-io/excalidraw/blob/bf509553b4581be9a8db2d0e2388f690f31349e0/README.md#features",
+      "note": "Board SVG downloads generated for all three fixtures."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Board export offered PNG and SVG, with no PDF option."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "Default 2× PNG exported; no DPI control was shown.",
+      "shot": {
+        "image": "evidence/molbrett/f-png-export.webp",
+        "caption": "Caffeine structure exported as a PNG image."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Structures are edited in embedded Ketcher 3.18.0, separately from the diagram whiteboard.",
+    "Macromolecule mode and image recognition are unavailable in this integration.",
+    "Local installation is a licensed Docker server; vendor credentials are required."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "06dde1e7",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://molbrett.elsci.io/scene",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molbrett/simple.svg",
+        "note": "Default SMILES layout; board SVG exported after placing the structure.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molbrett/complex.svg",
+        "note": "Default SMILES layout includes wedges and an ABS label.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/molbrett/threed.png",
+        "note": "Rotatable SDF model; default viewport saved as threed-view.png.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/molbrett/canvas.webp",
+    "canvasLight": "evidence/molbrett/canvas-light.webp",
+    "canvasDark": "evidence/molbrett/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Black bonds have very low contrast on the dark canvas."
+    },
+    "memory": null,
+    "observations": [
+      "Molbrett main bundle identifier was 06dde1e7; embedded Ketcher About reports 3.18.0.",
+      "SMILES layouts use colored heteroatoms and terminal carbon labels in the editor.",
+      "SDF viewer defaults to lines on a gray background with explicit hydrogens.",
+      "Chemical file download did not appear in the isolated WebKit host; SMILES previews were transcribed.",
+      "RDKit canonicalized all three transcribed outputs identically to their fixture SMILES."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://elsci.io/molbrett/index.html",
+    "https://elsci.io/docs/molbrett/index.html"
+  ],
+  "builtOn": {
+    "id": "p127",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "Ketcher",
+      "Indigo"
+    ],
+    "source": "https://molbrett.elsci.io/static/js/main-page.bundle.06dde1e7.js",
+    "note": "Embeds Ketcher with standalone Indigo chemistry; the surrounding whiteboard uses Excalidraw."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher Raphael/SVG; whiteboard server undisclosed",
+    "language": "TypeScript",
+    "source": "https://molbrett.elsci.io/static/js/main-page.bundle.06dde1e7.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Molbrett UI and Miew 3D viewer"
+    },
+    {
+      "language": "C++",
+      "role": "Indigo chemistry compiled to WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "MIT/Apache-2.0 components; DOMPurify also offers MPL-2.0; bundled Excalifont/Xiaolai fonts use OFL-1.1.",
+    "source": "https://molbrett.elsci.io/static/js/main-page.bundle.06dde1e7.js.LICENSE.txt",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      }
+    ]
+  }
+}

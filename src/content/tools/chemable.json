@@ -1,0 +1,600 @@
+{
+  "id": "p79",
+  "slug": "chemable",
+  "name": "Chemable",
+  "rank": 46,
+  "tier": "alternative",
+  "tierReason": "Implemented desktop drawing, captions, reaction graphics and PNG export support standalone chemical figures, with incomplete vector export and UI connections.",
+  "summary": "A desktop application for drawing chemical structures, reaction graphics and annotated molecular figures.",
+  "website": null,
+  "repo": "https://github.com/joreitz/chemable",
+  "docs": null,
+  "vendor": "Joshua Reitz",
+  "license": {
+    "kind": "source-available",
+    "spdx": "PolyForm-Noncommercial-1.0.0",
+    "text": "Source available under the PolyForm Noncommercial License 1.0.0.",
+    "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/LICENSE"
+  },
+  "price": {
+    "text": "Free for permitted noncommercial use (2026-11-05)",
+    "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v1.1.9",
+    "date": "2026-08-18",
+    "source": "https://github.com/joreitz/chemable/releases/tag/v1.1.9"
+  },
+  "engine": {
+    "rendering": "Custom HTML Canvas 2D renderer and SVG exporter; 3Dmol.js for 3D views.",
+    "chemistry": "RDKit (Python and WebAssembly), plus in-house graph, SMILES and valence logic.",
+    "ui": "Electron with HTML/CSS and vanilla DOM controls.",
+    "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/renderer.ts"
+  },
+  "languages": [
+    "TypeScript",
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/core/mouse-interactions.ts#L499-L513",
+      "note": "Drew single bond and cycled through double and triple.",
+      "shot": {
+        "image": "evidence/chemable/f-bonds-core.webp",
+        "caption": "A triple bond on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/draw.ts#L278-L314",
+      "note": "Drew solid and hashed wedges; no wavy tool found.",
+      "shot": {
+        "image": "evidence/chemable/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/templates.ts",
+      "note": "Inserted benzene from Templates."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/templates.ts",
+      "note": "Only benzene, cyclohexane and cyclopentane are bundled."
+    },
+    "custom-templates": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/core/mouse-interactions.ts",
+      "note": "Template-saving code exists, but canvas context-menu activation is unwired."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/types.ts#L1-L23",
+      "note": "Charges and custom labels; no isotope property in atom model."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/core/hotkeys.ts#L56-L76",
+      "note": "Radical dots can be toggled on hovered atoms."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/core/hotkeys.ts#L56-L76",
+      "note": "Hover shortcuts change charges and radicals."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/core/mouse-interactions.ts",
+      "note": "Lasso and rotation only; no flip or selection resize controls."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/core/projection-3d.ts",
+      "note": "Canvas atoms rotate around horizontal and vertical axes."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/graphics/shapes.ts#L49-L69",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/chemable/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/graphics/shapes.ts#L75-L90",
+      "note": "Drew a curved electron-pair arrow.",
+      "shot": {
+        "image": "evidence/chemable/f-mechanism-arrows.webp",
+        "caption": "A curved arrow on the drawing canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/draw.ts",
+      "note": "Free text supports font selection and subscript/superscript syntax."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/graphics/shapes.ts#L91-L124",
+      "note": "Editable boxes, ellipses, square brackets and parentheses."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/ui/toolbar.ts#L146-L167",
+      "note": "Auto-Layout regenerates 2D coordinates through RDKit.",
+      "engine": {
+        "library": "RDKit (local Python/PyInstaller sidecar; Compute2DCoords with 3D embedding fallback)",
+        "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/engine_3d.py#L20-L35"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/core/ui-state.ts",
+      "note": "Font, bond length, spacing and line width persist locally."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/ui/style-menu.ts#L53-L62",
+      "note": "Selection color applies to atoms and internal bonds."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/chemistry.ts#L82-L101",
+      "note": "Flags excess valence; transition metals are exempt.",
+      "engine": {
+        "library": "In-house (TypeScript valence-table checks; transition metals exempt)",
+        "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/chemistry.ts#L82-L101"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/plugins/analyzer.ts#L155-L199",
+      "note": "Cholesterol: C27H46O and 386.618 g/mol.",
+      "shot": {
+        "image": "evidence/chemable/f-formula-mass.webp",
+        "caption": "Analysis dialog showing C27H46O and 386.618 g/mol."
+      },
+      "engine": {
+        "library": "In-house (TypeScript element counting, implicit hydrogens and atomic-mass table)",
+        "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/plugins/analyzer.ts#L155-L197"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/plugins/knowitall.ts#L170-L187",
+      "note": "Caffeine search result inserted a structure.",
+      "engine": {
+        "library": "PubChem PUG REST (remote server name-to-SMILES lookup); RDKit (local Python/PyInstaller sidecar; SMILES-to-2D conversion)",
+        "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/plugins/knowitall.ts#L155-L179"
+      }
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in menus, analyzer, or data hub."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/plugins/knowitall.ts#L113-L145",
+      "note": "KnowItAll returned caffeine matches and imported the first.",
+      "engine": {
+        "library": "PubChem autocomplete and PUG REST (remote server APIs); RDKit (local Python/PyInstaller sidecar for importing results)",
+        "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/plugins/knowitall.ts#L113-L179"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/viewer3d.ts#L46-L75",
+      "note": "Cholesterol generated from SMILES and rotated in depth.",
+      "shot": {
+        "image": "evidence/chemable/f-model-3d.webp",
+        "caption": "A ball-and-stick model in the 3D structure viewer."
+      },
+      "engine": {
+        "library": "3Dmol.js (JavaScript/WebGL viewer loaded from CDN); RDKit (local Python/PyInstaller sidecar; ETKDGv3 conformers and UFF optimization)",
+        "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/viewer3d.ts#L47-L67"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Opening minimal CDXML produced Error while loading file."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/io/file-manager.ts",
+      "note": "Opening simple.mol produced Error while loading file."
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/smiles.ts",
+      "note": "Imported and exported all fixtures; stereochemistry markers were lost.",
+      "engine": {
+        "library": "In-house (TypeScript SMILES export without stereochemistry); RDKit (local Python/PyInstaller sidecar for SMILES import)",
+        "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/plugins/knowitall.ts#L67-L161"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/export.ts#L37-L245",
+      "note": "Caffeine SVG has 32 NaN coordinates in 16 line elements."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/io/file-manager.ts#L115-L145",
+      "note": "Command-P did nothing; File offers SVG and PNG only."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/export.ts#L274-L336",
+      "note": "Large transparent PNG exports; no DPI metadata or resolution control."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/engine_3d.py",
+      "note": "Internal helper converts SMILES into 2D or 3D MOL blocks."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "PolyForm Noncommercial permits only specified noncommercial purposes.",
+    "SVG omits annotation shapes and can emit invalid coordinates for labeled bonds.",
+    "SMILES loses stereochemistry; PDF export and custom-template saving lack connected UI controls."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-08-18T04:05:25Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "1.1.9",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "Chemable-1.1.9-arm64.dmg",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 179326133,
+    "installedBytes": 499785728,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemable/simple.png",
+        "note": "Default PNG retained; SVG contains NaN bond coordinates.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemable/complex.png",
+        "note": "Automatic layout retained; input stereochemistry annotations were dropped.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemable/threed.png",
+        "note": "Rotatable model generated from SMILES; default viewport saved as threed-view.png.",
+        "structure": "stereo"
+      }
+    ],
+    "canvas": "evidence/chemable/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Default floating toolbar covers the menu bar; moved panels to access commands.",
+      "SMILES imports automatically generate black 2D drawings without cleanup.",
+      "Paclitaxel and cholesterol imports and output SMILES lose stereo annotations.",
+      "Default PNG exports are transparent; caffeine SVG has invalid bond coordinates.",
+      "Cholesterol opens as a rotatable ball-and-stick model with explicit hydrogens."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 179326133,
+  "references": [
+    "https://github.com/joreitz/chemable",
+    "https://github.com/joreitz/chemable/blob/main/index.html"
+  ],
+  "builtOn": {
+    "id": "p79",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "3Dmol.js",
+      "nmr-simulation"
+    ],
+    "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/renderer.ts#L34-L40",
+    "note": "Custom 2D canvas; RDKit chemistry, 3Dmol.js 3D views, nmr-simulation spectra."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Chemable Canvas 2D renderer",
+    "language": "TypeScript",
+    "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/src/draw.ts#L232-L324"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "Local RDKit geometry helper"
+    },
+    {
+      "language": "C++",
+      "role": "RDKit native chemistry core"
+    },
+    {
+      "language": "JavaScript",
+      "role": "3D viewer and spectral simulation"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "JavaScript generates element data; HTML/CSS provide interface presentation.",
+  "thirdParty": {
+    "summary": "MIT components (Electron, jsPDF, svg2pdf.js) and BSD-3-Clause RDKit.",
+    "source": "https://github.com/joreitz/chemable/blob/e1c03d64d3f2526ca2996b60b46e60e821617fef/THIRD-PARTY-NOTICES.md",
+    "notice": "https://github.com/joreitz/chemable/blob/main/THIRD-PARTY-NOTICES.md",
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "3Dmol.js",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/3dmol/3Dmol.js/blob/master/LICENSE"
+      },
+      {
+        "name": "nmr-simulation",
+        "license": "MIT",
+        "source": "https://github.com/cheminfo-js/nmr-simulation/blob/master/LICENSE"
+      }
+    ]
+  }
+}

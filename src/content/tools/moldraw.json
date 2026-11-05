@@ -1,0 +1,707 @@
+{
+  "id": "p14",
+  "slug": "moldraw",
+  "name": "MolDraw",
+  "rank": 3,
+  "tier": "alternative",
+  "tierReason": "Its standalone editor produces styled 2D structures, reaction schemes, and publication-size SVG and PNG figures.",
+  "summary": "MolDraw is a browser editor for chemical structures, reaction schemes, mechanisms, and publication figures.",
+  "website": "https://www.moldraw.com/",
+  "repo": null,
+  "docs": "https://www.moldraw.com/docs/",
+  "vendor": "Scidart Academy (Rafeeque Mavoor)",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Free core drawing with paid Pro features; not open source.",
+    "source": "https://www.moldraw.com/blog/moldraw-vs-ketcher.html"
+  },
+  "price": {
+    "text": "Free tier; Pro US$99/year including tax (2026-11-05; country pricing varies).",
+    "source": "https://www.moldraw.com/pricing"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": true,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://www.moldraw.com/pages/updates.html"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-single-double-triple-and-wedge-bonds/",
+      "note": "Drew single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/moldraw/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-single-double-triple-and-wedge-bonds/",
+      "note": "Drew wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/moldraw/f-stereo-bonds.webp",
+        "caption": "Wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/special-bond-types-dative-hydrogen-bold-wavy-and-query/",
+      "note": "Dative, hydrogen, centroid, and query bonds are drawable.",
+      "shot": {
+        "image": "evidence/moldraw/f-special-bonds.webp",
+        "caption": "Bond menu listing dative and hydrogen bonds."
+      }
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-faster-with-hover-shortcuts/",
+      "note": "Repeated clicks or 2 cycle centered, right, and left."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-benzene-cyclohexane-and-fused-rings/",
+      "note": "Placed benzene and cyclopentane rings.",
+      "shot": {
+        "image": "evidence/moldraw/f-rings.webp",
+        "caption": "Benzene and cyclopentane rings on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-benzene-cyclohexane-and-fused-rings/",
+      "note": "Cyclohexane menu offers chair and boat projections.",
+      "shot": {
+        "image": "evidence/moldraw/f-conformers.webp",
+        "caption": "Cyclohexane menu with chair and boat options."
+      }
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-carbon-chains-and-functional-group-abbreviations/",
+      "note": "Drag a zigzag chain; numbered atoms show its length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/library/how-to-use-the-structure-library-and-templates/",
+      "note": "Placed alanine from structure library.",
+      "shot": {
+        "image": "evidence/moldraw/f-templates.webp",
+        "caption": "Structure library showing amino acid templates."
+      }
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-carbon-chains-and-functional-group-abbreviations/",
+      "note": "Ph, Boc, OMe, and other groups expand into atoms."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-atoms-and-change-elements/",
+      "note": "Atom editing sets elements, isotopes, charges, and labels.",
+      "shot": {
+        "image": "evidence/moldraw/f-atom-labels.webp",
+        "caption": "Structure with element labels and charged atoms."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-add-lone-pairs-radicals-and-formal-charges/",
+      "note": "Atom-attached lone pairs and radical dots.",
+      "shot": {
+        "image": "evidence/moldraw/f-radicals.webp",
+        "caption": "Lone-pair dots appear on oxygen and nitrogen atoms."
+      }
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-faster-with-hover-shortcuts/",
+      "note": "Hover keys change bond order, stereo, atom labels, and charges."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-select-move-copy-and-align-structures/",
+      "note": "Lasso selection, rotation handles, flips, and resizing."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-clean-up-2d-and-3d-structure-drawings/",
+      "note": "Structure Perspective rotates a 3D pose on the drawing canvas."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/reactions/how-to-draw-reaction-arrows-with-reagents/",
+      "note": "Drew straight and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/moldraw/f-reaction-arrows.webp",
+        "caption": "Arrow menu listing straight, equilibrium, and retrosynthetic arrows."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/reactions/how-to-draw-curved-arrow-mechanisms-and-fishhook-arrows/",
+      "note": "Drew electron-flow and fishhook curves.",
+      "shot": {
+        "image": "evidence/moldraw/f-mechanism-arrows.webp",
+        "caption": "Equilibrium and curved electron-flow arrows on the canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/reactions/how-to-make-a-chemical-reaction-scheme/",
+      "note": "Reaction SMILES input and RXN export preserve reaction chemistry.",
+      "shot": {
+        "image": "evidence/moldraw/f-reaction-data.webp",
+        "caption": "SMILES paste field shows an example reaction SMILES."
+      }
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/reactions/how-to-map-atoms-in-a-reaction-with-automap/",
+      "note": "Automap assigns matching atom numbers across reactants and products."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-atomic-orbitals-s-p-and-d/",
+      "note": "Rotatable s, p, d, and hybrid orbital objects."
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Canvas text documented; complete rich formatting unverified."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/get-started/moldraw-editor-interface-toolbar-and-panels-explained/",
+      "note": "Drawing tools include shapes, freehand pencil, and brackets."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-select-move-copy-and-align-structures/",
+      "note": "Align edges or centers; distribute horizontally or vertically."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-select-move-copy-and-align-structures/",
+      "note": "Group and Ungroup combine molecules for movement."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-clean-up-2d-and-3d-structure-drawings/",
+      "note": "Cleanup evens bond lengths, angles, and ring shapes.",
+      "engine": {
+        "library": "In-house browser JavaScript cleanup; optional Indigo 1.46.0 indigo-ketcher-norender browser WebAssembly layout/clean2d",
+        "source": "https://www.moldraw.com/assets/moleculeEngineWorker-KcmTBWf9.js"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-make-publication-ready-figures-dpi-size-and-journal-styles/",
+      "note": "ACS, RSC, Nature Portfolio, and Nature Chemistry presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-change-structure-style-colors-and-display/",
+      "note": "Settings can save style presets for reuse."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-change-structure-style-colors-and-display/",
+      "note": "Color selected atoms or other drawing content."
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Page setup and separate slide list visible."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-add-text-shapes-images-and-lab-glassware/",
+      "note": "Place PNG, JPEG, WebP, GIF, and SVG images."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/tools/free-chem-tools/tlc-diagram-tool.html",
+      "note": "Separate TLC tool edits lanes, spots, solvent front, and labels."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/analyze/how-to-check-a-structure-for-valence-errors/",
+      "note": "Flags excessive valence, unusual charge, and stereo problems.",
+      "engine": {
+        "library": "In-house browser JavaScript valence, charge and stereo checks",
+        "source": "https://www.moldraw.com/assets/moleculeEngineWorker-KcmTBWf9.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-stereochemistry-wedge-hash-and-r-s-labels/",
+      "note": "Computed CIP labels include R, S, E, and Z.",
+      "engine": {
+        "library": "In-house browser JavaScript CIP/E-Z perception; Indigo 1.46.0 browser WebAssembly fallback",
+        "source": "https://www.moldraw.com/assets/moleculeEngineWorker-KcmTBWf9.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/analyze/how-to-find-iupac-name-molecular-formula-and-weight/",
+      "note": "Caffeine: C8H10N4O2 and 194.19 g/mol.",
+      "shot": {
+        "image": "evidence/moldraw/f-formula-mass.webp",
+        "caption": "Caffeine molecule details show formula and molecular weight."
+      },
+      "engine": {
+        "library": "In-house browser JavaScript formula/mass calculation; Indigo 1.46.0 browser WebAssembly calculations",
+        "source": "https://www.moldraw.com/assets/index-CEgdk3Xo.js"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/analyze/how-to-find-iupac-name-molecular-formula-and-weight/",
+      "note": "Paclitaxel details displayed logP 3.736.",
+      "shot": {
+        "image": "evidence/moldraw/f-properties.webp",
+        "caption": "Molecule details show calculated logP and other properties."
+      },
+      "engine": {
+        "library": "Indigo 1.46.0 indigo-ketcher-norender (browser WebAssembly; logP, pKa, molar refractivity)",
+        "source": "https://www.moldraw.com/assets/moleculeEngineWorker-KcmTBWf9.js"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-search-pubchem-by-name-or-cas-number/",
+      "note": "PubChem search for caffeine placed a structure.",
+      "engine": {
+        "library": "PubChem PUG REST (remote HTTP API)",
+        "source": "https://www.moldraw.com/assets/pubchemNameResolve-DUbYDozL.js"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/analyze/how-to-find-iupac-name-molecular-formula-and-weight/",
+      "note": "Caffeine details displayed 1,3,7-trimethylpurine-2,6-dione.",
+      "shot": {
+        "image": "evidence/moldraw/f-structure-to-name.webp",
+        "caption": "Caffeine molecule details show its IUPAC name."
+      },
+      "engine": {
+        "library": "PubChem PUG REST (remote SMILES-to-IUPACName lookup)",
+        "source": "https://www.moldraw.com/assets/index-CEgdk3Xo.js"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/plugins/nmr-analyser-plugin-predict-1h-13c-and-2d-nmr-spectra/",
+      "note": "Free-account NMR plugin predicts 1H and 13C shifts.",
+      "engine": {
+        "library": "Zakodium NMR Prediction service (remote HTTP; Spinus/HOSE 1H, HOSE 13C)",
+        "source": "https://www.moldraw.com/assets/api-BuRJ5fx_.js"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-add-atom-labels-and-r-groups/",
+      "note": "Supports R, R1, and R2 atom labels."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/how-to-draw-polymer-repeat-unit-brackets/",
+      "note": "Repeat-unit brackets attach to selected atoms; n/m labels editable."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/tools/free-chem-tools/peptide-dna-sequence-to-structure.html",
+      "note": "Companion sequence tool builds peptide, DNA, and RNA structures."
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/pricing",
+      "note": "Pro only; image recognition includes 300 scans per month.",
+      "engine": {
+        "library": "Mathpix (remote OCR service through MolDraw /api/snip/convert)",
+        "source": "https://www.moldraw.com/assets/index-CEgdk3Xo.js"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-search-pubchem-by-name-or-cas-number/",
+      "note": "Caffeine PubChem search placed a structure.",
+      "engine": {
+        "library": "PubChem PUG REST (remote name/CAS/CID lookup)",
+        "source": "https://www.moldraw.com/assets/pubchemNameResolve-DUbYDozL.js"
+      }
+    },
+    "model-3d": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/analyze/how-to-view-molecules-in-3d/",
+      "note": "Rotates, but cholesterol bonds appeared severely elongated in headless Chromium.",
+      "shot": {
+        "image": "evidence/moldraw/f-model-3d.webp",
+        "caption": "Cholesterol drawing beside its three-dimensional model."
+      },
+      "engine": {
+        "library": "In-house browser JavaScript/WebGL2 molecule viewer and GLSL shaders",
+        "source": "https://www.moldraw.com/assets/viewer-1nlcEDri.js"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/blog/crystal-view-plugin-cif-unit-cell-3d.html",
+      "note": "Free-account Crystal View plugin opens CIF and editable crystal drawings."
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-export-png-svg-pdf-mol-and-cdxml-files/",
+      "note": "CDXML download prompted for an account; import unverified.",
+      "shot": {
+        "image": "evidence/moldraw/f-cdxml.webp",
+        "caption": "Download menu lists CDXML among chemistry formats."
+      },
+      "engine": {
+        "library": "In-house browser JavaScript CDXML parser/writer",
+        "source": "https://www.moldraw.com/assets/index-CEgdk3Xo.js"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-export-png-svg-pdf-mol-and-cdxml-files/",
+      "note": "Binary CDX import and export.",
+      "shot": {
+        "image": "evidence/moldraw/f-cdx.webp",
+        "caption": "Download menu lists CDX among chemistry formats."
+      },
+      "engine": {
+        "library": "In-house browser JavaScript binary CDX import; Indigo 1.46.0 browser WebAssembly export and fallback import",
+        "source": "https://www.moldraw.com/assets/index-CEgdk3Xo.js"
+      }
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-export-png-svg-pdf-mol-and-cdxml-files/",
+      "note": "MOL and SDF opened; MOL download requires account.",
+      "shot": {
+        "image": "evidence/moldraw/f-mol-sdf.webp",
+        "caption": "Download menu lists the MOL chemistry format."
+      },
+      "engine": {
+        "library": "In-house browser JavaScript MOL parser/writer and SDF record reader",
+        "source": "https://www.moldraw.com/assets/index-CEgdk3Xo.js"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-copy-and-paste-smiles-inchi-and-mol/",
+      "note": "Import works; complex output changes stereochemistry; copying requires account.",
+      "shot": {
+        "image": "evidence/moldraw/f-smiles.webp",
+        "caption": "Caffeine molecule details display a SMILES string."
+      },
+      "engine": {
+        "library": "In-house browser JavaScript SMILES parser/writer; optional Indigo 1.46.0 browser WebAssembly layout",
+        "source": "https://www.moldraw.com/assets/moleculeEngineWorker-KcmTBWf9.js"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-copy-and-paste-smiles-inchi-and-mol/",
+      "note": "Caffeine details displayed an InChI.",
+      "shot": {
+        "image": "evidence/moldraw/f-inchi.webp",
+        "caption": "Caffeine molecule details display an InChI string."
+      },
+      "engine": {
+        "library": "Indigo 1.46.0 indigo-ketcher-norender (browser WebAssembly conversion)",
+        "source": "https://www.moldraw.com/assets/moleculeEngineWorker-KcmTBWf9.js"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-export-png-svg-pdf-mol-and-cdxml-files/",
+      "note": "MDL RXN reaction export.",
+      "shot": {
+        "image": "evidence/moldraw/f-rxn.webp",
+        "caption": "Download menu lists RXN among chemistry formats."
+      }
+    },
+    "svg-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-export-png-svg-pdf-mol-and-cdxml-files/",
+      "note": "SVG download prompted for an account.",
+      "shot": {
+        "image": "evidence/moldraw/f-svg-export.webp",
+        "caption": "Download menu lists SVG among image formats."
+      }
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "PDF download prompted for an account.",
+      "shot": {
+        "image": "evidence/moldraw/f-pdf-export.webp",
+        "caption": "Download menu lists PDF among image formats."
+      }
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-make-publication-ready-figures-dpi-size-and-journal-styles/",
+      "note": "PNG download prompted for an account; resolution unverified."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "ChemDraw clipboard roundtrip unverified; file exchange is documented."
+    },
+    "office": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-use-moldraw-structures-in-word-and-powerpoint/",
+      "note": "Reopen exported pictures in MolDraw; Office add-ins unavailable."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": "https://www.moldraw.com/blog/molscript-reaction-mechanism-language.html",
+      "note": "CLI claimed complete; public package publication remains pending."
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/developers/connect-ai-agents-to-moldraw-with-mcp/",
+      "note": "Hosted MCP creates, edits, converts, and exports; free account required."
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/plugins/moldraw-plugins-overview-and-how-to-install/",
+      "note": "Installable plugins; most require a free account."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/developers/how-to-embed-moldraw-and-interactive-demos/",
+      "note": "Documented iframe embeds the editor at /embed."
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/ai/how-to-use-the-ai-chemistry-assistant/",
+      "note": "Pro only; assistant draws and edits using a monthly allowance."
+    }
+  },
+  "caveats": [
+    "Saving or exporting drawings containing Templates content or lab apparatus requires Pro.",
+    "Office editing requires reopening the exported picture in MolDraw and replacing it.",
+    "Free users are asked to credit MolDraw; Pro removes this request.",
+    "Result depends on how SMILES goes in. Pasting on the canvas gave a clean paclitaxel with no wedge or hash bonds shown. The Paste SMILES button kept wedges, but the layout overlapped."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "4.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://www.moldraw.com/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/moldraw/simple.png",
+        "note": "Canvas paste; clean layout. Downloads require an account.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/moldraw/complex.png",
+        "note": "Canvas paste; clean, no wedge/hash bonds. Stereochemistry retention unverified.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/moldraw/threed.png",
+        "note": "Rotatable 3D model; zoomed out to fit. Downloads require an account.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/moldraw/canvas.webp",
+    "canvasLight": "evidence/moldraw/canvas-light.webp",
+    "canvasDark": "evidence/moldraw/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Caffeine appeared with aromatic circles in the default SMILES layout.",
+      "Paclitaxel default 2D layout contained overlapping bonds.",
+      "Paclitaxel displayed SMILES differed from input at one stereocenter; connectivity matched.",
+      "Cholesterol 3D bonds appeared elongated in headless Chromium, including after SDF import.",
+      "Downloads and Copy SMILES prompted for an account; molecule details displayed SMILES.",
+      "Current paclitaxel SMILES layout overlapped; MOL import displayed a clear drawing.",
+      "A later cholesterol SMILES import produced a normally proportioned, rotatable 3D model.",
+      "Publisher homepage application metadata declares softwareVersion 4.0.",
+      "Paclitaxel remained stretched at 5, 30, 60 and 120 seconds; UFF stayed 24338.7 kcal/mol.",
+      "Headed Chrome also showed stretched paclitaxel with UFF 24338.7 kcal/mol.",
+      "Cholesterol headless model stayed normally proportioned at 5, 30, 60 and 120 seconds; UFF stayed 63.3 kcal/mol.",
+      "Headed Chrome cholesterol model remained stretched, with UFF 115.2 kcal/mol unchanged over the comparison.",
+      "Original paclitaxel SMILES overlapped through toolbar but drew cleanly through canvas paste.",
+      "Canvas and command-palette imports displayed no stereochemical wedges for paclitaxel.",
+      "Stereo-free paclitaxel produced a clean toolbar layout."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.moldraw.com/pricing",
+    "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing"
+  ],
+  "builtOn": {
+    "id": "p14",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "Indigo",
+      "OpenChemLib"
+    ],
+    "source": "https://www.moldraw.com/tools/free-chem-tools/smiles-to-image-converter.html",
+    "note": "Custom canvas; Indigo optionally supplies 2D layout; OpenChemLib handles structure processing."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "In-house Canvas 2D molecule renderer",
+    "language": "JavaScript",
+    "source": "https://www.moldraw.com/assets/paintStructure-DEKP-Ssy.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "Indigo WebAssembly chemistry"
+    },
+    {
+      "language": "Java",
+      "role": "OpenChemLib transpiled 3D chemistry"
+    },
+    {
+      "language": "GLSL",
+      "role": "3D WebGL2 shaders"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Includes Apache-2.0 (Indigo), BSD-3-Clause (OpenChemLib), and OFL-1.1 fonts (Libre Franklin; font derivatives retain OFL).",
+    "source": "https://github.com/google/fonts/blob/main/ofl/librefranklin/OFL.txt",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,576 @@
+{
+  "id": "p86",
+  "slug": "radsketch",
+  "name": "RadSketch",
+  "rank": 68,
+  "tier": "alternative",
+  "tierReason": "It is a standalone 2D structure and reaction drawing editor with figure export, although implementation defects limit publication use.",
+  "summary": "An experimental browser-based chemical structure sketcher with templates, valence checks, and PNG and MOL export.",
+  "website": "https://gteninbaum.github.io/RadSketch/",
+  "repo": "https://github.com/GTeninbaum/RadSketch",
+  "docs": null,
+  "vendor": "Gabe Teninbaum (GTeninbaum)",
+  "license": {
+    "kind": "unclear",
+    "spdx": null,
+    "text": "Public source code without a declared license.",
+    "source": "https://github.com/GTeninbaum/RadSketch/tree/b7450e40a71c6011fc0367f037ba210fcaf929c8"
+  },
+  "price": {
+    "text": "Not published",
+    "source": null
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/GTeninbaum/RadSketch/releases"
+  },
+  "engine": {
+    "rendering": "HTML Canvas 2D with custom JavaScript screen and PNG renderers",
+    "chemistry": "In-house JavaScript SMILES parser, valence tables and formula/mass calculations",
+    "ui": "Vanilla HTML, CSS and JavaScript",
+    "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L817-L848",
+      "note": "Bond orders stored, but multiple bonds appear single on canvas.",
+      "shot": {
+        "image": "evidence/radsketch/f-bonds-core.webp",
+        "caption": "Single, double and triple controls above three drawn bonds."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L817-L848",
+      "note": "Wedge and dash draw; no wavy tool; MOL loses stereo.",
+      "shot": {
+        "image": "evidence/radsketch/f-stereo-bonds.webp",
+        "caption": "Wedge and dash bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L837-L847",
+      "note": "Double bonds use fixed symmetric offsets; no side selection."
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L628-L645",
+      "note": "Benzene inserts, but canvas displays its double bonds as single.",
+      "shot": {
+        "image": "evidence/radsketch/f-rings.webp",
+        "caption": "Ring controls and a six-membered ring on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L647-L700",
+      "note": "COOH template inserts; other templates are listed.",
+      "shot": {
+        "image": "evidence/radsketch/f-templates.webp",
+        "caption": "Template buttons include COOH, glucose and adenine."
+      }
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L593-L619",
+      "note": "Charges and custom labels only; no separate isotope attribute.",
+      "shot": {
+        "image": "evidence/radsketch/f-atom-labels.webp",
+        "caption": "Element and charge controls beside a structure with labeled atoms."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L1054-L1067",
+      "note": "Keyboard handler supports navigation and editing commands, not atom/bond changes."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L403-L481",
+      "note": "Lasso selection and movement only; no rotation, flip or resizing."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L852-L870",
+      "note": "Forward and equilibrium arrows drawn.",
+      "shot": {
+        "image": "evidence/radsketch/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved-arrow control found in the interface."
+    },
+    "reaction-data": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L1021-L1036",
+      "note": "Arrows store coordinates only and are omitted from chemical export."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L410-L481",
+      "note": "Selected atoms move together; no persistent grouping or ungrouping."
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L730-L742",
+      "note": "Flags excessive valence using a limited built-in element table.",
+      "shot": {
+        "image": "evidence/radsketch/f-valence-check.webp",
+        "caption": "The molecule panel displays a valence indicator reading OK."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L730-L742"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L872-L891",
+      "note": "Caffeine displayed C8H10N4O2 and 194.19.",
+      "shot": {
+        "image": "evidence/radsketch/f-formula-mass.webp",
+        "caption": "Caffeine structure with formula C8H10N4O2 and molecular weight 194.19."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L872-L891"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Entering caffeine rendered a two-atom CH5N structure."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in the interface."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D viewer control found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML import or export control found."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L1020-L1043",
+      "note": "MOL export works; no MOL or SDF import control found.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L1020-L1043"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L893-L925",
+      "note": "SMILES input renders; no SMILES output control found.",
+      "shot": {
+        "image": "evidence/radsketch/f-smiles.webp",
+        "caption": "A SMILES entry and its rendered structure."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L902-L925"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No SVG export control found."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export control found."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L960-L1004",
+      "note": "PNG exported at 976 by 915 pixels, without resolution controls.",
+      "shot": {
+        "image": "evidence/radsketch/f-png-export.webp",
+        "caption": "PNG output showing the exported caffeine structure."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L1006-L1018",
+      "note": "Clipboard contains PNG images, without editable chemical structure data."
+    },
+    "office": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L1006-L1018",
+      "note": "Office receives a PNG image without editable molecular structure."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Unreleased single-file prototype with no README or declared license.",
+    "Double/triple bonds display as single lines; several structure templates are chemically incorrect.",
+    "PNG is viewport-sized; SMILES import and MOL export lose chemical detail."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-04-12T23:58:03Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "b7450e4",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://gteninbaum.github.io/RadSketch/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 54131,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/radsketch/simple.png",
+        "note": "Correct connectivity; automatic layout overlaps atoms and bonds.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "smiles",
+        "image": "evidence/radsketch/complex.png",
+        "note": "Connectivity preserved, but MOL export loses all 11 specified stereocenters.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No 3D view found; skipped as instructed.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/radsketch/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": "evidence/radsketch/canvas-dark.webp",
+    "themes": {
+      "light": false,
+      "dark": true,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Hosted HTML matched repository commit b7450e4; no version string found.",
+      "Caffeine and paclitaxel layouts contain overlapping bonds and atoms.",
+      "Canvas shows multiple bonds as single lines; PNG shows multiple lines.",
+      "The default PNG uses a white background and substantial whitespace.",
+      "MOL exports preserve fixture connectivity but omit paclitaxel stereochemistry."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 54131,
+  "references": [
+    "https://github.com/GTeninbaum/RadSketch",
+    "https://gteninbaum.github.io/RadSketch/",
+    "https://github.com/GTeninbaum/RadSketch/blob/main/index.html"
+  ],
+  "builtOn": {
+    "id": "p86",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html",
+    "note": "Self-contained canvas, molecular graph, valence checks, and SMILES parser; no chemistry dependencies."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "RadSketch Canvas 2D molecule renderer",
+    "language": "JavaScript",
+    "source": "https://github.com/GTeninbaum/RadSketch/blob/b7450e40a71c6011fc0367f037ba210fcaf929c8/index.html#L744-L997"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "HTML/CSS provide the interface; drawing and chemistry run in inline JavaScript.",
+  "thirdParty": {
+    "summary": "Loads OFL-1.1 fonts (JetBrains Mono/Syne; font-only share-alike) from Google Fonts.",
+    "source": "https://github.com/google/fonts/blob/2e05c1cf00a6e4f40a4b931600a90881c26e15cd/ofl/jetbrainsmono/OFL.txt",
+    "notice": null,
+    "libraries": []
+  }
+}

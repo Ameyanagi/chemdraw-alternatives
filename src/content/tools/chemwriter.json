@@ -1,0 +1,548 @@
+{
+  "id": "p100",
+  "slug": "chemwriter",
+  "name": "ChemWriter",
+  "rank": 71,
+  "tier": "embeddable",
+  "tierReason": "Its documented purpose is embedding molecular structure editing and input into web applications.",
+  "summary": "JavaScript component for drawing and editing molecular structures inside web applications.",
+  "website": "https://chemwriter.com/",
+  "repo": null,
+  "docs": "https://chemwriter.com/user-guide/",
+  "vendor": "Metamolecular, LLC",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Proprietary; production deployment requires licensing. Evaluation use was offered free.",
+    "source": "https://depth-first.com/articles/2011/01/12/ten-reasons-to-use-chemwriter-in-your-next-web-application/"
+  },
+  "price": {
+    "text": "Commercial licensing; current price unverified (2026-11-05).",
+    "source": "https://depth-first.com/articles/2011/01/12/ten-reasons-to-use-chemwriter-in-your-next-web-application/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": true,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://depth-first.com/articles/2019/05/01/javascript-for-cheminformatics-part-2/"
+  },
+  "engine": {
+    "rendering": "Custom JavaScript renderer using SVG",
+    "chemistry": "In-house JavaScript cheminformatics toolkit",
+    "ui": "Google Closure Library with custom HTML/CSS controls",
+    "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js",
+      "note": "Drew a bond and cycled single, double, triple.",
+      "shot": {
+        "image": "evidence/chemwriter/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js",
+      "note": "Drew solid and hashed wedges; no wavy tool seen.",
+      "shot": {
+        "image": "evidence/chemwriter/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds on the drawing canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js",
+      "note": "Placed benzene and cyclohexane; other ring sizes visible.",
+      "shot": {
+        "image": "evidence/chemwriter/f-rings.webp",
+        "caption": "Benzene and cyclohexane rings beside the ring tools."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No template library control visible beyond ring tools."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js",
+      "note": "Charges and elements; isotope tools require host configuration.",
+      "shot": {
+        "image": "evidence/chemwriter/f-atom-labels.webp",
+        "caption": "Nitrogen and oxygen labels with charge controls in the editor."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://tianlab-tsinghua.cn/wp-content/plugins/reaction-calculator-vue/assets/index.c007cdee.js",
+      "note": "Radical editing in ChemWriter 3.15.1; older deployments differ."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://depth-first.com/articles/2010/12/01/javascript-now-works-keyboard-mouse-focus-and-molfile-copy-in-chemwriter/",
+      "note": "Hover over an atom and type its element shortcut."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Lasso icon visible; rotate, flip and resize not seen."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No reaction arrow control in embedded editor."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow control in embedded editor."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass command visible in editor."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Import rejected caffeine as invalid input."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure-to-name command visible in editor."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js",
+      "note": "Atom lists, wildcard bonds and numbered R-groups; host-configurable."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "3D SDF displayed flat; no rotatable viewport visible."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Minimal CDXML rejected; export dialog offers MOL text."
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js",
+      "note": "ChemWriter 2 imports limited CDX; export API writes MOL only.",
+      "engine": {
+        "library": "In-house (JavaScript; CDX import only)",
+        "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://depth-first.com/articles/2011/01/24/reading-and-writing-the-sytem-clipboard-in-javascript-copy-and-paste-molfiles-in-chemwriter-on-internet-explorer/",
+      "note": "MOL imported and exported; SDF opened as flat projection.",
+      "engine": {
+        "library": "In-house (JavaScript; MOL read/write)",
+        "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js"
+      }
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://tianlab-tsinghua.cn/wp-content/plugins/reaction-calculator-vue/assets/index.c007cdee.js",
+      "note": "Caffeine SMILES rejected; export dialog offers MOL text."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Export control opens only a MOL text dialog."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Export control opens only a MOL text dialog."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Export control opens only a MOL text dialog."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://search.emolecules.com/",
+      "note": "loadEditor, getMolfile and configurable drawing settings."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://depth-first.com/articles/2010/11/17/chemwriter-2-better-deployment-through-javascript/",
+      "note": "Embed using JavaScript, CSS and an HTML container.",
+      "shot": {
+        "image": "evidence/chemwriter/f-embed.webp",
+        "caption": "Chemical editor embedded in the eMolecules structure search page."
+      }
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Vendor site and manual were unreachable on 2026-11-05; latest release, SDK availability and current price remain unverified.",
+    "eMolecules serves ChemWriter 2.15.7; query tools require login and other tools depend on host configuration.",
+    "Interactive operation was not tested; publication document layout and graphics export remain unverified."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "2.15.7",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://search.emolecules.com/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/chemwriter/simple.png",
+        "note": "SMILES rejected; imported MOL text. Image is a canvas crop.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/chemwriter/complex.png",
+        "note": "Imported MOL text. Image is a canvas crop.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": "stereo"
+      }
+    ],
+    "canvas": "evidence/chemwriter/canvas.webp",
+    "canvasLight": "evidence/chemwriter/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Hosted editor remains light under both browser color schemes."
+    },
+    "memory": null,
+    "observations": [
+      "Tested the ChemWriter component embedded in eMolecules, as a guest.",
+      "About reports version 2.15.7, revision 2c6181.",
+      "MOL input preserves fixture coordinates; default atom colors distinguish nitrogen and oxygen.",
+      "No image export was offered; PNG evidence consists of drawing-area window crops.",
+      "The 3D SDF appears flat with overlapping explicit hydrogen labels."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://search.emolecules.com/",
+    "https://depth-first.com/articles/2011/01/12/ten-reasons-to-use-chemwriter-in-your-next-web-application/"
+  ],
+  "builtOn": {
+    "id": "p100",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://depth-first.com/articles/2011/01/12/ten-reasons-to-use-chemwriter-in-your-next-web-application/",
+    "note": "Creator documents a ground-up JavaScript rewrite and proprietary molecular renderer."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ChemWriter SVG/VML renderer",
+    "language": "JavaScript",
+    "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "Java",
+      "role": "Optional legacy clipboard applet"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Apache-2.0 libraries (Closure, Harmony); OFL-1.1 Nobile font data (font-only share-alike).",
+    "source": "https://search.emolecules.com/resources/js/chemwriter.1629951104.js",
+    "notice": null,
+    "libraries": []
+  }
+}

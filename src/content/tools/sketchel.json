@@ -1,0 +1,585 @@
+{
+  "id": "p107",
+  "slug": "sketchel",
+  "name": "SketchEl",
+  "rank": 43,
+  "tier": "alternative",
+  "tierReason": "The complete standalone editor produces 2D molecular drawings and vector SVG/ODG exports suitable for publication workflows.",
+  "summary": "A standalone Java editor for drawing 2D molecular structures and editing molecular datasheets.",
+  "website": "https://sketchel.sourceforge.net/",
+  "repo": null,
+  "docs": "https://sketchel.sourceforge.net/",
+  "vendor": "Dr. Alex M. Clark",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0-or-later",
+    "text": "GPL v2 or later; homepage lists GPLv2.",
+    "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://sketchel.sourceforge.net/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "1.62",
+    "date": "2015-03-06",
+    "source": "https://sourceforge.net/projects/sketchel/files/"
+  },
+  "engine": {
+    "rendering": "Java2D Graphics2D for screen and PNG; custom SVG and OpenDocument vector exporters",
+    "chemistry": "In-house Java molecule model and stereochemistry algorithms",
+    "ui": "Java Swing",
+    "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Drew three bond orders; changed an existing single to double.",
+      "shot": {
+        "image": "evidence/sketchel/f-bonds-core.webp",
+        "caption": "Bond tools and drawn double and triple bonds on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sketchel.sourceforge.net/molfmt.html",
+      "note": "Applied solid wedge, hashed wedge and wavy styles to existing bonds.",
+      "shot": {
+        "image": "evidence/sketchel/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sketchel.sourceforge.net/molfmt.html",
+      "note": "Dotted zero-order bonds represent coordination and hydrogen bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Chooser shows common rings; automated placement did not complete.",
+      "shot": {
+        "image": "evidence/sketchel/f-rings.webp",
+        "caption": "Ring chooser with common ring sizes and an aromatic ring."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Includes cyclohexane chair and boat templates.",
+      "shot": {
+        "image": "evidence/sketchel/f-conformers.webp",
+        "caption": "Ring chooser includes chair and boat cyclohexane templates."
+      }
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Chooser shows fused rings and heterocycles; automated placement did not complete.",
+      "shot": {
+        "image": "evidence/sketchel/f-templates.webp",
+        "caption": "Template chooser with fused rings and heterocycles."
+      }
+    },
+    "custom-templates": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Temporary applet templates; no persistent template saving."
+    },
+    "abbreviations": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Whole-molecule abbreviation rejected: Must select a terminal fragment."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sketchel.sourceforge.net/molfmt.html",
+      "note": "Arbitrary labels, ionic charges and isotope masses.",
+      "shot": {
+        "image": "evidence/sketchel/f-atom-labels.webp",
+        "caption": "Edit Molecule table with element, charge and isotope columns."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sketchel.sourceforge.net/molfmt.html",
+      "note": "Unpaired-electron counts represent radicals.",
+      "shot": {
+        "image": "evidence/sketchel/f-radicals.webp",
+        "caption": "Edit Molecule table includes an Unpaired column."
+      }
+    },
+    "keyboard-drawing": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Typing selects element tools; placement still requires clicking."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Arbitrary atom selection with rotation, flips and scaling."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No arrow tool found in menus, toolbar or template chooser."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved electron-pushing tool found in inspected controls."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Editable atom map numbers; reaction-level mapping workflow unverified.",
+      "shot": {
+        "image": "evidence/sketchel/f-atom-mapping.webp",
+        "caption": "Edit Molecule table includes a MapNum column."
+      }
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Normalizes average bond length by scaling; angles remain unchanged.",
+      "engine": {
+        "library": "In-house (Java bond length normalization only)",
+        "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download"
+      }
+    },
+    "journal-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Generic PublicationMetrics preset; no journal-specific presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "ConfigData.java saves named font, bond and scale policies.",
+      "shot": {
+        "image": "evidence/sketchel/f-custom-styles.webp",
+        "caption": "Rendering policies with font, line and bond settings."
+      }
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Colors apply by element type, rather than individual atoms.",
+      "shot": {
+        "image": "evidence/sketchel/f-color.webp",
+        "caption": "Rendering policy includes foreground and atom colour settings."
+      }
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sketchel.sourceforge.net/",
+      "note": "SDF opened in a molecular datasheet with an editable molecule cell.",
+      "shot": {
+        "image": "evidence/sketchel/f-tlc-tables.webp",
+        "caption": "DataSheet with a selected molecule cell."
+      }
+    },
+    "valence-check": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Overlap warnings only; chemical valence validation unverified.",
+      "engine": {
+        "library": "In-house (Java overlapping-atom warnings only)",
+        "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Molecule.java computes chirality; editor displays R/S and E/Z.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download"
+      }
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Formula generation for abbreviations; molecular-mass calculation unverified.",
+      "engine": {
+        "library": "In-house (Java formula calculation only)",
+        "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name import command found in inspected menus or dialogs."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure naming command found in inspected menus or dialogs."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "R-group labels and editable atom/bond query properties."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Cholesterol SDF opened as a flat drawing without a 3D viewport."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "CDXML startup import produced Invalid MDL MOL file errors."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sketchel.sourceforge.net/",
+      "note": "MOL/SDF loaded; MOL export dialog opened, but filename entry failed.",
+      "shot": {
+        "image": "evidence/sketchel/f-mol-sdf.webp",
+        "caption": "Export as MDL MOL dialog with MOL file format selected."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download"
+      }
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SMILES file import failed; paste also failed to produce a structure."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sketchel.sourceforge.net/",
+      "note": "Export dialog opened; filename input failed, so no SVG was saved.",
+      "shot": {
+        "image": "evidence/sketchel/f-svg-export.webp",
+        "caption": "Export as SVG dialog with SVG file format selected."
+      }
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://sourceforge.net/p/sketchel/news/2009/06/version-133-openoffice-graphics/",
+      "note": "PDF requires ODG export followed by OpenOffice Draw."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "PNG preview rendered; filename entry failed; default size 149×124 pixels.",
+      "shot": {
+        "image": "evidence/sketchel/f-png-export.webp",
+        "caption": "PNG export dialog showing a structure preview and dimensions."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "JavaScript molecule bridge requires a legacy Java applet."
+    },
+    "cli": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+      "note": "Command-line startup opens GUI; no headless conversion/rendering command."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/aclarkxyz/web_sketchel2/blob/aed47f51979c6f646f574019626d8d5dc7ba9188/README.md",
+      "note": "Original editor's applet-based web plugin is obsolete."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Last released in 2015; requires a Java runtime.",
+    "Web embedding depends on obsolete Java applets.",
+    "Publication document assembly uses exported graphics in external editors."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "1.62",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "jar",
+    "artifact": "SketchEl-1.62.jar",
+    "ran": true,
+    "failure": "Native image and structure exports could not be completed: automated filename entry did not reach the Java dialogs.",
+    "downloadBytes": 496047,
+    "installedBytes": 110776320,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "MOL rendered; canvas saved separately; native export filename entry failed.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "MOL rendered; canvas saved separately; native export filename entry failed.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/sketchel/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Default drawings use black strokes and atom labels on a gray canvas.",
+      "MOL coordinates were preserved; only viewport zoom was adjusted.",
+      "Paclitaxel retained visible solid and hashed stereobonds.",
+      "Cholesterol SDF projection displays explicit hydrogens and red overlap markers.",
+      "Native exports remain unverified; supplemental canvas crops are screenshots."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 496047,
+  "references": [
+    "https://sourceforge.net/projects/sketchel/"
+  ],
+  "builtOn": {
+    "id": "p107",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download",
+    "note": "Own EditorPane canvas, molecular model, stereochemistry, and depiction; no external chemistry dependencies."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "SketchEl DrawMolecule / ArrangeMolecule",
+    "language": "Java",
+    "source": "https://sourceforge.net/projects/sketchel/files/SketchEl-1.62-src.tar.gz/download"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "Perl and shell commands support building and packaging.",
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

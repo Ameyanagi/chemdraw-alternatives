@@ -1,0 +1,467 @@
+{
+  "id": "p91",
+  "slug": "chemgraphic-2",
+  "name": "ChemGraphic 2",
+  "rank": 111,
+  "tier": "alternative",
+  "tierReason": "Its standalone document canvas, chemical drawing tools, journal styles, and image export support preparing scientific figures.",
+  "summary": "A chemical structure editor for preparing scientific figures and predicting IR and NMR spectra.",
+  "website": "https://simpleappli.com/product_chemgraphic2",
+  "repo": null,
+  "docs": "https://simpleappli.com/product_chemgraphic2_howto",
+  "vendor": "SimpleAppli Inc.",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Proprietary subscription application with an initial free trial.",
+    "source": "https://simpleappli.com/en/terms_chemgraphic2_en"
+  },
+  "price": {
+    "text": "2026-11-05: Japan ¥500/month or ¥5,500/year; initial one-month trial.",
+    "source": "https://simpleappli.com/product_chemgraphic2"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": true,
+    "android": true,
+    "offline": false
+  },
+  "version": {
+    "name": "1.0.3",
+    "date": "2026-10-28",
+    "source": "https://apps.apple.com/au/app/chemgraphic-2-chemistry-app/id6761987765"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "xtb for cloud IR prediction; core structure toolkit undisclosed",
+    "ui": null,
+    "source": "https://simpleappli.com/product_chemgraphic2_howto#spectrum"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
+      "note": "Tap a double bond to cycle through three placements."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
+      "note": null
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
+      "note": "Includes chair conformations."
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#spectrum",
+      "note": "Pr, Ts and Ac are interpreted as groups during analysis."
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#drawing",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#style",
+      "note": "Includes ACS and RSC presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#style",
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#editor",
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#export",
+      "note": "PNG and JPEG images can be imported."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#spectrum",
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#spectrum",
+      "note": "Rule-based 1H and 13C predictions run in the cloud."
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#export",
+      "note": "MOL and SDF import and export."
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/product_chemgraphic2_howto#export",
+      "note": "InChI import."
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "An account and network connection are required to open and save files.",
+    "Mac support is limited to Apple Silicon; Intel Macs require the separate legacy product.",
+    "Files cannot be opened after subscription expiry; accounts and cloud data are deleted after one year."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://simpleappli.com/en/product_chemgraphic2_en"
+  ],
+  "builtOn": {
+    "id": "p91",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "xtb"
+    ],
+    "source": "https://simpleappli.com/product_chemgraphic2",
+    "note": "xtb performs IR prediction; drawing canvas provenance remains undisclosed."
+  },
+  "renderer": {
+    "origin": null,
+    "name": null,
+    "language": null,
+    "source": null
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": [
+      {
+        "name": "xtb",
+        "license": "LGPL-3.0-or-later",
+        "source": "https://github.com/grimme-lab/xtb/blob/main/README.md"
+      }
+    ]
+  }
+}

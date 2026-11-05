@@ -1,0 +1,616 @@
+{
+  "id": "p71",
+  "slug": "chematic-draw",
+  "name": "Chematic Draw",
+  "rank": 24,
+  "tier": "alternative",
+  "tierReason": "A substantive desktop editor draws molecules, annotations and reaction documents with vector exports, although publication layout and ChemDraw interchange have limits.",
+  "summary": "Desktop chemical structure editor for drawing molecules and reaction schemes and exporting chemical files and figures.",
+  "website": "https://chematic.io/draw/",
+  "repo": "https://github.com/kent-tokyo/chematic-draw",
+  "docs": "https://github.com/kent-tokyo/chematic-draw/blob/main/docs/README.md",
+  "vendor": "Kentaro Tanabe (kent-tokyo)",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT, as declared in the application manifest.",
+    "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/package.json#L41"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/kent-tokyo/chematic-draw/releases/tag/v1.0.14"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v1.0.14",
+    "date": "2026-10-03",
+    "source": "https://github.com/kent-tokyo/chematic-draw/releases/tag/v1.0.14"
+  },
+  "engine": {
+    "rendering": "Custom HTML Canvas 2D on screen; chematic SVG depiction for exports, with Electron printToPDF for PDF.",
+    "chemistry": "chematic Rust toolkit compiled to WebAssembly; v1.0.31 in release v1.0.14.",
+    "ui": "Electron and React",
+    "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/ARCHITECTURE.md"
+  },
+  "languages": [
+    "TypeScript",
+    "Rust",
+    "JavaScript",
+    "CSS"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/sidebar/InspectorPanel.tsx#L819",
+      "note": "Keyboard added nitrogen bonded to carbon; templates contained multiple bonds.",
+      "shot": {
+        "image": "evidence/chematic-draw/f-bonds-core.webp",
+        "caption": "Bond tools and a structure with single and double bonds."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/canvas/CanvasRenderer.ts#L247",
+      "note": "Wedge tool selected; stereochemical SMILES exported without stereo."
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/lib/documentCommands.ts#L65",
+      "note": "Accepted bond orders are single, double, triple and aromatic."
+    },
+    "double-bond-side": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/canvas/CanvasRenderer.ts#L297",
+      "note": "Double bonds are always centered."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/hooks/useCanvasInteraction.ts#L273",
+      "note": "Benzene template inserted a six-membered ring.",
+      "shot": {
+        "image": "evidence/chematic-draw/f-rings.webp",
+        "caption": "Ring tools beside a structure containing several rings."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/TUTORIAL.md#draw-or-import",
+      "note": "Inserted benzene from Templates panel."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/sidebar/InspectorPanel.tsx#L710",
+      "note": "Keyboard added a nitrogen atom.",
+      "shot": {
+        "image": "evidence/chematic-draw/f-atom-labels.webp",
+        "caption": "Atom properties show element, charge, and isotope controls."
+      }
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/hooks/useCanvasInteraction.ts#L427",
+      "note": "Shift+N added a bonded atom."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/lib/selectionTransforms.ts#L19",
+      "note": "Rectangular selection, rotation and flips; no resize transform."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/sidebar/ReactionStepEditor.tsx#L72",
+      "note": "Selected arrow tool; canvas click did not place an arrow."
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/sidebar/MechanismPanel.tsx#L64",
+      "note": "Add Arrow entered source selection; no completed arrow verified."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/INTEROP.md#query-and-reaction-boundary",
+      "note": "Reaction JSON preserves steps; RXN V2000 supports one step."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/sidebar/InspectorPanel.tsx#L773",
+      "note": "Atom-map numbers can be assigned manually."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/canvas/CanvasRenderer.ts#L185",
+      "note": "Plain text annotations only; fixed font without subscript/superscript controls."
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/hooks/useCanvasInteraction.ts#L295",
+      "note": "Text, arrows and brackets; no general shape or curve tools."
+    },
+    "align": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/lib/selectionTransforms.ts#L9",
+      "note": "Aligns/distributes selected atoms; no whole-object layout."
+    },
+    "groups": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/MIGRATION.md#from-chemdraw",
+      "note": "Group controls are inactive; imported groups have limited editing."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/MIGRATION.md#from-chemdraw",
+      "note": "Clean Up Structure command is available.",
+      "engine": {
+        "library": "In-house (chematic-depict, Rust/WebAssembly compute_layout)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/crates/chem-wasm/src/lib.rs#L399"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/MIGRATION.md#from-chemdraw",
+      "note": "Colors controls are inactive."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/KNOWN_LIMITATIONS.md",
+      "note": "CDXML multipage interchange; page-layout editing is not established."
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/crates/chem-wasm/src/lib.rs#L635",
+      "note": "Validates chemical valence and reports structure errors.",
+      "shot": {
+        "image": "evidence/chematic-draw/f-valence-check.webp",
+        "caption": "The validation panel reports no errors beside a structure."
+      },
+      "engine": {
+        "library": "In-house (chematic-core and chematic-perception, Rust/WebAssembly; bridge structural validation)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/crates/chem-wasm/src/lib.rs#L639"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/crates/chem-wasm/src/lib.rs#L740",
+      "note": "Computes R/S and E/Z; ambiguous assignments are omitted.",
+      "engine": {
+        "library": "In-house (chematic-chem, Rust/WebAssembly assign_cip R/S and E/Z)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/crates/chem-wasm/src/lib.rs#L743"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/crates/chem-wasm/src/lib.rs#L430",
+      "note": "Caffeine showed C8H10N4O2 and 194.19.",
+      "engine": {
+        "library": "In-house (chematic-core and chematic-chem, Rust/WebAssembly)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/crates/chem-wasm/src/lib.rs#L432"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/crates/chem-wasm/src/lib.rs#L442",
+      "note": "Property panel displayed MW, LogP, and ring count.",
+      "engine": {
+        "library": "Ported from RDKit (Crippen SMARTS data in chematic-chem, Rust/WebAssembly); In-house (Ertl TPSA)",
+        "source": "https://github.com/kent-tokyo/chematic/blob/698b9aede83ed5b64534c4660505fcc10c35150e/crates/chematic-chem/src/descriptors.rs#L1214"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/lib/chemspiderProvider.cjs#L74",
+      "note": "Desktop ChemSpider lookup requires configured API access and network.",
+      "engine": {
+        "library": "ChemSpider Compounds API (remote HTTPS/JSON; host API key and attribution opt-in required)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/electron/src/lib/chemspiderProvider.cjs#L74"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/crates/chem-wasm/src/lib.rs#L481",
+      "note": "Research identifiers showed an empty IUPAC Name field.",
+      "engine": {
+        "library": "In-house (chematic-iupac, Rust/WebAssembly; limited-scope IUPAC naming)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/crates/chem-wasm/src/lib.rs#L483"
+      }
+    },
+    "nmr-prediction": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/KNOWN_LIMITATIONS.md",
+      "note": "Prediction is explicitly unimplemented; peak import and manual annotation exist."
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/INTEROP.md#query-and-reaction-boundary",
+      "note": "Supports atom lists, wildcards, Markush and R-group query data."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/lib/specialChemistry.ts#L84",
+      "note": "Semantic repeat units support bounded two-attachment expansion."
+    },
+    "biomolecules": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/sidebar/InspectorPanel.tsx#L496",
+      "note": "Nucleic-acid residue metadata editing; no sequence-to-structure builder established."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/lib/advancedFeatures.ts#L175",
+      "note": "Fetches importable SMILES; approximate InChIKeys can miss PubChem matches.",
+      "engine": {
+        "library": "PubChem PUG REST (remote InChIKey lookup); ChemSpider Compounds API (remote name search, configured host required)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/electron/src/renderer/components/sidebar/DatabaseSearchPanel.tsx#L81"
+      }
+    },
+    "model-3d": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/sidebar/Viewer3DPanel.tsx#L51",
+      "note": "Generated cholesterol model; viewport clipped it severely.",
+      "shot": {
+        "image": "evidence/chematic-draw/f-model-3d.webp",
+        "caption": "The 3D panel displays a clipped molecular model."
+      },
+      "engine": {
+        "library": "In-house (chematic-3d, Rust/WebAssembly rule-based coordinates and minimization; TypeScript Canvas viewer)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/electron/src/renderer/components/sidebar/Viewer3DPanel.tsx#L49"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/INTEROP.md",
+      "note": "Reads/writes a subset; advanced presentation is not preserved losslessly.",
+      "engine": {
+        "library": "In-house (chematic-mol Rust/WebAssembly import; TypeScript subset export and source-preserving patching)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/electron/src/renderer/hooks/useDocumentFileActions.ts#L27"
+      }
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/INTEROP.md",
+      "note": "MOL export worked; Open dialog disabled fixture MOL and SDF.",
+      "shot": {
+        "image": "evidence/chematic-draw/f-mol-sdf.webp",
+        "caption": "The downloads list includes a completed MOL file."
+      },
+      "engine": {
+        "library": "In-house (chematic-mol, Rust/WebAssembly MOL V2000/V3000 and SDF; first SDF record imported)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/crates/chem-wasm/src/lib.rs#L336"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/INTEROP.md",
+      "note": "Paste and export worked; cholesterol export lost stereochemistry.",
+      "engine": {
+        "library": "In-house (chematic-smiles, Rust/WebAssembly parser and standard/canonical writers)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/crates/chem-wasm/src/lib.rs#L318"
+      }
+    },
+    "inchi": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/crates/chem-wasm/src/lib.rs#L763",
+      "note": "Research panel displayed explicitly approximate InChI and derived InChIKey.",
+      "engine": {
+        "library": "In-house (chematic-inchi, Rust/WebAssembly InChI-like approximation; not reference InChI)",
+        "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/crates/chem-wasm/src/lib.rs#L763"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/INTEROP.md#query-and-reaction-boundary",
+      "note": "One-step RXN V2000; agents and coefficients require loss confirmation."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/INTEROP.md",
+      "note": "SVG downloaded for caffeine, paclitaxel, and cholesterol.",
+      "shot": {
+        "image": "evidence/chematic-draw/f-svg-export.webp",
+        "caption": "The downloads list includes completed SVG files."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/lib/ipcFileHandlers.ts#L92",
+      "note": "Export shortcut referred to unavailable File menu; no PDF control."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/lib/svgToPng.ts#L11",
+      "note": "PNG downloaded for caffeine.",
+      "shot": {
+        "image": "evidence/chematic-draw/f-png-export.webp",
+        "caption": "The downloads list includes a completed PNG file."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/lib/ipcClipboardAutosave.ts#L34",
+      "note": "Clipboard accepts text/plain only; native ChemDraw objects are unsupported."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/API.md",
+      "note": "Documented TypeScript/WASM bridge and public Web Component package."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/docs/KNOWN_LIMITATIONS.md",
+      "note": "In-process extension registration only; third-party bundle loading is disabled."
+    },
+    "embed": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/packages/chematic-web/README.md",
+      "note": "Editable Web Component supports bounded edits; lacks desktop chemistry parsing."
+    },
+    "ai-assistant": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/sidebar/ChatPanel.tsx#L9",
+      "note": "Chat only answers keyword queries; cannot propose or edit drawings."
+    }
+  },
+  "caveats": [
+    "CDXML exchange covers a subset; advanced presentation can be lost.",
+    "InChI generation is approximate; PubChem lookup can miss existing compounds.",
+    "Publication layout needs manual review; PNG export has no DPI control."
+  ],
+  "github": {
+    "stars": 3,
+    "pushedAt": "2026-10-08T12:54:51Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "chematic 1.0.38 (build inde…",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://kent-tokyo.github.io/chematic-draw/playground/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chematic-draw/simple.svg",
+        "note": "Caffeine connectivity survived MOL export; default dark canvas has low-contrast labels.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chematic-draw/complex.svg",
+        "note": "MOL export omitted input stereochemistry; drawing contains no stereo wedges.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "failed",
+        "input": "smiles",
+        "image": "evidence/chematic-draw/threed.png",
+        "note": "Generated model is severely clipped in 3D viewport; stereochemistry omitted from exports.",
+        "structure": "stereo"
+      }
+    ],
+    "canvas": "evidence/chematic-draw/canvas.webp",
+    "canvasLight": "evidence/chematic-draw/canvas-light.webp",
+    "canvasDark": "evidence/chematic-draw/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Tested the hosted playground, not the richer desktop application.",
+      "Default dark canvas used black labels with poor contrast.",
+      "Fit enlarged caffeine enough to clip a label; zooming out revealed it.",
+      "Paclitaxel and cholesterol MOL exports lost input stereochemistry.",
+      "Cholesterol SMILES export also lost stereochemistry; 3D viewport clipped the model."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 127512050,
+  "references": [
+    "https://github.com/kent-tokyo/chematic-draw",
+    "https://chematic.io/draw/",
+    "https://raw.githubusercontent.com/kent-tokyo/chematic-draw/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p71",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/kent-tokyo/chematic-draw/blob/93457396bb158d8d2b402e0b11b518431ac15c09/electron/src/renderer/components/canvas/MoleculeCanvas.tsx#L198",
+    "note": "Custom Canvas 2D editor; chemistry uses the author's chematic Rust/WASM toolkit."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Chematic CanvasRenderer and SVG renderers",
+    "language": "TypeScript",
+    "source": "https://github.com/kent-tokyo/chematic-draw/blob/fcd174480895fdb39861dd67434406ab7c2cc254/electron/src/renderer/components/canvas/CanvasRenderer.ts#L247"
+  },
+  "otherLanguages": [
+    {
+      "language": "Rust",
+      "role": "WebAssembly chemistry and SVG depiction"
+    },
+    {
+      "language": "JavaScript",
+      "role": "ChemSpider remote API host adapter"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML bootstraps React; Shell handles tooling.",
+  "thirdParty": {
+    "summary": "Electron/Chromium notices list LGPL/MPL/APSL/EPL copyleft, OFL-1.1 fonts, and EasyList data under GPL-3.0-or-later OR CC-BY-SA-3.0-or-later.",
+    "source": "https://github.com/electron/electron/releases/download/v44.3.0/electron-v44.3.0-linux-x64.zip",
+    "notice": null,
+    "libraries": []
+  }
+}

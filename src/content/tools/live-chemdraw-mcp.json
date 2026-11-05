@@ -1,0 +1,75 @@
+{
+  "id": "p59",
+  "slug": "live-chemdraw-mcp",
+  "name": "live-chemdraw-mcp",
+  "rank": 132,
+  "tier": "related",
+  "tierReason": "It automates an existing licensed ChemDraw installation rather than providing an independent chemical drawing application.",
+  "summary": "An MCP server lets AI assistants draw and edit structures in a licensed ChemDraw window on Windows.",
+  "website": "https://github.com/MALeitch/live-chemdraw-mcp#readme",
+  "repo": "https://github.com/MALeitch/live-chemdraw-mcp",
+  "docs": "https://github.com/MALeitch/live-chemdraw-mcp/blob/a9cebc6cf61e4d9b019463019626684fdf30beb6/README.md",
+  "vendor": "Michael Leitch",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT-licensed automation server; ChemDraw is separately licensed.",
+    "source": "https://github.com/MALeitch/live-chemdraw-mcp/blob/a9cebc6cf61e4d9b019463019626684fdf30beb6/LICENSE"
+  },
+  "price": {
+    "text": "Free connector; separate ChemDraw license required (2026-11-05).",
+    "source": "https://github.com/MALeitch/live-chemdraw-mcp/blob/a9cebc6cf61e4d9b019463019626684fdf30beb6/README.md"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v1.0.0",
+    "date": "2026-07-31",
+    "source": "https://github.com/MALeitch/live-chemdraw-mcp/releases/tag/v1.0.0"
+  },
+  "engine": {
+    "rendering": "ChemDraw via Windows COM automation",
+    "chemistry": "RDKit",
+    "ui": null,
+    "source": "https://github.com/MALeitch/live-chemdraw-mcp/blob/a9cebc6cf61e4d9b019463019626684fdf30beb6/README.md"
+  },
+  "languages": [
+    "Python"
+  ],
+  "features": {},
+  "caveats": [
+    "Requires licensed ChemDraw on Windows; validated with ChemDraw 26.",
+    "Requires Python dependencies and configuration in an MCP client.",
+    "Offline systematic name resolution downloads OPSIN and a Java runtime on first use."
+  ],
+  "github": {
+    "stars": 2,
+    "pushedAt": "2026-08-04T16:49:20Z",
+    "archived": false
+  },
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/MALeitch/live-chemdraw-mcp",
+    "https://github.com/MALeitch/live-chemdraw-mcp/blob/a9cebc6cf61e4d9b019463019626684fdf30beb6/README.md"
+  ],
+  "builtOn": null,
+  "renderer": null,
+  "otherLanguages": null,
+  "enginesChecked": false,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

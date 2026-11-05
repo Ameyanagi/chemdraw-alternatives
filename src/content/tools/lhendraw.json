@@ -1,0 +1,507 @@
+{
+  "id": "p65",
+  "slug": "lhendraw",
+  "name": "Lhendraw",
+  "rank": 100,
+  "tier": "alternative",
+  "tierReason": "It creates editable chemical drawing documents with structures, reaction arrows, text, shapes and vector export.",
+  "summary": "Desktop editor for drawing chemical structures, reaction schemes, and figures with ChemDraw CDX/CDXML file exchange.",
+  "website": "https://lennardwasserthal.de/lhendraw.html",
+  "repo": "https://github.com/Wasserthal/lhendraw",
+  "docs": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/help.hxx",
+  "vendor": "Lennard K. Wasserthal",
+  "license": {
+    "kind": "open-source",
+    "spdx": "AGPL-3.0",
+    "text": "GNU Affero General Public License version 3.",
+    "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/README"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://lennardwasserthal.de/lhendraw.html"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.4.5",
+    "date": null,
+    "source": "https://github.com/Wasserthal/lhendraw/tree/v0.4.5"
+  },
+  "engine": {
+    "rendering": "Custom software rasterizer using SDL surfaces or Win32/GDI; custom SVG, PostScript and PNG writers.",
+    "chemistry": "In-house C++ atom/bond model and molecular-analysis routines.",
+    "ui": "Custom desktop UI using SDL 1.2/2.0, with a native Win32 backend.",
+    "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/lhendraw.cxx#L35"
+  },
+  "languages": [
+    "C++"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_BOND.pullout.hxx#L1",
+      "note": "Single, double and triple bond tools."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_BOND.pullout.hxx#L51",
+      "note": "Solid wedges, hashed wedges and wavy bonds."
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_BOND.pullout.hxx#L41",
+      "note": "Quadruple and dashed bonds; drawable dative support unverified."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/edit.hxx#L3452",
+      "note": "Repeated clicks cycle centered, left and right positions."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_RING.pullout.hxx#L1",
+      "note": "Three- through nine-membered rings, with aromatic option."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/sdlctrl.hxx#L2366",
+      "note": "Extends chains one bond per gesture; no variable-length drag."
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/elements.hxx#L140",
+      "note": "Formula analysis recognizes limited abbreviations, including Et, Ac and TMS."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/elements.hxx#L26",
+      "note": "Charges and arbitrary labels; only D/T isotope entries verified."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_ATTRIBUTES.pullout.hxx#L21",
+      "note": "Radical and lone-pair placement tools."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/help.hxx#L7",
+      "note": "Hover over atoms and type element letters."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/pivot.hxx#L262",
+      "note": "Lasso selection, rotation, scaling and negative-scale mirroring."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/help.hxx#L83",
+      "note": "Canvas drawings rotate around the X and Y axes."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_ARROW.pullout.hxx#L31",
+      "note": "Forward, retrosynthetic and equilibrium arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_CURVE.pullout.hxx#L1",
+      "note": "Editable Bezier curves with full or half arrowheads."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_ATTRIBUTES.pullout.hxx#L1",
+      "note": "Chemical-symbol palette includes charges, electrons, lone pairs and radical ions."
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_TEXT.pullout.hxx#L1",
+      "note": "Subscripts and superscripts; font rendering uses a fixed size."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolbox.pullout.hxx#L127",
+      "note": "Editable curves, geometric shapes and brackets."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolbox.pullout.hxx#L463",
+      "note": "Command tidies selected structures.",
+      "engine": {
+        "library": "In-house (C++ ring, bond-length and angle cleanup)",
+        "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/edit.hxx#L3132-L3314"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/edit.hxx#L5915",
+      "note": "Color chooser updates selected atoms, bonds and objects."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/toolspecific_TLCPLATE.pullout.hxx#L1",
+      "note": "Dedicated TLC plate, lane and spot tools."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/edit.hxx#L6042",
+      "note": "Command locates carbons with bond-order sums of five or more.",
+      "engine": {
+        "library": "In-house (C++ carbon bond-order-sum check)",
+        "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/edit.hxx#L6042-L6064"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/menugfx.hxx#L968",
+      "note": "Selected structures display formula, molecular weight and exact mass.",
+      "engine": {
+        "library": "In-house (C++ elemental analysis and isotope masses)",
+        "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/analysis.hxx#L11-L120"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/help.hxx#L33",
+      "note": "Periodic-table palette includes chemical wildcards."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/fileformat.hxx#L10",
+      "note": "CDXML reading and writing.",
+      "engine": {
+        "library": "In-house (C++ XML parser/writer and internal-object conversion)",
+        "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/xmlparse.hxx#L139-L560"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/fileformat.hxx#L9",
+      "note": "Binary CDX reading and writing.",
+      "engine": {
+        "library": "In-house (C++ CDX binary parser/writer and internal-object conversion)",
+        "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/xmlparse.hxx#L416-L644"
+      }
+    },
+    "mol-sdf": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/fileformat.hxx#L13",
+      "note": "Vector SVG export."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/edit.hxx#L3877",
+      "note": "PNG export uses optional 2x enlargement; 300 dpi unverified."
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/edit.hxx#L4075",
+      "note": "Windows implements editable ChemDraw Interchange Format copy and paste."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/cmdline.hxx#L145",
+      "note": "Headless conversion and rendering documented with command-line examples."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Website packages and source identify v0.6.1; the supplied latest GitHub tag is v0.4.5.",
+    "The macOS download is explicitly experimental.",
+    "README reports graphical glitches after repeated scaling and rotation of circular arrows."
+  ],
+  "github": {
+    "stars": 2,
+    "pushedAt": "2025-03-30T12:46:07Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://codeload.github.com/Wasserthal/lhendraw/tar.gz/refs/tags/6.1.2",
+    "ran": false,
+    "failure": "Source build failed on macOS arm64. Shipped generator aborts because macOS rejects %n in writable format strings. Making its format table const let generation finish, but both Apple Clang and GCC reject text.h:107 (ordered comparison of a pointer with integer zero). The supplied Xcode project also fails because SDK macosx10.6 is unavailable. No executable or final app installation was produced; see build-report.md and build logs.",
+    "downloadBytes": 471012,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Application never launched; defaults and molecule rendering were not observed.",
+      "No molecule imports, exports, screenshots, or feature checks were possible.",
+      "Repository tag 6.1.2 declares 0.6.1 in source; runtime version remains unverified."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 471012,
+  "references": [
+    "https://github.com/Wasserthal/lhendraw",
+    "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/README"
+  ],
+  "builtOn": {
+    "id": "p65",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/lhendraw.cxx#L285-L334",
+    "note": "Custom atom/bond model and chemical analysis; build links only UI and system libraries."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Lhendraw custom software and vector renderer",
+    "language": "C++",
+    "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/draw.hxx"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "C supports source generation; scripts and Roff support builds and documentation.",
+  "thirdParty": {
+    "summary": "Includes GPL-2.0-or-later xclip code and GPLv2 Liberation Mono fonts with embedding exceptions.",
+    "source": "https://github.com/Wasserthal/lhendraw/blob/d92f42f697d9eb34e633bff28947a96288106ded/clipboard.hxx",
+    "notice": null,
+    "libraries": []
+  }
+}

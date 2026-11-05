@@ -1,0 +1,578 @@
+{
+  "id": "p33",
+  "slug": "webmolkit",
+  "name": "WebMolKit",
+  "rank": 50,
+  "tier": "embeddable",
+  "tierReason": "It primarily provides a reusable molecular sketcher and chemistry library for embedding in web or Electron applications.",
+  "summary": "A TypeScript toolkit for embedding molecular sketching, chemical rendering, file conversion, and cheminformatics in web applications.",
+  "website": "https://github.com/aclarkxyz/web_molkit",
+  "repo": "https://github.com/aclarkxyz/web_molkit",
+  "docs": "https://github.com/aclarkxyz/web_molkit#cookbook",
+  "vendor": "Molecular Materials Informatics, Inc. / Alex M. Clark",
+  "license": {
+    "kind": "open-source",
+    "spdx": "Apache-2.0",
+    "text": "Apache License 2.0.",
+    "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/README.md#license"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/README.md#license"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/aclarkxyz/web_molkit/releases"
+  },
+  "engine": {
+    "rendering": "In-house MetaVector renderer using HTML Canvas 2D and SVG.",
+    "chemistry": "In-house WebMolKit chemistry toolkit.",
+    "ui": "Custom TypeScript widgets and browser DOM.",
+    "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/DrawCanvas.ts"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/CommandBank.ts#L172-L181",
+      "note": "Drew single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/webmolkit/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds drawn on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/CommandBank.ts#L179-L181",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/webmolkit/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/CommandBank.ts#L174-L199",
+      "note": "Zero-order coordination and quadruple bonds.",
+      "shot": {
+        "image": "evidence/webmolkit/f-special-bonds.webp",
+        "caption": "Bond context menu includes bond orders zero through four."
+      }
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/ToolBank.ts#L65-L74",
+      "note": "Drew aliphatic and aromatic six-membered rings.",
+      "shot": {
+        "image": "evidence/webmolkit/f-rings.webp",
+        "caption": "A benzene ring and the ring template palette."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "ui",
+      "source": null,
+      "note": "Chair-shaped ring template visible.",
+      "shot": {
+        "image": "evidence/webmolkit/f-conformers.webp",
+        "caption": "Ring template palette with a chair-shaped ring."
+      }
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/data/AbbrevContainer.ts#L24-L56",
+      "note": "Functional groups, protecting groups, ligands, biomolecules, and other structures.",
+      "shot": {
+        "image": "evidence/webmolkit/f-templates.webp",
+        "caption": "Functional group template palette beside the drawing canvas."
+      }
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/CommandBank.ts#L233-L236",
+      "note": null,
+      "shot": {
+        "image": "evidence/webmolkit/f-abbreviations.webp",
+        "caption": "A Bu group label and abbreviation controls in the toolbar."
+      }
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/EditAtom.ts#L181-L212",
+      "note": null,
+      "shot": {
+        "image": "evidence/webmolkit/f-atom-labels.webp",
+        "caption": "Edit Atom dialog with symbol, charge, and isotope settings."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/EditAtom.ts#L190-L192",
+      "note": "Unpaired-electron counts produce radical dots.",
+      "shot": {
+        "image": "evidence/webmolkit/f-radicals.webp",
+        "caption": "Edit Atom dialog with an unpaired electron setting."
+      }
+    },
+    "keyboard-drawing": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/CommandBank.ts#L125-L136",
+      "note": "Shortcuts target clicked or selected atoms and bonds."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/CommandBank.ts#L278-L289",
+      "note": "Lasso selection; rotate, flip, and scale selected atoms."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/gfx/DrawExperiment.ts#L196-L204",
+      "note": "Forward arrows through reaction rendering API; additional arrow types unverified."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow tool found in sketcher demo."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/aspect/Experiment.ts#L25-L99",
+      "note": "Native DataSheet reactions store reactant, reagent, and product molecules."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/EditAtom.ts#L210-L212",
+      "note": "Manual atom-map numbers; reaction renderer displays mapping labels.",
+      "shot": {
+        "image": "evidence/webmolkit/f-atom-mapping.webp",
+        "caption": "Edit Atom dialog with a mapping field."
+      }
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/gfx/Rendering.ts#L113-L120",
+      "note": "Generic publication preset; named journal presets unverified."
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/gfx/Rendering.ts#L20-L65",
+      "note": "Reusable rendering policies via API; style-saving interface unverified."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/gfx/Rendering.ts#L123-L133",
+      "note": "Per-atom and per-bond overrides through the rendering API."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/DrawCanvas.ts#L1180-L1204",
+      "note": "R/S descriptors appeared on imported paclitaxel.",
+      "shot": {
+        "image": "evidence/webmolkit/f-stereo-perception.webp",
+        "caption": "Molecular structure annotated with R and S stereochemical labels."
+      },
+      "engine": {
+        "library": "In-house (WebMolKit Stereochemistry; TypeScript compiled to JavaScript)",
+        "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/mol/Stereochemistry.ts#L25-L127"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/DrawCanvas.ts#L300-L317",
+      "note": "Caffeine displayed C8H10N4O2 and 194.19.",
+      "shot": {
+        "image": "evidence/webmolkit/f-formula-mass.webp",
+        "caption": "Caffeine structure with molecular formula and mass at upper right."
+      },
+      "engine": {
+        "library": "In-house (WebMolKit MolUtil; TypeScript compiled to JavaScript)",
+        "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/mol/MolUtil.ts#L619-L720"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Pasting caffeine was rejected; no name input found."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in sketcher demo."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/QueryFieldsWidget.ts#L90-L103",
+      "note": "Query atom lists and excluded elements."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/Sketcher.ts#L608-L623",
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No rotatable 3D view found in sketcher demo."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML import or export command found."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/io/MoleculeStream.ts#L465-L478",
+      "note": "Pasted MOL and SDF; copied MDL MOL.",
+      "engine": {
+        "library": "In-house (WebMolKit MDLMOLReader/Writer and MDLSDFReader/Writer; TypeScript compiled to JavaScript)",
+        "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/io/MDLReader.ts"
+      }
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/calc/BuildSMILES.ts#L18-L53",
+      "note": "SMILES paste rejected; no SMILES export control found."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/gfx/MetaVector.ts#L609-L629",
+      "note": "Copy SVG button produced SVG text."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export command found in sketcher demo."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG export command found in sketcher demo."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/README.md#simple-embed",
+      "note": "Documented sketcher and clipboard API examples."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/Sketcher.ts#L43-L55",
+      "note": "SketcherPlugins callbacks extend paste handling and fragment composition."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/README.md#simple-embed",
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Library integration is required to build a complete application.",
+    "Documentation is mainly source comments and examples.",
+    "SMILES output omits stereochemistry."
+  ],
+  "github": {
+    "stars": 38,
+    "pushedAt": "2026-11-03T14:09:20Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "2.0.11",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://github.com/aclarkxyz/web_molkit",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/webmolkit/simple.svg",
+        "note": "SMILES rejected; MOL imported, fitted, and SVG copied.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/webmolkit/complex.svg",
+        "note": "SMILES rejected; MOL imported, fitted, and SVG copied.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/webmolkit/canvas.webp",
+    "canvasLight": "evidence/webmolkit/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "The repository's sketcher example was served locally after a Bun build.",
+      "The demo and research file did not show a version; package metadata says 2.0.11.",
+      "The demo copies SVG and MOL text to the clipboard rather than downloading files.",
+      "The default editor shows molecular formula and mass in the upper right.",
+      "Imported paclitaxel displayed colored atom labels and stereochemistry descriptors."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/aclarkxyz/web_molkit"
+  ],
+  "builtOn": {
+    "id": "p33",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/sketcher/Sketcher.ts#L13-L51",
+    "note": "Self-contained TypeScript sketcher and chemistry implementation; no external runtime dependencies."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "WebMolKit DrawMolecule / ArrangeMolecule / MetaVector",
+    "language": "TypeScript",
+    "source": "https://github.com/aclarkxyz/web_molkit/blob/54aec015006da944bf90e8ebe3c2fc277fe98aeb/src/gfx/DrawMolecule.ts#L57-L222"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "JavaScript is compiled output; HTML supports validation, and Shell supports packaging.",
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

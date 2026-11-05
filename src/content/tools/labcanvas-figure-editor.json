@@ -1,0 +1,523 @@
+{
+  "id": "p73",
+  "slug": "labcanvas-figure-editor",
+  "name": "LabCanvas Figure Editor / MolDraw",
+  "rank": 81,
+  "tier": "alternative",
+  "tierReason": "Implemented molecular drawing and editable figure integration support publication-oriented 2D documents, with paid exports and documented vector output.",
+  "summary": "Browser-based molecule and reaction drawing integrated with editable scientific figures.",
+  "website": "https://www.labcanvas.com/",
+  "repo": null,
+  "docs": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+  "vendor": "LabCanvas Private Limited",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary service; free accounts allow three designs, while exports require LabCanvas Pro.",
+    "source": "https://www.labcanvas.com/terms"
+  },
+  "price": {
+    "text": "2026-11-05: Free for three designs; Pro US$19/month or US$199/year, before applicable taxes.",
+    "source": "https://www.labcanvas.com/pricing"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://www.labcanvas.com/moldraw"
+  },
+  "engine": {
+    "rendering": "HTML canvas 2D and a custom SVG serializer in MolDraw",
+    "chemistry": "Indigo WebAssembly, in-house structure logic, and OpenChemLib for 3D conformers",
+    "ui": "React",
+    "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+      "note": "Manual drawing with single, double and triple bond tools."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/drawAtomDecorations-CufdJh65.js",
+      "note": "Solid wedge, hashed wedge and wavy bond rendering."
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Dative and dotted hydrogen bonds have drawing handlers."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+      "note": "Dedicated benzene and other ring tools."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Dedicated chair and boat cyclohexane placement commands."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Dragging generates zigzag chain coordinates at the configured bond length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+      "note": "Common group templates accompany the ring tools."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/canvasAnnotationColors-BnBaEyYA.js",
+      "note": "ExpandAlias converts recognized group labels into explicit atoms."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Element, formal charge, isotope and alias editing commands."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Lone-pair and radical tools update individual atoms."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/shortcutCatalog-BLlbW4ux.js",
+      "note": "Select an atom, then type an element or group abbreviation."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Lasso selection, rotation, scaling and horizontal/vertical reflection."
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "3D cleanup creates a canvas pose that users can rotate."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+      "note": "Forward, equilibrium and retrosynthesis arrows with reagent text."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/paintStructure-D7DtQ6Ay.js",
+      "note": "Editable curved electron-flow arrows support full and single-electron heads."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Reaction SMILES imports and exports chemically represented reaction sides."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js",
+      "note": "Indigo automapping returns atom maps applied to the drawing."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/paintStructure-D7DtQ6Ay.js",
+      "note": "Placeable s, p, d and dz2 orbital graphics."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Canvas text supports font selection and subscript/superscript character ranges."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/documentation",
+      "note": "Figure editor provides editable shapes, pen paths and freehand curves."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/documentation",
+      "note": "Figure editor supports alignment and even horizontal or vertical spacing."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/documentation",
+      "note": "Figure editor has Group and Ungroup commands."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+      "note": "Structure cleanup is part of the documented drawing workflow.",
+      "engine": {
+        "library": "In-house (JavaScript local cleanup); optional Indigo (WebAssembly layout/clean2d)",
+        "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/useStructureTheme-BuQl8-dY.js",
+      "note": "ACS 1996, RSC, Nature and other drawing presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Bond and font preferences persist in local browser storage."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Selection color commands target atoms, bonds and canvas objects."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/documentation",
+      "note": "Figure artboards; multipage documents use the separate Slides app."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Image files and pasted raster images become canvas image objects."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/documentation",
+      "note": "Figure editor provides editable tables with scientific styles."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js",
+      "note": "Local heuristic flags valence, charge and stereo problems.",
+      "engine": {
+        "library": "In-house (JavaScript valence, charge and stereo heuristics)",
+        "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js",
+      "note": "Native stereo tags and Indigo CIP fallback supply R/S and E/Z.",
+      "engine": {
+        "library": "In-house (JavaScript R/S and E/Z assignment); Indigo (WebAssembly calculateCip fallback)",
+        "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js",
+      "note": "Indigo computes molecular formula, molecular weight and monoisotopic mass.",
+      "engine": {
+        "library": "In-house (JavaScript formula/mass calculations); Indigo (WebAssembly calculated properties)",
+        "source": "https://www.labcanvas.com/moldraw/assets/index-BIvqTKMQ.js"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js",
+      "note": "Indigo computes logP, pKa and molar refractivity.",
+      "engine": {
+        "library": "Indigo (WebAssembly logP, pKa and molar refractivity)",
+        "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+      "note": "PubChem name lookup opens matching structures for editing; network required.",
+      "engine": {
+        "library": "PubChem web service (PUG REST name lookup)",
+        "source": "https://www.labcanvas.com/moldraw/assets/pubchemNameResolve-DMi3vDDx.js"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "PubChem IUPAC lookup only; unindexed structures cannot receive generated names.",
+      "engine": {
+        "library": "PubChem web service (PUG REST SMILES-to-IUPACName lookup)",
+        "source": "https://www.labcanvas.com/moldraw/assets/index-BIvqTKMQ.js"
+      }
+    },
+    "nmr-prediction": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/useStructureTheme-BuQl8-dY.js",
+      "note": "NMR menu calls an always-null extension context; predictor is unwired."
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/useStructureTheme-BuQl8-dY.js",
+      "note": "R/R1/R2 aliases and generic query bond tools."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/canvasAnnotationColors-BnBaEyYA.js",
+      "note": "Polymer presets create atom-linked repeating units with editable SRU brackets."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+      "note": "Search PubChem by name and import an editable structure.",
+      "engine": {
+        "library": "PubChem web service (PUG REST and autocomplete)",
+        "source": "https://www.labcanvas.com/moldraw/assets/pubchemNameResolve-DMi3vDDx.js"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+      "note": "The same molecule can be turned in a 3D view.",
+      "engine": {
+        "library": "3Dmol.js (JavaScript/WebGL viewer); OpenChemLib (JavaScript conformer option)",
+        "source": "https://www.labcanvas.com/moldraw/assets/src-DfP_H2GS.js"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/features",
+      "note": "Separate LabCanvas 3D Studio opens CIF/POSCAR files; vendor claim."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Native atom/bond import and export; Pro downloads; fidelity untested.",
+      "engine": {
+        "library": "In-house (JavaScript native CDXML atom/bond import and export)",
+        "source": "https://www.labcanvas.com/moldraw/assets/index-BIvqTKMQ.js"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Indigo binary import/export; Pro downloads; fidelity untested.",
+      "engine": {
+        "library": "Indigo (WebAssembly binary CDX import/export conversion)",
+        "source": "https://www.labcanvas.com/moldraw/assets/index-BIvqTKMQ.js"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "MOL read/write; Pro exports; SDF import reads first record only.",
+      "engine": {
+        "library": "In-house (JavaScript MOL parser/writer and first-record SDF import); Indigo (WebAssembly optional MOL V3000 conversion)",
+        "source": "https://www.labcanvas.com/moldraw/assets/index-BIvqTKMQ.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing",
+      "note": "Paste SMILES and read drawing SMILES; file exports require Pro.",
+      "engine": {
+        "library": "In-house (JavaScript native SMILES parser/writer); optional Indigo (WebAssembly conversion/layout)",
+        "source": "https://www.labcanvas.com/moldraw/assets/moleculeEngineWorker-CwnVYNCI.js"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Indigo import/export and clipboard conversion; Pro downloads.",
+      "engine": {
+        "library": "Indigo (WebAssembly InChI import/export conversion)",
+        "source": "https://www.labcanvas.com/moldraw/assets/index-BIvqTKMQ.js"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/index-BG9vBs9g.js",
+      "note": "Indigo import/export; reaction layout fidelity unverified; Pro downloads."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/exportMoleculeBitmap-Dd_pWinV.js",
+      "note": "Custom serializer emits vector SVG; downloads require Pro."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/documentation",
+      "note": "Pro; vector PDF through Figure editor; vendor claim."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://www.labcanvas.com/moldraw/assets/RasterExportDialog-D1bn3vcK.js",
+      "note": "Pro; physical width and 300/600 dpi export settings."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/documentation",
+      "note": "Pro; MCP server supports figure editing; vendor claim."
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.labcanvas.com/documentation",
+      "note": "Pro; built-in assistant edits figure objects; vendor claim."
+    }
+  },
+  "caveats": [
+    "An account is required; the free plan permits three designs and excludes downloads and exports.",
+    "Standalone MolDraw PDF output is raster; vector PDF requires the Figure editor.",
+    "NMR's menu is unwired in the inspected build; interactive usability was not tested."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.labcanvas.com/",
+    "https://www.labcanvas.com/blog/moldraw-chemical-structure-drawing"
+  ],
+  "builtOn": {
+    "id": "p73",
+    "relation": null,
+    "editor": null,
+    "libraries": null,
+    "source": null,
+    "note": "Vendor documentation reviewed does not establish canvas provenance or chemistry dependencies."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "MolDraw Canvas/SVG bond/label renderer",
+    "language": "JavaScript",
+    "source": "https://www.labcanvas.com/moldraw/assets/exportMoleculeBitmap-Dd_pWinV.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "Indigo chemistry compiled to WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

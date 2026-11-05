@@ -1,0 +1,606 @@
+{
+  "id": "p27",
+  "slug": "openchemlib-js-editor",
+  "name": "OpenChemLib JS editor",
+  "rank": 48,
+  "tier": "embeddable",
+  "tierReason": "It is primarily an embeddable browser structure and reaction editor with a documented JavaScript API.",
+  "summary": "Embeddable browser editor for drawing molecular structures and reactions using the OpenChemLib chemistry library.",
+  "website": "https://cheminfo.github.io/openchemlib-js/",
+  "repo": "https://github.com/cheminfo/openchemlib-js",
+  "docs": "https://cheminfo.github.io/openchemlib-js/",
+  "vendor": "Zakodium",
+  "license": {
+    "kind": "open-source",
+    "spdx": "BSD-3-Clause",
+    "text": "Permissive BSD 3-Clause license.",
+    "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/LICENSE"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v9.25.2",
+    "date": "2026-10-27",
+    "source": "https://github.com/cheminfo/openchemlib-js/releases/tag/v9.25.2"
+  },
+  "engine": {
+    "rendering": "HTML canvas 2D on screen; OpenChemLib SVG rendering for vector output",
+    "chemistry": "OpenChemLib",
+    "ui": "Custom HTML DOM and Web Components with GWT-compiled editor logic",
+    "source": "https://github.com/cheminfo/openchemlib-js/tree/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/lib"
+  },
+  "languages": [
+    "Java",
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L110-L114",
+      "note": "Drew single bond; keyboard changed it to double and triple.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-bonds-core.webp",
+        "caption": "A triple bond on the editor canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/chem/AbstractDepictor.java#L988-L1049",
+      "note": "Drew solid and hashed wedges; no wavy tool visible.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds in a molecular structure."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/chem/Molecule.java#L4048-L4124",
+      "note": "Coordinate bonds and quadruple/quintuple bonds involving transition metals."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/gui/editor/GenericEditorArea.java#L1872-L1899",
+      "note": "Benzene tool drew a ring; several ring tools visible.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-rings.webp",
+        "caption": "A benzene ring with ring tools visible."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L234-L240",
+      "note": "Dragging chain tool created six carbons.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-chains.webp",
+        "caption": "A zigzag carbon chain with the chain tool selected."
+      }
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L146-L168",
+      "note": "Typing Ph produced no template; no template library visible."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L146-L168",
+      "note": "Typing Ph, Boc and other recognized groups attaches their structures."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L185-L210",
+      "note": "Atom tools set elements, charges, isotope masses and custom labels.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-atom-labels.webp",
+        "caption": "A positively charged carbon on the editor canvas."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L85-L95",
+      "note": "Hotkeys set single-electron, singlet and triplet radical states."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L48-L54",
+      "note": "Keys 2 and 3 changed the hovered bond order."
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/gui/editor/GenericEditorArea.java",
+      "note": "Lasso selection, rotation, resizing and keyboard horizontal/vertical flipping."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/chem/reaction/ReactionArrow.java#L146-L164",
+      "note": "Loaded example shows forward arrow; other arrow types not visible.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-reaction-arrows.webp",
+        "caption": "Reactants and product separated by a forward reaction arrow."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved arrow control visible."
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/Reaction.html",
+      "note": "Loaded example outputs reaction SMILES and RXN.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-reaction-data.webp",
+        "caption": "A reaction alongside reaction SMILES and RXN output."
+      }
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L305-L315",
+      "note": "Drag between corresponding atoms; nearby atoms are mapped automatically."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L262-L268",
+      "note": "Cleanup regenerates 2D coordinates and can preserve unselected fragment orientation.",
+      "engine": {
+        "library": "Ported from OpenChemLib CoordinateInventor (Java compiled to JavaScript with GWT)",
+        "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/gui/editor/GenericEditorArea.java#L3214-L3255"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/Molecule.html#setatomcolor",
+      "note": "Individual atom colors can be set through the JavaScript API."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/chem/ExtendedMolecule.java#L3192-L3213",
+      "note": "API validation throws errors for excessive valence and unbalanced charge.",
+      "engine": {
+        "library": "Ported from OpenChemLib ExtendedMolecule.validate (Java compiled to JavaScript with GWT)",
+        "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/chem/ExtendedMolecule.java#L3192-L3214"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/Molecule.html#getatomcipparity",
+      "note": "Pasted complex structure displayed R and S annotations.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-stereo-perception.webp",
+        "caption": "A molecular structure with R and S annotations."
+      },
+      "engine": {
+        "library": "Ported from OpenChemLib StereoMolecule / Canonizer (Java compiled to JavaScript with GWT)",
+        "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/chem/StereoMolecule.java#L171-L244"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminfo.github.io/openchemlib-js/interfaces/MolecularFormula.html",
+      "note": "API returns molecular formula, exact mass and molecular weight.",
+      "engine": {
+        "library": "Ported from OpenChemLib MolecularFormula (Java compiled to JavaScript with GWT)",
+        "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/chem/MolecularFormula.java#L336-L359"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/MoleculeProperties.html",
+      "note": "API computes logP and polar surface area.",
+      "engine": {
+        "library": "Ported from OpenChemLib PropertyCalculator, CLogPPredictor and PolarSurfaceAreaPredictor (Java compiled to JavaScript with GWT)",
+        "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/chem/prediction/PropertyCalculator.java#L64-L92"
+      }
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No chemical name input visible."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name generation control visible."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/help.html#L170-L171",
+      "note": "Fragment mode supports atom lists through query-feature dialogs."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D model view control visible."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML import or export control visible."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/Molecule.html#frommolfile",
+      "note": "Pasted MOL text and copied MOL output; SDF untested.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-mol-sdf.webp",
+        "caption": "A caffeine structure alongside molfile output."
+      },
+      "engine": {
+        "library": "Ported from OpenChemLib MolfileParser, MolfileCreator, MolfileV3Creator and SDFileParser (Java compiled to JavaScript with GWT; MOL read/write and SDF reading)",
+        "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/js/api/JSMolecule.java#L50-L136"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/Molecule.html#fromsmiles",
+      "note": "Pasted SMILES and copied generated SMILES.",
+      "shot": {
+        "image": "evidence/openchemlib-js-editor/f-smiles.webp",
+        "caption": "A caffeine structure alongside its SMILES output."
+      },
+      "engine": {
+        "library": "Ported from OpenChemLib SmilesParser and IsomericSmilesCreator (Java compiled to JavaScript with GWT)",
+        "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/js/api/JSMolecule.java#L40-L123"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/Reaction.html#fromrxn",
+      "note": "API reads and writes RXN V2000 and V3000."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/Molecule.html#tosvg",
+      "note": "API returns vector SVG at specified dimensions."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export control visible."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG export control visible."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/CanvasEditor.html",
+      "note": "Typed JavaScript API controls molecules, reactions and editor events."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://cheminfo.github.io/openchemlib-js/classes/CanvasEditor.html#constructor",
+      "note": "Create an editor inside a DOM element; Web Component also available."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Distributed as a developer component; the hosted editor is a demonstration.",
+    "General editor help describes text tools disabled in the public CanvasEditor.",
+    "Chemistry calculations and SVG export require JavaScript API integration."
+  ],
+  "github": {
+    "stars": 94,
+    "pushedAt": "2026-11-03T16:57:07Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "v9.25.2",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://openchemlib-js.pages.dev/examples/generic_editor/demo",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/openchemlib-js-editor/simple.png",
+        "note": "Pasted current SMILES; canvas screenshot after zooming.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/openchemlib-js-editor/complex.png",
+        "note": "Pasted current SMILES; canvas screenshot after zooming.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": null,
+        "image": null,
+        "note": "No rotatable 3D viewer in the hosted editor.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/openchemlib-js-editor/canvas.webp",
+    "canvasLight": "evidence/openchemlib-js-editor/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Light and dark browser preferences produce identical appearance."
+    },
+    "memory": null,
+    "observations": [
+      "Pasted SMILES are automatically laid out in the 2D canvas.",
+      "Default complex drawing displays red stereochemical annotations.",
+      "The demo displays live SMILES and MOL output rather than download buttons.",
+      "MOL outputs matched both input structures in an RDKit round-trip comparison.",
+      "Version comes from research metadata; the demo displayed no version.",
+      "The served OpenChemLib bundle reports version 9.25.2."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/cheminfo/openchemlib-js",
+    "https://cheminfo.github.io/openchemlib-js/"
+  ],
+  "builtOn": {
+    "id": "p27",
+    "relation": "fork",
+    "editor": "OpenChemLib editor",
+    "libraries": [
+      "OpenChemLib"
+    ],
+    "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/scripts/openchemlib/classes.js#L382-L397",
+    "note": "JavaScript port copies OpenChemLib's editor source and applies compatibility patches."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "OpenChemLib AbstractDepictor / GenericDepictor",
+    "language": "Java",
+    "source": "https://github.com/cheminfo/openchemlib-js/blob/cda8d580ec7ddee23e0c22f5c3a6a6176670b636/src/com/actelion/research/gwt/chemlib/com/actelion/research/chem/AbstractDepictor.java"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Canvas editor integration and API wrappers"
+    },
+    {
+      "language": "TypeScript",
+      "role": "Shipped API type declarations"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "TypeScript supplies declarations; HTML, CSS and Shell support examples and tooling.",
+  "thirdParty": {
+    "summary": "Includes BSD-3-Clause (OpenChemLib) and Apache-2.0 (GWT runtime).",
+    "source": "https://github.com/Actelion/openchemlib/blob/54949b8d6a4238316da94fa052e948142decc37d/LICENSE",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      }
+    ]
+  }
+}

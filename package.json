@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=24.0.0" },
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -11,6 +13,14 @@
     "check": "astro check && node scripts/check-content.mjs",
     "test": "node --test tests/*.test.mjs"
   },
-  "dependencies": { "astro": "7.4.5", "@astrojs/mdx": "8.1.2" },
-  "devDependencies": { "@astrojs/check": "0.9.12", "typescript": "~5.9.3" }
+  "dependencies": {
+    "@fontsource-variable/atkinson-hyperlegible-next": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.4",
+    "astro": "7.4.5",
+    "tailwindcss": "^4.3.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "typescript": "~5.9.3"
+  }
 }

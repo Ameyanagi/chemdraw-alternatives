@@ -1,0 +1,664 @@
+{
+  "id": "p120",
+  "slug": "chemliora",
+  "name": "Chemliora",
+  "rank": 25,
+  "tier": "alternative",
+  "tierReason": "It creates styled 2D structures and reaction figures with vector SVG export for publication.",
+  "summary": "A browser editor for drawing chemical structures, reaction schemes and polymers, with image export and approximate spectral predictions.",
+  "website": "https://chem-analyses.com/tools/structure-editor/",
+  "repo": null,
+  "docs": "https://chem-analyses.com/tools/structure-editor/help",
+  "vendor": "Chem-Analyses Lab",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free to use; third-party licenses do not grant redistribution rights to the whole application.",
+    "source": "https://chem-analyses.com/tools/structure-editor/licenses"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://chem-analyses.com/tools/structure-editor/help"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": "15.19.0",
+    "date": "2026-11-05",
+    "source": "https://chem-analyses.com/updates/"
+  },
+  "engine": {
+    "rendering": "Custom SVG renderer; HTML canvas for PNG export",
+    "chemistry": "OpenChemLib JS",
+    "ui": "HTML/CSS and vanilla JavaScript",
+    "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Drew single; changed it to double and triple.",
+      "shot": {
+        "image": "evidence/chemliora/f-bonds-core.webp",
+        "caption": "Single, double, and triple bond tools in the drawing palette."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Converted a bond to solid wedge, hashed wedge, and wavy.",
+      "shot": {
+        "image": "evidence/chemliora/f-stereo-bonds.webp",
+        "caption": "Wedge, hashed wedge, and wavy bond tools in the palette."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Coordination and hydrogen contacts are annotations, excluded from chemical exports."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Placed benzene and cyclohexane rings.",
+      "shot": {
+        "image": "evidence/chemliora/f-rings.webp",
+        "caption": "Ring tools beside benzene and cyclohexane drawings."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "Freehand zigzags create up to eight bonds; no length-drag tool."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Placed anthracene from the template library."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Favorites are stored only in the current browser."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": null,
+      "shot": {
+        "image": "evidence/chemliora/f-abbreviations.webp",
+        "caption": "Substituent palette lists Ph, Boc, OMe, and other labels."
+      }
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": null,
+      "shot": {
+        "image": "evidence/chemliora/f-atom-labels.webp",
+        "caption": "Element palette and nitrogen and oxygen labels on the canvas."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Lone pairs are drawing annotations.",
+      "shot": {
+        "image": "evidence/chemliora/f-radicals.webp",
+        "caption": "Charge and electron tools include single and paired dots."
+      }
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "Rectangle selection, rotation and flips; no lasso or resize controls."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/chemliora/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the drawing canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Drew curved arrow; selection exposed endpoints and bend controls.",
+      "shot": {
+        "image": "evidence/chemliora/f-mechanism-arrows.webp",
+        "caption": "Curved arrow on the canvas beside the reaction tools."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "Manual atom-map numbers are preserved in chemical exports."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "Only plain reaction-condition text; no font or script formatting."
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "Polymer brackets and curved arrows only; no general shape objects.",
+      "shot": {
+        "image": "evidence/chemliora/f-shapes.webp",
+        "caption": "Polymer bracket tool in the advanced toolbar."
+      }
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/articles/chemliora-ethyl-acetate-structure-guide/",
+      "note": null,
+      "shot": {
+        "image": "evidence/chemliora/f-cleanup.webp",
+        "caption": "Tidy structure button above the drawing canvas."
+      },
+      "engine": {
+        "library": "OpenChemLib JS (JavaScript, inventCoordinates)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/structure-formats.js"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "Nature and ACS presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "Imported CDS settings persist in browser storage and JSON."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "Individual atom-label colors."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": null,
+      "engine": {
+        "library": "OpenChemLib JS (JavaScript valence and aromaticity analysis); In-house (JavaScript charge checks)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/structure-check.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Labels omit structures exceeding 200 atoms.",
+      "shot": {
+        "image": "evidence/chemliora/f-stereo-perception.webp",
+        "caption": "Structure drawing with a Z label beside the double bond."
+      },
+      "engine": {
+        "library": "OpenChemLib JS (JavaScript CIP parity calculation)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/stereo-labels.js"
+      }
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/articles/chemliora-ethyl-acetate-structure-guide/",
+      "note": "Canvas correct; explicit-hydrogen SDF property table overcounts hydrogens.",
+      "shot": {
+        "image": "evidence/chemliora/f-formula-mass.webp",
+        "caption": "Property table showing molecular formula, exact mass, and molecular weight."
+      },
+      "engine": {
+        "library": "In-house (JavaScript formula counting and mass sums); OpenChemLib JS (JavaScript implicit-hydrogen analysis, with In-house fallback)",
+        "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb2ec58f1f8b.js"
+      }
+    },
+    "properties": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "logP and TPSA shown; explicit-hydrogen formula was incorrect.",
+      "shot": {
+        "image": "evidence/chemliora/f-properties.webp",
+        "caption": "Property estimates table with formula, molecular weight, and logP."
+      },
+      "engine": {
+        "library": "OpenChemLib JS (JavaScript, MoleculeProperties logP and polarSurfaceArea)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/property-estimates.js"
+      }
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "No name input found; SMILES field rejected caffeine."
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "PubChem lookup returned caffeine's systematic name.",
+      "engine": {
+        "library": "PubChem PUG REST web service (remote IUPACName lookup by SMILES)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/molecular-identity.js"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Approximate predictions; 13C remains experimental.",
+      "engine": {
+        "library": "In-house (JavaScript shift rules, regression models and spectrum synthesis); OpenChemLib JS (JavaScript molecular preprocessing)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/h1-nmr-predictor.js?v=1a505e54"
+      }
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Monomer-based repeat-unit generation; save JSON for re-editing.",
+      "shot": {
+        "image": "evidence/chemliora/f-polymers.webp",
+        "caption": "Polymer bracket and A–B controls in the advanced toolbar."
+      }
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Generated ten conformers and rotated cholesterol in depth.",
+      "shot": {
+        "image": "evidence/chemliora/f-model-3d.webp",
+        "caption": "3D ball-and-stick model with conformer and rotation controls."
+      },
+      "engine": {
+        "library": "In-house (JavaScript Canvas viewer); OpenChemLib JS (JavaScript conformer generation and MMFF94S optimization)",
+        "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb2ec58f1f8b.js"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Exported and reopened its own cholesterol CDXML.",
+      "engine": {
+        "library": "In-house (JavaScript CDXML parser and exporter)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/cdxml-format.js"
+      }
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Import only.",
+      "engine": {
+        "library": "In-house (JavaScript binary CDX parser; import only)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/cdx-format.js"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "MOL and SDF imports and exports worked.",
+      "engine": {
+        "library": "OpenChemLib JS (JavaScript MOL parser/writer); In-house (JavaScript SDF record handling)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/structure-formats.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Imported SMILES and copied a generated SMILES.",
+      "shot": {
+        "image": "evidence/chemliora/f-smiles.webp",
+        "caption": "Structure on the canvas with a SMILES generation confirmation."
+      },
+      "engine": {
+        "library": "OpenChemLib JS (JavaScript SMILES parser and isomeric SMILES writer)",
+        "source": "https://chem-analyses.com/tools/structure-editor/js/structure-formats.js"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "Saved default SVG images for all three structures."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/help",
+      "note": "No PDF export; browser print preview included interface and clipped drawing."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chem-analyses.com/tools/structure-editor/app-bundle.cb37a439a186.js",
+      "note": "4× PNG exported; file reports 72 dpi metadata.",
+      "shot": {
+        "image": "evidence/chemliora/f-png-export.webp",
+        "caption": "PNG output showing a cholesterol structure."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "CDX is import-only; PDF export is unavailable.",
+    "ChemDraw compatibility is unverified; save JSON for full re-editing.",
+    "Spectral predictions are approximate; 13C NMR remains experimental."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "15.19.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://chem-analyses.com/tools/structure-editor/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemliora/simple.svg",
+        "note": "Generated automatically; MOL output saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemliora/complex.svg",
+        "note": "Generated automatically; MOL output saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemliora/threed.png",
+        "note": "Rotatable 3D conformer captured separately in threed-view.png.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/chemliora/canvas.webp",
+    "canvasLight": "evidence/chemliora/canvas-light.webp",
+    "canvasDark": "evidence/chemliora/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Hosted version now reports 15.20.0."
+    },
+    "memory": null,
+    "observations": [
+      "The default canvas used a dark background and coloured heteroatom labels.",
+      "SMILES imports generated layouts automatically without cleanup.",
+      "RDKit canonical isomeric SMILES matched all three exported MOL structures.",
+      "For explicit-hydrogen caffeine SDF, the property table showed C8H20N4O2 instead of C8H10N4O2.",
+      "The default 3D view used ball-and-stick with hydrogens."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://chem-analyses.com/tools/structure-editor/",
+    "https://chem-analyses.com/tools/structure-editor/"
+  ],
+  "builtOn": {
+    "id": "p120",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "OpenChemLib",
+      "GANSU Lite",
+      "MOrbVis"
+    ],
+    "source": "https://chem-analyses.com/tools/structure-editor/licenses.html",
+    "note": "License confirms chemistry libraries and optional orbital tools; canvas provenance remains unestablished."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Custom SVG bond and atom renderer",
+    "language": "JavaScript",
+    "source": "https://chem-analyses.com/tools/structure-editor/js/structure-svg-renderer.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "Java",
+      "role": "OpenChemLib compiled to JavaScript"
+    },
+    {
+      "language": "TypeScript",
+      "role": "GANSU Lite and MOrbVis modules"
+    },
+    {
+      "language": "Rust",
+      "role": "GANSU Lite kernels (WebAssembly)"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML and CSS provide layout and styling.",
+  "thirdParty": {
+    "summary": "BSD-3-Clause/MIT/Zlib components; NMR calibration credits nmrshiftdb2's custom share-alike database license with an OSI-approved software condition. Raw measurements are not bundled.",
+    "source": "https://chem-analyses.com/tools/structure-editor/licenses.html",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      },
+      {
+        "name": "GANSU Lite",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Yasuaki-Ito/GANSU-Lite/blob/main/LICENSE"
+      },
+      {
+        "name": "MOrbVis",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Yasuaki-Ito/morbvis/blob/master/LICENSE"
+      }
+    ]
+  }
+}

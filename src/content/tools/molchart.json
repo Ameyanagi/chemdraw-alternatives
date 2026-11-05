@@ -1,0 +1,622 @@
+{
+  "id": "p97",
+  "slug": "molchart",
+  "name": "MolChart",
+  "rank": 27,
+  "tier": "alternative",
+  "tierReason": "Manual structure editing, reaction-scheme layout and vector SVG export support standalone publication-grade 2D chemical drawings.",
+  "summary": "Browser editor for manually drawing 2D chemical structures and reaction schemes with an integrated AI assistant.",
+  "website": "https://molchart.com/",
+  "repo": null,
+  "docs": "https://molchart.com/manual.html",
+  "vendor": "Xiangyang Wang",
+  "license": {
+    "kind": "freemium",
+    "spdx": null,
+    "text": "Proprietary hosted service with a free editor and paid AI membership.",
+    "source": "https://molchart.com/terms.html"
+  },
+  "price": {
+    "text": "2026-11-05: Free editor; US$10/month membership advertised, but official prices and AI limits conflict.",
+    "source": "https://molchart.com/draw-molecules-online.html"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": "v1.375",
+    "date": null,
+    "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+  },
+  "engine": {
+    "rendering": "SVG drawing canvas and SVG export; HTML canvas rasterization for PNG.",
+    "chemistry": "OpenChemLib (browser) and RDKit (server)",
+    "ui": "React",
+    "source": "https://molchart.com/llms-full.txt"
+  },
+  "languages": [
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#drawing-bonds-and-chains",
+      "note": "Drew all three and changed a single to double."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#drawing-bonds-and-chains",
+      "note": "Drew solid wedge, hashed wedge and wavy bonds.",
+      "shot": {
+        "image": "evidence/molchart/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#rings",
+      "note": "Placed benzene and cyclohexane rings.",
+      "shot": {
+        "image": "evidence/molchart/f-rings.webp",
+        "caption": "Ring tools and a selected fused-ring structure."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#drawing-bonds-and-chains",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#rings",
+      "note": "Placed indole from the fused-ring library."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://molchart.com/assets/main-BkJHgyhY.js",
+      "note": "Selected structures can be saved and inserted through the template palette."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#atoms-and-elements",
+      "note": "Typed group abbreviations expand into chemical structures."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://molchart.com/assets/main-BkJHgyhY.js",
+      "note": "Charges and elements editable; isotope masses preserved on import.",
+      "shot": {
+        "image": "evidence/molchart/f-atom-labels.webp",
+        "caption": "Edit menu shows element and charge commands."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#hydrogens-charges-and-lone-pairs",
+      "note": "Computed or manually adjusted lone pairs.",
+      "shot": {
+        "image": "evidence/molchart/f-radicals.webp",
+        "caption": "Edit menu shows add and remove lone pair commands."
+      }
+    },
+    "keyboard-drawing": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#atoms-and-elements",
+      "note": "Element keys edit selected atoms; hover-key editing is unverified."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://molchart.com/assets/main-BkJHgyhY.js",
+      "note": "Lasso, rotation and flips; resizing verified only for arrows."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#arrows-text-and-reactions",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/molchart/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows beside an indole structure."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#arrows-text-and-reactions",
+      "note": "Drew curved and fishhook arrows; editing untested.",
+      "shot": {
+        "image": "evidence/molchart/f-mechanism-arrows.webp",
+        "caption": "A red curved arrow appears below reaction arrows."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://molchart.com/assets/main-BkJHgyhY.js",
+      "note": "Font formatting exists; free-text subscript and superscript controls are unverified."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#selecting-and-editing",
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#selecting-and-editing",
+      "note": null,
+      "engine": {
+        "library": "OpenChemLib (browser JavaScript Molecule.inventCoordinates); In-house (orientation preservation and fallback geometry)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#arrows-text-and-reactions",
+      "note": "Selected arrows can be recolored individually.",
+      "shot": {
+        "image": "evidence/molchart/f-color.webp",
+        "caption": "A red curved arrow appears below black reaction arrows."
+      }
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#analysis-tools",
+      "note": null,
+      "engine": {
+        "library": "In-house (browser JavaScript valence, charge, bond and aromaticity rules)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#analysis-tools",
+      "note": "Assigns R/S centers and E/Z double bonds.",
+      "engine": {
+        "library": "OpenChemLib (browser JavaScript cHelperCIP, getAtomCIPParity and getBondCIPParity)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#getting-started",
+      "note": "Caffeine formula and mass shown after import.",
+      "shot": {
+        "image": "evidence/molchart/f-formula-mass.webp",
+        "caption": "Status bar shows a molecular formula and mass."
+      },
+      "engine": {
+        "library": "OpenChemLib (browser JavaScript Molecule.getMolecularFormula, formula and absoluteWeight)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/structure-to-iupac-name.html",
+      "note": "Calculator returned caffeine logP and TPSA."
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#import-and-export",
+      "note": "Aspirin name generated a structure.",
+      "engine": {
+        "library": "In-house (browser IUPAC parser and common-name dictionary); PubChem PUG REST (remote fallback); OpenChemLib (browser JavaScript SMILES parsing)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#analysis-tools",
+      "note": "CCCO returned incorrect locant: Propan-3-ol.",
+      "shot": {
+        "image": "evidence/molchart/f-structure-to-name.webp",
+        "caption": "Structure Name dialog displays Propan-3-ol."
+      },
+      "engine": {
+        "library": "In-house (browser naming rules and common-name dictionary); OpenChemLib (browser JavaScript canonical-SMILES/IDCode matching)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "nmr-prediction": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://molchart.com/chemdraw-alternative.html",
+      "note": "Official comparison explicitly excludes NMR prediction."
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#atoms-and-elements",
+      "note": "R-group and halide placeholder atom labels."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://molchart.com/chemdraw-alternative.html",
+      "note": "Official comparison explicitly excludes biopolymer tools."
+    },
+    "image-to-structure": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#import-and-export",
+      "note": "Restores embedded MolChart PNG drawings; general image recognition is unverified."
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#analysis-tools",
+      "note": null,
+      "engine": {
+        "library": "PubChem PUG REST (remote compound name and structure lookup)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#view-options",
+      "note": "Generated cholesterol model and rotated it in depth.",
+      "shot": {
+        "image": "evidence/molchart/f-model-3d.webp",
+        "caption": "3D Structure Viewer shows a ball-and-stick model."
+      },
+      "engine": {
+        "library": "3Dmol.js (browser JavaScript viewer); RDKit (Python server conformer generation through FastAPI)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#view-options",
+      "note": "Loads crystallographic structures from COD."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#import-and-export",
+      "note": "Exported and reimported cholesterol CDXML."
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#import-and-export",
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#import-and-export",
+      "note": "Imported and exported MOL; exported SDF.",
+      "engine": {
+        "library": "OpenChemLib (browser JavaScript MOL import/export, Molecule.fromMolfile/toMolfile/toMolfileV3)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#import-and-export",
+      "note": "Imported SMILES and copied indole SMILES.",
+      "engine": {
+        "library": "OpenChemLib (browser JavaScript Molecule.fromSmiles/toSmiles)",
+        "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/manual.html#import-and-export",
+      "note": "Exported SVG drawings for all three fixtures."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export command found in File menu."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://molchart.com/assets/main-BkJHgyhY.js",
+      "note": "Exported 1785×2000 PNG with 481 dpi metadata.",
+      "shot": {
+        "image": "evidence/molchart/f-png-export.webp",
+        "caption": "PNG output showing a cholesterol structure."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#import-and-export",
+      "note": "Office clipboard output is explicitly a bitmap, not editable chemistry."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/llms-full.txt",
+      "note": "Streamable HTTP MCP interface provides drawing, editing and analysis tools."
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molchart.com/manual.html#the-ai-assistant",
+      "note": null,
+      "shot": {
+        "image": "evidence/molchart/f-ai-assistant.webp",
+        "caption": "MolChart Assistant offers example drawing prompts."
+      }
+    }
+  },
+  "caveats": [
+    "Drawing and export implementations were inspected; end-to-end editor usability was not tested.",
+    "Official pages disagree on AI quotas and membership pricing.",
+    "An older comparison denies templates and CDX/CDXML support that the manual and shipped code provide."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "v1.375",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://molchart.com/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molchart/simple.svg",
+        "note": "Caffeine imported and laid out automatically.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molchart/complex.svg",
+        "note": "Zoomed out to fit the automatic layout.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/molchart/threed.png",
+        "note": "Generated rotatable 3D model; viewport saved as threed-view.png.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/molchart/canvas.webp",
+    "canvasLight": "evidence/molchart/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "The anonymous New command requested sign-in; subsequent fixtures used Clear Canvas.",
+      "Caffeine's status bar showed 194.08; the property calculator showed 194.19.",
+      "Paclitaxel's automatic drawing required zooming out to fit the viewport.",
+      "The default 3D model used ball-and-stick with hydrogens hidden.",
+      "The 2D SVG and MOL exports are saved alongside the 3D viewport capture."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://molchart.com/",
+    "https://molchart.com/draw-molecules-online.html"
+  ],
+  "builtOn": {
+    "id": "p97",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "OpenChemLib"
+    ],
+    "source": "https://molchart.com/assets/main-BkJHgyhY.js",
+    "note": "Vendor credits OpenChemLib and RDKit; canvas provenance remains unestablished."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Custom React SVG renderer",
+    "language": "TypeScript",
+    "source": "https://molchart.com/assets/main-BkJHgyhY.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "Python",
+      "role": "FastAPI and RDKit server"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      }
+    ]
+  }
+}

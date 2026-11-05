@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="174.23 58.41 235.99 261.78"><style> text { cursor: default; } </style><g transform="scale(0.07333333333333333)">
+<rect x="0" y="0" height="5018" width="7814" stroke="none" fill="white" />
+<line x1="4224" y1="1254" x2="4874" y2="879" stroke="black" stroke-width="30" />
+<line x1="3539" y1="949" x2="4224" y2="1254" stroke="black" stroke-width="30" />
+<line x1="2993" y1="1466" x2="3495" y2="909" stroke="black" stroke-width="30" />
+<line x1="3082" y1="1546" x2="3584" y2="989" stroke="black" stroke-width="30" />
+<line x1="3412" y1="2156" x2="3037" y2="1506" stroke="black" stroke-width="30" />
+<line x1="4159" y1="2058" x2="3425" y2="2214" stroke="black" stroke-width="30" />
+<line x1="4134" y1="1941" x2="3400" y2="2097" stroke="black" stroke-width="30" />
+<line x1="4146" y1="2000" x2="4224" y2="1254" stroke="black" stroke-width="30" />
+<line x1="4648" y1="2557" x2="4146" y2="2000" stroke="black" stroke-width="30" />
+<line x1="5394" y1="2460" x2="4660" y2="2616" stroke="black" stroke-width="30" />
+<line x1="5369" y1="2342" x2="4635" y2="2498" stroke="black" stroke-width="30" />
+<line x1="4416" y1="3270" x2="4648" y2="2557" stroke="black" stroke-width="30" />
+<line x1="3683" y1="3426" x2="4416" y2="3270" stroke="black" stroke-width="30" />
+<line x1="3394" y1="4121" x2="3626" y2="3408" stroke="black" stroke-width="30" />
+<line x1="3508" y1="4158" x2="3740" y2="3445" stroke="black" stroke-width="30" />
+<line x1="3181" y1="2869" x2="3683" y2="3426" stroke="black" stroke-width="30" />
+<line x1="3181" y1="2869" x2="3412" y2="2156" stroke="black" stroke-width="30" />
+<line x1="2447" y1="3025" x2="3181" y2="2869" stroke="black" stroke-width="30" />
+<line x1="4918" y1="3828" x2="4416" y2="3270" stroke="black" stroke-width="30" />
+<rect x="3999" y="1044" height="420" width="420" rx="105" ry="105" stroke="none" fill="white" />
+<text x="4089" y="1404"  font-size="390px" font-family="Helvetica" fill="blue">N</text>
+<rect x="2812" y="1296" height="420" width="420" rx="105" ry="105" stroke="none" fill="white" />
+<text x="2902" y="1656"  font-size="390px" font-family="Helvetica" fill="blue">N</text>
+<rect x="5142" y="2191" height="420" width="450" rx="105" ry="105" stroke="none" fill="white" />
+<text x="5232" y="2551"  font-size="390px" font-family="Helvetica" fill="red">O</text>
+<rect x="4191" y="3060" height="420" width="420" rx="105" ry="105" stroke="none" fill="white" />
+<text x="4281" y="3420"  font-size="390px" font-family="Helvetica" fill="blue">N</text>
+<rect x="3211" y="3929" height="420" width="450" rx="105" ry="105" stroke="none" fill="white" />
+<text x="3301" y="4289"  font-size="390px" font-family="Helvetica" fill="red">O</text>
+<rect x="2956" y="2659" height="420" width="420" rx="105" ry="105" stroke="none" fill="white" />
+<text x="3046" y="3019"  font-size="390px" font-family="Helvetica" fill="blue">N</text>
+</g></svg>

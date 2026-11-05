@@ -1,0 +1,544 @@
+{
+  "id": "p76",
+  "slug": "chemmd",
+  "name": "ChemMD",
+  "rank": 75,
+  "tier": "alternative",
+  "tierReason": "Manual geometry, skeletal preview and vector SVG export support simple publication figures, although this remains an unreleased prototype.",
+  "summary": "Text-first browser editor for creating 2D chemical structures and exporting SVG or PNG drawings.",
+  "website": "https://github.com/shute2004/ChemMD",
+  "repo": "https://github.com/shute2004/ChemMD",
+  "docs": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/README.md",
+  "vendor": "shute2004",
+  "license": {
+    "kind": "source-available",
+    "spdx": null,
+    "text": "Source visible for inspection and evaluation; reuse requires written permission.",
+    "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/LICENSE"
+  },
+  "price": {
+    "text": "Not published",
+    "source": null
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/shute2004/ChemMD/releases"
+  },
+  "engine": {
+    "rendering": "Custom SVG renderer; HTML canvas rasterizes PNG exports",
+    "chemistry": "In-house graph parser, ring-skeletal rules and fixed-valence checks",
+    "ui": "Vanilla JavaScript DOM and SVG",
+    "source": "https://github.com/shute2004/ChemMD/tree/276840869dc1f054333fad0b34eff8ff585dfd3a/src"
+  },
+  "languages": [
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/chemmd.js#L36-L42",
+      "note": "Text creates single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/chemmd/f-bonds-core.webp",
+        "caption": "Structure with single, double, and triple bonds beside bond definitions."
+      }
+    },
+    "stereo-bonds": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/chemmd.js#L36-L42",
+      "note": "Wedge-like bond syntax rejected; no stereo control."
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/chemmd.js#L36-L42",
+      "note": "Dotted bond accepted; no dative control seen."
+    },
+    "double-bond-side": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/renderer.js#L68-L73",
+      "note": "Double bonds always use symmetric offsets; no side setting."
+    },
+    "rings": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Ring connectivity in text; no dedicated ring tool."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No template library or command visible."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/chemmd.js#L36-L42",
+      "note": "C+ label accepted; 13C atom syntax rejected."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/renderer.js",
+      "note": "Arrow-like bond syntax rejected; no arrow control."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/renderer.js",
+      "note": "Arrow-like syntax rejected; no curved-arrow control."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/main.js#L59-L64",
+      "note": "Auto arrange crosses ring bonds and rewrites formula.",
+      "engine": {
+        "library": "In-house (JavaScript automatic coordinate layout)",
+        "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/chemmd.js#L212-L248"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/renderer.js#L33-L53",
+      "note": "Colors follow fixed element classes; no individual color field."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/valence.js#L1-L27",
+      "note": "Warnings flag overbonded and underbonded atoms.",
+      "shot": {
+        "image": "evidence/chemmd/f-valence-check.webp",
+        "caption": "Warnings list atoms with fewer bonds than expected."
+      },
+      "engine": {
+        "library": "In-house (JavaScript fixed-valence and explicit-bond checks)",
+        "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/valence.js#L1-L27"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/chemmd.js#L172-L188",
+      "note": "Counts explicit atoms; no mass or implicit hydrogens.",
+      "shot": {
+        "image": "evidence/chemmd/f-formula-mass.webp",
+        "caption": "Formula C8N4O2 with atom and bond counts."
+      },
+      "engine": {
+        "library": "In-house (JavaScript explicit-atom formula calculation only; no mass calculation)",
+        "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/chemmd.js#L172-L188"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Pasting caffeine as a name produces an error."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure-to-name command visible."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/chemmd.js#L103-L110",
+      "note": "Repeat counts parse and display; component resolution and expansion are unimplemented."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D viewport or control visible."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/export-handler.js#L24-L40",
+      "note": "Pasted CDXML text rejected; no import control."
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/export-handler.js#L24-L40",
+      "note": "Exporter writes only ChemMD source, SVG and PNG."
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/export-handler.js#L24-L40",
+      "note": "Pasted MOL text rejected; no import or export control."
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/export-handler.js#L24-L40",
+      "note": "Pasted caffeine and paclitaxel SMILES rejected."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/README.md#features",
+      "note": "SVG button saved a vector file."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/export-handler.js#L24-L40",
+      "note": "Browser print previews entire page; no PDF export command."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/export-handler.js#L26-L37",
+      "note": "PNG saved at 1800 × 1240; no DPI control.",
+      "shot": {
+        "image": "evidence/chemmd/f-png-export.webp",
+        "caption": "PNG output showing a structure with labeled atoms and bonds."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Unreleased source-only editor requiring local Node.js setup; not runtime-tested.",
+    "All rights reserved; source reuse requires written permission.",
+    "Cross-file imports and component expansion are not implemented."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-09-10T09:02:44Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.1.0 (2768408)",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://github.com/shute2004/ChemMD",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": 229376,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "MOL connectivity transcribed; implicit hydrogens omitted and layout overlaps.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "MOL connectivity transcribed; stereochemistry omitted and layout overlaps.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No 3D view available.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemmd/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Native text format required; pasted SMILES and MOL were rejected.",
+      "Fixture images show MOL connectivity translated into ChemMD text, not direct imports.",
+      "The complex translation omits stereochemistry; both omit implicit hydrogens.",
+      "Automatic layouts overlap bonds; explicit-atom formula and valence warnings omit implicit hydrogens.",
+      "Git clone transfer size unavailable; matching downloaded source archive is 14,347 bytes."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/shute2004/ChemMD",
+    "https://github.com/shute2004/ChemMD/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p76",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/renderer.js#L1-L31",
+    "note": "Own chemistry parser, layout, valence checks, and SVG renderer."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ChemMD SVG bond and label renderer",
+    "language": "JavaScript",
+    "source": "https://github.com/shute2004/ChemMD/blob/276840869dc1f054333fad0b34eff8ff585dfd3a/src/renderer.js#L4-L54"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

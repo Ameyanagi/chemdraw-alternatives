@@ -1,0 +1,168 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Legend from '../components/Legend.astro';
+import Mark from '../components/Mark.astro';
+import Canvas from '../components/Canvas.astro';
+import Thumb from '../components/Thumb.astro';
+import { href } from '../lib/paths';
+import { downloadSize, featureEngine, featureOf, features, groups, installedSize, licenseShort, memoryUse, loadTools, mainLanguage, molecules, otherLanguages, platformNames, proofOf, reliesOn, rendererFeatures, rendererLabel, thirdPartyLibraries, thirdPartySummary, type Tool } from '../lib/tools';
+
+const tools = (await loadTools()).filter((tool) => tool.tier !== 'related');
+const starting = new Set(['chemdraw', 'reshiki', 'moldraw', 'octet-draw', 'chemdraft', 'ketcher', 'marvin-js']);
+const notPublished = 'Not published';
+const byName = [...tools].sort((a, b) => a.name.localeCompare(b.name));
+interface Fact { label: string; value: (tool: Tool) => string; source?: (tool: Tool) => string | null | undefined; detail?: (tool: Tool) => string | null | undefined }
+const sections: { title: string; rows: Fact[] }[] = [
+  {
+    title: 'How it is built',
+    rows: [
+      { label: 'Renderer', value: rendererLabel, source: (tool) => tool.renderer?.source },
+      { label: 'Main language', value: mainLanguage },
+      { label: 'Other languages', value: otherLanguages },
+      { label: 'Interface framework', value: (tool) => tool.engine.ui ?? notPublished, source: (tool) => tool.engine.source },
+    ],
+  },
+  {
+    title: 'Library behind each feature',
+    rows: rendererFeatures.map((id) => ({
+      label: features.find((feature) => feature.id === id)?.name ?? id,
+      value: (tool: Tool) => featureEngine(tool, id),
+      source: (tool: Tool) => featureOf(tool, id).engine?.source,
+    })),
+  },
+  {
+    title: 'Price, license, size and memory',
+    rows: [
+      { label: 'Runs on', value: (tool) => platformNames(tool).join(', ') || notPublished },
+      { label: 'Price', value: (tool) => tool.price.text, source: (tool) => tool.price.source },
+      { label: 'License', value: licenseShort, source: (tool) => tool.license.source },
+      { label: 'Third-party licenses', value: thirdPartySummary, source: (tool) => tool.thirdParty.source ?? tool.thirdParty.notice, detail: thirdPartyLibraries },
+      { label: 'Download size', value: downloadSize },
+      { label: 'Installed size', value: installedSize },
+      { label: 'Memory at idle', value: (tool) => memoryUse(tool, 'idleMb') },
+      { label: 'Memory with paclitaxel', value: (tool) => memoryUse(tool, 'paclitaxelMb') },
+    ],
+  },
+];
+---
+<Layout title="Compare features" description="Every feature, tool by tool, with evidence for each mark.">
+  <section class="page py-10">
+    <h1 class="text-5xl">Compare features</h1>
+    <p class="lede mt-4">Select a drawing or screenshot to enlarge it here, or a feature to see every tool that has it.</p>
+    <details class="mt-6">
+      <summary class="cursor-pointer font-semibold">Choose tools (<span id="tool-count">{starting.size}</span> of {tools.length} shown)</summary>
+      <fieldset class="mt-3 flex flex-wrap gap-2" id="tool-picker">
+        <legend class="sr-only">Tools shown in the table</legend>
+        {byName.map((tool) => <label class="chip"><input type="checkbox" value={tool.slug} checked={starting.has(tool.slug)} />{tool.name}</label>)}
+      </fieldset>
+    </details>
+    <label class="mt-4 flex items-center gap-2"><input type="checkbox" id="differences" /> Show only rows where the chosen tools differ</label>
+    <div class="mt-4"><Legend /></div>
+  </section>
+  <section class="page">
+    <div class="table-wrap max-h-[80vh] overflow-y-auto" tabindex="0" role="region" aria-label="Feature comparison table">
+      <table class="data-table" id="matrix">
+        <thead>
+          <tr>
+            <th scope="col" class="sticky left-0 z-20 min-w-36 md:min-w-56">Feature</th>
+            {tools.map((tool) => <th scope="col" class="min-w-40 align-top" data-tool={tool.slug}><a class="no-underline" href={href(`tools/${tool.slug}/`)}>{tool.name}</a></th>)}
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="bg-paper sticky left-0 z-[5] font-semibold">Relies on</th>
+            {tools.map((tool) => (
+              <td class="min-w-40 text-[0.9rem]" data-tool={tool.slug}>
+                {tool.builtOn?.source?.startsWith('http') ? <a href={tool.builtOn.source}>{reliesOn(tool)}</a> : reliesOn(tool)}
+                {tool.builtOn?.note && <span class="cell-note">{tool.builtOn.note}</span>}
+              </td>
+            ))}
+          </tr>
+        </tbody>
+        <tbody>
+          <tr><th colspan={tools.length + 1} scope="colgroup" class="bg-paper text-lg"><span class="group-title">Main canvas and default drawings</span></th></tr>
+          {(['light', 'dark'] as const).map((mode) => (
+            <tr>
+              <th scope="row" class="bg-paper sticky left-0 z-[5] font-normal">Main canvas, {mode} mode</th>
+              {tools.map((tool) => <td data-tool={tool.slug}><Canvas class="h-24 w-36" tool={tool} mode={mode} /></td>)}
+            </tr>
+          ))}
+          {molecules.map((molecule) => (
+            <tr>
+              <th scope="row" class="bg-paper sticky left-0 z-[5] font-normal">{molecule.label}</th>
+              {tools.map((tool) => <td data-tool={tool.slug}><Thumb class="h-24 w-36" tool={tool} fixture={molecule.id} /></td>)}
+            </tr>
+          ))}
+        </tbody>
+        {sections.map((section) => (
+          <tbody>
+            <tr><th colspan={tools.length + 1} scope="colgroup" class="bg-paper text-lg"><span class="group-title">{section.title}</span></th></tr>
+            {section.rows.map((row) => (
+              <tr>
+                <th scope="row" class="bg-paper sticky left-0 z-[5] font-normal">{row.label}</th>
+                {tools.map((tool) => {
+                  const source = row.source?.(tool);
+                  const detail = row.detail?.(tool);
+                  return (
+                    <td class="min-w-40 text-[0.9rem]" data-tool={tool.slug}>
+                      {source?.startsWith('http') ? <a href={source}>{row.value(tool)}</a> : row.value(tool)}
+                      {detail && <span class="cell-note">{detail}</span>}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        ))}
+        {groups.map((group) => (
+          <tbody>
+            <tr><th colspan={tools.length + 1} scope="colgroup" class="bg-paper text-lg"><span class="group-title">{group.name}</span></th></tr>
+            {features.filter((feature) => feature.group === group.id).map((feature) => (
+              <tr data-row>
+                <th scope="row" class="bg-paper sticky left-0 z-[5] font-normal" title={feature.test}><a href={href(`features/${feature.id}/`)}>{feature.name}</a></th>
+                {tools.map((tool) => {
+                  const value = featureOf(tool, feature.id);
+                  return <td data-tool={tool.slug} data-value={value.status}><Mark feature={value} proof={proofOf(tool, feature.id)} reason thumb /></td>;
+                })}
+              </tr>
+            ))}
+          </tbody>
+        ))}
+      </table>
+    </div>
+  </section>
+</Layout>
+<style id="matrix-columns" is:inline></style>
+<style is:global>
+  #matrix [data-tool='chemdraw'], #matrix [data-tool='reshiki'] { background: color-mix(in srgb, var(--color-nitrogen) 5%, var(--color-paper)); }
+  #matrix thead [data-tool='chemdraw'], #matrix thead [data-tool='reshiki'] { background: color-mix(in srgb, var(--color-nitrogen) 12%, var(--color-silica)); }
+</style>
+<script>
+  const picker = document.querySelector<HTMLElement>('#tool-picker');
+  const differences = document.querySelector<HTMLInputElement>('#differences');
+  const columns = document.querySelector<HTMLStyleElement>('#matrix-columns');
+  const rows = [...document.querySelectorAll<HTMLElement>('[data-row]')];
+
+  function apply() {
+    const chosen = [...(picker?.querySelectorAll<HTMLInputElement>('input:checked') ?? [])].map((input) => input.value);
+    if (columns) {
+      const visible = chosen.map((slug) => `#matrix [data-tool="${slug}"]{display:table-cell}`).join('');
+      columns.textContent = `#matrix [data-tool]{display:none}${visible}`;
+    }
+    for (const row of rows) {
+      const values = chosen.map((slug) => row.querySelector<HTMLElement>(`[data-tool="${slug}"]`)?.dataset.value);
+      row.hidden = Boolean(differences?.checked) && new Set(values).size <= 1;
+    }
+    const count = document.querySelector('#tool-count');
+    if (count) count.textContent = String(chosen.length);
+    const url = new URL(location.href);
+    url.searchParams.set('tools', chosen.join(','));
+    history.replaceState(null, '', url);
+  }
+
+  const fromUrl = new URLSearchParams(location.search).get('tools')?.split(',');
+  if (fromUrl) picker?.querySelectorAll<HTMLInputElement>('input').forEach((input) => { input.checked = fromUrl.includes(input.value); });
+  picker?.addEventListener('change', apply);
+  differences?.addEventListener('change', apply);
+  apply();
+</script>

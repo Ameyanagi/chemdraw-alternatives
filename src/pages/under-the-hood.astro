@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Mark from '../components/Mark.astro';
+import { href } from '../lib/paths';
+import { downloadSize, featureOf, installedSize, loadTools, memoryUse, mainLanguage, otherLanguages, portedLabel, proofOf, reliesOn, testedVersion, type Tool } from '../lib/tools';
+
+const tools = (await loadTools()).filter((tool) => tool.tier !== 'related');
+const notPublished = 'Not published';
+const startup = (tool: Tool) => {
+  const ms = tool.perf?.launchMs ?? tool.perf?.loadMs;
+  return ms ? `${(ms / 1000).toFixed(1)} s` : 'Not measured';
+};
+const apis = [['python-api', 'Python'], ['ts-api', 'JS or TS'], ['cli', 'CLI'], ['mcp-agents', 'AI agents']];
+const embedding = [['embed', 'Embed in your own app'], ['plugins', 'Plugins'], ['office', 'Editable in Office']];
+const unknown = tools.filter((tool) => reliesOn(tool) === 'Not established').length;
+const users = new Map<string, { tool: Tool; ported: boolean }[]>();
+for (const tool of tools) {
+  const linked = new Set([tool.builtOn?.editor, ...(tool.builtOn?.libraries ?? [])].filter((name): name is string => Boolean(name)));
+  for (const name of linked) users.set(name, [...(users.get(name) ?? []), { tool, ported: false }]);
+  for (const name of tool.builtOn?.ported ?? []) users.set(name, [...(users.get(name) ?? []), { tool, ported: true }]);
+}
+const shared = [...users].filter(([, list]) => list.length > 1).sort((a, b) => b[1].length - a[1].length);
+const views = [['built', 'Built with'], ['size', 'Size and speed'], ['api', 'APIs'], ['embed', 'Embedding']];
+---
+<Layout title="Under the hood" description="Drawing engines, languages, download sizes, installed sizes, startup times and APIs for each tool.">
+  <section class="page py-10">
+    <h1 class="text-5xl">Under the hood</h1>
+    <p class="lede mt-4">What each tool is built on, how big it is, and how you can script it. Sizes come from the file we downloaded and from the installed folder. <a href={href('how-we-test/#performance')}>How we measure speed</a>.</p>
+  </section>
+  <section class="page mb-12">
+    <h2 class="text-3xl">What these tools rely on</h2>
+    <p class="mt-3 max-w-[66ch]">Many tools share the same few projects. Open one to see who relies on it. We could not establish this for {unknown} of the {tools.length} tools, mostly closed products.</p>
+    <ul class="mt-4 max-w-3xl">
+      {shared.map(([name, list]) => (
+        <li class="border-line border-b py-1.5">
+          <details>
+            <summary class="cursor-pointer">{name}, {list.length} tools rely on it</summary>
+            <p class="text-muted mt-1 text-[0.95rem]">{list.map(({ tool, ported }, index) => <>{index > 0 && ', '}<a href={href(`tools/${tool.slug}/`)}>{tool.name}</a>{ported && ' (ported, not linked)'}</>)}</p>
+          </details>
+        </li>
+      ))}
+    </ul>
+  </section>
+  <section class="page">
+    <fieldset class="mb-4 flex flex-wrap gap-2" id="views">
+      <legend class="sr-only">Choose what the table shows</legend>
+      {views.map(([id, label], index) => <label class="chip"><input type="radio" name="view" value={id} checked={index === 0} />{label}</label>)}
+    </fieldset>
+    <div class="table-wrap max-h-[85vh] overflow-y-auto" tabindex="0" role="region" aria-label="Technical comparison table">
+      <table class="data-table" id="hood" data-show="built">
+        <thead>
+          <tr>
+            <th scope="col" class="sticky left-0 z-20">Tool</th>
+            <th scope="col">Version</th>
+            <th scope="col" data-in="built">Relies on</th><th scope="col" data-in="built">Main language</th><th scope="col" data-in="built">Other languages</th><th scope="col" data-in="built">Draws with</th>
+            <th scope="col" data-in="size">Download</th><th scope="col" data-in="size">Installed</th><th scope="col" data-in="size">Startup</th><th scope="col" data-in="size">Memory at idle</th><th scope="col" data-in="size">Memory with paclitaxel</th>
+            {apis.map(([, label]) => <th scope="col" data-in="api">{label}</th>)}
+            {embedding.map(([, label]) => <th scope="col" data-in="embed">{label}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {tools.map((tool) => (
+            <tr>
+              <th scope="row" class="bg-paper sticky left-0 z-[5] whitespace-nowrap"><a class="no-underline" href={href(`tools/${tool.slug}/`)}>{tool.name}</a></th>
+              <td>{testedVersion(tool) ?? notPublished}</td>
+              <td class="min-w-44" data-in="built">{reliesOn(tool)}{portedLabel(tool) && <span class="cell-note">{portedLabel(tool)}</span>}</td>
+              <td class="min-w-28" data-in="built">{mainLanguage(tool)}</td>
+              <td class="min-w-36" data-in="built">{otherLanguages(tool)}</td>
+              <td class="min-w-44" data-in="built">{tool.engine.rendering ?? notPublished}</td>
+              <td class="whitespace-nowrap" data-in="size">{downloadSize(tool)}</td>
+              <td class="whitespace-nowrap" data-in="size">{installedSize(tool)}</td>
+              <td class="whitespace-nowrap" data-in="size">{startup(tool)}</td>
+              <td class="min-w-32" data-in="size">{memoryUse(tool, 'idleMb')}</td>
+              <td class="min-w-32" data-in="size">{memoryUse(tool, 'paclitaxelMb')}</td>
+              {apis.map(([id]) => <td data-in="api"><Mark feature={featureOf(tool, id)} proof={proofOf(tool, id)} reason thumb /></td>)}
+              {embedding.map(([id]) => <td data-in="embed"><Mark feature={featureOf(tool, id)} proof={proofOf(tool, id)} reason thumb /></td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Layout>
+<style is:global>
+  #hood[data-show='built'] [data-in]:not([data-in='built']),
+  #hood[data-show='size'] [data-in]:not([data-in='size']),
+  #hood[data-show='api'] [data-in]:not([data-in='api']),
+  #hood[data-show='embed'] [data-in]:not([data-in='embed']) { display: none; }
+</style>
+<script>
+  const table = document.querySelector<HTMLElement>('#hood');
+  document.querySelector('#views')?.addEventListener('change', (event) => {
+    if (table && event.target instanceof HTMLInputElement) table.dataset.show = event.target.value;
+  });
+</script>

@@ -1,0 +1,537 @@
+{
+  "id": "p108",
+  "slug": "jmoldraw",
+  "name": "JMolDraw",
+  "rank": 57,
+  "tier": "alternative",
+  "tierReason": "The standalone editor supports chemical structure drawing, rich-text captions and vector SVG export.",
+  "summary": "A Java application for drawing and editing two-dimensional chemical structures.",
+  "website": "https://sourceforge.net/projects/jmoldraw/",
+  "repo": "https://sourceforge.net/p/jmoldraw/code/",
+  "docs": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+  "vendor": "Thomas A. Seidel",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0-or-later",
+    "text": "GNU GPL version 2 or later.",
+    "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://sourceforge.net/projects/jmoldraw/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "0.6alpha",
+    "date": "2006-10-02",
+    "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/"
+  },
+  "engine": {
+    "rendering": "Java2D Graphics2D; Apache Batik for SVG; Java ImageIO for PNG/JPEG",
+    "chemistry": "In-house JMD molecule model and chemistry algorithms",
+    "ui": "Java Swing",
+    "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Drew single bond; repeated clicks changed it to double and triple.",
+      "shot": {
+        "image": "evidence/jmoldraw/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Filled wedges drawn; imported hashes render; wavy drawing unverified.",
+      "shot": {
+        "image": "evidence/jmoldraw/f-stereo-bonds.webp",
+        "caption": "A molecular structure with solid and hashed wedge bonds."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "JMDBondDrawingToolBase cycles double bonds through left, centered and right."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Placed benzene; toolbar also exposes three- through eight-membered rings.",
+      "shot": {
+        "image": "evidence/jmoldraw/f-rings.webp",
+        "caption": "Ring tool buttons and a benzene ring on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Dragging chain tool produced one bond; longer chain creation unverified."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Opened Bases palette and placed adenine from the library."
+    },
+    "custom-templates": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Save MOL/JME, then register it by editing template configuration."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Atom dialogs set arbitrary symbols, charges and isotope numbers."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Singlet, doublet and triplet radicals have editable atom settings."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Lasso selection, rotation, flipping and resize handles are implemented.",
+      "shot": {
+        "image": "evidence/jmoldraw/f-selection-tools.webp",
+        "caption": "A selected bond surrounded by square handles."
+      }
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Rotate 3D transforms drawings around X and Y axes."
+    },
+    "reaction-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No reaction-arrow command found in inspected menus and toolbars."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No curved-arrow command found in inspected menus and toolbars."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "JMDTextEditDialog supports fonts, superscripts and subscripts."
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "JMDColorEditDialogComponent applies foreground colors to selected objects."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "JMDImageFilter.read returns an empty document instead of importing images."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Bond edits trigger a Valence Warning with undo/reduction choices.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass command found in menus or molecule dialog."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name conversion command found in inspected menus or dialogs."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in inspected menus or molecule dialog."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Query Atom editor supports atom lists and Beilstein generic groups."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Cholesterol SDF opened as flat drawing with overlapping hydrogen labels."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "Absent from Open and Save As format lists."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "MOL and first SDF structure import worked; writing remained unverified.",
+      "shot": {
+        "image": "evidence/jmoldraw/f-mol-sdf.webp",
+        "caption": "A structure displayed from simple.mol."
+      },
+      "engine": {
+        "library": "In-house",
+        "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download"
+      }
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Opening simple.smi failed: Cannot read field x because vec2 is null."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "JMDSVGExportFilter generates vector SVG using Apache Batik."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF format or print command found in File menu."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "PNG export uses drawing pixel bounds without a DPI setting."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "applet.txt documents JavaScript control through a legacy Java applet."
+    },
+    "cli": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "main ignores arguments and always opens the GUI."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+      "note": "Applet integration opens a separate window instead of an inline editor."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Latest listed release is 0.6alpha from 2006-10-02; current Java compatibility was not tested.",
+    "MOL/JME saving omits free-text captions; SVG is export-only.",
+    "Browser integration uses a legacy Java applet and opens its own window."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "V0.5",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "jar",
+    "artifact": "JMolDraw-0.6alpha.bin.tar.gz",
+    "ran": true,
+    "failure": "Native image export and structure saving could not be completed: filename entry was inaccessible through computer-use automation.",
+    "downloadBytes": 1186927,
+    "installedBytes": 163483648,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "MOL rendered; screenshot crop saved; native export and structure saving unverified.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "MOL rendered; screenshot crop saved; native export and structure saving unverified.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/jmoldraw/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Archive is 0.6alpha; the unchanged application About box reports V0.5.",
+      "Default drawings use thin black bonds and black atom labels.",
+      "Paclitaxel retains visible filled wedges and hashed bonds from MOL.",
+      "Cholesterol SDF projection has overlapping explicit hydrogen labels.",
+      "Export PNGs are screenshot crops; native exports and MOL writing were unverified."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 1186927,
+  "references": [
+    "https://sourceforge.net/projects/jmoldraw/"
+  ],
+  "builtOn": {
+    "id": "p108",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download",
+    "note": "Own molecular canvas and chemistry; Apache Batik provides general SVG export."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "JMolDraw JMD molecular views",
+    "language": "Java",
+    "source": "https://sourceforge.net/projects/jmoldraw/files/jmoldraw/source/JMolDraw-0.6alpha.src.tar.gz/download"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "HTML embeds the applet; XML configures the build.",
+  "thirdParty": {
+    "summary": "Includes Apache-1.1 (Batik 1.5.1) and permissive W3C API licenses; redistribution requires notices and attribution.",
+    "source": "https://archive.apache.org/dist/xml/batik/batik-1.5.1.zip",
+    "notice": null,
+    "libraries": []
+  }
+}

@@ -1,0 +1,493 @@
+{
+  "id": "p82",
+  "slug": "chem-molecular-structure-editor",
+  "name": "Chem+ Molecular Structure Editor",
+  "rank": 110,
+  "tier": "alternative",
+  "tierReason": "Official tutorials describe composing 2D structures into publication figures and exporting SVG, although live functionality remains unverified.",
+  "summary": "A browser-based molecular drawing editor within Chem+ for creating structures and exporting publication figures.",
+  "website": "https://chemplus.com.tr/",
+  "repo": null,
+  "docs": "https://chemplus.com.tr/blog/building-your-first-figure",
+  "vendor": "Chem+",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Commercial hosted access through the Chem+ Pro subscription.",
+    "source": "https://chemplus.com.tr/blog/choosing-the-right-chemplus-plan"
+  },
+  "price": {
+    "text": "2026-11-05: Pro ₺149/month promotional price; list price ₺499/month.",
+    "source": "https://chemplus.com.tr/enterprise"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": null,
+    "source": null
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: single, double and triple bonds."
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: wedge/dash; wavy bonds undocumented."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: common ring templates, including benzene."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: charges; isotopes and arbitrary labels undocumented."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: lone pairs."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/building-your-first-figure",
+      "note": "Pro; vendor claim; grouping uses Chem+ Canvas."
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim; compound search by name loads structures.",
+      "engine": {
+        "library": "PubChem (remote name-to-structure lookup)",
+        "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/",
+      "note": "Pro; vendor claim: structure-to-IUPAC-name conversion."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: PubChem-backed compound search.",
+      "engine": {
+        "library": "PubChem (remote database lookup)",
+        "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/building-your-first-figure",
+      "note": "Pro; vendor claim; structures open in separate Miew 3D module.",
+      "engine": {
+        "library": "Miew (JavaScript/WebGL, separate browser module)",
+        "source": "https://chemplus.com.tr/blog/see-molecules-in-3d-with-miew"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: MOL/SDF export; import undocumented.",
+      "engine": {
+        "library": "Ketcher (TypeScript MOL V2000 serializer); Indigo (browser WebAssembly MOL V3000 conversion); SDF implementation unconfirmed",
+        "source": "https://chemplus.com.tr/_next/static/immutable/chunks/37wbi0-qe8t7r.js"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: SMILES export; import undocumented.",
+      "engine": {
+        "library": "Indigo (browser WebAssembly through Ketcher standalone)",
+        "source": "https://chemplus.com.tr/_next/static/immutable/chunks/0u8kn_o1l1gtz.js"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: InChI export.",
+      "engine": {
+        "library": "Indigo (browser WebAssembly through Ketcher standalone)",
+        "source": "https://chemplus.com.tr/_next/static/immutable/chunks/0u8kn_o1l1gtz.js"
+      }
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: scalable SVG export."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus",
+      "note": "Pro; vendor claim: high-resolution PNG; 300 dpi unspecified."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Login-gated editor; live drawing and exports could not be independently verified.",
+    "Advertised as a paid Pro module; public free-tier descriptions conflict.",
+    "No public source repository or numbered editor release was identified."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://chemplus.com.tr/dashboard/chemdraw",
+    "https://chemplus.com.tr/blog/chemdraw-launches-in-chemplus"
+  ],
+  "builtOn": {
+    "id": "p82",
+    "relation": null,
+    "editor": null,
+    "libraries": null,
+    "source": null,
+    "note": "Public vendor documentation does not identify the editor or chemistry libraries."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher Raphaël renderer; Indigo image exports",
+    "language": "TypeScript",
+    "source": "https://chemplus.com.tr/_next/static/immutable/chunks/37wbi0-qe8t7r.js"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "React interface and Raphaël runtime"
+    },
+    {
+      "language": "C++",
+      "role": "Indigo chemistry and export WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

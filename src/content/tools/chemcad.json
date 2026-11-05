@@ -1,0 +1,531 @@
+{
+  "id": "p80",
+  "slug": "chemcad",
+  "name": "ChemCAD",
+  "rank": 104,
+  "tier": "alternative",
+  "tierReason": "Its standalone 2D editor saves editable molecular projects and exports vector SVG drawings, although figure composition is limited.",
+  "summary": "A desktop application for sketching chemical structures, translating names, planning reactions and exploring solvent workflows.",
+  "website": "https://github.com/CharlesEdmonds/chem-cad",
+  "repo": "https://github.com/CharlesEdmonds/chem-cad",
+  "docs": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md",
+  "vendor": "Charles Edmonds",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT-licensed; bundled dependencies retain their own licenses.",
+    "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/LICENSE"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/CharlesEdmonds/chem-cad/releases"
+  },
+  "engine": {
+    "rendering": "Custom Dear ImGui ImDrawList drawing via OpenGL; RDKit MolDraw2DSVG for SVG; framebuffer capture for PNG",
+    "chemistry": "RDKit; OPSIN for name-to-structure parsing",
+    "ui": "Dear ImGui docking with GLFW",
+    "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/app/main.cpp"
+  },
+  "languages": [
+    "C++",
+    "GLSL"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#sketching",
+      "note": "Draw, cycle or keyboard-set single, double and triple bonds."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/tool_palette.cpp#L67-L72",
+      "note": "Solid wedge, hashed wedge and wavy bonds."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/tool_palette.cpp#L79-L89",
+      "note": "Three-to-eight-member rings, benzene, cyclopentadiene and naphthalene."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/canvas_input.cpp#L575-L593",
+      "note": "Dragging sets the zig-zag chain length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/tool_palette.cpp#L79-L89",
+      "note": "Includes a fused naphthalene template."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/canvas_input.cpp#L443-L479",
+      "note": "Elements and charges editable; canvas controls do not set isotopes."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#sketching",
+      "note": "Keys change hovered elements, bond orders and wedge/hash stereo."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/canvas_input.cpp#L386-L441",
+      "note": "Rectangular selection and movement; no lasso, rotation, flip or resize."
+    },
+    "perspective": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/viewer3d_view.cpp#L224-L246",
+      "note": "Flat sketch tilts in preview; editable canvas remains two-dimensional."
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/app/project_io.cpp#L120-L123",
+      "note": "Project stores planner starting materials and target as SMILES."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/viewer3d_view.cpp#L704-L747",
+      "note": "Interactive orbital preview, rather than placeable drawing objects."
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#sketching",
+      "note": "Clean Up Structure recomputes coordinates using CoordGen.",
+      "engine": {
+        "library": "RDKit (native C++ RDDepict::compute2DCoords with CoordGen preferred)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/chem/bridge.cpp#L279-L294"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/properties_panel.cpp#L108-L131",
+      "note": "RDKit sanitization errors appear in the properties panel.",
+      "engine": {
+        "library": "RDKit (native C++ MolOps::sanitizeMol and AtomValenceException)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/chem/bridge.cpp#L181-L201"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#what-it-is",
+      "note": "Formula and exact molecular mass computed through RDKit.",
+      "engine": {
+        "library": "RDKit (native C++ Descriptors::calcMolFormula and calcExactMW)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/chem/bridge.cpp#L330-L345"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#what-it-is",
+      "note": "Computes Crippen cLogP through RDKit.",
+      "engine": {
+        "library": "RDKit (native C++ Descriptors::calcCrippenDescriptors, cLogP)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/chem/bridge.cpp#L330-L345"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#naming",
+      "note": "Local OPSIN with PubChem fallback; results cached.",
+      "engine": {
+        "library": "OPSIN (optional local Java CLI JAR); PubChem PUG REST (remote server fallback); RDKit (native C++ SMILES parsing/layout)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/naming/naming.cpp#L309-L331"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/naming/naming.cpp#L334-L350",
+      "note": "PubChem IUPAC lookup only; unmatched structures return not found.",
+      "engine": {
+        "library": "PubChem PUG REST (remote server, SMILES-to-IUPACName lookup)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/naming/naming.cpp#L293-L305"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#naming",
+      "note": "Fetches structures from PubChem when resolving chemical names.",
+      "engine": {
+        "library": "PubChem PUG REST (remote server, name-to-SMILES lookup through C++ libcurl)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/naming/naming.cpp#L269-L290"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/viewer3d_view.cpp#L638-L701",
+      "note": "Rotatable structure preview; omitted from README interface table.",
+      "engine": {
+        "library": "In-house (C++ ImDrawList rotatable molecule viewer); RDKit (native C++ ETKDGv3 embedding and MMFF94 optimization)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/viewer3d_view.cpp#L330-L438"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/app/main.cpp#L229-L248",
+      "note": "MOL read/write; SDF import uses a single MolBlock parser.",
+      "engine": {
+        "library": "RDKit (native C++ MolBlockToMol/MolToMolBlock, MOL import/export; no SDF writer)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/chem/bridge.cpp#L256-L276"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#sketching",
+      "note": "Canonical SMILES copy and editable structure paste.",
+      "engine": {
+        "library": "RDKit (native C++ SmilesToMol parser and MolToSmiles writer)",
+        "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/chem/bridge.cpp#L219-L253"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/app/main.cpp#L221-L227",
+      "note": "RDKit vector export; omitted from README I/O summary."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/app/main.cpp#L745-L756",
+      "note": "Captures display pixels; no independent print-resolution rendering."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#adding-reactions",
+      "note": "Data-only extension mechanism: add reaction templates as JSON."
+    },
+    "embed": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#L29-L31",
+      "note": "ImGui hosting stated; integration procedure is not documented."
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/reaction_planner.cpp",
+      "note": "Optional API-key route planner; proposed products can enter editable canvas."
+    }
+  },
+  "caveats": [
+    "No tagged releases or prebuilt installers; documented builds target Linux and Windows.",
+    "Documents store molecules, without a general figure or page composition model.",
+    "PNG captures the screen canvas; SVG uses a separate RDKit depiction."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-08-25T17:45:51Z",
+    "archived": false
+  },
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/CharlesEdmonds/chem-cad"
+  ],
+  "builtOn": {
+    "id": "p80",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "CoordGen",
+      "OPSIN"
+    ],
+    "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/canvas_render.cpp#L443-L465",
+    "note": "Custom ImGui canvas; RDKit chemistry, CoordGen layout, OPSIN name parsing."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ChemCAD bond and label renderer",
+    "language": "C++",
+    "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/src/ui/canvas_render.cpp#L222-L366"
+  },
+  "otherLanguages": [
+    {
+      "language": "GLSL",
+      "role": "Fluid rendering and compute shaders"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "CMake, PowerShell, Shell and Batchfile only build or install dependencies.",
+  "thirdParty": {
+    "summary": "Includes Cairo (LGPL-2.1 or MPL-1.1, Windows), OFL-1.1 fonts, and MIT/BSD/zlib libraries; CHEM21 ratings' source article is CC-BY-NC-3.0.",
+    "source": "https://github.com/CharlesEdmonds/chem-cad/blob/ead4420a62fdc34a9b17f0b47d51f66e8a65c90d/README.md#license",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "CoordGen",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/schrodinger/coordgenlibs/blob/master/LICENSE"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      }
+    ]
+  }
+}

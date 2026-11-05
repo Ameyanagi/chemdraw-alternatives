@@ -1,0 +1,132 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Legend from '../../components/Legend.astro';
+import Mark from '../../components/Mark.astro';
+import Canvas from '../../components/Canvas.astro';
+import Thumb from '../../components/Thumb.astro';
+import { href } from '../../lib/paths';
+import { coverage, featureOf, features, formatBytes, groups, isTested, licenseNames, loadTools, mainLanguage, molecules, otherLanguages, platformNames, portedLabel, proofOf, reliesOn, rendererLabel, shotZoom, testedVersion, thirdPartySummary, type Tool } from '../../lib/tools';
+
+export async function getStaticPaths() {
+  const tools = await loadTools();
+  return tools.map((tool) => ({ params: { slug: tool.slug }, props: { tool } }));
+}
+
+const { tool } = Astro.props as { tool: Tool };
+const links = [['Website', tool.website], ['Manual', tool.docs], ['Source code', tool.repo]].filter(([, url]) => url);
+const facts: [string, string | null | undefined][] = [
+  ['Latest version', tool.version.name],
+  ['Version we tested', isTested(tool) ? testedVersion(tool) : null],
+  ['Runs on', platformNames(tool).join(', ')],
+  ['License', tool.license.text],
+  ['Price', tool.price.text],
+  ['Relies on', [reliesOn(tool), portedLabel(tool), tool.builtOn?.note].filter(Boolean).join('. ')],
+  ['Draws with', tool.engine.rendering],
+  ['Chemistry from', tool.engine.chemistry],
+  ['Interface', tool.engine.ui],
+  ['Main language', mainLanguage(tool)],
+  ['Other languages', otherLanguages(tool)],
+  ['Renderer', rendererLabel(tool)],
+  ['Third-party licenses', thirdPartySummary(tool)],
+  ['Download', tool.downloadBytes ? formatBytes(tool.downloadBytes) : null],
+  ['Installed', tool.hands?.installedBytes ? formatBytes(tool.hands.installedBytes) : null],
+];
+const shots = features.flatMap((feature) => {
+  const shot = featureOf(tool, feature.id).shot;
+  return shot ? [{ feature, shot }] : [];
+});
+const sourceLabel = (source: string) => (source.startsWith('help:') ? 'Built-in help' : new URL(source).hostname.replace(/^www\./, ''));
+---
+<Layout title={tool.name} description={tool.summary}>
+  <section class="page py-10">
+    <h1 class="text-5xl">{tool.name}</h1>
+    <p class="lede mt-3">{tool.summary}</p>
+    <p class="mt-4 flex flex-wrap gap-x-5">{links.map(([label, url]) => <a href={url ?? undefined}>{label}</a>)}</p>
+    <p class="text-muted mt-3">{licenseNames[tool.license.kind]}. {coverage(tool)} of {features.length} checklist features confirmed.</p>
+  </section>
+
+  {tool.tier !== 'related' && (
+    <section class="page">
+      <h2 class="text-3xl">Main canvas</h2>
+      <div class="mt-4 grid gap-4 md:grid-cols-2">
+        {(['light', 'dark'] as const).map((mode) => (
+          <figure>
+            <Canvas class="border-line aspect-[16/10] w-full border" tool={tool} mode={mode} />
+            <figcaption class="text-muted mt-1 text-[0.95rem] capitalize">{mode} mode</figcaption>
+          </figure>
+        ))}
+      </div>
+      {tool.hands?.themes?.note && <p class="text-muted mt-2 text-[0.95rem]">{tool.hands.themes.note}</p>}
+      <h2 class="mt-14 text-3xl">Default drawings</h2>
+      {tool.hands?.failure && <p class="text-muted mt-2">We could not finish testing this tool: {tool.hands.failure}</p>}
+      <div class="wall mt-4 md:grid-cols-3 xl:grid-cols-3">
+        {molecules.map((molecule) => (
+          <div class="bg-paper flex flex-col p-3">
+            <Thumb class="aspect-[4/3]" tool={tool} fixture={molecule.id} />
+            <p class="mt-2 font-semibold">{molecule.label}</p>
+          </div>
+        ))}
+      </div>
+      {tool.hands && tool.hands.observations.length > 0 && (
+        <ul class="mt-4 max-w-[66ch] list-disc pl-5">{tool.hands.observations.map((item) => <li>{item}</li>)}</ul>
+      )}
+    </section>
+  )}
+
+  <section class="page mt-14">
+    <h2 class="text-3xl">Facts</h2>
+    <dl class="mt-4 grid max-w-3xl grid-cols-[minmax(0,12rem)_1fr] gap-x-4">
+      {facts.filter(([, value]) => value).map(([label, value]) => (
+        <>
+          <dt class="border-line text-muted border-b py-1.5">{label}</dt>
+          <dd class="border-line border-b py-1.5">{value}</dd>
+        </>
+      ))}
+    </dl>
+    {tool.caveats.length > 0 && <ul class="mt-5 max-w-[66ch] list-disc pl-5">{tool.caveats.map((item) => <li>{item}</li>)}</ul>}
+    {tool.tierReason && tool.tier === 'related' && <p class="mt-5 max-w-[66ch]">{tool.tierReason}</p>}
+  </section>
+
+  {shots.length > 0 && (
+    <section class="page mt-14">
+      <h2 class="text-3xl">In use</h2>
+      <p class="text-muted mt-1 mb-4">Screenshots from our test of this version.</p>
+      <div class="wall">
+        {shots.map(({ feature, shot }) => (
+          <a class="bg-paper hover:bg-silica flex flex-col p-3 no-underline" href={href(`shots/${tool.slug}/${feature.id}/`)} {...shotZoom(tool, feature.id)}>
+            <div class="aspect-[4/3] overflow-hidden"><img class="size-full object-contain" src={href(shot.image)} loading="lazy" decoding="async" alt={shot.caption} /></div>
+            <p class="mt-2 font-semibold">{feature.name}</p>
+            <p class="text-muted text-[0.9rem]">{shot.caption}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {tool.tier !== 'related' && (
+    <section class="page mt-14">
+      <h2 class="text-3xl">Features</h2>
+      <div class="mt-3"><Legend /></div>
+      {groups.map((group) => (
+        <div class="mt-8">
+          <h3 class="text-xl tracking-normal">{group.name}</h3>
+          <ul class="mt-2 max-w-4xl">
+            {features.filter((feature) => feature.group === group.id).map((feature) => {
+              const value = featureOf(tool, feature.id);
+              return (
+                <li class="border-line grid grid-cols-[1.5rem_1fr] gap-x-1 border-b py-1.5 md:grid-cols-[1.5rem_18rem_1fr]">
+                  <span><Mark feature={value} proof={proofOf(tool, feature.id)} /></span>
+                  <span><a href={href(`features/${feature.id}/`)}>{feature.name}</a></span>
+                  <span class="text-muted col-start-2 text-[0.95rem] md:col-start-3">
+                    {value.note}
+                    {value.source?.startsWith('help:') ? <span> ({sourceLabel(value.source)})</span> : value.source ? <a class="ml-1" href={value.source}>{sourceLabel(value.source)}</a> : null}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ))}
+    </section>
+  )}
+</Layout>

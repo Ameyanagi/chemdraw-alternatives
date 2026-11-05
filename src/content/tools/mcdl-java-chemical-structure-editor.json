@@ -1,0 +1,478 @@
+{
+  "id": "p110",
+  "slug": "mcdl-java-chemical-structure-editor",
+  "name": "MCDL Java Chemical Structure Editor",
+  "rank": 122,
+  "tier": "embeddable",
+  "tierReason": "It is a molecular structure input applet with JavaScript embedding examples, rather than a publication document editor.",
+  "summary": "A Java applet for drawing and editing molecular structures encoded in Modular Chemical Descriptor Language.",
+  "website": "https://sourceforge.net/projects/mcdl/",
+  "repo": null,
+  "docs": "https://link.springer.com/article/10.1186/1758-2946-3-5",
+  "vendor": "Sergei V. Trepalin and Alexander V. Yarkov",
+  "license": {
+    "kind": "open-source",
+    "spdx": null,
+    "text": "Public-domain source code and executables.",
+    "source": "https://sourceforge.net/projects/mcdl/"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://sourceforge.net/projects/mcdl/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": "2007-07-01",
+    "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/"
+  },
+  "engine": {
+    "rendering": "Custom DrawMolecule renderer using Java AWT Graphics; companion converter renders BufferedImage images to GIF.",
+    "chemistry": "In-house molecule package, including MCDL, BondAlternate, TemplateRedraw and ProcessStereo.",
+    "ui": "Java AWT editor; Swing companion converter.",
+    "source": "https://sourceforge.net/projects/mcdl/files/MCDL%20to%20GIF%20convertor/Application%20and%20Source%20codes/Source.zip/download"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
+      "note": "CommonPanel.java provides single, double and triple bond toolbar tools."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
+      "note": "DrawMolecule.java draws solid wedges, hashed wedges and spring-style wavy bonds."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
+      "note": "CommonPanel.java provides three- through eight-membered rings and benzene."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-3-5",
+      "note": "Cage and polycyclic templates generate layouts automatically."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
+      "note": "Elements and charges editable; isotope setters lack exposed toolbar controls."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
+      "note": "Radical toolbar button toggles an atom's radical dot."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-3-5",
+      "note": "Computes MCDL stereodescriptors; standard R/S and E/Z labels unverified.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
+      "note": "SimpleMolecule.java computes formula and mass; editor readout unverified.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://link.springer.com/article/10.1186/1758-2946-3-5",
+      "note": "MOL library methods; companion utility converts SDF to/from MCDL.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download"
+      }
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/mcdl.html/download",
+      "note": "Example JavaScript calls the applet's getMCDL and setMCDL methods."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/mcdl.html/download",
+      "note": "Official HTML applet embedding example requires legacy Java support."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Legacy Java applet: current browsers cannot run it, and JDK 26 removed the Applet API.",
+    "Latest listed editor files date to 2007-07-01; 2016-03-27 is a project update, not a verified release.",
+    "The applet exchanges MCDL; MOL/SDF conversion uses library code and a separate GUI utility."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 266796,
+  "references": [
+    "https://sourceforge.net/projects/mcdl/"
+  ],
+  "builtOn": {
+    "id": "p110",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
+    "note": "Own Java drawing engine; source imports only JDK and bundled project packages."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "MCDL DrawMolecule",
+    "language": "Java",
+    "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Applet host interaction"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

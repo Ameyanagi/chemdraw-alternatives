@@ -1,0 +1,495 @@
+{
+  "id": "p94",
+  "slug": "chemtool",
+  "name": "Chemtool",
+  "rank": 99,
+  "tier": "alternative",
+  "tierReason": "It is a standalone 2D editor with structures, text, templates and vector export for publication figures.",
+  "summary": "A standalone editor for drawing organic molecular structures and exporting chemical figures.",
+  "website": "http://ruby.chemie.uni-freiburg.de/~martin/chemtool/chemtool.html",
+  "repo": null,
+  "docs": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html",
+  "vendor": "Thomas Volk and Martin Kroeker",
+  "license": {
+    "kind": "open-source",
+    "spdx": "GPL-2.0-or-later AND LGPL-2.0-or-later",
+    "text": "GPL version 2 or later; bundled support files include LGPL code.",
+    "source": "https://sources.debian.org/src/chemtool/1.6.14-6/debian/copyright"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://packages.debian.org/en/trixie/chemtool"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "1.6.14",
+    "date": null,
+    "source": "https://packages.debian.org/en/source/trixie/chemtool"
+  },
+  "engine": {
+    "rendering": "Custom C drawing with GDK primitives and Pango text; custom SVG/XFig export; fig2dev for PNG/EPS.",
+    "chemistry": "In-house routines and bundled cht analyzer; optional external Babel/OpenBabel CLI for format conversion.",
+    "ui": "GTK+ 2 / X11",
+    "source": "https://sources.debian.org/src/chemtool/1.6.14-6/graph.c"
+  },
+  "languages": [
+    "C"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Drawing_of_bonds:",
+      "note": "Draw and change single, double and triple bonds."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Drawing_of_bonds:",
+      "note": "Solid wedge, dashed wedge and wavy lines."
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/ChangeLog#L549",
+      "note": "Molecular arrows depict N-oxides; quadruple and dotted bonds also available."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Drawing_of_bonds:",
+      "note": "Both offset orientations and centered double bonds."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/templates.h#L8201",
+      "note": "Ring tools cover 3–12 members; templates include aromatic benzene."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/templates.h#L8205",
+      "note": "Includes a cyclohexane chair template."
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/templates.h#L1",
+      "note": "Includes sugars, amino acids, steroids and other complex structures."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Adding_previously_saved_figures:",
+      "note": "Save structures with attachment points and reuse through Add."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/cht.1.en.html#DESCRIPTION",
+      "note": "Companion cht recognizes Ph, BOC, Me and other abbreviations."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Inserting_text",
+      "note": "Arbitrary labels and superscripts depict isotopes and charges."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Drawing_electron_pairs",
+      "note": "Keypad creates lone pairs; individual dots can represent radicals."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Labeling_shortcuts",
+      "note": "Element shortcuts place labels at the last clicked drawing position."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Selecting_all_or_parts_of_a_drawing_for_transformations:",
+      "note": "Selection uses rectangles; rotate, flip and resize are supported."
+    },
+    "perspective": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Importing_foreign_file_formats:",
+      "note": "Rotation applies only to imported 3D previews before flattening."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/ChangeLog#L13",
+      "note": "Equilibrium arrows are assembled from two half arrows."
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Drawing_of_curved_lines:",
+      "note": "Editable spline arrows support full and half arrowheads."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Drawing_of_bonds:",
+      "note": "Filled and unfilled pi orbital lobes."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Inserting_text",
+      "note": "Canvas text supports fonts, bold, italic, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Selecting_all_or_parts_of_a_drawing_for_transformations:",
+      "note": "Boxes and brackets, plus editable spline curves."
+    },
+    "align": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/TODO#L4",
+      "note": "Automatic alignment remains on the shipped TODO list."
+    },
+    "groups": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/TODO#L4",
+      "note": "Persistent grouping remains on the shipped TODO list."
+    },
+    "cleanup": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Selecting_all_or_parts_of_a_drawing_for_transformations:",
+      "note": "Removes duplicates and straightens near-horizontal/vertical bonds; no general length normalization.",
+      "engine": {
+        "library": "In-house (C tidy_mol; endpoint snapping and duplicate removal)",
+        "source": "https://sources.debian.org/src/chemtool/1.6.14-6/chemproc.c/#L1749"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/inout.c#L43",
+      "note": "Settings persist within drawings, without a reusable style preset."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Inserting_text",
+      "note": "Individual labels and bonds can use the supplied colors."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/inout.c#L43",
+      "note": "Print paper size is configurable; native files contain one canvas."
+    },
+    "pictures": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/INSTALL#L52",
+      "note": "INSTALL explicitly identifies image import as missing."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/cht.1.en.html#DESCRIPTION",
+      "note": "Companion cht flags duplicate bonds during formula calculation.",
+      "engine": {
+        "library": "cht (bundled local C executable; overlapping-bond warnings only)",
+        "source": "https://sources.debian.org/src/chemtool/1.6.14-6/src-cht/cht.c/#L1490"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Determining_sum_formula_and_molecular_weight:",
+      "note": "Bundled cht calculates formula, molecular mass and exact mass.",
+      "engine": {
+        "library": "cht (bundled local C executable, translated from Pascal)",
+        "source": "https://sources.debian.org/src/chemtool/1.6.14-6/inout.c/#L5804"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Importing_foreign_file_formats:",
+      "note": "Imported PDB/MOL structures rotate in a temporary 3D preview.",
+      "engine": {
+        "library": "In-house (C imported-coordinate rotation preview)",
+        "source": "https://sources.debian.org/src/chemtool/1.6.14-6/inout.c/#L800"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/NEWS#L112",
+      "note": "MOL read/write; SDF browsing and import.",
+      "engine": {
+        "library": "In-house (C MOL reader/writer and SDF reader)",
+        "source": "https://sources.debian.org/src/chemtool/1.6.14-6/inout.c/#L971"
+      }
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://manpages.debian.org/trixie/chemtool/chemtool.1.en.html#Exporting_to_foreign_formats:",
+      "note": "Native vector SVG export."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://sources.debian.org/src/chemtool/1.6.14-6/NEWS#L21",
+      "note": "Batch conversion with chemtool -bg; still requires GTK/X11."
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "PNG/EPS require fig2dev; additional chemical formats require a compatible Babel/OpenBabel command.",
+    "Formula calculations can be wrong for overlapping bonds or aromatic-circle notation.",
+    "macOS and Windows support is documented through legacy X11 source builds."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 258552,
+  "references": [
+    "https://packages.debian.org/en/trixie/chemtool"
+  ],
+  "builtOn": {
+    "id": "p94",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "Babel",
+      "Open Babel"
+    ],
+    "source": "https://sources.debian.org/src/chemtool/1.6.14-6/README/#L310",
+    "note": "Custom C drawing canvas; optional Babel or Open Babel commands provide chemical format conversion."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Chemtool GDK/Pango renderer",
+    "language": "C",
+    "source": "https://sources.debian.org/src/chemtool/1.6.14-6/graph.c/#L103"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "Pascal is legacy; shell, Yacc and Makefiles support dependencies or builds.",
+  "thirdParty": {
+    "summary": "Includes LGPL-2.0-or-later (GTK/gettext support code) and GPL-2.0-or-later (undo code).",
+    "source": "https://sources.debian.org/data/main/c/chemtool/1.6.14-6/debian/copyright",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Babel",
+        "license": null,
+        "source": null
+      },
+      {
+        "name": "Open Babel",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/openbabel/openbabel/blob/master/COPYING"
+      }
+    ]
+  }
+}

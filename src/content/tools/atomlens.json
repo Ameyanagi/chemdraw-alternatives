@@ -1,0 +1,547 @@
+{
+  "id": "p114",
+  "slug": "atomlens",
+  "name": "AtomLens",
+  "rank": 98,
+  "tier": "alternative",
+  "tierReason": "Its standalone molecule and reaction editor with vector exports can produce publication-grade 2D chemical figures.",
+  "summary": "A Mac and iPad workbench for drawing, inspecting, organizing, and exporting molecular structures and reactions.",
+  "website": "https://atomlens.app/",
+  "repo": null,
+  "docs": "https://atomlens.app/atomlens/help/",
+  "vendor": "Sascha Losko (Obscure Essentials)",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Paid App Store app; bundled open-source components have separate licenses.",
+    "source": "https://apps.apple.com/de/app/atomlens/id6759559963"
+  },
+  "price": {
+    "text": "€9.99 one-time purchase, German App Store, 2026-11-05; includes Mac and iPad.",
+    "source": "https://apps.apple.com/de/app/atomlens/id6759559963"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": false,
+    "linux": false,
+    "web": false,
+    "ios": true,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "3.1",
+    "date": "2026-10-18",
+    "source": "https://apps.apple.com/de/app/atomlens/id6759559963"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "CDKSwiftNativePort (CDK-derived), OPSINSwift, SMSDProSwift, and IUPAC InChI",
+    "ui": null,
+    "source": "https://atomlens.app/atomlens/help/settings-and-system.html"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Single, double, triple, and aromatic bond orders."
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Dedicated wedge, hash, and wavy tools."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Cyclopropane through cyclohexane, plus benzene."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Built-in carbon-chain and common-ring templates."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Save Template stores a selected fragment."
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Element labels, formal charges, and isotopes in the inspector."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Atom inspector includes radical settings."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
+      "note": "Reaction SMILES, RXN, RDF, RInChI, and reaction CML."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Atom Map assigns numbers; selections can receive reaction roles."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Clean Up improves the 2D layout without changing connectivity.",
+      "engine": {
+        "library": "CDKSwiftNativePort (CDKStructureDiagramGenerator native Swift port)",
+        "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/Molecule.swift#L850-L860"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/chemical-editor.html",
+      "note": "Valence and Validation warn about abnormal bond counts."
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/workspace.html",
+      "note": "Formula, molecular weight, and monoisotopic mass.",
+      "engine": {
+        "library": "CDKSwiftNativePort (native Swift CDKMolecularFormulaDescriptor, CDKMolecularWeightDescriptor, CDKExactMassDescriptor)",
+        "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/CDK/Common/MoleculePropertyService.swift#L118-L151"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/settings-and-system.html",
+      "note": "Calculates XLogP and Rule-of-Five status.",
+      "engine": {
+        "library": "CDKSwiftNativePort (native Swift CDKXLogPDescriptor and CDKTPSADescriptor)",
+        "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/CDK/Common/MoleculePropertyService.swift#L118-L151"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/workspace.html",
+      "note": "Supported IUPAC names convert to editable structure input.",
+      "engine": {
+        "library": "OPSINSwift (native Swift port of OPSIN, on-device)",
+        "source": "https://atomlens.app/atomlens/help/settings-and-system.html#privacy-and-licenses"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/scan-document-chemistry.html",
+      "note": "Systematic-name generation is limited to PDF-recognized drawings.",
+      "engine": {
+        "library": "In-house offline-iupac-v1-curve-2132624 Core ML model; OPSINSwift identity validation",
+        "source": "https://atomlens.app/atomlens/help/licenses/IUPAC-Name-Model-NOTICE.md"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
+      "note": "Markush scaffolds, R-group legends, and supported query annotations."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
+      "note": "Depicts imported repeat-unit and link-node notation."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/scan-document-chemistry.html",
+      "note": "Printed PDF structures become SMILES/CML for import and editing.",
+      "engine": {
+        "library": "DECIMER (bundled on-device models); CDKSwiftNativePort structure parsing",
+        "source": "https://atomlens.app/atomlens/help/licenses/IUPAC-Name-Model-NOTICE.md"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/privacy.html",
+      "note": "PubChem searches retrieve compounds and import SDF structures.",
+      "engine": {
+        "library": "PubChem (remote search, compound information and SDF retrieval)",
+        "source": "https://atomlens.app/privacy.html#atomlens"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/workspace.html",
+      "note": "Rotatable ball-and-stick, stick, and space-filling molecule views.",
+      "engine": {
+        "library": "CDKSwiftNativePort (CDKMetal3DSceneBuilder and CDKModelBuilder3D; native Swift)",
+        "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/CDK/Rendering/Metal3DSceneBuilder.swift#L210-L247"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
+      "note": "Reads and writes supported chemistry; arbitrary source metadata is lost."
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
+      "note": "Reads and writes supported chemistry; arbitrary source metadata is lost."
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
+      "note": "MOL V2000/V3000 and single/multiple-structure SDF import and export.",
+      "engine": {
+        "library": "CDKSwiftNativePort (native Swift MDL V2000/V3000 and SDF readers/writers)",
+        "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Documentation/INTEGRATION.md#12-export-common-formats"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
+      "note": "Standard and isomeric SMILES; export excludes CXSMILES extensions.",
+      "engine": {
+        "library": "CDKSwiftNativePort (native Swift CDK SMILES/CXSMILES parser and SMILES writer)",
+        "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/README.md#smiles-and-cxsmiles"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
+      "note": "Local InChI input and generation.",
+      "engine": {
+        "library": "IUPAC InChI 1.07.5 (vendored native C library through CDKSwiftNativePort)",
+        "source": "https://github.com/SaschaLosko/CDKSwiftNativePort/blob/7e726fde28766fe568f206104dc18cca15505be5/Sources/CDKSwiftNativePort/CDK/InChI/InChIOfficialLibraryGenerator.swift#L1-L42"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/formats-and-tools.html",
+      "note": "MDL RXN input and whole-reaction export."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/glossary.html",
+      "note": "Resolution-independent structure artwork."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/glossary.html",
+      "note": "Vector-preserving PDF sharing."
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://atomlens.app/atomlens/help/settings-and-system.html",
+      "note": "macOS bundled MCP helper supports repository search, modification, and export."
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Requires macOS/iPadOS 26 or later; Mac requires Apple M1 or later.",
+    "CDX/CDXML exchange supports a chemistry subset and does not preserve arbitrary source metadata.",
+    "PDF recognition targets printed structures, excludes handwriting, and can produce incorrect results."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 584507392,
+  "references": [
+    "https://atomlens.app/",
+    "https://apps.apple.com/de/app/atomlens/id6759559963?l=en-GB"
+  ],
+  "builtOn": {
+    "id": "p114",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "CDK",
+      "OPSIN",
+      "SMSDProSwift",
+      "InChI",
+      "ChemDataExtractor2",
+      "DECIMER Image Segmentation"
+    ],
+    "source": "https://atomlens.app/atomlens/help/settings-and-system.html#privacy-and-licenses",
+    "note": "Vendor discloses chemistry components; drawing canvas provenance remains unconfirmed."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "CDKSwiftNativePort depiction (ported from CDK)",
+    "language": "Swift",
+    "source": "https://atomlens.app/atomlens/help/settings-and-system.html#privacy-and-licenses"
+  },
+  "otherLanguages": [
+    {
+      "language": "C",
+      "role": "Vendored official InChI library"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Includes LGPL-2.1-or-later (CDKSwiftNativePort), MIT/Apache-2.0 code, CC-BY-4.0 DECIMER weights/CARTO palettes, and CC0 data; fine-tuned recognizer weights have separate vendor-confirmed redistribution authorization.",
+    "source": "https://atomlens.app/atomlens/help/settings-and-system.html#privacy-and-licenses",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Chemistry Development Kit",
+        "license": "LGPL-2.1-or-later",
+        "source": "https://github.com/cdk/cdk/blob/main/pom.xml"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      },
+      {
+        "name": "SMSDProSwift",
+        "license": null,
+        "source": null
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      },
+      {
+        "name": "ChemDataExtractor2",
+        "license": "MIT",
+        "source": "https://github.com/CambridgeMolecularEngineering/chemdataextractor2/blob/master/LICENSE"
+      },
+      {
+        "name": "DECIMER Image Segmentation",
+        "license": "MIT",
+        "source": "https://github.com/Kohulan/DECIMER-Image-Segmentation/blob/master/LICENSE"
+      }
+    ]
+  }
+}

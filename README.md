@@ -1,67 +1,51 @@
 # Chemical Drawing Atlas
 
-A source-backed, static **Astro + Markdown/MDX** demo for comparing ChemDraw alternatives. It includes 66 directory entries, ten selected comparison profiles, 20 proposed benchmark tasks, and a primary-reference index. **No product screenshots or hands-on benchmark results are included yet.**
+A comparison of chemical drawing software built on hands-on testing. Each tool draws the same three molecules with default settings, and every feature mark says how we know it: tested, seen in the app, or cited from the manual. Versions, engines, sizes, startup times and APIs are recorded per tool.
 
-Maintained by the developer of ReShiki, which is included in the comparison. This relationship is disclosed on the site. Documented features do not establish runtime correctness, performance, or file compatibility.
+Maintained by the developer of ReShiki, which is included. The site says so, and the [method page](src/pages/how-we-test.astro) explains the listing order.
 
 ## Develop
 
-Use Node 24 (see `.nvmrc`).
+Use Node 24 (see `.nvmrc`) and Bun.
 
 ```sh
-npm ci
-npm run dev
+bun install
+bun run dev
 ```
 
-The local URL includes `/chemdraw-alternatives/`. To run at the domain root instead, set `BASE_PATH=/`.
+The site lives at the root of https://chemdraw-alternatives.reshiki.com. To deploy a fork elsewhere, set `SITE_URL` and `BASE_PATH`.
 
 ```sh
-npm run check
-npm run build
-npm test
-npm run preview
+bun run check   # types and content rules
+bun run build
+bun run test    # generated pages and internal links
 ```
 
-`check` validates Astro/TypeScript and editorial invariants. `test` checks generated product pages, reference preservation, and internal links/assets under the project base path. These checks validate the website, not the chemistry software being compared.
+## How the data is made
 
-## Edit content
+| Path | What it holds |
+| --- | --- |
+| `src/data/features.json` | The feature checklist, each with a one-sentence test |
+| `evidence/fixtures/` | Test molecules from PubChem, built by `scripts/evidence/make-fixtures.py` |
+| `evidence/CAPTURE.md` | The brief for each hands-on run |
+| `scripts/evidence/tiers.json` | Which tools are compared and which are only listed |
+| `scripts/evidence/overrides.json` | Hand-written corrections applied last |
+| `evidence/perf.json` | Measured startup, memory and page size |
+| `src/content/tools/*.json` | Generated records the site reads |
+| `public/evidence/<tool>/` | Published drawings |
 
-- `src/content/products/pNN.md`: one source-reviewed product record. Metadata is JSON-compatible YAML; keep inline arrays for sources. Product IDs remain stable.
-- `src/content/guides/*.md` and `*.mdx`: editorial prose and reusable comparison components.
-- `src/components/ComparisonTable.astro`: the ten-profile demo matrix; link factual claims to the corresponding product references.
-- `src/data/benchmark-plan.json`: original planned benchmark tasks; all pending.
-- `src/data/additional-sources.json`: supplemental documentation.
-- `/data/research.json`: generated automatically from the content collection at build time.
+`evidence/raw/` and `evidence/downloads/` hold run output and are not committed.
 
-The original Japanese research notes are retained in the directory. English prose summarizes the workflow questions. Review dates belong to product facts, not to the website build; do not refresh them without reviewing the sources.
+Research and capture run through Codex: `scripts/evidence/run-research.py` makes one read-only job per tool, and `scripts/evidence/run-capture.py` drives each app one at a time. `scripts/evidence/merge.py` then combines the results. Hands-on results win over documentation, and it checks any exported structure against PubChem's InChIKey.
 
-To add a product, create a new Markdown record with the required schema, add references and a review date, and intentionally update the expected entry count in `scripts/check-content.mjs` and `tests/site.test.mjs` and editorial scope text. A product being public or free does not establish an open-source license. Use “not established” for unanswered questions, rather than “unsupported.”
+ChemDraw is published as exported drawings only, because its license restricts republishing its interface and bundled images. `scripts/check-content.mjs` enforces this and the first and second listing positions.
 
 ## Publish to GitHub Pages
 
-1. Create the public repository `chemdraw-alternatives` and push this project to `main`.
-2. In **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**.
-3. Open **Actions → Check, build and deploy Pages**. The push to `main` builds and deploys the site; use **Run workflow** if Pages was enabled afterward.
-4. Wait for both jobs to pass. The deployment URL appears in the `github-pages` environment.
+In **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**. A push to `main` builds and deploys the site. Pull requests are built but not deployed.
 
-The workflow derives the `site` and project `base` from `GITHUB_REPOSITORY`. For a fork or renamed repository, the Pages base updates at build time. `SITE_URL` and `BASE_PATH` can override this behavior for a custom domain. The navigation source link currently points to `Ameyanagi/chemdraw-alternatives`; update it if publishing elsewhere.
-
-Actions use full commit pins, read-only default permissions, separate deployment permissions, a lockfile, a time limit, and PR build checks. Pull requests do not deploy. Dependabot proposes dependency/action updates; inspect and test updates before merging.
-
-## Research and references
-
-The source index links original documentation, repository files, author statements, and license sources used in this research. A pinned repository commit may describe unreleased behavior. Release, edition, operating system, and file exchange path must be distinguished.
-
-Product data was reviewed on the dates recorded per entry, mainly 31 Oct–04 Nov 2026. This site was prepared 05 Nov 2026. Creating the site did not re-check every external link, price, license, or release. Do not represent this demo as an exhaustive or independently tested ranking.
-
-Future screenshot contributions should identify the version, OS, task, capture date, publication rights, caption, and accessible alternative text. Keep editable fixtures alongside runtime findings, and do not upload confidential compounds or restricted assets.
-
-Implementation references:
-
-- [Astro: GitHub Pages](https://docs.astro.build/en/guides/deploy/github/)
-- [Astro: Content collections](https://docs.astro.build/en/guides/content-collections/)
-- [Astro: MDX](https://docs.astro.build/en/guides/integrations-guide/mdx/)
+The workflow derives `site` and `base` from `GITHUB_REPOSITORY`. `SITE_URL` and `BASE_PATH` override this for a custom domain.
 
 ## License
 
-Original source code: [MIT](LICENSE). Original editorial content and research data: [CC BY 4.0](CONTENT-LICENSE.md). Third-party software, source documents, product names, trademarks, and future images retain their own rights. This project does not relicense linked material or imply vendor endorsement.
+Original source code: [MIT](LICENSE). Original editorial content and research data: [CC BY 4.0](CONTENT-LICENSE.md). Third-party software, product names, trademarks and screenshots keep their own rights. This project does not relicense linked material or imply vendor endorsement.

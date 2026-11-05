@@ -1,0 +1,571 @@
+{
+  "id": "p69",
+  "slug": "chemvas",
+  "name": "Chemvas",
+  "rank": 29,
+  "tier": "alternative",
+  "tierReason": "Its implemented desktop canvas, scheme layout, annotations and vector exports support publication-grade 2D chemical drawing documents.",
+  "summary": "Desktop editor for drawing molecular structures and reaction schemes and exporting publication figures.",
+  "website": "https://github.com/dhsohn/Chemvas",
+  "repo": "https://github.com/dhsohn/Chemvas",
+  "docs": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md",
+  "vendor": "daehyupsohn",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT License",
+    "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.28.0",
+    "date": "2026-11-04",
+    "source": "https://github.com/dhsohn/Chemvas/releases/tag/v0.28.0"
+  },
+  "engine": {
+    "rendering": "Qt QPainter and QGraphicsScene; QSvgGenerator and QPdfWriter for vector export",
+    "chemistry": "In-house atom/bond model; no external chemistry backend",
+    "ui": "PyQt6 (Qt Widgets)",
+    "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/docs/ARCHITECTURE.md"
+  },
+  "languages": [
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#drawing-features",
+      "note": "Drew single, double and triple bonds manually.",
+      "shot": {
+        "image": "evidence/chemvas/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/ui/window/main_window_config.py#L365",
+      "note": "Drew wedge and hash bonds; no wavy bond control found.",
+      "shot": {
+        "image": "evidence/chemvas/f-stereo-bonds.webp",
+        "caption": "Solid wedge and hashed bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#keyboard-shortcuts",
+      "note": "Left, center and right bond-position shortcuts."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#drawing-features",
+      "note": "Placed benzene with the ring tool.",
+      "shot": {
+        "image": "evidence/chemvas/f-rings.webp",
+        "caption": "A benzene ring on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/AGENT_CLI.md#native-ring-templates",
+      "note": "Placed cyclohexane chair template.",
+      "shot": {
+        "image": "evidence/chemvas/f-conformers.webp",
+        "caption": "A cyclohexane chair on the canvas."
+      }
+    },
+    "chains": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#keyboard-shortcuts",
+      "note": "Keyboard chain sprouting; continuous zigzag dragging is not documented."
+    },
+    "templates": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "Placed ring and chair templates; no broader library found."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/CDXML_EXPORT.md#atom-labels",
+      "note": "Me, Ph and tBu carry CDXML graphs; other aliases stay labels."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/domain/document/model.py#L5",
+      "note": "Charges and arbitrary labels; molecular model lacks isotope fields.",
+      "shot": {
+        "image": "evidence/chemvas/f-atom-labels.webp",
+        "caption": "Nitrogen and oxygen labels in a caffeine structure."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/ui/window/main_window_config.py#L310",
+      "note": "Dedicated Radical mark tool."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#keyboard-shortcuts",
+      "note": "Hover shortcuts change atom labels and bond types."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/ui/selection/select_tool.py#L42",
+      "note": "Marquee selection and transform handles; no freehand selection mode.",
+      "shot": {
+        "image": "evidence/chemvas/f-selection-tools.webp",
+        "caption": "Selection toolbar and a selected curved arrow."
+      }
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/ui/tools/perspective_tool.py#L56",
+      "note": "Drag-based perspective rotation with optional axis locking."
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#drawing-features",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/chemvas/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/ui/tools/handle_mutation_service.py#L56",
+      "note": "Drew curved arrows and selected their editing handles.",
+      "shot": {
+        "image": "evidence/chemvas/f-mechanism-arrows.webp",
+        "caption": "Curved arrows on the canvas, with one selected."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/AGENT_CLI.md#stored-calculation-plans",
+      "note": "Reaction mapping was removed; no mapping panel remains."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#drawing-features",
+      "note": "s, p, hybrid, d and molecular-orbital shapes."
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#drawing-features",
+      "note": "Font family, size, weight, subscript and superscript."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/ui/window/main_window_config.py#L252",
+      "note": "Shape and bracket drawing tools."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#drawing-features",
+      "note": "Six alignment directions and horizontal/vertical distribution.",
+      "shot": {
+        "image": "evidence/chemvas/f-align.webp",
+        "caption": "Alignment and distribution controls in the selection toolbar."
+      }
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#drawing-features",
+      "note": "Group and ungroup commands."
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/features/rendering/acs1996_style.py#L6",
+      "note": "Default drawing style approximates ACS 1996."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#running",
+      "note": "Saved document styling is reused by New Canvas."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#drawing-features",
+      "note": "Atoms, bonds, notes and charge marks color independently."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#canvas-size",
+      "note": "Standard/custom paper sizes; multipage CDXML unsupported."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/IMAGE_OBJECTS.md#gui-operations",
+      "note": "Embed PNG/JPEG images; adjust size, opacity and layering."
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#drawing-features",
+      "note": "Flags questionable valences for H, B, C, N, O and F.",
+      "engine": {
+        "library": "In-house (Python conservative valence warnings)",
+        "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/features/rendering/valence.py#L65"
+      }
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No formula or mass command in inspected menus or tools."
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name conversion command in inspected menus or tools."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No structure naming command in inspected menus or tools."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/CDXML_EXPORT.md#atom-labels",
+      "note": "Explicit generic-aryl bindings export native CDXML queries."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/adr/0055-retire-rdkit-chemistry-provider.md#decision",
+      "note": "No model view command; cholesterol SDF opening rejected."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/DOCUMENT_COMPATIBILITY.md",
+      "note": "Saved caffeine CDXML, closed it, then successfully reloaded it.",
+      "engine": {
+        "library": "In-house (Python CDXML import and native writer using standard-library ElementTree; single-page subset)",
+        "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/features/cdxml_document.py#L64"
+      }
+    },
+    "cdx": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/DOCUMENT_COMPATIBILITY.md",
+      "note": "Binary CDX is explicitly unsupported."
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#chemistry-io",
+      "note": "MOL import/export worked; SDF opening rejected by extension warning.",
+      "shot": {
+        "image": "evidence/chemvas/f-mol-sdf.webp",
+        "caption": "A caffeine structure displayed in the simple.mol document."
+      },
+      "engine": {
+        "library": "In-house (Python MOL V2000 reader and writer; no SDF)",
+        "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/core/molfile.py#L116"
+      }
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/adr/0055-retire-rdkit-chemistry-provider.md#decision",
+      "note": "Paste timed out; canvas stayed empty; no SMILES import command."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#figure-export",
+      "note": "Saved both fixtures with default transparent Plain SVG settings."
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/REFERENCE.md#figure-export",
+      "note": "Exported paclitaxel as vector PDF."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/AGENT_CLI.md#headless-document-rendering",
+      "note": "Exported paclitaxel PNG at default 300 DPI."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/CDXML_EXPORT.md#atom-labels",
+      "note": "Documented Python CDXML serialization and typed label-binding functions."
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/AGENT_CLI.md",
+      "note": "Headless document composition, inspection, patching, layout and rendering."
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dhsohn/Chemvas/blob/v0.28.0/docs/AGENT_CLI.md",
+      "note": "Documented agent CLI accepts structured JSON composition and patch requests."
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Alpha software distributed through PyPI; standalone installer acceptance remains pending.",
+    "CDXML is limited to single pages; external edits can reduce some objects to images.",
+    "Some guides retain obsolete CDXML export-menu entries and describe MOL as import-only."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-11-05T11:35:31Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.28.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "pypi",
+    "artifact": "https://files.pythonhosted.org/packages/d4/fa/6bc2e4b4a61298ab822fd3c0e5a065506a48013176a0ee1c46581a549569/chemvas-0.28.0-py3-none-any.whl",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 950091,
+    "installedBytes": 268062720,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/chemvas/simple.svg",
+        "note": "SMILES paste inserted nothing; imported MOL without cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/chemvas/complex.svg",
+        "note": "Preserved imported coordinates; nearby oxygen labels remain close.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "No 3D view; SDF opening rejected by extension warning.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemvas/canvas.webp",
+    "canvasLight": "evidence/chemvas/canvas-light.webp",
+    "canvasDark": "evidence/chemvas/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "follows system",
+      "note": "Only native title bar changes; canvas and toolbars remain light."
+    },
+    "memory": null,
+    "observations": [
+      "Black bonds and atom labels on a white canvas.",
+      "Default SVG export has a transparent background and outlined labels.",
+      "MOL import preserves the supplied two-dimensional layout.",
+      "Paclitaxel has closely spaced oxygen labels.",
+      "Exported MOL atom, bond and stereo records match both fixtures."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 950091,
+  "references": [
+    "https://github.com/dhsohn/Chemvas",
+    "https://pypi.org/project/chemvas/"
+  ],
+  "builtOn": {
+    "id": "p69",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/ui/canvas/canvas_view_setup.py#L23-L46",
+    "note": "Custom Qt canvas and molecular model; RDKit backend removed before v0.28.0."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Chemvas Qt bond/label renderer",
+    "language": "Python",
+    "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/app/chemvas/ui/molecule/bond_renderer.py#L33"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "Shell, PowerShell, Inno Setup and Makefile support packaging and checks.",
+  "thirdParty": {
+    "summary": "Includes GPL-3.0 (PyQt6) and LGPL-3.0 (Qt).",
+    "source": "https://github.com/dhsohn/Chemvas/blob/705548f397f1cc14253fed496e95821576f751f4/pyproject.toml",
+    "notice": null,
+    "libraries": []
+  }
+}

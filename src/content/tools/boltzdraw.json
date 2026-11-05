@@ -1,0 +1,750 @@
+{
+  "id": "p54",
+  "slug": "boltzdraw",
+  "name": "BoltzDraw",
+  "rank": 16,
+  "tier": "embeddable",
+  "tierReason": "It is a Ketcher-based web structure editor centered on molecular input, analysis panels, and structure exports.",
+  "summary": "A browser-based molecular editor combining Ketcher drawing, property calculations, peptide building, and protein–ligand visualization.",
+  "website": "https://github.com/GSmithBoltz/BoltzDraw",
+  "repo": "https://github.com/GSmithBoltz/BoltzDraw",
+  "docs": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/README.md",
+  "vendor": "GSmithBoltz",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "README declares MIT; no separate license file is included.",
+    "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/README.md#license"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/README.md#license"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/GSmithBoltz/BoltzDraw/releases"
+  },
+  "engine": {
+    "rendering": "SVG through Ketcher/Raphael; Indigo generates PNG/SVG exports; RDKit generates SVG molecule previews.",
+    "chemistry": "Indigo (Ketcher WebAssembly); RDKit.js",
+    "ui": "HTML/CSS and JavaScript wrapper; React-based Ketcher",
+    "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/ketcher/static/js/main.67cb654b.js"
+  },
+  "languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-bonds",
+      "note": "Placed single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds drawn on the canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L27",
+      "note": "Placed wedge, hashed, and wavy bonds.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L40",
+      "note": "Dative and hydrogen bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#templates-toolbar",
+      "note": "Placed benzene and cyclohexane.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-rings.webp",
+        "caption": "Benzene and cyclohexane rings drawn on the canvas."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/templates/library.sdf",
+      "note": "Includes chair and boat conformations."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/editor/tool/chain.ts",
+      "note": "Dragging sets zigzag chain length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#templates-toolbar",
+      "note": "Placed D-alanine from the structure library.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-templates.webp",
+        "caption": "Structure library showing D-amino acid templates."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#templates-toolbar",
+      "note": null,
+      "shot": {
+        "image": "evidence/boltzdraw/f-custom-templates.webp",
+        "caption": "Save Structure dialog with a Save to Templates button."
+      }
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#expandingcontracting-s-group",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/data/schema/struct-schema.js",
+      "note": "Element labels, charges, isotopes and aliases are editable.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-atom-labels.webp",
+        "caption": "A structure with colored oxygen and nitrogen atom labels."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/data/schema/struct-schema.js#L80",
+      "note": "Monoradical and singlet/triplet diradical states."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-atoms",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Rectangle, lasso, and fragment selection tools are visible.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-selection-tools.webp",
+        "caption": "Selection menu showing rectangle, lasso and fragment tools."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/leftToolbarOptions.ts",
+      "note": "Placed equilibrium arrow; forward arrow tool also available.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-reaction-arrows.webp",
+        "caption": "An equilibrium arrow and a curved arrow on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/editor/tool/reactionarrow.ts",
+      "note": "Placed curved arrow; half-headed option also visible.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-mechanism-arrows.webp",
+        "caption": "A curved arrow and an equilibrium arrow on the canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#ketcher-api",
+      "note": "Native Ketcher RXN export preserves reaction chemistry."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-reactions",
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#creating-text-objects-on-the-canvas",
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-graphical-objects",
+      "note": "Ellipses, rectangles, lines and chemical S-group brackets.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-shapes.webp",
+        "caption": "Shape menu showing ellipse, rectangle and line tools."
+      }
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": "Chemical S-groups exist; general drawing-object grouping is unverified."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#ketcher-overview",
+      "note": null,
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L208"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/modal/components/meta/Settings/Settings.tsx#L81",
+      "note": "Bond and font settings save to and reload from JSON."
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#adding-images-on-the-canvas",
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-atoms",
+      "note": null,
+      "shot": {
+        "image": "evidence/boltzdraw/f-valence-check.webp",
+        "caption": "Settings dialog with the valence warnings option enabled."
+      },
+      "engine": {
+        "library": "Ketcher (TypeScript); Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/state/server/index.js#L61"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#ketcher-overview",
+      "note": "Calculate CIP determines R/S and E/Z.",
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L158"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-react/src/script/ui/views/modal/components/process/Analyse/Analyse.jsx#L68",
+      "note": "Caffeine: C8H10N4O2, molecular weight 194.191, exact mass 194.080.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-formula-mass.webp",
+        "caption": "Calculated formula, molecular weight and exact mass."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly); RDKit.js (WebAssembly mass descriptors)",
+        "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/js/properties.js#L48-L65"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/js/properties.js#L64",
+      "note": "Cards displayed cLogP and TPSA for imported structures.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-properties.webp",
+        "caption": "Molecule card showing molecular weight, cLogP, TPSA and other properties."
+      },
+      "engine": {
+        "library": "RDKit.js (WebAssembly)",
+        "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/js/properties.js#L48"
+      }
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Opening caffeine as text produced a conversion error."
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/README.md#analysis-panel-boltzdraw",
+      "note": "CSV export returned caffeine's systematic name.",
+      "engine": {
+        "library": "PubChem PUG REST (remote API)",
+        "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/js/app.js#L1031"
+      }
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#drawing-r-groups",
+      "note": null,
+      "shot": {
+        "image": "evidence/boltzdraw/f-markush.webp",
+        "caption": "R-group menu with label and fragment tools."
+      }
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#marking-s-groups",
+      "note": null
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/README.md#import-panel-boltzdraw",
+      "note": "Peptide sequences convert to structures, including D-residues and terminal modifications.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-biomolecules.webp",
+        "caption": "Peptide import panel with sequence and terminal options."
+      }
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts#L725",
+      "note": "OCR explicitly rejects requests in this standalone Ketcher build."
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/README.md#import-panel-boltzdraw",
+      "note": "Imports small-molecule ligands by RCSB PDB accession.",
+      "engine": {
+        "library": "RCSB PDB Data API (remote API)",
+        "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/js/pdb.js#L40"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/README.md#modes",
+      "note": "SDF coordinates rotate; SMILES import remained flat.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-model-3d.webp",
+        "caption": "A molecular structure shown in the 3D viewer."
+      },
+      "engine": {
+        "library": "Mol* (browser JavaScript); Miew (browser JavaScript)",
+        "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/js/molstar.js#L56"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/README.md#modes",
+      "note": "CIF/mmCIF files open in the separate BoltzStar viewer."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatProperties.ts#L98",
+      "note": "Exported and reopened caffeine CDXML.",
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L108"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatProperties.ts#L104",
+      "note": "Native Ketcher supports binary and base64 CDX.",
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L109"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatProperties.ts",
+      "note": "Opened MOL and SDF; exported MOL.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-mol-sdf.webp",
+        "caption": "Save Structure menu listing MOL and SDF formats."
+      },
+      "engine": {
+        "library": "Ketcher (TypeScript); Indigo (WebAssembly); RDKit.js (WebAssembly)",
+        "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/js/app.js#L962"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#ketcher-api",
+      "note": "Imported SMILES and saved SMILES.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-smiles.webp",
+        "caption": "Save Structure menu listing Daylight SMILES."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L104"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#ketcher-api",
+      "note": null,
+      "engine": {
+        "library": "Indigo (WebAssembly)",
+        "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L101"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#ketcher-api",
+      "note": "Native Ketcher exports RXN V2000 and V3000."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/documentation/help.md#working-with-files",
+      "note": "Saved native SVG drawings.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-svg-export.webp",
+        "caption": "Export panel offering SVG Vector and other formats."
+      }
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "PDF absent from editor and wrapper export formats."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": null,
+      "note": "PNG saved at 553 × 392 pixels, 72 dpi.",
+      "shot": {
+        "image": "evidence/boltzdraw/f-png-export.webp",
+        "caption": "Export panel offering PNG Image and other formats."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/README.md#ketcher-api",
+      "note": "Embedded Ketcher API is accessible through its iframe."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/js/app.js#L392",
+      "note": "Local modules add modes using the documented registerMode function."
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/ketcher/iframe.html",
+      "note": "Bundled Ketcher iframe example; complete wrapper integration is undocumented."
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Despite README's backend-free description, hydration and ADME require local Python; drawing loads CDN assets.",
+    "README describes canvas export, but wrapper PNG/SVG exports omit annotations and original layout.",
+    "Upstream Ketcher advertises OCR; this bundled standalone build explicitly rejects it."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-11-03T10:23:10Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "Ketcher 2.24.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://gsmithboltz.github.io/BoltzDraw/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/boltzdraw/simple.svg",
+        "note": "Current SMILES imported; native SVG and MOL saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/boltzdraw/complex.svg",
+        "note": "Current SMILES imported; native SVG and MOL saved.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/boltzdraw/threed.png",
+        "note": "SDF coordinates shown in rotatable 3D viewer; MOL saved.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/boltzdraw/canvas.webp",
+    "canvasLight": "evidence/boltzdraw/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "The About dialog identifies the embedded editor as Ketcher 2.24.0; no BoltzDraw version was shown.",
+      "The first SMILES import appeared on canvas while the properties panel initially showed zero molecules.",
+      "Caffeine used aromatic circles and colored heteroatom labels by default.",
+      "The 3D viewer showed a flat SMILES-derived drawing; the SDF supplied spatial coordinates.",
+      "The exported cholesterol MOL retained nonzero Z coordinates but was tagged 2D."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/GSmithBoltz/BoltzDraw",
+    "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/README.md"
+  ],
+  "builtOn": {
+    "id": "p54",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "RDKit",
+      "Indigo",
+      "Mol*",
+      "PLIP",
+      "ProLIF",
+      "WaterKit",
+      "Open Babel",
+      "PDBFixer",
+      "OpenMM",
+      "Meeko",
+      "MDAnalysis",
+      "Gemmi",
+      "UnipKa"
+    ],
+    "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/index.html#L62",
+    "note": "Ketcher iframe; RDKit/Mol* frontend; remaining libraries support optional Python services."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher; Indigo exports; RDKit previews",
+    "language": "TypeScript",
+    "source": "https://github.com/epam/ketcher/blob/2d60cb9c3ad9f604a3d9392346632980f8c083a9/packages/ketcher-core/src/application/render/restruct/reatom.ts#L282"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Wrapper and molecule analysis interface"
+    },
+    {
+      "language": "C++",
+      "role": "Indigo exports and RDKit previews"
+    },
+    {
+      "language": "Python",
+      "role": "Local molecular analysis backend"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML/CSS provide presentation; Shell launches services; bundled dependency code excluded.",
+  "thirdParty": {
+    "summary": "Includes Cairo (LGPL-2.1 OR MPL-1.1), OFL-1.1 fonts, GPL-3.0+ vendored WaterKit and GPL-2.0+ AD4 data; optional Python services add GPL-2/3, LGPL-2.1/3 and MPL-2.0 dependencies.",
+    "source": "https://github.com/GSmithBoltz/BoltzDraw/blob/3fd0fa29818410961192d873944c33682c75f03d/environment.yml",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "Mol*",
+        "license": "MIT",
+        "source": "https://github.com/molstar/molstar/blob/master/LICENSE"
+      },
+      {
+        "name": "PLIP",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/pharmai/plip/blob/master/pyproject.toml"
+      },
+      {
+        "name": "ProLIF",
+        "license": "Apache-2.0",
+        "source": "https://github.com/chemosim-lab/ProLIF/blob/master/LICENSE"
+      },
+      {
+        "name": "WaterKit",
+        "license": "GPL-3.0-only",
+        "source": "https://github.com/forlilab/waterkit/blob/master/LICENSE"
+      },
+      {
+        "name": "Open Babel",
+        "license": "GPL-2.0-only",
+        "source": "https://github.com/openbabel/openbabel/blob/master/COPYING"
+      },
+      {
+        "name": "PDBFixer",
+        "license": "MIT",
+        "source": "https://github.com/openmm/pdbfixer/blob/master/LICENSE"
+      },
+      {
+        "name": "OpenMM",
+        "license": "MIT AND LGPL-3.0-or-later",
+        "source": "https://github.com/openmm/openmm/blob/master/docs-source/licenses/Licenses.txt"
+      },
+      {
+        "name": "Meeko",
+        "license": "LGPL-2.1",
+        "source": "https://github.com/forlilab/Meeko/blob/develop/LICENSE"
+      },
+      {
+        "name": "MDAnalysis",
+        "license": "LGPL-3.0-or-later",
+        "source": "https://github.com/MDAnalysis/mdanalysis/blob/package-2.11.0/LICENSE"
+      },
+      {
+        "name": "Gemmi",
+        "license": "MPL-2.0 OR LGPL-3.0-only",
+        "source": "https://github.com/project-gemmi/gemmi/blob/master/README.md"
+      },
+      {
+        "name": "Uni-pKa",
+        "license": "Apache-2.0",
+        "source": "https://github.com/dptech-corp/Uni-pKa/blob/main/LICENSE"
+      }
+    ]
+  }
+}

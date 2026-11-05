@@ -1,0 +1,655 @@
+{
+  "id": "p49",
+  "slug": "chemthistry",
+  "name": "ChemThisTry",
+  "rank": 9,
+  "tier": "alternative",
+  "tierReason": "Its chemical structure editor and editable vector canvas can compose publication-grade chemical figures.",
+  "summary": "A desktop and browser workspace for drawing chemical structures, viewing molecules, plotting data, and composing scientific figures.",
+  "website": "https://zytanglab.com/software/chemthistry/en/",
+  "repo": "https://github.com/thisThisYoung/ChemThisTry",
+  "docs": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md",
+  "vendor": "ChemThisTry Team",
+  "license": {
+    "kind": "free",
+    "spdx": "Apache-2.0",
+    "text": "Free binaries; Apache-2.0 declared, but full application source is not public.",
+    "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md#L144-L156"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/thisThisYoung/ChemThisTry/releases/tag/v0.1.6"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.1.6",
+    "date": "2026-10-18",
+    "source": "https://github.com/thisThisYoung/ChemThisTry/releases/tag/v0.1.6"
+  },
+  "engine": {
+    "rendering": "SVG through Ketcher/Raphaël; Fabric.js canvas for figure composition",
+    "chemistry": "Indigo via Ketcher standalone; RDKit for 3D conformer optimization",
+    "ui": "React; Electron desktop runtime and browser/PWA build",
+    "source": "https://app.chemthistry.com/assets/Sketcher.js"
+  },
+  "languages": [
+    "TypeScript",
+    "Python"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L172",
+      "note": "Drew single, double, triple bonds; changed an existing bond order.",
+      "shot": {
+        "image": "evidence/chemthistry/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the sketcher canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/chemthistry/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Dative and hydrogen bond samples drawn successfully.",
+      "shot": {
+        "image": "evidence/chemthistry/f-special-bonds.webp",
+        "caption": "Dative and dotted bonds alongside other bond types."
+      }
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Placed benzene using the aromatic ring tool."
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Accessible template library includes Chair1–Chair4 and six-membered chairs."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Exposed chain tool generates zig-zag segments during dragging."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Placed iron-pentacarbonyl from the built-in structure library."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Functional groups have expand, contract and remove-abbreviation context actions."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Reachable atom-properties dialog supports labels, charges and isotopes."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L166",
+      "note": "Custom toolbar provides radical and diradical tools."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L172",
+      "note": "Hover bonds or atoms and press numbered keys."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Sketcher supports lasso; resizing is documented for Canvas objects."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Forward works; Canvas start arrowhead points inward.",
+      "shot": {
+        "image": "evidence/chemthistry/f-reaction-arrows.webp",
+        "caption": "Straight and curved arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Created editable curved Canvas arc with a full arrowhead.",
+      "shot": {
+        "image": "evidence/chemthistry/f-mechanism-arrows.webp",
+        "caption": "A curved arrow selected on the canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md#L26-L29",
+      "note": "Ketcher reaction editor imports chemical RXN files."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Sketcher help explicitly lists reaction mapping."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L170",
+      "note": "Sketcher text supports font choices, subscripts and superscripts."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Canvas arcs, paths, and arrows created and edited.",
+      "shot": {
+        "image": "evidence/chemthistry/f-shapes.webp",
+        "caption": "A selected curved arc and straight arrows on the canvas."
+      }
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Canvas aligns and distributes selected objects horizontally or vertically."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Canvas supports grouping and ungrouping with keyboard shortcuts."
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Exposed Clean Up command invokes the structure service.",
+      "engine": {
+        "library": "Indigo (WebAssembly via ketcher-standalone)",
+        "source": "https://app.chemthistry.com/assets/Sketcher.js"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L244",
+      "note": "Sketcher includes ACS 1996 bond and font styling."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Settings JSON saves bond dimensions and font sizes."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Canvas objects have individual fill and stroke colors."
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Articler supports A4/Letter sizes, margins, page breaks and multiple pages."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Canvas imports PNG, JPEG and SVG images."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L150-L154",
+      "note": "Canvas tables have configurable rows and columns with editable text."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L168",
+      "note": "Sketcher Check reports structure issues.",
+      "engine": {
+        "library": "Ketcher (TypeScript valence model) and Indigo (WebAssembly structure checks)",
+        "source": "https://app.chemthistry.com/assets/Sketcher.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Calculate CIP returns atom R/S and bond E/Z descriptors.",
+      "engine": {
+        "library": "Indigo (WebAssembly via ketcher-standalone)",
+        "source": "https://app.chemthistry.com/assets/Sketcher.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Caffeine formula, molecular weight, isotope masses, and composition calculated.",
+      "shot": {
+        "image": "evidence/chemthistry/f-formula-mass.webp",
+        "caption": "Calculated molecular weight, isotope masses, composition and formula."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly via ketcher-standalone)",
+        "source": "https://app.chemthistry.com/assets/Sketcher.js"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": null,
+      "note": "Entering benzene into the input field generated benzene.",
+      "shot": {
+        "image": "evidence/chemthistry/f-name-to-structure.webp",
+        "caption": "Benzene entered in the input field with its structure displayed."
+      }
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming output found in menus, context actions, or Extra Info."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Sketcher provides generic R-group markers and reaction mapping."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Attach S-Group supports SRU labels and repeat-unit connectivity."
+    },
+    "biomolecules": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "Ketcher's macromolecule editor is explicitly disabled."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "Cholesterol generated from SMILES; Spin visibly rotated the model.",
+      "shot": {
+        "image": "evidence/chemthistry/f-model-3d.webp",
+        "caption": "A ball-and-stick cholesterol model in the molecular viewer."
+      },
+      "engine": {
+        "library": "3Dmol.js (browser library)",
+        "source": "https://app.chemthistry.com/assets/Moleculer.js"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "CIF import supports unit cells, symmetry expansion and supercells."
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L244",
+      "note": "Ethanol CDXML import works; no export command found.",
+      "shot": {
+        "image": "evidence/chemthistry/f-cdxml.webp",
+        "caption": "Ethanol structure and a CDXML import message."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly CDXML import via ketcher-standalone)",
+        "source": "https://app.chemthistry.com/assets/Sketcher.js"
+      }
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L244",
+      "note": "CDX import documented; export unverified.",
+      "engine": {
+        "library": "Indigo (WebAssembly CDX import via ketcher-standalone)",
+        "source": "https://app.chemthistry.com/assets/Sketcher.js"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/Sketcher.js",
+      "note": "MOL read/write and cholesterol SDF import succeeded.",
+      "shot": {
+        "image": "evidence/chemthistry/f-mol-sdf.webp",
+        "caption": "A molecular model with SDF shown as its format."
+      },
+      "engine": {
+        "library": "Ketcher (TypeScript/JavaScript MOL V2000 serializer) and Indigo (WebAssembly MOL V3000/SDF conversion)",
+        "source": "https://app.chemthistry.com/assets/Sketcher.js"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/index.js",
+      "note": "SMILES import and Extra Info clipboard output verified.",
+      "shot": {
+        "image": "evidence/chemthistry/f-smiles.webp",
+        "caption": "A caffeine structure and its loaded SMILES string."
+      },
+      "engine": {
+        "library": "Indigo (WebAssembly via ketcher-standalone)",
+        "source": "https://app.chemthistry.com/assets/Sketcher.js"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md#L28",
+      "note": "InChI import is documented.",
+      "engine": {
+        "library": "Indigo (WebAssembly via ketcher-standalone)",
+        "source": "https://app.chemthistry.com/assets/Sketcher.js"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md#L28",
+      "note": "RXN file import is documented."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md#L26-L29",
+      "note": "Caffeine and paclitaxel SVG exports saved with default settings."
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/docs/AGENT_GUIDE.md#L215-L225",
+      "note": "Valid vector PDF saved after write EPIPE alert."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://app.chemthistry.com/assets/Canvas.js",
+      "note": "PNG works; Canvas default 300 DPI lacks embedded DPI metadata.",
+      "shot": {
+        "image": "evidence/chemthistry/f-png-export.webp",
+        "caption": "A ball-and-stick molecular model in the PNG output."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/CHANGELOG.md#L24",
+      "note": "PowerPoint insertion uses PNG, without editable chemical structure data."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/docs/AGENT_GUIDE.md#L325-L356",
+      "note": "Documented in-app plugin API; public repository omits implementation."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/docs/AGENT_GUIDE.md#L235-L298",
+      "note": "Documented MCP server reads and writes offline .ctt project files."
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/docs/AGENT_GUIDE.md#L325-L356",
+      "note": "Registers commands, viewers, export formats and menu contributions."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/docs/AGENT_GUIDE.md#L55-L79",
+      "note": "Requires a user-configured model endpoint and API key."
+    }
+  },
+  "caveats": [
+    "Full application source and documented MCP/plugin implementation files are not publicly released.",
+    "Desktop installers are unsigned and unnotarized.",
+    "3D optimization and some vector exports require an optional Python sidecar."
+  ],
+  "github": {
+    "stars": 14,
+    "pushedAt": "2026-10-20T02:52:19Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.1.6",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "ChemThisTry-0.1.6-arm64.dmg",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 281393462,
+    "installedBytes": 912351232,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemthistry/simple.svg",
+        "note": "Current Kekulé SMILES loaded; automatic geometry and default SVG retained.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemthistry/complex.svg",
+        "note": "Current Kekulé SMILES loaded; automatic geometry, wedge/hash bonds, and stereochemistry labels retained.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemthistry/threed.png",
+        "note": "SMILES generated ball-and-stick 3D model; default PNG cropped to remove transparent margins.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemthistry/canvas.webp",
+    "canvasLight": "evidence/chemthistry/canvas-light.webp",
+    "canvasDark": "evidence/chemthistry/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Default 2D drawings color nitrogen blue and oxygen red.",
+      "SMILES layouts use aromatic circles and display abs stereochemistry labels.",
+      "Cholesterol generated a ball-and-stick 3D model with explicit hydrogens.",
+      "RDKit sidecar reported missing numpy; editing and 3D generation still worked.",
+      "PDF export raised write EPIPE before saving a valid vector PDF.",
+      "Current Kekulé SMILES produce explicit double bonds in caffeine and paclitaxel drawings.",
+      "Moleculer exposes no MOL or SMILES export; removed the previous 2D threed-out.mol from this capture set."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 281393462,
+  "references": [
+    "https://github.com/thisThisYoung/ChemThisTry",
+    "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md"
+  ],
+  "builtOn": {
+    "id": "p49",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "Ketcher",
+      "Indigo",
+      "RDKit",
+      "3Dmol.js",
+      "ASE"
+    ],
+    "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/README.md#L26-L39",
+    "note": "Sketcher embeds Ketcher; figure-composition canvas and 3D molecular viewer are separate modules."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher; Indigo exports",
+    "language": "TypeScript",
+    "source": "https://github.com/epam/ketcher/blob/c9ec64c2151ef36b2b10863e6a243b87cd1b7d12/packages/ketcher-core/src/application/render/restruct/rebond.ts"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "Indigo exports and RDKit chemistry"
+    },
+    {
+      "language": "Python",
+      "role": "Desktop chemistry and scientific computing sidecar"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "Public JavaScript files handle packaging; full application source is private.",
+  "thirdParty": {
+    "summary": "Apache-2.0 Ketcher/Indigo and BSD-3-Clause RDKit/3Dmol.js; other declared runtime dependencies mostly MIT/ISC/BSD/Python-2.0. DOMPurify offers Apache-2.0 or MPL-2.0.",
+    "source": "https://github.com/thisThisYoung/ChemThisTry/blob/83c75d6ec69f2e857aea87e19b3ef5bd7ee59972/package-lock.json",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "3Dmol.js",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/3dmol/3Dmol.js/blob/master/LICENSE"
+      },
+      {
+        "name": "Atomic Simulation Environment",
+        "license": "LGPL-2.1-or-later",
+        "source": "https://docs.ase-lib.org/about.html"
+      }
+    ]
+  }
+}

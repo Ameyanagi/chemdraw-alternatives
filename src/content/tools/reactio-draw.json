@@ -1,0 +1,732 @@
+{
+  "id": "p11",
+  "slug": "reactio-draw",
+  "name": "Reactio Draw",
+  "rank": 5,
+  "tier": "alternative",
+  "tierReason": "It creates standalone chemical drawing documents with reaction schemes, styled captions, vector figures and editable Office output.",
+  "summary": "An editor for drawing chemical structures, reaction schemes and publication figures.",
+  "website": "https://paivel.github.io/reactio-draw/web/",
+  "repo": "https://github.com/Paivel/reactio-draw",
+  "docs": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/docs/Reactio%20Draw%20-%20Getting%20started.pdf",
+  "vendor": "Pavel Sakharov",
+  "license": {
+    "kind": "open-source",
+    "spdx": "AGPL-3.0-or-later",
+    "text": "Free software under GNU AGPL version 3 or later.",
+    "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/README.md#licence"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/README.md"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v1.10",
+    "date": "2026-11-04",
+    "source": "https://github.com/Paivel/reactio-draw/releases/tag/v1.10"
+  },
+  "engine": {
+    "rendering": "Custom SVG renderer; HTML canvas for PNG/TIFF and custom vector EPS export",
+    "chemistry": "In-house with OpenChemLib, InChI, OPSIN and Octet Draw naming",
+    "ui": "Vanilla HTML/CSS/JavaScript with native desktop webview wrappers",
+    "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L2991",
+      "note": "Drew single, double, triple bonds; changed an existing bond order.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-bonds-core.webp",
+        "caption": "Bond examples and ring structures on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L2994",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L3002",
+      "note": "Dative and quadruple bonds."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L23100",
+      "note": "L, R and C choose left, right or centered."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L3029",
+      "note": "Placed benzene and cyclohexane using dedicated tools.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-rings.webp",
+        "caption": "Benzene and cyclohexane drawings beside the ring tools."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L42650",
+      "note": "Two cyclohexane chair templates.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-conformers.webp",
+        "caption": "Bridged and chair-shaped structure templates in the left palette."
+      }
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L26666",
+      "note": "Drag distance sets zigzag chain length."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L42656",
+      "note": "Placed adamantane from built-in bridged structure palette.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-templates.webp",
+        "caption": "Bridged structure palette and an adamantane drawing."
+      }
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L41824",
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L3715",
+      "note": "Chemical definitions and expansion to atoms."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt#L186",
+      "note": "Isotopes through SMILES, files and the API."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L3016",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L26665",
+      "note": null,
+      "shot": {
+        "image": "evidence/reactio-draw/f-keyboard-drawing.webp",
+        "caption": "Hotkeys for changing atoms while pointing at them."
+      }
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L19782",
+      "note": "Lasso, rotate, flip, proportional scaling and stretching.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-selection-tools.webp",
+        "caption": "Selected ethanol structure with resize and rotation handles."
+      }
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L26671",
+      "note": null,
+      "shot": {
+        "image": "evidence/reactio-draw/f-perspective.webp",
+        "caption": "Cholesterol drawing with the rotation tool selected."
+      }
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L45185",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L45235",
+      "note": "Drew curved electron-pair arrow and edited its curvature.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-mechanism-arrows.webp",
+        "caption": "Curved arrow on the drawing canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#3-commands",
+      "note": "Drawing reaction arrows produced reaction SMILES in Analysis.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-reaction-data.webp",
+        "caption": "Reaction drawing with reaction SMILES in the analysis panel."
+      }
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L26674",
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L3114",
+      "note": "Font selection, subscripts, superscripts, bold and italic.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-rich-text.webp",
+        "caption": "Font, bold, italic, subscript, and superscript controls."
+      }
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L26676",
+      "note": "Editable shapes and brackets; API also supports curves."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L3079",
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L48553",
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#3-commands",
+      "note": "Clean Up Structure, 2D and Reaction commands.",
+      "engine": {
+        "library": "In-house JavaScript layout/cleanup; bundled OpenChemLib 9.25.1 JavaScript assists cage conformers and stereochemistry preservation",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L11245"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L3115",
+      "note": "ACS, Nature, RSC, Angewandte and Synthesis/Synlett presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L50898",
+      "note": "Custom bond/font settings saved as defaults for new documents."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt",
+      "note": "Individual atom, bond, text and shape colors."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt",
+      "note": "PNG/JPEG images placed and resized on the sheet."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L3397",
+      "note": "Editable reagent-table cells on the sheet."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt",
+      "note": "Default paclitaxel layout triggered a highlighted ring-stereobond warning.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-valence-check.webp",
+        "caption": "Highlighted ring bond and a stereobond warning."
+      },
+      "engine": {
+        "library": "In-house JavaScript valence and drawing checks; bundled OpenChemLib 9.25.1 JavaScript stereo perception for stereochemical warnings",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L18445"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L15888",
+      "note": "Computed CIP R/S and E/Z labels.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-stereo-perception.webp",
+        "caption": "Analysis panel includes a checkbox for R/S and E/Z labels."
+      },
+      "engine": {
+        "library": "Bundled OpenChemLib 9.25.1 JavaScript CIP perception via getAtomCIPParity/getBondCIPParity",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L16741"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt",
+      "note": "Caffeine: C8H10N4O2, molecular weight 194.19, exact mass 194.0804.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-formula-mass.webp",
+        "caption": "Caffeine drawing alongside molecular weight and exact mass."
+      },
+      "engine": {
+        "library": "In-house JavaScript atom counting and mass calculation using IUPAC/NIST atomic-weight/isotope data",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L5023"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt",
+      "note": "Caffeine cLogP -0.18 and TPSA 58.4 displayed.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-properties.webp",
+        "caption": "Caffeine drawing with cLogP and TPSA values."
+      },
+      "engine": {
+        "library": "Bundled OpenChemLib 9.25.1 JavaScript MoleculeProperties for cLogP, TPSA and related descriptors",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L16699"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/names/README.md",
+      "note": "Ethanol name produced CCO and C2H6O.",
+      "engine": {
+        "library": "In-house JavaScript lookup; OPSIN 2.8.0 compiled to JavaScript with TeaVM 0.16.0, Octet Draw name tables/condensed-formula reader and Wikidata dictionary; desktop fallback to bundled OPSIN 2.9.0 Java JAR subprocess",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/names/README.md#L3"
+      }
+    },
+    "structure-to-name": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/names/README.md",
+      "note": "Alternative naming worked; primary command failed because openclatura was absent.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-structure-to-name.webp",
+        "caption": "Caffeine drawing and its alternative systematic name."
+      },
+      "engine": {
+        "library": "Octet Draw namer/complexes TypeScript transpiled to bundled JavaScript unchanged; optional desktop openclatura Python subprocess with RDKit; OPSIN read-back verification",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/THIRD-PARTY-NOTICES.md#L16"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt",
+      "note": "Offline 1H, 13C, 19F and 31P predictions.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-nmr-prediction.webp",
+        "caption": "NMR prediction controls with a proton nucleus selector."
+      },
+      "engine": {
+        "library": "In-house JavaScript rd-sphere-v1 environment encoder/table predictor with local nmrshiftdb2-derived measured-shift tables",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/data/nmr/README.md#L12"
+      }
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#3-commands",
+      "note": "R-group lists, enumeration and decomposition."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/RELEASE_NOTES.md#L5",
+      "note": "Chemical repeat units; SRU and CDXML/CDX round-trip."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt#L348",
+      "note": "Requires AI add-on and separately installed MolScribe; Mac/Windows.",
+      "engine": {
+        "library": "MolScribe, separately installed Python/PyTorch subprocess with local model inference, connected through the macOS/Windows desktop bridge",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/macapp/reactio_ocsr.py#L43"
+      }
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L3111",
+      "note": "Builds and rotates; generated cholesterol inverted one stereocenter.",
+      "engine": {
+        "library": "Bundled OpenChemLib 9.25.1 JavaScript ConformerGenerator and MMFF94s+; In-house JavaScript SVG rendering/rotation and fallback force field; xyzrender style values only",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L48928"
+      }
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#3-commands",
+      "note": "CIF import is a test version."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#3-commands",
+      "note": "Exported caffeine CDXML and reopened it as recognized chemistry.",
+      "engine": {
+        "library": "In-house JavaScript CDXML reader/writer using browser DOMParser",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L42259"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/README.md#what-it-does",
+      "note": null,
+      "engine": {
+        "library": "In-house JavaScript binary CDX reader/writer; ReShiki CDX property-table data, with no ReShiki runtime code",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L36332"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#3-commands",
+      "note": "MOL import/export and SDF export/reimport succeeded.",
+      "engine": {
+        "library": "In-house JavaScript V2000 MOL/SDF reader/writer and V3000 writer; bundled OpenChemLib 9.25.1 JavaScript for V3000 import and enhanced-stereo export",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L42040"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#3-commands",
+      "note": "All three fixture SMILES imported; SMILES exports saved.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-smiles.webp",
+        "caption": "Caffeine drawing and its SMILES string."
+      },
+      "engine": {
+        "library": "In-house JavaScript SMILES parser/writer; bundled OpenChemLib 9.25.1 JavaScript toIsomericSmiles for stereochemical output",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L31111"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt",
+      "note": "Offline InChI and InChIKey output.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-inchi.webp",
+        "caption": "Caffeine drawing with InChI and InChIKey fields."
+      },
+      "engine": {
+        "library": "InChI 1.07 C library compiled to bundled WebAssembly with wasi-sdk 25; In-house C/JavaScript adapter; local execution",
+        "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/tools/inchi/build.sh#L2"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#3-commands",
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#3-commands",
+      "note": "All three SVG exports saved and parsed as vector XML."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "No PDF/Print command found; Cmd+P opened no print dialog."
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L33231",
+      "note": "Default 3× PNG exported; roughly 600 dpi at SVG physical size."
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/windows-app/clip.go#L77",
+      "note": "Windows native CDX clipboard, both directions."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/README.md#what-it-does",
+      "note": "Editable Word drawings on Windows/Mac; cross-platform return uses copy/paste."
+    },
+    "python-api": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Local%20API.txt#L471",
+      "note": "Documented HTTP wrapper example; requires desktop API add-on."
+    },
+    "ts-api": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#2-send-commands",
+      "note": "Documented JavaScript postMessage API."
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/Command%20line.txt",
+      "note": "Renders and converts without a window; Linux needs a desktop session.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-cli.webp",
+        "caption": "Info panel lists command-line render, convert, calc, nmr, and check."
+      }
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/MCP.txt",
+      "note": "Separate AI-assistants add-on required.",
+      "shot": {
+        "image": "evidence/reactio-draw/f-mcp-agents.webp",
+        "caption": "Info panel describes a separate AI assistants add-on and commands."
+      }
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/EMBEDDING.md#1-put-the-editor-on-the-page",
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "macOS installation builds the app locally and requires Apple's Command Line Tools.",
+    "Local API/MCP require a separate add-on; image recognition additionally requires MolScribe.",
+    "Some naming guides still require desktop Java; v1.10 includes browser-based OPSIN."
+  ],
+  "github": {
+    "stars": 28,
+    "pushedAt": "2026-11-05T10:40:14Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "1.10",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "zip",
+    "artifact": "https://github.com/Paivel/reactio-draw/releases/download/v1.10/ReactioDraw-Mac.zip",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 23709865,
+    "installedBytes": 27414528,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/reactio-draw/simple.svg",
+        "note": "Current Kekule SMILES; default layout; fitted view only.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/reactio-draw/complex.svg",
+        "note": "Current Kekule SMILES; default layout; ring-stereobond warning retained; fitted view only.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "failed",
+        "input": "smiles",
+        "image": "evidence/reactio-draw/threed.png",
+        "note": "Generated 3D model inverted hydroxyl stereocenter; depth rotation worked.",
+        "structure": "stereo"
+      }
+    ],
+    "canvas": "evidence/reactio-draw/canvas.webp",
+    "canvasLight": "evidence/reactio-draw/canvas-light.webp",
+    "canvasDark": "evidence/reactio-draw/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Dark interface; canvas remains white."
+    },
+    "memory": null,
+    "observations": [
+      "Default ACS style used colored heteroatoms and a visible grid.",
+      "SMILES import required clicking the sheet to place each structure.",
+      "Caffeine and paclitaxel exports preserved fixture identity and stereochemistry.",
+      "Paclitaxel's default layout triggered a ring-stereobond warning.",
+      "Cholesterol 3D generation inverted its hydroxyl stereocenter; rotation restored it.",
+      "Native cholesterol model stores depth coordinates; MOL export flattens them to zero Z."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 23709865,
+  "references": [
+    "https://github.com/Paivel/reactio-draw/blob/736db9c52de06d384a678bcd623c6138150523b2/README.md",
+    "https://github.com/Paivel/reactio-draw/blob/736db9c52de06d384a678bcd623c6138150523b2/THIRD-PARTY-NOTICES.md",
+    "https://github.com/Paivel/reactio-draw/blob/736db9c52de06d384a678bcd623c6138150523b2/PLATFORMS.md"
+  ],
+  "builtOn": {
+    "id": "p11",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "OpenChemLib",
+      "InChI",
+      "OPSIN",
+      "Octet Draw",
+      "openclatura",
+      "RDKit"
+    ],
+    "source": "https://github.com/Paivel/reactio-draw/blob/92d4c7cf7abf1f8bf0b738bd3dc5a41f53b07734/index.html#L14666",
+    "note": "Original SVG canvas; Octet supplies naming; openclatura and RDKit are optional desktop helpers."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "In-house SVG renderer",
+    "language": "JavaScript",
+    "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/index.html#L15678"
+  },
+  "otherLanguages": [
+    {
+      "language": "Go",
+      "role": "Windows/Linux wrappers and MCP server"
+    },
+    {
+      "language": "Swift",
+      "role": "macOS WebKit wrapper"
+    },
+    {
+      "language": "Python",
+      "role": "Optional naming and image recognition"
+    },
+    {
+      "language": "Java",
+      "role": "Desktop OPSIN fallback"
+    },
+    {
+      "language": "C",
+      "role": "InChI compiled to WebAssembly"
+    },
+    {
+      "language": "VBA",
+      "role": "Word add-in"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "JavaScript embedded in HTML; Go/Swift wrappers and support code excluded.",
+  "thirdParty": {
+    "summary": "Desktop OPSIN bundles jna-inchi (LGPL-2.1-or-later) and JNA (Apache-2.0 OR LGPL-2.1). NMR data requires database share-alike and OSI-licensed reliant software; ChEBI drawings require CC BY 4.0 attribution. Other bundled components use permissive licenses.",
+    "source": "https://github.com/Paivel/reactio-draw/blob/738c371a10a85b51c606619d713be441523374f8/THIRD-PARTY-NOTICES.md",
+    "notice": "https://github.com/Paivel/reactio-draw/blob/main/THIRD-PARTY-NOTICES.md",
+    "libraries": [
+      {
+        "name": "OpenChemLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/Actelion/openchemlib/blob/master/LICENSE"
+      },
+      {
+        "name": "InChI",
+        "license": "MIT",
+        "source": "https://github.com/IUPAC-InChI/InChI/blob/dev/LICENSE"
+      },
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      },
+      {
+        "name": "Octet Draw",
+        "license": "Apache-2.0",
+        "source": "https://github.com/SamChemMan/Octet-Draw/blob/main/LICENSE"
+      },
+      {
+        "name": "OpenClatura",
+        "license": "MIT",
+        "source": "https://github.com/lamalab-org/openclatura/blob/main/LICENSE"
+      },
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      }
+    ]
+  }
+}

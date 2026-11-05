@@ -1,0 +1,518 @@
+{
+  "id": "p03",
+  "slug": "chemdoodle-2d",
+  "name": "ChemDoodle 2D",
+  "rank": 78,
+  "tier": "alternative",
+  "tierReason": "It creates multipage chemical drawing documents with reactions, styled text, and publication-ready vector exports.",
+  "summary": "Desktop software for drawing chemical structures, reactions, and publication figures.",
+  "website": "https://www.chemdoodle.com/",
+  "repo": null,
+  "docs": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf",
+  "vendor": "iChemLabs, LLC",
+  "license": {
+    "kind": "commercial",
+    "spdx": null,
+    "text": "Proprietary paid license; 14-day evaluation trial.",
+    "source": "https://www.ichemlabs.com/licensing"
+  },
+  "price": {
+    "text": "2026-11-05: USD $29/month, $199/year, or $999 lifetime; suite license, plus tax.",
+    "source": "https://www.ichemlabs.com/store"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "12.12.1",
+    "date": "2026-09-19",
+    "source": "https://www.ichemlabs.com/support/version-history?product=ChemDoodle"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": "ChemDoodle cheminformatics engine and OPSIN",
+    "ui": null,
+    "source": "https://www.ichemlabs.com/support/version-history?product=ChemDoodle"
+  },
+  "languages": [
+    "Java"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Bonds",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Bonds%20Palette",
+      "note": null
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Coordinate%20Covalent",
+      "note": "Dative, hydrogen, and zero-order bonds."
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Double%20Bond%20Asymmetry",
+      "note": "Flip asymmetric bonds; symmetry settings center them."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Rings",
+      "note": null
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Chair",
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Chains",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Templates",
+      "note": null
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Templates",
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Abbreviations",
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Isotopes",
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Radicals",
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Changing%20Atom%20Labels",
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Lasso",
+      "note": null
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Rotate%20in%203D",
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Arrows",
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Electron%20Pushing",
+      "note": null
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Reactions",
+      "note": "RXN and reaction SMILES retain reactants and products."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Atom%20Mapping",
+      "note": "Manual mapping; stored in RXN, SMILES, CDX, and CDXML."
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Orbitals",
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Text%20Areas",
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Shapes",
+      "note": null
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Distributing",
+      "note": null
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Grouping",
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Cleaning%20Structures",
+      "note": null,
+      "engine": {
+        "library": "In-house (ChemDoodle 2D coordinate-layout algorithm, local Java library)",
+        "source": "https://www.ichemlabs.com/news/read?post=cd2d11_10_released"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Style%20Sheets",
+      "note": "ACS, RSC, and Nature presets."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Style%20Sheets",
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Colors",
+      "note": null
+    },
+    "pages": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Number%20of%20Pages",
+      "note": null
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Inserting%20Images",
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=TLC",
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Warnings",
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Stereochemistry",
+      "note": null,
+      "engine": {
+        "library": "CENTRES by John May (bundled Java library for CIP descriptors)",
+        "source": "https://www.ichemlabs.com/news/read?post=cd2d11_13_released"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Elemental%20Analysis",
+      "note": null,
+      "engine": {
+        "library": "In-house (ChemDoodle molecular-mass and elemental-analysis algorithms, local Java library)",
+        "source": "https://www.ichemlabs.com/news/read?post=cd2d11_9_released"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Lipophilicity",
+      "note": "Includes logP and TPSA estimates.",
+      "engine": {
+        "library": "In-house (ChemDoodle Java API descriptor algorithms, local)",
+        "source": "https://www.ichemlabs.com/news/read?post=1708"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Name%20to%20Structure",
+      "note": null,
+      "engine": {
+        "library": "OPSIN (bundled Java library)",
+        "source": "https://www.ichemlabs.com/support/version-history?product=ChemDoodle"
+      }
+    },
+    "structure-to-name": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Structure%20to%20Name",
+      "note": null,
+      "engine": {
+        "library": "In-house (ChemDoodle Java API IUPAC naming algorithms, local)",
+        "source": "https://www.ichemlabs.com/news/read?post=1708"
+      }
+    },
+    "nmr-prediction": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=NMR",
+      "note": "Predicts proton and carbon-13 shifts."
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Repeat%20Units",
+      "note": "Integer repeat counts expand into all-atom structures."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Sequence%20Tool",
+      "note": "Amino-acid sequence construction."
+    },
+    "image-to-structure": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Chemical%20Image%20Recovery",
+      "note": null,
+      "engine": {
+        "library": "In-house (ChemDoodle Chemical Image Recovery, local Java implementation)",
+        "source": "https://www.ichemlabs.com/news/read?post=chemical_image_recovery"
+      }
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=MolGrabber",
+      "note": "Retrieves structures from PubChem, ChemSpider, and ChemExper.",
+      "engine": {
+        "library": "PubChem, ChemSpider and ChemExper (remote databases through MolGrabber)",
+        "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#page=91"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=3D%20Graphics",
+      "note": "Rotatable orthographic models; advanced graphics use companion ChemDoodle 3D."
+    },
+    "crystals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Crystallographic",
+      "note": "CIF import; vendor claim."
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=ChemDraw",
+      "note": null,
+      "engine": {
+        "library": "In-house (ChemDoodle Java file-format interpreters, local)",
+        "source": "https://www.ichemlabs.com/news/read?post=508"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=ChemDraw",
+      "note": null,
+      "engine": {
+        "library": "In-house (ChemDoodle Java file-format interpreters, local)",
+        "source": "https://www.ichemlabs.com/news/read?post=508"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=MDL%20Connection%20Table",
+      "note": null,
+      "engine": {
+        "library": "In-house (ChemDoodle Java file-format interpreters, local)",
+        "source": "https://www.ichemlabs.com/news/read?post=508"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=SMILES",
+      "note": null,
+      "engine": {
+        "library": "In-house (ChemDoodle Java file-format interpreters, local)",
+        "source": "https://www.ichemlabs.com/news/read?post=508"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=InChI",
+      "note": null
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=RXN",
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Scalable%20Vector%20Graphics",
+      "note": null
+    },
+    "pdf-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Portable%20Document%20Format",
+      "note": null
+    },
+    "png-export": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Resolution",
+      "note": "PNG resolution is configurable; default is 300 dpi."
+    },
+    "clipboard-chemdraw": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Clipboard",
+      "note": "Chemical clipboard formats; compatibility depends on platform."
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.ichemlabs.com/downloads/ChemDoodleUserGuide.pdf#search=Round%20Trip%20Editing",
+      "note": "Windows OLE; macOS copy-and-paste round-trip workflow."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Sold only as part of the iChemLabs suite.",
+    "Internet access is required for activation.",
+    "Office round-trip editing depends on operating system and application compatibility."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://www.chemdoodle.com/",
+    "https://ichemlabs.com/store"
+  ],
+  "builtOn": {
+    "id": "p03",
+    "relation": null,
+    "editor": null,
+    "libraries": [
+      "OPSIN"
+    ],
+    "source": "https://www.ichemlabs.com/support/version-history?product=ChemDoodle",
+    "note": "OPSIN confirmed in vendor changelog; canvas provenance unestablished."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "ChemDoodle Java graphics library",
+    "language": "Java",
+    "source": "https://www.ichemlabs.com/news/read?post=1708"
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "Linux bundle: LGPL libraries; LibrePDF MPL-1.1/LGPL; EPL-2.0; vecmath/Temurin GPL-2.0 with Classpath exceptions; Apache/BSD/MIT; FreeType FTL/GPL-2.0; MPL-2.0 Public Suffix List data. jsr-275 license unspecified.",
+    "source": "https://www.ichemlabs.com/downloads/ChemDoodle-linux-12.12.1.bin",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "OPSIN",
+        "license": "MIT",
+        "source": "https://github.com/dan2097/opsin/blob/master/LICENSE.txt"
+      }
+    ]
+  }
+}

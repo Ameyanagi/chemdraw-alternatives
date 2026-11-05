@@ -1,0 +1,485 @@
+{
+  "id": "p138",
+  "slug": "bonddraw",
+  "name": "BondDraw",
+  "rank": 109,
+  "tier": "alternative",
+  "tierReason": "A standalone native editor draws editable 2D molecular structures and reaction figures, with limited export and layout.",
+  "summary": "A native HarmonyOS editor for drawing two-dimensional molecular structures and reaction diagrams.",
+  "website": "https://gitcode.com/weixin_52908342/ohos_JChemPaint",
+  "repo": "https://gitcode.com/weixin_52908342/ohos_JChemPaint",
+  "docs": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md",
+  "vendor": "weixin_52908342 (Everlasting)",
+  "license": {
+    "kind": "unclear",
+    "spdx": null,
+    "text": "Package manifest says LGPL-2.1-or-later; compliance README says Apache-2.0; referenced LICENSE is missing.",
+    "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/oh-package.json5"
+  },
+  "price": {
+    "text": "Not published",
+    "source": null
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/releases"
+  },
+  "engine": {
+    "rendering": "ArkUI CanvasRenderingContext2D; PNG export captures the canvas",
+    "chemistry": "In-house C++ engine (libjcp_engine.so)",
+    "ui": "ArkUI (ArkTS)",
+    "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84"
+  },
+  "languages": [
+    "ArkTS",
+    "C++"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E7%BB%93%E6%9E%84%E7%BB%98%E5%88%B6",
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E7%BB%93%E6%9E%84%E7%BB%98%E5%88%B6",
+      "note": null
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/pages/EditorController.ets#L46",
+      "note": "No dative/hydrogen tools; README's quadruple tool absent from UI."
+    },
+    "double-bond-side": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/model/Renderer.ets#L403",
+      "note": "Offsets follow E/Z flags; no independent double-bond side control."
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E7%BB%93%E6%9E%84%E7%BB%98%E5%88%B6",
+      "note": null
+    },
+    "conformers": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/model/Templates.ets",
+      "note": "No chair/Haworth templates; rings use regular polygons or SMILES layouts."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E7%BB%93%E6%9E%84%E7%BB%98%E5%88%B6",
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E6%A8%A1%E6%9D%BF%E5%BA%93",
+      "note": null
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E5%8C%96%E5%AD%A6%E6%A0%87%E6%B3%A8",
+      "note": null
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E5%8C%96%E5%AD%A6%E6%A0%87%E6%B3%A8",
+      "note": "Radical dots can be added to atoms."
+    },
+    "keyboard-drawing": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/pages/Index.ets#L328",
+      "note": "Keys switch tools; they do not edit the hovered atom/bond."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/pages/EditorController.ets#L381",
+      "note": "Lasso, rotation and flips; zoom changes viewport, without object resizing."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E5%8F%8D%E5%BA%94%E5%BC%8F%E7%BB%98%E5%88%B6",
+      "note": "Forward, equilibrium and reverse arrows."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/model/Renderer.ets#L510",
+      "note": "Arrow renderer supports straight reaction arrows, without editable curves."
+    },
+    "reaction-data": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/model/ChemModel.ets#L51",
+      "note": "Arrows store geometry only; no reactant/product roles."
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E8%A7%86%E5%9B%BE%E4%B8%8E%E6%8E%92%E7%89%88",
+      "note": "Dense spiro/bridged systems may overlap.",
+      "engine": {
+        "library": "In-house (C++ libjcp_engine.so via N-API)",
+        "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/cpp/cleanup_layout.cpp#L10"
+      }
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E6%B8%B2%E6%9F%93%E5%8F%82%E6%95%B0",
+      "note": "Bond geometry and font size are fixed constants."
+    },
+    "color": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/pages/Index.ets#L381",
+      "note": "Global CPK, monochrome and pastel schemes; no individual object colors."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/pages/EditorController.ets#L539",
+      "note": "E/Z labels are manually assigned; no computed stereodescriptors."
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/cpp/engine_stats.cpp#L83",
+      "note": "Counts explicit atoms only; implicit hydrogens and isotope masses omitted.",
+      "engine": {
+        "library": "In-house (C++ libjcp_engine.so; explicit atoms only)",
+        "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/cpp/engine_stats.cpp#L74"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E5%8C%96%E5%AD%A6%E6%A0%87%E6%B3%A8",
+      "note": "Numbered R-group attachment labels."
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E9%9A%90%E7%A7%81%E4%B8%8E%E5%AE%89%E5%85%A8",
+      "note": "Application has no network permission and cannot query online databases."
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/pages/EditorController.ets#L838",
+      "note": "MOL read/write; SDF import only, despite About-page save claim.",
+      "engine": {
+        "library": "In-house (C++ libjcp_engine.so; V2000 MOL and SDF import)",
+        "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/cpp/mdl_io.cpp#L27"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E5%BD%93%E5%89%8D%E9%99%90%E5%88%B6",
+      "note": "Subset reads/writes; @/@@ unsupported and exported stereochemistry omitted.",
+      "engine": {
+        "library": "In-house (C++ libjcp_engine.so via N-API; SMILES subset)",
+        "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/model/SmilesIO.ets#L37"
+      }
+    },
+    "inchi": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.OpenHarmony_CN.md#%E5%B7%B2%E7%9F%A5%E9%99%90%E5%88%B6",
+      "note": "Simplified formula/connectivity hash is not standard InChI."
+    },
+    "rxn": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E5%BD%93%E5%89%8D%E9%99%90%E5%88%B6",
+      "note": "RXN reaction files explicitly unsupported."
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E5%90%8E%E7%BB%AD%E6%96%B9%E5%90%91",
+      "note": "Listed as future work; current image export is PNG."
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/pages/Index.ets#L429",
+      "note": "Canvas snapshot only; no print-resolution or DPI control."
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/pages/EditorController.ets#L657",
+      "note": "Copy/paste uses an instance string, contrary to README's cross-tool claim."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#%E9%9A%90%E7%A7%81%E4%B8%8E%E5%AE%89%E5%85%A8",
+      "note": "Documentation explicitly states no plugin mechanism."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "HarmonyOS 6.0.1 PC/tablet only; source builds require DevEco Studio and signing.",
+    "Formula/mass omit implicit hydrogens; SMILES import/export omits stereochemistry.",
+    "PNG uses canvas resolution; clipboard exchange stays inside one editor instance."
+  ],
+  "github": null,
+  "hands": null,
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://gitcode.com/weixin_52908342/ohos_JChemPaint",
+    "https://gitcode.com/weixin_52908342/ohos_JChemPaint",
+    "https://raw.gitcode.com/weixin_52908342/ohos_JChemPaint/raw/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p138",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/README.md#L589-L593",
+    "note": "ArkTS canvas reimplementation; JChemPaint serves only as a design reference."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "JChemPaint-inspired ArkUI Canvas renderer",
+    "language": "ArkTS",
+    "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/entry/src/main/ets/model/Renderer.ets#L56"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "Chemistry algorithms and file formats"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "TypeScript files configure builds.",
+  "thirdParty": {
+    "summary": "No third-party runtime dependencies declared.",
+    "source": "https://gitcode.com/weixin_52908342/ohos_JChemPaint/blob/9f881281a7cf5d3b02a0b3aec22757b3a8b097ff/oh-package.json5",
+    "notice": null,
+    "libraries": []
+  }
+}

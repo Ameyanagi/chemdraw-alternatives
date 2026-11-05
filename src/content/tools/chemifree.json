@@ -1,0 +1,572 @@
+{
+  "id": "p68",
+  "slug": "chemifree",
+  "name": "Chemifree",
+  "rank": 54,
+  "tier": "alternative",
+  "tierReason": "This working drawing prototype lacks captions and scene export, so it cannot yet produce publication-grade chemical drawing documents.",
+  "summary": "An early-stage chemical drawing workspace for local structure editing, inspection and limited chemical file conversion.",
+  "website": "https://github.com/EunhakChoi/chemifree",
+  "repo": "https://github.com/EunhakChoi/chemifree",
+  "docs": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md",
+  "vendor": "EunhakChoi",
+  "license": {
+    "kind": "open-source",
+    "spdx": "MIT",
+    "text": "MIT license; free to use, modify and redistribute.",
+    "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/LICENSE"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/EunhakChoi/chemifree/releases"
+  },
+  "engine": {
+    "rendering": "SVG in the browser; scene/file rendering export is unimplemented.",
+    "chemistry": "In-house Rust models for bounded valence, aromaticity, identity, stereochemistry and formula/mass calculations.",
+    "ui": "React and TypeScript with shadcn/ui (Base UI), Tailwind CSS and Vite.",
+    "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/README.md"
+  },
+  "languages": [
+    "Rust",
+    "TypeScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/README.md#run-locally",
+      "note": "Created a bond and cycled single, double and triple orders.",
+      "shot": {
+        "image": "evidence/chemifree/f-bonds-core.webp",
+        "caption": "Bond toolbar and structure with single and double bonds."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#stereo-marks-and-configurations",
+      "note": "Applied solid wedge, hashed wedge and wavy marks.",
+      "shot": {
+        "image": "evidence/chemifree/f-stereo-bonds.webp",
+        "caption": "Stereo bond tools and a wavy bond on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/apps/web/src/components/document-workspace.tsx#L127",
+      "note": "Dative available; no hydrogen or quadruple bond tools."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1312",
+      "note": "Dedicated ring insertion remains planned."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1312",
+      "note": "Structure and substituent template insertion remains planned."
+    },
+    "custom-templates": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1324",
+      "note": "User templates remain planned."
+    },
+    "abbreviations": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1324",
+      "note": "Abbreviation collapse and expansion remain planned."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/README.md#run-locally",
+      "note": "Element labels, charges and isotope mass numbers are editable."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#document-settings-and-preferences",
+      "note": "Editable radical states render as dots or rings."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/apps/web/src/editor/structure-canvas.tsx#L54",
+      "note": "Marquee selection and movement; rotation, flip and resize unavailable."
+    },
+    "perspective": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1397",
+      "note": "3D coordinates and projected scene geometry remain planned."
+    },
+    "reaction-arrows": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/domain/src/scene.rs#L50",
+      "note": "Inserted forward arrow; no alternate arrow types shown.",
+      "shot": {
+        "image": "evidence/chemifree/f-reaction-arrows.webp",
+        "caption": "A forward arrow beside a structure on the canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1370",
+      "note": "Electron-pushing arrows remain planned."
+    },
+    "reaction-data": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#documents",
+      "note": "Chemical reaction documents remain unimplemented."
+    },
+    "atom-mapping": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1751",
+      "note": "Reaction atom mapping remains planned."
+    },
+    "orbitals": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1381",
+      "note": "Orbital and scientific-symbol scene types remain planned."
+    },
+    "rich-text": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#documents",
+      "note": "Free-text captions remain unimplemented."
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/domain/src/scene.rs#L50",
+      "note": "Forward arrow inserted; line and rectangle commands present.",
+      "shot": {
+        "image": "evidence/chemifree/f-shapes.webp",
+        "caption": "A forward arrow beside a structure on the canvas."
+      }
+    },
+    "align": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1263",
+      "note": "Alignment and distribution remain planned."
+    },
+    "groups": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#edits",
+      "note": "Group, ungroup and move scene objects together."
+    },
+    "cleanup": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#operation-contract-1",
+      "note": "CLI layout.structure reports operation_not_implemented."
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#document-settings-and-preferences",
+      "note": "Save document styles; import settings or reuse new-document defaults."
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#guarantees-and-known-limits",
+      "note": "One page; multipage documents unimplemented."
+    },
+    "pictures": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1370",
+      "note": "Image scene objects remain planned."
+    },
+    "tlc-tables": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L2411",
+      "note": "Tables, TLC plates and gels remain planned."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#valence-inspection",
+      "note": "Bounded valence model flags invalid and unsupported atom states.",
+      "engine": {
+        "library": "In-house (Rust chemifree-valence-3 bounded valence model)",
+        "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/domain/src/chemistry.rs#L75"
+      }
+    },
+    "stereo-perception": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#cip-labels",
+      "note": "Labels stored configurations; CIP Rules 4a–5 and pseudoasymmetry unsupported.",
+      "shot": {
+        "image": "evidence/chemifree/f-stereo-perception.webp",
+        "caption": "Stereo panel with atom and bond label switches."
+      },
+      "engine": {
+        "library": "In-house (Rust chemifree-cip-1 R/S and E/Z labeler; bounded CIP rules)",
+        "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/domain/src/cip.rs#L460"
+      }
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#formula-and-mass-properties",
+      "note": "Formula works; mass refused without compatible external dataset.",
+      "engine": {
+        "library": "In-house (Rust formula and mass calculations with externally loaded mass-table data)",
+        "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/domain/src/mass.rs#L205"
+      }
+    },
+    "properties": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L2046",
+      "note": "XLogP calculation remains planned."
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#operation-contract-1",
+      "note": "CLI name parser reports operation_not_implemented."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#operation-contract-1",
+      "note": "CLI naming reports operation_not_implemented."
+    },
+    "nmr-prediction": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L2205",
+      "note": "Proton and carbon NMR prediction remain planned."
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#documents",
+      "note": "Element-list and generic query atoms; substructure matching supported."
+    },
+    "polymers": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L2294",
+      "note": "Polymer repeat-unit and SRU semantics remain planned."
+    },
+    "biomolecules": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#operation-contract-1",
+      "note": "Biopolymer expansion unimplemented."
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "No 3D view; cholesterol SDF import refused."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#cdxml-interchange",
+      "note": "Exported and reimported caffeine; bounded profile reports losses.",
+      "engine": {
+        "library": "In-house (Rust CDXML reader and writer using roxmltree; interchange-tree export)",
+        "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/providers/src/cdxml.rs#L104"
+      }
+    },
+    "cdx": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#cdxml-interchange",
+      "note": "Bounded codec; edited drawings cannot be exported as CDX.",
+      "engine": {
+        "library": "In-house (Rust CDX binary reader and writer; interchange-tree export)",
+        "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/providers/src/cdx/mod.rs#L1"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#mol-and-sdf-subset",
+      "note": "2D MOL import/export and SDF export work; cholesterol SDF refused.",
+      "shot": {
+        "image": "evidence/chemifree/f-mol-sdf.webp",
+        "caption": "MOL and SDF controls show a rejected 3D SDF import."
+      },
+      "engine": {
+        "library": "In-house (Rust V2000Codec with V2000/V3000 MOL and SDF handling)",
+        "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/providers/src/ctfile.rs#L939"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#smiles",
+      "note": "Fixture imports and writes work; directional stereo is refused.",
+      "engine": {
+        "library": "In-house (Rust OpenSmilesCodec; bounded SMILES reader and writers)",
+        "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/providers/src/smiles/mod.rs#L34"
+      }
+    },
+    "inchi": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#smiles",
+      "note": "InChI explicitly unimplemented."
+    },
+    "rxn": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#mol-and-sdf-subset",
+      "note": "Reaction CTfiles are unsupported."
+    },
+    "svg-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/crates/application/src/operations.rs#L893",
+      "note": "render.scene refuses SVG; no GUI image export command."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1481",
+      "note": "render.scene refuses PDF; no GUI image export command."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1457",
+      "note": "render.scene refuses PNG; no GUI image export command."
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/roadmap/implementation-roadmap.json#L1280",
+      "note": "Chemical clipboard exchange remains planned."
+    },
+    "office": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#operation-contract-1",
+      "note": "Desktop and host integration unimplemented."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#operation-contract-1",
+      "note": "CLI version, capabilities and operation requests executed."
+    },
+    "mcp-agents": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#operation-contract-1",
+      "note": "Documented HTTP and JSON-lines operation interface for external agents."
+    },
+    "plugins": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/docs/CONTRACT.md#cip-labels",
+      "note": "Rust-only replacement of the CIP labeler through Application::with_cip_labeler."
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Early-stage source build; no tagged release, installer or hosted editor.",
+    "One graph and page; captions and SVG/PDF/PNG scene export are unimplemented.",
+    "CDXML/CDX imports have explicit losses; edited drawings cannot be exported to these formats."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-11-05T11:46:03Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "0.1.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "chemifree-9728a97.tar.gz",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 2722060,
+    "installedBytes": 116031488,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemifree/simple.png",
+        "note": "Default grid layout retained; image is a tight canvas screenshot crop.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemifree/complex.png",
+        "note": "Default grid retained; 11 stored configurations, no wedges; canvas screenshot crop.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "No 3D view; SDF rejected for nonzero atom field at column 40.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/chemifree/canvas.webp",
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "SMILES imports use an input-order grid without chemical layout.",
+      "Bonds cross and labels overlap in both SMILES drawings.",
+      "Paclitaxel stores 11 stereo configurations without drawing wedges.",
+      "The default canvas uses a dark background and light bonds.",
+      "Image evidence uses canvas crops because scene export is unimplemented."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": 2722060,
+  "references": [
+    "https://github.com/EunhakChoi/chemifree",
+    "https://github.com/EunhakChoi/chemifree/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p68",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/EunhakChoi/chemifree/blob/c5b475281f98782b64ff1086e5816d957f2ebea4/apps/web/src/editor/structure-canvas.tsx#L124",
+    "note": "Custom SVG canvas and in-house Rust chemistry."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Chemifree SVG DrawingLayer",
+    "language": "TypeScript",
+    "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/apps/web/src/editor/structure-canvas.tsx#L648"
+  },
+  "otherLanguages": [
+    {
+      "language": "Rust",
+      "role": "Chemistry, codecs and local API"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "JavaScript, Python and C support tests/tooling; HTML/CSS provide presentation.",
+  "thirdParty": {
+    "summary": "MIT/ISC UI components and icons; OFL-1.1 font (Geist).",
+    "source": "https://github.com/EunhakChoi/chemifree/blob/dec69eb94c6c58a82584155473f223f98759f91c/THIRD_PARTY_NOTICES.md",
+    "notice": "https://github.com/EunhakChoi/chemifree/blob/main/THIRD_PARTY_NOTICES.md",
+    "libraries": []
+  }
+}

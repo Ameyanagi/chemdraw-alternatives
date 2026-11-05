@@ -1,0 +1,477 @@
+{
+  "id": "p115",
+  "slug": "chem-sketcher",
+  "name": "Chem Sketcher (Non_REM.Persona Laboratory)",
+  "rank": 120,
+  "tier": "alternative",
+  "tierReason": "An end-user chemical drawing editor with image output for reports.",
+  "summary": "A browser-based editor for drawing chemical structures and estimating properties.",
+  "website": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+  "repo": null,
+  "docs": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+  "vendor": "Non_REM.Persona Laboratory (Non-Rem)",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free use advertised; no explicit software license.",
+    "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5"
+  },
+  "price": {
+    "text": "Free via sharing promotion, or ¥100 (2026-11-05).",
+    "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5"
+  },
+  "engine": {
+    "rendering": null,
+    "chemistry": null,
+    "ui": "React",
+    "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Single, double and triple bonds; vendor claim."
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Wedge/dash documented; wavy unverified; vendor claim."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Benzene and cyclohexane tools; vendor claim."
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Drag chains; vendor claim."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "PEG, PPG and PDMS units; vendor claim."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Element labels documented; charges/isotopes unverified."
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Selection documented; rotation, flip and resizing unverified."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Brackets documented; other shapes unverified; vendor claim."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Mass documented; formula unverified; vendor claim."
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "clogP, HSP and IOB; vendor claim."
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+      "note": "Repeat-unit templates and polymer brackets; vendor claim."
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "smiles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Download requires note's sharing promotion or a ¥100 purchase.",
+    "Property estimates use a simplified group-contribution method.",
+    "Offline support, mobile compatibility and publication-resolution output are unverified."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+    "ran": false,
+    "failure": "The publisher's HTML file is behind a ¥100 purchase or social-sharing access gate. No public hosted editor or direct download was found; purchase and account sign-in were not authorized.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": []
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+    "https://note.com/persona_lab/n/ne5a76ba6e9c5"
+  ],
+  "builtOn": {
+    "id": "p115",
+    "relation": "original",
+    "editor": null,
+    "libraries": null,
+    "source": "https://note.com/persona_lab/n/ne5a76ba6e9c5",
+    "note": "Author claims self-built editor and custom ring geometry; dependencies remain unconfirmed."
+  },
+  "renderer": {
+    "origin": null,
+    "name": null,
+    "language": null,
+    "source": null
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

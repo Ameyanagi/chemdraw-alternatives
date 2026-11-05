@@ -1,0 +1,495 @@
+{
+  "id": "p50",
+  "slug": "elk-draw-rdkit",
+  "name": "Elk_Draw RDKit",
+  "rank": 115,
+  "tier": "alternative",
+  "tierReason": "A standalone editor creates chemical drawing documents with structures, reactions, text and shapes, and supports editable Word objects.",
+  "summary": "A Windows editor for chemical structures and reactions with RDKit descriptors, QSAR modeling, and editable Word integration.",
+  "website": "https://github.com/AllexSpectra/Elk_Draw_RDKit",
+  "repo": "https://github.com/AllexSpectra/Elk_Draw_RDKit",
+  "docs": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md",
+  "vendor": "Oleksandr Karasyov",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Proprietary; free for private use, teaching and noncommercial academic research. Commercial use requires prior permission.",
+    "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/LICENSE.txt"
+  },
+  "price": {
+    "text": "Free for private use, teaching and noncommercial academic research; commercial permission required (2026-11-05).",
+    "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/LICENSE.txt"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": true,
+    "linux": false,
+    "web": false,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": "v0.9.7",
+    "date": "2026-10-24",
+    "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/releases/tag/v0.9.7"
+  },
+  "engine": {
+    "rendering": "SkiaSharp (Skia)",
+    "chemistry": "RDKit (molecular descriptors)",
+    "ui": "Avalonia",
+    "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/THIRD-PARTY-NOTICES.md"
+  },
+  "languages": [],
+  "features": {
+    "bonds-core": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/releases/tag/v0.9.5",
+      "note": "Haworth ring templates; vendor claim."
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#what-elk_draw-rdkit-does",
+      "note": "Fragment library includes cages, reagents and natural products; vendor claim."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "radicals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "perspective": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/releases/tag/v0.9.7",
+      "note": "Host–guest drawings rotate in 3D with depth layers; vendor claim."
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#what-elk_draw-rdkit-does",
+      "note": "Draws editable shapes and brackets; vendor claim."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/releases/tag/v0.9.4",
+      "note": "Clean Up tidies selected structures or the entire drawing; vendor claim."
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/releases/tag/v0.9.2",
+      "note": "Valence problems are marked; vendor claim."
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/releases/tag/v0.9.5",
+      "note": "R/S labels follow wedge/hash stereochemistry; vendor claim."
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#what-elk_draw-rdkit-does",
+      "note": "Formula, molecular weight and exact mass panel; vendor claim."
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#what-elk_draw-rdkit-does",
+      "note": "Properties panel calculates logP and TPSA; vendor claim.",
+      "engine": {
+        "library": "RDKit (native C API rdkitcffi.dll with descriptor extension)",
+        "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/THIRD-PARTY-NOTICES.md#L28-L31"
+      }
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#what-elk_draw-rdkit-does",
+      "note": "Explicitly excluded from this edition."
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#licence",
+      "note": "Explicitly reads and writes CDXML; vendor claim.",
+      "engine": {
+        "library": "In-house (C# CDXML reader/writer)",
+        "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/THIRD-PARTY-NOTICES.md#L104-L105"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#licence",
+      "note": "Explicitly reads and writes CDX; vendor claim.",
+      "engine": {
+        "library": "In-house (C# CDX reader/writer)",
+        "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/THIRD-PARTY-NOTICES.md#L104-L105"
+      }
+    },
+    "mol-sdf": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#what-elk_draw-rdkit-does",
+      "note": "SMILES input files and calculated SMILES output; vendor claim."
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/releases/tag/v0.9.4",
+      "note": "InChI output omits coordinate bonds; vendor claim."
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md#what-elk_draw-rdkit-does",
+      "note": "Double-click inserted Word structures to edit in Elk_Draw; vendor claim."
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Windows 10/11, 64-bit only.",
+    "Commercial use requires the author's prior permission.",
+    "NMR prediction and full-edition quantum calculations are excluded."
+  ],
+  "github": {
+    "stars": 1,
+    "pushedAt": "2026-10-24T13:59:44Z",
+    "archived": false
+  },
+  "hands": null,
+  "perf": null,
+  "downloadBytes": 18616320,
+  "references": [
+    "https://github.com/AllexSpectra/Elk_Draw_RDKit",
+    "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/README.md"
+  ],
+  "builtOn": {
+    "id": "p50",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "RDKit",
+      "RingDecomposerLib"
+    ],
+    "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/THIRD-PARTY-NOTICES.md",
+    "note": "Vendor states written from scratch; RDKit and RingDecomposerLib provide chemistry calculations."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "Elk_Draw molecular renderer",
+    "language": "C#",
+    "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/THIRD-PARTY-NOTICES.md#L3-L5"
+  },
+  "otherLanguages": [
+    {
+      "language": "C++",
+      "role": "RDKit native descriptor calculations"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": null,
+  "thirdParty": {
+    "summary": "MIT/BSD/Apache/Boost components; Eigen MPL-2.0 and Inter font OFL-1.1. Native notices also list MPL-1.1/GPL-2.0-or-later/LGPL-2.1-or-later alternatives, FreeType FTL/GPL-2.0-or-later, and libmicrohttpd LGPL-2.1/eCos terms.",
+    "source": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/c33ea2c9ae60538af7b805be9a78fc6a92ec2009/THIRD-PARTY-NOTICES.md",
+    "notice": "https://github.com/AllexSpectra/Elk_Draw_RDKit/blob/main/THIRD-PARTY-NOTICES.md",
+    "libraries": [
+      {
+        "name": "RDKit",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rdkit/rdkit/blob/master/license.txt"
+      },
+      {
+        "name": "RingDecomposerLib",
+        "license": "BSD-3-Clause",
+        "source": "https://github.com/rareylab/RingDecomposerLib/blob/master/LICENSE"
+      }
+    ]
+  }
+}

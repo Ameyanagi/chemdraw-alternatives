@@ -1,0 +1,591 @@
+{
+  "id": "p137",
+  "slug": "zeanium-molecule-drawer",
+  "name": "Zeanium Molecule Drawer",
+  "rank": 38,
+  "tier": "alternative",
+  "tierReason": "Editable drawing documents, reaction schemes, journal presets, and SVG export support standalone publication-oriented 2D figures.",
+  "summary": "A free browser editor for drawing molecular structures, reaction schemes, and chemical figures with vector export.",
+  "website": "https://zeanium.net/draw/",
+  "repo": null,
+  "docs": "https://zeanium.net/draw/",
+  "vendor": "Zeanium",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free browser access; no published software license identified.",
+    "source": "https://zeanium.net/draw/"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://zeanium.net/draw/"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://zeanium.net/draw/"
+  },
+  "engine": {
+    "rendering": "SVG for 2D drawing and export; HTML canvas for PNG; Three.js/WebGL for 3D.",
+    "chemistry": "Custom JavaScript chemistry routines",
+    "ui": "React",
+    "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/draw/",
+      "note": "Drew single bond and cycled through double and triple.",
+      "shot": {
+        "image": "evidence/zeanium-molecule-drawer/f-bonds-core.webp",
+        "caption": "Single-bond tool instructions describe cycling through bond orders."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Drew solid wedge, hashed wedge and wavy bond."
+    },
+    "special-bonds": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Bond model supports orders 1–3 and graphical styles, without dative bonds."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/draw/",
+      "note": "Placed benzene; multiple other ring tools are visible.",
+      "shot": {
+        "image": "evidence/zeanium-molecule-drawer/f-rings.webp",
+        "caption": "Ring tools include aromatic and several other ring shapes."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Two cyclohexane chair templates.",
+      "shot": {
+        "image": "evidence/zeanium-molecule-drawer/f-conformers.webp",
+        "caption": "A chair-shaped ring tool appears in the ring toolbar."
+      }
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Drag to grow a zigzag carbon chain."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "VSEPR library placed boron trifluoride."
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Ph, Boc, OMe and other abbreviations expand into molecular graphs."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Element labels and charges supported; isotope metadata is not represented."
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Automatic and manually positioned lone pairs."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Hover atoms to change elements; 1/2/3 set hovered bond order."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Lasso, rotation, and flips; no selected-structure resizing."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/zeanium-molecule-drawer/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the drawing canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Drew curved electron arrow from bond to atom.",
+      "shot": {
+        "image": "evidence/zeanium-molecule-drawer/f-mechanism-arrows.webp",
+        "caption": "A curved electron arrow starts from a bond."
+      }
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Chemical-symbol pickers include ‡, charges, radical dots, Δ, and hν."
+    },
+    "rich-text": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Plain multiline captions use preset fonts; no rich-text formatting."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Resizable brackets and editable freehand curves."
+    },
+    "align": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Line up selected molecules and symbols; distribute gaps evenly."
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Repositions chains and branches; rings remain fixed.",
+      "engine": {
+        "library": "In-house (JavaScript, browser)",
+        "source": "https://zeanium.net/assets/smiles-DtxJ4bPl.js"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "ACS 1996, RSC, Wiley, and other journal presets."
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Mechanism and freehand arrows have individual color controls."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Flags excess valence, overlapping atoms, and undefined stereocenters.",
+      "shot": {
+        "image": "evidence/zeanium-molecule-drawer/f-valence-check.webp",
+        "caption": "The structure check flags ten items to review."
+      },
+      "engine": {
+        "library": "In-house (JavaScript, browser)",
+        "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Computes R/S centers and E/Z double-bond descriptors.",
+      "engine": {
+        "library": "In-house (JavaScript, browser)",
+        "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Caffeine displayed C8H10N4O2 and 194.19 g/mol.",
+      "shot": {
+        "image": "evidence/zeanium-molecule-drawer/f-formula-mass.webp",
+        "caption": "Caffeine drawing with molecular formula and mass displayed below."
+      },
+      "engine": {
+        "library": "In-house (JavaScript, browser)",
+        "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js"
+      }
+    },
+    "properties": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/chemDescriptors-BcucR2DD.js",
+      "note": "Properties dialog displayed estimated logP and TPSA.",
+      "engine": {
+        "library": "In-house (JavaScript Ertl TPSA and partial Wildman-Crippen logP)",
+        "source": "https://zeanium.net/assets/chemDescriptors-BcucR2DD.js"
+      }
+    },
+    "name-to-structure": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "PubChem search for aspirin produced a structure.",
+      "engine": {
+        "library": "PubChem PUG REST (remote web service) + In-house JavaScript SMILES parser",
+        "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js"
+      }
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Action search found name lookup only, not structure naming."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "PubChem aspirin lookup returned a structure.",
+      "engine": {
+        "library": "PubChem PUG REST (remote web service)",
+        "source": "https://zeanium.net/assets/pubchemClient-BrnAGLt-.js"
+      }
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "Cholesterol model built automatically and rotated in depth.",
+      "shot": {
+        "image": "evidence/zeanium-molecule-drawer/f-model-3d.webp",
+        "caption": "Ball-and-stick 3D model of the molecule."
+      },
+      "engine": {
+        "library": "Three.js r185 + OrbitControls (JavaScript/WebGL, browser)",
+        "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Selected CDXML; drawing stayed unchanged; no export option."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "MOL import/export and single SDF import worked; no SDF export.",
+      "engine": {
+        "library": "In-house (JavaScript MOL V2000 parser/writer; no SDF)",
+        "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js"
+      }
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/smiles-DtxJ4bPl.js",
+      "note": "Read and copied SMILES; importer discards stereochemistry.",
+      "engine": {
+        "library": "In-house (JavaScript parser/writer; stereo and isotopes omitted)",
+        "source": "https://zeanium.net/assets/smiles-DtxJ4bPl.js"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://zeanium.net/draw/",
+      "note": "Exported SVG files for all three fixtures."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "File menu and action search offered no PDF export."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js",
+      "note": "PNG exported at 2000 pixels wide; no DPI control shown.",
+      "shot": {
+        "image": "evidence/zeanium-molecule-drawer/f-png-export.webp",
+        "caption": "Exported PNG image of a molecular drawing."
+      }
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "SMILES interchange omits stereochemistry and isotope information.",
+    "MOL support is V2000 only; text and arrows require .zeandraw files.",
+    "Offline operation is unverified; resource caching requires a prior online visit."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://zeanium.net/draw/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/zeanium-molecule-drawer/simple.svg",
+        "note": null,
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/zeanium-molecule-drawer/complex.svg",
+        "note": "SMILES stereochemistry discarded; several bonds and labels overlap.",
+        "structure": "stereo"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/zeanium-molecule-drawer/threed.png",
+        "note": "Rotating 3D view saved separately; SMILES stereochemistry discarded.",
+        "structure": "stereo"
+      }
+    ],
+    "canvas": "evidence/zeanium-molecule-drawer/canvas.webp",
+    "canvasLight": "evidence/zeanium-molecule-drawer/canvas-light.webp",
+    "canvasDark": "evidence/zeanium-molecule-drawer/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Canvas switches; surrounding interface stays dark."
+    },
+    "memory": null,
+    "observations": [
+      "No numbered version appeared; the served editor bundle identifies the build.",
+      "Default style was Adv. Synth. Catal. with colored heteroatoms.",
+      "Paclitaxel layout contains overlapping bonds and labels.",
+      "The import dialog says SMILES stereochemistry is not imported.",
+      "The default 3D preview spins and shows hydrogens and lone pairs."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://zeanium.net/draw/",
+    "https://zeanium.net/draw/"
+  ],
+  "builtOn": {
+    "id": "p137",
+    "relation": null,
+    "editor": null,
+    "libraries": null,
+    "source": null,
+    "note": "Public materials do not establish canvas provenance or chemistry dependencies."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "In-house SVG renderer",
+    "language": "JavaScript",
+    "source": "https://zeanium.net/assets/MoleculeDrawerPage-JSxxZFpe.js"
+  },
+  "otherLanguages": null,
+  "enginesChecked": true,
+  "languageNote": "Source languages not publicly stated; generated JavaScript excluded.",
+  "thirdParty": {
+    "summary": "Identified browser components: React and Three.js (MIT), Lucide icons (ISC), and Inter/Orbitron fonts (SIL OFL-1.1: redistributed fonts and derivatives retain OFL).",
+    "source": "https://zeanium.net/assets/index-BQLiMrmp.js",
+    "notice": null,
+    "libraries": []
+  }
+}

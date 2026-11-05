@@ -1,0 +1,501 @@
+{
+  "id": "p106",
+  "slug": "moled",
+  "name": "moled",
+  "rank": 126,
+  "tier": "alternative",
+  "tierReason": "Its basic browser editing code is suited to integration, but does not establish a usable publication-grade drawing document workflow.",
+  "summary": "A legacy JavaScript browser editor for drawing molecular structures.",
+  "website": "https://tomkel.github.io/moled/",
+  "repo": "https://github.com/tomkel/moled",
+  "docs": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/README.md",
+  "vendor": "Tommy Kelly",
+  "license": {
+    "kind": "open-source",
+    "spdx": "AGPL-3.0",
+    "text": "GNU Affero General Public License version 3.",
+    "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/LICENSE"
+  },
+  "price": {
+    "text": "Free",
+    "source": "https://github.com/tomkel/moled"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/tomkel/moled/releases"
+  },
+  "engine": {
+    "rendering": "SVG elements created and updated by D3.js v3.",
+    "chemistry": "Smidge SMILES parser with in-house molecular graph, valence, and hydrogen logic.",
+    "ui": "Plain HTML/CSS and JavaScript DOM controls with D3.js v3.",
+    "source": "https://github.com/tomkel/moled/tree/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/moled.js#L483-L555",
+      "note": "Draws three orders; existing bonds must be deleted and redrawn."
+    },
+    "stereo-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-templates": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "abbreviations": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/smiles.js#L71-L79",
+      "note": "Elements and charges supported; isotope labels discarded during parsing."
+    },
+    "radicals": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/moled.js#L270-L292",
+      "note": "Automatic electron dots; manual radical or lone-pair placement unverified."
+    },
+    "keyboard-drawing": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/moled.js#L651-L685",
+      "note": "Delete/Backspace removes selected atoms or bonds; no element/order shortcuts."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/moled.js#L483-L525",
+      "note": "Single atom/bond selection; lasso, rotation, flipping, and resizing unverified."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mechanism-arrows": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "shapes": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "structure-to-name": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "smiles": {
+      "status": "partial",
+      "evidence": "source",
+      "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/moled.js#L136-L156",
+      "note": "Source parser only; editor input hardcoded, export unverified.",
+      "engine": {
+        "library": "Smidge (JavaScript)",
+        "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/smiles.js#L1-L25"
+      }
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pdf-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "png-export": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Checked-in HTML loads CommonJS code without a module loader, preventing normal browser startup.",
+    "Advertised demo embeds a RawGit URL; hosted editor availability could not be verified.",
+    "README claims completeness, but charge/hydrogen initialization has empty or commented branches."
+  ],
+  "github": {
+    "stars": 4,
+    "pushedAt": "2018-05-03T22:31:23Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "3.0.0",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://github.com/tomkel/moled/tree/15103f3",
+    "ran": false,
+    "failure": "The checked-in moled.html showed static controls but no drawing canvas in WebKit or Chromium; the editor did not initialize. The checked-in JavaScript uses CommonJS require without a browser module loader.",
+    "downloadBytes": null,
+    "installedBytes": 413696,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Package metadata reports version 3.0.0; source commit is 15103f3.",
+      "Clicking the element button and dragging on the page produced no editor response.",
+      "Startup screenshots are startup-failure.png and chromium-startup-failure.png.",
+      "Molecule and feature tests could not be performed because the editor failed to initialize."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/tomkel/moled",
+    "https://tomkel.github.io/moled/",
+    "https://github.com/tomkel/moled/blob/master/README.md"
+  ],
+  "builtOn": {
+    "id": "p106",
+    "relation": "original",
+    "editor": null,
+    "libraries": [
+      "Smidge"
+    ],
+    "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/moled.js#L5-L34",
+    "note": "Own SVG drawing canvas; bundled Smidge parses SMILES."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "moled SVG renderer using D3",
+    "language": "JavaScript",
+    "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/moled.js#L177-L274"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "HTML and CSS provide editor markup and styling.",
+  "thirdParty": {
+    "summary": "Includes MIT-licensed Smidge and BSD-3-Clause D3 v3.",
+    "source": "https://github.com/tomkel/moled/blob/15103f344b8fcf6c02ea93a9bd534c2ca19b7d03/Smidge.js#L1-L26",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Smidge",
+        "license": null,
+        "source": null
+      }
+    ]
+  }
+}

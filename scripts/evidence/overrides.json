@@ -1,0 +1,147 @@
+{
+  "p01": {
+    "name": "ChemDraw",
+    "caveats": [
+      "Features differ between ChemDraw Prime, Professional and Signals ChemDraw. We tested Prime.",
+      "Ships RDKit 2024.09.6 as a bundled library in the macOS 26.0 and Windows 26.1 installs. Revvity does not document what it does, so this does not mean ChemDraw draws with RDKit."
+    ],
+    "builtOn": {
+      "relation": "original",
+      "editor": null,
+      "libraries": null,
+      "source": "https://revvitysignals.com/chemdraw-turns-40",
+      "note": "Ships RDKit 2024.09.6; Revvity does not document what it does."
+    },
+    "drawingStyle": "ACS Document 1996",
+    "features": {
+      "python-api": {
+        "status": "partial",
+        "note": "Not in Prime. ChemScript SDK in Professional and Signals, Windows only."
+      },
+      "ts-api": {
+        "status": "partial",
+        "note": "Not in Prime. Desktop add-in API in Signals only, not a JavaScript library."
+      },
+      "cli": {
+        "status": "no",
+        "note": "No command-line tool. ChemScript scripts can automate work in Professional and Signals."
+      },
+      "plugins": {
+        "status": "partial",
+        "note": "Not in Prime. Add-ins SDK in Signals only."
+      }
+    }
+  },
+  "p116": {
+    "name": "ChemDraft (元素智研)"
+  },
+  "p118": {
+    "name": "Chemeditor (Chemie-Lernprogramme)"
+  },
+  "p02": {
+    "builtOn": {
+      "relation": "original",
+      "editor": null,
+      "libraries": [
+        "COSMolKit (Rust port of RDKit)"
+      ],
+      "source": "https://github.com/Ameyanagi/ReShiki/blob/main/NOTICE",
+      "note": "Own Rust canvas. All chemistry is Rust: code ported with custom changes, plus a pinned fork of COSMolKit, a Rust port of RDKit.",
+      "ported": [
+        "RDKit",
+        "OPSIN",
+        "openclatura",
+        "InChI",
+        "Centres"
+      ]
+    },
+    "thirdParty": {
+      "summary": "MIT or Apache compatible code. Bundled NMR data is share-alike, ChEBI aliases are CC BY 4.0, and fonts are OFL-1.1 and Bitstream Vera.",
+      "source": "https://github.com/Ameyanagi/ReShiki/blob/main/NOTICE"
+    },
+    "languages": [
+      "Rust"
+    ],
+    "languageNote": "Python bindings are in the nightly build. TypeScript is for bindings and tests.",
+    "features": {
+      "python-api": {
+        "status": "partial",
+        "note": "Python bindings are in the nightly build, not in stable 0.13.1."
+      }
+    },
+    "otherLanguages": [
+      {
+        "language": "Python",
+        "role": "Bindings, in the nightly build only"
+      },
+      {
+        "language": "JavaScript",
+        "role": "Browser bindings and Office add-in"
+      }
+    ]
+  },
+  "p112": {
+    "builtOn": {
+      "relation": "original",
+      "editor": null,
+      "libraries": [],
+      "source": "https://github.com/kemia/kemia/blob/3151b4e98a9eb376c8b01a4b1e4105705ff08a3b/kemia/layout/coordinate_generator.js#L19-L25",
+      "note": "Own canvas; CDK coordinate generation and MX ring perception are ported.",
+      "ported": [
+        "CDK",
+        "MX"
+      ]
+    }
+  },
+  "p48": {
+    "builtOn": {
+      "relation": "original",
+      "editor": null,
+      "libraries": [],
+      "source": "https://github.com/ksharindam/chemcanvas/blob/2c62054be57e3d0f77ed0c980397995b1def6563/chemcanvas/canvas.py",
+      "note": "Custom Qt canvas; chemistry includes adapted OASA source.",
+      "ported": [
+        "OASA"
+      ]
+    }
+  },
+  "p77": {
+    "builtOn": {
+      "relation": "original",
+      "editor": null,
+      "libraries": [
+        "InChI"
+      ],
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/8e6f995eae65d426b5cffc9446b772ec0ab7eaee/THIRD_PARTY_NOTICES.md#L3-L46",
+      "note": "Custom editor; RDKit-derived SMILES grammar reimplemented in Rust; no RDKit runtime.",
+      "ported": [
+        "RDKit SMILES grammar"
+      ]
+    }
+  },
+  "p42": {
+    "builtOn": {
+      "relation": "original",
+      "editor": null,
+      "libraries": [
+        "RDKit",
+        "OpenChemLib",
+        "IsoSpec",
+        "OPSIN",
+        "InChI",
+        "Avogadro",
+        "Indigo"
+      ],
+      "source": "https://github.com/jgassens/ChemDraft/blob/c8de616521401c60404af2eed6e7659266c53425/apps/desktop/src/MainWindow.tsx",
+      "note": "Own native SVG canvas. Includes an optional Ketcher sub-editor for one molecule; its click-to-open paths are off in this build."
+    }
+  },
+  "p14": {
+    "caveats": [
+      "Saving or exporting drawings containing Templates content or lab apparatus requires Pro.",
+      "Office editing requires reopening the exported picture in MolDraw and replacing it.",
+      "Free users are asked to credit MolDraw; Pro removes this request.",
+      "Result depends on how SMILES goes in. Pasting on the canvas gave a clean paclitaxel with no wedge or hash bonds shown. The Paste SMILES button kept wedges, but the layout overlapped."
+    ]
+  }
+}

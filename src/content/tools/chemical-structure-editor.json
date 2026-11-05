@@ -1,0 +1,527 @@
+{
+  "id": "p84",
+  "slug": "chemical-structure-editor",
+  "name": "Chemical Structure Editor (CSE)",
+  "rank": 70,
+  "tier": "alternative",
+  "tierReason": "Implements standalone 2D structure and reaction drawing with geometric editing and vector SVG export.",
+  "summary": "Browser editor for drawing chemical structures, reaction schemes and geometric figures for publication.",
+  "website": "https://sergiidudkin.github.io/ChemicalStructureEditor/",
+  "repo": "https://github.com/SergiiDudkin/ChemicalStructureEditor",
+  "docs": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md",
+  "vendor": "SergiiDudkin",
+  "license": {
+    "kind": "unclear",
+    "spdx": null,
+    "text": "Public source repository; no software license specified.",
+    "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor"
+  },
+  "price": {
+    "text": "Free (hosted editor, checked 2026-11-05)",
+    "source": "https://sergiidudkin.github.io/ChemicalStructureEditor/"
+  },
+  "platforms": {
+    "macos": true,
+    "windows": true,
+    "linux": true,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": true
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/releases"
+  },
+  "engine": {
+    "rendering": "Native SVG DOM for on-screen drawing and SVG export",
+    "chemistry": "In-house JavaScript molecular graph and formula parser",
+    "ui": "Vanilla JavaScript, HTML and SVG",
+    "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/scripts/main.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L96-L104",
+      "note": "Drew single and double; cycled single to triple."
+    },
+    "stereo-bonds": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/scripts/ChemBond.js#L59-L104",
+      "note": "Solid and hashed wedges work; no wavy tool found."
+    },
+    "special-bonds": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "double-bond-side": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L106-L112",
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/scripts/main.js#L769-L772",
+      "note": "Drew benzene; five-, six-, seven-membered ring tools visible.",
+      "shot": {
+        "image": "evidence/chemical-structure-editor/f-rings.webp",
+        "caption": "Aromatic ring tool selected beside an oversized, clipped ring."
+      }
+    },
+    "conformers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "chains": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "templates": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L221-L228",
+      "note": "Templates beyond simple rings remain on the roadmap."
+    },
+    "custom-templates": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L221-L228",
+      "note": "Custom templates remain on the roadmap."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L127-L131",
+      "note": "Understands Me, Et, Pr, Bu, Ph, Bn, Ac, Bz and Ts."
+    },
+    "atom-labels": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md",
+      "note": "Arbitrary atom labels work; charges remain on the roadmap."
+    },
+    "radicals": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L221-L228",
+      "note": "Radicals remain on the roadmap."
+    },
+    "keyboard-drawing": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "selection-tools": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/scripts/TransformTool.js",
+      "note": "Four corner/side handles each; README says eight each."
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L149-L159",
+      "note": "Drew forward and equilibrium arrows."
+    },
+    "mechanism-arrows": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Curve tool draws plain curves without arrowheads."
+    },
+    "reaction-data": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "atom-mapping": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L221-L228",
+      "note": "Free text and formatting remain on the roadmap."
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L161-L179",
+      "note": "Drew a curve; line, ellipse and rectangle tools visible."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "journal-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "custom-styles": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "color": {
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L221-L228",
+      "note": "User-facing font, color and bond styling remain on the roadmap."
+    },
+    "pages": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "pictures": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "tlc-tables": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "valence-check": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "stereo-perception": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L201-L206",
+      "note": "Console calculation returned formula and molecular weight.",
+      "engine": {
+        "library": "In-house",
+        "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/scripts/Selection.js#L508-L532"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No name conversion command found."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "polymers": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "biomolecules": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "image-to-structure": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No 3D view command found."
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No CDXML import or export command found."
+    },
+    "cdx": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mol-sdf": {
+      "status": "no",
+      "evidence": "tested",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/scripts/main.js#L26-L68",
+      "note": "MOL import failed; Save as MOL did nothing."
+    },
+    "smiles": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "SMILES paste produced no drawing; no SMILES export found."
+    },
+    "inchi": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rxn": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L189-L190",
+      "note": "Save as SVG downloaded a vector file."
+    },
+    "pdf-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PDF export command found."
+    },
+    "png-export": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No PNG export command found."
+    },
+    "clipboard-chemdraw": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/scripts/Selection.js#L222-L274",
+      "note": "Uses an internal clipboard; ChemDraw formats are not exchanged."
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/README.md#L201-L219",
+      "note": "Console helpers expose calculations and display toggles, not drawing operations."
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "No software license is specified.",
+    "Editable drawings use custom JSON; the MOL export menu entry is an unimplemented placeholder.",
+    "Atomic-weight data contains errors: cobalt is assigned 194 instead of 58.933194."
+  ],
+  "github": {
+    "stars": 0,
+    "pushedAt": "2026-05-24T14:51:10Z",
+    "archived": false
+  },
+  "hands": {
+    "testedVersion": "c1570bab",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://sergiidudkin.github.io/ChemicalStructureEditor/",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "SMILES paste did nothing; MOL opened as invalid JSON.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "SMILES paste did nothing; MOL did not load through JSON picker.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No 3D viewport found; fixture skipped.",
+        "structure": null
+      }
+    ],
+    "canvas": null,
+    "canvasLight": "evidence/chemical-structure-editor/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "MOL converted to native JSON; browser color schemes render identically."
+    },
+    "memory": null,
+    "observations": [
+      "The JSON picker reported a parse error for the caffeine MOL file.",
+      "The SVG export retained the full canvas dimensions.",
+      "The formula and mass result was available through the browser console.",
+      "The aromatic ring tool produced oversized geometry during placement."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://github.com/SergiiDudkin/ChemicalStructureEditor",
+    "https://sergiidudkin.github.io/ChemicalStructureEditor/",
+    "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/main/README.md"
+  ],
+  "builtOn": {
+    "id": "p84",
+    "relation": "original",
+    "editor": null,
+    "libraries": [],
+    "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/index.html#L68-L141",
+    "note": "Custom SVG editor with in-house molecular graph, formula parser, and bond rendering."
+  },
+  "renderer": {
+    "origin": "original",
+    "name": "CSE SVG bond and label renderer",
+    "language": "JavaScript",
+    "source": "https://github.com/SergiiDudkin/ChemicalStructureEditor/blob/c1570babac17b5bc200357c603e4fe0d46f87a1d/src/scripts/ChemBond.js#L333-L354"
+  },
+  "otherLanguages": [],
+  "enginesChecked": true,
+  "languageNote": "Python only prepares data; HTML/CSS provide presentation.",
+  "thirdParty": {
+    "summary": null,
+    "source": null,
+    "notice": null,
+    "libraries": []
+  }
+}

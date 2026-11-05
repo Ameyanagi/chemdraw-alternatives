@@ -1,0 +1,624 @@
+{
+  "id": "p119",
+  "slug": "chemeditor-chemrise",
+  "name": "Chemeditor (Chemrise)",
+  "rank": 18,
+  "tier": "alternative",
+  "tierReason": "It creates complete 2D chemistry documents with editable Ketcher structures, rich text, HTML saving, and PDF printing.",
+  "summary": "Browser-based editor for chemistry articles, reaction equations, and embedded molecular structure drawings.",
+  "website": "https://chemrise.ru/chemeditor/en",
+  "repo": null,
+  "docs": "https://chemrise.ru/chemeditor/help",
+  "vendor": "ChemRise",
+  "license": {
+    "kind": "free",
+    "spdx": null,
+    "text": "Free hosted service; no Chemeditor-specific software license stated.",
+    "source": "https://chemrise.ru/chemeditor/help"
+  },
+  "price": {
+    "text": "Free (checked 2026-11-05)",
+    "source": "https://chemrise.ru/chemeditor/en"
+  },
+  "platforms": {
+    "macos": false,
+    "windows": false,
+    "linux": false,
+    "web": true,
+    "ios": false,
+    "android": false,
+    "offline": false
+  },
+  "version": {
+    "name": null,
+    "date": null,
+    "source": "https://chemrise.ru/chemeditor/en"
+  },
+  "engine": {
+    "rendering": "SVG through Ketcher/Raphaël; Indigo generates SVG and PNG exports",
+    "chemistry": "Indigo through embedded Ketcher",
+    "ui": "CKEditor 4 with embedded Ketcher (React)",
+    "source": "https://chemrise.ru/ketcher/static/js/main.e47c48ad.js"
+  },
+  "languages": [
+    "JavaScript"
+  ],
+  "features": {
+    "bonds-core": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-bonds",
+      "note": "Drew single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/chemeditor-chemrise/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the drawing canvas."
+      }
+    },
+    "stereo-bonds": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts",
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/chemeditor-chemrise/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge and wavy bonds on the canvas."
+      }
+    },
+    "special-bonds": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts",
+      "note": "Ketcher includes dative and hydrogen bond tools."
+    },
+    "double-bond-side": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rings": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Placed benzene; common ring buttons are available.",
+      "shot": {
+        "image": "evidence/chemeditor-chemrise/f-rings.webp",
+        "caption": "Benzene and ring buttons in the structure editor."
+      }
+    },
+    "conformers": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/templates/library.sdf#L8258",
+      "note": "Chair templates in embedded Ketcher."
+    },
+    "chains": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/editor/tool/chain.ts#L157",
+      "note": "Dragging sets the number of chain segments."
+    },
+    "templates": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chemrise.ru/chemeditor/help",
+      "note": "Placed bicyclo[2.2.1]heptane from structure library."
+    },
+    "custom-templates": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#templates-toolbar",
+      "note": "Save structures into Ketcher's user template library."
+    },
+    "abbreviations": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#superatom-s-group",
+      "note": "Ketcher superatom abbreviations retain underlying chemistry."
+    },
+    "atom-labels": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/modal/components/toolbox/Atom/Atom.tsx",
+      "note": "Ketcher atom properties include labels, charges and isotopes.",
+      "shot": {
+        "image": "evidence/chemeditor-chemrise/f-atom-labels.webp",
+        "caption": "Atom labels and charge controls in the structure editor."
+      }
+    },
+    "radicals": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/data/schema/struct-schema.ts",
+      "note": "Ketcher offers monoradical and singlet/triplet diradical settings."
+    },
+    "keyboard-drawing": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-atoms",
+      "note": "Select an atom and type to change its element."
+    },
+    "selection-tools": {
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#changing-structure-display",
+      "note": "Lasso, rotate and flip; document insertion controls whole-molecule resizing.",
+      "shot": {
+        "image": "evidence/chemeditor-chemrise/f-selection-tools.webp",
+        "caption": "Rectangle selection and hand tools beside a caffeine structure."
+      }
+    },
+    "perspective": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "reaction-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://chemrise.ru/chemeditor/help",
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/chemeditor-chemrise/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the drawing canvas."
+      }
+    },
+    "mechanism-arrows": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/action/tools.ts#L260",
+      "note": "Drew a curved filled arrow.",
+      "shot": {
+        "image": "evidence/chemeditor-chemrise/f-mechanism-arrows.webp",
+        "caption": "Curved arrow on the structure editor canvas."
+      }
+    },
+    "reaction-data": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#reaction-specific-format-support",
+      "note": "Ketcher stores reactants, products and reaction participants."
+    },
+    "atom-mapping": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-reactions",
+      "note": "Ketcher provides manual and automatic reaction atom mapping."
+    },
+    "orbitals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "rich-text": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chemrise.ru/images/buttons.png",
+      "note": "Document toolbar provides fonts, subscripts and superscripts.",
+      "shot": {
+        "image": "evidence/chemeditor-chemrise/f-rich-text.webp",
+        "caption": "Document editor toolbar with subscript and superscript controls."
+      }
+    },
+    "shapes": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-graphical-objects",
+      "note": "Ketcher shapes plus S-group brackets."
+    },
+    "align": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "groups": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cleanup": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-molecules-mode",
+      "note": "Ketcher cleanup standardizes bond lengths and angles.",
+      "engine": {
+        "library": "Indigo (WebAssembly through ketcher-standalone, clean2d)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L228"
+      }
+    },
+    "journal-styles": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#acs-american-chemical-society-style",
+      "note": "ACS preset in embedded Ketcher."
+    },
+    "custom-styles": {
+      "status": "yes",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/modal/components/meta/Settings/Settings.tsx#L88",
+      "note": "Save and reload Ketcher font and bond settings."
+    },
+    "color": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#highlighting-atoms-and-bonds",
+      "note": "Individually highlight Ketcher atoms and bonds in eight colors."
+    },
+    "pages": {
+      "status": "partial",
+      "evidence": "ui",
+      "source": null,
+      "note": "Insert Page Break for Printing command."
+    },
+    "pictures": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#adding-images-on-the-canvas",
+      "note": "Ketcher supports inserting PNG and SVG images."
+    },
+    "tlc-tables": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://ckeditor.com/docs/ckeditor4/latest/features/table.html",
+      "note": "Editable tables through the embedded CKEditor 4 document editor."
+    },
+    "valence-check": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-atoms",
+      "note": "Ketcher underlines atoms with invalid valence in red.",
+      "engine": {
+        "library": "Ketcher (TypeScript valence checks); Indigo (WebAssembly additional structure checks)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/state/server/index.js#L85"
+      }
+    },
+    "stereo-perception": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#stereochemistry",
+      "note": "Ketcher calculates R/S, r/s and E/Z descriptors.",
+      "engine": {
+        "library": "Indigo (WebAssembly through ketcher-standalone, calculateCip)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L170"
+      }
+    },
+    "formula-mass": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/state/server/index.js#L137",
+      "note": "Caffeine: C8H10N4O2, molecular weight 194.194.",
+      "engine": {
+        "library": "Indigo (WebAssembly through ketcher-standalone, calculate)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/indigoWorker.ts#L181"
+      }
+    },
+    "properties": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "name-to-structure": {
+      "status": "no",
+      "evidence": "tested",
+      "source": null,
+      "note": "Open structure rejected caffeine as a name."
+    },
+    "structure-to-name": {
+      "status": "no",
+      "evidence": "ui",
+      "source": null,
+      "note": "No naming command found in drawing or calculation controls."
+    },
+    "nmr-prediction": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "markush": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#drawing-r-groups",
+      "note": "Ketcher supports R-groups, atom lists and Markush logic."
+    },
+    "polymers": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#marking-s-groups",
+      "note": "Ketcher represents SRU polymers and copolymer connectivity."
+    },
+    "biomolecules": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#ketcher-macromolecules-mode",
+      "note": "Ketcher supports peptides, nucleic acids, sequences and HELM."
+    },
+    "image-to-structure": {
+      "status": "no",
+      "evidence": "source",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts#L720",
+      "note": "Embedded standalone Ketcher explicitly disables image recognition."
+    },
+    "database-lookup": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "model-3d": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#3d-viewer",
+      "note": "SDF model rotated in Miew.",
+      "shot": {
+        "image": "evidence/chemeditor-chemrise/f-model-3d.webp",
+        "caption": "Miew viewer showing a molecular model and 3D rotation note."
+      },
+      "engine": {
+        "library": "Miew (JavaScript/WebGL through miew-react)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/views/modal/components/process/Miew/Miew.tsx#L44"
+      }
+    },
+    "crystals": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cdxml": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Exported CDXML and reopened it as a structure.",
+      "engine": {
+        "library": "Indigo (WebAssembly through ketcher-standalone)",
+        "source": "https://github.com/epam/Indigo/blob/indigo-1.46.0/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L193"
+      }
+    },
+    "cdx": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Ketcher supports binary CDX and Base64 CDX.",
+      "engine": {
+        "library": "Indigo (WebAssembly through ketcher-standalone)",
+        "source": "https://github.com/epam/Indigo/blob/indigo-1.46.0/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L197"
+      }
+    },
+    "mol-sdf": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Opened MOL and SDF; saved MOL.",
+      "engine": {
+        "library": "Ketcher (TypeScript MOL V2000 parser/writer); Indigo (WebAssembly for SDF, MOL V3000 and query MOL)",
+        "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L82"
+      }
+    },
+    "smiles": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Opened SMILES; generated SMILES shown in save preview.",
+      "engine": {
+        "library": "Indigo (WebAssembly through ketcher-standalone)",
+        "source": "https://github.com/epam/Indigo/blob/indigo-1.46.0/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L137"
+      }
+    },
+    "inchi": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Ketcher supports InChI, AuxInfo and InChIKey.",
+      "engine": {
+        "library": "Indigo with InChI (C/C++ compiled to WebAssembly through ketcher-standalone)",
+        "source": "https://github.com/epam/Indigo/blob/indigo-1.46.0/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L201"
+      }
+    },
+    "rxn": {
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/README.md#key-features",
+      "note": "Ketcher loads and saves MDL RXN reactions."
+    },
+    "svg-export": {
+      "status": "yes",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/documentation/help.md#working-with-files",
+      "note": "Downloaded SVG exports."
+    },
+    "pdf-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://chemrise.ru/chemeditor/help",
+      "note": "Print preview opened; host did not invoke print dialog."
+    },
+    "png-export": {
+      "status": "partial",
+      "evidence": "tested",
+      "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-react/src/script/ui/data/schema/options-schema.ts#L38",
+      "note": "PNG saved at 223 × 162; no DPI metadata."
+    },
+    "clipboard-chemdraw": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "office": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "python-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ts-api": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "cli": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "mcp-agents": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "plugins": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "embed": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    },
+    "ai-assistant": {
+      "status": "unknown",
+      "evidence": "none",
+      "source": null,
+      "note": null
+    }
+  },
+  "caveats": [
+    "Document editing requires a desktop viewport at least 1100 pixels wide.",
+    "Publishing requires an account; limits are 20 documents and 3 MB per document.",
+    "Some typed arrow sequences can lose formatting when saved or printed."
+  ],
+  "github": null,
+  "hands": {
+    "testedVersion": "Ketcher 3.18.0 (build 2026-…",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://chemrise.ru/chemeditor/en",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemeditor-chemrise/simple.svg",
+        "note": "SMILES layout; SVG and MOL saved at defaults.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemeditor-chemrise/complex.svg",
+        "note": "SMILES layout includes an ABS stereochemistry label.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/chemeditor-chemrise/threed.png",
+        "note": "SMILES viewer blank; SDF model rotates; SVG is projection.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/chemeditor-chemrise/canvas.webp",
+    "canvasLight": "evidence/chemeditor-chemrise/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": null,
+    "observations": [
+      "Ketcher reports build 2026-09-02 13:33:46; parent script is chemeditor.js?26.",
+      "Paclitaxel layout includes an ABS label and wedge bonds.",
+      "Miew displayed explicit hydrogens from the supplied SDF.",
+      "Downloads required a Chrome-like user agent in the isolated WebKit host.",
+      "Print preview worked; the host did not open a print dialog."
+    ]
+  },
+  "perf": null,
+  "downloadBytes": null,
+  "references": [
+    "https://chemrise.ru/chemeditor/en",
+    "https://chemrise.ru/chemeditor/en"
+  ],
+  "builtOn": {
+    "id": "p119",
+    "relation": "wrapper",
+    "editor": "Ketcher",
+    "libraries": [
+      "Ketcher",
+      "Indigo",
+      "Miew"
+    ],
+    "source": "https://chemrise.ru/chemeditor/help",
+    "note": "Vendor documents embedded Ketcher; shipped standalone build includes Indigo chemistry and Miew 3D."
+  },
+  "renderer": {
+    "origin": "borrowed",
+    "name": "Ketcher/Raphaël; Indigo export renderer",
+    "language": "TypeScript",
+    "source": "https://github.com/epam/ketcher/blob/f4f013e1855b71b0cbd37fc79d55b0cbe51c2371/packages/ketcher-core/src/application/render/raphaelRender.ts#L22"
+  },
+  "otherLanguages": [
+    {
+      "language": "JavaScript",
+      "role": "Raphaël, CKEditor and Miew viewer"
+    },
+    {
+      "language": "C++",
+      "role": "Indigo chemistry and rendering (WebAssembly)"
+    },
+    {
+      "language": "C",
+      "role": "InChI support compiled to WebAssembly"
+    }
+  ],
+  "enginesChecked": true,
+  "languageNote": "HTML and CSS provide layout and styling.",
+  "thirdParty": {
+    "summary": "Includes copyleft CKEditor 4.11.4 (GPL-2.0+ OR LGPL-2.1+ OR MPL-1.1+) and OFL-1.1 JetBrains Mono fonts with font share-alike terms.",
+    "source": "https://github.com/ckeditor/ckeditor4/blob/4.11.4/LICENSE.md",
+    "notice": null,
+    "libraries": [
+      {
+        "name": "Ketcher",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/ketcher/blob/master/LICENSE"
+      },
+      {
+        "name": "Indigo",
+        "license": "Apache-2.0",
+        "source": "https://github.com/epam/Indigo/blob/master/LICENSE"
+      },
+      {
+        "name": "Miew",
+        "license": "MIT",
+        "source": "https://github.com/epam/miew/blob/main/LICENSE.md"
+      }
+    ]
+  }
+}
