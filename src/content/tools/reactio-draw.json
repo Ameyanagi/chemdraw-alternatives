@@ -2,7 +2,7 @@
   "id": "p11",
   "slug": "reactio-draw",
   "name": "Reactio Draw",
-  "rank": 8,
+  "rank": 9,
   "tier": "alternative",
   "tierReason": "It creates standalone chemical drawing documents with reaction schemes, styled captions, vector figures and editable Office output.",
   "summary": "An editor for drawing chemical structures, reaction schemes and publication figures.",

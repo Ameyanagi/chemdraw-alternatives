@@ -321,7 +321,12 @@ def order(tool: dict) -> tuple:
 content.mkdir(parents=True, exist_ok=True)
 for stale in content.glob("*.json"):
     stale.unlink()
-for rank, tool in enumerate(sorted(records, key=order), start=1):
+ranked = sorted(records, key=order)
+# The maintainer's choice, stated on How we test.
+octet = next(tool for tool in ranked if tool["slug"] == "octet-draw")
+ranked.remove(octet)
+ranked.insert(next(i for i, tool in enumerate(ranked) if tool["slug"] == "chemdraft"), octet)
+for rank, tool in enumerate(ranked, start=1):
     tool["rank"] = rank
     (content / f"{tool['slug']}.json").write_text(json.dumps(tool, indent=2, ensure_ascii=False) + "\n")
 slugs = [tool["slug"] for tool in records]

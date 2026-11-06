@@ -2,7 +2,7 @@
   "id": "p43",
   "slug": "octet-draw",
   "name": "Octet Draw",
-  "rank": 9,
+  "rank": 5,
   "tier": "alternative",
   "tierReason": "It creates styled 2D chemical documents with reactions, page layout, editable ChemDraw files and vector exports.",
   "summary": "Free desktop software for drawing chemical structures, reaction schemes and publication figures.",

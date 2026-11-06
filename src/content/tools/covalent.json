@@ -2,7 +2,7 @@
   "id": "p124",
   "slug": "covalent",
   "name": "Covalent",
-  "rank": 7,
+  "rank": 8,
   "tier": "alternative",
   "tierReason": "Multipage layouts, ACS styling, formatted text and vector exports support finished 2D chemical drawing documents.",
   "summary": "A free browser editor for chemical structures, reaction schemes, and multipage drawing documents.",

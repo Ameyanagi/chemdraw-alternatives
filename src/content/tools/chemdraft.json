@@ -2,7 +2,7 @@
   "id": "p42",
   "slug": "chemdraft",
   "name": "ChemDraft",
-  "rank": 5,
+  "rank": 6,
   "tier": "alternative",
   "tierReason": "Its desktop page editor combines editable structures, reaction schemes, text and tables with vector SVG and PDF export.",
   "summary": "Desktop editor for chemical structures, reaction schemes, mechanisms, and publication figures.",

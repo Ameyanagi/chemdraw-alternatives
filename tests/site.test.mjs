@@ -194,6 +194,20 @@ test('Official demos name where they come from', async () => {
   assert(reshiki.includes('reshiki-promo.mp4'));
 });
 
+test('Mark tooltips end the note with one full stop', async () => {
+  for (const tool of tools) {
+    const page = await fs.readFile(path.join(root, 'tools', tool.slug, 'index.html'), 'utf8');
+    assert.doesNotMatch(page, /(\.\.|[^.!?]) Opens the (cited page|screenshot)/, tool.name);
+  }
+});
+
 test('Listing order is ChemDraw, then ReShiki', () => {
   assert.deepEqual(tools.slice(0, 2).map((tool) => tool.slug), ['chemdraw', 'reshiki']);
+});
+
+test('Octet Draw sits directly above ChemDraft, and the page says that is a choice', async () => {
+  const slugs = tools.map((tool) => tool.slug);
+  assert.equal(slugs.indexOf('octet-draw'), slugs.indexOf('chemdraft') - 1);
+  const page = await fs.readFile(path.join(root, 'how-we-test/index.html'), 'utf8');
+  assert(page.includes('Octet Draw sits directly above ChemDraft'));
 });

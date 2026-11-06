@@ -712,7 +712,7 @@
       "runs": 3,
       "processes": 5,
       "method": "Median summed per-process phys_footprint; descendants plus lsappinfo coalition; fresh HOME; MiB.",
-      "note": "Paclitaxel on the canvas with the Import panel closed. The open panel adds about 126 MB until it is closed.",
+      "note": "Paclitaxel on the canvas with nothing redrawing. Redrawing adds about 126 MB, released about a second after it stops. The blinking text cursor in the open Import panel keeps the window redrawing.",
       "paclitaxelPanelOpenMb": 343.32
     },
     "observations": [
