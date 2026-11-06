@@ -2,7 +2,7 @@
   "id": "p99",
   "slug": "zoho-chemstudio",
   "name": "Zoho ChemStudio",
-  "rank": 92,
+  "rank": 93,
   "tier": "alternative",
   "tierReason": "Documented multipage layouts, journal presets, editable structures, and SVG exports support publication-grade 2D drawing.",
   "summary": "A web and desktop editor for drawing chemical structures, reaction schemes, and publication figures.",
@@ -175,10 +175,10 @@
       "note": "Shapes; brackets also covered in the drawing guide."
     },
     "align": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.zoho.com/chemstudio/help/videos/draw-krebs-cycle/",
+      "note": "Molecules can be aligned in pathway drawings."
     },
     "groups": {
       "status": "yes",
@@ -431,7 +431,27 @@
     "CDX and RXN marketing claims differ from the dedicated export-format list."
   ],
   "github": null,
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://chemstudio.zoho.com/",
+    "ran": false,
+    "failure": "The hosted ChemStudio home route redirects unauthenticated users to Zoho sign-in; the isolated browser also remained blank while loading.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "The server redirects /chemstudio/home to Zoho sign-in for ChemStudio.",
+      "No ChemStudio version was exposed before sign-in."
+    ]
+  },
   "perf": null,
   "downloadBytes": 322964776,
   "references": [
@@ -455,6 +475,15 @@
     "package": null,
     "limit": "Zoho Writer only; reusable embedding API unconfirmed",
     "how": "Use ChemStudio's Zoho Writer extension to draw inside Writer."
+  },
+  "video": {
+    "provider": "link",
+    "url": "https://workdrive.zohoexternal.in/embed/e3a7e5e203aa855664c34b296f5d1029f1946",
+    "embed": null,
+    "title": "ChemStudio editor overview",
+    "author": null,
+    "linkedFrom": "https://www.zoho.com/chemstudio/help/videos/editor-overview/",
+    "poster": "https://www.zohowebstatic.com/sites/zweb/images/chemstudio/video/chemstudioeditor.jpg"
   },
   "plans": [],
   "renderer": {

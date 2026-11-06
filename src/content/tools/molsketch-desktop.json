@@ -2,7 +2,7 @@
   "id": "p20",
   "slug": "molsketch-desktop",
   "name": "Molsketch",
-  "rank": 39,
+  "rank": 41,
   "tier": "alternative",
   "tierReason": "A standalone 2D editor with reaction diagrams, captions, alignment, and vector output can produce publication figures.",
   "summary": "Desktop editor for drawing two-dimensional molecular structures, reaction schemes, and mechanism diagrams.",
@@ -579,6 +579,15 @@
     "package": "libmolsketch",
     "limit": "GPL-2.0-or-later; Qt/C++ integration undocumented.",
     "how": "Link libmolsketch and add MolView(MolScene*) to a Qt layout."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=ac0EX96HZT0",
+    "embed": "https://www.youtube-nocookie.com/embed/ac0EX96HZT0",
+    "title": "Nitrogen 0 6 0",
+    "author": "Molsketch",
+    "linkedFrom": "https://sourceforge.net/projects/molsketch/",
+    "poster": "https://i.ytimg.com/vi/ac0EX96HZT0/hqdefault.jpg"
   },
   "plans": [],
   "renderer": {

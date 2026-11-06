@@ -2,7 +2,7 @@
   "id": "p03",
   "slug": "chemdoodle-2d",
   "name": "ChemDoodle 2D",
-  "rank": 79,
+  "rank": 83,
   "tier": "alternative",
   "tierReason": "It creates multipage chemical drawing documents with reactions, styled text, and publication-ready vector exports.",
   "summary": "Desktop software for drawing chemical structures, reactions, and publication figures.",
@@ -631,6 +631,15 @@
     "package": null,
     "limit": "Separate Web Components product; GPLv3 or proprietary license",
     "how": "Load ChemDoodleWeb.js and ChemDoodleWeb-uis.js; instantiate ChemDoodle.SketcherCanvas(canvasId,width,height)."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=gKPkSCF5nYU",
+    "embed": "https://www.youtube-nocookie.com/embed/gKPkSCF5nYU",
+    "title": "ChemDoodle 2D Introduction",
+    "author": "ChemDoodle",
+    "linkedFrom": "https://www.chemdoodle.com/",
+    "poster": "https://www.chemdoodle.com/img/chemdoodle/video_splash.png"
   },
   "plans": [
     {

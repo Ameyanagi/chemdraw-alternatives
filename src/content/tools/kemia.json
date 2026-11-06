@@ -2,7 +2,7 @@
   "id": "p112",
   "slug": "kemia",
   "name": "Kemia",
-  "rank": 68,
+  "rank": 71,
   "tier": "embeddable",
   "tierReason": "Kemia provides a reusable browser structure and reaction editor, with incomplete document-authoring and export functionality.",
   "summary": "A JavaScript editor and chemistry toolkit for embedding 2D molecular structures and reactions in web pages.",
@@ -472,7 +472,7 @@
         "result": "failed",
         "input": "smiles",
         "image": null,
-        "note": "SMILES demo generated labels; drawing clipped to a thin strip.",
+        "note": "SMILES produced clipped labels without visible bonds; no MOL import available.",
         "structure": null
       },
       {
@@ -480,7 +480,7 @@
         "result": "failed",
         "input": "smiles",
         "image": null,
-        "note": "SMILES demo generated labels; drawing clipped to a thin strip.",
+        "note": "SMILES produced clipped labels without visible bonds; no MOL import available.",
         "structure": null
       },
       {
@@ -520,7 +520,13 @@
       "The name resolver produced no result for aspirin."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 95,
+    "transferBytes": 107960
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/kemia/kemia"
@@ -548,6 +554,7 @@
     "limit": "Apache-2.0; pre-alpha",
     "how": "Load kemia.js; instantiate kemia.controller.ReactionEditor and register editing plugins."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

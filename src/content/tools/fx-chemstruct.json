@@ -2,7 +2,7 @@
   "id": "p126",
   "slug": "fx-chemstruct",
   "name": "FX ChemStruct / FX Draw Chemical Structures",
-  "rank": 105,
+  "rank": 107,
   "tier": "alternative",
   "tierReason": "FX Draw combines editable chemical structures, text and layout tools with vector SVG output for publication-quality 2D figures.",
   "summary": "Desktop software for creating 2D chemical structure diagrams from typed formulas, now integrated into FX Draw.",
@@ -503,6 +503,15 @@
     "package": null,
     "limit": null,
     "how": "OLE objects launch separate editor; in-place embedding unconfirmed."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=xVOaL5n3I1k",
+    "embed": "https://www.youtube-nocookie.com/embed/xVOaL5n3I1k",
+    "title": "FX ChemStruct   Overview",
+    "author": "Efofex Training",
+    "linkedFrom": "https://www.efofex.com/fxchemstruct.php",
+    "poster": "https://i.ytimg.com/vi/xVOaL5n3I1k/hqdefault.jpg"
   },
   "plans": [
     {

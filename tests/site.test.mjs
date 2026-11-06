@@ -183,6 +183,17 @@ test('Measured values say they come from one machine and are not guaranteed', as
   }
 });
 
+test('Official demos name where they come from', async () => {
+  const shown = tools.filter((tool) => tool.video);
+  assert(shown.length > 30);
+  for (const tool of shown) {
+    const page = await fs.readFile(path.join(root, 'tools', tool.slug, 'index.html'), 'utf8');
+    assert(page.includes('Official demo') && page.includes(tool.video.linkedFrom.replaceAll('&', '&amp;')), tool.name);
+  }
+  const reshiki = await fs.readFile(path.join(root, 'tools/reshiki/index.html'), 'utf8');
+  assert(reshiki.includes('reshiki-promo.mp4'));
+});
+
 test('Listing order is ChemDraw, then ReShiki', () => {
   assert.deepEqual(tools.slice(0, 2).map((tool) => tool.slug), ['chemdraw', 'reshiki']);
 });

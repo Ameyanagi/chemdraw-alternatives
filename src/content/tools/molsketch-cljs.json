@@ -2,7 +2,7 @@
   "id": "p88",
   "slug": "molsketch-cljs",
   "name": "molsketch-cljs",
-  "rank": 76,
+  "rank": 80,
   "tier": "alternative",
   "tierReason": "This basic browser structure editor lacks the document and reliable export workflows needed for publication-grade chemical drawing.",
   "summary": "A browser prototype for drawing basic two-dimensional molecular structures with keyboard shortcuts.",
@@ -516,7 +516,13 @@
       "Ctrl+C produced no visible SVG confirmation; clipboard output was not verified."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 84,
+    "transferBytes": 119488
+  },
   "downloadBytes": 530768,
   "references": [
     "https://github.com/hessammehr/molsketch-cljs",
@@ -541,6 +547,7 @@
     "limit": null,
     "how": "Standalone ClojureScript app; no documented embedding interface."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

@@ -649,10 +649,10 @@
       "note": null
     },
     "cli": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "partial",
+      "evidence": "docs",
       "source": "https://www.moldraw.com/blog/molscript-reaction-mechanism-language.html",
-      "note": "CLI claimed complete; public package publication remains pending."
+      "note": "MolScript CLI complete; public package publication pending."
     },
     "mcp-agents": {
       "status": "yes",
@@ -782,7 +782,13 @@
       "Stereo-free paclitaxel produced a clean toolbar layout."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1098,
+    "transferBytes": 3524896
+  },
   "downloadBytes": null,
   "references": [
     "https://www.moldraw.com/pricing",
@@ -810,6 +816,15 @@
     "package": null,
     "limit": "Only /embed supports cross-site framing.",
     "how": "Embed https://www.moldraw.com/embed in an iframe; no account required."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://www.moldraw.com/docs/media/draw-phenol-full-walkthrough.mp4",
+    "embed": null,
+    "title": "Draw your first structure: full walkthrough",
+    "author": null,
+    "linkedFrom": "https://www.moldraw.com/docs/get-started/how-to-draw-your-first-chemical-structure-in-moldraw/",
+    "poster": "https://www.moldraw.com/docs/media/draw-phenol-full-walkthrough-poster.webp"
   },
   "plans": [
     {

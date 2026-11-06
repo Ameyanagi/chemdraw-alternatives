@@ -2,7 +2,7 @@
   "id": "p65",
   "slug": "lhendraw",
   "name": "Lhendraw",
-  "rank": 101,
+  "rank": 103,
   "tier": "alternative",
   "tierReason": "It creates editable chemical drawing documents with structures, reaction arrows, text, shapes and vector export.",
   "summary": "Desktop editor for drawing chemical structures, reaction schemes, and figures with ChemDraw CDX/CDXML file exchange.",
@@ -510,6 +510,7 @@
     "limit": "AGPL-3.0",
     "how": "Desktop executables documented; no offered embedding component confirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

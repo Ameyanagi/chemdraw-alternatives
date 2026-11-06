@@ -2,7 +2,7 @@
   "id": "p07",
   "slug": "kingdraw",
   "name": "KingDraw",
-  "rank": 91,
+  "rank": 95,
   "tier": "alternative",
   "tierReason": "Standalone drawing tools, reaction schemes, ACS styling, vector SVG export and editable Office objects support publication figures.",
   "summary": "Desktop and mobile chemical drawing software for preparing molecular structures, reaction schemes, and scientific figures.",
@@ -515,7 +515,29 @@
     "The legacy web SDK platform homepage is suspended."
   ],
   "github": null,
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "not installed",
+    "artifact": "https://www.kingdraw.com/indexen?name=download",
+    "ran": false,
+    "failure": "No direct macOS installer was found through the official English and Chinese download pages or their linked download script. The desktop buttons target Windows .exe files; the published Apple routes lead to the App Store, which this run explicitly excludes. KingDraw could not be installed or launched through a permitted route.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "The supplied English page lists Android, iOS, and Windows PC downloads.",
+      "The Chinese page also lists mobile/tablet platforms and Windows desktop editions.",
+      "No installer was downloaded, no app was installed, and no KingDraw process was launched.",
+      "Default rendering, molecule imports, exports, and app features remain untested."
+    ]
+  },
   "perf": null,
   "downloadBytes": null,
   "references": [
@@ -539,6 +561,7 @@
     "limit": "Developer platform suspended; legacy SDK documentation unavailable.",
     "how": "Historical JS editor existed; current embedding support cannot be confirmed."
   },
+  "video": null,
   "plans": [
     {
       "name": "Personal 3.0 / Free mobile",

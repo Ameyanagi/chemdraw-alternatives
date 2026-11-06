@@ -663,7 +663,13 @@
       "Native cholesterol model stores depth coordinates; MOL export flattens them to zero Z."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 337,
+    "idleMb": 149,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 23709865,
   "references": [
     "https://github.com/Paivel/reactio-draw/blob/736db9c52de06d384a678bcd623c6138150523b2/README.md",
@@ -696,6 +702,15 @@
     "package": null,
     "limit": "AGPL-3.0-or-later",
     "how": "Load web/index.html?embed in an iframe; exchange structures through postMessage."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://github.com/user-attachments/assets/1637fe6d-b6d1-4ec5-9d68-9a41d62ef0c8",
+    "embed": null,
+    "title": "Demo video",
+    "author": null,
+    "linkedFrom": "https://github.com/Paivel/reactio-draw/blob/main/README.md",
+    "poster": null
   },
   "plans": [],
   "renderer": {

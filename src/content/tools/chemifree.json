@@ -2,7 +2,7 @@
   "id": "p68",
   "slug": "chemifree",
   "name": "Chemifree",
-  "rank": 59,
+  "rank": 61,
   "tier": "alternative",
   "tierReason": "This working drawing prototype lacks captions and scene export, so it cannot yet produce publication-grade chemical drawing documents.",
   "summary": "An early-stage chemical drawing workspace for local structure editing, inspection and limited chemical file conversion.",
@@ -534,9 +534,14 @@
       }
     ],
     "canvas": "evidence/chemifree/canvas.webp",
-    "canvasLight": null,
-    "canvasDark": null,
-    "themes": null,
+    "canvasLight": "evidence/chemifree/canvas-light.webp",
+    "canvasDark": "evidence/chemifree/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Canvas and interface both change."
+    },
     "memory": null,
     "observations": [
       "SMILES imports use an input-order grid without chemical layout.",
@@ -570,6 +575,7 @@
     "limit": null,
     "how": "Local web workspace; no supported editor embedding interface documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

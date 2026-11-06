@@ -2,7 +2,7 @@
   "id": "p28",
   "slug": "kekule-js",
   "name": "Kekule.js",
-  "rank": 55,
+  "rank": 57,
   "tier": "embeddable",
   "tierReason": "Its primary product is a JavaScript toolkit whose Composer editor is embedded into web applications.",
   "summary": "JavaScript toolkit for embedding chemical structure editors, molecule viewers, and cheminformatics functions in web applications.",
@@ -437,10 +437,10 @@
       "note": "PNG output exists; 300 dpi export is unverified."
     },
     "clipboard-chemdraw": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/composer.html",
+      "note": "Clipboard uses internal local storage; native clipboard unavailable."
     },
     "office": {
       "status": "unknown",
@@ -577,7 +577,13 @@
       "The hosted demo exposes Kekule.VERSION as 0.9.9.22022400 in its loaded code."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 246,
+    "transferBytes": 578742
+  },
   "downloadBytes": null,
   "references": [
     "https://partridgejiang.github.io/Kekule.js/index.html",
@@ -609,6 +615,7 @@
     "limit": "MIT",
     "how": "Load scripts/CSS; instantiate Kekule.Editor.Composer(div), or use <kekule-composer>."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

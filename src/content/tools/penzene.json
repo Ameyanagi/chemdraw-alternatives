@@ -603,7 +603,17 @@
       "how": "in-app setting",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 96.28,
+      "paclitaxelMb": 128.42,
+      "baselineMb": null,
+      "rssIdleMb": 217.92,
+      "rssPaclitaxelMb": 281.3,
+      "runs": 3,
+      "processes": 5,
+      "method": "Three-run median; summed phys_footprint; ps tree plus lsappinfo coalition; 10-second settling.",
+      "note": "MiB; native Qt; three idle processes, five loaded; published SMILES import."
+    },
     "observations": [
       "Default style was ACS 1996 with Arial 10 pt atom labels.",
       "The default canvas was dark with grid lines and light bonds.",
@@ -612,7 +622,13 @@
       "The 3D SDF fallback saved as MOL with explicit hydrogens and zero z coordinates."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 422,
+    "idleMb": 156,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 46165981,
   "references": [
     "https://github.com/JamesOBrien2/penzene",
@@ -640,6 +656,7 @@
     "limit": "GPL-3.0-or-later copyleft",
     "how": "Python renders static SVG; no embeddable editor widget documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

@@ -2,7 +2,7 @@
   "id": "p60",
   "slug": "molpad",
   "name": "MolPad",
-  "rank": 77,
+  "rank": 81,
   "tier": "embeddable",
   "tierReason": "MolPad is primarily a React structure-input component with a custom JMol API and basic drawing tools.",
   "summary": "A React component for drawing and editing molecular structures in web applications.",
@@ -520,7 +520,13 @@
       "The adjacent CrystalView is a separate project, not MolPad's 3D view."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2551,
+    "transferBytes": 568477
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/chemistry/molpad",
@@ -549,6 +555,7 @@
     "limit": null,
     "how": "Render MolPad React component; ref handles import and export."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

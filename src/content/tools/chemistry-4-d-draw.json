@@ -2,7 +2,7 @@
   "id": "p92",
   "slug": "chemistry-4-d-draw",
   "name": "Chemistry 4-D Draw",
-  "rank": 106,
+  "rank": 108,
   "tier": "alternative",
   "tierReason": "It is a standalone 2D structure and graphics editor with publication figures, multipage documents and chemical nomenclature tools.",
   "summary": "Desktop software for drawing chemical structures, preparing publication figures, and converting between structures and IUPAC names.",
@@ -475,6 +475,7 @@
     "limit": null,
     "how": "OLE reopens desktop app; supported in-host editor embedding unconfirmed."
   },
+  "video": null,
   "plans": [
     {
       "name": "Chemistry 4-D Draw Lite",

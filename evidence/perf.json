@@ -1,0 +1,394 @@
+{
+  "p42": {
+    "kind": "desktop",
+    "launchMs": 386,
+    "idleMb": 598,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p135": {
+    "kind": "desktop",
+    "launchMs": 2086,
+    "idleMb": 182,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p02": {
+    "kind": "desktop",
+    "launchMs": 375,
+    "idleMb": 126,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p41": {
+    "kind": "desktop",
+    "launchMs": 290,
+    "idleMb": 100,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p01": {
+    "kind": "desktop",
+    "launchMs": 1951,
+    "idleMb": 434,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p43": {
+    "kind": "desktop",
+    "launchMs": 373,
+    "idleMb": 135,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p79": {
+    "kind": "desktop",
+    "launchMs": 372,
+    "idleMb": 153,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p49": {
+    "kind": "desktop",
+    "launchMs": 450,
+    "idleMb": 257,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p19": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1430,
+    "transferBytes": 1449702
+  },
+  "p132": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 171,
+    "transferBytes": 416337
+  },
+  "p104": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 158,
+    "transferBytes": 4709553
+  },
+  "p98": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 407,
+    "transferBytes": 780969
+  },
+  "p101": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2463,
+    "transferBytes": 736133
+  },
+  "p84": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 69,
+    "transferBytes": 52743
+  },
+  "p112": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 95,
+    "transferBytes": 107960
+  },
+  "p26": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 95,
+    "transferBytes": 208809
+  },
+  "p33": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 291,
+    "transferBytes": 2211344
+  },
+  "p67": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 238,
+    "transferBytes": 1610971
+  },
+  "p54": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 287,
+    "transferBytes": 2221536
+  },
+  "p129": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2508,
+    "transferBytes": 3570803
+  },
+  "p12": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1140,
+    "transferBytes": 8883410
+  },
+  "p44": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 916,
+    "transferBytes": 3095213
+  },
+  "p87": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 117,
+    "transferBytes": 2107704
+  },
+  "p14": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1098,
+    "transferBytes": 3524896
+  },
+  "p100": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 3982,
+    "transferBytes": 684026
+  },
+  "p81": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 70,
+    "transferBytes": 24032
+  },
+  "p77": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 119,
+    "transferBytes": 6394662
+  },
+  "p61": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 294,
+    "transferBytes": 2220020
+  },
+  "p136": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 173,
+    "transferBytes": 1326595
+  },
+  "p97": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2090,
+    "transferBytes": 2344228
+  },
+  "p124": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2011,
+    "transferBytes": 280309
+  },
+  "p16": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 930,
+    "transferBytes": 9470619
+  },
+  "p119": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2382,
+    "transferBytes": 1235357
+  },
+  "p56": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 270,
+    "transferBytes": 402464
+  },
+  "p27": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 198,
+    "transferBytes": 351806
+  },
+  "p88": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 84,
+    "transferBytes": 119488
+  },
+  "p13": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 926,
+    "transferBytes": 8598936
+  },
+  "p127": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2544,
+    "transferBytes": 1808433
+  },
+  "p15": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 745,
+    "transferBytes": 2903246
+  },
+  "p120": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 713,
+    "transferBytes": 939182
+  },
+  "p137": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 382,
+    "transferBytes": 845580
+  },
+  "p102": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 4929,
+    "transferBytes": 1282106
+  },
+  "p66": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1986,
+    "transferBytes": 3190710
+  },
+  "p86": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 204,
+    "transferBytes": 82657
+  },
+  "p29": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2580,
+    "transferBytes": 1367462
+  },
+  "p32": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1443,
+    "transferBytes": 1451988
+  },
+  "p71": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 91,
+    "transferBytes": 1418037
+  },
+  "p53": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 447,
+    "transferBytes": 8864852
+  },
+  "p118": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 3176,
+    "transferBytes": 985314
+  },
+  "p28": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 246,
+    "transferBytes": 578742
+  },
+  "p90": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1449,
+    "transferBytes": 231630
+  },
+  "p60": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2551,
+    "transferBytes": 568477
+  },
+  "p11": {
+    "kind": "desktop",
+    "launchMs": 337,
+    "idleMb": 149,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p22": {
+    "kind": "desktop",
+    "launchMs": 449,
+    "idleMb": 245,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p46": {
+    "kind": "desktop",
+    "launchMs": 422,
+    "idleMb": 156,
+    "loadMs": null,
+    "transferBytes": null
+  },
+  "p70": {
+    "kind": "desktop",
+    "launchMs": 11039,
+    "idleMb": 504,
+    "loadMs": null,
+    "transferBytes": null
+  }
+}

@@ -2,7 +2,7 @@
   "id": "p114",
   "slug": "atomlens",
   "name": "AtomLens",
-  "rank": 98,
+  "rank": 101,
   "tier": "alternative",
   "tierReason": "Its standalone molecule and reaction editor with vector exports can produce publication-grade 2D chemical figures.",
   "summary": "A Mac and iPad workbench for drawing, inspecting, organizing, and exporting molecular structures and reactions.",
@@ -561,6 +561,7 @@
     "limit": null,
     "how": "Native app; no documented embeddable editor SDK found."
   },
+  "video": null,
   "plans": [
     {
       "name": "AtomLens",

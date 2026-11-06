@@ -61,6 +61,15 @@
     "web": true
   },
   "embedding": null,
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=5KymEcdMwZU",
+    "embed": "https://www.youtube-nocookie.com/embed/5KymEcdMwZU",
+    "title": "One-click access to cutting-edge phys-chem properties",
+    "author": "Certara - Chemaxon",
+    "linkedFrom": "https://chemicalize.com/",
+    "poster": "https://img.youtube.com/vi/5KymEcdMwZU/maxresdefault.jpg"
+  },
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

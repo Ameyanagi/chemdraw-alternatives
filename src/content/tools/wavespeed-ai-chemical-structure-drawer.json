@@ -2,7 +2,7 @@
   "id": "p136",
   "slug": "wavespeed-ai-chemical-structure-drawer",
   "name": "WaveSpeed AI Chemical Structure Drawer",
-  "rank": 42,
+  "rank": 43,
   "tier": "alternative",
   "tierReason": "A standalone molecular drawing editor with documented vector SVG export for publication figures.",
   "summary": "Browser editor for drawing molecules, calculating properties, exporting images and structure files, and viewing 3D models.",
@@ -367,10 +367,10 @@
       }
     },
     "crystals": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://wavespeed.ai/free-tools/chemical-structure-drawer",
+      "note": "Protein mmCIF viewing documented; general crystal editing unestablished."
     },
     "cdxml": {
       "status": "no",
@@ -569,7 +569,13 @@
       "Default 3D view uses ball-and-stick, colored by element."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 173,
+    "transferBytes": 1326595
+  },
   "downloadBytes": null,
   "references": [
     "https://wavespeed.ai/free-tools/chemical-structure-drawer",
@@ -600,6 +606,7 @@
     "limit": null,
     "how": "No documented editor embed; headers alone do not confirm framing support."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

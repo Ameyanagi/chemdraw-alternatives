@@ -2,7 +2,7 @@
   "id": "p108",
   "slug": "jmoldraw",
   "name": "JMolDraw",
-  "rank": 69,
+  "rank": 72,
   "tier": "alternative",
   "tierReason": "The standalone editor supports chemical structure drawing, rich-text captions and vector SVG export.",
   "summary": "A Java application for drawing and editing two-dimensional chemical structures.",
@@ -476,18 +476,18 @@
     "captures": [
       {
         "fixture": "simple",
-        "result": "failed",
+        "result": "ok",
         "input": "mol",
-        "image": null,
-        "note": "MOL rendered; screenshot crop saved; native export and structure saving unverified.",
+        "image": "evidence/jmoldraw/simple.png",
+        "note": "SMILES produced none; MOL rendered correctly. Canvas crop, not a native export.",
         "structure": null
       },
       {
         "fixture": "complex",
-        "result": "failed",
+        "result": "ok",
         "input": "mol",
-        "image": null,
-        "note": "MOL rendered; screenshot crop saved; native export and structure saving unverified.",
+        "image": "evidence/jmoldraw/complex.png",
+        "note": "SMILES produced none; MOL rendered correctly. Canvas crop, not a native export.",
         "structure": null
       },
       {
@@ -500,9 +500,14 @@
       }
     ],
     "canvas": "evidence/jmoldraw/canvas.webp",
-    "canvasLight": null,
+    "canvasLight": "evidence/jmoldraw/canvas-light.webp",
     "canvasDark": null,
-    "themes": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Interface and canvas remain light under both per-process appearance overrides."
+    },
     "memory": {
       "idleMb": 182.0,
       "paclitaxelMb": 260.0,
@@ -519,7 +524,8 @@
       "Default drawings use thin black bonds and black atom labels.",
       "Paclitaxel retains visible filled wedges and hashed bonds from MOL.",
       "Cholesterol SDF projection has overlapping explicit hydrogen labels.",
-      "Export PNGs are screenshot crops; native exports and MOL writing were unverified."
+      "Export PNGs are screenshot crops; native exports and MOL writing were unverified.",
+      "Redraw retried both current Kekule SMILES fixtures; each produced no drawing and the same vec2-null error."
     ]
   },
   "perf": null,
@@ -547,6 +553,7 @@
     "limit": "GPL-2.0-or-later",
     "how": "Applet opens separate window; no inline integration supported"
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

@@ -2,7 +2,7 @@
   "id": "p103",
   "slug": "sketchel-2",
   "name": "SketchEl 2",
-  "rank": 54,
+  "rank": 56,
   "tier": "alternative",
   "tierReason": "It is a standalone 2D molecule editor with vector SVG export, although its desktop workflow remains minimal and source-only.",
   "summary": "A standalone desktop application for drawing molecular structures and exporting vector diagrams.",
@@ -538,9 +538,14 @@
       }
     ],
     "canvas": "evidence/sketchel-2/canvas.webp",
-    "canvasLight": null,
-    "canvasDark": null,
-    "themes": null,
+    "canvasLight": "evidence/sketchel-2/canvas-light.webp",
+    "canvasDark": "evidence/sketchel-2/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "follows system",
+      "note": "Only title bar changes; canvas and toolbars stay light."
+    },
     "memory": null,
     "observations": [
       "Default heteroatom colors are oxygen red and nitrogen blue.",
@@ -579,6 +584,7 @@
     "limit": "Separate WebMolKit: Apache-2.0; SketchEl2 application: GPL-3.0",
     "how": "Embed shared editor via WebMolKit.Sketcher using npm or script bundle."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

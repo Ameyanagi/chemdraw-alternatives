@@ -2,7 +2,7 @@
   "id": "p131",
   "slug": "molsketchgo",
   "name": "MolSketchGo",
-  "rank": 109,
+  "rank": 113,
   "tier": "alternative",
   "tierReason": "It is a standalone 2D chemical drawing editor with vector SVG export for structure figures.",
   "summary": "Mobile app for sketching 2D molecular structures, exporting drawings, and viewing molecules in 3D.",
@@ -502,6 +502,7 @@
     "limit": "Personal, non-commercial use unless separately agreed in writing",
     "how": "Mobile app; no supported embedding route located."
   },
+  "video": null,
   "plans": [
     {
       "name": "Free",

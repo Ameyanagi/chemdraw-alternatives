@@ -76,6 +76,15 @@
     "web": true
   },
   "embedding": null,
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=xDr9hn7cpLA",
+    "embed": "https://www.youtube-nocookie.com/embed/xDr9hn7cpLA",
+    "title": "MolView 2.2 preview",
+    "author": "MolView",
+    "linkedFrom": "https://blog.molview.org/posts/2015/06/01/looking-back/",
+    "poster": "https://i.ytimg.com/vi/xDr9hn7cpLA/maxresdefault.jpg"
+  },
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

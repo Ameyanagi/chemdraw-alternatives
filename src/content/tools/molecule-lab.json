@@ -2,7 +2,7 @@
   "id": "p129",
   "slug": "molecule-lab",
   "name": "Molecule Lab (The Freshman Mole)",
-  "rank": 13,
+  "rank": 14,
   "tier": "alternative",
   "tierReason": "It supports 2D reaction figures with captions, layout tools, editable projects and vector SVG export.",
   "summary": "A free browser editor for 2D chemical structures, reaction schemes and interactive 3D molecular models.",
@@ -567,7 +567,13 @@
       "3D PNG export failed with a renderer-size mismatch in WebKit."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2508,
+    "transferBytes": 3570803
+  },
   "downloadBytes": null,
   "references": [
     "https://total-synthesis.com/molecule-drawing-tool/",
@@ -596,6 +602,7 @@
     "limit": null,
     "how": "No embed documentation; headers alone cannot confirm iframe support."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

@@ -591,7 +591,13 @@
       "The SDF import displayed explicit hydrogens in the drawing."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2011,
+    "transferBytes": 280309
+  },
   "downloadBytes": null,
   "references": [
     "https://chempirical.com/covalent/",
@@ -615,6 +621,7 @@
     "limit": null,
     "how": "CSP frame-ancestors 'self' and X-Frame-Options SAMEORIGIN block external framing."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

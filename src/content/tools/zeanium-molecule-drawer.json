@@ -2,7 +2,7 @@
   "id": "p137",
   "slug": "zeanium-molecule-drawer",
   "name": "Zeanium Molecule Drawer",
-  "rank": 23,
+  "rank": 24,
   "tier": "alternative",
   "tierReason": "Editable drawing documents, reaction schemes, journal presets, and SVG export support standalone publication-oriented 2D figures.",
   "summary": "A free browser editor for drawing molecular structures, reaction schemes, and chemical figures with vector export.",
@@ -575,7 +575,13 @@
       "The default 3D preview spins and shows hydrogens and lone pairs."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 382,
+    "transferBytes": 845580
+  },
   "downloadBytes": null,
   "references": [
     "https://zeanium.net/draw/",
@@ -598,6 +604,15 @@
     "package": null,
     "limit": "X-Frame-Options: DENY",
     "how": "Hosted editor blocks framing; no documented SDK found."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://zeanium.net/video/zeandraw-demo.mp4",
+    "embed": null,
+    "title": "ZeanDraw in action: drawing benzoic acid and spinning it in 3D",
+    "author": null,
+    "linkedFrom": "https://zeanium.net/",
+    "poster": "https://zeanium.net/video/zeandraw-demo-poster.webp"
   },
   "plans": [],
   "renderer": {

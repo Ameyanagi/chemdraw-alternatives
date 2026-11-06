@@ -613,7 +613,13 @@
       "Drawn in the ACS Document 1996 style."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 1951,
+    "idleMb": 434,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": null,
   "references": [
     "https://revvitysignals.com/products/research/signals-chemdraw",
@@ -638,6 +644,15 @@
     "package": "@revvity-signals/chemdraw-js",
     "limit": "Separate ChemDraw JS subscription; vendor-supplied tarball required",
     "how": "Load chemdrawweb.js, then call RevvitySignals.ChemDrawJS.attach({license, editor:{element}})."
+  },
+  "video": {
+    "provider": "link",
+    "url": "https://vimeo.com/915296350",
+    "embed": null,
+    "title": "Introduction to ChemDraw Plus",
+    "author": "Revvity Signals",
+    "linkedFrom": "https://revvitysignals.com/products/research/chemdraw-archive",
+    "poster": null
   },
   "plans": [
     {

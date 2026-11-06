@@ -58,6 +58,7 @@ const tools = defineCollection({
     enginesChecked: z.boolean(),
     languageNote: z.string().nullable().optional(),
     drawingStyle: z.string().optional(),
+    video: z.object({ provider: z.enum(['youtube', 'vimeo', 'file', 'link']), url: z.url(), embed: z.string().nullable(), title: z.string(), author: z.string().nullable().optional(), linkedFrom: z.url(), poster: z.string().nullable().optional() }).nullable().optional(),
     embedding: z.object({ methods: z.array(z.string()), package: z.string().nullable(), limit: z.string().nullable(), how: z.string() }).nullable().optional(),
     otherLanguages: z.array(z.object({ language: z.string(), role: z.string() })).nullable().optional(),
     thirdParty,

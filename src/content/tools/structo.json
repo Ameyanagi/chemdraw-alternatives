@@ -43,10 +43,10 @@
   "languages": [],
   "features": {
     "bonds-core": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": "Manual editing of all three bond orders is unverified."
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://play.google.com/store/apps/details?id=io.github.atomforgeapp.structo",
+      "note": "Developer screenshots show single, double, and triple bond controls."
     },
     "stereo-bonds": {
       "status": "unknown",
@@ -103,10 +103,10 @@
       "note": null
     },
     "atom-labels": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": "Charge editing unverified."
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://play.google.com/store/apps/details?id=io.github.atomforgeapp.structo",
+      "note": "Isotopes documented; developer screenshots show charge and element controls."
     },
     "radicals": {
       "status": "yes",
@@ -452,6 +452,7 @@
     "limit": null,
     "how": "Android app; no editor embedding interface documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": null,

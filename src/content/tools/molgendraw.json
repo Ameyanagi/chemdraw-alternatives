@@ -2,7 +2,7 @@
   "id": "p74",
   "slug": "molgendraw",
   "name": "MolGenDraw",
-  "rank": 117,
+  "rank": 119,
   "tier": "alternative",
   "tierReason": "A standalone 2D molecular drawing application with structure templates and PNG/PDF exports for molecular figures.",
   "summary": "A Windows application for drawing molecular structures and editing multi-record SDF and SMILES databases.",
@@ -133,10 +133,10 @@
       "note": null
     },
     "reaction-arrows": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": "Advanced reaction drawing and arrow tools are listed as planned."
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/usman-vb/MolGenDraw/6d1f191759f5e249fe9a1a1dad5d50744139c9e2/README.md",
+      "note": "Advanced reaction drawing and arrow tools are planned."
     },
     "mechanism-arrows": {
       "status": "unknown",
@@ -503,6 +503,7 @@
     "limit": "Proprietary freeware; all rights reserved",
     "how": "Standalone Windows executable; no embedding interface documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

@@ -2,7 +2,7 @@
   "id": "p78",
   "slug": "molecule-builder",
   "name": "Molecule Builder (OvOHongYu)",
-  "rank": 36,
+  "rank": 37,
   "tier": "alternative",
   "tierReason": "A standalone 2D molecule editor with cleanup and vector figure export, despite its limited chemistry scope.",
   "summary": "A browser-based workbench for drawing small organic molecules and assembling reaction schemes.",
@@ -475,10 +475,10 @@
       "note": null
     },
     "ts-api": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/OvOHongYu/molecule-builder/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E5%8D%8F%E8%AE%AE%E8%A7%84%E8%8C%83.md",
+      "note": "Documented TypeScript layout function."
     },
     "cli": {
       "status": "unknown",
@@ -493,10 +493,10 @@
       "note": null
     },
     "plugins": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/OvOHongYu/molecule-builder/4e260930e92e80f115aa174b184ee76889e5ed02/docs/%E5%8F%8D%E5%BA%94%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md",
+      "note": "User-supplied HTTP prediction backends only."
     },
     "embed": {
       "status": "unknown",
@@ -577,7 +577,17 @@
       "how": "fixed",
       "note": "Paclitaxel import unsupported; default ethane shown. Fixed light appearance."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 507.99,
+      "paclitaxelMb": null,
+      "baselineMb": 417.56,
+      "rssIdleMb": 1088.44,
+      "rssPaclitaxelMb": null,
+      "runs": 3,
+      "processes": 7,
+      "method": "Three-run median; dedicated headed Chromium; summed process-tree phys_footprint; 10-second waits; MiB.",
+      "note": "Idle is default ethane; no empty-document control; paclitaxel SMILES paste and MOL drop failed."
+    },
     "observations": [
       "Version comes from the release archive; the app shows no version.",
       "The editor starts and resets to ethane; no blank-document control found.",
@@ -612,6 +622,7 @@
     "limit": null,
     "how": "Standalone React app; no supported embedding interface found."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

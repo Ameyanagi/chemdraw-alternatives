@@ -2,7 +2,7 @@
   "id": "p105",
   "slug": "molprime",
   "name": "MolPrime+",
-  "rank": 116,
+  "rank": 118,
   "tier": "alternative",
   "tierReason": "A standalone mobile editor produces 2D chemical structure drawings and exports vector graphics in Word documents.",
   "summary": "Mobile editor for drawing chemical structures, calculating molecular properties, and exporting structure graphics.",
@@ -483,6 +483,7 @@
     "limit": null,
     "how": "Standalone iOS app; no documented editor embedding route confirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

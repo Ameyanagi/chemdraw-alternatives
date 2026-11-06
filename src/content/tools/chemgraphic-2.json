@@ -2,7 +2,7 @@
   "id": "p91",
   "slug": "chemgraphic-2",
   "name": "ChemGraphic 2",
-  "rank": 114,
+  "rank": 111,
   "tier": "alternative",
   "tierReason": "Its standalone document canvas, chemical drawing tools, journal styles, and image export support preparing scientific figures.",
   "summary": "A chemical structure editor for preparing scientific figures and predicting IR and NMR spectra.",
@@ -183,10 +183,10 @@
       "note": null
     },
     "shapes": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/en/product_chemgraphic2_howto_en",
+      "note": "Bracket and freehand drawing tools."
     },
     "align": {
       "status": "unknown",
@@ -359,10 +359,10 @@
       "planLevel": "paid"
     },
     "smiles": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://simpleappli.com/en/product_chemgraphic2_en",
+      "note": "SMILES import; export formats list omits SMILES."
     },
     "inchi": {
       "status": "yes",
@@ -482,6 +482,15 @@
     "package": null,
     "limit": "Proprietary subscription; embedding terms undisclosed",
     "how": "No editor SDK or embedding method documented."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=cM8LjsoiOqo",
+    "embed": "https://www.youtube-nocookie.com/embed/cM8LjsoiOqo",
+    "title": "ChemGraphic 2 描いた構造式からNMRを予測。端末をまたいで続きから描ける #研究室",
+    "author": "appli simple",
+    "linkedFrom": "https://simpleappli.com/product_chemgraphic2",
+    "poster": "https://i.ytimg.com/vi/cM8LjsoiOqo/hqdefault.jpg"
   },
   "plans": [
     {

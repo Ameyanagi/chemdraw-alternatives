@@ -2,7 +2,7 @@
   "id": "p76",
   "slug": "chemmd",
   "name": "ChemMD",
-  "rank": 63,
+  "rank": 66,
   "tier": "alternative",
   "tierReason": "Manual geometry, skeletal preview and vector SVG export support simple publication figures, although this remains an unreleased prototype.",
   "summary": "Text-first browser editor for creating 2D chemical structures and exporting SVG or PNG drawings.",
@@ -519,7 +519,17 @@
       "how": "fixed",
       "note": "Fixed light appearance; MOL-derived connectivity omits stereochemistry."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 492.57,
+      "paclitaxelMb": 547.12,
+      "baselineMb": 450.2,
+      "rssIdleMb": 1037.84,
+      "rssPaclitaxelMb": 1079.52,
+      "runs": 3,
+      "processes": 9,
+      "method": "Fresh headed Playwright Chromium; whole-tree phys_footprint including crashpad; three-run medians in MiB.",
+      "note": "Published MOL-derived text omits stereochemistry and implicit hydrogens."
+    },
     "observations": [
       "Native text format required; pasted SMILES and MOL were rejected.",
       "Fixture images show MOL connectivity translated into ChemMD text, not direct imports.",
@@ -552,6 +562,7 @@
     "limit": "All rights reserved; reuse requires written permission.",
     "how": "Standalone browser app; no supported embedding interface found."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

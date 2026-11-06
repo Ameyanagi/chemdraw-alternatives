@@ -60,6 +60,7 @@
     "web": false
   },
   "embedding": null,
+  "video": null,
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

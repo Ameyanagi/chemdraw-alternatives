@@ -2,7 +2,7 @@
   "id": "p73",
   "slug": "labcanvas-figure-editor",
   "name": "LabCanvas Figure Editor / MolDraw",
-  "rank": 82,
+  "rank": 84,
   "tier": "alternative",
   "tierReason": "Implemented molecular drawing and editable figure integration support publication-oriented 2D documents, with paid exports and documented vector output.",
   "summary": "Browser-based molecule and reaction drawing integrated with editable scientific figures.",
@@ -67,10 +67,10 @@
       "note": "Dative and dotted hydrogen bonds have drawing handlers."
     },
     "double-bond-side": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/drawing/special-bond-types-dative-hydrogen-bold-wavy-and-query/",
+      "note": "Click double bonds to cycle centered, right and left."
     },
     "rings": {
       "status": "yes",
@@ -347,16 +347,16 @@
       "note": "Polymer presets create atom-linked repeating units with editable SRU brackets."
     },
     "biomolecules": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/tools/free-chem-tools/peptide-dna-sequence-to-structure.html",
+      "note": "Sequence builder opens peptides, DNA and RNA in MolDraw."
     },
     "image-to-structure": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/chrome-addon",
+      "note": "MolDraw Pro; monthly scan allowance."
     },
     "database-lookup": {
       "status": "yes",
@@ -479,10 +479,10 @@
       "note": null
     },
     "office": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/import-export/how-to-use-moldraw-structures-in-word-and-powerpoint/",
+      "note": "Reopen embedded drawing in MolDraw; no Office add-in."
     },
     "python-api": {
       "status": "unknown",
@@ -511,10 +511,10 @@
       "planLevel": "paid"
     },
     "plugins": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.moldraw.com/docs/plugins/moldraw-plugins-overview-and-how-to-install/",
+      "note": "Installable plugins; most require a free account."
     },
     "embed": {
       "status": "yes",
@@ -537,7 +537,27 @@
     "NMR's menu is unwired in the inspected build; interactive usability was not tested."
   ],
   "github": null,
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://www.labcanvas.com/moldraw/",
+    "ran": false,
+    "failure": "The hosted editor redirected to LabCanvas sign-in before drawing; no account was used.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Build identifier comes from the hosted index-CEdVcYSq.js bundle.",
+      "The sign-in screen is saved as sign-in-window.png."
+    ]
+  },
   "perf": null,
   "downloadBytes": null,
   "references": [
@@ -564,6 +584,7 @@
     "limit": "Free hosted editor; only /embed permits cross-site framing.",
     "how": "Embed https://www.moldraw.com/embed in an iframe; use height=\"640\" and width=\"100%\"."
   },
+  "video": null,
   "plans": [
     {
       "name": "Free",

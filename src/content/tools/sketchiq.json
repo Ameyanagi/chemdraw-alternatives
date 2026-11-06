@@ -703,7 +703,13 @@
       "The default PNG export reports 72 dpi; a 4× print option is offered."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 916,
+    "transferBytes": 3095213
+  },
   "downloadBytes": null,
   "references": [
     "https://proteiniq.io/docs/viewers",
@@ -732,6 +738,7 @@
     "limit": null,
     "how": "X-Frame-Options DENY and CSP frame-ancestors 'none'; no editor SDK documented."
   },
+  "video": null,
   "plans": [
     {
       "name": "SketchIQ (no account)",

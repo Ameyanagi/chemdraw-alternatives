@@ -2,7 +2,7 @@
   "id": "p107",
   "slug": "sketchel",
   "name": "SketchEl",
-  "rank": 57,
+  "rank": 59,
   "tier": "alternative",
   "tierReason": "The complete standalone editor produces 2D molecular drawings and vector SVG/ODG exports suitable for publication workflows.",
   "summary": "A standalone Java editor for drawing 2D molecular structures and editing molecular datasheets.",
@@ -524,19 +524,19 @@
     "captures": [
       {
         "fixture": "simple",
-        "result": "failed",
+        "result": "ok",
         "input": "mol",
-        "image": null,
-        "note": "MOL rendered; canvas saved separately; native export filename entry failed.",
-        "structure": null
+        "image": "evidence/sketchel/simple.svg",
+        "note": "SMILES produced no drawing; MOL fallback rendered correctly; native SVG and MOL saved.",
+        "structure": "match"
       },
       {
         "fixture": "complex",
-        "result": "failed",
+        "result": "ok",
         "input": "mol",
-        "image": null,
-        "note": "MOL rendered; canvas saved separately; native export filename entry failed.",
-        "structure": null
+        "image": "evidence/sketchel/complex.svg",
+        "note": "SMILES produced no drawing; MOL fallback rendered correctly; native SVG and MOL saved.",
+        "structure": "match"
       },
       {
         "fixture": "threed",
@@ -544,13 +544,18 @@
         "input": "sdf",
         "image": null,
         "note": "Opens the 3D file as a flat drawing",
-        "structure": null
+        "structure": "match"
       }
     ],
     "canvas": "evidence/sketchel/canvas.webp",
-    "canvasLight": null,
+    "canvasLight": "evidence/sketchel/canvas-light.webp",
     "canvasDark": null,
-    "themes": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Fixed light interface and gray canvas; dark override has no effect."
+    },
     "memory": {
       "idleMb": 113.45,
       "paclitaxelMb": 117.6,
@@ -567,7 +572,9 @@
       "MOL coordinates were preserved; only viewport zoom was adjusted.",
       "Paclitaxel retained visible solid and hashed stereobonds.",
       "Cholesterol SDF projection displays explicit hydrogens and red overlap markers.",
-      "Native exports remain unverified; supplemental canvas crops are screenshots."
+      "Native exports remain unverified; supplemental canvas crops are screenshots.",
+      "Redraw: current Kekule SMILES paste returned No molecule data available for caffeine and paclitaxel; MOL fallback used.",
+      "Redraw: native SVG and MDL MOL exports succeeded using keyboard filename entry; retained failure and earlier export observations describe the initial pass."
     ]
   },
   "perf": null,
@@ -595,6 +602,7 @@
     "limit": "GPL-2.0-or-later; obsolete Java applet",
     "how": "Legacy Java applet embeds editor with JavaScript molecule exchange."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

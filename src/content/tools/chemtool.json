@@ -2,7 +2,7 @@
   "id": "p94",
   "slug": "chemtool",
   "name": "Chemtool",
-  "rank": 100,
+  "rank": 102,
   "tier": "alternative",
   "tierReason": "It is a standalone 2D editor with structures, text, templates and vector export for publication figures.",
   "summary": "A standalone editor for drawing organic molecular structures and exporting chemical figures.",
@@ -455,9 +455,29 @@
     "macOS and Windows support is documented through legacy X11 source builds."
   ],
   "github": null,
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://deb.debian.org/debian/pool/main/c/chemtool/chemtool_1.6.14.orig.tar.gz",
+    "ran": false,
+    "failure": "Unmodified Chemtool 1.6.14 source failed to compile: main.c:18:10: fatal error: gdk/gdkx.h: No such file or directory. Installed Homebrew GTK2 2.24.33 uses Quartz and lacks the required X11 backend. No Chemtool binary or final installation was produced; see configure.log and build.log.",
+    "downloadBytes": 817735,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Build failed before any app window opened.",
+      "No molecules or drawing features were tested."
+    ]
+  },
   "perf": null,
-  "downloadBytes": 258552,
+  "downloadBytes": 817735,
   "references": [
     "https://packages.debian.org/en/trixie/chemtool"
   ],
@@ -482,6 +502,7 @@
     "limit": "GPL-2.0-or-later",
     "how": "GTK executable documented; no supported embeddable editor interface confirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

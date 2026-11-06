@@ -2,7 +2,7 @@
   "id": "p97",
   "slug": "molchart",
   "name": "MolChart",
-  "rank": 17,
+  "rank": 18,
   "tier": "alternative",
   "tierReason": "Manual structure editing, reaction-scheme layout and vector SVG export support standalone publication-grade 2D chemical drawings.",
   "summary": "Browser editor for manually drawing 2D chemical structures and reaction schemes with an integrated AI assistant.",
@@ -643,7 +643,13 @@
       "The 2D SVG and MOL exports are saved alongside the 3D viewport capture."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2090,
+    "transferBytes": 2344228
+  },
   "downloadBytes": null,
   "references": [
     "https://molchart.com/",
@@ -672,6 +678,7 @@
     "limit": "ChatGPT viewer; manual editing requires full app",
     "how": "MCP molchart.show_document renders ChatGPT widget; manual editing opens full app."
   },
+  "video": null,
   "plans": [
     {
       "name": "Anonymous",

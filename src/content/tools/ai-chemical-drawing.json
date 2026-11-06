@@ -2,7 +2,7 @@
   "id": "p113",
   "slug": "ai-chemical-drawing",
   "name": "AI Chemical Drawing (CubicZnS)",
-  "rank": 32,
+  "rank": 33,
   "tier": "alternative",
   "tierReason": "The end-user app combines a full manual Ketcher editor, reaction drawing, styled text and SVG export for publication figures.",
   "summary": "A local web app for drafting molecules and reactions with AI, editing them in Ketcher, and exporting structures.",
@@ -616,6 +616,7 @@
     "limit": "Host license unspecified; local application only",
     "how": "Embeds Ketcher internally; no host integration route documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

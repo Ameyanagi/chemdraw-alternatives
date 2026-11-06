@@ -2,7 +2,7 @@
   "id": "p10",
   "slug": "chemwindow",
   "name": "ChemWindow (KnowItAll ChemWindow Edition)",
-  "rank": 88,
+  "rank": 91,
   "tier": "alternative",
   "tierReason": "ChemWindow provides chemical structure drawing and ReportIt publishing tools for publication documents.",
   "summary": "Windows software for drawing chemical structures, preparing publication figures, and managing chemical databases.",
@@ -549,6 +549,7 @@
     "limit": null,
     "how": "Office OLE objects only, listed under Editable in Office. No developer route found."
   },
+  "video": null,
   "plans": [
     {
       "name": "KnowItAll ChemWindow Edition",

@@ -2,7 +2,7 @@
   "id": "p96",
   "slug": "indraw",
   "name": "InDraw",
-  "rank": 84,
+  "rank": 87,
   "tier": "alternative",
   "tierReason": "Its documented structure, reaction, text and layout tools support complete publication figures and editable Office documents.",
   "summary": "A desktop and web editor for chemical structures, reactions, and publication figures.",
@@ -129,10 +129,10 @@
       "note": null
     },
     "perspective": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://blog.csdn.net/ShanghaiIntegle/article/details/163070563",
+      "note": "Canvas structures rotate around X and Y axes."
     },
     "reaction-arrows": {
       "status": "unknown",
@@ -159,10 +159,10 @@
       "note": null
     },
     "orbitals": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://blog.csdn.net/ShanghaiIntegle/article/details/168880159",
+      "note": "Version 8.2 adds electron-cloud and orbital drawing."
     },
     "rich-text": {
       "status": "yes",
@@ -235,10 +235,10 @@
       "note": null
     },
     "valence-check": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://blog.csdn.net/ShanghaiIntegle/article/details/163045552",
+      "note": "Red warnings flag valence and connectivity errors."
     },
     "stereo-perception": {
       "status": "partial",
@@ -543,6 +543,15 @@
     "package": null,
     "limit": null,
     "how": "Internal iframe bridge exists; public embedding support remains unconfirmed."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://resource.integle.com/video/product/indraw.mp4",
+    "embed": null,
+    "title": "InDraw简介",
+    "author": null,
+    "linkedFrom": "https://www.integle.com/",
+    "poster": null
   },
   "plans": [
     {

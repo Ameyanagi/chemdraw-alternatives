@@ -2,7 +2,7 @@
   "id": "p41",
   "slug": "molcanvas",
   "name": "MolCanvas",
-  "rank": 18,
+  "rank": 19,
   "tier": "alternative",
   "tierReason": "Its standalone editor combines molecular drawings, reaction arrows, text and polymer units with SVG export for publication figures.",
   "summary": "A chemical structure editor for drawing organic molecules, reaction schemes, and polymer repeat units.",
@@ -604,7 +604,13 @@
       "Cholesterol 3D SDF opens on the 2D canvas with explicit hydrogens."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 290,
+    "idleMb": 100,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 3248540,
   "references": [
     "https://github.com/Ashif3hq/molCanvas/blob/f8e5def62afad3bca4369fae838457dc7c935f82/README.md",
@@ -631,6 +637,7 @@
     "limit": "Permission required for modification, redistribution, or self-hosting.",
     "how": "Hosted editor available; supported embedding integration unconfirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

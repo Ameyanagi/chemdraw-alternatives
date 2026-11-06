@@ -191,10 +191,10 @@
       "note": "Manual atom-map numbers are preserved in chemical exports."
     },
     "orbitals": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chem-analyses.com/articles/chemliora-feature-evolution-2026/",
+      "note": "Simplified calculated HOMO/LUMO shapes in analysis view."
     },
     "rich-text": {
       "status": "partial",
@@ -615,7 +615,13 @@
       "The default 3D view used ball-and-stick with hydrogens."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 713,
+    "transferBytes": 939182
+  },
   "downloadBytes": null,
   "references": [
     "https://chem-analyses.com/tools/structure-editor/",
@@ -643,6 +649,7 @@
     "limit": null,
     "how": "No documented embedding route; absent framing restrictions do not confirm support."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

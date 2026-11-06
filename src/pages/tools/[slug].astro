@@ -49,6 +49,17 @@ const sourceLabel = (source: string) => (source.startsWith('help:') ? 'Built-in 
     <p class="text-muted mt-3">{licenseNames[tool.license.kind]}. {coverage(tool)} of {features.length} checklist features confirmed.</p>
   </section>
 
+  {tool.video && (
+    <section class="page mb-14">
+      <h2 class="text-3xl">Official demo</h2>
+      <figure class="mt-4 max-w-3xl">
+        {tool.video.embed && <iframe class="border-line aspect-video w-full border" src={tool.video.embed} title={tool.video.title} loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>}
+        {tool.video.provider === 'file' && <video class="border-line aspect-video w-full border bg-black" controls playsinline preload={tool.video.poster ? 'none' : 'metadata'} poster={tool.video.poster ?? undefined} src={tool.video.url} aria-label={tool.video.title}></video>}
+        <figcaption class="text-muted mt-1 text-[0.95rem]"><a href={tool.video.url}>{tool.video.title}</a>{tool.video.author && `, published by ${tool.video.author}`}, linked from <a href={tool.video.linkedFrom}>{new URL(tool.video.linkedFrom).hostname.replace(/^www\./, '')}</a></figcaption>
+      </figure>
+    </section>
+  )}
+
   {tool.tier !== 'related' && (
     <section class="page">
       <h2 class="text-3xl">Main canvas</h2>

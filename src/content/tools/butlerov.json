@@ -2,7 +2,7 @@
   "id": "p56",
   "slug": "butlerov",
   "name": "Butlerov",
-  "rank": 61,
+  "rank": 64,
   "tier": "embeddable",
   "tierReason": "Butlerov primarily supplies a single-structure input component for embedding in web applications.",
   "summary": "An embeddable 2D chemical structure editor for drawing molecules in web applications.",
@@ -552,7 +552,13 @@
       "New captures use the earlier local adapter; its core bundle matches the hosted demo bundle byte-for-byte."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 270,
+    "transferBytes": 402464
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/eizemazal/butlerov",
@@ -579,6 +585,7 @@
     "limit": "MIT license.",
     "how": "Instantiate MoleculeEditor with a div stage; npm or UMD script."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

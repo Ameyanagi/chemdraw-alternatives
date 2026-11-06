@@ -2,7 +2,7 @@
   "id": "p34",
   "slug": "acd",
   "name": "ACD/ChemSketch",
-  "rank": 93,
+  "rank": 97,
   "tier": "alternative",
   "tierReason": "ChemSketch creates publication-grade 2D chemical structures, reaction schemes, and reports, although it is discontinued and unavailable to new customers.",
   "summary": "A discontinued Windows application for drawing chemical structures, reaction schemes, and publication figures.",
@@ -483,6 +483,15 @@
     "package": null,
     "limit": "Discontinued; unavailable to new customers",
     "how": "OLE objects supported; in-place editor hosting unconfirmed."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=hM6f-UWZSLM",
+    "embed": "https://www.youtube-nocookie.com/embed/hM6f-UWZSLM",
+    "title": "ChemSketch: Drawing Tools",
+    "author": "ACDLabs",
+    "linkedFrom": "https://www.acdlabs.com/resource/drawing-tools/",
+    "poster": "https://www.acdlabs.com/wp-content/uploads/complianz/placeholders/youtubehM6f-UWZSLM-maxresdefault.webp"
   },
   "plans": [
     {

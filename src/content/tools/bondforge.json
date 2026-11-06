@@ -2,7 +2,7 @@
   "id": "p51",
   "slug": "bondforge",
   "name": "BondForge",
-  "rank": 25,
+  "rank": 26,
   "tier": "alternative",
   "tierReason": "It creates standalone 2D drawing documents with structures, reaction arrows, captions and vector exports.",
   "summary": "BondForge is a desktop application for drawing chemical structures, reaction schemes, and annotated figures.",
@@ -553,7 +553,17 @@
       "how": "follows system",
       "note": "Default MOL import collapses into overlapping labels in both appearances."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 129.33,
+      "paclitaxelMb": 192.95,
+      "baselineMb": null,
+      "rssIdleMb": 284.62,
+      "rssPaclitaxelMb": 475.09,
+      "runs": 3,
+      "processes": 9,
+      "method": "Three-run median; process trees plus lsappinfo coalitions; phys_footprint MiB; MOL import; 10-second waits.",
+      "note": "Native Qt; baseline inapplicable. Paclitaxel loads with the published collapsed depiction."
+    },
     "observations": [
       "Default SMILES imports collapse to overlapping labels in canvas and SVG.",
       "Default dark canvas has very low contrast black bonds.",
@@ -590,6 +600,7 @@
     "limit": "GPL-3.0-or-later",
     "how": "Standalone Qt application; no documented editor embedding interface found."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

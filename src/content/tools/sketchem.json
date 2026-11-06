@@ -2,7 +2,7 @@
   "id": "p104",
   "slug": "sketchem",
   "name": "SketChem",
-  "rank": 72,
+  "rank": 75,
   "tier": "alternative",
   "tierReason": "Its implemented interface focuses on molecular structure input, and publication-grade document output is unverified.",
   "summary": "A browser-based editor for creating and editing 2D chemical structures.",
@@ -549,7 +549,13 @@
       "The cholesterol MOL output contained zero atoms after SDF import."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 158,
+    "transferBytes": 4709553
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/itayYaakov/SketChem",
@@ -578,6 +584,7 @@
     "limit": "MIT",
     "how": "Standalone React application; supported editor embedding remains unconfirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

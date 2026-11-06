@@ -2,7 +2,7 @@
   "id": "p29",
   "slug": "chemdoodle-web-components",
   "name": "ChemDoodle Web Components",
-  "rank": 26,
+  "rank": 27,
   "tier": "embeddable",
   "tierReason": "Primarily a JavaScript component library for embedding chemical sketchers and molecular graphics in applications.",
   "summary": "JavaScript components for embedding chemical structure drawing, molecular visualization, and chemistry interfaces in websites.",
@@ -149,10 +149,10 @@
       "note": "Lasso, flips, whole-figure rotation; scaling changes rendering size."
     },
     "perspective": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.chemdoodle.com/tutorial/2d-structure-canvases/transform-canvas",
+      "note": "TransformCanvas optionally rotates rendered structures in three dimensions."
     },
     "reaction-arrows": {
       "status": "yes",
@@ -600,7 +600,13 @@
       "The sketcher open dialog rejected both current Kekule SMILES fixtures."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2580,
+    "transferBytes": 1367462
+  },
   "downloadBytes": null,
   "references": [
     "https://web.chemdoodle.com/",
@@ -626,6 +632,15 @@
     "package": "react-chemdoodle",
     "limit": "Core GPLv3 or proprietary license; React wrapper MIT.",
     "how": "Embed SketcherCanvas directly or through React wrapper; separately load core scripts."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=B3iK_btquR4",
+    "embed": "https://www.youtube-nocookie.com/embed/B3iK_btquR4",
+    "title": "ChemDoodle Web Sketcher Introduction",
+    "author": "ChemDoodle",
+    "linkedFrom": "https://web.chemdoodle.com/demos/2d-sketcher",
+    "poster": "https://web.chemdoodle.com/img/chemdoodle/video_splash.png"
   },
   "plans": [],
   "renderer": {

@@ -2,7 +2,7 @@
   "id": "p16",
   "slug": "freechemdraw",
   "name": "FreeChemDraw",
-  "rank": 14,
+  "rank": 15,
   "tier": "alternative",
   "tierReason": "Users can compose 2D structures and reaction schemes with text and export vector SVG figures.",
   "summary": "A free browser workspace for drawing chemical structures and reactions, converting names, calculating properties, and exporting figures.",
@@ -646,7 +646,13 @@
       "Current Kekulé caffeine SMILES produced alternating double bonds in the default layout."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 930,
+    "transferBytes": 9470619
+  },
   "downloadBytes": null,
   "references": [
     "https://freechemdraw.com/en/"
@@ -672,6 +678,15 @@
     "package": null,
     "limit": "X-Frame-Options SAMEORIGIN",
     "how": "Hosted editor blocks external iframes; no documented embedding SDK."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://freechemdraw.com/upload/mediatext/videos/freechemdraw-workspace-update-name-3d-search-v2_20260902004857_0c98694e.mp4",
+    "embed": null,
+    "title": "FreeChemDraw Feature Demo",
+    "author": null,
+    "linkedFrom": "https://freechemdraw.com/en/",
+    "poster": null
   },
   "plans": [],
   "renderer": {

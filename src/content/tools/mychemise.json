@@ -2,7 +2,7 @@
   "id": "p109",
   "slug": "mychemise",
   "name": "MyChemise",
-  "rank": 118,
+  "rank": 114,
   "tier": "alternative",
   "tierReason": "The documented editor produces printable 2D chemical drawings with text and shapes, although present-day operation remains unverified.",
   "summary": "A legacy Java applet for drawing 2D chemical structures and creating animated reaction presentations.",
@@ -51,10 +51,10 @@
       "note": "Bond selectors and manual placement include single, double and triple bonds."
     },
     "stereo-bonds": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Wedge, hashed wedge, and wavy choices shown (manual p18)."
     },
     "special-bonds": {
       "status": "unknown",
@@ -63,10 +63,10 @@
       "note": null
     },
     "double-bond-side": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Left, right, and centered double-bond choices shown (manual p18)."
     },
     "rings": {
       "status": "yes",
@@ -87,10 +87,10 @@
       "note": null
     },
     "templates": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "Functional-group presets insert alkyl, phenyl, and carboxyl structures (p17)."
     },
     "custom-templates": {
       "status": "yes",
@@ -111,10 +111,10 @@
       "note": "Atom text supports charges, isotope numbers and arbitrary labels."
     },
     "radicals": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://knalltundstinkt.de/englischeVersion/kus_Historie.html",
+      "note": "Lone electron pairs are drawn automatically."
     },
     "keyboard-drawing": {
       "status": "unknown",
@@ -373,10 +373,10 @@
       "note": null
     },
     "clipboard-chemdraw": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://www.knalltundstinkt.de/MyChemise_englisch/Description.pdf",
+      "note": "System clipboard exports images rather than editable chemical structures."
     },
     "office": {
       "status": "unknown",
@@ -459,6 +459,7 @@
     "limit": "Requires obsolete Java browser plug-in; redistribution license unverified",
     "how": "Embed Chemise.class from ChemJar.jar using the official <applet> example."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

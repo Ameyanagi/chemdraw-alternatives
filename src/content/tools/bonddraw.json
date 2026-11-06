@@ -2,7 +2,7 @@
   "id": "p138",
   "slug": "bonddraw",
   "name": "BondDraw",
-  "rank": 108,
+  "rank": 110,
   "tier": "alternative",
   "tierReason": "A standalone native editor draws editable 2D molecular structures and reaction figures, with limited export and layout.",
   "summary": "A native HarmonyOS editor for drawing two-dimensional molecular structures and reaction diagrams.",
@@ -478,6 +478,7 @@
     "limit": "License conflict: manifest LGPL-2.1-or-later, documentation Apache-2.0.",
     "how": "Standalone HarmonyOS application; no supported editor embedding interface found."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

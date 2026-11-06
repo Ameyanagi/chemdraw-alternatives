@@ -2,7 +2,7 @@
   "id": "p81",
   "slug": "schematic",
   "name": "schematic",
-  "rank": 62,
+  "rank": 65,
   "tier": "alternative",
   "tierReason": "A standalone editor produces 2D structure and reaction drawings with ACS styling, vector SVG and print-resolution PNG export.",
   "summary": "Browser-based editor for drawing 2D chemical structures and simple reaction schemes with SVG and PNG export.",
@@ -293,10 +293,10 @@
       "note": null
     },
     "biomolecules": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/grebenyyk/schematic/main/Minimal%20Molecule%20Sketcher%20%E2%80%94%20Architecture%20Blueprint.md",
+      "note": "Sequence mode explicitly excluded from v1."
     },
     "image-to-structure": {
       "status": "unknown",
@@ -305,10 +305,10 @@
       "note": null
     },
     "database-lookup": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/grebenyyk/schematic/main/Minimal%20Molecule%20Sketcher%20%E2%80%94%20Architecture%20Blueprint.md",
+      "note": "Database search explicitly excluded from v1."
     },
     "model-3d": {
       "status": "no",
@@ -520,7 +520,13 @@
       "The hosted page shows no application version; deployed commit identifies the build."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 70,
+    "transferBytes": 24032
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/grebenyyk/schematic",
@@ -545,6 +551,7 @@
     "limit": "No declared source license.",
     "how": "Standalone application; no documented editor embedding route."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

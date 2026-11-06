@@ -2,7 +2,7 @@
   "id": "p24",
   "slug": "cdraw",
   "name": "cDraw",
-  "rank": 43,
+  "rank": 44,
   "tier": "alternative",
   "tierReason": "It creates styled 2D structures and reaction figures with text, layout tools and vector export.",
   "summary": "A Java desktop editor for creating publication-quality 2D chemical structures and reaction schemes.",
@@ -522,7 +522,7 @@
       "light": true,
       "dark": true,
       "how": "follows system",
-      "note": "Dark chrome, white canvas; dark molecule import blocked. Light capture reused."
+      "note": "Dark titlebar and menus; canvas and toolbars remain light."
     },
     "memory": {
       "idleMb": 198.63,
@@ -572,6 +572,7 @@
     "limit": "AGPL-3.0-only",
     "how": "Standalone Java editor; no project-offered embedding component confirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

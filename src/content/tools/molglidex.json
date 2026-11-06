@@ -2,7 +2,7 @@
   "id": "p75",
   "slug": "molglidex",
   "name": "MolGLideX",
-  "rank": 48,
+  "rank": 49,
   "tier": "alternative",
   "tierReason": "It draws standalone 2D chemical figures and exports vectors, but remains an explicitly unstable prototype.",
   "summary": "An experimental desktop editor for drawing 2D chemical structures and reaction mechanisms.",
@@ -509,10 +509,25 @@
       }
     ],
     "canvas": "evidence/molglidex/canvas.webp",
-    "canvasLight": null,
+    "canvasLight": "evidence/molglidex/canvas-light.webp",
     "canvasDark": null,
-    "themes": null,
-    "memory": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Import failed; simple benzene ring drawn on fixed light canvas."
+    },
+    "memory": {
+      "idleMb": 340.91,
+      "paclitaxelMb": null,
+      "baselineMb": null,
+      "rssIdleMb": 242.12,
+      "rssPaclitaxelMb": null,
+      "runs": 1,
+      "processes": 1,
+      "method": "One manual run; footprint phys_footprint summed over ps descendant tree; MiB (bytes/1048576).",
+      "note": "Published File > Load MOL route left canvas empty; paclitaxel could not load."
+    },
     "observations": [
       "Scratch benzene has black bonds on a light gray canvas.",
       "Default carbon insertion displays CH4.",
@@ -547,6 +562,7 @@
     "limit": "GPL-2.0; experimental prototype",
     "how": "Desktop application; no supported embedding interface documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

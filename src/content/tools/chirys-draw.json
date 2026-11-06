@@ -2,7 +2,7 @@
   "id": "p123",
   "slug": "chirys-draw",
   "name": "Chirys Draw",
-  "rank": 122,
+  "rank": 120,
   "tier": "alternative",
   "tierReason": "Standalone structure and reaction drawing with vector PDF export supports publication figures.",
   "summary": "An iPad app for drawing molecular structures and reaction schemes and exporting publication figures.",
@@ -49,10 +49,10 @@
       "note": null
     },
     "stereo-bonds": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/chirys-draw/id455125162",
+      "note": "Up/down wedges and wavy bonds; manual confirms wedge types."
     },
     "special-bonds": {
       "status": "unknown",
@@ -85,10 +85,10 @@
       "note": "Vendor claim: press-and-drag gesture draws chains."
     },
     "templates": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://apps.apple.com/us/app/chirys-draw/id455125162",
+      "note": "Built-in protecting groups plus Groups and Template panel."
     },
     "custom-templates": {
       "status": "unknown",
@@ -451,6 +451,15 @@
     "package": null,
     "limit": null,
     "how": "Developer link returns 404; embedding mechanism unconfirmed."
+  },
+  "video": {
+    "provider": "link",
+    "url": "https://apps.apple.com/us/app/chirys-draw/id455125162",
+    "embed": null,
+    "title": "App Store preview",
+    "author": null,
+    "linkedFrom": "https://apps.apple.com/us/app/chirys-draw/id455125162",
+    "poster": null
   },
   "plans": [],
   "renderer": {

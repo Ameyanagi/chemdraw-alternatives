@@ -2,7 +2,7 @@
   "id": "p17",
   "slug": "chemstitch",
   "name": "ChemStitch",
-  "rank": 107,
+  "rank": 109,
   "tier": "alternative",
   "tierReason": "Its standalone editor produces publication figures with ACS presets, vector SVG, high-resolution PNG, and structured reaction documents.",
   "summary": "A browser-based chemical drawing editor for publication figures, property calculations, and AI-assisted structure and reaction analysis.",
@@ -530,6 +530,7 @@
     "limit": "X-Frame-Options DENY",
     "how": "Hosted app blocks framing; no supported editor embedding package documented."
   },
+  "video": null,
   "plans": [
     {
       "name": "Free Tools",

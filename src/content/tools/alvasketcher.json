@@ -2,7 +2,7 @@
   "id": "p08",
   "slug": "alvasketcher",
   "name": "alvaSketcher",
-  "rank": 124,
+  "rank": 125,
   "tier": "alternative",
   "tierReason": "Its standalone 2D editor and image clipboard output support chemical figure creation, although publication layout capabilities remain unverified.",
   "summary": "A desktop molecular editor for drawing, editing and preparing 2D chemical structures.",
@@ -472,6 +472,15 @@
     "package": null,
     "limit": null,
     "how": "No documented editor embedding API, SDK, or package found."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=3w08r-AeSd8",
+    "embed": "https://www.youtube-nocookie.com/embed/3w08r-AeSd8",
+    "title": "alvaSketcher v1.0 - Introduction",
+    "author": "Alvascience",
+    "linkedFrom": "https://www.alvascience.com/alvasketcher/",
+    "poster": "https://i.ytimg.com/vi/3w08r-AeSd8/hqdefault.jpg"
   },
   "plans": [],
   "renderer": {

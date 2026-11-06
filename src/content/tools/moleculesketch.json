@@ -2,7 +2,7 @@
   "id": "p130",
   "slug": "moleculesketch",
   "name": "MoleculeSketch",
-  "rank": 104,
+  "rank": 106,
   "tier": "alternative",
   "tierReason": "Standalone chemical drawing documents support structures, reactions, annotations and vector PDF/SVG export for publication figures.",
   "summary": "A macOS and iPad app for drawing chemical structures, reaction schemes, and figures.",
@@ -509,6 +509,7 @@
     "limit": null,
     "how": "PDF copying exports graphics; no working editor embedding confirmed."
   },
+  "video": null,
   "plans": [
     {
       "name": "MoleculeSketch iP",

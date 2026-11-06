@@ -2,7 +2,7 @@
   "id": "p48",
   "slug": "chemcanvas",
   "name": "ChemCanvas",
-  "rank": 29,
+  "rank": 30,
   "tier": "alternative",
   "tierReason": "Standalone drawing tools, multipage documents, rich text and vector export support publication-grade 2D chemical figures.",
   "summary": "A desktop editor for drawing 2D chemical structures, reaction schemes and mechanisms.",
@@ -545,7 +545,17 @@
       "how": "follows system",
       "note": "Dark interface; drawing canvas remains white."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 86.59,
+      "paclitaxelMb": 95.91,
+      "baselineMb": null,
+      "rssIdleMb": 185.48,
+      "rssPaclitaxelMb": 201.92,
+      "runs": 3,
+      "processes": 1,
+      "method": "Three fresh native Qt launches; median summed tree phys_footprint, MiB; 10-second settles.",
+      "note": "SMILES File/Open; declined existing autosave restoration; no child processes."
+    },
     "observations": [
       "Caffeine SMILES import generated a complete 2D drawing.",
       "Paclitaxel automatic layout contains overlapping bonds and labels.",
@@ -580,6 +590,7 @@
     "limit": "GPL-3.0-or-later copyleft",
     "how": "Standalone PyQt application; no editor integration API documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

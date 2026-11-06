@@ -2,7 +2,7 @@
   "id": "p101",
   "slug": "dotmatics-elemental",
   "name": "Dotmatics Elemental / Elemental Draw",
-  "rank": 115,
+  "rank": 55,
   "tier": "embeddable",
   "tierReason": "The vendor's standalone Elemental Draw release documents saving and printing structures and reactions for publications.",
   "summary": "Chemical structure and reaction drawing suite with desktop, web, and iOS editions.",
@@ -46,15 +46,23 @@
   "features": {
     "bonds-core": {
       "status": "yes",
-      "evidence": "docs",
+      "evidence": "tested",
       "source": "https://images.webofknowledge.com/WOK50B6/images/dhtmlsuite/docs/Elemental.pdf",
-      "note": "Bond-order cycling and single, double, triple bond types documented."
+      "note": "Drew single, double, and triple bonds.",
+      "shot": {
+        "image": "evidence/dotmatics-elemental/f-bonds-core.webp",
+        "caption": "Single, double and triple bonds on the drawing canvas."
+      }
     },
     "stereo-bonds": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "yes",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/dotmatics-elemental/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds on the drawing canvas."
+      }
     },
     "special-bonds": {
       "status": "unknown",
@@ -69,10 +77,14 @@
       "note": null
     },
     "rings": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "yes",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "Drew five-membered and fused aromatic rings.",
+      "shot": {
+        "image": "evidence/dotmatics-elemental/f-rings.webp",
+        "caption": "Fused five-membered and aromatic rings on the canvas."
+      }
     },
     "conformers": {
       "status": "unknown",
@@ -87,10 +99,10 @@
       "note": null
     },
     "templates": {
-      "status": "yes",
-      "evidence": "docs",
+      "status": "partial",
+      "evidence": "tested",
       "source": "https://images.webofknowledge.com/WOK50B6/images/dhtmlsuite/docs/Elemental.pdf",
-      "note": "Template groups with atom or bond attachment points."
+      "note": "Template browser opened; its category contained no visible templates."
     },
     "custom-templates": {
       "status": "yes",
@@ -105,10 +117,10 @@
       "note": null
     },
     "atom-labels": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "partial",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "Atom menu includes charge, element, and isotope submenus."
     },
     "radicals": {
       "status": "unknown",
@@ -123,10 +135,10 @@
       "note": "Hover over an atom and type an element symbol."
     },
     "selection-tools": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "partial",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "Selection and rotate controls are visible."
     },
     "perspective": {
       "status": "unknown",
@@ -135,22 +147,26 @@
       "note": null
     },
     "reaction-arrows": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "partial",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "Drew a forward arrow; other arrow styles not found.",
+      "shot": {
+        "image": "evidence/dotmatics-elemental/f-reaction-arrows.webp",
+        "caption": "Forward reaction arrow above fused rings."
+      }
     },
     "mechanism-arrows": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No curved arrow control found in the embedded editor."
     },
     "reaction-data": {
-      "status": "yes",
-      "evidence": "docs",
+      "status": "partial",
+      "evidence": "tested",
       "source": "https://apps.apple.com/us/app/elemental/id518655328",
-      "note": "iOS edition opens and exports chemical reactions as RXN.",
+      "note": "Copy Mol/Rxn generated RXN with one reactant and no products.",
       "plan": "Elemental App",
       "planLevel": "free"
     },
@@ -277,16 +293,16 @@
       "planLevel": "free"
     },
     "name-to-structure": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No name conversion command found in the editor."
     },
     "structure-to-name": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No structure naming command found in the editor."
     },
     "nmr-prediction": {
       "status": "unknown",
@@ -301,10 +317,10 @@
       "note": "R-group definitions, attachment points, logic, and atom lists."
     },
     "polymers": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "partial",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "A repeat-unit bracket tool is visible."
     },
     "biomolecules": {
       "status": "yes",
@@ -327,10 +343,10 @@
       "note": "Elemental DB edition searches ChEMBL; vendor claim."
     },
     "model-3d": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No rotatable 3D view found in the editor."
     },
     "crystals": {
       "status": "unknown",
@@ -339,10 +355,10 @@
       "note": null
     },
     "cdxml": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No CDXML import or export command found."
     },
     "cdx": {
       "status": "unknown",
@@ -351,10 +367,10 @@
       "note": null
     },
     "mol-sdf": {
-      "status": "yes",
-      "evidence": "docs",
+      "status": "partial",
+      "evidence": "tested",
       "source": "https://apps.apple.com/us/app/elemental/id518655328",
-      "note": "iOS reads and writes MOL; SDF support unverified.",
+      "note": "MOL text imported and exported; SDF not tested.",
       "engine": {
         "library": "In-house (Elemental JavaScript MOL/SDF parser and writer)",
         "source": "https://www.hit2lead.com/elemental/elemental-obf.js"
@@ -363,10 +379,10 @@
       "planLevel": "free"
     },
     "smiles": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "partial",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "SMILES output worked; MOL paste box did not accept SMILES."
     },
     "inchi": {
       "status": "unknown",
@@ -375,30 +391,30 @@
       "note": null
     },
     "rxn": {
-      "status": "yes",
-      "evidence": "docs",
+      "status": "partial",
+      "evidence": "tested",
       "source": "https://apps.apple.com/us/app/elemental/id518655328",
-      "note": "iOS opens RXN attachments and emails RXN files.",
+      "note": "RXN text output generated; RXN import not tested.",
       "plan": "Elemental App",
       "planLevel": "free"
     },
     "svg-export": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No SVG export command found."
     },
     "pdf-export": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No PDF export command found."
     },
     "png-export": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "partial",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "Image copy preview worked; host download produced no file."
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -461,8 +477,77 @@
     "Public feature documentation spans editions and years; current desktop pricing, release version, and publication export formats remain unverified."
   ],
   "github": null,
-  "hands": null,
-  "perf": null,
+  "hands": {
+    "testedVersion": "2016.4.49405",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://www.hit2lead.com/search.asp?SearchPage=structure&box=E&db=SC",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/dotmatics-elemental/simple.png",
+        "note": "SMILES failed; MOL coordinates used; PNG is a cropped window capture.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/dotmatics-elemental/complex.png",
+        "note": "MOL coordinates used; PNG is a cropped window capture.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "No 3D view found; cholesterol was not loaded.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/dotmatics-elemental/canvas.webp",
+    "canvasLight": "evidence/dotmatics-elemental/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "UI themes change tool layout; all remain light."
+    },
+    "memory": {
+      "idleMb": 483.3,
+      "paclitaxelMb": 492.9,
+      "baselineMb": 401.4,
+      "rssIdleMb": 1053.8,
+      "rssPaclitaxelMb": 1070.8,
+      "runs": 3,
+      "processes": 7,
+      "method": "Playwright Chromium process tree; summed phys_footprint, MiB; median of three.",
+      "note": null
+    },
+    "observations": [
+      "Tested the Elemental copy embedded on Hit2Lead; no searches were run.",
+      "The About dialog reports version 2016.4.49405.",
+      "Both drawings use fixture MOL coordinates, not editor-generated layouts.",
+      "Image-copy previews appeared; PNG files here are cropped window captures.",
+      "No 3D viewport was found."
+    ]
+  },
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2463,
+    "transferBytes": 736133
+  },
   "downloadBytes": null,
   "references": [
     "https://www.dotmatics.com/webinars/whats-new-in-dotmatics-7-5"
@@ -487,6 +572,7 @@
     "limit": "Separate commercial JavaScript edition; deployment-specific license required",
     "how": "Licensed JavaScript edition injects editor with injectElemental(width,height); current availability unconfirmed."
   },
+  "video": null,
   "plans": [
     {
       "name": "Elemental App",

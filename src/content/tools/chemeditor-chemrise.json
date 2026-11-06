@@ -2,7 +2,7 @@
   "id": "p119",
   "slug": "chemeditor-chemrise",
   "name": "Chemeditor (Chemrise)",
-  "rank": 27,
+  "rank": 28,
   "tier": "alternative",
   "tierReason": "It creates complete 2D chemistry documents with editable Ketcher structures, rich text, HTML saving, and PDF printing.",
   "summary": "Browser-based editor for chemistry articles, reaction equations, and embedded molecular structure drawings.",
@@ -575,7 +575,13 @@
       "Print preview worked; the host did not open a print dialog."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2382,
+    "transferBytes": 1235357
+  },
   "downloadBytes": null,
   "references": [
     "https://chemrise.ru/chemeditor/en",
@@ -602,6 +608,15 @@
     "package": null,
     "limit": null,
     "how": "Hosted editor available; external embedding support unconfirmed."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://chemrise.ru/video5/chemeditor.webm",
+    "embed": null,
+    "title": "Пример записи и сохранения реакции",
+    "author": null,
+    "linkedFrom": "https://chemrise.ru/video/chemeditor.webm",
+    "poster": null
   },
   "plans": [],
   "renderer": {

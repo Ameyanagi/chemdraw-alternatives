@@ -2,7 +2,7 @@
   "id": "p52",
   "slug": "ferrum-chemical-forge",
   "name": "Ferrum Chemical Forge",
-  "rank": 95,
+  "rank": 98,
   "tier": "alternative",
   "tierReason": "A standalone 2D chemical document editor provides structure and reaction authoring, annotations, and vector SVG/PDF export.",
   "summary": "Pre-alpha desktop editor for drawing chemical structures, composing reaction documents, and exporting vector figures.",
@@ -247,10 +247,10 @@
       }
     },
     "stereo-perception": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/vosslab/ferrum-chemical-forge/main/docs/active_plans/audits/ferrum_qt_capability_matrix.md",
+      "note": "Stereochemical inference explicitly dropped; authored depiction remains."
     },
     "formula-mass": {
       "status": "yes",
@@ -311,10 +311,10 @@
       "note": null
     },
     "database-lookup": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/vosslab/ferrum-chemical-forge/main/docs/active_plans/audits/ferrum_qt_capability_matrix.md",
+      "note": "Live PubChem lookup explicitly dropped."
     },
     "model-3d": {
       "status": "unknown",
@@ -435,10 +435,10 @@
       "note": null
     },
     "plugins": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/vosslab/ferrum-chemical-forge/main/docs/active_plans/audits/ferrum_qt_capability_matrix.md",
+      "note": "Third-party execution explicitly dropped; built-in actions remain."
     },
     "embed": {
       "status": "unknown",
@@ -548,6 +548,7 @@
     "limit": "AGPL-3.0-only editor; LGPL-3.0-only engine",
     "how": "Public Python API handles documents; Qt editor bridge is private."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

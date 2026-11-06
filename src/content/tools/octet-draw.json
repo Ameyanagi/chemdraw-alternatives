@@ -534,10 +534,10 @@
       "note": "Standalone desktop editor; no supported embedding integration found."
     },
     "ai-assistant": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/SamChemMan/Octet-Draw/main/docs/decisions/0006-nmr-properties-and-chemdraw-26.md",
+      "note": "AI features explicitly remain outside current scope."
     },
     "office-ole": {
       "status": "no",
@@ -633,7 +633,13 @@
       "Redraw: fresh cholesterol 3D export preserves all eight stereocenters; supersedes earlier inversion observation."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 373,
+    "idleMb": 135,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 32510320,
   "references": [
     "https://github.com/SamChemMan/Octet-Draw/blob/d5ebf898de3a82bf7549680a171fc4909daae69f/README.md",
@@ -661,6 +667,15 @@
     "package": null,
     "limit": null,
     "how": "Standalone desktop editor; no supported embedding integration found."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://octet.software/media/octet-draw-demo.mp4",
+    "embed": null,
+    "title": "Octet Draw in use: drawing ibuprofen, choosing a shape, and the Actions panel.",
+    "author": null,
+    "linkedFrom": "https://octet.software/",
+    "poster": "https://octet.software/media/octet-draw-demo.jpg"
   },
   "plans": [],
   "renderer": {

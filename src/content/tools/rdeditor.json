@@ -2,7 +2,7 @@
   "id": "p55",
   "slug": "rdeditor",
   "name": "rdEditor",
-  "rank": 65,
+  "rank": 68,
   "tier": "alternative",
   "tierReason": "Its reusable PySide molecule-editing widgets and automatic RDKit layout target structure input rather than publication drawing documents.",
   "summary": "A desktop molecule editor and reusable Python widget for editing RDKit structures.",
@@ -541,7 +541,17 @@
       "how": "in-app setting",
       "note": "Settings > Theme: Qdt light and Qdt dark change canvas colors."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 108.95,
+      "paclitaxelMb": 115.03,
+      "baselineMb": null,
+      "rssIdleMb": 226.74,
+      "rssPaclitaxelMb": 234.78,
+      "runs": 3,
+      "processes": 1,
+      "method": "Median of three fresh Qt process-tree phys_footprint sums; SMILES paste; 10-second waits; decimal MB.",
+      "note": "Clipboard API timed out, but paclitaxel visibly rendered. Native Qt; no helpers observed."
+    },
     "observations": [
       "Default dark canvas uses light bonds, red oxygen, and blue nitrogen.",
       "SMILES paste generates and fits 2D coordinates automatically.",
@@ -578,6 +588,7 @@
     "limit": "LGPL-3.0; requires PySide6 desktop GUI.",
     "how": "Import rdeditor.molEditWidget.MolEditWidget; add to PySide6 layout and connect molChanged."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

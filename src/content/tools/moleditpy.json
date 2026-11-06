@@ -2,7 +2,7 @@
   "id": "p70",
   "slug": "moleditpy",
   "name": "MoleditPy",
-  "rank": 28,
+  "rank": 29,
   "tier": "alternative",
   "tierReason": "It provides implemented 2D structure drawing and vector SVG export, with publication-figure layout tools available through Reaction Sketcher.",
   "summary": "A desktop editor for drawing chemical structures, editing 3D molecules, and preparing computational chemistry inputs.",
@@ -593,7 +593,17 @@
       "how": "follows system",
       "note": "Dark interface retains a white drawing canvas."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 576.36,
+      "paclitaxelMb": 581.91,
+      "baselineMb": null,
+      "rssIdleMb": 535.2,
+      "rssPaclitaxelMb": 548.68,
+      "runs": 3,
+      "processes": 1,
+      "method": "Three fresh launches; SMILES import; 10-second waits; process-tree footprint phys_footprint medians; decimal MB.",
+      "note": "Native Qt; no child processes; per-launch QT_QPA_PLATFORM=cocoa."
+    },
     "observations": [
       "SMILES import automatically laid out and fitted all three 2D structures.",
       "Default 2D atom labels use blue nitrogen and red oxygen.",
@@ -602,7 +612,13 @@
       "Default PNG output was 918×522 pixels at 72 dpi."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 11039,
+    "idleMb": 504,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 180053192,
   "references": [
     "https://github.com/HiroYokoyama/python_molecular_editor",
@@ -628,6 +644,15 @@
     "package": "MoleditPy",
     "limit": "LGPL-3.0-or-later",
     "how": "Standalone Python package; no editor embedding API confirmed."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=ccWn9psgBlM",
+    "embed": "https://www.youtube-nocookie.com/embed/ccWn9psgBlM",
+    "title": "MoleditPy: introduction",
+    "author": "HY",
+    "linkedFrom": "https://hiroyokoyama.github.io/python_molecular_editor/",
+    "poster": "https://img.youtube.com/vi/ccWn9psgBlM/hqdefault.jpg"
   },
   "plans": [],
   "renderer": {

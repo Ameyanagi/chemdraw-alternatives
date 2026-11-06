@@ -63,6 +63,15 @@
     "web": true
   },
   "embedding": null,
+  "video": {
+    "provider": "file",
+    "url": "https://www.nlm.nih.gov/oet/ed/pubchem/searching-structures.mp4",
+    "embed": null,
+    "title": "Searching Structures in PubChem",
+    "author": null,
+    "linkedFrom": "https://www.nlm.nih.gov/oet/ed/pubchem/videos.html",
+    "poster": "https://www.nlm.nih.gov/oet/ed/pubchem/searching-structures.jpg"
+  },
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

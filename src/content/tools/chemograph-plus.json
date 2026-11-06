@@ -2,7 +2,7 @@
   "id": "p121",
   "slug": "chemograph-plus",
   "name": "Chemograph Plus",
-  "rank": 125,
+  "rank": 124,
   "tier": "alternative",
   "tierReason": "Its standalone 2D editor produces chemical structure and reaction documents with MOL exchange and Word object insertion.",
   "summary": "Windows software for drawing chemical structures and reaction schemes, with spectra editing and optional 3D structure viewing.",
@@ -415,10 +415,10 @@
       "note": null
     },
     "plugins": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://web.archive.org/web/20040609023057id_/http://www.chemograph.de:80/de/support.htm",
+      "note": "Archived vendor-supplied DLL readers for crystallographic and MS formats."
     },
     "embed": {
       "status": "unknown",
@@ -464,6 +464,7 @@
     "limit": null,
     "how": "Word OLE objects documented; embedded editor operation remains unverified."
   },
+  "video": null,
   "plans": [
     {
       "name": "Standard",

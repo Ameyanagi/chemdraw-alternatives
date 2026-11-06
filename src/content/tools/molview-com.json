@@ -2,7 +2,7 @@
   "id": "p19",
   "slug": "molview-com",
   "name": "MolView.com",
-  "rank": 30,
+  "rank": 31,
   "tier": "alternative",
   "tierReason": "Its standalone web app draws molecular and reaction diagrams and exports publication-quality SVG figures on paid plans.",
   "summary": "Web application for drawing small molecules and reaction mechanisms, viewing 3D models, and exporting chemical figures.",
@@ -612,7 +612,13 @@
       "Infocard isomeric SMILES matched all three inputs in RDKit."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1430,
+    "transferBytes": 1449702
+  },
   "downloadBytes": null,
   "references": [
     "https://molview.com/subscriptions/",
@@ -638,6 +644,15 @@
     "package": null,
     "limit": "Each user needs subscription, or license your production domain.",
     "how": "Load api.js with client ID, then insert <molview-sketcher>."
+  },
+  "video": {
+    "provider": "link",
+    "url": "https://molview.com/tutorial-caffeine",
+    "embed": null,
+    "title": "Sketch structural formula of caffeine",
+    "author": null,
+    "linkedFrom": "https://molview.com/tutorials/",
+    "poster": "https://molview.com/_astro/caffeine.DOp_b5PN_ZKjrBU.webp"
   },
   "plans": [
     {

@@ -71,6 +71,15 @@
     "web": false
   },
   "embedding": null,
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=DRWzQanz8Cc",
+    "embed": "https://www.youtube-nocookie.com/embed/DRWzQanz8Cc",
+    "title": "Building Small Molecules",
+    "author": "Avogadro Project",
+    "linkedFrom": "https://avogadro.cc/docs/getting-started/drawing-molecules.html",
+    "poster": "https://i.ytimg.com/vi/DRWzQanz8Cc/maxresdefault.jpg"
+  },
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

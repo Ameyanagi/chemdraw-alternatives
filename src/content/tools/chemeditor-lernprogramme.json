@@ -2,7 +2,7 @@
   "id": "p118",
   "slug": "chemeditor-lernprogramme",
   "name": "Chemeditor (Chemie-Lernprogramme)",
-  "rank": 71,
+  "rank": 74,
   "tier": "alternative",
   "tierReason": "It composes Unicode text formulas and relies on a word processor for document layout and assembled reaction figures.",
   "summary": "A browser editor for composing Unicode chemical formulas, simple structural formulas, and reaction equations for word processors.",
@@ -517,7 +517,13 @@
       "PNG popup was blank in the isolated WebKit host; export remains unverified."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 3176,
+    "transferBytes": 985314
+  },
   "downloadBytes": null,
   "references": [
     "https://chemie-lernprogramme.de/daten/html/chemeditor.html",
@@ -543,6 +549,7 @@
     "limit": "GPLv3 code; supplied templates also labeled CC BY-NC 4.0.",
     "how": "Paste supplied data-URI iframe snippet into Moodle's HTML editor."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

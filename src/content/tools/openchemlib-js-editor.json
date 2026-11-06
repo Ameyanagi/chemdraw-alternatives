@@ -2,7 +2,7 @@
   "id": "p27",
   "slug": "openchemlib-js-editor",
   "name": "OpenChemLib JS editor",
-  "rank": 52,
+  "rank": 53,
   "tier": "embeddable",
   "tierReason": "It is primarily an embeddable browser structure and reaction editor with a documented JavaScript API.",
   "summary": "Embeddable browser editor for drawing molecular structures and reactions using the OpenChemLib chemistry library.",
@@ -578,7 +578,13 @@
       "The served OpenChemLib bundle reports version 9.25.2."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 198,
+    "transferBytes": 351806
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/cheminfo/openchemlib-js",
@@ -607,6 +613,7 @@
     "limit": "BSD-3-Clause",
     "how": "Instantiate CanvasEditor(element), or registerCustomElement() and add <openchemlib-editor>."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

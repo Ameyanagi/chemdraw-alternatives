@@ -13,7 +13,8 @@ out = root / os.environ.get("BATCH_OUT", "built")
 out.mkdir(exist_ok=True)
 brief = (repo / "evidence" / os.environ.get("BATCH_BRIEF", "BUILT.md")).read_text()
 todo = [tool for tool in sys.argv[3:] if not (out / f"{tool}.json").exists()]
-batches = [todo[start:start + 8] for start in range(0, len(todo), 8)]
+size = int(os.environ.get("BATCH_SIZE", 8))
+batches = [todo[start:start + size] for start in range(0, len(todo), size)]
 
 
 def run(batch: list[str]) -> None:

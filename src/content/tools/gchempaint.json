@@ -2,7 +2,7 @@
   "id": "p95",
   "slug": "gchempaint",
   "name": "GChemPaint",
-  "rank": 90,
+  "rank": 94,
   "tier": "alternative",
   "tierReason": "A standalone document editor with structures, reaction schemes, text, printing and vector export can produce publication figures.",
   "summary": "Desktop editor for drawing two-dimensional chemical structures, reaction schemes and mechanisms.",
@@ -473,7 +473,28 @@
     "pushedAt": "2020-11-02T19:04:43Z",
     "archived": false
   },
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "gnome-chemistry-utils-0.14.17.tar.xz",
+    "ran": false,
+    "failure": "Unmodified 0.14.17 compilation failed in libs/gccv/text.cc:1129: invalid conversion from const char* to char* with GLib 2.90.1. No executable produced. First configure error was missing intltool >= 0.40.6, subsequently installed; see build-notes.md and logs.",
+    "downloadBytes": 5911248,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Source archive declares version 0.14.17; app version could not be queried.",
+      "Compilation stopped before any application window opened.",
+      "No molecules, exports, or drawing features were tested."
+    ]
+  },
   "perf": null,
   "downloadBytes": 5911248,
   "references": [
@@ -502,6 +523,7 @@
     "limit": "GPL-3.0-or-later; GOffice rendering only; editing opens separate window",
     "how": "Load libgcu0v5's GOffice gchemutils plugin in compatible desktop applications."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

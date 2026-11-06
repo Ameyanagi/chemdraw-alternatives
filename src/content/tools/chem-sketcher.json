@@ -2,7 +2,7 @@
   "id": "p115",
   "slug": "chem-sketcher",
   "name": "Chem Sketcher (Non_REM.Persona Laboratory)",
-  "rank": 121,
+  "rank": 122,
   "tier": "alternative",
   "tierReason": "An end-user chemical drawing editor with image output for reports.",
   "summary": "A browser-based editor for drawing chemical structures and estimating properties.",
@@ -469,6 +469,7 @@
     "limit": "Redistribution license unspecified.",
     "how": "Standalone HTML download; no documented embedding API or component found."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": null,

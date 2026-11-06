@@ -2,7 +2,7 @@
   "id": "p30",
   "slug": "marvin-js",
   "name": "Marvin JS",
-  "rank": 85,
+  "rank": 88,
   "tier": "embeddable",
   "tierReason": "Primarily a licensed web component for chemical structure input inside other applications.",
   "summary": "A commercial web editor for drawing chemical structures and reactions inside other applications.",
@@ -195,10 +195,10 @@
       "planLevel": "paid"
     },
     "orbitals": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin-js_text-dialog.html",
+      "note": "Text palette includes Greek letters, arrows, and scientific symbols."
     },
     "rich-text": {
       "status": "partial",
@@ -567,7 +567,27 @@
     "Marvin JS is the legacy embeddable editor, separate from the newer Marvin product."
   ],
   "github": null,
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://marvinjs-demo.chemaxon.com/latest/demo.html",
+    "ran": false,
+    "failure": "The public demo URL redirects immediately to a Marvin JS end-of-life notice; no drawing editor is served.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "The requested public demo redirected to Certara's end-of-life notice.",
+      "The demo response contained no editor scripts or version identifier."
+    ]
+  },
   "perf": null,
   "downloadBytes": null,
   "references": [
@@ -592,6 +612,15 @@
     "package": null,
     "limit": "Commercial license required; new sales end December 2026.",
     "how": "Load editor.html in an iframe; control through the JavaScript helper API."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=stR2q5-hV7Y",
+    "embed": "https://www.youtube-nocookie.com/embed/stR2q5-hV7Y",
+    "title": "[NON JAVA Chemical Editor Tutorial Part 7] Marvin JS: Keyboard shortcuts to speed up drawing",
+    "author": "Certara - Chemaxon",
+    "linkedFrom": "https://docs.chemaxon.com/latest/marvin-js_video-tutorials.html",
+    "poster": "https://i.ytimg.com/vi/stR2q5-hV7Y/hqdefault.jpg"
   },
   "plans": [
     {

@@ -2,7 +2,7 @@
   "id": "p62",
   "slug": "pychem-pro",
   "name": "PyChem-Pro",
-  "rank": 34,
+  "rank": 35,
   "tier": "alternative",
   "tierReason": "Its implemented 2D sketcher combines editable structures, reaction arrows, captions, and print-resolution raster export to create chemical figures.",
   "summary": "A desktop chemistry application and Python library for molecular visualization, structure sketching, geometry optimization, and cheminformatics.",
@@ -557,7 +557,17 @@
       "how": "in-app setting",
       "note": "Canvas stays white; Light leaves dark toolbars with low contrast."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 469.17,
+      "paclitaxelMb": 486.51,
+      "baselineMb": null,
+      "rssIdleMb": 517.24,
+      "rssPaclitaxelMb": 543.28,
+      "runs": 3,
+      "processes": 1,
+      "method": "Three fresh open -n launches; 10-second rests; ps tree; footprint phys_footprint; median decimal MB.",
+      "note": "Published 2D-Sketcher SMILES route; main viewer retained empty; no child processes; all instances quit."
+    },
     "observations": [
       "Caffeine is readable; paclitaxel's default layout has overlapping bonds and labels.",
       "Generated paclitaxel and cholesterol SMILES lose all specified stereocenters.",
@@ -594,6 +604,7 @@
     "limit": "Custom noncommercial; services prohibited; bundled OASA GPL-2.0-or-later; undocumented widget.",
     "how": "Import internal SketcherWidget into PySide6; no documented embedding API."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

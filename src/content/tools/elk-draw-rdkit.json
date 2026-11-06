@@ -2,7 +2,7 @@
   "id": "p50",
   "slug": "elk-draw-rdkit",
   "name": "Elk_Draw RDKit",
-  "rank": 112,
+  "rank": 116,
   "tier": "alternative",
   "tierReason": "A standalone editor creates chemical drawing documents with structures, reactions, text and shapes, and supports editable Word objects.",
   "summary": "A Windows editor for chemical structures and reactions with RDKit descriptors, QSAR modeling, and editable Word integration.",
@@ -488,6 +488,7 @@
     "limit": "Windows; commercial use requires permission",
     "how": "Word OLE roundtrip exists; editor running inside Word remains unverified."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

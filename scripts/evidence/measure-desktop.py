@@ -4,6 +4,7 @@ Usage: uv run --no-project python scripts/evidence/measure-desktop.py <jobs.json
 jobs.json: {"p02": "/path/to/App.app", ...}. Results merge into evidence/perf.json.
 """
 import json
+import plistlib
 import statistics
 import subprocess
 import sys
@@ -24,7 +25,10 @@ def pids_for(app: str) -> set[int]:
 def launch_once(app: str) -> tuple[float, float] | None:
     before = pids_for(app)
     started = time.perf_counter()
-    subprocess.run(["open", "-n", app], check=True)
+    if subprocess.run(["open", "-n", "--env", "QT_QPA_PLATFORM=cocoa", app], stderr=subprocess.DEVNULL).returncode:
+        # Some bundles refuse LaunchServices but run directly.
+        executable = plistlib.loads(Path(app, "Contents/Info.plist").read_bytes())["CFBundleExecutable"]
+        subprocess.Popen([f"{app}/Contents/MacOS/{executable}"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     deadline = started + TIMEOUT
     while time.perf_counter() < deadline:
         for pid in pids_for(app) - before:

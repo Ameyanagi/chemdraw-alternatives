@@ -2,7 +2,7 @@
   "id": "p33",
   "slug": "webmolkit",
   "name": "WebMolKit",
-  "rank": 64,
+  "rank": 67,
   "tier": "embeddable",
   "tierReason": "It primarily provides a reusable molecular sketcher and chemistry library for embedding in web or Electron applications.",
   "summary": "A TypeScript toolkit for embedding molecular sketching, chemical rendering, file conversion, and cheminformatics in web applications.",
@@ -568,7 +568,13 @@
       "Imported paclitaxel displayed colored atom labels and stereochemistry descriptors."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 291,
+    "transferBytes": 2211344
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/aclarkxyz/web_molkit"
@@ -594,6 +600,7 @@
     "limit": "Apache-2.0",
     "how": "Import Sketcher or load webmolkit.js; setup(), then render into container."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

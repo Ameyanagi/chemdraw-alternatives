@@ -2,7 +2,7 @@
   "id": "p57",
   "slug": "chemistry-draw",
   "name": "Chemistry Draw",
-  "rank": 89,
+  "rank": 92,
   "tier": "alternative",
   "tierReason": "The desktop editor combines chemical drawing, captions, shapes, ACS styling and vector SVG export for publication figures.",
   "summary": "An offline desktop editor for chemical structures, reactions and biomolecules, built around Ketcher.",
@@ -481,9 +481,32 @@
     "pushedAt": "2026-11-04T02:56:20Z",
     "archived": false
   },
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://codeload.github.com/spalax-dev/chemistry_draw/tar.gz/refs/tags/chemistry-draw-v0.1.6",
+    "ran": false,
+    "failure": "No macOS arm64 release. Unmodified v0.1.6 source selects Linux x86_64 native libraries and sidecars, requires Linux .so libraries, and supplies no macOS sidecar/resource configuration. Native macOS execution requires patches, which this run forbids. Stopped before installation or launch; see source-compatibility.txt.",
+    "downloadBytes": 2056573,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "Latest stable release inspected: chemistry-draw-v0.1.6 (9064819).",
+      "Release binaries target Linux x86_64 and Windows x64.",
+      "No app was installed or launched.",
+      "No molecule captures or hands-on feature checks were possible.",
+      "Version 0.1.6 appears in source metadata; no app version was observable."
+    ]
+  },
   "perf": null,
-  "downloadBytes": 21793272,
+  "downloadBytes": 2056573,
   "references": [
     "https://github.com/spalax-dev/chemistry_draw",
     "https://github.com/spalax-dev/chemistry_draw/blob/71cf437e4363cc64eca28845516ada0021d80cec/README.md"
@@ -511,6 +534,7 @@
     "limit": null,
     "how": "Desktop wrapper; no project-provided embedding route confirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

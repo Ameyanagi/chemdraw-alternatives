@@ -2,7 +2,7 @@
   "id": "p31",
   "slug": "jsdraw",
   "name": "JSDraw",
-  "rank": 102,
+  "rank": 104,
   "tier": "embeddable",
   "tierReason": "JSDraw is primarily a JavaScript framework for embedding chemical and biological structure editing in other applications.",
   "summary": "A commercial JavaScript SDK for embedding chemical and biological structure editors in web applications.",
@@ -503,7 +503,28 @@
     "Public SDK docs show 7.0.0; the official demo serves 7.4.0.52930."
   ],
   "github": null,
-  "hands": null,
+  "hands": {
+    "testedVersion": "7.4.0.52930",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "http://elncloud.com/jsdrawapp/jsdraw/Demo.htm",
+    "ran": false,
+    "failure": "Chrome blocked the public demo with a secure connection warning; HTTPS certificate hostname does not match.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "The requested route is the public demo.",
+      "The served Pro JavaScript file identifies version 7.4.0.52930.",
+      "Browser security warning saved as browser-warning.png."
+    ]
+  },
   "perf": null,
   "downloadBytes": null,
   "references": [
@@ -530,6 +551,7 @@
     "limit": "Commercial license required; free for education.",
     "how": "Load SDK scripts; JSDraw2.Editor converts an HTML DIV into an editor."
   },
+  "video": null,
   "plans": [
     {
       "name": "Education",

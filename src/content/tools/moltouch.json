@@ -2,7 +2,7 @@
   "id": "p132",
   "slug": "moltouch",
   "name": "MolTouch",
-  "rank": 70,
+  "rank": 73,
   "tier": "alternative",
   "tierReason": "Its documented workflow is browser-based molecular structure input and ChemSpider search, with MOL and canvas PNG output.",
   "summary": "A touch-friendly browser editor for drawing chemical structures and saving MOL files or PNG images.",
@@ -531,7 +531,13 @@
       "Several requested features had no discoverable controls and were not tested."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 171,
+    "transferBytes": 416337
+  },
   "downloadBytes": null,
   "references": [
     "https://apricot.cis.ibaraki.ac.jp/moltouch/",
@@ -555,6 +561,7 @@
     "limit": "License grant unclear",
     "how": "No embedding documentation; hosted framing headers do not block embedding."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

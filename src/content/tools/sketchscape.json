@@ -2,7 +2,7 @@
   "id": "p133",
   "slug": "sketchscape",
   "name": "SketchScape",
-  "rank": 49,
+  "rank": 50,
   "tier": "alternative",
   "tierReason": "A standalone 2D editor with structure cleanup, reaction arrows, captions and PNG output can produce simple chemical figures.",
   "summary": "A local browser editor for drawing molecules and reactions, with basic naming and rotatable 3D models.",
@@ -564,7 +564,7 @@
       "light": false,
       "dark": true,
       "how": "fixed",
-      "note": "Paclitaxel paste unsupported; canvas remains empty."
+      "note": "Paclitaxel import failed; benzene ring placed using built-in template."
     },
     "memory": {
       "idleMb": 542.89,
@@ -612,6 +612,7 @@
     "limit": "No license stated",
     "how": "Standalone local server; no supported editor embedding documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

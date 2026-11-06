@@ -2,7 +2,7 @@
   "id": "p93",
   "slug": "chempencil",
   "name": "ChemPencil",
-  "rank": 94,
+  "rank": 96,
   "tier": "alternative",
   "tierReason": "Released desktop editors support 2D structures, reaction schemes, and vector publication exports.",
   "summary": "A desktop editor for drawing 2D chemical structures, reaction schemes, and publication figures.",
@@ -259,10 +259,10 @@
       "note": null
     },
     "tlc-tables": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://chempencil.app/tutorials/stoichiometry-percent-yield.html",
+      "note": "Editable reaction stoichiometry table."
     },
     "valence-check": {
       "status": "yes",
@@ -445,10 +445,10 @@
       "planLevel": "paid"
     },
     "clipboard-chemdraw": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://chempencil.app/tutorials/structures-in-word-powerpoint.html",
+      "note": "Windows copies editable structures to ChemDraw."
     },
     "office": {
       "status": "unknown",
@@ -530,6 +530,15 @@
     "package": null,
     "limit": null,
     "how": "Desktop exports and clipboard documented; no supported editor embedding confirmed."
+  },
+  "video": {
+    "provider": "link",
+    "url": "https://apps.apple.com/us/app/chempencil/id687559805?mt=12",
+    "embed": null,
+    "title": "App Store preview",
+    "author": null,
+    "linkedFrom": "https://apps.apple.com/us/app/chempencil/id687559805?mt=12",
+    "poster": null
   },
   "plans": [
     {

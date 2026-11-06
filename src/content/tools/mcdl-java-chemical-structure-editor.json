@@ -2,7 +2,7 @@
   "id": "p110",
   "slug": "mcdl-java-chemical-structure-editor",
   "name": "MCDL Java Chemical Structure Editor",
-  "rank": 120,
+  "rank": 78,
   "tier": "embeddable",
   "tierReason": "It is a molecular structure input applet with JavaScript embedding examples, rather than a publication document editor.",
   "summary": "A Java applet for drawing and editing molecular structures encoded in Modular Chemical Descriptor Language.",
@@ -46,15 +46,23 @@
   "features": {
     "bonds-core": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
-      "note": "CommonPanel.java provides single, double and triple bond toolbar tools."
+      "note": "Drew all three orders and changed an existing single bond.",
+      "shot": {
+        "image": "evidence/mcdl-java-chemical-structure-editor/f-bonds-core.webp",
+        "caption": "Double and triple bonds on the drawing canvas"
+      }
     },
     "stereo-bonds": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
-      "note": "DrawMolecule.java draws solid wedges, hashed wedges and spring-style wavy bonds."
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/mcdl-java-chemical-structure-editor/f-stereo-bonds.webp",
+        "caption": "Solid and hashed wedge bonds on the drawing canvas"
+      }
     },
     "special-bonds": {
       "status": "unknown",
@@ -70,9 +78,13 @@
     },
     "rings": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
-      "note": "CommonPanel.java provides three- through eight-membered rings and benzene."
+      "note": "Placed cyclopropane, cyclohexane, benzene, and seven-membered rings.",
+      "shot": {
+        "image": "evidence/mcdl-java-chemical-structure-editor/f-rings.webp",
+        "caption": "Ring tools above triangular, seven-membered, and overlapping six-membered rings"
+      }
     },
     "conformers": {
       "status": "unknown",
@@ -106,15 +118,15 @@
     },
     "atom-labels": {
       "status": "partial",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
-      "note": "Elements and charges editable; isotope setters lack exposed toolbar controls."
+      "note": "Element placement works; isotope controls absent; charge effect unconfirmed."
     },
     "radicals": {
-      "status": "yes",
-      "evidence": "source",
+      "status": "no",
+      "evidence": "tested",
       "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download",
-      "note": "Radical toolbar button toggles an atom's radical dot."
+      "note": "Radical button clicks produced no visible atom change."
     },
     "keyboard-drawing": {
       "status": "unknown",
@@ -135,16 +147,16 @@
       "note": null
     },
     "reaction-arrows": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No reaction-arrow control in toolbar or application menu."
     },
     "mechanism-arrows": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No curved-arrow control in toolbar or application menu."
     },
     "reaction-data": {
       "status": "unknown",
@@ -263,16 +275,16 @@
       "note": null
     },
     "name-to-structure": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "Pasting caffeine produced no drawing; clipboard was not read."
     },
     "structure-to-name": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No naming command exposed for the manually drawn structure."
     },
     "nmr-prediction": {
       "status": "unknown",
@@ -311,10 +323,10 @@
       "note": null
     },
     "model-3d": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No rotatable model viewport or 3D command exposed."
     },
     "crystals": {
       "status": "unknown",
@@ -323,10 +335,10 @@
       "note": null
     },
     "cdxml": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No file import/export control or CDXML option exposed."
     },
     "cdx": {
       "status": "unknown",
@@ -335,20 +347,16 @@
       "note": null
     },
     "mol-sdf": {
-      "status": "yes",
-      "evidence": "docs",
+      "status": "no",
+      "evidence": "tested",
       "source": "https://link.springer.com/article/10.1186/1758-2946-3-5",
-      "note": "MOL library methods; companion utility converts SDF to/from MCDL.",
-      "engine": {
-        "library": "In-house",
-        "source": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/SourceMCDL.zip/download"
-      }
+      "note": "MOL paste ignored; Open shortcut opened no dialog."
     },
     "smiles": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "Both fixture SMILES pastes left the canvas empty."
     },
     "inchi": {
       "status": "unknown",
@@ -363,22 +371,22 @@
       "note": null
     },
     "svg-export": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No SVG export command or output dialog exposed."
     },
     "pdf-export": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "Print shortcut opened no dialog; no PDF export control."
     },
     "png-export": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No PNG export command or output dialog exposed."
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -447,7 +455,70 @@
     "The applet exchanges MCDL; MOL/SDF conversion uses library code and a separate GUI utility."
   ],
   "github": null,
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "jar",
+    "artifact": "https://sourceforge.net/projects/mcdl/files/mcdl/MCDL%20applet/MCDL.jar/download",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 266796,
+    "installedBytes": 173277184,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "failed",
+        "input": "mol",
+        "image": null,
+        "note": "SMILES and MOL paste ignored; no Open dialog.",
+        "structure": null
+      },
+      {
+        "fixture": "complex",
+        "result": "failed",
+        "input": "smiles",
+        "image": null,
+        "note": "SMILES paste ignored; no MOL file-import control.",
+        "structure": null
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "smiles",
+        "image": null,
+        "note": "Skipped: no 3D viewport in standalone UI.",
+        "structure": null
+      }
+    ],
+    "canvas": "evidence/mcdl-java-chemical-structure-editor/canvas.webp",
+    "canvasLight": "evidence/mcdl-java-chemical-structure-editor/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": "Fixed light appearance; paclitaxel paste unsupported, leaving canvas empty."
+    },
+    "memory": {
+      "idleMb": 89.0,
+      "paclitaxelMb": null,
+      "baselineMb": null,
+      "rssIdleMb": 157.25,
+      "rssPaclitaxelMb": null,
+      "runs": 1,
+      "processes": 1,
+      "method": "One manual run; summed phys_footprint for complete owned Java process tree after 10-second idle.",
+      "note": "Paclitaxel SMILES paste ignored; canvas stayed empty."
+    },
+    "observations": [
+      "Default terminal carbon labels include hydrogen counts.",
+      "Atoms and bonds draw black on a white canvas.",
+      "Fixture paste attempts left empty canvases.",
+      "Standalone UI exposes drawing tools and a periodic table.",
+      "No image export or 3D viewport was found."
+    ]
+  },
   "perf": null,
   "downloadBytes": 266796,
   "references": [
@@ -473,6 +544,7 @@
     "limit": "Requires obsolete Java browser plug-in",
     "how": "Embed mcdl.MCDLEditor.class via <applet>; exchange structures using getMCDL/setMCDL."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

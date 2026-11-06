@@ -2,7 +2,7 @@
   "id": "p04",
   "slug": "marvin-cloud",
   "name": "Marvin Cloud",
-  "rank": 97,
+  "rank": 99,
   "tier": "alternative",
   "tierReason": "Its standalone editor combines chemical structures, reaction schemes, rich text, shapes, journal styles and SVG export for publication figures.",
   "summary": "Browser-based chemical drawing software for publication figures, reaction schemes, and chemical property calculations.",
@@ -573,6 +573,15 @@
     "package": null,
     "limit": "Integration requires separate Marvin Enterprise or Partners edition",
     "how": "Cloud FAQ explicitly excludes integration and API access."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=QE1Wn2FQb8I",
+    "embed": "https://www.youtube-nocookie.com/embed/QE1Wn2FQb8I",
+    "title": "Marvin Product Introduction",
+    "author": "Certara - Chemaxon",
+    "linkedFrom": "https://marvincloud.marvin.cxn.io/",
+    "poster": "https://i.ytimg.com/vi/QE1Wn2FQb8I/maxresdefault.jpg"
   },
   "plans": [
     {

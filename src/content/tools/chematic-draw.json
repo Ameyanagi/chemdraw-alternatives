@@ -2,7 +2,7 @@
   "id": "p71",
   "slug": "chematic-draw",
   "name": "Chematic Draw",
-  "rank": 12,
+  "rank": 13,
   "tier": "alternative",
   "tierReason": "A substantive desktop editor draws molecules, annotations and reaction documents with vector exports, although publication layout and ChemDraw interchange have limits.",
   "summary": "Desktop chemical structure editor for drawing molecules and reaction schemes and exporting chemical files and figures.",
@@ -595,7 +595,13 @@
       "Cholesterol SMILES export also lost stereochemistry; 3D viewport clipped the model."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 91,
+    "transferBytes": 1418037
+  },
   "downloadBytes": 127512050,
   "references": [
     "https://github.com/kent-tokyo/chematic-draw",
@@ -622,6 +628,7 @@
     "limit": "Unpublished source package; basic editing only; host supplies controls.",
     "how": "Bundle @chematic/web/editor-element; call defineSchematicMoleculeEditorElement(); use <chematic-molecule-editor interaction=\"draw\">; listen for molecule-change."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

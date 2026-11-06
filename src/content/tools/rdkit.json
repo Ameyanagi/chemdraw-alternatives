@@ -73,6 +73,7 @@
     "web": true
   },
   "embedding": null,
+  "video": null,
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

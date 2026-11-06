@@ -2,7 +2,7 @@
   "id": "p67",
   "slug": "chem-illustrator",
   "name": "Chem Illustrator",
-  "rank": 10,
+  "rank": 11,
   "tier": "alternative",
   "tierReason": "It creates multipage chemical drawings with journal styles, captions and vector export, including editable chemistry in documents and presentations.",
   "summary": "Chemical drawing software for structures, reaction schemes, publication figures, and documents with editable chemistry.",
@@ -440,10 +440,10 @@
       }
     },
     "inchi": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/nathanohare/Chem-Illustrator/5f875b5c78203ec7d6cbce1ff5de43b7a466ac64/docs/guide/sheets.md",
+      "note": "InChI available through online PubChem compound lookup."
     },
     "rxn": {
       "status": "yes",
@@ -615,7 +615,13 @@
       "Direct SDF Open showed no result; batch input selection was uncertain."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 238,
+    "transferBytes": 1610971
+  },
   "downloadBytes": 93004813,
   "references": [
     "https://github.com/nathanohare/Chem-Illustrator",
@@ -646,6 +652,7 @@
     "limit": "GPL-3.0-or-later",
     "how": "No documented embed API; hosted framing support remains unconfirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

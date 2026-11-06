@@ -2,7 +2,7 @@
   "id": "p39",
   "slug": "chemfig",
   "name": "chemfig",
-  "rank": 35,
+  "rank": 36,
   "tier": "alternative",
   "tierReason": "Its TeX workflow produces publication-grade 2D structures and reaction documents.",
   "summary": "A TeX package for typesetting 2D chemical structures, reaction schemes, and mechanisms in publication documents.",
@@ -561,6 +561,7 @@
     "limit": null,
     "how": "TeX typesetting macros; no embeddable editor documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

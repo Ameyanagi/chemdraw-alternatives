@@ -723,7 +723,13 @@
       "Default figure format was PDF; PNG export recorded 1200 dpi."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 375,
+    "idleMb": 126,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 33843741,
   "references": [
     "https://github.com/Ameyanagi/ReShiki",
@@ -759,6 +765,15 @@
     "package": "@ameyanagi/reshiki",
     "limit": "Browser preview. One editor per page, or use iframes. Printing, assistant and Office need the desktop app.",
     "how": "Call mount(element); alternatively use <reshiki-editor> or embed() iframe."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://reshiki.com/media/reshiki-promo.mp4?v=0.13.1",
+    "embed": null,
+    "title": "ReShiki full tour",
+    "author": null,
+    "linkedFrom": "https://reshiki.com/",
+    "poster": "https://reshiki.com/media/reshiki-promo-poster.png?v=0.13.1"
   },
   "plans": [],
   "renderer": {

@@ -2,7 +2,7 @@
   "id": "p117",
   "slug": "chemedit",
   "name": "ChemEdit",
-  "rank": 83,
+  "rank": 10,
   "tier": "alternative",
   "tierReason": "End users can draw and save 2D chemical figures with SVG export and ACS styling inside Obsidian.",
   "summary": "Obsidian plugin for drawing chemical structures, editing chemistry files, and maintaining electronic lab notebooks.",
@@ -46,15 +46,23 @@
   "features": {
     "bonds-core": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L21",
-      "note": null
+      "note": "Drew single, double, and triple bonds manually.",
+      "shot": {
+        "image": "evidence/chemedit/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the drawing canvas."
+      }
     },
     "stereo-bonds": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/views/toolbars/LeftToolbar/Bond/options.ts#L26",
-      "note": null
+      "note": "Drew solid wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/chemedit/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
     },
     "special-bonds": {
       "status": "yes",
@@ -70,9 +78,13 @@
     },
     "rings": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/data/templates.js#L21",
-      "note": null
+      "note": "Placed cyclopropane, cyclohexane, and benzene rings.",
+      "shot": {
+        "image": "evidence/chemedit/f-rings.webp",
+        "caption": "Three-membered, six-membered, and aromatic rings above the ring toolbar."
+      }
     },
     "conformers": {
       "status": "yes",
@@ -88,9 +100,9 @@
     },
     "templates": {
       "status": "yes",
-      "evidence": "docs",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#templates-toolbar",
-      "note": "Ketcher's structure and functional-group libraries."
+      "note": "Placed L-alanine from the structure library."
     },
     "custom-templates": {
       "status": "yes",
@@ -108,19 +120,27 @@
       "status": "yes",
       "evidence": "source",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/data/schema/struct-schema.ts#L74",
-      "note": null
+      "note": null,
+      "shot": {
+        "image": "evidence/chemedit/f-atom-labels.webp",
+        "caption": "Atom Properties dialog with label, alias, charge, and isotope fields."
+      }
     },
     "radicals": {
       "status": "yes",
       "evidence": "source",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-core/src/application/render/restruct/reatom.ts#L1720",
-      "note": "Monoradical and diradical dots."
+      "note": "Monoradical and diradical dots.",
+      "shot": {
+        "image": "evidence/chemedit/f-radicals.webp",
+        "caption": "Radical selector in the Atom Properties dialog."
+      }
     },
     "keyboard-drawing": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/state/handleHotkeysOverItem.ts#L251",
-      "note": null
+      "note": "Number keys changed bond order during drawing."
     },
     "selection-tools": {
       "status": "partial",
@@ -136,15 +156,23 @@
     },
     "reaction-arrows": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/action/tools.ts#L135",
-      "note": "Forward, equilibrium, and retrosynthetic arrows."
+      "note": "Drew forward and equilibrium arrows.",
+      "shot": {
+        "image": "evidence/chemedit/f-reaction-arrows.webp",
+        "caption": "Forward and equilibrium arrows on the drawing canvas."
+      }
     },
     "mechanism-arrows": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/action/tools.ts#L260",
-      "note": "Editable curved full-head and half-head arrows."
+      "note": "Drew curved arrow and moved its endpoint handle.",
+      "shot": {
+        "image": "evidence/chemedit/f-mechanism-arrows.webp",
+        "caption": "Curved arrow with a full arrowhead on the drawing canvas."
+      }
     },
     "reaction-data": {
       "status": "yes",
@@ -256,9 +284,13 @@
     },
     "formula-mass": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemDataEngine.ts#L36",
-      "note": null,
+      "note": "Caffeine: C8H10N4O2, molecular weight 194.194, exact mass 194.080.",
+      "shot": {
+        "image": "evidence/chemedit/f-formula-mass.webp",
+        "caption": "Calculated formula, molecular weight, exact mass, and elemental analysis."
+      },
       "engine": {
         "library": "Indigo 1.45.1 (WebAssembly via Ketcher calculate); OpenChemLib JS 9.25.0 fallback; CACTUS and PubChem remote HTTP fallbacks; In-house rough estimate as final fallback",
         "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/SharedEln.ts#L9"
@@ -276,9 +308,13 @@
     },
     "name-to-structure": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemNavigator.ts#L875",
-      "note": "Online OPSIN, CACTUS, and PubChem resolution.",
+      "note": "Web lookup for caffeine returned a structure.",
+      "shot": {
+        "image": "evidence/chemedit/f-name-to-structure.webp",
+        "caption": "Web name lookup shows caffeine and its resulting structure."
+      },
       "engine": {
         "library": "OPSIN, NCI/CADD Chemical Identifier Resolver (CACTUS), and PubChem PUG REST (remote HTTP services, sequential fallbacks)",
         "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemNavigator.ts#L890"
@@ -286,9 +322,9 @@
     },
     "structure-to-name": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/SharedContextMenu.ts#L55",
-      "note": "Retrieves IUPAC names online from PubChem.",
+      "note": "Returned 1,3,7-trimethylpurine-2,6-dione for caffeine.",
       "engine": {
         "library": "PubChem PUG REST (remote web service, IUPACName lookup by SMILES)",
         "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/SharedContextMenu.ts#L58"
@@ -324,15 +360,19 @@
     },
     "image-to-structure": {
       "status": "no",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-standalone/src/infrastructure/services/struct/standaloneStructService.ts#L720",
-      "note": "OCR explicitly unsupported in bundled standalone mode."
+      "note": "Image Recognition service unavailable; clicking did nothing."
     },
     "database-lookup": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemNavigator.ts#L890",
-      "note": "Fetches structures by name from PubChem and CACTUS.",
+      "note": "Web chemical-name lookup returned caffeine structure.",
+      "shot": {
+        "image": "evidence/chemedit/f-database-lookup.webp",
+        "caption": "Web lookup for caffeine with a structure result."
+      },
       "engine": {
         "library": "PubChem PUG REST and NCI/CADD Chemical Identifier Resolver (CACTUS) (remote HTTP services)",
         "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemNavigator.ts#L892"
@@ -340,9 +380,13 @@
     },
     "model-3d": {
       "status": "yes",
-      "evidence": "docs",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#3d-viewer",
-      "note": "Rotatable Miew view in Ketcher.",
+      "note": "SDF rotates in Miew; SMILES did not generate depth coordinates.",
+      "shot": {
+        "image": "evidence/chemedit/f-model-3d.webp",
+        "caption": "Miew dialog displaying a three-dimensional molecular model."
+      },
       "engine": {
         "library": "Miew 0.11.1 through miew-react 0.11.0 (bundled JavaScript/Three.js WebGL viewer in Ketcher)",
         "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/views/modal/components/process/Miew/Miew.tsx#L44"
@@ -356,9 +400,13 @@
     },
     "cdxml": {
       "status": "yes",
-      "evidence": "docs",
+      "evidence": "tested",
       "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md#1-native-file-embeds-the-easy-way",
-      "note": "Complex ChemDraw objects and formatting may not round-trip.",
+      "note": "Exported caffeine and reopened CDXML in the editor.",
+      "shot": {
+        "image": "evidence/chemedit/f-cdxml.webp",
+        "caption": "Opened CDXML document displays a caffeine structure."
+      },
       "engine": {
         "library": "Indigo 1.45.1 (C++ compiled to WebAssembly, CDXML import/export through Ketcher 3.17.2)",
         "source": "https://github.com/epam/Indigo/blob/029211b384de1627d0bc17cb750ed7427d45db91/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L193"
@@ -376,9 +424,9 @@
     },
     "mol-sdf": {
       "status": "yes",
-      "evidence": "docs",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/documentation/help.md#working-with-files",
-      "note": "Use Ketcher's exporter; wrapper SDF save writes MOL.",
+      "note": "MOL export reopened; cholesterol 3D SDF imported successfully.",
       "engine": {
         "library": "Ketcher 3.17.2 (TypeScript MolSerializer for ordinary MOL V2000); Indigo 1.45.1 (WebAssembly for query MOL, V3000 and SDF); OpenChemLib JS 9.25.0 (MOL parsing helpers)",
         "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-core/src/application/formatters/formatterFactory.ts#L82"
@@ -386,9 +434,9 @@
     },
     "smiles": {
       "status": "yes",
-      "evidence": "docs",
+      "evidence": "tested",
       "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md#2-smiles-blocks",
-      "note": null,
+      "note": "Imported fixtures and saved generated Daylight SMILES.",
       "engine": {
         "library": "Indigo 1.45.1 (C++ compiled to WebAssembly, SMILES import/export via Ketcher); OpenChemLib JS 9.25.0 (SMILES parsing and MOL-to-SMILES helper)",
         "source": "https://github.com/epam/Indigo/blob/029211b384de1627d0bc17cb750ed7427d45db91/api/wasm/indigo-ketcher/indigo-ketcher.cpp#L137"
@@ -412,21 +460,21 @@
     },
     "svg-export": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/main.ts#L1049",
-      "note": "SVG can retain editable Ketcher chemical data."
+      "note": "Saved default SVG exports for all three fixtures."
     },
     "pdf-export": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "partial",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "Host PDF rasterizes chemistry; white bonds lose contrast on white."
     },
     "png-export": {
-      "status": "yes",
-      "evidence": "source",
+      "status": "partial",
+      "evidence": "tested",
       "source": "https://github.com/epam/ketcher/blob/8f4687fae67a0d741cfc6b4769eff4f94243ff52/packages/ketcher-react/src/script/ui/data/schema/options-schema.ts#L38",
-      "note": "Ketcher offers 600 dpi PNG rendering."
+      "note": "Default PNG 223×162; high-resolution setting visible but untested."
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -447,10 +495,10 @@
       "note": null
     },
     "ts-api": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/ruzx/obsidian-chemedit/7390f9506420cda79a85d3ca6b55403ec8af0c13/ChemEditAPI.ts",
+      "note": "Public typed editor, rendering and conversion API."
     },
     "cli": {
       "status": "unknown",
@@ -504,9 +552,72 @@
     "pushedAt": "2026-10-21T12:03:58Z",
     "archived": false
   },
-  "hands": null,
+  "hands": {
+    "testedVersion": "1.4.3",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://github.com/ruzx/obsidian-chemedit/releases/download/1.4.3/main.js",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 276581879,
+    "installedBytes": 594735104,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemedit/simple.svg",
+        "note": "Automatic SMILES layout; no cleanup or repositioning.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "smiles",
+        "image": "evidence/chemedit/complex.svg",
+        "note": "Automatic layout with wedges, hashes, and ABS label; no cleanup.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "ok",
+        "input": "sdf",
+        "image": "evidence/chemedit/threed.png",
+        "note": "SMILES planar; SDF rotates in Miew. Default viewport saved as threed-view.png.",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/chemedit/canvas.webp",
+    "canvasLight": "evidence/chemedit/canvas-light.webp",
+    "canvasDark": "evidence/chemedit/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Dark mode changes interface; drawing canvas remains white."
+    },
+    "memory": {
+      "idleMb": 851.3,
+      "paclitaxelMb": 704.7,
+      "baselineMb": null,
+      "rssIdleMb": 1097.4,
+      "rssPaclitaxelMb": 1072.4,
+      "runs": 3,
+      "processes": 4,
+      "method": "Median summed process-tree phys_footprint; isolated Obsidian/ChemEdit, SMILES paste, ten-second waits; MiB.",
+      "note": "Includes required Obsidian host and Electron helpers."
+    },
+    "observations": [
+      "Default editor colors nitrogen blue and oxygen red.",
+      "Paclitaxel layout includes wedge bonds, hashed bonds, and ABS label.",
+      "Cholesterol SMILES stays planar; supplied 3D SDF rotates in Miew.",
+      "MOL/CDXML previews show black bonds on the dark host background.",
+      "Host PDF rasterizes chemistry; white bonds lose contrast on white."
+    ]
+  },
   "perf": null,
-  "downloadBytes": 43203663,
+  "downloadBytes": 276581879,
   "references": [
     "https://github.com/ruzx/obsidian-chemedit",
     "https://github.com/ruzx/obsidian-chemedit",
@@ -537,6 +648,15 @@
     "package": null,
     "limit": "MIT; desktop Obsidian only.",
     "how": "Install Obsidian plugin; open its integrated Ketcher drawing modal."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://github.com/user-attachments/assets/f1ee4820-636d-44d1-846e-a286597670df",
+    "embed": null,
+    "title": "Demo video",
+    "author": null,
+    "linkedFrom": "https://github.com/ruzx/obsidian-chemedit/blob/7390f9506420cda79a85d3ca6b55403ec8af0c13/README.md",
+    "poster": null
   },
   "plans": [],
   "renderer": {

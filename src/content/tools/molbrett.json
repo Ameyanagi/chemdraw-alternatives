@@ -2,7 +2,7 @@
   "id": "p127",
   "slug": "molbrett",
   "name": "Molbrett",
-  "rank": 21,
+  "rank": 23,
   "tier": "alternative",
   "tierReason": "Combines editable 2D chemical structures, annotations, diagram layout, and vector export for complete chemical figures.",
   "summary": "A browser whiteboard for drawing chemical structures, synthetic routes, and annotated chemistry diagrams.",
@@ -553,7 +553,13 @@
       "RDKit canonicalized all three transcribed outputs identically to their fixture SMILES."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 2544,
+    "transferBytes": 1808433
+  },
   "downloadBytes": null,
   "references": [
     "https://elsci.io/molbrett/index.html",
@@ -579,6 +585,15 @@
     "package": null,
     "limit": "Local deployment requires license; free for academia.",
     "how": "Hosted X-Frame-Options DENY; no alternative embed route documented."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://elsci.io/img/molbrett-landing.7ed5bb73.mp4",
+    "embed": null,
+    "title": "Draw molecules with Molbrett",
+    "author": null,
+    "linkedFrom": "https://elsci.io/molbrett/index.html",
+    "poster": null
   },
   "plans": [
     {

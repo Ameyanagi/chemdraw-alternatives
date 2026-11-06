@@ -2,7 +2,7 @@
   "id": "p69",
   "slug": "chemvas",
   "name": "Chemvas",
-  "rank": 38,
+  "rank": 39,
   "tier": "alternative",
   "tierReason": "Its implemented desktop canvas, scheme layout, annotations and vector exports support publication-grade 2D chemical drawing documents.",
   "summary": "Desktop editor for drawing molecular structures and reaction schemes and exporting publication figures.",
@@ -391,10 +391,10 @@
       "note": "Paste timed out; canvas stayed empty; no SMILES import command."
     },
     "inchi": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/dhsohn/Chemvas/4a2db522392e205427e626d0581ab1b162c88b24/CHANGELOG.md",
+      "note": "Former Molecule Info identifier generation was removed."
     },
     "rxn": {
       "status": "unknown",
@@ -541,7 +541,17 @@
       "how": "follows system",
       "note": "Dark native title bar; canvas and toolbar backgrounds remain light."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 114.54,
+      "paclitaxelMb": 130.45,
+      "baselineMb": null,
+      "rssIdleMb": 212.65,
+      "rssPaclitaxelMb": 230.23,
+      "runs": 3,
+      "processes": 1,
+      "method": "Three fresh launches; ps trees; footprint phys_footprint; MOL import; 10-second waits; medians in decimal MB.",
+      "note": "Qt automation wrapper included; startup warning dismissed before waiting; no child processes."
+    },
     "observations": [
       "Black bonds and atom labels on a white canvas.",
       "Default SVG export has a transparent background and outlined labels.",
@@ -574,6 +584,7 @@
     "limit": null,
     "how": "Desktop package; browser adapter retired, editor embedding undocumented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

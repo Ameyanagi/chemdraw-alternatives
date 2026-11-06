@@ -2,7 +2,7 @@
   "id": "p13",
   "slug": "ketcher",
   "name": "Ketcher",
-  "rank": 31,
+  "rank": 32,
   "tier": "embeddable",
   "tierReason": "Ketcher is primarily an embeddable structure editor distributed as React components and an iframe-ready browser application.",
   "summary": "A web editor for drawing molecules, reactions, and biomolecules and embedding chemical structure input in applications.",
@@ -605,7 +605,13 @@
       "The standalone open dialog reports image recognition unavailable."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 926,
+    "transferBytes": 8598936
+  },
   "downloadBytes": 35057618,
   "references": [
     "https://github.com/epam/ketcher/blob/48af1b20d58607f9d77b148f09fa468202239f3f/README.md",
@@ -638,6 +644,15 @@
     "package": "ketcher-react",
     "limit": "Apache-2.0; retain license and notices.",
     "how": "Mount React Editor with a structServiceProvider; or iframe standalone release."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=Op-9YDmXqF8",
+    "embed": "https://www.youtube-nocookie.com/embed/Op-9YDmXqF8",
+    "title": "Ketcher - Macromolecules mode overview, part 1",
+    "author": "Life Sciences Open Source EPAM",
+    "linkedFrom": "https://lifescience.opensource.epam.com/ketcher/",
+    "poster": "https://i.ytimg.com/vi/Op-9YDmXqF8/hqdefault.jpg"
   },
   "plans": [],
   "renderer": {

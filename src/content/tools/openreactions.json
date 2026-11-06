@@ -2,7 +2,7 @@
   "id": "p98",
   "slug": "openreactions",
   "name": "OpenReactions",
-  "rank": 33,
+  "rank": 34,
   "tier": "alternative",
   "tierReason": "Standalone drawing and figure workspaces implement editable chemistry, page composition, and vector SVG/PDF export.",
   "summary": "Browser editor for chemical structures, reaction mechanisms, animations, and composed scientific figures.",
@@ -557,7 +557,13 @@
       "No app version was shown in About; the served JavaScript filename supplies the build ID."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 407,
+    "transferBytes": 780969
+  },
   "downloadBytes": null,
   "references": [
     "https://openreactions.com/"
@@ -582,6 +588,7 @@
     "limit": null,
     "how": "Hosted editor found; no supported embedding route confirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

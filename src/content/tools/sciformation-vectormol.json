@@ -2,7 +2,7 @@
   "id": "p102",
   "slug": "sciformation-vectormol",
   "name": "Sciformation VectorMol",
-  "rank": 24,
+  "rank": 25,
   "tier": "embeddable",
   "tierReason": "Its documented iframe and JavaScript interfaces primarily provide molecular and reaction input for other applications.",
   "summary": "A browser editor for drawing molecular structures and single-step reactions, with iframe embedding and SVG export.",
@@ -547,7 +547,13 @@
       "Reaction mode saves RXN; molecule mode saves MOL."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 4929,
+    "transferBytes": 1282106
+  },
   "downloadBytes": null,
   "references": [
     "https://sciformation.com/vectormol.html?lang=en",
@@ -573,6 +579,7 @@
     "limit": "CC-BY-NC-SA-3.0; commercial use requires an individual license",
     "how": "Iframe editor exposes getMolRxnfile()/setMolRxnfile(); embedded=true hides load/save controls."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

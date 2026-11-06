@@ -2,7 +2,7 @@
   "id": "p06",
   "slug": "biovia-draw",
   "name": "BIOVIA Draw",
-  "rank": 87,
+  "rank": 90,
   "tier": "alternative",
   "tierReason": "It produces publication-quality 2D structures and reaction schemes for scientific documents and Office presentations.",
   "summary": "Windows software for drawing chemical structures, reactions, and chemically modified biological sequences for publications and informatics workflows.",
@@ -563,6 +563,15 @@
     "package": null,
     "limit": "Proprietary; embedded viewer only; editing opens separate desktop Draw.",
     "how": "Legacy Renderer/Renditor embeds in .NET forms; Java uses JMolRendererCom."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=gi6xMNiDwAA",
+    "embed": "https://www.youtube-nocookie.com/embed/gi6xMNiDwAA",
+    "title": "NEW in BIOVIA Draw 2026",
+    "author": "BIOVIA",
+    "linkedFrom": "https://www.3ds.com/products/biovia/draw",
+    "poster": "https://i.ytimg.com/vi/gi6xMNiDwAA/default.jpg"
   },
   "plans": [
     {

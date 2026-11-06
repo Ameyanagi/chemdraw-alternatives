@@ -2,7 +2,7 @@
   "id": "p85",
   "slug": "bkchem-python-3-modernized",
   "name": "BKChem Python 3 Modernized",
-  "rank": 78,
+  "rank": 82,
   "tier": "alternative",
   "tierReason": "A substantial standalone editor implements 2D chemical documents and vector exports, although source inspection reveals incomplete Python 3 modernization.",
   "summary": "A Python 3 fork of BKChem for drawing 2D molecular structures, reactions, and vector chemical figures.",
@@ -535,6 +535,7 @@
     "limit": "GPL-2.0-or-later",
     "how": "External scripting launches its own Tk window; embedding unconfirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

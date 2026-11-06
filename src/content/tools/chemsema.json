@@ -2,7 +2,7 @@
   "id": "p77",
   "slug": "chemsema",
   "name": "ChemSema",
-  "rank": 50,
+  "rank": 51,
   "tier": "alternative",
   "tierReason": "Its standalone editor creates editable 2D chemical figures and reaction schemes with vector export and Office integration.",
   "summary": "Chemical drawing editor for structures, reaction schemes, ChemDraw file exchange, and editable Office documents.",
@@ -218,10 +218,10 @@
       "note": "ACS Document 1996 preset."
     },
     "custom-styles": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://github.com/dreamlovesu32/chemsema/blob/main/docs/chemsema-cli-guide.md",
+      "note": "Saved document defaults are restored by later editing commands."
     },
     "color": {
       "status": "yes",
@@ -567,7 +567,13 @@
       "Save As downloaded the native CCJZ format."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 119,
+    "transferBytes": 6394662
+  },
   "downloadBytes": 215490204,
   "references": [
     "https://github.com/dreamlovesu32/chemsema",
@@ -595,6 +601,7 @@
     "limit": null,
     "how": "Office OLE opens a separate editor; no embedded editor documented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

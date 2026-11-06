@@ -2,7 +2,7 @@
   "id": "p21",
   "slug": "jchempaint",
   "name": "JChemPaint",
-  "rank": 45,
+  "rank": 46,
   "tier": "alternative",
   "tierReason": "The standalone editor creates 2D structures and reactions with vector SVG and PDF export for publication figures.",
   "summary": "A Java desktop editor for drawing and exporting two-dimensional chemical structures and reactions.",
@@ -581,6 +581,7 @@
     "limit": "Java/Swing only; LGPL-2.1-or-later obligations.",
     "how": "Add JChemPaintPanel(IChemModel) to Swing containers; getMenuForEmbedded supplies menus."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

@@ -60,6 +60,15 @@
     "web": false
   },
   "embedding": null,
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=JctqFyqv9EI",
+    "embed": "https://www.youtube-nocookie.com/embed/JctqFyqv9EI",
+    "title": "ADMET Predictor® Tutorial 2 MedChem Designer",
+    "author": "Simulations Plus, Inc. ",
+    "linkedFrom": "https://www.simulations-plus.com/resource/admet-predictor-tutorial-series-medchem-designer/",
+    "poster": "https://i.ytimg.com/vi/JctqFyqv9EI/maxresdefault.jpg"
+  },
   "plans": [],
   "renderer": null,
   "otherLanguages": null,

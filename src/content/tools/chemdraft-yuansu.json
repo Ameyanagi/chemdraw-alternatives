@@ -2,7 +2,7 @@
   "id": "p116",
   "slug": "chemdraft-yuansu",
   "name": "ChemDraft (元素智研)",
-  "rank": 81,
+  "rank": 86,
   "tier": "alternative",
   "tierReason": "It supports complete 2D drawing documents with reaction schemes, publication styles, editable annotations and export for publication.",
   "summary": "Chemical drawing software for molecular structures, reaction schemes, publication figures, and editable Office documents.",
@@ -491,6 +491,7 @@
     "limit": "Vendor-arranged integration; commercial use requires separate authorization.",
     "how": "Contact vendor for JavaScript editor integration; public setup instructions unavailable."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": null,

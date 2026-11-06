@@ -2,7 +2,7 @@
   "id": "p100",
   "slug": "chemwriter",
   "name": "ChemWriter",
-  "rank": 74,
+  "rank": 77,
   "tier": "embeddable",
   "tierReason": "Its documented purpose is embedding molecular structure editing and input into web applications.",
   "summary": "JavaScript component for drawing and editing molecular structures inside web applications.",
@@ -525,7 +525,13 @@
       "The 3D SDF appears flat with overlapping explicit hydrogen labels."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 3982,
+    "transferBytes": 684026
+  },
   "downloadBytes": null,
   "references": [
     "https://search.emolecules.com/",
@@ -551,6 +557,7 @@
     "limit": "Commercial license required for production deployment",
     "how": "Load SDK JavaScript and CSS, then instantiate editor in HTML container."
   },
+  "video": null,
   "plans": [
     {
       "name": "ChemWriter",

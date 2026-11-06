@@ -2,7 +2,7 @@
   "id": "p90",
   "slug": "vue-chemdraw",
   "name": "vue-chemdraw (0chem)",
-  "rank": 73,
+  "rank": 76,
   "tier": "embeddable",
   "tierReason": "It is distributed as a Vue 3 structure-editor component for embedding in other applications.",
   "summary": "A Vue 3 component for embedding a browser-based chemical structure editor.",
@@ -523,7 +523,13 @@
       "Supplemental screenshots show the failed import and manually drawn test tools."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1449,
+    "transferBytes": 231630
+  },
   "downloadBytes": null,
   "references": [
     "https://www.npmjs.com/package/vue-chemdraw",
@@ -549,6 +555,7 @@
     "limit": "Repository GPL-3.0 conflicts with npm ISC metadata.",
     "how": "Register Vue plugin with app.use(chemDraw); insert <draw-0chem> component."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

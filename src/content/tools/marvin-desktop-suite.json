@@ -2,7 +2,7 @@
   "id": "p05",
   "slug": "marvin-desktop-suite",
   "name": "Marvin Desktop Suite / MarvinSketch",
-  "rank": 80,
+  "rank": 85,
   "tier": "alternative",
   "tierReason": "MarvinSketch produces publication-quality 2D chemical documents with journal styles, annotations, and multipage layout.",
   "summary": "Desktop software for drawing publication-quality chemical structures, reactions, and multipage documents.",
@@ -275,10 +275,10 @@
       "planLevel": "paid"
     },
     "pictures": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "no",
+      "evidence": "docs",
+      "source": "https://docs.chemaxon.com/latest/marvin-js_marvin-js-and-marvin-sketch.html",
+      "note": "Official comparison explicitly marks picture import unsupported."
     },
     "tlc-tables": {
       "status": "unknown",
@@ -626,6 +626,15 @@
     "package": "com.chemaxon:chemaxon-marvin-classic",
     "limit": "Proprietary license; Java Swing host required.",
     "how": "Instantiate MSketchPane; add it to a Swing JPanel."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=BmFXD9BiXDo",
+    "embed": "https://www.youtube-nocookie.com/embed/BmFXD9BiXDo",
+    "title": "MarvinSketch - ChemAxon's chemical drawing tool",
+    "author": "Certara - Chemaxon",
+    "linkedFrom": "https://docs.chemaxon.com/latest/marvin_tutorials.html",
+    "poster": "https://i.ytimg.com/vi_webp/BmFXD9BiXDo/maxresdefault.webp"
   },
   "plans": [
     {

@@ -2,7 +2,7 @@
   "id": "p25",
   "slug": "chem4word",
   "name": "Chem4Word",
-  "rank": 99,
+  "rank": 100,
   "tier": "alternative",
   "tierReason": "Creates editable vector chemical structures and reaction schemes within printable Word documents.",
   "summary": "A Microsoft Word add-in for drawing and editing chemical structures and reactions in documents.",
@@ -87,10 +87,10 @@
       "note": "Dragging places successive bonds at alternating 60-degree angles."
     },
     "templates": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://www.chem4word.co.uk/2023/06/14/improved-chemical-libraries-are-coming-to-chem4word/",
+      "note": "Includes about 2,000 reusable natural-product structures."
     },
     "custom-templates": {
       "status": "yes",
@@ -507,6 +507,15 @@
     "package": null,
     "limit": "Apache-2.0; bundled ChemDoodle Web files require GPL-3.0 compliance.",
     "how": "Word add-in launches modal editor; reusable editor SDK unconfirmed."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=C8LL37IOKXo",
+    "embed": "https://www.youtube-nocookie.com/embed/C8LL37IOKXo",
+    "title": "Adding chemical reactions in Chem4Word",
+    "author": "Chemistry For Word",
+    "linkedFrom": "https://www.chem4word.co.uk/2023/03/26/drawing-chemical-reactions/",
+    "poster": "https://i.ytimg.com/vi/C8LL37IOKXo/hqdefault.jpg"
   },
   "plans": [],
   "renderer": {

@@ -2,7 +2,7 @@
   "id": "p79",
   "slug": "chemable",
   "name": "Chemable",
-  "rank": 41,
+  "rank": 42,
   "tier": "alternative",
   "tierReason": "Implemented desktop drawing, captions, reaction graphics and PNG export support standalone chemical figures, with incomplete vector export and UI connections.",
   "summary": "A desktop application for drawing chemical structures, reaction graphics and annotated molecular figures.",
@@ -542,7 +542,17 @@
       "how": "fixed",
       "note": "Editor stays light; native title bar remains dark under both overrides."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 196.69,
+      "paclitaxelMb": 227.13,
+      "baselineMb": null,
+      "rssIdleMb": 512.48,
+      "rssPaclitaxelMb": 515.44,
+      "runs": 3,
+      "processes": 4,
+      "method": "Three fresh open -n launches; SMILES UI import; full-tree phys_footprint medians; 10-second waits; MiB.",
+      "note": "Electron main, renderer, GPU, network included; isolated profiles; CDP automation; RSS cross-check."
+    },
     "observations": [
       "Default floating toolbar covers the menu bar; moved panels to access commands.",
       "SMILES imports automatically generate black 2D drawings without cleanup.",
@@ -551,7 +561,13 @@
       "Cholesterol opens as a rotatable ball-and-stick model with explicit hydrogens."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 372,
+    "idleMb": 153,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 179326133,
   "references": [
     "https://github.com/joreitz/chemable",
@@ -579,6 +595,7 @@
     "limit": "PolyForm Noncommercial license.",
     "how": "Standalone Electron app; no embeddable editor library confirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

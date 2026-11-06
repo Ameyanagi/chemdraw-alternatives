@@ -460,6 +460,7 @@
     "limit": "$9.99 standalone macOS application; embedding terms unconfirmed.",
     "how": "No supported editor embedding mechanism documented."
   },
+  "video": null,
   "plans": [
     {
       "name": "ChemWorks",

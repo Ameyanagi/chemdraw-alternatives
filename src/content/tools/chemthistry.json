@@ -2,7 +2,7 @@
   "id": "p49",
   "slug": "chemthistry",
   "name": "ChemThisTry",
-  "rank": 11,
+  "rank": 12,
   "tier": "alternative",
   "tierReason": "Its chemical structure editor and editable vector canvas can compose publication-grade chemical figures.",
   "summary": "A desktop and browser workspace for drawing chemical structures, viewing molecules, plotting data, and composing scientific figures.",
@@ -588,7 +588,17 @@
       "how": "in-app setting",
       "note": null
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 1558.16,
+      "paclitaxelMb": 1582.32,
+      "baselineMb": null,
+      "rssIdleMb": 1095.89,
+      "rssPaclitaxelMb": 1129.64,
+      "runs": 3,
+      "processes": 4,
+      "method": "Three fresh Electron launches; summed process-tree phys_footprint medians, MiB; SMILES Load; 10-second settles.",
+      "note": null
+    },
     "observations": [
       "Default 2D drawings color nitrogen blue and oxygen red.",
       "SMILES layouts use aromatic circles and display abs stereochemistry labels.",
@@ -599,7 +609,13 @@
       "Moleculer exposes no MOL or SMILES export; removed the previous 2D threed-out.mol from this capture set."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 450,
+    "idleMb": 257,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 281393462,
   "references": [
     "https://github.com/thisThisYoung/ChemThisTry",
@@ -629,6 +645,7 @@
     "limit": null,
     "how": "Hosted app lacks framing restrictions; supported iframe integration remains undocumented."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

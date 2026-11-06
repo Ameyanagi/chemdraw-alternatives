@@ -2,7 +2,7 @@
   "id": "p64",
   "slug": "cyby-draw",
   "name": "CyBy-Draw",
-  "rank": 110,
+  "rank": 115,
   "tier": "embeddable",
   "tierReason": "Its Idris widget API and example browser sketcher focus on molecular structure input rather than publication document layout.",
   "summary": "A browser molecular structure editor with an Idris API and SVG export.",
@@ -508,6 +508,7 @@
     "limit": "Requires Idris2 compilation; BSD-3-Clause",
     "how": "Use molWidget from cyby-draw; compile to JavaScript and include generated script."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

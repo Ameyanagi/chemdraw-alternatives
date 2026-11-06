@@ -2,7 +2,7 @@
   "id": "p61",
   "slug": "glass",
   "name": "Glass",
-  "rank": 75,
+  "rank": 79,
   "tier": "embeddable",
   "tierReason": "Glass is primarily a JavaScript sketcher and viewer library intended for embedding in web pages.",
   "summary": "A JavaScript library for embedding chemical structure and reaction drawing in web pages.",
@@ -417,10 +417,10 @@
       "note": null
     },
     "plugins": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "partial",
+      "evidence": "docs",
+      "source": "https://raw.githubusercontent.com/joe-glass/glass/e210ea7a1b88c87ff98ea1793ad29417e43061bc/disconnect.js",
+      "note": "Custom disconnection rules accepted through the JavaScript API."
     },
     "embed": {
       "status": "partial",
@@ -520,7 +520,13 @@
       "The export dialog offers Glass, Mol2000 and SMILES; all failed."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 294,
+    "transferBytes": 2220020
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/joe-glass/glass",
@@ -546,6 +552,7 @@
     "limit": "Current main has syntax error; pin earlier revision.",
     "how": "Load scripts, then instantiate Glass in a DOM container."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

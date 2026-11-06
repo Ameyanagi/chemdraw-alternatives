@@ -2,7 +2,7 @@
   "id": "p23",
   "slug": "bkchem",
   "name": "BKChem",
-  "rank": 86,
+  "rank": 89,
   "tier": "alternative",
   "tierReason": "Standalone structure and reaction-scheme drawing, typography, layout controls and vector exports support publication figures.",
   "summary": "Desktop editor for drawing two-dimensional chemical structures, reaction schemes, and publication figures.",
@@ -319,10 +319,10 @@
       }
     },
     "model-3d": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://bkchem.zirael.org/progress.log",
+      "note": "Imported 3D structures rotate on the drawing canvas."
     },
     "crystals": {
       "status": "unknown",
@@ -514,6 +514,7 @@
     "limit": "GPL-2.0-or-later",
     "how": "External Python API controls standalone application; editor embedding remains unconfirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

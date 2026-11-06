@@ -2,7 +2,7 @@
   "id": "p125",
   "slug": "easychem",
   "name": "EasyChem",
-  "rank": 111,
+  "rank": 112,
   "tier": "alternative",
   "tierReason": "A standalone 2D chemical drawing editor with text, layout tools and vector export for publication figures.",
   "summary": "A desktop editor for creating 2D chemical structure drawings and publication figures.",
@@ -159,10 +159,10 @@
       "note": null
     },
     "orbitals": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://svn.code.sf.net/p/easychem/code/dialogs.c",
+      "note": "Chemical symbols menu includes electron pairs, radicals, and vacancies."
     },
     "rich-text": {
       "status": "partial",
@@ -435,9 +435,30 @@
     "Advertised LaTeX support means export fonts; PDF requires Ghostscript on Unix."
   ],
   "github": null,
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "dmg",
+    "artifact": "https://sourceforge.net/projects/easychem/files/EasyChem%20gtk%2B/EasyChem%200.6%20for%20MacOS/EasyChem-0.6.dmg/download",
+    "ran": false,
+    "failure": "The official Mac DMG contains a PowerPC-only Mach-O executable (ppc), incompatible with this arm64 Mac. open -n failed with Launch Services error -10665; direct --version failed with bad CPU type in executable (exit 127). Computer-use could not attach to the app. No drawing window opened.",
+    "downloadBytes": 1944953,
+    "installedBytes": 4382720,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "DMG filename identifies 0.6; bundle CFBundleVersion is pre-0.6.",
+      "Running-app version could not be verified.",
+      "Molecule imports and feature checks were not attempted because launch failed."
+    ]
+  },
   "perf": null,
-  "downloadBytes": 265458,
+  "downloadBytes": 1944953,
   "references": [
     "https://easychem.sourceforge.net/",
     "https://sourceforge.net/projects/easychem/"
@@ -460,6 +481,7 @@
     "limit": "GPL-2.0-or-later",
     "how": "Standalone GTK editor; no reusable editor API confirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

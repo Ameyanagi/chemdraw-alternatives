@@ -248,6 +248,10 @@ for path in sorted((research / "out").glob("p*.json")):
         found = json.loads(p.read_text()) if (p := research / folder / f"{tool_id}.json").exists() else None
         if found and found.get("source") and found["status"] != "unknown":
             features[key] = {"status": found["status"], "evidence": "docs", "source": found["source"], "note": found.get("note")}
+    docs = json.loads(p.read_text()) if (p := research / "docs-final" / f"{tool_id}.json").exists() else {}
+    for key, found in docs.get("features", {}).items():
+        if features.get(key, {}).get("status") == "unknown":
+            features[key] = {"status": found["status"], "evidence": "docs", "source": found["source"], "note": found.get("note")}
     extra = overrides.get(tool_id, {})
     embed = json.loads(p.read_text()) | extra.get("embed", {}) if (p := research / "embed" / f"{tool_id}.json").exists() else None
     if embed:
@@ -291,6 +295,7 @@ for path in sorted((research / "out").glob("p*.json")):
         "builtOn": built,
         "appKind": {"desktop": desktop, "web": web_app},
         "embedding": embed,
+        "video": json.loads(p.read_text()) if (p := research / "video-ok" / f"{tool_id}.json").exists() else None,
         "plans": plans.get("plans") or [],
         "renderer": engines.get("renderer"), "otherLanguages": engines.get("otherLanguages"), "enginesChecked": bool(engines),
         "languageNote": stack.get("languageNote"),

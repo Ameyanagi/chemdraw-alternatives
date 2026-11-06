@@ -2,7 +2,7 @@
   "id": "p22",
   "slug": "xdrawchem",
   "name": "XDrawChem",
-  "rank": 56,
+  "rank": 58,
   "tier": "alternative",
   "tierReason": "A standalone desktop editor provides chemical drawing documents with reaction schemes, annotations, templates, and layout controls.",
   "summary": "Desktop editor for drawing two-dimensional chemical structures, reaction schemes, and annotated chemistry figures.",
@@ -571,7 +571,13 @@
       "About reports 2.0.1; both Info.plist bundle-version fields report 2.0."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 449,
+    "idleMb": 245,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 39611513,
   "references": [
     "https://github.com/bryanherger/xdrawchem"
@@ -596,6 +602,7 @@
     "limit": "GPL-2.0-or-later",
     "how": "Standalone Qt editor; no supported embeddable widget or library found."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

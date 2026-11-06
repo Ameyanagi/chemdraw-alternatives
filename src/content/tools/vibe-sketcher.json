@@ -2,7 +2,7 @@
   "id": "p135",
   "slug": "vibe-sketcher",
   "name": "vibe-sketcher",
-  "rank": 15,
+  "rank": 16,
   "tier": "alternative",
   "tierReason": "It creates editable 2D structure and reaction documents with journal styles and publication SVG, PDF and high-resolution PNG exports.",
   "summary": "A 2D chemical structure and reaction editor for publication figures and computational chemistry input preparation.",
@@ -590,7 +590,13 @@
       "Cholesterol coordinates generated, but no rotatable viewport was available."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 2086,
+    "idleMb": 182,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 510821544,
   "references": [
     "https://vibyverse.com/vibe-sketcher",
@@ -621,6 +627,7 @@
     "limit": "MPL-2.0",
     "how": "SDK edits documents; editor embedding is unverified."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

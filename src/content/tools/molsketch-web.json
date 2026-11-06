@@ -2,7 +2,7 @@
   "id": "p15",
   "slug": "molsketch-web",
   "name": "MolSketch",
-  "rank": 53,
+  "rank": 54,
   "tier": "alternative",
   "tierReason": "Its standalone editor creates chemical drawings with reaction arrows and rich text, with vector SVG and editable PowerPoint export.",
   "summary": "A free browser editor for drawing chemical structures and reaction schemes and exporting figures.",
@@ -289,10 +289,10 @@
       "note": "No formula or mass command found for editor drawing."
     },
     "properties": {
-      "status": "unknown",
-      "evidence": "none",
-      "source": null,
-      "note": null
+      "status": "yes",
+      "evidence": "docs",
+      "source": "https://molsketch.net/chemistry/chemical-structure-analyzer?lang=en",
+      "note": "Separate SMILES analyzer computes Crippen logP and TPSA."
     },
     "name-to-structure": {
       "status": "yes",
@@ -581,7 +581,13 @@
       "No version number was visible in the editor."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 745,
+    "transferBytes": 2903246
+  },
   "downloadBytes": null,
   "references": [
     "https://molsketch.net/blog/molsketch-features?lang=en",
@@ -607,6 +613,15 @@
     "package": null,
     "limit": "Cross-origin framing blocked by X-Frame-Options: SAMEORIGIN.",
     "how": "No supported embedding route found; hosted editor blocks external iframes."
+  },
+  "video": {
+    "provider": "file",
+    "url": "https://molsketch.net/home/howitwork.mp4",
+    "embed": null,
+    "title": "使い方",
+    "author": null,
+    "linkedFrom": "https://molsketch.net/?lang=ja",
+    "poster": null
   },
   "plans": [],
   "renderer": {

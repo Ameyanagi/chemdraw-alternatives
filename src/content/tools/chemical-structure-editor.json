@@ -2,7 +2,7 @@
   "id": "p84",
   "slug": "chemical-structure-editor",
   "name": "Chemical Structure Editor (CSE)",
-  "rank": 67,
+  "rank": 70,
   "tier": "alternative",
   "tierReason": "Implements standalone 2D structure and reaction drawing with geometric editing and vector SVG export.",
   "summary": "Browser editor for drawing chemical structures, reaction schemes and geometric figures for publication.",
@@ -495,7 +495,7 @@
       "light": true,
       "dark": false,
       "how": "fixed",
-      "note": "MOL converted to native JSON; browser color schemes render identically."
+      "note": "MOL import failed; paclitaxel loaded from externally converted native JSON."
     },
     "memory": {
       "idleMb": 388.0,
@@ -515,7 +515,13 @@
       "The aromatic ring tool produced oversized geometry during placement."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 69,
+    "transferBytes": 52743
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/SergiiDudkin/ChemicalStructureEditor",
@@ -540,6 +546,7 @@
     "limit": "No software license declared",
     "how": "Standalone app; no documented embedding interface found."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

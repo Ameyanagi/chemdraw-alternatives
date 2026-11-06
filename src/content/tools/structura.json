@@ -2,7 +2,7 @@
   "id": "p89",
   "slug": "structura",
   "name": "Structura (chem-structura)",
-  "rank": 51,
+  "rank": 52,
   "tier": "embeddable",
   "tierReason": "Primarily a React and standalone structure-input component, with a separate app workspace for Markush workflows.",
   "summary": "An embeddable 2D chemical structure editor for drawing molecules and patent Markush formulas.",
@@ -559,7 +559,17 @@
       "how": "in-app setting",
       "note": "Theme selector enabled via documented embedding API; hidden by default."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 473.53,
+      "paclitaxelMb": 527.46,
+      "baselineMb": 420.09,
+      "rssIdleMb": 1047.38,
+      "rssPaclitaxelMb": 1163.19,
+      "runs": 3,
+      "processes": 9,
+      "method": "Headed Chromium tree plus detached crashpad helpers; summed phys_footprint; three-run medians; MiB.",
+      "note": null
+    },
     "observations": [
       "Default drawing colors heteroatoms red and blue.",
       "SMILES import generated 2D layouts without cleanup.",
@@ -598,6 +608,7 @@
     "limit": "MIT",
     "how": "React StructuraEditor, ChemStructura.mount(), or editable <chem-molecule> via standalone script."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

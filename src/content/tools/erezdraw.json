@@ -2,7 +2,7 @@
   "id": "p72",
   "slug": "erezdraw",
   "name": "ErezDraw",
-  "rank": 16,
+  "rank": 17,
   "tier": "alternative",
   "tierReason": "Implemented structure, reaction, text and layout tools export vector drawings, although the application remains an incomplete prototype.",
   "summary": "A prototype desktop and self-hosted web editor for drawing chemical structures, reactions, and figures.",
@@ -572,10 +572,25 @@
       }
     ],
     "canvas": "evidence/erezdraw/canvas.webp",
-    "canvasLight": null,
-    "canvasDark": null,
-    "themes": null,
-    "memory": null,
+    "canvasLight": "evidence/erezdraw/canvas-light.webp",
+    "canvasDark": "evidence/erezdraw/canvas-dark.webp",
+    "themes": {
+      "light": true,
+      "dark": true,
+      "how": "in-app setting",
+      "note": "Dark mode changes surrounding interface; drawing canvas stays white."
+    },
+    "memory": {
+      "idleMb": 506.74,
+      "paclitaxelMb": 509.68,
+      "baselineMb": null,
+      "rssIdleMb": 1044.84,
+      "rssPaclitaxelMb": 1059.95,
+      "runs": 1,
+      "processes": 2,
+      "method": "One manual native run; summed process-tree phys_footprint; 10-second waits; MiB (1048576 bytes).",
+      "note": "Published SMILES route; QtWebEngine main and renderer included; native app, no browser baseline."
+    },
     "observations": [
       "Default canvas is white; labels use Arial 10 pt.",
       "SMILES caffeine gains three positive nitrogen charges.",
@@ -612,6 +627,7 @@
     "limit": "GPL-3.0-or-later; cross-origin framing blocked",
     "how": "Self-hosted web editor; no supported editor embedding interface confirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

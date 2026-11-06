@@ -2,7 +2,7 @@
   "id": "p80",
   "slug": "chemcad",
   "name": "ChemCAD",
-  "rank": 103,
+  "rank": 105,
   "tier": "alternative",
   "tierReason": "Its standalone 2D editor saves editable molecular projects and exports vector SVG drawings, although figure composition is limited.",
   "summary": "A desktop application for sketching chemical structures, translating names, planning reactions and exploring solvent workflows.",
@@ -485,9 +485,31 @@
     "pushedAt": "2026-08-25T17:45:51Z",
     "archived": false
   },
-  "hands": null,
+  "hands": {
+    "testedVersion": null,
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "https://codeload.github.com/CharlesEdmonds/chem-cad/tar.gz/refs/heads/main",
+    "ran": false,
+    "failure": "Unmodified source build failed: src/app/screenshot.cpp:18:10: fatal error: 'GL/gl.h' file not found. macOS SDK provides OpenGL/gl.h. See build.log.",
+    "downloadBytes": 1942432,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "No application executable was produced; molecule and feature checks were not performed.",
+      "Source commit: ead4420a62fdc34a9b17f0b47d51f66e8a65c90d.",
+      "The project declares 0.1.0; no running application version could be checked.",
+      "All 196 source files match the downloaded archive."
+    ]
+  },
   "perf": null,
-  "downloadBytes": null,
+  "downloadBytes": 1942432,
   "references": [
     "https://github.com/CharlesEdmonds/chem-cad"
   ],
@@ -515,6 +537,7 @@
     "limit": "README says an ImGui app can host it, with no steps. C++20 source build.",
     "how": "Link chemcad_ui; call drawCanvas(AppState&) within the host's ImGui frame."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

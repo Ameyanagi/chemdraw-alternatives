@@ -498,6 +498,7 @@
     "limit": "AGPL-3.0",
     "how": "Legacy iframe demo exists; usable editor embedding remains unconfirmed."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

@@ -2,7 +2,7 @@
   "id": "p82",
   "slug": "chem-molecular-structure-editor",
   "name": "Chem+ Molecular Structure Editor",
-  "rank": 113,
+  "rank": 117,
   "tier": "alternative",
   "tierReason": "Official tutorials describe composing 2D structures into publication figures and exporting SVG, although live functionality remains unverified.",
   "summary": "A browser-based molecular drawing editor within Chem+ for creating structures and exporting publication figures.",
@@ -481,7 +481,27 @@
     "No public source repository or numbered editor release was identified."
   ],
   "github": null,
-  "hands": null,
+  "hands": {
+    "testedVersion": "build XzRhYnz8AkurH6Tiy6Rfq",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "hosted",
+    "artifact": "https://chemplus.com.tr/dashboard/chemdraw",
+    "ran": false,
+    "failure": "The editor redirects to an account login, blocking access to drawing.",
+    "downloadBytes": null,
+    "installedBytes": null,
+    "captures": [],
+    "canvas": null,
+    "canvasLight": null,
+    "canvasDark": null,
+    "themes": null,
+    "memory": null,
+    "observations": [
+      "The login page offers Academy and Business workspaces.",
+      "The recorded build ID comes from the served login page, not an editor version."
+    ]
+  },
   "perf": null,
   "downloadBytes": null,
   "references": [
@@ -506,6 +526,7 @@
     "limit": "External framing blocked by CSP and X-Frame-Options.",
     "how": "CSP frame-ancestors self and X-Frame-Options SAMEORIGIN block external frames."
   },
+  "video": null,
   "plans": [
     {
       "name": "Free",

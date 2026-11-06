@@ -2,7 +2,7 @@
   "id": "p83",
   "slug": "chemscribble",
   "name": "ChemScribble",
-  "rank": 119,
+  "rank": 121,
   "tier": "alternative",
   "tierReason": "This desktop handwriting recognizer hands interpreted chemistry to ChemDoodle and cannot independently export publication drawing documents.",
   "summary": "Desktop tool for drawing and interpreting chemical structures and reaction schemes with a stylus.",
@@ -514,6 +514,15 @@
     "package": null,
     "limit": "Commercial license; web version remains under development.",
     "how": "Desktop application; no editor embedding route documented."
+  },
+  "video": {
+    "provider": "youtube",
+    "url": "https://www.youtube.com/watch?v=PpU7oux_Z_Q",
+    "embed": "https://www.youtube-nocookie.com/embed/PpU7oux_Z_Q",
+    "title": "ChemScribble Introduction",
+    "author": "ChemDoodle",
+    "linkedFrom": "https://www.chemscribble.com/",
+    "poster": "https://i.ytimg.com/vi/PpU7oux_Z_Q/hqdefault.jpg"
   },
   "plans": [
     {

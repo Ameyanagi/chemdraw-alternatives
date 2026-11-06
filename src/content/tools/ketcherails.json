@@ -2,7 +2,7 @@
   "id": "p139",
   "slug": "ketcherails",
   "name": "Ketcherails (ketcher-rails)",
-  "rank": 96,
+  "rank": 63,
   "tier": "embeddable",
   "tierReason": "It is a Rails engine for embedding a structure editor in applications, with host-managed templates and server chemistry services.",
   "summary": "A Rails component for embedding a 2D chemical structure editor with templates and server chemistry services.",
@@ -47,21 +47,33 @@
   "features": {
     "bonds-core": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L867-L884",
-      "note": null
+      "note": "Drew single, double, triple; changed a single bond.",
+      "shot": {
+        "image": "evidence/ketcherails/f-bonds-core.webp",
+        "caption": "Single, double, and triple bonds on the drawing canvas."
+      }
     },
     "stereo-bonds": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L869-L875",
-      "note": null
+      "note": "Drew wedge, hashed wedge, and wavy bonds.",
+      "shot": {
+        "image": "evidence/ketcherails/f-stereo-bonds.webp",
+        "caption": "Solid wedge, hashed wedge, and wavy bonds on the canvas."
+      }
     },
     "special-bonds": {
       "status": "partial",
       "evidence": "source",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L867-L884",
-      "note": "Dative and dashed coordination are the available specialist bonds."
+      "note": "Dative and dashed coordination are the available specialist bonds.",
+      "shot": {
+        "image": "evidence/ketcherails/f-special-bonds.webp",
+        "caption": "Bond menu showing coordination bond options."
+      }
     },
     "double-bond-side": {
       "status": "unknown",
@@ -71,9 +83,13 @@
     },
     "rings": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/templates.js#L16-L168",
-      "note": "Ring templates include benzene and three- through eight-membered rings."
+      "note": "Placed benzene and cyclopropane; other sizes shown.",
+      "shot": {
+        "image": "evidence/ketcherails/f-rings.webp",
+        "caption": "Benzene and cyclopropane rings on the drawing canvas."
+      }
     },
     "conformers": {
       "status": "yes",
@@ -88,10 +104,10 @@
       "note": null
     },
     "templates": {
-      "status": "yes",
-      "evidence": "source",
+      "status": "no",
+      "evidence": "tested",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/db/template_categories.json",
-      "note": "Seeded libraries include amino acids, hexoses, polyhedra and solid supports."
+      "note": "Template search was empty; custom template endpoint returned 500."
     },
     "custom-templates": {
       "status": "yes",
@@ -137,15 +153,19 @@
     },
     "reaction-arrows": {
       "status": "partial",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/views/ketcherails/ketcher/index.html.erb#L408-L422",
-      "note": "Only a forward reaction arrow."
+      "note": "Drew forward arrow; no alternate arrow types shown.",
+      "shot": {
+        "image": "evidence/ketcherails/f-reaction-arrows.webp",
+        "caption": "A forward arrow alongside bond and ring drawings."
+      }
     },
     "mechanism-arrows": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "Reaction menu exposes straight arrow, plus, and mapping tools."
     },
     "reaction-data": {
       "status": "yes",
@@ -194,6 +214,10 @@
       "evidence": "source",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/api/ketcherails/ketcher_api.rb#L16-L81",
       "note": "Server-side Open Babel generates 2D coordinates.",
+      "shot": {
+        "image": "evidence/ketcherails/f-cleanup.webp",
+        "caption": "Clean command in the toolbar above drawn structures."
+      },
       "engine": {
         "library": "Open Babel (Ruby bindings, application server; gen2D)",
         "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/api/ketcherails/ketcher_api.rb#L35"
@@ -253,9 +277,13 @@
     },
     "formula-mass": {
       "status": "yes",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/periodic_table.js#L129-L208",
-      "note": "Molecular formula and average molecular weight.",
+      "note": "Paclitaxel formula and molecular weight displayed.",
+      "shot": {
+        "image": "evidence/ketcherails/f-formula-mass.webp",
+        "caption": "Molecule properties show molecular weight and formula."
+      },
       "engine": {
         "library": "In-house (JavaScript; Ketcher implicit hydrogens)",
         "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/rnd/periodic_table.js#L185"
@@ -268,16 +296,20 @@
       "note": null
     },
     "name-to-structure": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "Entering caffeine in Open produced no structure."
     },
     "structure-to-name": {
-      "status": "partial",
-      "evidence": "source",
+      "status": "yes",
+      "evidence": "tested",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/api/ketcherails/ketcher_api.rb#L90-L100",
-      "note": "PubChem IUPAC lookup for indexed compounds; requires internet.",
+      "note": "Molecule properties returned paclitaxel IUPAC name.",
+      "shot": {
+        "image": "evidence/ketcherails/f-structure-to-name.webp",
+        "caption": "Molecule properties show an IUPAC name above the drawing."
+      },
       "engine": {
         "library": "PubChem PUG REST (remote web service, through Rails server)",
         "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/lib/ketcherails/pub_chem.rb#L11"
@@ -320,10 +352,10 @@
       "note": null
     },
     "model-3d": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "SDF opened as flat drawing; no 3D viewport found."
     },
     "crystals": {
       "status": "unknown",
@@ -332,10 +364,10 @@
       "note": null
     },
     "cdxml": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "tested",
       "source": null,
-      "note": null
+      "note": "CDXML text produced no drawing; no CDXML save option."
     },
     "cdx": {
       "status": "unknown",
@@ -345,9 +377,13 @@
     },
     "mol-sdf": {
       "status": "yes",
-      "evidence": "docs",
+      "evidence": "tested",
       "source": "https://link.springer.com/article/10.1186/s13321-018-0292-9",
-      "note": "MOL read/write; SDF import through template management.",
+      "note": "MOL read and written; single SDF opened flat.",
+      "shot": {
+        "image": "evidence/ketcherails/f-mol-sdf.webp",
+        "caption": "Save File dialog shows MDL/Symyx Molfile text."
+      },
       "engine": {
         "library": "Ketcher (JavaScript MOL); In-house (Ruby SDF import)",
         "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/chem/molfile.js#L53"
@@ -355,9 +391,9 @@
     },
     "smiles": {
       "status": "partial",
-      "evidence": "source",
+      "evidence": "tested",
       "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/ui/ui.js.erb#L1193-L1409",
-      "note": "Export implemented; bundled import handler is a stub.",
+      "note": "SMILES output worked; SMILES imports produced no drawing.",
       "engine": {
         "library": "Ketcher (bundled JavaScript; export only)",
         "source": "https://github.com/ComPlat/ketcher-rails/blob/e3f11fef31a177fc69c3549cb0e195eb2276cf08/app/assets/javascripts/ketcherails/chem/smiles.js#L45"
@@ -386,16 +422,16 @@
       "note": "SVG getter exposed through the embedding API."
     },
     "pdf-export": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No PDF export command found."
     },
     "png-export": {
-      "status": "unknown",
-      "evidence": "none",
+      "status": "no",
+      "evidence": "ui",
       "source": null,
-      "note": null
+      "note": "No PNG export command found."
     },
     "clipboard-chemdraw": {
       "status": "unknown",
@@ -473,9 +509,72 @@
     "pushedAt": "2024-08-06T03:42:13Z",
     "archived": false
   },
-  "hands": null,
+  "hands": {
+    "testedVersion": "0.1.12",
+    "testedOn": "2026-11-05",
+    "platform": "macOS 27.0.1 arm64",
+    "route": "source",
+    "artifact": "v0.1.12.tar.gz",
+    "ran": true,
+    "failure": null,
+    "downloadBytes": 8184479,
+    "installedBytes": 692969472,
+    "captures": [
+      {
+        "fixture": "simple",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/ketcherails/simple.png",
+        "note": "SMILES produced no drawing; MOL coordinates used.",
+        "structure": "match"
+      },
+      {
+        "fixture": "complex",
+        "result": "ok",
+        "input": "mol",
+        "image": "evidence/ketcherails/complex.png",
+        "note": "SMILES produced no drawing; MOL coordinates used, with overlapping labels.",
+        "structure": "match"
+      },
+      {
+        "fixture": "threed",
+        "result": "unsupported",
+        "input": "sdf",
+        "image": null,
+        "note": "Opens the 3D file as a flat drawing",
+        "structure": "match"
+      }
+    ],
+    "canvas": "evidence/ketcherails/canvas.webp",
+    "canvasLight": "evidence/ketcherails/canvas-light.webp",
+    "canvasDark": null,
+    "themes": {
+      "light": true,
+      "dark": false,
+      "how": "fixed",
+      "note": null
+    },
+    "memory": {
+      "idleMb": 485.89,
+      "paclitaxelMb": 520.89,
+      "baselineMb": 431.89,
+      "rssIdleMb": 1025.58,
+      "rssPaclitaxelMb": 1061.56,
+      "runs": 3,
+      "processes": 9,
+      "method": "Playwright Chromium process tree and crash handlers; summed macOS physical footprints.",
+      "note": "MOL pasted through Open; local source server excluded."
+    },
+    "observations": [
+      "Page title identifies the embedded editor as Ketcher v1.1-beta.",
+      "SMILES layout endpoint returned a stub response for both fixtures.",
+      "Image captures show the drawing area; no image export was offered.",
+      "Paclitaxel MOL displayed overlapping labels at default style.",
+      "Molecule properties retrieved a systematic name from the configured service."
+    ]
+  },
   "perf": null,
-  "downloadBytes": null,
+  "downloadBytes": 8184479,
   "references": [
     "https://github.com/ComPlat/ketcher-rails",
     "https://github.com/ComPlat/ketcher-rails",
@@ -504,6 +603,7 @@
     "limit": "Rails 5.2; GPLv3 wrapper and AGPLv3 editor.",
     "how": "Add ketcherails gem; iframe /ketcher; use contentWindow.ketcher for molecule exchange."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

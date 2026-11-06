@@ -2,7 +2,7 @@
   "id": "p12",
   "slug": "kendraw",
   "name": "Kendraw",
-  "rank": 19,
+  "rank": 20,
   "tier": "alternative",
   "tierReason": "It provides a standalone drawing workspace with reaction tools, text, shapes, journal settings, and publication-ready SVG export.",
   "summary": "An open-source browser application for drawing chemical structures and reactions, calculating molecular properties, and predicting NMR spectra.",
@@ -618,7 +618,13 @@
       "Kendraw version 0.1.0 appears in its SVG metadata and hosted About component source."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 1140,
+    "transferBytes": 8883410
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/electrosenpai/kendraw"
@@ -645,6 +651,7 @@
     "limit": "Docker denies framing; embedding API remains future work.",
     "how": "No supported embedding route; Docker explicitly denies framing."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

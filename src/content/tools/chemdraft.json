@@ -579,7 +579,17 @@
       "how": "fixed",
       "note": "Light interface and white canvas persisted under both per-process appearance overrides."
     },
-    "memory": null,
+    "memory": {
+      "idleMb": 1341.77,
+      "paclitaxelMb": 1571.83,
+      "baselineMb": null,
+      "rssIdleMb": 2307.73,
+      "rssPaclitaxelMb": 2153.84,
+      "runs": 3,
+      "processes": 21,
+      "method": "Three fresh runs; median phys_footprint sums; ps trees plus lsappinfo coalition helpers; MiB.",
+      "note": "Published SMILES paste; 10-second settling; one document; WebKit helpers included."
+    },
     "observations": [
       "SMILES paste automatically generated 2D layouts; no cleanup was applied.",
       "Default window displayed rulers, grid and crosshairs over structures.",
@@ -590,7 +600,13 @@
       "Interactive 3D empty-space dragging rotates the model; atom dragging tugs atoms and triggers UFF settling."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "desktop",
+    "launchMs": 386,
+    "idleMb": 598,
+    "loadMs": null,
+    "transferBytes": null
+  },
   "downloadBytes": 80257570,
   "references": [
     "https://github.com/jgassens/ChemDraft/blob/644cadcde0c35e9b1f5e95e6c806cf63bfbd4194/ChemDraft_1.0.0_aarch64.md",
@@ -622,6 +638,7 @@
     "limit": null,
     "how": "No documented embedding; editor-shell is an unpublished internal workspace package."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "original",

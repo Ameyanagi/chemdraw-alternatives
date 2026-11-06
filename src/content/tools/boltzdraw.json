@@ -2,7 +2,7 @@
   "id": "p54",
   "slug": "boltzdraw",
   "name": "BoltzDraw",
-  "rank": 20,
+  "rank": 21,
   "tier": "embeddable",
   "tierReason": "It is a Ketcher-based web structure editor centered on molecular input, analysis panels, and structure exports.",
   "summary": "A browser-based molecular editor combining Ketcher drawing, property calculations, peptide building, and protein–ligand visualization.",
@@ -641,7 +641,13 @@
       "The exported cholesterol MOL retained nonzero Z coordinates but was tagged 2D."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 287,
+    "transferBytes": 2221536
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/GSmithBoltz/BoltzDraw",
@@ -681,6 +687,7 @@
     "limit": "Bundled Ketcher only (Apache-2.0); full wrapper embedding undocumented.",
     "how": "Self-host bundled ketcher/index.html iframe; use same-origin contentWindow.ketcher API."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",

@@ -2,7 +2,7 @@
   "id": "p53",
   "slug": "ketchdraw",
   "name": "KetchDraw",
-  "rank": 37,
+  "rank": 38,
   "tier": "embeddable",
   "tierReason": "Its main interface combines an embedded Ketcher structure-input editor with RDKit property cards.",
   "summary": "Browser-based molecular drawing editor combining Ketcher structure editing with RDKit property calculations.",
@@ -610,7 +610,13 @@
       "The SMILES-derived 3D view looked flat; the supplied SDF showed depth."
     ]
   },
-  "perf": null,
+  "perf": {
+    "kind": "web",
+    "launchMs": null,
+    "idleMb": null,
+    "loadMs": 447,
+    "transferBytes": 8864852
+  },
   "downloadBytes": null,
   "references": [
     "https://github.com/GSmithOfficial/Ketchdraw",
@@ -639,6 +645,7 @@
     "limit": "Bundled Ketcher only (Apache-2.0); full wrapper embedding undocumented.",
     "how": "Self-host bundled ketcher/index.html iframe; use same-origin contentWindow.ketcher API."
   },
+  "video": null,
   "plans": [],
   "renderer": {
     "origin": "borrowed",
